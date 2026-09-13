@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/articulos/
     type: "article",
     publishedTime: article.publishedAt,
     modifiedTime: article.updatedAt,
-    image: article.heroImage?.url,
+    image: article.heroImage?.url ?? `${href(locale, "articles", slug)}/opengraph-image`,
   });
 }
 

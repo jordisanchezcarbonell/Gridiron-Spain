@@ -19,22 +19,44 @@ import { RichText } from "@/components/articles/ArticleBody";
 import { SourceList } from "@/components/articles/SourceList";
 import { TeamMapLoader } from "@/components/map/TeamMapLoader";
 import { toMapPins } from "@/components/map/map-data";
+import { RegionPage } from "@/components/teams/RegionPage";
+import { regionFromSlug, regionName, regionSlug } from "@/lib/regions";
 
 export async function generateStaticParams() {
   const teams = await getRepository().getTeams();
-  return teams.map((team) => ({ slug: team.slug }));
+  const regions = Array.from(new Set(teams.map((team) => team.autonomousCommunity))).map((c) => ({ slug: regionSlug(c) }));
+  return [...teams.map((team) => ({ slug: team.slug })), ...regions];
 }
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/equipos/[slug]">): Promise<Metadata> {
   const { lang, slug } = await params;
   const locale = resolveLocale(lang);
+  const region = regionFromSlug(slug);
+  if (region) {
+    const name = regionName(region, locale);
+    const dict = getDictionary(locale);
+    return buildMetadata({
+      locale,
+      title: locale === "es" ? `Fútbol americano en ${name}: equipos y clubes` : `American football in ${name}: teams and clubs`,
+      description: `${dict.region.intro} ${name}.`,
+      routeKey: "teams",
+      segments: [slug],
+    });
+  }
   const team = await getRepository().getTeamBySlug(slug);
   if (!team) return {};
   const title =
     locale === "es"
       ? `${team.name} — fútbol americano en ${team.city}`
       : `${team.name} — American football in ${team.city}`;
-  return buildMetadata({ locale, title, description: t(team.summary, locale), routeKey: "teams", segments: [slug] });
+  return buildMetadata({
+    locale,
+    title,
+    description: t(team.summary, locale),
+    routeKey: "teams",
+    segments: [slug],
+    image: `${href(locale, "teams", slug)}/opengraph-image`,
+  });
 }
 
 export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[slug]">) {
@@ -42,6 +64,11 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
   const locale = resolveLocale(lang);
   const dict = getDictionary(locale);
   const repo = getRepository();
+  const region = regionFromSlug(slug);
+  if (region) {
+    const [allTeams, allCompetitions] = await Promise.all([repo.getTeams(), repo.getCompetitions()]);
+    return <RegionPage community={region} allTeams={allTeams} competitions={allCompetitions} locale={locale} dict={dict} />;
+  }
   const team = await repo.getTeamBySlug(slug);
   if (!team) notFound();
 

@@ -21,6 +21,7 @@ export const routes = {
     internal: "road-to-annapolis",
     public: { es: "road-to-annapolis", en: "road-to-annapolis" },
   },
+  nearYou: { internal: "cerca-de-ti", public: { es: "cerca-de-ti", en: "near-you" } },
   about: { internal: "about", public: { es: "sobre-el-proyecto", en: "about" } },
   mediaKit: { internal: "media-kit", public: { es: "media-kit", en: "media-kit" } },
 } as const;

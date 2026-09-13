@@ -198,7 +198,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           <p className="kicker mb-3">{dict.nav.map}</p>
           <h2 className="display display-sm">{dict.home.nearYouTitle}</h2>
           <p className="mt-3 text-muted">{dict.home.nearYouSub}</p>
-          <ButtonLink href={href(locale, "map")} variant="secondary" className="mt-6">
+          <ButtonLink href={href(locale, "nearYou")} variant="secondary" className="mt-6">
             {dict.home.nearYouCta}
           </ButtonLink>
         </div>

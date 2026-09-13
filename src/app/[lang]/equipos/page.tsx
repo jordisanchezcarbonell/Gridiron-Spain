@@ -8,6 +8,8 @@ import { getRepository } from "@/lib/repositories";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { TeamFilters } from "@/components/teams/TeamFilters";
+import { RegionChips } from "@/components/teams/RegionChips";
+import Link from "next/link";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/equipos">): Promise<Metadata> {
   const locale = resolveLocale((await params).lang);
@@ -39,7 +41,13 @@ export default async function TeamsPage({ params }: PageProps<"/[lang]/equipos">
           <p className="mt-3 max-w-2xl text-sm text-muted">{dict.verification.explain}</p>
         </div>
       </section>
-      <div className="container-content py-12">
+      <div className="container-content flex flex-col gap-8 py-12">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <RegionChips teams={teams} locale={locale} title={dict.region.allRegions} />
+          <Link href={href(locale, "nearYou")} className="shrink-0 font-display text-base font-bold uppercase tracking-[0.08em] text-gold hover:text-gold-2">
+            {dict.near.cta} →
+          </Link>
+        </div>
         <TeamFilters teams={teams} competitions={competitions} locale={locale} dict={dict} />
       </div>
     </>

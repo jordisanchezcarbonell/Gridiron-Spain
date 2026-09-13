@@ -39,8 +39,8 @@ const levelRank: Record<Competition["level"], number> = {
 export function monogramFor(team: Pick<Team, "name" | "shortName">): string {
   const base = team.shortName ?? team.name;
   const words = base.split(/\s+/).filter(Boolean);
-  const initials = words.length > 1 ? words.map((w) => w[0]).join("") : base.slice(0, 2);
-  return initials.slice(0, 2).toUpperCase();
+  const initials = words.length > 1 ? words.map((w) => w[0]).join("").slice(0, 2) : base.slice(0, 1);
+  return initials.toUpperCase();
 }
 
 export function toMapPins(teams: Team[], competitions: Competition[], locale: Locale): MapPin[] {

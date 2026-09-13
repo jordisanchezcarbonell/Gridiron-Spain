@@ -12,6 +12,8 @@ Working name: **Gridiron Spain** (not final). Alternatives under consideration: 
 - **Interactive map** of clubs with filters (`/mapa`, `/en/map`)
 - **Verified timeline** of the sport in Spain (`/historia`, `/en/history`)
 - **Long-form stories** with a source list on every piece (`/articulos`, `/en/stories`)
+- **Find your team** by city or geolocation (`/cerca-de-ti`, `/en/near-you`), backed by an offline gazetteer in `src/data/geo/spain-places.ts`
+- **Region pages** (`/equipos/cataluna`, `/en/teams/madrid`, …) generated from each team's `autonomousCommunity`
 - **Competitions** explained (`/competiciones`, `/en/competitions`)
 - **Road to Annapolis**, the first international series (`/road-to-annapolis`)
 - About and media kit pages
@@ -149,7 +151,8 @@ We do not hotlink club crests or photos. `TeamLogo` renders a monogram until a c
 
 - Dynamic `generateMetadata` on every route with canonical URL, `hreflang`, Open Graph and Twitter cards
 - JSON-LD: `Organization`, `WebSite`, `BreadcrumbList`, `SportsTeam`, `Article`
-- `sitemap.xml` with language alternates, `robots.txt`, generated OG image, SVG icon
+- `sitemap.xml` with language alternates, `robots.txt`, SVG icon
+- Open Graph images generated at build for the site, every team, every region and every article (`src/lib/seo/og.tsx`; Barlow Condensed is fetched from Google Fonts at build time and falls back silently offline)
 - All pages are statically prerendered (`generateStaticParams`)
 
 ## Roadmap

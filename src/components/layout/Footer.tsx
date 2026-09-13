@@ -10,6 +10,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     { href: href(locale, "history"), label: dict.nav.history },
     { href: href(locale, "teams"), label: dict.nav.teams },
     { href: href(locale, "map"), label: dict.nav.map },
+    { href: href(locale, "nearYou"), label: dict.nav.nearYou },
     { href: href(locale, "articles"), label: dict.nav.stories },
     { href: href(locale, "competitions"), label: dict.nav.competitions },
   ];

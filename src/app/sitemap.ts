@@ -4,6 +4,7 @@ import { href, type RouteKey } from "@/lib/i18n/routes";
 import { absoluteUrl, site } from "@/lib/site";
 import { getRepository } from "@/lib/repositories";
 import type { Locale } from "@/types/common";
+import { regionSlug } from "@/lib/regions";
 
 function entry(
   routeKey: RouteKey,
@@ -44,7 +45,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entry("articles", [], all, reviewed, 0.8, "weekly"),
     ...entry("competitions", [], all, reviewed, 0.7, "monthly"),
     ...entry("roadToAnnapolis", [], all, reviewed, 0.9, "weekly"),
+    ...entry("nearYou", [], all, reviewed, 0.8, "monthly"),
     ...entry("about", [], all, reviewed, 0.5, "yearly"),
+    ...Array.from(new Set(teams.map((team) => team.autonomousCommunity))).flatMap((c) =>
+      entry("teams", [regionSlug(c)], all, reviewed, 0.8, "monthly"),
+    ),
     ...entry("mediaKit", [], all, reviewed, 0.4, "yearly"),
     ...teams.flatMap((team) =>
       entry("teams", [team.slug], all, team.lastVerifiedAt ?? reviewed, 0.8, "monthly"),
