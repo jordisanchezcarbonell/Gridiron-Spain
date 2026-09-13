@@ -87,7 +87,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           </div>
           <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
             <Stat label={locale === "es" ? "equipos documentados" : "documented teams"} value={String(teams.length)} hint={`${activeCount} ${dict.teams.activeCount}`} />
-            <Stat label={dict.teams.community} value={String(communities)} />
+            <Stat label={dict.teams.communitiesCount} value={String(communities)} />
             <Stat label={dict.nav.stories} value={String(articles.length)} />
             <Stat label="1987 → 2026" value={locale === "es" ? "4 décadas" : "4 decades"} />
           </div>
@@ -210,25 +210,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           <p className="kicker mb-3">{dict.home.newsletterTitle}</p>
           <h2 className="display display-sm">{dict.home.newsletterTitle}</h2>
           <p className="mt-3 text-muted">{dict.home.newsletterSub}</p>
-          <form className="mt-6 flex gap-2">
-            <label className="sr-only" htmlFor="newsletter-email">
-              Email
-            </label>
-            <input
-              id="newsletter-email"
-              type="email"
-              disabled
-              placeholder={dict.home.newsletterPlaceholder}
-              className="w-full rounded-sm border border-line-strong bg-surface px-3 py-2 text-sm text-paper placeholder:text-muted-2 disabled:opacity-60"
-            />
-            <button
-              type="button"
-              disabled
-              className="rounded-sm border border-line-strong px-4 font-display text-sm font-bold uppercase tracking-[0.08em] text-muted"
-            >
-              {dict.home.newsletterButton}
-            </button>
-          </form>
+          <p className="mt-5 font-mono text-xs uppercase tracking-[0.12em] text-gold">{dict.home.newsletterButton}</p>
         </div>
       </section>
     </>

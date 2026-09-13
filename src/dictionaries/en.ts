@@ -46,7 +46,7 @@ export const en: Dictionary = {
     roadTitle: "From Barcelona to Annapolis",
     roadSub:
       "Two European fans are planning a trip to their first college football game. Navy Football, autumn 2026.",
-    roadCta: "Follow the journey",
+    roadCta: "Explore the project",
     nearYouTitle: "Want to play or watch football near you?",
     nearYouSub:
       "Filter the map by format, category and region to find a club.",
@@ -72,6 +72,7 @@ export const en: Dictionary = {
     reset: "Clear filters",
     results: "teams",
     activeCount: "active teams",
+    communitiesCount: "autonomous communities",
     noResults: "No team matches these filters.",
     city: "City",
     founded: "Founded",

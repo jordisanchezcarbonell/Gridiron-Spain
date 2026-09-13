@@ -44,7 +44,7 @@ export const es = {
     roadTitle: "From Barcelona to Annapolis",
     roadSub:
       "Dos aficionados europeos preparan un viaje a su primer partido de college football. Navy Football, otoño de 2026.",
-    roadCta: "Seguir el viaje",
+    roadCta: "Conoce el proyecto",
     nearYouTitle: "¿Quieres jugar o ver football cerca de ti?",
     nearYouSub:
       "Filtra el mapa por modalidad, categoría y comunidad autónoma para encontrar un club.",
@@ -70,6 +70,7 @@ export const es = {
     reset: "Limpiar filtros",
     results: "equipos",
     activeCount: "equipos activos",
+    communitiesCount: "comunidades autónomas",
     noResults: "Ningún equipo coincide con estos filtros.",
     city: "Ciudad",
     founded: "Fundación",

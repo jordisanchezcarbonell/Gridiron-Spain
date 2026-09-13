@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/road-to-an
     title: `Road to Annapolis — ${dict.road.title}`,
     description: dict.road.sub,
     routeKey: "roadToAnnapolis",
+    image: `/${locale}/road-to-annapolis/opengraph-image`,
   });
 }
 
@@ -64,6 +65,7 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
           <div>
             <p className="kicker mb-4">{dict.road.kicker}</p>
             <h1 className="display display-lg">From <span className="text-gold">Barcelona</span><br />to Annapolis</h1>
+            <p className="mt-4 font-mono text-xs uppercase tracking-[0.12em] text-paper-2">{t(roadProposal.visit, locale)}</p>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-2 md:text-xl">{t(roadProposal.intro, locale)}</p>
             <p className="mt-5 font-mono text-xs uppercase tracking-[0.12em] text-gold">{t(roadProposal.status, locale)}</p>
             <div className="mt-8 flex flex-wrap gap-3"><ButtonLink href="#propuesta" size="lg">{proposal.view}</ButtonLink><ButtonLink href={mailto} variant="secondary" size="lg">{proposal.write}</ButtonLink></div>
@@ -89,13 +91,13 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
       {/* THE STORY */}
       <section className="container-content grid gap-10 py-16 md:grid-cols-[1fr_1.2fr] md:py-24" aria-labelledby="story">
         <div>
-          <p className="kicker mb-3">01</p>
+          <p className="kicker mb-3">05 · {locale === "es" ? "Sobre el viaje" : "About the trip"}</p>
           <h2 id="story" className="display display-md">
             {dict.road.theStory}
           </h2>
         </div>
         <div className="prose-editorial">
-          {roadCopy.story.map((p, i) => (
+          {roadCopy.story.slice(1, 2).map((p, i) => (
             <p key={i}>
               <RichText text={t(p, locale)} sources={sources} />
             </p>
@@ -107,7 +109,7 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
       <section className="border-y border-line bg-ink-2" aria-labelledby="why-navy">
         <div className="container-content grid gap-10 py-16 md:grid-cols-[1fr_1.2fr] md:py-24">
           <div>
-            <p className="kicker mb-3">02</p>
+            <p className="kicker mb-3">06</p>
             <h2 id="why-navy" className="display display-md">
               {dict.road.whyNavy}
             </h2>
@@ -125,7 +127,7 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
       {/* THE JOURNEY */}
       <section className="container-content py-16 md:py-24" aria-labelledby="journey">
         <div className="mb-10">
-          <p className="kicker mb-3">03</p>
+          <p className="kicker mb-3">07</p>
           <h2 id="journey" className="display display-md">
             {dict.road.theJourney}
           </h2>
@@ -154,7 +156,7 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
       <section className="border-y border-line bg-ink-2" aria-labelledby="game">
         <div className="container-content grid gap-10 py-16 md:grid-cols-[1fr_1.2fr] md:py-24">
           <div>
-            <p className="kicker mb-3">04</p>
+            <p className="kicker mb-3">08</p>
             <h2 id="game" className="display display-md">
               {dict.road.theGame}
             </h2>
@@ -166,7 +168,7 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
 
       {/* CHAPTERS */}
       <section className="container-content py-16 md:py-24" aria-labelledby="chapters">
-        <SectionHeader kicker="05" title={dict.road.chapters} />
+        <SectionHeader kicker="09" title={dict.road.chapters} />
         <ChapterList chapters={roadChapters} locale={locale} dict={dict} />
       </section>
 
@@ -174,7 +176,7 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
       {articles.length > 0 && (
         <section className="border-t border-line bg-ink-2" aria-labelledby="road-articles">
           <div className="container-content py-16 md:py-24">
-            <SectionHeader kicker="06" title={dict.road.articles} />
+            <SectionHeader kicker="10" title={dict.road.articles} />
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {articles.map((a) => (
                 <li key={a.id}>
@@ -186,25 +188,11 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
         </section>
       )}
 
-      {/* PARTNERS */}
       <section className="container-content py-16 md:py-24" aria-labelledby="partners">
-        <SectionHeader kicker="07" title={dict.road.partners} />
         {partners.length > 0 ? (
-          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {partners.map((p) => (
-              <li key={p.id}>
-                <PartnerLogo partner={p} locale={locale} />
-              </li>
-            ))}
-          </ul>
+          <><SectionHeader kicker="11" title={dict.road.partners} /><ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{partners.map((p) => <li key={p.id}><PartnerLogo partner={p} locale={locale} /></li>)}</ul></>
         ) : (
-          <div className="card border-dashed p-8 text-center">
-            <p className="mx-auto max-w-xl text-muted">{dict.road.partnersEmpty}</p>
-            <p className="mt-6 font-display text-xl font-bold uppercase text-paper">{dict.road.partnerCta}</p>
-            <ButtonLink href={href(locale, "mediaKit")} variant="secondary" className="mt-4">
-              {dict.road.mediaKit}
-            </ButtonLink>
-          </div>
+          <p className="mb-8 text-sm text-muted">{dict.road.partnersEmpty} <ButtonLink href={href(locale, "mediaKit")} variant="ghost" size="sm">{dict.road.mediaKit} →</ButtonLink></p>
         )}
         <SourceList
           sources={sources}
