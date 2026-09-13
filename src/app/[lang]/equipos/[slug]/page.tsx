@@ -168,6 +168,7 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
           {pins.length > 0 && (
             <div>
               <TeamMapLoader
+                lazy
                 pins={pins}
                 height="16rem"
                 interactive={false}

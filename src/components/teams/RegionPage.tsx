@@ -66,6 +66,7 @@ export function RegionPage({
 
         {pins.length > 0 && (
           <TeamMapLoader
+            lazy
             pins={pins}
             height="24rem"
             labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status }}

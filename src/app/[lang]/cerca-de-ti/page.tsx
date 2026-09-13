@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { preconnect } from "react-dom";
 import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
@@ -9,6 +10,7 @@ import { spainPlaces } from "@/data/geo/spain-places";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { toMapPins } from "@/components/map/map-data";
+import { TILE_ORIGIN } from "@/components/map/tiles";
 import { NearYouFinder } from "@/components/near/NearYouFinder";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/cerca-de-ti">): Promise<Metadata> {
@@ -24,6 +26,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/cerca-de-t
 export default async function NearYouPage({ params }: PageProps<"/[lang]/cerca-de-ti">) {
   const locale = resolveLocale((await params).lang);
   const dict = getDictionary(locale);
+  preconnect(TILE_ORIGIN);
   const repo = getRepository();
   const [teams, competitions] = await Promise.all([repo.getTeams(), repo.getCompetitions()]);
   const pins = toMapPins(teams, competitions, locale);

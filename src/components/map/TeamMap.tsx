@@ -7,12 +7,7 @@ import "leaflet/dist/leaflet.css";
 import type { MapPin } from "./map-data";
 
 const SPAIN_CENTER: [number, number] = [40.2, -3.5];
-const DEFAULT_TILES = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
-const TILE_URL = process.env.NEXT_PUBLIC_MAP_TILE_URL ?? DEFAULT_TILES;
-const TILE_ATTRIBUTION =
-  process.env.NEXT_PUBLIC_MAP_TILE_ATTRIBUTION ??
-  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-const USING_OSM = TILE_URL === DEFAULT_TILES;
+import { TILE_ATTRIBUTION, TILE_URL, USING_OSM } from "./tiles";
 const CLUSTER_RADIUS_PX = 34;
 const CLUSTER_MAX_ZOOM = 11;
 

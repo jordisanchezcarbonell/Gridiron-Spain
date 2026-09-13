@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
@@ -99,7 +98,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       {featured && (
         <section className="container-content py-16 md:py-24">
           <p className="kicker mb-6">{dict.home.featured}</p>
-          <ArticleCard article={featured} locale={locale} dict={dict} variant="featured" />
+          <ArticleCard article={featured} locale={locale} dict={dict} variant="featured" headingLevel="h2" />
         </section>
       )}
 
@@ -130,16 +129,18 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           sub={dict.home.mapSub}
           cta={{ href: href(locale, "map"), label: dict.home.openMap }}
         />
-        <Link href={href(locale, "map")} className="block" aria-label={dict.home.openMap}>
-          <div className="pointer-events-none">
-            <TeamMapLoader
-              pins={pins}
-              interactive={false}
-              height="26rem"
-              labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status }}
-            />
-          </div>
-        </Link>
+        <div className="relative">
+          <TeamMapLoader
+            lazy
+            pins={pins}
+            interactive={false}
+            height="26rem"
+            labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status }}
+          />
+          <ButtonLink href={href(locale, "map")} className="absolute bottom-4 right-4 z-[400]">
+            {dict.home.openMap}
+          </ButtonLink>
+        </div>
       </section>
 
       {/* TIMELINE */}

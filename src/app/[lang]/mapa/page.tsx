@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { preconnect } from "react-dom";
 import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
@@ -9,6 +10,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { MapExplorer } from "@/components/map/MapExplorer";
 import { toMapPins } from "@/components/map/map-data";
+import { TILE_ORIGIN } from "@/components/map/tiles";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/mapa">): Promise<Metadata> {
   const locale = resolveLocale((await params).lang);
@@ -19,6 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/mapa">): P
 export default async function MapPage({ params }: PageProps<"/[lang]/mapa">) {
   const locale = resolveLocale((await params).lang);
   const dict = getDictionary(locale);
+  preconnect(TILE_ORIGIN);
   const repo = getRepository();
   const [teams, competitions] = await Promise.all([repo.getTeams(), repo.getCompetitions()]);
   const pins = toMapPins(teams, competitions, locale);

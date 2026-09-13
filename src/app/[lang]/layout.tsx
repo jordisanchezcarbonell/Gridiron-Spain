@@ -12,7 +12,7 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 
 const display = Barlow_Condensed({
   subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
+  weight: ["700", "800", "900"],
   variable: "--font-display",
   display: "swap",
 });

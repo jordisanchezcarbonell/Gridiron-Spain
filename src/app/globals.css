@@ -15,13 +15,13 @@
   --color-paper: #f4f1ea; /* primary text */
   --color-paper-2: #e6e1d6;
   --color-muted: #a7adb5; /* secondary text */
-  --color-muted-2: #7c838c;
+  --color-muted-2: #8a919a;
 
   --color-gold: #d6a84b; /* accent */
   --color-gold-2: #f0c66a; /* accent hover */
   --color-gold-dim: #8c6a2a;
 
-  --color-turf: #3f8f5a; /* verified / active */
+  --color-turf: #5cb277; /* verified / active */
   --color-turf-dim: #23472f;
   --color-amber: #d78f3b; /* partial */
   --color-signal: #d84c4c; /* unverified / alerts */

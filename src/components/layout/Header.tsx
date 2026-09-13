@@ -25,7 +25,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         {dict.nav.skipToContent}
       </a>
       <div className="container-content flex h-16 items-center justify-between gap-6">
-        <Link href={href(locale, "home")} className="flex items-center gap-3" aria-label={dict.site.name}>
+        <Link href={href(locale, "home")} className="flex items-center gap-3">
           <Wordmark />
         </Link>
 

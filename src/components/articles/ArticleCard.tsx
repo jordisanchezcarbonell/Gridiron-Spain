@@ -13,12 +13,15 @@ export function ArticleCard({
   locale,
   dict,
   variant = "default",
+  headingLevel = "h3",
 }: {
   article: Article;
   locale: Locale;
   dict: Dictionary;
   variant?: "default" | "featured" | "compact";
+  headingLevel?: "h2" | "h3";
 }) {
+  const Heading = headingLevel;
   const url = href(locale, "articles", article.slug);
   const researching = article.status === "researching";
   const untranslated = !article.availableLocales.includes(locale);
@@ -47,7 +50,7 @@ export function ArticleCard({
             <Badge tone="gold">{dict.categories[article.category]}</Badge>
             {researching && <Badge tone="outline">{dict.articles.researching}</Badge>}
           </div>
-          <h3 className="display display-sm group-hover:text-gold">{t(article.title, locale)}</h3>
+          <Heading className="display display-sm group-hover:text-gold">{t(article.title, locale)}</Heading>
           {article.subtitle && <p className="text-lg text-paper-2">{t(article.subtitle, locale)}</p>}
           <p className="text-muted">{t(article.excerpt, locale)}</p>
           <Meta article={article} locale={locale} dict={dict} untranslated={untranslated} />
