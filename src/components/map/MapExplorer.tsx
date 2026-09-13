@@ -5,14 +5,34 @@ import type { Competition, Discipline, TeamCategory } from "@/types";
 import type { Dictionary } from "@/dictionaries/es";
 import type { MapPin } from "./map-data";
 import { TeamMapLoader } from "./TeamMapLoader";
+import { cx } from "@/lib/utils";
+
+type Quick = "all" | Discipline | "women" | "youth";
 
 type Filters = {
-  discipline: Discipline | "all";
-  category: TeamCategory | "all";
+  quick: Quick;
   competition: string | "all";
   community: string | "all";
-  status: "all" | "active" | "historical";
+  historical: boolean;
+  query: string;
 };
+
+const initial: Filters = { quick: "all", competition: "all", community: "all", historical: false, query: "" };
+
+function normalize(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase();
+}
+
+function matchesQuick(pin: MapPin, quick: Quick) {
+  if (quick === "all") return true;
+  if (quick === "tackle" || quick === "flag") return pin.disciplines.includes(quick);
+  if (quick === "women") return pin.categories.includes("senior-women");
+  const youth: TeamCategory[] = ["junior", "youth"];
+  return pin.categories.some((c) => youth.includes(c));
+}
 
 export function MapExplorer({
   pins,
@@ -23,13 +43,9 @@ export function MapExplorer({
   competitions: Competition[];
   dict: Dictionary;
 }) {
-  const [filters, setFilters] = useState<Filters>({
-    discipline: "all",
-    category: "all",
-    competition: "all",
-    community: "all",
-    status: "all",
-  });
+  const [filters, setFilters] = useState<Filters>(initial);
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const communities = useMemo(() => Array.from(new Set(pins.map((p) => p.community))).sort(), [pins]);
   const usedCompetitions = useMemo(() => {
@@ -37,105 +53,229 @@ export function MapExplorer({
     return competitions.filter((c) => ids.has(c.id));
   }, [pins, competitions]);
 
-  const filtered = useMemo(
-    () =>
-      pins.filter((p) => {
-        if (filters.discipline !== "all" && !p.disciplines.includes(filters.discipline)) return false;
-        if (filters.category !== "all" && !p.categories.includes(filters.category)) return false;
+  const filtered = useMemo(() => {
+    const q = normalize(filters.query.trim());
+    return pins
+      .filter((p) => {
+        if (!matchesQuick(p, filters.quick)) return false;
         if (filters.competition !== "all" && !p.competitionIds.includes(filters.competition)) return false;
         if (filters.community !== "all" && p.community !== filters.community) return false;
-        if (filters.status === "active" && p.status !== "active") return false;
-        if (filters.status === "historical" && p.status === "active") return false;
+        if (!filters.historical && p.status !== "active") return false;
+        if (q && !normalize(`${p.name} ${p.city} ${p.community}`).includes(q)) return false;
         return true;
-      }),
-    [pins, filters],
-  );
+      })
+      .sort((a, b) => a.rank - b.rank || a.name.localeCompare(b.name, "es"));
+  }, [pins, filters]);
 
-  const set = <K extends keyof Filters>(key: K, value: Filters[K]) =>
+  const set = <K extends keyof Filters>(key: K, value: Filters[K]) => {
+    setSelectedId(null);
     setFilters((prev) => ({ ...prev, [key]: value }));
-  const selectClass =
-    "w-full rounded-sm border border-line-strong bg-surface px-3 py-2 text-sm text-paper focus:border-gold";
+  };
+  const isDirty = JSON.stringify(filters) !== JSON.stringify(initial);
 
   const labels = {
     viewProfile: dict.teams.viewProfile,
     cityLevel: dict.map.legendCity,
+    clusterHint: dict.map.clusterHint,
     status: dict.status,
   };
 
+  const quickChips: Array<{ key: Quick; label: string }> = [
+    { key: "all", label: dict.teams.all },
+    { key: "tackle", label: dict.discipline.tackle },
+    { key: "flag", label: dict.discipline.flag },
+    { key: "women", label: dict.map.women },
+    { key: "youth", label: dict.map.youth },
+  ];
+
+  const selectClass =
+    "h-9 rounded-sm border border-line-strong bg-surface px-3 text-sm text-paper focus:border-gold";
+
   return (
-    <div className="grid gap-6 lg:grid-cols-[18rem_1fr]">
-      <form className="card h-fit space-y-4 p-5" onSubmit={(e) => e.preventDefault()} aria-label={dict.teams.filters}>
-        <Field label={dict.teams.discipline}>
-          <select className={selectClass} value={filters.discipline} onChange={(e) => set("discipline", e.target.value as Filters["discipline"])}>
-            <option value="all">{dict.teams.all}</option>
-            <option value="tackle">{dict.discipline.tackle}</option>
-            <option value="flag">{dict.discipline.flag}</option>
-          </select>
-        </Field>
-        <Field label={dict.teams.category}>
-          <select className={selectClass} value={filters.category} onChange={(e) => set("category", e.target.value as Filters["category"])}>
-            <option value="all">{dict.teams.all}</option>
-            {(Object.keys(dict.category) as TeamCategory[]).map((c) => (
-              <option key={c} value={c}>
-                {dict.category[c]}
-              </option>
-            ))}
-          </select>
-        </Field>
-        <Field label={dict.teams.competition}>
-          <select className={selectClass} value={filters.competition} onChange={(e) => set("competition", e.target.value)}>
-            <option value="all">{dict.teams.all}</option>
-            {usedCompetitions.map((c) => (
-              <option key={c.id} value={c.id}>
-                {c.shortName ?? c.name}
-              </option>
-            ))}
-          </select>
-        </Field>
-        <Field label={dict.teams.community}>
-          <select className={selectClass} value={filters.community} onChange={(e) => set("community", e.target.value)}>
-            <option value="all">{dict.teams.all}</option>
-            {communities.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
-        </Field>
-        <Field label={dict.teams.status}>
-          <select className={selectClass} value={filters.status} onChange={(e) => set("status", e.target.value as Filters["status"])}>
-            <option value="all">{dict.teams.all}</option>
-            <option value="active">{dict.status.active}</option>
-            <option value="historical">{dict.status.historical}</option>
-          </select>
-        </Field>
-        <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted-2" aria-live="polite">
-          {filtered.length} {dict.map.teamsShown}
-        </p>
-        <ul className="space-y-1.5 border-t border-line pt-4 text-xs text-muted">
-          <li className="flex items-center gap-2">
-            <span className="gs-pin" aria-hidden /> {dict.map.legendVenue}
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="gs-pin gs-pin--city" aria-hidden /> {dict.map.legendCity}
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="gs-pin gs-pin--historical" aria-hidden /> {dict.status.historical}
-          </li>
-        </ul>
+    <div className="flex flex-col gap-5">
+      {/* Filter bar */}
+      <form
+        className="flex flex-wrap items-center gap-2"
+        aria-label={dict.teams.filters}
+        onSubmit={(e) => e.preventDefault()}
+      >
+        <label className="flex h-9 min-w-64 flex-1 items-center gap-2 rounded-sm border border-line-strong bg-surface px-3 focus-within:border-gold sm:flex-none">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 text-muted-2" aria-hidden>
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.5-3.5" />
+          </svg>
+          <span className="sr-only">{dict.map.search}</span>
+          <input
+            type="search"
+            value={filters.query}
+            onChange={(e) => set("query", e.target.value)}
+            placeholder={dict.map.search}
+            className="w-full bg-transparent text-sm text-paper placeholder:text-muted-2 focus:outline-none"
+          />
+        </label>
+        <div role="group" aria-label={dict.teams.discipline} className="flex flex-wrap gap-2">
+          {quickChips.map((chip) => (
+            <Chip key={chip.key} active={filters.quick === chip.key} onClick={() => set("quick", chip.key)}>
+              {chip.label}
+            </Chip>
+          ))}
+        </div>
+        <label className="sr-only" htmlFor="map-competition">
+          {dict.teams.competition}
+        </label>
+        <select id="map-competition" className={selectClass} value={filters.competition} onChange={(e) => set("competition", e.target.value)}>
+          <option value="all">{dict.teams.competition}</option>
+          {usedCompetitions.map((c) => (
+            <option key={c.id} value={c.id}>
+              {c.shortName ?? c.name}
+            </option>
+          ))}
+        </select>
+        <label className="sr-only" htmlFor="map-community">
+          {dict.teams.community}
+        </label>
+        <select id="map-community" className={selectClass} value={filters.community} onChange={(e) => set("community", e.target.value)}>
+          <option value="all">{dict.teams.community}</option>
+          {communities.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
+        <Chip active={filters.historical} onClick={() => set("historical", !filters.historical)} pressed>
+          {dict.map.historical}
+        </Chip>
       </form>
-      <div>
-        <TeamMapLoader pins={filtered} labels={labels} />
+
+      {/* Explorer: map first on mobile, list + map on desktop */}
+      <div className="grid gap-5 lg:grid-cols-[380px_minmax(0,1fr)]">
+        <div className="relative order-1 lg:order-2">
+          <TeamMapLoader
+            pins={filtered}
+            labels={labels}
+            height="clamp(24rem, 62vh, 44rem)"
+            hoveredId={hoveredId}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+            onHover={setHoveredId}
+          />
+          <ul className="pointer-events-none absolute bottom-3 left-3 z-[400] flex flex-wrap gap-3 rounded-sm border border-line bg-ink/85 px-3 py-2 text-[0.7rem] text-muted backdrop-blur">
+            <li className="flex items-center gap-1.5">
+              <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-full bg-gold" /> {dict.map.legendVenue}
+            </li>
+            <li className="flex items-center gap-1.5">
+              <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-full bg-muted" /> {dict.map.legendCity}
+            </li>
+            <li className="flex items-center gap-1.5">
+              <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-full border border-muted" /> {dict.map.legendHistorical}
+            </li>
+          </ul>
+        </div>
+
+        <div className="card order-2 flex flex-col overflow-hidden lg:order-1" style={{ maxHeight: "clamp(24rem, 62vh, 44rem)" }}>
+          <div className="flex items-center justify-between border-b border-line bg-ink-2 px-4 py-3">
+            <p className="font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted" aria-live="polite">
+              {filtered.length} {dict.map.listHeader}
+            </p>
+            {isDirty && (
+              <button
+                type="button"
+                onClick={() => {
+                  setFilters(initial);
+                  setSelectedId(null);
+                }}
+                className="font-mono text-[0.68rem] uppercase tracking-[0.14em] text-gold hover:text-gold-2"
+              >
+                {dict.map.clear}
+              </button>
+            )}
+          </div>
+          {filtered.length === 0 ? (
+            <p className="p-6 text-center text-sm text-muted">{dict.map.noResults}</p>
+          ) : (
+            <ul className="overflow-y-auto">
+              {filtered.map((pin) => {
+                const active = selectedId === pin.id;
+                const inactive = pin.status !== "active";
+                return (
+                  <li key={pin.id}>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedId(active ? null : pin.id)}
+                      onMouseEnter={() => setHoveredId(pin.id)}
+                      onMouseLeave={() => setHoveredId(null)}
+                      onFocus={() => setHoveredId(pin.id)}
+                      onBlur={() => setHoveredId(null)}
+                      aria-pressed={active}
+                      className={cx(
+                        "flex w-full items-center gap-3 border-b border-line px-4 py-3 text-left transition-colors hover:bg-surface-2",
+                        active && "bg-surface-2 shadow-[inset_3px_0_0_var(--color-gold)]",
+                      )}
+                    >
+                      <span
+                        className={cx(
+                          "grid h-9 w-9 shrink-0 place-items-center rounded-sm border border-line-strong bg-surface-2 font-display text-sm font-black",
+                          inactive ? "text-muted" : "text-paper-2",
+                        )}
+                      >
+                        {pin.monogram}
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate font-display text-lg font-extrabold uppercase leading-none text-paper">
+                          {pin.name}
+                        </span>
+                        <span className="mt-1 block truncate text-xs text-muted">
+                          {pin.city} · {pin.community}
+                        </span>
+                      </span>
+                      <span
+                        className={cx(
+                          "shrink-0 rounded-sm border px-1.5 py-0.5 font-mono text-[0.6rem] uppercase tracking-[0.12em]",
+                          inactive
+                            ? "border-line-strong text-muted"
+                            : pin.rank <= 1
+                              ? "border-gold/30 bg-gold/15 text-gold"
+                              : "border-line bg-surface-2 text-paper-2",
+                        )}
+                      >
+                        {inactive ? dict.status[pin.status] : (pin.competitionLabel ?? dict.status.active)}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   );
 }
 
-function Field({ label, children }: { label: string; children: React.ReactNode }) {
+function Chip({
+  active,
+  onClick,
+  children,
+  pressed,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+  pressed?: boolean;
+}) {
   return (
-    <label className="flex flex-col gap-1.5">
-      <span className="kicker text-muted-2">{label}</span>
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={pressed ? active : undefined}
+      className={cx(
+        "inline-flex h-9 items-center rounded-full border px-3.5 text-sm font-medium transition-colors",
+        active
+          ? "border-gold bg-gold text-ink"
+          : "border-line-strong bg-surface text-paper-2 hover:border-gold hover:text-gold",
+      )}
+    >
       {children}
-    </label>
+    </button>
   );
 }

@@ -22,7 +22,7 @@ export const historiaEspana: Article = {
   relatedCompetitionIds: ["lnfa", "lliga-catalana", "lnfa-femenina", "spanish-flag-bowl", "elf", "nfl-europe", "nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-09-12",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-09-13",
   status: "researching",
   verificationStatus: "partial",
   lastVerifiedAt: "2026-09-12",
@@ -57,6 +57,19 @@ export const historiaEspana: Article = {
     "madridactual-bravos-2026",
     "football-austria-elf-insolvency-2026",
     "nfl-madrid-multiyear-2026",
+    "panteras-historia",
+    "panteras-1989-90",
+    "panteras-sfl-1991-92",
+    "wiki-osos-madrid-es",
+    "wiki-toros",
+    "wiki-liga-catalana",
+    "wiki-lnfa-es",
+    "wiki-lnfa-1995-es",
+    "wiki-boxers",
+    "enciclopedia-boxers",
+    "cuadernos-futbol-americano",
+    "telescopio-madrid-pioneros",
+    "firebats-historia-mural",
   ],
   content: [
     {
@@ -99,12 +112,38 @@ export const historiaEspana: Article = {
       },
     },
     {
+      type: "paragraph",
+      text: {
+        es: "Madrid llegó en 1989. Según la web de archivo del club, los Madrid Panteras se fundaron el 28 de septiembre de 1989 por dos estudiantes de ICADE, Vicente Martín-Pozuelo y Alfonso González Lavín, y jugaron su primer partido en el polideportivo de Palomeras. [[src:panteras-1989-90]] Ese mismo año nacieron, según fuentes secundarias, los Madrid Bears (después Osos de Madrid, hoy Osos Rivas), con ayuda de personal de la base aérea de Torrejón, y los Madrid Toros. [[src:wiki-osos-madrid-es]] [[src:telescopio-madrid-pioneros]] [[src:wiki-toros]] Cuatro equipos madrileños jugaron la segunda Lliga Catalana en 1989-90, que funcionaba de hecho como liga nacional. [[src:wiki-liga-catalana]]",
+        en: "Madrid arrived in 1989. According to the club's archive website, the Madrid Panteras were founded on 28 September 1989 by two ICADE students, Vicente Martín-Pozuelo and Alfonso González Lavín, and played their first game at the Palomeras sports ground. [[src:panteras-1989-90]] That same year, per secondary sources, the Madrid Bears (later Osos de Madrid, today Osos Rivas) were born with help from personnel at the Torrejón air base, as were the Madrid Toros. [[src:wiki-osos-madrid-es]] [[src:telescopio-madrid-pioneros]] [[src:wiki-toros]] Four Madrid teams played the second Lliga Catalana in 1989-90, which effectively worked as a national league. [[src:wiki-liga-catalana]]",
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "En Valencia el primer club documentado son los Cullera Giants, que ya competían en 1991; en abril de 1993 un grupo de sus jugadores fundó los Valencia Bats, hoy Valencia Firebats. [[src:wiki-lnfa-es]] [[src:firebats-historia-mural]] El año de fundación de los Giants sigue sin confirmarse.",
+        en: "In Valencia the first documented club is the Cullera Giants, already competing in 1991; in April 1993 a group of their players founded the Valencia Bats, today Valencia Firebats. [[src:wiki-lnfa-es]] [[src:firebats-historia-mural]] The Giants' founding year remains unconfirmed.",
+      },
+    },
+    {
+      type: "heading",
+      level: 2,
+      text: { es: "Dos ligas antes de la liga", en: "Two leagues before the league" },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "Entre 1991 y 1994 el football español estuvo dividido. Un grupo de clubes se separó de la federación catalana y creó la Spain Football League (SFL), organizada por la empresa Unipublic y emitida por Antena 3 en su primera temporada; en 1993-94 pasó a llamarse American Football League (AFL). [[src:wiki-lnfa-es]] [[src:panteras-sfl-1991-92]] [[src:cuadernos-futbol-americano]] Sus campeones fueron Barcelona Howlers (1992 y 1994) y Vilafranca Eagles (1993), siempre con Madrid Panteras como finalistas. [[src:panteras-historia]] [[src:wiki-lnfa-es]] Mientras tanto, la Lliga Catalana siguió con los Barcelona Boxers como dominadores: cuatro títulos entre 1990 y 1994 y una final de Supercopa contra Osos de Madrid en Montjuïc, en 1990, ante una multitud que las fuentes cifran entre 20.000 y 25.000 personas. [[src:wiki-boxers]] [[src:enciclopedia-boxers]] [[src:blog-origenes-1987]]",
+        en: "Between 1991 and 1994 Spanish football was split. A group of clubs broke away from the Catalan federation and created the Spain Football League (SFL), organised by the events company Unipublic and broadcast by Antena 3 in its first season; in 1993-94 it was renamed the American Football League (AFL). [[src:wiki-lnfa-es]] [[src:panteras-sfl-1991-92]] [[src:cuadernos-futbol-americano]] Its champions were Barcelona Howlers (1992 and 1994) and Vilafranca Eagles (1993), always with Madrid Panteras as runners-up. [[src:panteras-historia]] [[src:wiki-lnfa-es]] Meanwhile the Lliga Catalana carried on with the Barcelona Boxers as its dominant side: four titles between 1990 and 1994 and a 1990 Supercopa final against Osos de Madrid at Montjuïc before a crowd sources put at between 20,000 and 25,000. [[src:wiki-boxers]] [[src:enciclopedia-boxers]] [[src:blog-origenes-1987]]",
+      },
+    },
+    {
       type: "placeholder",
-      topic: { es: "Primeros clubes de Madrid y Valencia", en: "First clubs in Madrid and Valencia" },
+      topic: { es: "Verificación en hemerotecas (1989-1996)", en: "Newspaper archive verification (1989-1996)" },
       pending: [
-        { es: "Fundación y primeras temporadas de Osos de Madrid y Panteras Madrid", en: "Founding and early seasons of Osos de Madrid and Panteras Madrid" },
-        { es: "Cullera Giants y el origen de Valencia Firebats (1993)", en: "Cullera Giants and the origin of Valencia Firebats (1993)" },
-        { es: "La liga AFL / Liga Española paralela a la Lliga Catalana", en: "The AFL / Liga Española that ran alongside the Lliga Catalana" },
+        { es: "Todo lo anterior procede de fuentes secundarias; falta contrastar con ABC, Mundo Deportivo y El País de la época (páginas identificadas en docs/research-pending.md)", en: "Everything above comes from secondary sources; contemporary ABC, Mundo Deportivo and El País pages still need checking (listed in docs/research-pending.md)" },
+        { es: "Fecha y asistencia exactas de la Supercopa de 1990 en Montjuïc", en: "Exact date and attendance of the 1990 Supercopa at Montjuïc" },
+        { es: "Año de fundación de Cullera Giants", en: "Cullera Giants' founding year" },
       ],
     },
     {
@@ -115,15 +154,15 @@ export const historiaEspana: Article = {
     {
       type: "paragraph",
       text: {
-        es: "En 1994 se creó la Agrupación Española de Fútbol Americano (AEFA), el primer organismo estatal, aunque las fuentes secundarias discrepan sobre la fecha exacta. [[src:wiki-fefa]] [[src:blog-origenes-1987]] La actual Federación Española de Fútbol Americano (FEFA) es su sucesora: el Consejo Superior de Deportes autorizó su constitución el 17 de mayo de 2012 y sus estatutos se publicaron en el BOE ese mismo mes. [[src:boe-fefa-2012]]",
-        en: "In 1994 the Agrupación Española de Fútbol Americano (AEFA), the first state-wide body, was created, although secondary sources disagree on the exact date. [[src:wiki-fefa]] [[src:blog-origenes-1987]] Today's Spanish American Football Federation (FEFA) is its successor: the Consejo Superior de Deportes authorised its constitution on 17 May 2012 and its statutes were published in the BOE that same month. [[src:boe-fefa-2012]]",
+        es: "La reunificación llegó en 1994. Según fuentes secundarias, la Agrupación Española de Fútbol Americano (AEFA) se constituyó el 29 de octubre de 1994 en una sala del Estadi Olímpic de Montjuïc cedida por los Barcelona Dragons, tras meses de reuniones entre la federación catalana y la AFL. [[src:blog-origenes-1987]] [[src:wiki-fefa]] [[src:cuadernos-futbol-americano]] La actual Federación Española de Fútbol Americano (FEFA) es su sucesora: el Consejo Superior de Deportes autorizó su constitución el 17 de mayo de 2012 y sus estatutos se publicaron en el BOE ese mismo mes. [[src:boe-fefa-2012]]",
+        en: "Reunification came in 1994. According to secondary sources, the Agrupación Española de Fútbol Americano (AEFA) was constituted on 29 October 1994 in a room at the Estadi Olímpic de Montjuïc provided by the Barcelona Dragons, after months of talks between the Catalan federation and the AFL. [[src:blog-origenes-1987]] [[src:wiki-fefa]] [[src:cuadernos-futbol-americano]] Today's Spanish American Football Federation (FEFA) is its successor: the Consejo Superior de Deportes authorised its constitution on 17 May 2012 and its statutes were published in the BOE that same month. [[src:boe-fefa-2012]]",
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "La Liga Nacional de Fútbol Americano (LNFA) se disputó por primera vez en 1995. Su primera final, en el Estadio Olímpico de Madrid, la ganaron Panteras Madrid por 55-28 a Barcelona Boxers. [[src:fefa-palmares]] [[src:wiki-lnfa-1995]] La final se conoce como Spanish Bowl y la FEFA numera sus ediciones desde aquella de 1995; la de 2026 fue la XXXII. [[src:fefa-palmares]] [[src:firstdown-lnfa-2026]]",
-        en: "The Liga Nacional de Fútbol Americano (LNFA) was first played in 1995. Its first final, at the Estadio Olímpico de Madrid, was won by Panteras Madrid 55-28 over Barcelona Boxers. [[src:fefa-palmares]] [[src:wiki-lnfa-1995]] The final is known as the Spanish Bowl and FEFA numbers its editions from that 1995 game; the 2026 final was the XXXII. [[src:fefa-palmares]] [[src:firstdown-lnfa-2026]]",
+        es: "La Liga Nacional de Fútbol Americano (LNFA) se disputó por primera vez en 1995, con 18 equipos en dos conferencias que reunían a los clubes de ambas ligas. [[src:wiki-lnfa-1995-es]] Su primera final, el 14 de mayo de 1995 en el Estadio Olímpico de Madrid, la ganaron Panteras Madrid por 55-28 a Barcelona Boxers. [[src:fefa-palmares]] [[src:wiki-lnfa-1995]] [[src:panteras-historia]] La final se conoce como Spanish Bowl y la FEFA numera sus ediciones desde aquella de 1995; la de 2026 fue la XXXII. [[src:fefa-palmares]] [[src:firstdown-lnfa-2026]]",
+        en: "The Liga Nacional de Fútbol Americano (LNFA) was first played in 1995, with 18 teams in two conferences bringing together the clubs of both leagues. [[src:wiki-lnfa-1995-es]] Its first final, on 14 May 1995 at the Estadio Olímpico de Madrid, was won by Panteras Madrid 55-28 over Barcelona Boxers. [[src:fefa-palmares]] [[src:wiki-lnfa-1995]] [[src:panteras-historia]] The final is known as the Spanish Bowl and FEFA numbers its editions from that 1995 game; the 2026 final was the XXXII. [[src:fefa-palmares]] [[src:firstdown-lnfa-2026]]",
       },
     },
     {

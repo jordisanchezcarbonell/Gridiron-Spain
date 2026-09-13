@@ -133,7 +133,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
               pins={pins}
               interactive={false}
               height="26rem"
-              labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, status: dict.status }}
+              labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status }}
             />
           </div>
         </Link>

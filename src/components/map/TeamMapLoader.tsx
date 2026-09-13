@@ -1,8 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { MapPin } from "./map-data";
-import type { TeamMapLabels } from "./TeamMap";
+import type { ComponentProps } from "react";
+import type { TeamMap as TeamMapComponent } from "./TeamMap";
 
 /**
  * Leaflet touches `window`, so the map is loaded client-side only and lazily.
@@ -22,11 +22,6 @@ const TeamMap = dynamic(() => import("./TeamMap").then((m) => m.TeamMap), {
   ),
 });
 
-export function TeamMapLoader(props: {
-  pins: MapPin[];
-  labels: TeamMapLabels;
-  height?: string;
-  interactive?: boolean;
-}) {
+export function TeamMapLoader(props: ComponentProps<typeof TeamMapComponent>) {
   return <TeamMap {...props} />;
 }

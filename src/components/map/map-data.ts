@@ -7,6 +7,7 @@ export type MapPin = {
   id: string;
   slug: string;
   name: string;
+  monogram: string;
   city: string;
   community: string;
   status: Team["status"];
@@ -14,6 +15,10 @@ export type MapPin = {
   categories: Team["categories"];
   competitionIds: string[];
   competitionLabel?: string;
+  /** Lower = higher level; used to sort the list. */
+  rank: number;
+  foundedYear?: number;
+  venueName?: string;
   latitude: number;
   longitude: number;
   precision: "venue" | "city";
@@ -21,17 +26,40 @@ export type MapPin = {
   logoUrl?: string;
 };
 
+const levelRank: Record<Competition["level"], number> = {
+  professional: 0,
+  "national-top": 1,
+  european: 2,
+  "national-second": 3,
+  "national-third": 4,
+  regional: 5,
+  international: 6,
+};
+
+export function monogramFor(team: Pick<Team, "name" | "shortName">): string {
+  const base = team.shortName ?? team.name;
+  const words = base.split(/\s+/).filter(Boolean);
+  const initials = words.length > 1 ? words.map((w) => w[0]).join("") : base.slice(0, 2);
+  return initials.slice(0, 2).toUpperCase();
+}
+
 export function toMapPins(teams: Team[], competitions: Competition[], locale: Locale): MapPin[] {
   return teams.flatMap((team) => {
     const coords = team.venue?.coordinates;
     if (!coords) return [];
     const competitionIds = team.currentCompetitions.map((c) => c.competitionId);
-    const first = competitions.find((c) => c.id === competitionIds[0]);
+    const comps = competitionIds
+      .map((id) => competitions.find((c) => c.id === id))
+      .filter((c): c is Competition => Boolean(c));
+    const first = comps[0];
+    const inactive = team.status !== "active";
+    const rank = inactive ? 9 : comps.length ? Math.min(...comps.map((c) => levelRank[c.level])) : 8;
     return [
       {
         id: team.id,
         slug: team.slug,
         name: team.name,
+        monogram: monogramFor(team),
         city: team.city,
         community: team.autonomousCommunity,
         status: team.status,
@@ -39,6 +67,9 @@ export function toMapPins(teams: Team[], competitions: Competition[], locale: Lo
         categories: team.categories,
         competitionIds,
         competitionLabel: first ? (first.shortName ?? first.name) : undefined,
+        rank,
+        foundedYear: team.foundedYear,
+        venueName: team.venue?.name?.[locale] ?? team.venue?.name?.es,
         latitude: coords.latitude,
         longitude: coords.longitude,
         precision: coords.precision,

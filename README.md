@@ -119,7 +119,7 @@ venue: {
 }
 ```
 
-Coordinates are stored, never geocoded at runtime. Use `precision: "city"` when only the municipality is known; the map draws those pins differently.
+Coordinates are stored, never geocoded at runtime. Use `precision: "city"` when only the municipality is known; the map draws those pins differently. Pins show a monogram derived from `shortName`/`name`; nearby pins are clustered client-side (`src/components/map/TeamMap.tsx`) and the list beside the map is synced with hover/selection.
 
 ### Add an article
 
@@ -136,6 +136,10 @@ Content: fill the `en` key of each `LocalizedString` and add `"en"` to the artic
 ### Partners (Road to Annapolis)
 
 `src/data/road/index.ts` → `partners`. A partner renders **only** when `confirmed: true`, and every partner must carry a `disclosure`. Do not flip the flag without a written agreement.
+
+## Outreach and deployment
+
+`docs/outreach/` holds the Spanish and English templates for contacting clubs and travel partners, with a suggested contact order. `docs/DEPLOY.md` is the Vercel/Search Console checklist.
 
 ## Images and rights
 

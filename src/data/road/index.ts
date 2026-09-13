@@ -41,7 +41,8 @@ export const roadChapters: RoadChapter[] = [
       es: "Dónde y cómo se juega hoy en el área de Barcelona, y por qué esta ciudad es una de las cunas del deporte en España.",
       en: "Where and how the game is played today around Barcelona, and why the city is one of the sport's cradles in Spain.",
     },
-    status: "researching",
+    status: "published",
+    articleSlug: "football-en-barcelona",
   },
   {
     number: 2,
