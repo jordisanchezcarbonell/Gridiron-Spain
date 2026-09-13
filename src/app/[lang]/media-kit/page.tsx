@@ -6,6 +6,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { site } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PrintButton } from "@/components/ui/PrintButton";
+import { roadProposal } from "@/data/road/proposal";
 
 const copy = {
   es: {
@@ -18,14 +19,13 @@ const copy = {
     coverItems: ["Football español", "Football europeo", "NCAA", "Cultura del football", "Viajes"],
     current: "Proyecto actual",
     currentText:
-      "Barcelona → Annapolis. Dos aficionados europeos viajan en octubre de 2026 a su primer partido de college football: Navy Football en Annapolis. La serie documenta el antes, el viaje y el partido.",
+      "Barcelona → Annapolis. Dos aficionados europeos preparan un viaje para vivir Navy Football en octubre de 2026. Entradas, viaje y colaboración no están confirmados.",
     deliverables: "Entregables",
     deliverableItems: ["Vídeo vertical (60–90 s)", "Fotografía", "Artículos bilingües (ES/EN)", "Contenido para redes", "UGC reutilizable bajo condiciones acordadas"],
     opportunities: "Oportunidades de colaboración",
     opportunityItems: ["Alojamiento", "Viaje", "Game day", "Restauración", "Conectividad (eSIM)", "Equipamiento / ropa"],
     metrics: "Audiencia",
-    metricsNote:
-      "Todavía no publicamos métricas. Este espacio se completará con datos reales (seguidores, visualizaciones, engagement, demografía) cuando existan.",
+    metricsNote: "Gridiron Spain acaba de lanzarse. Compartiremos métricas únicamente cuando existan datos reales y útiles.",
     principles: "Principios",
     principleItems: [
       "Contenido patrocinado siempre identificado.",
@@ -46,14 +46,13 @@ const copy = {
     coverItems: ["Spanish football", "European football", "NCAA", "Football culture", "Travel"],
     current: "Current project",
     currentText:
-      "Barcelona → Annapolis. Two European fans travel in October 2026 to their first college football game: Navy Football in Annapolis. The series documents the build-up, the trip and the game.",
+      "Barcelona → Annapolis. Two European fans are planning a trip to experience Navy Football in October 2026. Tickets, travel and collaboration are not confirmed.",
     deliverables: "Deliverables",
     deliverableItems: ["Vertical video (60–90 s)", "Photography", "Bilingual editorial (ES/EN)", "Social content", "UGC reusable under agreed terms"],
     opportunities: "Partnership opportunities",
     opportunityItems: ["Accommodation", "Travel", "Game day", "Food", "Connectivity (eSIM)", "Apparel / equipment"],
     metrics: "Audience",
-    metricsNote:
-      "We do not publish metrics yet. This space will be filled with real data (followers, views, engagement, demographics) once it exists.",
+    metricsNote: "Gridiron Spain has just launched. We will share metrics only when real, useful data exists.",
     principles: "Principles",
     principleItems: [
       "Sponsored content is always labelled.",
@@ -102,7 +101,8 @@ export default async function MediaKitPage({ params }: PageProps<"/[lang]/media-
           <p className="text-paper-2">{c.currentText}</p>
         </Block>
         <Block title={c.deliverables}>
-          <List items={c.deliverableItems} />
+          <List items={roadProposal.deliverables.map((item) => item.title[locale] ?? "")} />
+          <p className="mt-3 text-xs leading-relaxed text-muted">{roadProposal.terms[locale]}</p>
         </Block>
         <Block title={c.opportunities}>
           <Tags items={c.opportunityItems} />
@@ -111,19 +111,12 @@ export default async function MediaKitPage({ params }: PageProps<"/[lang]/media-
           <List items={c.principleItems} />
         </Block>
         <Block title={c.metrics}>
-          <div className="grid grid-cols-2 gap-3">
-            {["Followers", "Views", "Engagement", "Demographics"].map((m) => (
-              <div key={m} className="rounded-sm border border-dashed border-line-strong p-3">
-                <p className="font-mono text-[0.62rem] uppercase tracking-[0.14em] text-muted-2">{m}</p>
-                <p className="font-display text-2xl font-black text-line-strong">—</p>
-              </div>
-            ))}
-          </div>
-          <p className="mt-3 text-xs text-muted">{c.metricsNote}</p>
+          <p className="text-sm leading-relaxed text-muted">{c.metricsNote}</p>
         </Block>
         <Block title={c.contact}>
           <p className="font-display text-2xl font-extrabold uppercase text-paper">{site.author.name}</p>
           <p className="text-muted">{site.author.city}</p>
+          <a href={`mailto:${roadProposal.contact.email}?subject=${encodeURIComponent("Gridiron Spain — Navy Football collaboration")}`} className="mt-2 block text-gold underline underline-offset-4">{roadProposal.contact.email}</a>
           <a href={site.author.url} className="text-gold" rel="noopener noreferrer">
             jordisanchezweb.es
           </a>

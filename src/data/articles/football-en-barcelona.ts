@@ -5,8 +5,8 @@ export const footballEnBarcelona: Article = {
   slug: "football-en-barcelona",
   title: { es: "Football en Barcelona: dónde y cómo se juega hoy", en: "Football in Barcelona: where and how it is played today" },
   subtitle: {
-    es: "Capítulo 1 de Road to Annapolis. Antes de cruzar el Atlántico, un mapa honesto del fútbol americano que ya existe en casa.",
-    en: "Chapter 1 of Road to Annapolis. Before crossing the Atlantic, an honest map of the American football that already exists at home.",
+    es: "Introducción a Road to Annapolis. Antes de cruzar el Atlántico, un mapa honesto del fútbol americano que ya existe en casa.",
+    en: "An introduction to Road to Annapolis. Before crossing the Atlantic, an honest map of the American football that already exists at home.",
   },
   excerpt: {
     es: "Nueve clubes en el área de Barcelona, tres en la máxima categoría, el club más laureado de España y el equipo femenino más dominante. Cataluña es donde empezó todo, y donde más se juega.",
@@ -89,8 +89,8 @@ export const footballEnBarcelona: Article = {
       type: "callout",
       title: { es: "Por qué importa para el viaje", en: "Why it matters for the trip" },
       text: {
-        es: "Vamos a Annapolis con esta referencia en la cabeza: campos municipales, voluntarios y unos cientos de espectadores. Lo que veamos allí lo compararemos con esto, no con la NFL.",
-        en: "We travel to Annapolis with this reference in mind: municipal pitches, volunteers and a few hundred spectators. Whatever we see there will be compared with this, not with the NFL.",
+        es: "Preparamos Annapolis con esta referencia en la cabeza: campos municipales, voluntarios y unos cientos de espectadores. Si el viaje se confirma, compararemos lo que veamos allí con esto, no con la NFL.",
+        en: "We are planning Annapolis with this reference in mind: municipal pitches, volunteers and a few hundred spectators. If the trip is confirmed, we will compare what we see there with this, not with the NFL.",
       },
     },
   ],

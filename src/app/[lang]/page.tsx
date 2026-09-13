@@ -86,7 +86,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
             </ButtonLink>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
-            <Stat label={locale === "es" ? "equipos documentados" : "documented teams"} value={String(teams.length)} hint={`${activeCount} ${dict.status.active.toLowerCase()}`} />
+            <Stat label={locale === "es" ? "equipos documentados" : "documented teams"} value={String(teams.length)} hint={`${activeCount} ${dict.teams.activeCount}`} />
             <Stat label={dict.teams.community} value={String(communities)} />
             <Stat label={dict.nav.stories} value={String(articles.length)} />
             <Stat label="1987 → 2026" value={locale === "es" ? "4 décadas" : "4 decades"} />

@@ -45,7 +45,7 @@ export const en: Dictionary = {
     roadKicker: "Special series",
     roadTitle: "From Barcelona to Annapolis",
     roadSub:
-      "Two European fans travel to their first college football game. Navy Football, autumn 2026.",
+      "Two European fans are planning a trip to their first college football game. Navy Football, autumn 2026.",
     roadCta: "Follow the journey",
     nearYouTitle: "Want to play or watch football near you?",
     nearYouSub:
@@ -71,6 +71,7 @@ export const en: Dictionary = {
     competition: "Competition",
     reset: "Clear filters",
     results: "teams",
+    activeCount: "active teams",
     noResults: "No team matches these filters.",
     city: "City",
     founded: "Founded",
@@ -230,7 +231,7 @@ export const en: Dictionary = {
   road: {
     kicker: "Road to Annapolis · Series 01",
     title: "From Barcelona to Annapolis",
-    sub: "Two Europeans discovering Navy Football and American college football culture for the first time.",
+    sub: "An editorial proposal in planning to tell the Navy Football experience from two European fans' perspective.",
     theStory: "The story",
     whyNavy: "Why Navy?",
     theJourney: "The journey",

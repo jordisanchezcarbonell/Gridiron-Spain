@@ -3,14 +3,14 @@ import type { Article } from "@/types";
 export const whyAnnapolis: Article = {
   id: "por-que-viajamos-de-barcelona-a-annapolis",
   slug: "por-que-viajamos-de-barcelona-a-annapolis",
-  title: { es: "Por qué viajamos de Barcelona a Annapolis", en: "Why we are travelling from Barcelona to Annapolis" },
+  title: { es: "Por qué preparamos un viaje de Barcelona a Annapolis", en: "Why we are planning a trip from Barcelona to Annapolis" },
   subtitle: {
     es: "Dos aficionados, un partido de Navy Football y un proyecto que quiere documentar el football desde España.",
     en: "Two fans, a Navy Football game and a project that wants to document football from Spain.",
   },
   excerpt: {
-    es: "El primer capítulo de Road to Annapolis: qué buscamos en un partido de college football, por qué Navy y cómo lo estamos preparando.",
-    en: "The first chapter of Road to Annapolis: what we are looking for in a college football game, why Navy and how we are preparing it.",
+    es: "Una introducción a Road to Annapolis: qué buscamos en un partido de college football, por qué Navy y cómo lo estamos preparando.",
+    en: "An introduction to Road to Annapolis: what we are looking for in a college football game, why Navy and how we are preparing it.",
   },
   authorId: "jordi-sanchez",
   category: "road-to-annapolis",
@@ -29,8 +29,8 @@ export const whyAnnapolis: Article = {
     {
       type: "paragraph",
       text: {
-        es: "El 24 de octubre de 2026, a las 15:30 hora del este, Navy recibe a North Texas en el Navy-Marine Corps Memorial Stadium de Annapolis. Es el partido de Homecoming de la Academia Naval. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]] Nosotros estaremos allí, y será nuestro primer partido de college football.",
-        en: "On 24 October 2026, at 3:30 PM Eastern, Navy hosts North Texas at Navy-Marine Corps Memorial Stadium in Annapolis. It is the Naval Academy's Homecoming game. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]] We will be there, and it will be our first college football game.",
+        es: "El 24 de octubre de 2026, a las 15:30 hora del este, Navy recibe a North Texas en el Navy-Marine Corps Memorial Stadium de Annapolis. Es el partido de Homecoming de la Academia Naval. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]] Estamos preparando la asistencia a nuestro primer partido de college football; las entradas y el viaje aún no están confirmados.",
+        en: "On 24 October 2026, at 3:30 PM Eastern, Navy hosts North Texas at Navy-Marine Corps Memorial Stadium in Annapolis. It is the Naval Academy's Homecoming game. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]] We are planning to attend our first college football game; tickets and travel are not yet confirmed.",
       },
     },
     {

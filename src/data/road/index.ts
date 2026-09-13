@@ -190,16 +190,16 @@ export const roadCopy: {
 } = {
   story: [
     {
-      es: "Gridiron Spain nació preparando un viaje. Dos aficionados de Barcelona, que llevan años siguiendo la NFL y la NCAA desde la distancia, decidieron que en otoño de 2026 vivirían por primera vez un partido de college football en un estadio universitario estadounidense.",
-      en: "Gridiron Spain was born while planning a trip. Two fans from Barcelona, who have followed the NFL and the NCAA from a distance for years, decided that in autumn 2026 they would experience a college football game in an American university stadium for the first time.",
+      es: "Gridiron Spain nació preparando un viaje. Dos aficionados de Barcelona, que llevan años siguiendo la NFL y la NCAA desde la distancia, preparan la posibilidad de vivir por primera vez un partido de college football en un estadio universitario estadounidense en otoño de 2026.",
+      en: "Gridiron Spain was born while planning a trip. Two fans from Barcelona, who have followed the NFL and the NCAA from a distance for years, are preparing the possibility of experiencing a college football game in an American university stadium for the first time in autumn 2026.",
     },
     {
       es: "Al documentar el viaje nos dimos cuenta de que la historia empezaba mucho antes, en casa. El fútbol americano se juega en España desde los años ochenta y, sin embargo, apenas existe un archivo que lo cuente con rigor. Este proyecto quiere ser ese archivo, y Road to Annapolis es su primera gran serie: mirar la cultura del football estadounidense desde dentro para entender mejor la nuestra.",
       en: "While documenting the trip we realised the story started much earlier, at home. American football has been played in Spain since the 1980s and yet there is barely an archive that tells it rigorously. This project wants to be that archive, and Road to Annapolis is its first big series: looking at American football culture from the inside to better understand our own.",
     },
     {
-      es: "No somos periodistas acreditados ni tenemos una gran audiencia. Somos un proyecto independiente que gana legitimidad con la calidad de lo que publica: fuentes verificables, contenido bilingüe y una mirada europea sobre un deporte que viaja muy bien.",
-      en: "We are not accredited journalists and we do not have a large audience. We are an independent project that earns legitimacy through the quality of what it publishes: verifiable sources, bilingual content and a European perspective on a sport that travels well.",
+      es: "Gridiron Spain es un proyecto editorial independiente recién lanzado por Jordi Sánchez, desarrollador web y aficionado al fútbol americano desde Barcelona. Está preparando este viaje con otro aficionado, con fuentes verificables, contenido bilingüe y una mirada europea sobre el deporte.",
+      en: "Gridiron Spain is a newly launched independent editorial project by Jordi Sánchez, a web developer and American football fan from Barcelona. He is preparing this trip with another fan, with verifiable sources, bilingual content and a European perspective on the game.",
     },
   ],
   whyNavy: [
@@ -226,8 +226,8 @@ export const roadCopy: {
       en: "Barcelona and Annapolis are roughly 6,445 kilometres apart as the crow flies. There is no direct flight: arrival will be through the Washington area, with three possible international airports (BWI, Dulles and Reagan National). [[src:visit-annapolis-airports]] BWI, in Anne Arundel County itself, is about 30 minutes from Annapolis. [[src:bwi-annapolis]]",
     },
     {
-      es: "Fechas previstas: del 23 al 25 de octubre de 2026, dos personas. Publicaremos el presupuesto real del viaje, qué funcionó y qué no, para que sirva a cualquiera que quiera hacer lo mismo desde España.",
-      en: "Planned dates: 23 to 25 October 2026, two people. We will publish the real budget of the trip, what worked and what did not, so that it is useful to anyone wanting to do the same from Spain.",
+      es: "Fechas previstas: del 23 al 25 de octubre de 2026, dos personas. Son fechas de planificación: el viaje y las entradas no están reservados ni confirmados. Si se realiza, publicaremos el presupuesto real, qué funcionó y qué no, para que sirva a cualquiera que quiera hacer lo mismo desde España.",
+      en: "Planned dates: 23 to 25 October 2026, two people. These are planning dates: travel and tickets are neither booked nor confirmed. If it takes place, we will publish the real budget, what worked and what did not, so it can help anyone wanting to do the same from Spain.",
     },
   ],
   gameNote: {

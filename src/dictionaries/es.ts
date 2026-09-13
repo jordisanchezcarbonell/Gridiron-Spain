@@ -43,7 +43,7 @@ export const es = {
     roadKicker: "Serie especial",
     roadTitle: "From Barcelona to Annapolis",
     roadSub:
-      "Dos aficionados europeos viajan por primera vez a un partido de college football. Navy Football, otoño de 2026.",
+      "Dos aficionados europeos preparan un viaje a su primer partido de college football. Navy Football, otoño de 2026.",
     roadCta: "Seguir el viaje",
     nearYouTitle: "¿Quieres jugar o ver football cerca de ti?",
     nearYouSub:
@@ -69,6 +69,7 @@ export const es = {
     competition: "Competición",
     reset: "Limpiar filtros",
     results: "equipos",
+    activeCount: "equipos activos",
     noResults: "Ningún equipo coincide con estos filtros.",
     city: "Ciudad",
     founded: "Fundación",
@@ -228,7 +229,7 @@ export const es = {
   road: {
     kicker: "Road to Annapolis · Serie 01",
     title: "From Barcelona to Annapolis",
-    sub: "Dos europeos descubren Navy Football y la cultura del college football por primera vez.",
+    sub: "Una propuesta editorial en preparación para contar Navy Football desde la perspectiva de dos aficionados europeos.",
     theStory: "La historia",
     whyNavy: "¿Por qué Navy?",
     theJourney: "El viaje",
