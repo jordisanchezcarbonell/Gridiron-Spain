@@ -194,8 +194,8 @@ export const roadCopy: {
       en: "Gridiron Spain was born while planning a trip. Two fans from Barcelona, who have followed the NFL and the NCAA from a distance for years, are preparing the possibility of experiencing a college football game in an American university stadium for the first time in autumn 2026.",
     },
     {
-      es: "Al documentar el viaje nos dimos cuenta de que la historia empezaba mucho antes, en casa. El fútbol americano se juega en España desde los años ochenta y, sin embargo, apenas existe un archivo que lo cuente con rigor. Este proyecto quiere ser ese archivo, y Road to Annapolis es su primera gran serie: mirar la cultura del football estadounidense desde dentro para entender mejor la nuestra.",
-      en: "While documenting the trip we realised the story started much earlier, at home. American football has been played in Spain since the 1980s and yet there is barely an archive that tells it rigorously. This project wants to be that archive, and Road to Annapolis is its first big series: looking at American football culture from the inside to better understand our own.",
+      es: "Al documentar el viaje nos dimos cuenta de que la historia empezaba mucho antes, en casa. El fútbol americano se juega en España desde los años ochenta, y queremos reunir y hacer accesible esa historia. Road to Annapolis es nuestra primera serie especial: mirar la cultura del football estadounidense desde dentro para entender mejor la nuestra.",
+      en: "While documenting the trip we realised the story started much earlier, at home. American football has been played in Spain since the 1980s, and we want to bring that history together and make it accessible. Road to Annapolis is our first special series: looking at American football culture from the inside to better understand our own.",
     },
     {
       es: "Gridiron Spain es un proyecto editorial independiente recién lanzado por Jordi Sánchez, desarrollador web y aficionado al fútbol americano desde Barcelona. Está preparando este viaje con otro aficionado, con fuentes verificables, contenido bilingüe y una mirada europea sobre el deporte.",

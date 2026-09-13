@@ -241,7 +241,7 @@ export const en: Dictionary = {
     articles: "Articles",
     partners: "Partners",
     partnersEmpty:
-      "No confirmed partners yet. A brand will only appear here once a real agreement exists, with its disclosure.",
+      "No confirmed partners yet. We only show brands with a real agreement and clearly explain the collaboration.",
     partnerCta: "Want to work with the project?",
     mediaKit: "See media kit",
     distance: "Approximate distance",

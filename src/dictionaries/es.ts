@@ -239,7 +239,7 @@ export const es = {
     articles: "Artículos",
     partners: "Partners",
     partnersEmpty:
-      "Todavía no hay partners confirmados. Solo aparecerá aquí una marca cuando exista un acuerdo real, y con su correspondiente disclosure.",
+      "Todavía no hay partners confirmados. Solo mostraremos marcas con las que exista un acuerdo real e indicaremos claramente en qué consiste la colaboración.",
     partnerCta: "¿Quieres colaborar con el proyecto?",
     mediaKit: "Ver media kit",
     distance: "Distancia aproximada",
