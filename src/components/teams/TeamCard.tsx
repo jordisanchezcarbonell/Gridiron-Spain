@@ -42,17 +42,16 @@ export function TeamCard({
         </p>
       </div>
       <p className="line-clamp-3 text-sm text-paper-2">{t(team.summary, locale)}</p>
-      <div className="mt-auto flex flex-wrap gap-1.5 pt-2">
-        <Badge tone={team.status === "active" ? "turf" : "outline"}>{dict.status[team.status]}</Badge>
-        {team.disciplines.map((d) => (
-          <Badge key={d}>{dict.discipline[d]}</Badge>
-        ))}
-        {current.slice(0, 1).map((c) => (
-          <Badge key={c.id} tone="gold">
-            {c.shortName ?? c.name}
-          </Badge>
-        ))}
+      <div className="mt-auto grid gap-2 border-t border-line pt-3">
+        <CardMeta label={dict.teams.status}><Badge tone={team.status === "active" ? "turf" : "outline"}>{dict.status[team.status]}</Badge></CardMeta>
+        <CardMeta label={dict.teams.discipline}>{team.disciplines.map((d) => <Badge key={d}>{dict.discipline[d]}</Badge>)}</CardMeta>
+        {team.categories.length > 0 && <CardMeta label={dict.teams.category}>{team.categories.map((category) => <Badge key={category} tone="outline">{dict.category[category]}</Badge>)}</CardMeta>}
+        {current.slice(0, 1).map((c) => <CardMeta key={c.id} label={dict.teams.competition}><Badge tone="gold">{c.shortName ?? c.name}</Badge></CardMeta>)}
       </div>
     </Link>
   );
+}
+
+function CardMeta({ label, children }: { label: string; children: React.ReactNode }) {
+  return <div className="flex flex-wrap items-center gap-1.5"><span className="w-20 font-mono text-[0.62rem] uppercase tracking-[0.12em] text-muted-2">{label}</span>{children}</div>;
 }

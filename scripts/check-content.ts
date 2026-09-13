@@ -12,6 +12,8 @@ import { competitions } from "../src/data/competitions";
 import { timeline } from "../src/data/timeline";
 import { sources } from "../src/data/sources";
 import { partners, gameFacts, roadCopy } from "../src/data/road";
+import { eras, finals } from "../src/data/history";
+import { seasons } from "../src/data/seasons";
 
 const sourceIds = new Set(sources.map((s) => s.id));
 const errors: string[] = [];
@@ -108,13 +110,37 @@ for (const key of ["story", "whyNavy", "journey"] as const) {
     checkCitations(`road:${key}`, p.en, roadCopy.sourceIds);
   }
 }
+for (const era of eras) {
+  checkIds(`era:${era.id}`, era.sourceIds);
+  for (const p of era.paragraphs) {
+    checkCitations(`era:${era.id}`, p.es, era.sourceIds);
+    checkCitations(`era:${era.id}`, p.en, era.sourceIds);
+  }
+}
+for (const f of finals) {
+  const owner = `final:${f.competitionId}-${f.year}`;
+  checkIds(owner, f.sourceIds);
+  if (!competitionIds.has(f.competitionId)) errors.push(`${owner}: unknown competition`);
+  for (const side of [f.champion, f.runnerUp]) {
+    if (side?.teamId && !teams.some((t) => t.id === side.teamId)) errors.push(`${owner}: unknown team "${side.teamId}"`);
+  }
+  if (!f.champion && !f.note) errors.push(`${owner}: no champion and no note`);
+}
+for (const season of seasons) {
+  const owner = `season:${season.id}`;
+  checkIds(owner, season.sourceIds);
+  if (!competitionIds.has(season.competitionId)) errors.push(`${owner}: unknown competition`);
+  for (const g of season.groups) for (const e of g.entries) {
+    if (e.teamId && !teams.some((t) => t.id === e.teamId)) errors.push(`${owner}: unknown team "${e.teamId}"`);
+  }
+}
 for (const p of partners) {
   if (p.confirmed && !p.disclosure.es) errors.push(`partner:${p.id}: confirmed without disclosure`);
 }
 
 for (const w of warnings) console.warn(`⚠ ${w}`);
 for (const e of errors) console.error(`✖ ${e}`);
-console.log(`\n${teams.length} teams · ${articles.length} articles · ${competitions.length} competitions · ${timeline.length} timeline events · ${sources.length} sources`);
+console.log(`\n${teams.length} teams · ${articles.length} articles · ${competitions.length} competitions · ${timeline.length} timeline events · ${finals.length} finals · ${seasons.length} seasons · ${sources.length} sources`);
 if (errors.length) {
   console.error(`\n${errors.length} error(s)`);
   process.exit(1);

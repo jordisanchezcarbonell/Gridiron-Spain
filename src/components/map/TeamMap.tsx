@@ -16,6 +16,8 @@ export type TeamMapLabels = {
   cityLevel: string;
   clusterHint: string;
   status: Record<MapPin["status"], string>;
+  loading: string;
+  mapError: string;
 };
 
 type Cluster = { key: string; pins: MapPin[]; latitude: number; longitude: number };
@@ -224,7 +226,9 @@ export function TeamMap({
   onSelect?: (id: string | null) => void;
   onHover?: (id: string | null) => void;
 }) {
+  const [tilesFailed, setTilesFailed] = useState(false);
   return (
+    <div className="relative">
     <MapContainer
       center={SPAIN_CENTER}
       zoom={6}
@@ -236,7 +240,7 @@ export function TeamMap({
       style={{ height, width: "100%" }}
       className={`rounded-card border border-line ${USING_OSM ? "map-osm" : ""}`}
     >
-      <TileLayer attribution={TILE_ATTRIBUTION} url={TILE_URL} maxZoom={19} />
+      <TileLayer attribution={TILE_ATTRIBUTION} url={TILE_URL} maxZoom={19} eventHandlers={{ tileerror: () => setTilesFailed(true) }} />
       <FitBounds pins={pins} />
       <FlyToSelected pins={pins} selectedId={selectedId} />
       <Markers
@@ -248,5 +252,7 @@ export function TeamMap({
         onHover={onHover}
       />
     </MapContainer>
+    {tilesFailed && <p role="status" className="absolute left-3 top-3 z-[500] max-w-xs rounded-sm border border-amber/50 bg-ink/95 px-3 py-2 text-sm text-paper-2 shadow-card">{labels.mapError}</p>}
+    </div>
   );
 }

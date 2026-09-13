@@ -68,10 +68,10 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       {/* HERO */}
       <section className="grain relative overflow-hidden border-b border-line">
         <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-50" />
-        <div className="container-content relative py-20 md:py-32">
+        <div className="container-content relative py-16 md:py-24">
           <p className="kicker mb-5 animate-rise">{dict.home.kicker}</p>
           <h1 className="display display-lg max-w-5xl animate-rise [animation-delay:60ms]">{dict.home.heroTitle}</h1>
-          <p className="mt-6 max-w-2xl text-lg text-paper-2 animate-rise [animation-delay:120ms] md:text-xl">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-2 animate-rise [animation-delay:120ms] md:text-xl">
             {dict.home.heroSub}
           </p>
           <div className="mt-10 flex flex-wrap gap-3 animate-rise [animation-delay:180ms]">
@@ -85,8 +85,8 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
               {dict.nav.guide} →
             </ButtonLink>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4">
-            <Stat label={dict.nav.teams} value={String(teams.length)} hint={`${activeCount} ${dict.status.active.toLowerCase()}`} />
+          <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
+            <Stat label={locale === "es" ? "equipos documentados" : "documented teams"} value={String(teams.length)} hint={`${activeCount} ${dict.status.active.toLowerCase()}`} />
             <Stat label={dict.teams.community} value={String(communities)} />
             <Stat label={dict.nav.stories} value={String(articles.length)} />
             <Stat label="1987 → 2026" value={locale === "es" ? "4 décadas" : "4 decades"} />
@@ -129,13 +129,13 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           sub={dict.home.mapSub}
           cta={{ href: href(locale, "map"), label: dict.home.openMap }}
         />
-        <div className="relative">
+        <div className="relative rounded-card bg-ink-2 p-1 shadow-card">
           <TeamMapLoader
             lazy
             pins={pins}
             interactive={false}
-            height="26rem"
-            labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status }}
+            height="clamp(22rem, 48vw, 32rem)"
+            labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status, loading: dict.map.loading, mapError: dict.map.mapError }}
           />
           <ButtonLink href={href(locale, "map")} className="absolute bottom-4 right-4 z-[400]">
             {dict.home.openMap}

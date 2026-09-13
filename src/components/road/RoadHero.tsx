@@ -29,6 +29,18 @@ export function RoadHero({ stops, locale, dict }: { stops: RoadStop[]; locale: L
             to Annapolis
           </h1>
           <p className="mt-6 max-w-xl text-lg text-paper-2 md:text-xl">{dict.road.sub}</p>
+          <dl className="mt-8 grid gap-3 sm:grid-cols-3">
+            {[
+              [dict.road.who, dict.road.whoValue],
+              [dict.road.plannedDates, dict.road.plannedDatesValue],
+              [dict.road.purpose, dict.road.purposeValue],
+            ].map(([term, value]) => (
+              <div key={term} className="border-l-2 border-gold/70 pl-3">
+                <dt className="font-mono text-[0.62rem] uppercase tracking-[0.12em] text-muted-2">{term}</dt>
+                <dd className="mt-1 text-sm font-medium leading-snug text-paper-2">{value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
 
         <ol className="relative flex flex-col gap-0 font-mono text-xs uppercase tracking-[0.14em] text-muted md:pt-4" aria-label="Route">

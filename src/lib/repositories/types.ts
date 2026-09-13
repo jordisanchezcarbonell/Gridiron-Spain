@@ -1,6 +1,8 @@
 import type {
   Article,
   Competition,
+  Era,
+  Final,
   Partner,
   Season,
   Source,
@@ -39,6 +41,8 @@ export interface ContentRepository {
 
   // History
   getTimeline(): Promise<TimelineEvent[]>;
+  getEras(): Promise<Era[]>;
+  getFinals(competitionId?: string): Promise<Final[]>;
 
   // Partners (Road to Annapolis)
   getConfirmedPartners(): Promise<Partner[]>;

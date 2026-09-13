@@ -69,7 +69,7 @@ export function RegionPage({
             lazy
             pins={pins}
             height="24rem"
-            labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status }}
+            labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status, loading: dict.map.loading, mapError: dict.map.mapError }}
           />
         )}
 

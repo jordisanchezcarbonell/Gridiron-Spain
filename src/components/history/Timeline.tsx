@@ -91,8 +91,10 @@ export function TimelineItem({
       <h4 className="mt-2 font-display text-xl font-bold uppercase leading-tight text-paper">
         {t(event.title, locale)}
       </h4>
-      {!compact && <p className="mt-2 text-sm text-paper-2">{t(event.description, locale)}</p>}
-      {!compact && (related.length > 0 || event.relatedArticleSlug || eventSources.length > 0) && (
+      {!compact && <details className="mt-3">
+        <summary className="cursor-pointer font-mono text-[0.68rem] uppercase tracking-[0.12em] text-gold">{dict.history.expandDetails}</summary>
+        <p className="mt-2 text-sm text-paper-2">{t(event.description, locale)}</p>
+      {(related.length > 0 || event.relatedArticleSlug || eventSources.length > 0) && (
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[0.68rem] uppercase tracking-[0.12em]">
           {related.map((team) => (
             <Link key={team.id} href={href(locale, "teams", team.slug)} className="text-gold hover:text-gold-2">
@@ -123,6 +125,7 @@ export function TimelineItem({
           )}
         </div>
       )}
+      </details>}
     </li>
   );
 }

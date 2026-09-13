@@ -40,8 +40,8 @@ export function ArticleCard({
               priority
             />
           ) : (
-            <div className="absolute inset-0 grid place-items-center">
-              <span className="display display-md text-line-strong">GS</span>
+          <div className="absolute inset-0 grid place-items-end p-6">
+            <span className="display display-md text-line-strong">{dict.categories[article.category]}</span>
             </div>
           )}
         </div>
@@ -84,8 +84,8 @@ export function ArticleCard({
             className="object-cover"
           />
         ) : (
-          <div className="absolute inset-0 grid place-items-center">
-            <span className="font-display text-5xl font-black uppercase text-line-strong">
+          <div className="absolute inset-0 grid place-items-end p-5">
+            <span className="font-display text-4xl font-black uppercase leading-none text-line-strong sm:text-5xl">
               {dict.categories[article.category]}
             </span>
           </div>

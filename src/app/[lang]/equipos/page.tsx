@@ -38,7 +38,8 @@ export default async function TeamsPage({ params }: PageProps<"/[lang]/equipos">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.teams }]} />
           <h1 className="display display-md">{dict.teams.title}</h1>
           <p className="mt-5 max-w-2xl text-lg text-paper-2">{dict.teams.intro}</p>
-          <p className="mt-3 max-w-2xl text-sm text-muted">{dict.verification.explain}</p>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{dict.teams.directoryNote}</p>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{dict.verification.explain}</p>
         </div>
       </section>
       <div className="container-content flex flex-col gap-8 py-12">

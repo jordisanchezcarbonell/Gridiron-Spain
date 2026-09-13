@@ -7,31 +7,22 @@ import type { MapPin } from "./map-data";
 import { TeamMapLoader } from "./TeamMapLoader";
 import { cx } from "@/lib/utils";
 
-type Quick = "all" | Discipline | "women" | "youth";
-
 type Filters = {
-  quick: Quick;
+  discipline: Discipline | "all";
+  category: TeamCategory | "all";
   competition: string | "all";
   community: string | "all";
   historical: boolean;
   query: string;
 };
 
-const initial: Filters = { quick: "all", competition: "all", community: "all", historical: false, query: "" };
+const initial: Filters = { discipline: "all", category: "all", competition: "all", community: "all", historical: false, query: "" };
 
 function normalize(value: string) {
   return value
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "")
     .toLowerCase();
-}
-
-function matchesQuick(pin: MapPin, quick: Quick) {
-  if (quick === "all") return true;
-  if (quick === "tackle" || quick === "flag") return pin.disciplines.includes(quick);
-  if (quick === "women") return pin.categories.includes("senior-women");
-  const youth: TeamCategory[] = ["junior", "youth"];
-  return pin.categories.some((c) => youth.includes(c));
 }
 
 export function MapExplorer({
@@ -46,6 +37,7 @@ export function MapExplorer({
   const [filters, setFilters] = useState<Filters>(initial);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [mobileView, setMobileView] = useState<"list" | "map">("list");
 
   const communities = useMemo(() => Array.from(new Set(pins.map((p) => p.community))).sort(), [pins]);
   const usedCompetitions = useMemo(() => {
@@ -57,7 +49,8 @@ export function MapExplorer({
     const q = normalize(filters.query.trim());
     return pins
       .filter((p) => {
-        if (!matchesQuick(p, filters.quick)) return false;
+        if (filters.discipline !== "all" && !p.disciplines.includes(filters.discipline)) return false;
+        if (filters.category !== "all" && !p.categories.includes(filters.category)) return false;
         if (filters.competition !== "all" && !p.competitionIds.includes(filters.competition)) return false;
         if (filters.community !== "all" && p.community !== filters.community) return false;
         if (!filters.historical && p.status !== "active") return false;
@@ -78,15 +71,14 @@ export function MapExplorer({
     cityLevel: dict.map.legendCity,
     clusterHint: dict.map.clusterHint,
     status: dict.status,
+    loading: dict.map.loading,
+    mapError: dict.map.mapError,
   };
 
-  const quickChips: Array<{ key: Quick; label: string }> = [
-    { key: "all", label: dict.teams.all },
-    { key: "tackle", label: dict.discipline.tackle },
-    { key: "flag", label: dict.discipline.flag },
-    { key: "women", label: dict.map.women },
-    { key: "youth", label: dict.map.youth },
-  ];
+  const categories = useMemo(
+    () => Array.from(new Set(pins.flatMap((pin) => pin.categories))),
+    [pins],
+  );
 
   const selectClass =
     "h-9 rounded-sm border border-line-strong bg-surface px-3 text-sm text-paper focus:border-gold";
@@ -113,13 +105,14 @@ export function MapExplorer({
             className="w-full bg-transparent text-sm text-paper placeholder:text-muted-2 focus:outline-none"
           />
         </label>
-        <div role="group" aria-label={dict.teams.discipline} className="flex flex-wrap gap-2">
-          {quickChips.map((chip) => (
-            <Chip key={chip.key} active={filters.quick === chip.key} onClick={() => set("quick", chip.key)}>
-              {chip.label}
-            </Chip>
-          ))}
-        </div>
+        <label className="sr-only" htmlFor="map-discipline">{dict.teams.discipline}</label>
+        <select id="map-discipline" className={selectClass} value={filters.discipline} onChange={(e) => set("discipline", e.target.value as Filters["discipline"])}>
+          <option value="all">{dict.teams.discipline}</option><option value="tackle">{dict.discipline.tackle}</option><option value="flag">{dict.discipline.flag}</option>
+        </select>
+        <label className="sr-only" htmlFor="map-category">{dict.teams.category}</label>
+        <select id="map-category" className={selectClass} value={filters.category} onChange={(e) => set("category", e.target.value as Filters["category"])}>
+          <option value="all">{dict.teams.category}</option>{categories.map((category) => <option key={category} value={category}>{dict.category[category]}</option>)}
+        </select>
         <label className="sr-only" htmlFor="map-competition">
           {dict.teams.competition}
         </label>
@@ -146,10 +139,16 @@ export function MapExplorer({
           {dict.map.historical}
         </Chip>
       </form>
+      <p className="text-sm leading-relaxed text-muted">{dict.map.inactiveNote}</p>
+
+      <div className="flex gap-2 lg:hidden" role="group" aria-label={dict.map.title}>
+        <Chip active={mobileView === "list"} onClick={() => setMobileView("list")}>{dict.map.viewList}</Chip>
+        <Chip active={mobileView === "map"} onClick={() => setMobileView("map")}>{dict.map.viewMap}</Chip>
+      </div>
 
       {/* Explorer: map first on mobile, list + map on desktop */}
       <div className="grid gap-5 lg:grid-cols-[380px_minmax(0,1fr)]">
-        <div className="relative order-1 lg:order-2">
+        <div className={cx("relative order-1 lg:order-2", mobileView !== "map" && "hidden lg:block")}>
           <TeamMapLoader
             pins={filtered}
             labels={labels}
@@ -172,7 +171,7 @@ export function MapExplorer({
           </ul>
         </div>
 
-        <div className="card order-2 flex flex-col overflow-hidden lg:order-1" style={{ maxHeight: "clamp(24rem, 62vh, 44rem)" }}>
+        <div className={cx("card order-2 flex flex-col overflow-hidden lg:order-1", mobileView !== "list" && "hidden lg:flex")} style={{ maxHeight: "clamp(24rem, 62vh, 44rem)" }}>
           <div className="flex items-center justify-between border-b border-line bg-ink-2 px-4 py-3">
             <p className="font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted" aria-live="polite">
               {filtered.length} {dict.map.listHeader}

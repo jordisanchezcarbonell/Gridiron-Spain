@@ -172,7 +172,7 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
                 pins={pins}
                 height="16rem"
                 interactive={false}
-                labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status }}
+                labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status, loading: dict.map.loading, mapError: dict.map.mapError }}
               />
               <Link href={href(locale, "map")} className="mt-2 inline-block font-mono text-xs uppercase tracking-[0.14em] text-gold hover:text-gold-2">
                 {dict.teams.onMap} →

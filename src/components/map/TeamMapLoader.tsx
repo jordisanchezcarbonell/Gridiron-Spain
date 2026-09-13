@@ -14,11 +14,11 @@ const TeamMap = dynamic(() => import("./TeamMap").then((m) => m.TeamMap), {
   loading: () => <MapSkeleton />,
 });
 
-function MapSkeleton({ height = "70vh" }: { height?: string }) {
+function MapSkeleton({ height = "70vh", label = "Loading map…" }: { height?: string; label?: string }) {
   return (
     <div
       role="status"
-      aria-label="…"
+      aria-label={label}
       className="grid w-full place-items-center rounded-card border border-line bg-ink-2 yardlines text-sm text-muted"
       style={{ height }}
     />
@@ -46,5 +46,5 @@ export function TeamMapLoader({ lazy = false, ...props }: Props) {
     return () => observer.disconnect();
   }, [ready]);
 
-  return <div ref={ref}>{ready ? <TeamMap {...props} /> : <MapSkeleton height={props.height} />}</div>;
+  return <div ref={ref}>{ready ? <TeamMap {...props} /> : <MapSkeleton height={props.height} label={props.labels.loading} />}</div>;
 }

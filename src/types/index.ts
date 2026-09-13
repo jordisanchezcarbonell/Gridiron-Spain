@@ -6,3 +6,4 @@ export * from "./timeline";
 export * from "./road";
 export * from "./interview";
 export * from "./season";
+export * from "./history";
