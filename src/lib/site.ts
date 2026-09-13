@@ -1,7 +1,21 @@
+/**
+ * Resolve the public base URL, in order of preference:
+ * 1. NEXT_PUBLIC_SITE_URL (set this once a real domain exists)
+ * 2. Vercel's production URL (VERCEL_PROJECT_PRODUCTION_URL, no scheme)
+ * 3. localhost for development
+ */
+function resolveSiteUrl(): string {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (explicit) return explicit.replace(/\/$/, "");
+  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+  if (vercel) return `https://${vercel}`;
+  return "http://localhost:3000";
+}
+
 /** Global site configuration. Values that change per deployment live in env. */
 export const site = {
   name: "Gridiron Spain",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: resolveSiteUrl(),
   author: {
     name: "Jordi Sánchez",
     city: "Barcelona, Spain",
