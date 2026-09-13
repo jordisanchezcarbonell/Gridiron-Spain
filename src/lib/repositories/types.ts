@@ -1,0 +1,39 @@
+import type {
+  Article,
+  Competition,
+  Partner,
+  Source,
+  Team,
+  TimelineEvent,
+} from "@/types";
+
+/**
+ * The single contract the UI depends on.
+ * Implementations: LocalContentRepository (MVP) -> PayloadRepository (later).
+ */
+export interface ContentRepository {
+  // Teams
+  getTeams(): Promise<Team[]>;
+  getTeamBySlug(slug: string): Promise<Team | null>;
+  getTeamsByIds(ids: string[]): Promise<Team[]>;
+
+  // Competitions
+  getCompetitions(): Promise<Competition[]>;
+  getCompetitionBySlug(slug: string): Promise<Competition | null>;
+  getCompetitionsByIds(ids: string[]): Promise<Competition[]>;
+
+  // Articles
+  getArticles(options?: { includeDrafts?: boolean }): Promise<Article[]>;
+  getArticleBySlug(slug: string): Promise<Article | null>;
+  getArticlesByTeam(teamId: string): Promise<Article[]>;
+  getArticlesByCategory(category: Article["category"]): Promise<Article[]>;
+
+  // Sources
+  getSourcesByIds(ids: string[]): Promise<Source[]>;
+
+  // History
+  getTimeline(): Promise<TimelineEvent[]>;
+
+  // Partners (Road to Annapolis)
+  getConfirmedPartners(): Promise<Partner[]>;
+}
