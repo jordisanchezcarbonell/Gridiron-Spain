@@ -29,10 +29,11 @@ function entry(
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const repo = getRepository();
-  const [teams, articles, competitions] = await Promise.all([
+  const [teams, articles, competitions, seasons] = await Promise.all([
     repo.getTeams(),
     repo.getArticles(),
     repo.getCompetitions(),
+    repo.getSeasons(),
   ]);
   const all = [...locales];
   const reviewed = site.contentReviewedAt;
@@ -46,6 +47,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entry("competitions", [], all, reviewed, 0.7, "monthly"),
     ...entry("roadToAnnapolis", [], all, reviewed, 0.9, "weekly"),
     ...entry("nearYou", [], all, reviewed, 0.8, "monthly"),
+    ...entry("guide", [], all, reviewed, 0.8, "monthly"),
+    ...seasons.flatMap((season) => {
+      const competition = competitions.find((c) => c.id === season.competitionId);
+      return competition ? entry("competitions", [competition.slug, season.slug], all, season.lastVerifiedAt ?? reviewed, 0.7, "weekly") : [];
+    }),
     ...entry("about", [], all, reviewed, 0.5, "yearly"),
     ...Array.from(new Set(teams.map((team) => team.autonomousCommunity))).flatMap((c) =>
       entry("teams", [regionSlug(c)], all, reviewed, 0.8, "monthly"),

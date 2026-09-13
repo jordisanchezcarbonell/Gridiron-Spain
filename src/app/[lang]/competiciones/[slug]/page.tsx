@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -42,11 +43,12 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
   const competition = await repo.getCompetitionBySlug(slug);
   if (!competition) notFound();
 
-  const [teams, competitions, sources, articles] = await Promise.all([
+  const [teams, competitions, sources, articles, seasons] = await Promise.all([
     repo.getTeams(),
     repo.getCompetitions(),
     repo.getSourcesByIds(competition.sourceIds),
     repo.getArticles(),
+    repo.getSeasonsByCompetition(competition.id),
   ]);
   const participants = teams.filter((team) => team.currentCompetitions.some((c) => c.competitionId === competition.id));
   const related = articles.filter((a) => a.relatedCompetitionIds.includes(competition.id));
@@ -85,6 +87,26 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
 
       <div className="container-content grid gap-12 py-12 lg:grid-cols-[1fr_20rem]">
         <div className="min-w-0">
+          {seasons.length > 0 && (
+            <section className="mb-14">
+              <h2 className="display display-sm mb-6">{dict.season.seasons}</h2>
+              <ul className="grid gap-4 sm:grid-cols-2">
+                {seasons.map((season) => (
+                  <li key={season.id}>
+                    <Link href={href(locale, "competitions", competition.slug, season.slug)} className="card card-hover group flex h-full flex-col gap-3 p-5">
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="font-display text-3xl font-black text-paper group-hover:text-gold">{season.slug}</span>
+                        <Badge tone={season.status === "completed" ? "outline" : "turf"}>
+                          {{ upcoming: dict.season.upcoming, "in-progress": dict.season.inProgress, completed: dict.season.completed }[season.status]}
+                        </Badge>
+                      </div>
+                      <p className="line-clamp-3 text-sm text-muted">{t(season.summary, locale)}</p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
           {participants.length > 0 && (
             <section>
               <h2 className="display display-sm mb-6">{dict.competitions.teamsIn}</h2>

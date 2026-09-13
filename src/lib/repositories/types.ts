@@ -2,6 +2,7 @@ import type {
   Article,
   Competition,
   Partner,
+  Season,
   Source,
   Team,
   TimelineEvent,
@@ -27,6 +28,11 @@ export interface ContentRepository {
   getArticleBySlug(slug: string): Promise<Article | null>;
   getArticlesByTeam(teamId: string): Promise<Article[]>;
   getArticlesByCategory(category: Article["category"]): Promise<Article[]>;
+
+  // Seasons
+  getSeasonsByCompetition(competitionId: string): Promise<Season[]>;
+  getSeason(competitionId: string, slug: string): Promise<Season | null>;
+  getSeasons(): Promise<Season[]>;
 
   // Sources
   getSourcesByIds(ids: string[]): Promise<Source[]>;

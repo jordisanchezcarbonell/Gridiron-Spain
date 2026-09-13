@@ -54,6 +54,10 @@ export function buildMetadata(args: BuildMetadataArgs): Metadata {
     alternates: {
       canonical: absoluteUrl(canonicalPath),
       languages,
+      types: {
+        "application/rss+xml": absoluteUrl(`/${locale}/feed.xml`),
+        "application/feed+json": absoluteUrl(`/${locale}/feed.json`),
+      },
     },
     openGraph: {
       type,

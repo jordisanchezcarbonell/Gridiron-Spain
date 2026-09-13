@@ -14,7 +14,9 @@ Working name: **Gridiron Spain** (not final). Alternatives under consideration: 
 - **Long-form stories** with a source list on every piece (`/articulos`, `/en/stories`)
 - **Find your team** by city or geolocation (`/cerca-de-ti`, `/en/near-you`), backed by an offline gazetteer in `src/data/geo/spain-places.ts`
 - **Region pages** (`/equipos/cataluna`, `/en/teams/madrid`, …) generated from each team's `autonomousCommunity`
-- **Competitions** explained (`/competiciones`, `/en/competitions`)
+- **Competitions** explained (`/competiciones`, `/en/competitions`) with **season pages** (`/competiciones/lnfa/2026-27`) from `src/data/seasons`
+- **Beginner's guide** and glossary (`/guia`, `/en/guide`), with FAQ structured data
+- **RSS and JSON feeds** per language (`/es/feed.xml`, `/en/feed.json`)
 - **Road to Annapolis**, the first international series (`/road-to-annapolis`)
 - About and media kit pages
 
@@ -126,6 +128,10 @@ Coordinates are stored, never geocoded at runtime. Use `precision: "city"` when 
 ### Add an article
 
 Create `src/data/articles/<slug>.ts` exporting an `Article`, then register it in `src/data/articles/index.ts`. Content is a list of typed blocks (`heading`, `paragraph`, `list`, `quote`, `callout`, `image`, `placeholder`). Use a `placeholder` block for any section still under research. Set `availableLocales` honestly: a slug only gets `hreflang`/sitemap entries for the locales listed. `status: "draft"` hides it; `"researching"` publishes it with a visible badge.
+
+### Add a season
+
+`src/data/seasons/index.ts`. A `Season` belongs to a competition (`competitionId`), has a URL `slug` (e.g. `2026-27`), groups with entries (use `teamId` for documented teams or `name` for ones without a profile), phases with dates, optional champion/runner-up, and `sourceIds`. Season pages are generated at `/competiciones/<competition>/<season>`.
 
 ### Add a competition or timeline event
 

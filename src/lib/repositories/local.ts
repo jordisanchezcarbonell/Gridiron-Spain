@@ -1,11 +1,12 @@
 import type { ContentRepository } from "./types";
-import type { Article, Competition, Partner, Source, Team, TimelineEvent } from "@/types";
+import type { Article, Competition, Partner, Season, Source, Team, TimelineEvent } from "@/types";
 import { teams } from "@/data/teams";
 import { competitions } from "@/data/competitions";
 import { articles } from "@/data/articles";
 import { sources } from "@/data/sources";
 import { timeline } from "@/data/timeline";
 import { partners } from "@/data/road";
+import { seasons } from "@/data/seasons";
 
 /**
  * MVP repository backed by TypeScript data files in src/data.
@@ -60,6 +61,18 @@ export class LocalContentRepository implements ContentRepository {
   async getArticlesByCategory(category: Article["category"]): Promise<Article[]> {
     const all = await this.getArticles();
     return all.filter((a) => a.category === category);
+  }
+
+  async getSeasonsByCompetition(competitionId: string): Promise<Season[]> {
+    return seasons.filter((s) => s.competitionId === competitionId).sort((a, b) => b.slug.localeCompare(a.slug));
+  }
+
+  async getSeason(competitionId: string, slug: string): Promise<Season | null> {
+    return seasons.find((s) => s.competitionId === competitionId && s.slug === slug) ?? null;
+  }
+
+  async getSeasons(): Promise<Season[]> {
+    return [...seasons];
   }
 
   async getSourcesByIds(ids: string[]): Promise<Source[]> {

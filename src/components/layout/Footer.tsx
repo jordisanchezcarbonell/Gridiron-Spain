@@ -11,6 +11,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     { href: href(locale, "teams"), label: dict.nav.teams },
     { href: href(locale, "map"), label: dict.nav.map },
     { href: href(locale, "nearYou"), label: dict.nav.nearYou },
+    { href: href(locale, "guide"), label: dict.nav.guide },
     { href: href(locale, "articles"), label: dict.nav.stories },
     { href: href(locale, "competitions"), label: dict.nav.competitions },
   ];
@@ -40,6 +41,15 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               </a>
             </li>
             <li className="text-muted">{site.author.city}</li>
+            <li className="pt-2 font-mono text-[0.68rem] uppercase tracking-[0.14em]">
+              <a href={`/${locale}/feed.xml`} className="text-muted hover:text-gold">
+                {dict.feed.rss}
+              </a>
+              <span className="text-muted-2"> · </span>
+              <a href={`/${locale}/feed.json`} className="text-muted hover:text-gold">
+                {dict.feed.json}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

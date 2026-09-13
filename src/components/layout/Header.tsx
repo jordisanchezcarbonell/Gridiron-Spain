@@ -50,6 +50,8 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <MobileNav
             items={[
               ...items,
+              { href: href(locale, "guide"), label: dict.nav.guide },
+              { href: href(locale, "nearYou"), label: dict.nav.nearYou },
               { href: href(locale, "about"), label: dict.nav.about },
               { href: href(locale, "mediaKit"), label: dict.nav.mediaKit },
             ]}

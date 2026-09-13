@@ -82,6 +82,9 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
             <ButtonLink href={href(locale, "history")} variant="secondary" size="lg">
               {dict.home.ctaHistory}
             </ButtonLink>
+            <ButtonLink href={href(locale, "guide")} variant="ghost" size="lg">
+              {dict.nav.guide} →
+            </ButtonLink>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4">
             <Stat label={dict.nav.teams} value={String(teams.length)} hint={`${activeCount} ${dict.status.active.toLowerCase()}`} />

@@ -39,6 +39,12 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
     applicationName: site.name,
     authors: [{ name: site.author.name, url: site.author.url }],
     creator: site.author.name,
+    alternates: {
+      types: {
+        "application/rss+xml": `${site.url}/${lang}/feed.xml`,
+        "application/feed+json": `${site.url}/${lang}/feed.json`,
+      },
+    },
     openGraph: { siteName: site.name, type: "website", locale: localeTags[lang].replace("-", "_") },
     twitter: { card: "summary_large_image" },
     robots: { index: true, follow: true },
