@@ -5,6 +5,9 @@ import type { Dictionary } from "@/dictionaries/es";
 import { t } from "@/lib/i18n/text";
 import { splitCitations } from "@/lib/content/citations";
 import { Placeholder } from "@/components/ui/Placeholder";
+import { ScoreCard } from "@/components/articles/ScoreCard";
+import { ComebackTimeline } from "@/components/articles/ComebackTimeline";
+import { StatHighlight } from "@/components/articles/StatHighlight";
 
 /** Renders a paragraph with inline citation links. */
 export function RichText({ text, sources }: { text: string; sources: Source[] }) {
@@ -104,6 +107,21 @@ export function ArticleBody({
                 )}
               </figure>
             );
+          case "score":
+            return <ScoreCard key={i} {...block} status={t(block.status, locale)} />;
+          case "timeline":
+            return (
+              <ComebackTimeline
+                key={i}
+                items={block.items.map((item) => ({
+                  score: item.score,
+                  time: item.time ? t(item.time, locale) : undefined,
+                  description: item.description ? t(item.description, locale) : undefined,
+                }))}
+              />
+            );
+          case "stat-highlight":
+            return <StatHighlight key={i} from={block.from} to={block.to} text={t(block.text, locale)} />;
           case "placeholder":
             return (
               <Placeholder

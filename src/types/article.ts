@@ -27,6 +27,30 @@ export type ContentBlock =
   | { type: "callout"; title?: LocalizedString; text: LocalizedString }
   | { type: "image"; media: Media; caption?: LocalizedString }
   | {
+      type: "score";
+      teamA: string;
+      teamB: string;
+      scoreA: string | number;
+      scoreB: string | number;
+      status: LocalizedString;
+      logoA?: Media;
+      logoB?: Media;
+    }
+  | {
+      type: "timeline";
+      items: Array<{
+        score: string;
+        time?: LocalizedString;
+        description?: LocalizedString;
+      }>;
+    }
+  | {
+      type: "stat-highlight";
+      from: string;
+      to: string;
+      text: LocalizedString;
+    }
+  | {
       /** Section still under research. Rendered as an honest placeholder. */
       type: "placeholder";
       topic: LocalizedString;
@@ -49,6 +73,8 @@ export type Article = {
   excerpt: LocalizedString;
 
   heroImage?: Media;
+  /** Localized editorial note shown when the selected hero image is still pending. */
+  heroImagePending?: LocalizedString;
 
   authorId: string;
   category: ArticleCategory;

@@ -37,9 +37,6 @@ export function ShareButtons({
       <a className={linkClass} href={`https://x.com/intent/tweet?url=${encoded}&text=${text}`} target="_blank" rel="noopener noreferrer">
         X
       </a>
-      <a className={linkClass} href={`https://www.facebook.com/sharer/sharer.php?u=${encoded}`} target="_blank" rel="noopener noreferrer">
-        Facebook
-      </a>
       <a className={linkClass} href={`https://wa.me/?text=${text}%20${encoded}`} target="_blank" rel="noopener noreferrer">
         WhatsApp
       </a>
