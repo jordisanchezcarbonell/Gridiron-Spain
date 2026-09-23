@@ -139,6 +139,7 @@ export const es = {
     copied: "Enlace copiado",
     related: "Historias relacionadas",
     relatedTeams: "Equipos relacionados",
+    onThisPage: "En esta página",
     accessed: "consultado el",
   },
   categories: {
