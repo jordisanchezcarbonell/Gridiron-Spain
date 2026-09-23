@@ -7,6 +7,7 @@ import { madridBravos } from "./madrid-bravos";
 import { collegeFootball } from "./college-football";
 import { whyAnnapolis } from "./why-annapolis";
 import { footballEnBarcelona } from "./football-en-barcelona";
+import { texasOhioState } from "./texas-ohio-state";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -21,4 +22,5 @@ export const articles: Article[] = [
   collegeFootball,
   whyAnnapolis,
   footballEnBarcelona,
+  texasOhioState,
 ];
