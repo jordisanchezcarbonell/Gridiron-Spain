@@ -19,6 +19,7 @@ import { SourceList } from "@/components/articles/SourceList";
 import { ShareButtons } from "@/components/articles/ShareButtons";
 import { TeamLogo } from "@/components/teams/TeamLogo";
 import { Placeholder } from "@/components/ui/Placeholder";
+import { ArticleToc } from "@/components/articles/ArticleToc";
 
 export async function generateStaticParams() {
   const articles = await getRepository().getArticles();
@@ -66,6 +67,7 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
     { name: dict.nav.stories, href: href(locale, "articles") },
     { name: t(article.title, locale) },
   ];
+  const tocItems = article.content.flatMap((block, index) => block.type === "heading" && block.level === 2 ? [{ id: block.id ?? `section-${index}`, text: t(block.text, locale) }] : []);
 
   return (
     <>
@@ -89,6 +91,7 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
               : "La versión en español de esta historia está prevista. A continuación, el original en inglés."}
           />
         )}
+        <ArticleToc items={tocItems} title={dict.articles.onThisPage} />
         <ArticleBody blocks={article.content} sources={sources} locale={locale} dict={dict} />
 
         {relatedTeams.length > 0 && (

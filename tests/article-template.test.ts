@@ -13,5 +13,7 @@ test("the Texas comeback editorial is registered with reusable score and timelin
   assert.ok(article.heroImage, "Expected a licensed hero image");
   assert.equal(article.heroImage.photographer, "audreyhs17");
   assert.equal(article.heroImage.license, "CC BY 2.0");
+  assert.ok(article.sourceIds.includes("texas-ohio-state-2026-texas"));
+  assert.ok(article.content.some((block) => block.type === "image"));
   assert.deepEqual(article.availableLocales, ["es", "en"]);
 });

@@ -45,7 +45,7 @@ export function ArticleBody({
           case "heading": {
             const Tag = block.level === 2 ? "h2" : "h3";
             return (
-              <Tag key={i} id={block.id}>
+              <Tag key={i} id={block.id ?? `section-${i}`}>
                 {t(block.text, locale)}
               </Tag>
             );
