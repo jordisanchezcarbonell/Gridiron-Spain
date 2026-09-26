@@ -71,6 +71,11 @@ export type Article = {
   title: LocalizedString;
   subtitle?: LocalizedString;
   excerpt: LocalizedString;
+  /** Optional search-specific copy; title and excerpt remain the visible editorial copy. */
+  seo?: {
+    title: LocalizedString;
+    description: LocalizedString;
+  };
 
   heroImage?: Media;
   /** Localized editorial note shown when the selected hero image is still pending. */

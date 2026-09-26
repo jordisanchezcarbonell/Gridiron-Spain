@@ -4,6 +4,19 @@ const ACCESSED = "2026-09-12";
 
 export const navySources: Source[] = [
   {
+    id: "navy-1926-uniform-2026",
+    title: "Navy Football to Honor 1926 National Championship Team with Throwback-Inspired Uniform Against Notre Dame",
+    publisher: "Naval Academy Athletics",
+    url: "https://navysports.com/story.aspx?file_date=9%2F15%2F2026&filename=navy-football-to-honor-1926-national-championship-team-with-throwback-inspired-uniform-against-notre-dame",
+    publishedAt: "2026-09-15",
+    accessedAt: "2026-09-26",
+    sourceType: "official-document",
+    notes: {
+      es: "Anuncio del uniforme conmemorativo y relato oficial de la temporada de 1926.",
+      en: "Announcement of the commemorative uniform and the official account of the 1926 season.",
+    },
+  },
+  {
     id: "navy-schedule-2026",
     title: "2026 Football Schedule",
     publisher: "Naval Academy Athletics (navysports.com)",

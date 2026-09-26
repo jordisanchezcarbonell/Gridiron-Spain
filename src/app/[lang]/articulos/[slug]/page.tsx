@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/articulos/
   if (!article) return {};
   return buildMetadata({
     locale,
-    title: t(article.title, locale),
-    description: t(article.excerpt, locale),
+    title: t(article.seo?.title ?? article.title, locale),
+    description: t(article.seo?.description ?? article.excerpt, locale),
     routeKey: "articles",
     segments: [slug],
     availableLocales: article.availableLocales,
