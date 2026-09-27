@@ -40,6 +40,7 @@ test("the Week 4 roundup is registered as a visual NCAA article", () => {
   assert.equal(article.category, "ncaa");
   assert.ok(article.heroImage);
   assert.equal(article.heroImage.url, "/images/editorial/college-football-stadium.png");
-  assert.ok(article.content.some((block) => block.type === "image"));
+  assert.ok(!article.content.some((block) => block.type === "image"), "No unrelated image should stand in for a game");
+  assert.equal(article.status, "published");
   assert.ok(article.content.some((block) => block.type === "list"));
 });

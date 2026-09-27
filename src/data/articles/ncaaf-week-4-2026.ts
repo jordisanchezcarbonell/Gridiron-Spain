@@ -1,13 +1,5 @@
 import type { Article } from "@/types";
 
-const texasImage = {
-  url: "/images/texas-team-entrance-2007.jpg",
-  alt: { es: "Equipo de Texas entrando al campo antes de un partido.", en: "Texas entering the field before a game." },
-  photographer: "audreyhs17",
-  source: "https://commons.wikimedia.org/wiki/File:Texas_team_entrance_vs_KSU_2007.jpg",
-  license: "CC BY 2.0",
-};
-
 export const ncaafWeek4_2026: Article = {
   id: "ncaaf-week-4-2026", slug: "ncaaf-week-4-2026",
   title: { es: "NCAAF Week 4: caos en el Top 25 y varias sorpresas que cambian la temporada", en: "NCAAF Week 4: Top 25 chaos and surprises that change the season" },
@@ -22,14 +14,13 @@ export const ncaafWeek4_2026: Article = {
     license: "Uso editorial de Gridiron Spain",
   },
   authorId: "jordi-sanchez", category: "ncaa", tags: ["NCAA", "Week 4", "Top 25", "2026"], relatedTeamIds: [], relatedCompetitionIds: ["ncaa-fbs"], availableLocales: ["es", "en"],
-  publishedAt: "2026-09-27", updatedAt: "2026-09-27", status: "researching", verificationStatus: "partial", readingTimeMinutes: 8,
+  publishedAt: "2026-09-27", updatedAt: "2026-09-27", status: "published", verificationStatus: "partial", readingTimeMinutes: 8,
   sourceIds: ["week4-2026-florida", "week4-2026-wisconsin", "week4-2026-texas-am", "week4-2026-navy"],
   content: [
     { type: "paragraph", text: { es: "La cuarta semana fue una de las primeras pruebas serias para el Top 25 de 2026: Florida tumbó a Ole Miss, Wisconsin remontó a Penn State y varios equipos clasificados dejaron dudas. El resultado no fue una lista plana de marcadores, sino una jornada que cambió el tono de varias temporadas.", en: "Week 4 was one of the first serious tests for the 2026 Top 25: Florida knocked off Ole Miss, Wisconsin rallied past Penn State and several ranked teams were left with questions." } },
     { type: "heading", level: 2, text: { es: "Las grandes sorpresas de la semana", en: "The week’s biggest surprises" } },
     { type: "list", items: [{ es: "Florida #21 52 — Ole Miss #4 28", en: "Florida #21 52 — Ole Miss #4 28" }, { es: "Wisconsin 24 — Penn State #13 20", en: "Wisconsin 24 — Penn State #13 20" }, { es: "Wake Forest 30 — Louisville #16 27", en: "Wake Forest 30 — Louisville #16 27" }, { es: "Mississippi State #24 31 — Missouri #19 24", en: "Mississippi State #24 31 — Missouri #19 24" }] },
     { type: "heading", level: 2, text: { es: "Florida firma el gran golpe de la jornada", en: "Florida lands the week’s biggest blow" } },
-    { type: "image", media: { ...texasImage, alt: { es: "Ambiente de fútbol americano universitario antes de un partido.", en: "College football atmosphere before a game." } }, caption: { es: "Placeholder editorial: sustituir por una imagen propia o licenciada de Florida–Ole Miss.", en: "Editorial placeholder: replace with an owned or licensed Florida–Ole Miss image." } },
     { type: "paragraph", text: { es: "Florida, nº21, derrotó 52-28 a Ole Miss, nº4, y se mantuvo invicto. Jadan Baugh corrió 29 veces para 142 yardas y tres touchdowns; los Gators sumaron 498 yardas totales. [[src:week4-2026-florida]]", en: "No. 21 Florida beat No. 4 Ole Miss 52–28 to remain unbeaten. Jadan Baugh carried 29 times for 142 yards and three touchdowns as the Gators totaled 498 yards. [[src:week4-2026-florida]]" } },
     { type: "heading", level: 2, text: { es: "Wisconsin remonta a Penn State", en: "Wisconsin rallies past Penn State" } },
     { type: "paragraph", text: { es: "Wisconsin ganó 24-20 en Penn State tras entrar en el último tramo 20-10 abajo. El pase de 72 yardas de Colton Joseph a Jacob Harris, con 1:13 por jugar, completó la remontada. [[src:week4-2026-wisconsin]]", en: "Wisconsin won 24–20 at Penn State after trailing 20–10 late. Colton Joseph’s 72-yard pass to Jacob Harris with 1:13 left completed the comeback. [[src:week4-2026-wisconsin]]" } },
@@ -40,7 +31,6 @@ export const ncaafWeek4_2026: Article = {
     { type: "heading", level: 2, text: { es: "Noche complicada para Texas A&M en Baton Rouge", en: "A difficult night for Texas A&M in Baton Rouge" } },
     { type: "paragraph", text: { es: "LSU derrotó 35-6 a Texas A&M. Los Aggies fueron limitados a 197 yardas, mientras LSU sumó 506; el tercer cuarto rompió definitivamente el partido y A&M queda 2-2. [[src:week4-2026-texas-am]]", en: "LSU beat Texas A&M 35–6. The Aggies were held to 197 yards while LSU gained 506; the third quarter settled the game and A&M falls to 2–2. [[src:week4-2026-texas-am]]" } },
     { type: "heading", level: 2, text: { es: "Navy deja escapar el partido contra UAB", en: "Navy lets the game slip against UAB" } },
-    { type: "image", media: { ...texasImage, alt: { es: "Ambiente de fútbol americano universitario en un estadio.", en: "College football atmosphere in a stadium." } }, caption: { es: "Placeholder editorial: sustituir por una imagen propia o licenciada de Navy–UAB.", en: "Editorial placeholder: replace with an owned or licensed Navy–UAB image." } },
     { type: "paragraph", text: { es: "Navy perdió 24-20 ante UAB después de entrar 20-17 arriba en el último cuarto. Jackson Gutierrez, en su primera titularidad, corrió para 134 yardas y un touchdown; dos turnovers en el cuarto periodo resultaron decisivos. [[src:week4-2026-navy]]", en: "Navy lost 24–20 to UAB after entering the fourth quarter ahead 20–17. Jackson Gutierrez, making his first start, rushed for 134 yards and a touchdown; two fourth-quarter turnovers proved decisive. [[src:week4-2026-navy]]" } },
     { type: "paragraph", text: { es: "El siguiente foco será Navy @ Air Force, el 3 de octubre: un partido relevante dentro de la rivalidad de academias y del Commander-in-Chief’s Trophy. Gridiron Spain seguirá el camino hacia el Homecoming de Navy del 24 de octubre mediante Road to Annapolis.", en: "The next focus is Navy at Air Force on October 3: a meaningful game in the service-academy rivalry and the Commander-in-Chief’s Trophy. Gridiron Spain will follow the road to Navy’s October 24 Homecoming through Road to Annapolis." } },
     { type: "heading", level: 2, text: { es: "Lo que viene ahora", en: "What comes next" } },
