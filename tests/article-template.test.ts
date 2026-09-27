@@ -17,3 +17,12 @@ test("the Texas comeback editorial is registered with reusable score and timelin
   assert.ok(article.content.some((block) => block.type === "image"));
   assert.deepEqual(article.availableLocales, ["es", "en"]);
 });
+
+test("the Week 4 roundup is registered as a visual NCAA article", () => {
+  const article = articles.find((item) => item.slug === "ncaaf-week-4-2026");
+  assert.ok(article);
+  assert.equal(article.category, "ncaa");
+  assert.ok(article.heroImage);
+  assert.ok(article.content.some((block) => block.type === "image"));
+  assert.ok(article.content.some((block) => block.type === "list"));
+});
