@@ -9,6 +9,7 @@ import { whyAnnapolis } from "./why-annapolis";
 import { footballEnBarcelona } from "./football-en-barcelona";
 import { texasOhioState } from "./texas-ohio-state";
 import { navyUniforme1926 } from "./navy-uniforme-1926";
+import { ncaafWeek4_2026 } from "./ncaaf-week-4-2026";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -25,4 +26,5 @@ export const articles: Article[] = [
   footballEnBarcelona,
   texasOhioState,
   navyUniforme1926,
+  ncaafWeek4_2026,
 ];

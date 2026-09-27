@@ -33,3 +33,12 @@ test("the Navy 1926 uniform editorial is bilingual and uses the established edit
   assert.equal(article.heroImage, undefined, "Unlicensed press photography must not be published as the hero image");
   assert.ok(article.heroImagePending?.es.includes("pendiente"));
 });
+
+test("the Week 4 roundup is registered as a visual NCAA article", () => {
+  const article = articles.find((item) => item.slug === "ncaaf-week-4-2026");
+  assert.ok(article);
+  assert.equal(article.category, "ncaa");
+  assert.ok(article.heroImage);
+  assert.ok(article.content.some((block) => block.type === "image"));
+  assert.ok(article.content.some((block) => block.type === "list"));
+});
