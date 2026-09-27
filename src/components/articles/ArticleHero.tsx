@@ -16,6 +16,10 @@ export function ArticleHero({
   locale: Locale;
   dict: Dictionary;
 }) {
+  const heroImage = article.heroImage ?? {
+    url: "/images/editorial/college-football-stadium.png",
+    alt: { es: "Estadio de fútbol americano universitario al atardecer.", en: "College football stadium at dusk." },
+  };
   return (
     <header className="grain border-b border-line">
       <div className="container-content py-12 md:py-20">
@@ -45,23 +49,9 @@ export function ArticleHero({
             {article.readingTimeMinutes ? ` · ${article.readingTimeMinutes} ${dict.articles.readingTime}` : ""}
           </p>
         </div>
-        {(article.heroImage || article.heroImagePending) && (
-          <figure className="mx-auto mt-10 max-w-5xl">
+        <figure className="mx-auto mt-10 max-w-5xl">
             <div className="relative aspect-[16/9] overflow-hidden rounded-card border border-line bg-ink-2 yardlines">
-              {article.heroImage ? (
-                <Image
-                  src={article.heroImage.url}
-                  alt={t(article.heroImage.alt, locale)}
-                  fill
-                  sizes="(min-width: 1024px) 64rem, 100vw"
-                  className="object-cover"
-                  priority
-                />
-              ) : (
-                <div className="absolute inset-0 grid place-items-center p-6 text-center">
-                  <span className="kicker max-w-sm leading-relaxed text-muted">{t(article.heroImagePending!, locale)}</span>
-                </div>
-              )}
+              <Image src={heroImage.url} alt={t(heroImage.alt, locale)} fill sizes="(min-width: 1024px) 64rem, 100vw" className="object-cover" priority />
             </div>
             {article.heroImage && (article.heroImage.photographer || article.heroImage.license) && (
               <figcaption className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-muted-2">
@@ -69,8 +59,7 @@ export function ArticleHero({
                 {article.heroImage.license ? ` · ${article.heroImage.license}` : ""}
               </figcaption>
             )}
-          </figure>
-        )}
+        </figure>
       </div>
     </header>
   );

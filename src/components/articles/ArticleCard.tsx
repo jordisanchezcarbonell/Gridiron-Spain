@@ -23,26 +23,21 @@ export function ArticleCard({
 }) {
   const Heading = headingLevel;
   const url = href(locale, "articles", article.slug);
+  const heroImage = article.heroImage ?? { url: "/images/editorial/college-football-stadium.png", alt: { es: "Estadio de fútbol americano universitario.", en: "College football stadium." } };
   const untranslated = !article.availableLocales.includes(locale);
 
   if (variant === "featured") {
     return (
       <Link href={url} className="card card-hover group grid overflow-hidden md:grid-cols-[1.2fr_1fr]">
         <div className="relative min-h-64 bg-ink-2 yardlines">
-          {article.heroImage ? (
-            <Image
-              src={article.heroImage.url}
-              alt={t(article.heroImage.alt, locale)}
+          <Image
+              src={heroImage.url}
+              alt={t(heroImage.alt, locale)}
               fill
               sizes="(min-width: 768px) 55vw, 100vw"
               className="object-cover"
               priority
-            />
-          ) : (
-          <div className="absolute inset-0 grid place-items-end p-6">
-            <span className="display display-md text-line-strong">{dict.categories[article.category]}</span>
-            </div>
-          )}
+          />
         </div>
         <div className="flex flex-col gap-4 p-6 md:p-8">
           <div className="flex flex-wrap gap-2">
@@ -73,21 +68,13 @@ export function ArticleCard({
   return (
     <Link href={url} className={cx("card card-hover group flex h-full flex-col overflow-hidden")}>
       <div className="relative aspect-[16/9] bg-ink-2 yardlines">
-        {article.heroImage ? (
-          <Image
-            src={article.heroImage.url}
-            alt={t(article.heroImage.alt, locale)}
+        <Image
+            src={heroImage.url}
+            alt={t(heroImage.alt, locale)}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
             className="object-cover"
-          />
-        ) : (
-          <div className="absolute inset-0 grid place-items-end p-5">
-            <span className="font-display text-4xl font-black uppercase leading-none text-line-strong sm:text-5xl">
-              {dict.categories[article.category]}
-            </span>
-          </div>
-        )}
+        />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex flex-wrap gap-2">
