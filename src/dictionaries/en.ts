@@ -132,6 +132,7 @@ export const en: Dictionary = {
     sourcesIntro:
       "Links consulted for this piece. We record the access date because websites change.",
     researching: "In research",
+    pending: "Pending",
     researchingText:
       "This story is currently being researched. We are reviewing club records, federation archives and contemporary sources before publication.",
     pendingList: "Still to document:",

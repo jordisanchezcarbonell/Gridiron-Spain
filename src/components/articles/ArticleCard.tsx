@@ -23,7 +23,6 @@ export function ArticleCard({
 }) {
   const Heading = headingLevel;
   const url = href(locale, "articles", article.slug);
-  const researching = article.status === "researching";
   const untranslated = !article.availableLocales.includes(locale);
 
   if (variant === "featured") {
@@ -48,7 +47,6 @@ export function ArticleCard({
         <div className="flex flex-col gap-4 p-6 md:p-8">
           <div className="flex flex-wrap gap-2">
             <Badge tone="gold">{dict.categories[article.category]}</Badge>
-            {researching && <Badge tone="outline">{dict.articles.researching}</Badge>}
           </div>
           <Heading className="display display-sm group-hover:text-gold">{t(article.title, locale)}</Heading>
           {article.subtitle && <p className="text-lg text-paper-2">{t(article.subtitle, locale)}</p>}
@@ -94,7 +92,6 @@ export function ArticleCard({
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex flex-wrap gap-2">
           <Badge tone="gold">{dict.categories[article.category]}</Badge>
-          {researching && <Badge tone="outline">{dict.articles.researching}</Badge>}
         </div>
         <h3 className="font-display text-2xl font-extrabold uppercase leading-none text-paper group-hover:text-gold">
           {t(article.title, locale)}

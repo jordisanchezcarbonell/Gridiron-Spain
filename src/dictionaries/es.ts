@@ -130,6 +130,7 @@ export const es = {
     sourcesIntro:
       "Enlaces consultados para esta pieza. Indicamos la fecha de acceso porque las webs cambian.",
     researching: "En investigación",
+    pending: "Pendiente",
     researchingText:
       "Esta historia está en fase de investigación. Estamos revisando registros de clubes, archivos de la federación y fuentes de la época antes de publicarla.",
     pendingList: "Pendiente de documentar:",

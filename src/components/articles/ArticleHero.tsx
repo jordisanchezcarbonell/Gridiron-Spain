@@ -2,9 +2,8 @@ import Image from "next/image";
 import type { Locale } from "@/types/common";
 import type { Article, Author } from "@/types";
 import type { Dictionary } from "@/dictionaries/es";
-import { t, formatDate, formatMonthYear } from "@/lib/i18n/text";
+import { t, formatDate } from "@/lib/i18n/text";
 import { Badge } from "@/components/ui/Badge";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
 
 export function ArticleHero({
   article,
@@ -23,13 +22,6 @@ export function ArticleHero({
         <div className="mx-auto max-w-3xl">
           <div className="mb-5 flex flex-wrap items-center gap-2">
             <Badge tone="gold">{dict.categories[article.category]}</Badge>
-            {article.status === "researching" && <Badge tone="outline">{dict.articles.researching}</Badge>}
-            <VerificationBadge
-              status={article.verificationStatus}
-              label={dict.verification[article.verificationStatus]}
-              lastVerifiedLabel={dict.verification.lastVerified}
-              lastVerified={article.lastVerifiedAt ? formatMonthYear(article.lastVerifiedAt, locale) : undefined}
-            />
           </div>
           <h1 className="display display-md">{t(article.title, locale)}</h1>
           {article.subtitle && <p className="mt-5 text-xl text-paper-2 md:text-2xl">{t(article.subtitle, locale)}</p>}

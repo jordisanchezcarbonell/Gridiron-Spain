@@ -126,7 +126,7 @@ export function ArticleBody({
             return (
               <Placeholder
                 key={i}
-                title={`${dict.articles.researching} · ${t(block.topic, locale)}`}
+                title={`${dict.articles.pending} · ${t(block.topic, locale)}`}
                 text={dict.articles.researchingText}
                 pendingLabel={dict.articles.pendingList}
                 pending={block.pending?.map((p) => t(p, locale))}

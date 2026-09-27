@@ -24,7 +24,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
     kicker: dict.categories[article.category],
     title: t(article.title, locale),
     subtitle: article.subtitle ? truncate(t(article.subtitle, locale), 130) : undefined,
-    badges: article.status === "researching" ? [dict.articles.researching] : [],
+    badges: [],
     font,
   });
 }
