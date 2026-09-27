@@ -37,7 +37,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
     repo.getTimeline(),
   ]);
 
-  const featured = articles.find((a) => a.featured) ?? articles[0];
+  const featured = articles[0];
   const latest = articles.filter((a) => a.slug !== featured?.slug).slice(0, 3);
   const rank: Record<string, number> = { verified: 0, partial: 1, unverified: 2 };
   const showcaseTeams = teams
