@@ -4,7 +4,6 @@ import type { Team, TimelineEvent } from "@/types";
 import type { Dictionary } from "@/dictionaries/es";
 import { href } from "@/lib/i18n/routes";
 import { t } from "@/lib/i18n/text";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
 
 type Props = {
   events: TimelineEvent[];
@@ -84,10 +83,7 @@ export function TimelineItem({
         aria-hidden
         className="absolute -left-[calc(1.5rem+3px)] top-7 h-1.5 w-1.5 rounded-full bg-line-strong md:-left-[calc(2.5rem+3px)]"
       />
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <span className="font-display text-3xl font-black text-paper">{event.year}</span>
-        <VerificationBadge status={event.verificationStatus} label={dict.verification[event.verificationStatus]} />
-      </div>
+      <div className="flex flex-wrap items-center justify-between gap-2"><span className="font-display text-3xl font-black text-paper">{event.year}</span></div>
       <h4 className="mt-2 font-display text-xl font-bold uppercase leading-tight text-paper">
         {t(event.title, locale)}
       </h4>

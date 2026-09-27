@@ -115,7 +115,6 @@ export default async function HistoryPage({ params }: PageProps<"/[lang]/histori
           <div className="card p-6">
             <p className="kicker mb-3 text-muted-2">{dict.history.methodology}</p>
             <p className="text-sm text-paper-2">{dict.history.methodologyText}</p>
-            <p className="mt-3 text-xs text-muted">{dict.verification.explain}</p>
           </div>
         </section>
 

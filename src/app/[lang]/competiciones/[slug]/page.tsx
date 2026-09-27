@@ -7,11 +7,10 @@ import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
-import { t, formatMonthYear } from "@/lib/i18n/text";
+import { t } from "@/lib/i18n/text";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
 import { TeamCard } from "@/components/teams/TeamCard";
 import { SourceList } from "@/components/articles/SourceList";
 import { ArticleCard } from "@/components/articles/ArticleCard";
@@ -73,15 +72,6 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
           </div>
           <h1 className="display display-md mt-4">{competition.name}</h1>
           <p className="mt-4 max-w-2xl text-lg text-paper-2">{t(competition.description, locale)}</p>
-          <div className="mt-6">
-            <VerificationBadge
-              size="md"
-              status={competition.verificationStatus}
-              label={dict.verification[competition.verificationStatus]}
-              lastVerifiedLabel={dict.verification.lastVerified}
-              lastVerified={competition.lastVerifiedAt ? formatMonthYear(competition.lastVerifiedAt, locale) : undefined}
-            />
-          </div>
         </div>
       </section>
 

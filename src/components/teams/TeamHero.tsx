@@ -1,10 +1,9 @@
 import type { Locale } from "@/types/common";
 import type { Team } from "@/types";
 import type { Dictionary } from "@/dictionaries/es";
-import { t, formatMonthYear } from "@/lib/i18n/text";
+import { t } from "@/lib/i18n/text";
 import { TeamLogo } from "./TeamLogo";
 import { Badge } from "@/components/ui/Badge";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
 
 export function TeamHero({ team, locale, dict }: { team: Team; locale: Locale; dict: Dictionary }) {
   return (
@@ -30,15 +29,6 @@ export function TeamHero({ team, locale, dict }: { team: Team; locale: Locale; d
               ))}
             </div>
           </div>
-        </div>
-        <div className="shrink-0">
-          <VerificationBadge
-            size="md"
-            status={team.verificationStatus}
-            label={dict.verification[team.verificationStatus]}
-            lastVerifiedLabel={dict.verification.lastVerified}
-            lastVerified={team.lastVerifiedAt ? formatMonthYear(team.lastVerifiedAt, locale) : undefined}
-          />
         </div>
       </div>
     </section>

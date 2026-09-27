@@ -10,7 +10,6 @@ import { t } from "@/lib/i18n/text";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/competiciones">): Promise<Metadata> {
   const locale = resolveLocale((await params).lang);
@@ -56,10 +55,7 @@ export default async function CompetitionsPage({ params }: PageProps<"/[lang]/co
                 {group.items.map((c) => (
                   <li key={c.id}>
                     <Link href={href(locale, "competitions", c.slug)} className="card card-hover group flex h-full flex-col gap-3 p-5">
-                      <div className="flex items-start justify-between gap-3">
-                        <Badge tone="gold">{dict.levels[c.level]}</Badge>
-                        <VerificationBadge status={c.verificationStatus} label={dict.verification[c.verificationStatus]} />
-                      </div>
+                      <div className="flex items-start justify-between gap-3"><Badge tone="gold">{dict.levels[c.level]}</Badge></div>
                       <h3 className="font-display text-2xl font-extrabold uppercase leading-none text-paper group-hover:text-gold">
                         {c.name}
                       </h3>

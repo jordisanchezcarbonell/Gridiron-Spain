@@ -7,12 +7,11 @@ import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
-import { t, formatDate, formatMonthYear } from "@/lib/i18n/text";
+import { t, formatDate } from "@/lib/i18n/text";
 import type { SeasonEntry, Team } from "@/types";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
 import { TeamLogo } from "@/components/teams/TeamLogo";
 import { SourceList } from "@/components/articles/SourceList";
 
@@ -77,13 +76,6 @@ export default async function SeasonPage({ params }: PageProps<"/[lang]/competic
           <h1 className="display display-md mt-4">{t(season.name, locale)}</h1>
           <p className="mt-4 max-w-2xl text-lg text-paper-2">{t(season.summary, locale)}</p>
           <div className="mt-6 flex flex-wrap items-center gap-4">
-            <VerificationBadge
-              size="md"
-              status={season.verificationStatus}
-              label={dict.verification[season.verificationStatus]}
-              lastVerifiedLabel={dict.verification.lastVerified}
-              lastVerified={season.lastVerifiedAt ? formatMonthYear(season.lastVerifiedAt, locale) : undefined}
-            />
             {siblings.length > 1 && (
               <nav aria-label={dict.season.seasons} className="flex gap-2 font-mono text-[0.68rem] uppercase tracking-[0.14em]">
                 {siblings.map((s) => (
