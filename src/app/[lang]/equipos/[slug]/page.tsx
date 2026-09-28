@@ -11,7 +11,6 @@ import { t } from "@/lib/i18n/text";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Placeholder } from "@/components/ui/Placeholder";
-import { VerificationBadge } from "@/components/ui/VerificationBadge";
 import { TeamHero } from "@/components/teams/TeamHero";
 import { TeamMetadata } from "@/components/teams/TeamMetadata";
 import { ArticleCard } from "@/components/articles/ArticleCard";
@@ -128,7 +127,6 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
                       <span className="mr-3 font-display text-2xl font-black text-gold">{honour.year}</span>
                       <span className="text-paper">{t(honour.title, locale)}</span>
                     </span>
-                    <VerificationBadge status={honour.verificationStatus} label={dict.verification[honour.verificationStatus]} />
                   </li>
                 ))}
               </ul>
