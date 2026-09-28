@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { site } from "@/lib/site";
 
 export const OG_SIZE = { width: 1200, height: 630 };
 
@@ -88,11 +89,11 @@ export function ogImage({ kicker, title, subtitle, monogram, badges = [], font }
                 borderRadius: 6,
               }}
             >
-              GS
+              {site.brand.monogram}
             </div>
             <div style={{ display: "flex", fontSize: 28, fontWeight: 800, letterSpacing: 2, textTransform: "uppercase" }}>
-              <span>Gridiron</span>
-              <span style={{ color: "#d6a84b", marginLeft: 10 }}>Spain</span>
+              <span>{site.brand.primary}</span>
+              <span style={{ color: "#d6a84b", marginLeft: 10 }}>{site.brand.accent}</span>
             </div>
           </div>
           <div style={{ fontSize: 22, letterSpacing: 4, textTransform: "uppercase", color: "#d6a84b", fontFamily: "monospace" }}>{kicker}</div>

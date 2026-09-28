@@ -1,3 +1,5 @@
+import { site } from "@/lib/site";
+
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
     <span className={`flex items-center gap-2.5 ${className}`}>
@@ -5,10 +7,10 @@ export function Wordmark({ className = "" }: { className?: string }) {
         aria-hidden
         className="grid h-8 w-8 place-items-center rounded-sm bg-gold font-display text-lg font-black leading-none text-ink"
       >
-        GS
+        {site.brand.monogram}
       </span>
       <span className="font-display text-xl font-extrabold uppercase leading-none tracking-[0.04em] text-paper">
-        Gridiron<span className="text-gold"> Spain</span>
+        {site.brand.primary}<span className="text-gold"> {site.brand.accent}</span>
       </span>
     </span>
   );

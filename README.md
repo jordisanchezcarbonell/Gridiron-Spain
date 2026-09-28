@@ -1,10 +1,10 @@
-# Gridiron Spain
+# Primer Down
 
 Independent editorial project, historical archive, team directory and map of American football in Spain. Born in Barcelona.
 
-Working name: **Gridiron Spain** (not final). Alternatives under consideration: Endzone España, Fourth Down Spain, Huddle Spain, Spanish Gridiron.
+Brand name: **Primer Down**.
 
-> Gridiron Spain is an independent project and is not affiliated with the NFL, the NCAA, the Federación Española de Fútbol Americano (FEFA), the European League of Football or the teams featured, unless explicitly stated.
+> Primer Down is an independent project and is not affiliated with the NFL, the NCAA, the Federación Española de Fútbol Americano (FEFA), the European League of Football or the teams featured, unless explicitly stated.
 
 ## What it is
 
@@ -47,6 +47,7 @@ npm run build          # production build (all pages are prerendered)
 npm run typecheck      # tsc --noEmit
 npm run lint           # eslint
 npm run content:check  # editorial integrity: source ids, citations, slugs
+npm test               # editorial and brand regression tests
 ```
 
 Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_SITE_URL` for canonical URLs, sitemap and Open Graph in production.

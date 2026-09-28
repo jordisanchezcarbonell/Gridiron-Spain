@@ -190,16 +190,16 @@ export const roadCopy: {
 } = {
   story: [
     {
-      es: "Gridiron Spain nació preparando un viaje. Dos aficionados de Barcelona, que llevan años siguiendo la NFL y la NCAA desde la distancia, preparan la posibilidad de vivir por primera vez un partido de college football en un estadio universitario estadounidense en otoño de 2026.",
-      en: "Gridiron Spain was born while planning a trip. Two fans from Barcelona, who have followed the NFL and the NCAA from a distance for years, are preparing the possibility of experiencing a college football game in an American university stadium for the first time in autumn 2026.",
+      es: "Primer Down nació preparando un viaje. Dos aficionados de Barcelona, que llevan años siguiendo la NFL y la NCAA desde la distancia, preparan la posibilidad de vivir por primera vez un partido de college football en un estadio universitario estadounidense en otoño de 2026.",
+      en: "Primer Down was born while planning a trip. Two fans from Barcelona, who have followed the NFL and the NCAA from a distance for years, are preparing the possibility of experiencing a college football game in an American university stadium for the first time in autumn 2026.",
     },
     {
       es: "Al documentar el viaje nos dimos cuenta de que la historia empezaba mucho antes, en casa. El fútbol americano se juega en España desde los años ochenta, y queremos reunir y hacer accesible esa historia. Road to Annapolis es nuestra primera serie especial: mirar la cultura del football estadounidense desde dentro para entender mejor la nuestra.",
       en: "While documenting the trip we realised the story started much earlier, at home. American football has been played in Spain since the 1980s, and we want to bring that history together and make it accessible. Road to Annapolis is our first special series: looking at American football culture from the inside to better understand our own.",
     },
     {
-      es: "Gridiron Spain es un proyecto editorial independiente recién lanzado por Jordi Sánchez, desarrollador web y aficionado al fútbol americano desde Barcelona. Está preparando este viaje con otro aficionado, con fuentes verificables, contenido bilingüe y una mirada europea sobre el deporte.",
-      en: "Gridiron Spain is a newly launched independent editorial project by Jordi Sánchez, a web developer and American football fan from Barcelona. He is preparing this trip with another fan, with verifiable sources, bilingual content and a European perspective on the game.",
+      es: "Primer Down es un proyecto editorial independiente recién lanzado por Jordi Sánchez, desarrollador web y aficionado al fútbol americano desde Barcelona. Está preparando este viaje con otro aficionado, con fuentes verificables, contenido bilingüe y una mirada europea sobre el deporte.",
+      en: "Primer Down is a newly launched independent editorial project by Jordi Sánchez, a web developer and American football fan from Barcelona. He is preparing this trip with another fan, with verifiable sources, bilingual content and a European perspective on the game.",
     },
   ],
   whyNavy: [

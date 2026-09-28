@@ -5,7 +5,7 @@ import { regionFromSlug, regionName, regionSlug } from "@/lib/regions";
 import { monogramFor } from "@/components/map/map-data";
 import { loadDisplayFont, ogImage, OG_SIZE } from "@/lib/seo/og";
 
-export const alt = "Gridiron Spain";
+export const alt = "Primer Down";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 
@@ -35,7 +35,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   }
 
   const team = await repo.getTeamBySlug(slug);
-  if (!team) return ogImage({ kicker: dict.nav.teams, title: "Gridiron Spain", font });
+  if (!team) return ogImage({ kicker: dict.nav.teams, title: "Primer Down", font });
   const competitions = await repo.getCompetitionsByIds(team.currentCompetitions.map((c) => c.competitionId));
   const badges = [dict.status[team.status], ...competitions.slice(0, 1).map((c) => c.shortName ?? c.name), ...team.disciplines.map((d) => dict.discipline[d])];
   return ogImage({

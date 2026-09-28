@@ -152,10 +152,10 @@ export const navyUniforme1926: Article = {
     },
     {
       type: "callout",
-      title: { es: "En Gridiron Spain", en: "At Gridiron Spain" },
+      title: { es: "En Primer Down", en: "At Primer Down" },
       text: {
-        es: "Gridiron Spain estará en Annapolis una semana antes, el 24 de octubre, para cubrir el Homecoming de Navy ante North Texas. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]]",
-        en: "Gridiron Spain will be in Annapolis one week earlier, on 24 October, to cover Navy's Homecoming game against North Texas. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]]",
+        es: "Primer Down estará en Annapolis una semana antes, el 24 de octubre, para cubrir el Homecoming de Navy ante North Texas. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]]",
+        en: "Primer Down will be in Annapolis one week earlier, on 24 October, to cover Navy's Homecoming game against North Texas. [[src:navy-schedule-2026]] [[src:navy-schedule-release-2026]]",
       },
     },
   ],

@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# Gridiron Spain — working notes
+# Primer Down — working notes
 
 - Independent editorial/archive project about American football in Spain. Credibility first: never invent dates, titles, stadiums, people or stats. Anything unsourced is `verificationStatus: "unverified"` and rendered as a research placeholder.
 - Data lives in `src/data/*` (TypeScript). UI only talks to `src/lib/repositories` (swap for Payload/Postgres later).

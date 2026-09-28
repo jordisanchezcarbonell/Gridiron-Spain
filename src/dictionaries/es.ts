@@ -1,6 +1,6 @@
 export const es = {
   site: {
-    name: "Gridiron Spain",
+    name: "Primer Down",
     tagline: "El archivo digital del fútbol americano en España",
     description:
       "Equipos, historia, competiciones y cultura del fútbol americano en España. Un proyecto independiente nacido en Barcelona.",
@@ -316,7 +316,7 @@ export const es = {
   },
   footer: {
     disclaimer:
-      "Gridiron Spain es un proyecto independiente. No está afiliado a la NFL, la NCAA, la Federación Española de Fútbol Americano (FEFA), la European League of Football ni a los equipos que aparecen en esta web, salvo que se indique expresamente. Los nombres y escudos de los clubes pertenecen a sus titulares.",
+      "Primer Down es un proyecto independiente. No está afiliado a la NFL, la NCAA, la Federación Española de Fútbol Americano (FEFA), la European League of Football ni a los equipos que aparecen en esta web, salvo que se indique expresamente. Los nombres y escudos de los clubes pertenecen a sus titulares.",
     made: "Un proyecto de Jordi Sánchez, Barcelona.",
     sections: "Secciones",
     project: "Proyecto",

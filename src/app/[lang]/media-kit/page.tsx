@@ -14,7 +14,7 @@ const copy = {
     lead: "Proyecto independiente de fútbol americano desde Barcelona.",
     about: "Quiénes somos",
     aboutText:
-      "Gridiron Spain documenta el fútbol americano en España: equipos, historia, competiciones y cultura. Es un proyecto editorial independiente creado en Barcelona, con fuentes verificables en cada pieza.",
+      "Primer Down documenta el fútbol americano en España: equipos, historia, competiciones y cultura. Es un proyecto editorial independiente creado en Barcelona, con fuentes verificables en cada pieza.",
     cover: "Qué cubrimos",
     coverItems: ["Football español", "Football europeo", "NCAA", "Cultura del football", "Viajes"],
     current: "Proyecto actual",
@@ -25,7 +25,7 @@ const copy = {
     opportunities: "Oportunidades de colaboración",
     opportunityItems: ["Alojamiento", "Viaje", "Game day", "Restauración", "Conectividad (eSIM)", "Equipamiento / ropa"],
     metrics: "Audiencia",
-    metricsNote: "Gridiron Spain acaba de lanzarse. Compartiremos métricas únicamente cuando existan datos reales y útiles.",
+    metricsNote: "Primer Down acaba de lanzarse. Compartiremos métricas únicamente cuando existan datos reales y útiles.",
     principles: "Principios",
     principleItems: [
       "Contenido patrocinado siempre identificado.",
@@ -41,7 +41,7 @@ const copy = {
     lead: "Independent American football project from Barcelona.",
     about: "About",
     aboutText:
-      "Gridiron Spain documents American football in Spain: teams, history, competitions and culture. It is an independent editorial project created in Barcelona, with verifiable sources in every piece.",
+      "Primer Down documents American football in Spain: teams, history, competitions and culture. It is an independent editorial project created in Barcelona, with verifiable sources in every piece.",
     cover: "What we cover",
     coverItems: ["Spanish football", "European football", "NCAA", "Football culture", "Travel"],
     current: "Current project",
@@ -52,7 +52,7 @@ const copy = {
     opportunities: "Partnership opportunities",
     opportunityItems: ["Accommodation", "Travel", "Game day", "Food", "Connectivity (eSIM)", "Apparel / equipment"],
     metrics: "Audience",
-    metricsNote: "Gridiron Spain has just launched. We will share metrics only when real, useful data exists.",
+    metricsNote: "Primer Down has just launched. We will share metrics only when real, useful data exists.",
     principles: "Principles",
     principleItems: [
       "Sponsored content is always labelled.",
@@ -116,7 +116,7 @@ export default async function MediaKitPage({ params }: PageProps<"/[lang]/media-
         <Block title={c.contact}>
           <p className="font-display text-2xl font-extrabold uppercase text-paper">{site.author.name}</p>
           <p className="text-muted">{site.author.city}</p>
-          <a href={`mailto:${roadProposal.contact.email}?subject=${encodeURIComponent("Gridiron Spain — Navy Football collaboration")}`} className="mt-2 block text-gold underline underline-offset-4">{roadProposal.contact.email}</a>
+          <a href={`mailto:${roadProposal.contact.email}?subject=${encodeURIComponent("Primer Down — Navy Football collaboration")}`} className="mt-2 block text-gold underline underline-offset-4">{roadProposal.contact.email}</a>
           <a href={site.author.url} className="text-gold" rel="noopener noreferrer">
             jordisanchezweb.es
           </a>

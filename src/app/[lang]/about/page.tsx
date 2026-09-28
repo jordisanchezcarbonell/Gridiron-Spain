@@ -12,7 +12,7 @@ const copy = {
   es: {
     kicker: "Proyecto independiente · Barcelona",
     title: "Sobre el proyecto",
-    lead: "Gridiron Spain nace en Barcelona para documentar el fútbol americano que se juega en España: sus equipos, su historia, sus competiciones y su cultura.",
+    lead: "Primer Down nace en Barcelona para documentar el fútbol americano que se juega en España: sus equipos, su historia, sus competiciones y su cultura.",
     blocks: [
       {
         h: "Qué es",
@@ -37,7 +37,7 @@ const copy = {
   en: {
     kicker: "Independent project · Barcelona",
     title: "About the project",
-    lead: "Gridiron Spain was born in Barcelona to document American football as it is played in Spain: its teams, history, competitions and culture.",
+    lead: "Primer Down was born in Barcelona to document American football as it is played in Spain: its teams, history, competitions and culture.",
     blocks: [
       {
         h: "What it is",

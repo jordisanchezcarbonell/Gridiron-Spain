@@ -46,10 +46,10 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
     contact: locale === "es" ? "Contacto" : "Contact",
     view: locale === "es" ? "Ver la propuesta" : "View the proposal",
     write: locale === "es" ? "Contacta con Jordi" : "Contact Jordi",
-    intro: locale === "es" ? "Jordi Sánchez es desarrollador web y aficionado al fútbol americano desde Barcelona. Es el creador de Gridiron Spain, un proyecto editorial independiente recién lanzado, y prepara este viaje con otro aficionado." : "Jordi Sánchez is a web developer and American football fan from Barcelona. He created Gridiron Spain, a newly launched independent editorial project, and is preparing this trip with another fan.",
+    intro: locale === "es" ? "Jordi Sánchez es desarrollador web y aficionado al fútbol americano desde Barcelona. Es el creador de Primer Down, un proyecto editorial independiente recién lanzado, y prepara este viaje con otro aficionado." : "Jordi Sánchez is a web developer and American football fan from Barcelona. He created Primer Down, a newly launched independent editorial project, and is preparing this trip with another fan.",
     samplesList: locale === "es" ? [["Football en Barcelona", href(locale, "articles", "football-en-barcelona")], ["Badalona Dracs", href(locale, "teams", "badalona-dracs")], ["Mapa de clubes", href(locale, "map")]] : [["Football in Barcelona", href(locale, "articles", "football-en-barcelona")], ["Badalona Dracs", href(locale, "teams", "badalona-dracs")], ["Club map", href(locale, "map")]],
   };
-  const mailto = `mailto:${roadProposal.contact.email}?subject=${encodeURIComponent("Gridiron Spain — Navy Football collaboration")}`;
+  const mailto = `mailto:${roadProposal.contact.email}?subject=${encodeURIComponent("Primer Down — Navy Football collaboration")}`;
 
   return (
     <>

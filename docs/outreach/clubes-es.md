@@ -4,11 +4,11 @@ Enviar desde una dirección del proyecto, con el enlace a la ficha del club ya p
 
 ---
 
-**Asunto:** Archivo histórico del fútbol americano en España — vuestra ficha en Gridiron Spain
+**Asunto:** Archivo histórico del fútbol americano en España — vuestra ficha en Primer Down
 
 Hola [nombre / equipo directivo de CLUB],
 
-Me llamo Jordi Sánchez, soy desarrollador web en Barcelona y aficionado al fútbol americano. Estoy construyendo **Gridiron Spain**, un archivo independiente sobre la historia del fútbol americano en España: directorio de equipos, mapa, cronología y artículos largos, todo con fuentes verificables.
+Me llamo Jordi Sánchez, soy desarrollador web en Barcelona y aficionado al fútbol americano. Estoy construyendo **Primer Down**, un archivo independiente sobre la historia del fútbol americano en España: directorio de equipos, mapa, cronología y artículos largos, todo con fuentes verificables.
 
 Ya hay una ficha de [CLUB] publicada aquí: [URL de la ficha]. La hemos montado solo con lo que hemos podido contrastar en la FEFA, la federación autonómica y vuestra web; lo que no hemos podido verificar aparece marcado como pendiente.
 
@@ -23,12 +23,12 @@ Queremos dedicar una pieza a los orígenes del club y nos gustaría contar con v
 
 Todo lo que publiquemos llevará su fuente y su crédito, y os enviaremos el borrador antes de publicarlo para que podáis corregir cualquier dato.
 
-Gridiron Spain es un proyecto independiente, sin relación con la FEFA, la NFL ni ningún club. No vendemos nada ni pedimos nada a cambio: queremos que la historia de vuestro club esté bien contada y sea fácil de encontrar.
+Primer Down es un proyecto independiente, sin relación con la FEFA, la NFL ni ningún club. No vendemos nada ni pedimos nada a cambio: queremos que la historia de vuestro club esté bien contada y sea fácil de encontrar.
 
 Gracias por vuestro tiempo,
 
 Jordi Sánchez
-Gridiron Spain · Barcelona
+Primer Down · Barcelona
 [email] · [URL del proyecto]
 
 ---

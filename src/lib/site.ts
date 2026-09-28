@@ -14,7 +14,12 @@ function resolveSiteUrl(): string {
 
 /** Global site configuration. Values that change per deployment live in env. */
 export const site = {
-  name: "Gridiron Spain",
+  name: "Primer Down",
+  brand: {
+    monogram: "PD",
+    primary: "Primer",
+    accent: "Down",
+  },
   url: resolveSiteUrl(),
   author: {
     name: "Jordi Sánchez",
@@ -30,7 +35,7 @@ export const site = {
   },
   contactEmail: "", // set NEXT_PUBLIC_CONTACT_EMAIL or edit here when public
   /** ISO date of the current editorial review cycle. */
-  contentReviewedAt: "2026-09-12",
+  contentReviewedAt: "2026-09-28",
 } as const;
 
 export function absoluteUrl(path: string): string {

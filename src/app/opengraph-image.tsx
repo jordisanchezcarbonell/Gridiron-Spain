@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
+import { site } from "@/lib/site";
 
-export const alt = "Gridiron Spain — American football in Spain";
+export const alt = "Primer Down — American football in Spain";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -35,11 +36,11 @@ export default function OpengraphImage() {
               borderRadius: 8,
             }}
           >
-            GS
+            {site.brand.monogram}
           </div>
           <div style={{ display: "flex", fontSize: 32, fontWeight: 800, letterSpacing: 2, textTransform: "uppercase" }}>
-            <span>Gridiron</span>
-            <span style={{ color: "#d6a84b", marginLeft: 12 }}>Spain</span>
+            <span>{site.brand.primary}</span>
+            <span style={{ color: "#d6a84b", marginLeft: 12 }}>{site.brand.accent}</span>
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>

@@ -2,7 +2,7 @@ import type { Dictionary } from "./es";
 
 export const en: Dictionary = {
   site: {
-    name: "Gridiron Spain",
+    name: "Primer Down",
     tagline: "The digital archive of American football in Spain",
     description:
       "Teams, history, competitions and culture of American football in Spain. An independent project born in Barcelona.",
@@ -318,7 +318,7 @@ export const en: Dictionary = {
   },
   footer: {
     disclaimer:
-      "Gridiron Spain is an independent project. It is not affiliated with the NFL, the NCAA, the Spanish American Football Federation (FEFA), the European League of Football or any of the teams featured on this site unless explicitly stated. Club names and crests belong to their respective owners.",
+      "Primer Down is an independent project. It is not affiliated with the NFL, the NCAA, the Spanish American Football Federation (FEFA), the European League of Football or any of the teams featured on this site unless explicitly stated. Club names and crests belong to their respective owners.",
     made: "A project by Jordi Sánchez, Barcelona.",
     sections: "Sections",
     project: "Project",

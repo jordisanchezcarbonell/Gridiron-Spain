@@ -4,7 +4,7 @@ import { t } from "@/lib/i18n/text";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { loadDisplayFont, ogImage, truncate, OG_SIZE } from "@/lib/seo/og";
 
-export const alt = "Gridiron Spain";
+export const alt = "Primer Down";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 
@@ -19,7 +19,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   const dict = getDictionary(locale);
   const font = await loadDisplayFont();
   const article = await getRepository().getArticleBySlug(slug);
-  if (!article) return ogImage({ kicker: dict.nav.stories, title: "Gridiron Spain", font });
+  if (!article) return ogImage({ kicker: dict.nav.stories, title: "Primer Down", font });
   return ogImage({
     kicker: dict.categories[article.category],
     title: t(article.title, locale),

@@ -1,5 +1,5 @@
 {
-  "name": "gridiron-spain",
+  "name": "primer-down",
   "version": "0.1.0",
   "private": true,
   "description": "Independent archive, directory and editorial project about American football in Spain.",
@@ -13,7 +13,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "typegen": "next typegen",
-    "content:check": "tsx scripts/check-content.ts"
+    "content:check": "tsx scripts/check-content.ts",
+    "test": "tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
