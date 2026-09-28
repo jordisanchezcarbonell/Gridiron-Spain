@@ -196,7 +196,7 @@ export const competitions: Competition[] = [
       en: "The American professional league has played in Madrid since 2025: on 16 November 2025 the Miami Dolphins beat the Washington Commanders 16-13 at the Bernabéu in front of 78,610, and on 8 November 2026 the Atlanta Falcons host the Cincinnati Bengals at the same stadium under a multi-year deal.",
     },
     website: "https://www.nfl.com/international/games/madrid/",
-    sourceIds: ["nfl-madrid-multiyear-2026", "espn-madrid-recap-2025", "nfl-madrid-game-2026"],
+    sourceIds: ["nfl-madrid-multiyear-2026", "espn-madrid-recap-2025", "nfl-madrid-game-2026", "nfelo-nfl-power-rankings"],
     verificationStatus: "verified",
     lastVerifiedAt: V,
   },

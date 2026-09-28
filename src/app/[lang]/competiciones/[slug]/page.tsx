@@ -14,6 +14,8 @@ import { Badge } from "@/components/ui/Badge";
 import { TeamCard } from "@/components/teams/TeamCard";
 import { SourceList } from "@/components/articles/SourceList";
 import { ArticleCard } from "@/components/articles/ArticleCard";
+import { NfeloPowerRanking } from "@/components/competitions/NfeloPowerRanking";
+import { getExternalPowerRanking } from "@/data/power-rankings";
 
 export async function generateStaticParams() {
   const competitions = await getRepository().getCompetitions();
@@ -51,6 +53,7 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
   ]);
   const participants = teams.filter((team) => team.currentCompetitions.some((c) => c.competitionId === competition.id));
   const related = articles.filter((a) => a.relatedCompetitionIds.includes(competition.id));
+  const powerRanking = getExternalPowerRanking(competition.id);
   const crumbs = [
     { name: dict.common.breadcrumbHome, href: href(locale, "home") },
     { name: dict.nav.competitions, href: href(locale, "competitions") },
@@ -77,6 +80,7 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
 
       <div className="container-content grid gap-12 py-12 lg:grid-cols-[1fr_20rem]">
         <div className="min-w-0">
+          {powerRanking && <NfeloPowerRanking locale={locale} url={powerRanking.url} />}
           {seasons.length > 0 && (
             <section className="mb-14">
               <h2 className="display display-sm mb-6">{dict.season.seasons}</h2>
