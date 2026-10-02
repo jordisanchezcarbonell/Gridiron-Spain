@@ -28,6 +28,7 @@ const ASK: Record<string, string> = {
 
 const out: string[] = ["# Correos a clubes (borradores, NO subir a git)", "", `Generado el ${new Date().toISOString().slice(0, 10)}. Revisar antes de enviar.`, ""];
 let n = 0;
+const queue: { team: string; to: string; subject: string; body: string }[] = [];
 for (const c of contacts) {
   const team = teams.find((t) => t.id === c.teamId);
   if (!team || ALREADY_IN_CONTACT.includes(team.id)) continue;
@@ -36,19 +37,11 @@ for (const c of contacts) {
   const asks = Array.from(new Set(tasks.map((t) => ASK[t]).filter(Boolean))).slice(0, 3);
   const channel = c.email ? `Email: ${c.email}` : c.contactForm ? `Formulario: ${c.contactForm}` : c.instagram ? `Instagram (DM): ${c.instagram}` : "SIN CONTACTO";
   n++;
-  out.push(
-    `## ${n}. ${team.name}`,
-    "",
-    `- **Canal:** ${channel}`,
-    `- **Fuente del contacto:** ${c.source}`,
-    ...(c.notes ? [`- **Notas:** ${c.notes}`] : []),
-    "",
-    `**Asunto:** ${team.name} en Primer Down, el archivo del fútbol americano en España`,
-    "",
-    "```",
+  const subject = `${team.name} en Primer Down (antes Gridiron Spain), el archivo del fútbol americano en España`;
+  const lines = [
     `Hola, equipo de ${team.name}:`,
     "",
-    "Soy Jordi Sánchez, de Barcelona. Estoy construyendo Primer Down, un archivo independiente del fútbol americano en España: fichas de equipos, mapa, selección, rankings y una agenda semanal, todo con fuentes verificables.",
+    "Soy Jordi Sánchez, de Barcelona. Estoy construyendo Primer Down (antes Gridiron Spain), un archivo independiente del fútbol americano en España: fichas de equipos, mapa, selección, rankings y una agenda semanal, todo con fuentes verificables.",
     "",
     `Ya tenéis vuestra ficha publicada: ${url}`,
     "",
@@ -64,9 +57,23 @@ for (const c of contacts) {
     "Jordi Sánchez",
     "Primer Down · Barcelona",
     "https://primer-down.vercel.app",
+  ];
+  if (c.email) queue.push({ team: team.name, to: c.email, subject, body: lines.join("\n") });
+  out.push(
+    `## ${n}. ${team.name}`,
+    "",
+    `- **Canal:** ${channel}`,
+    `- **Fuente del contacto:** ${c.source}`,
+    ...(c.notes ? [`- **Notas:** ${c.notes}`] : []),
+    "",
+    `**Asunto:** ${subject}`,
+    "",
+    "```",
+    ...lines,
     "```",
     "",
   );
 }
 writeFileSync("docs/outreach/correos-clubes.local.md", out.join("\n"));
+writeFileSync("docs/outreach/cola-envio.local.json", JSON.stringify(queue, null, 2));
 console.log(`${n} borradores en docs/outreach/correos-clubes.local.md`);
