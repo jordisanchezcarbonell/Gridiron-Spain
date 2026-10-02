@@ -18,6 +18,7 @@ export const routes = {
     public: { es: "competiciones", en: "competitions" },
   },
   agenda: { internal: "agenda", public: { es: "agenda", en: "schedule" } },
+  players: { internal: "jugadores", public: { es: "jugadores", en: "players" } },
   rankings: { internal: "rankings", public: { es: "rankings", en: "rankings" } },
   roadToAnnapolis: {
     internal: "road-to-annapolis",

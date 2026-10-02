@@ -11,6 +11,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { SourceList } from "@/components/articles/SourceList";
+import { PROFILE_GROUPS, playerSlug } from "@/lib/players";
 import type { Locale, PlayerGroup, PlayerSpotlight, Ranking, Team } from "@/types";
 import type { Dictionary } from "@/dictionaries/es";
 
@@ -218,7 +219,15 @@ function PlayerCard({ player, teams, locale }: { player: PlayerSpotlight; teams:
         <Badge tone="accent">{player.position}</Badge>
         <Badge tone="outline">{player.league}</Badge>
       </div>
-      <p className="font-display text-xl font-bold text-paper">{player.name}</p>
+      <p className="font-display text-xl font-bold text-paper">
+        {PROFILE_GROUPS.includes(player.group) ? (
+          <Link href={href(locale, "players", playerSlug(player.name))} className="hover:text-accent">
+            {player.name}
+          </Link>
+        ) : (
+          player.name
+        )}
+      </p>
       <p className="text-sm text-paper-2">
         <TeamName teamId={player.teamId} name={player.team} teams={teams} locale={locale} />
         {player.hometown && <span className="text-muted"> · {player.hometown}</span>}

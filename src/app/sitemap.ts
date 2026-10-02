@@ -5,6 +5,7 @@ import { absoluteUrl, site } from "@/lib/site";
 import { getRepository } from "@/lib/repositories";
 import type { Locale } from "@/types/common";
 import { regionSlug } from "@/lib/regions";
+import { buildPlayerProfiles } from "@/lib/players";
 
 function entry(
   routeKey: RouteKey,
@@ -29,11 +30,12 @@ function entry(
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const repo = getRepository();
-  const [teams, articles, competitions, seasons] = await Promise.all([
+  const [teams, articles, competitions, seasons, players] = await Promise.all([
     repo.getTeams(),
     repo.getArticles(),
     repo.getCompetitions(),
     repo.getSeasons(),
+    repo.getPlayerSpotlights(),
   ]);
   const all = [...locales];
   const reviewed = site.contentReviewedAt;
@@ -50,6 +52,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entry("guide", [], all, reviewed, 0.8, "monthly"),
     ...entry("rankings", [], all, reviewed, 0.8, "weekly"),
     ...entry("agenda", [], all, reviewed, 0.8, "weekly"),
+    ...entry("players", [], all, reviewed, 0.7, "weekly"),
+    ...buildPlayerProfiles(players).filter((p) => p.hasPage).flatMap((p) => entry("players", [p.slug], all, reviewed, 0.6, "monthly")),
     ...seasons.flatMap((season) => {
       const competition = competitions.find((c) => c.id === season.competitionId);
       return competition ? entry("competitions", [competition.slug, season.slug], all, season.lastVerifiedAt ?? reviewed, 0.7, "weekly") : [];
