@@ -1,4 +1,5 @@
 import type { Season } from "@/types";
+import { secondaryLeagueSeasons } from "./lnfa2-femenina-2025-26";
 
 const V = "2026-09-13";
 
@@ -109,4 +110,5 @@ export const seasons: Season[] = [
     verificationStatus: "partial",
     lastVerifiedAt: V,
   },
+  ...secondaryLeagueSeasons,
 ];
