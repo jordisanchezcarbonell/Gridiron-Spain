@@ -7,13 +7,12 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { playerSlug } from "@/lib/players";
-import { t, formatDate } from "@/lib/i18n/text";
+import { t } from "@/lib/i18n/text";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { SourceList } from "@/components/articles/SourceList";
-import type { Locale, NationalTeamGame } from "@/types";
-import type { Dictionary } from "@/dictionaries/es";
+import { GameList } from "@/components/national-team/GameList";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/seleccion">): Promise<Metadata> {
   const locale = resolveLocale((await params).lang);
@@ -67,13 +66,20 @@ export default async function NationalTeamPage({ params }: PageProps<"/[lang]/se
                 <Badge tone="gold">{dict.discipline[team.discipline]}</Badge>
                 {team.competition && <Badge tone="outline">{t(team.competition, locale)}</Badge>}
               </div>
-              <h2 className="display display-md mt-4">{t(team.name, locale)}</h2>
+              <h2 className="display display-md mt-4">
+                <Link href={href(locale, "nationalTeam", team.id)} className="hover:text-accent">
+                  {t(team.name, locale)}
+                </Link>
+              </h2>
               {team.coach && (
                 <p className="mt-2 font-mono text-xs uppercase tracking-[0.12em] text-muted">
                   {dict.nationalTeam.coach}: <span className="text-paper">{team.coach}</span>
                 </p>
               )}
               <p className="mt-4 max-w-3xl leading-relaxed text-paper-2">{t(team.summary, locale)}</p>
+              <Link href={href(locale, "nationalTeam", team.id)} className="mt-3 inline-block text-sm text-accent hover:text-accent-bright">
+                {dict.nationalTeam.more} →
+              </Link>
 
               <div className="mt-8 grid gap-8 lg:grid-cols-2">
                 {team.upcoming.length > 0 && (
@@ -92,7 +98,7 @@ export default async function NationalTeamPage({ params }: PageProps<"/[lang]/se
 
               {roster.length > 0 && (
                 <div className="mt-8">
-                  <h3 className="kicker mb-3 text-muted">{dict.nationalTeam.players}</h3>
+                  <h3 className="kicker mb-3 text-muted">{team.id.includes("femenina") ? dict.nationalTeam.playersWomen : dict.nationalTeam.players}</h3>
                   <ul className="flex flex-wrap gap-2">
                     {roster.map((p) => (
                       <li key={p.id}>
@@ -111,35 +117,5 @@ export default async function NationalTeamPage({ params }: PageProps<"/[lang]/se
         <SourceList sources={sources} locale={locale} title={dict.common.sources} accessedLabel={dict.articles.accessed} lastVerified={lastVerified} lastVerifiedLabel={dict.verification.lastVerified} />
       </div>
     </>
-  );
-}
-
-function GameList({ games, locale, dict }: { games: NationalTeamGame[]; locale: Locale; dict: Dictionary }) {
-  const tone = { win: "text-turf", loss: "text-signal", tie: "text-muted" } as const;
-  return (
-    <ul className="divide-y divide-line border border-line bg-surface">
-      {games.map((g) => (
-        <li key={`${g.date}-${g.opponent}`} className="grid grid-cols-[6.5rem_1fr_auto] items-baseline gap-3 px-4 py-3 text-sm">
-          <span className="font-mono text-xs text-muted">{formatDate(g.date, locale, { year: "numeric", month: "short", day: "numeric" })}</span>
-          <span className="min-w-0">
-            <span className="text-paper">
-              {dict.nationalTeam.vs} {g.opponent}
-            </span>
-            <span className="block text-xs text-muted">
-              {t(g.competition, locale)}
-              {g.venue ? ` · ${g.venue}` : ""}
-            </span>
-            {g.note && <span className="block text-xs text-muted">{t(g.note, locale)}</span>}
-          </span>
-          {g.score ? (
-            <span className={`font-display text-lg font-black ${g.result ? tone[g.result] : "text-paper"}`} title={g.result ? dict.nationalTeam[g.result] : undefined}>
-              {g.score}
-            </span>
-          ) : (
-            <span />
-          )}
-        </li>
-      ))}
-    </ul>
   );
 }

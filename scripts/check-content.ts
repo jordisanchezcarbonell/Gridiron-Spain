@@ -149,7 +149,13 @@ unique("national-teams", nationalTeams.map((n) => n.id));
 for (const n of nationalTeams) {
   const owner = `national-team:${n.id}`;
   checkIds(owner, n.sourceIds);
-  for (const g of [...n.results, ...n.upcoming]) {
+  for (const p of n.story ?? []) {
+    checkCitations(owner, p.es, n.sourceIds);
+    checkCitations(owner, p.en, n.sourceIds);
+  }
+  for (const h of n.honours ?? []) checkIds(owner, h.sourceIds);
+  if (n.roster) checkIds(owner, n.roster.sourceIds);
+  for (const g of [...n.results, ...n.upcoming, ...(n.pastCampaigns ?? []).flatMap((c) => c.games)]) {
     checkIds(owner, g.sourceIds);
     if (g.sourceIds.length === 0) errors.push(`${owner}: game ${g.date} without sources`);
     for (const id of g.sourceIds) if (!n.sourceIds.includes(id)) errors.push(`${owner}: source "${id}" missing from the team's sourceIds`);

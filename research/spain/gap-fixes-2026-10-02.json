@@ -1,0 +1,26 @@
+[
+ {
+  "teamId": "canarias-canes",
+  "field": "foundedYear",
+  "value": 2017,
+  "sourceId": "spanishbowl-canes-2025"
+ },
+ {
+  "teamId": "canarias-canes",
+  "field": "researchNotes",
+  "value": {
+   "es": "Fundado en 2017 en Telde; en 2018 se llamaba Telde Canes y después pasó a Canarias Canes (Spanish Bowl, marzo de 2025). Discrepancia en el campo: FEFA indica Campo de Fútbol La Angostura y Spanish Bowl el Estadio Municipal del Guiniguada (Santa Brígida). Coordenadas = Santa Brígida.",
+   "en": "Founded in 2017 in Telde; called Telde Canes in 2018 and later renamed Canarias Canes (Spanish Bowl, March 2025). Ground discrepancy: FEFA lists Campo de Fútbol La Angostura, Spanish Bowl lists Estadio Municipal del Guiniguada (Santa Brígida). Coordinates = Santa Brígida."
+  },
+  "sourceId": "spanishbowl-canes-2025"
+ },
+ {
+  "teamId": "cenes-de-la-vega-valkirias",
+  "field": "researchNotes",
+  "value": {
+   "es": "Año de fundación sin resolver (no se fija foundedYear). El Español (29-10-2020) ya describe el club Valkirias, con jugadoras de Málaga y Granada, y Historia Deportiva (28-02-2022) dice que 'surgió en 2021'. Falta una fuente del club. Hay que confirmar que las Granada Valkirias de 2020-22 son el mismo club que figura en FEFA como Cenes de la Vega Valkirias.",
+   "en": "Founding year unresolved (no foundedYear set). El Español (29 Oct 2020) already describes the Valkirias club, with players from Málaga and Granada, while Historia Deportiva (28 Feb 2022) says it 'emerged in 2021'. A club source is needed. It also needs confirming that the 2020-22 Granada Valkirias are the club FEFA lists as Cenes de la Vega Valkirias."
+  },
+  "sourceId": "elespanol-femenino-2020"
+ }
+]

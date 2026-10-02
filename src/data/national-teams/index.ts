@@ -47,11 +47,50 @@ export const nationalTeams: NationalTeam[] = [
     upcoming: [],
     results: [
       { date: "2025-08-31", opponent: "Alemania", venue: "Bonn", competition: EURO_WOMEN, score: "7-22", result: "loss", sourceIds: ["fefa-femenina-alemania-2025"], verificationStatus: "verified" },
-      { date: "2025-10-18", opponent: "Gran Bretaña", venue: "Jaca", competition: EURO_WOMEN, score: "26-22", result: "win", note: { es: "Remontada con un pase de 65 yardas de Victoria Valverde.", en: "Comeback sealed by a 65-yard Victoria Valverde pass." }, sourceIds: ["fefa-femenina-gb-2025"], verificationStatus: "verified" },
+      { date: "2025-10-18", opponent: "Gran Bretaña", venue: "Jaca", competition: EURO_WOMEN, score: "26-22", result: "win", note: { es: "Remontada con un pase de 65 yardas de Victoria Valverde a Paula Martínez; touchdown de carrera de Elena Leiva y fumble recuperado por Nuria Peñas.", en: "Comeback sealed by a 65-yard Victoria Valverde pass to Paula Martínez; rushing touchdown by Elena Leiva and a fumble recovery by Nuria Peñas." }, sourceIds: ["fefa-femenina-gb-2025"], verificationStatus: "verified" },
       { date: "2026-05-30", opponent: "Finlandia", venue: "Calatayud", competition: EURO_WOMEN, score: "13-31", result: "loss", sourceIds: ["fefa-femenina-finlandia-2026"], verificationStatus: "verified" },
       { date: "2026-08-23", opponent: "Gran Bretaña", competition: { es: "Europeo femenino · partido por el bronce", en: "Women's European Championship · bronze game" }, note: { es: "No se jugó: Gran Bretaña se retiró y el bronce fue para España.", en: "Not played: Great Britain withdrew and Spain took bronze." }, sourceIds: ["selec-fefa-fem-bronce-2026"], verificationStatus: "verified" },
     ],
-    sourceIds: ["fefa-femenina-alemania-2025", "fefa-femenina-gb-2025", "fefa-femenina-finlandia-2026", "selec-fefa-fem-bronce-2026", "selec-fefa-fem-coach-2026"],
+    story: [
+      {
+        es: "La selección femenina llegó al Europeo 2025-26 como vigente campeona: había ganado el de 2023-24 sin perder un partido, con victorias en Finlandia (12-0), ante Alemania en Calatayud (8-6) y ante Gran Bretaña también en Calatayud (21-16). El último partido, ante Suecia, no se jugó y contó como victoria española. [[src:selec-ifaf-wec-2024]] [[src:selec-fefa-fem-alemania-2023]] [[src:selec-fefa-fem-suecia-2024]]",
+        en: "The women's team came into the 2025-26 European Championship as defending champions: they had won the 2023-24 edition unbeaten, with wins in Finland (12-0), over Germany in Calatayud (8-6) and over Great Britain, also in Calatayud (21-16). The last game, against Sweden, was not played and counted as a Spanish win. [[src:selec-ifaf-wec-2024]] [[src:selec-fefa-fem-alemania-2023]] [[src:selec-fefa-fem-suecia-2024]]",
+      },
+      {
+        es: "En 2025-26 cayeron en Bonn ante Alemania (7-22), remontaron a Gran Bretaña en Jaca (26-22) con un pase de 65 yardas de Victoria Valverde a Paula Martínez y perdieron en Calatayud ante Finlandia (13-31), que acabaría campeona. Gran Bretaña se retiró del partido por el bronce y la medalla fue para España. [[src:fefa-femenina-alemania-2025]] [[src:fefa-femenina-gb-2025]] [[src:fefa-femenina-finlandia-2026]] [[src:selec-fefa-fem-bronce-2026]] [[src:selec-ifaf-fem-final-2026]]",
+        en: "In 2025-26 they lost in Bonn to Germany (7-22), came back against Great Britain in Jaca (26-22) with a 65-yard Victoria Valverde pass to Paula Martínez, and lost in Calatayud to eventual champions Finland (13-31). Great Britain withdrew from the bronze game and the medal went to Spain. [[src:fefa-femenina-alemania-2025]] [[src:fefa-femenina-gb-2025]] [[src:fefa-femenina-finlandia-2026]] [[src:selec-fefa-fem-bronce-2026]] [[src:selec-ifaf-fem-final-2026]]",
+      },
+      {
+        es: "En septiembre de 2026 empezó una nueva etapa: Jesús Efrén Sánchez, que había entrenado en Osos Rivas, Gijón Mariners y Mallorca Voltors, relevó a Manuel Ibáñez, que sigue en el cuerpo técnico. No hay partidos anunciados para lo que queda de 2026. [[src:selec-fefa-fem-coach-2026]]",
+        en: "A new era began in September 2026: Jesús Efrén Sánchez, previously a coach at Osos Rivas, Gijón Mariners and Mallorca Voltors, took over from Manuel Ibáñez, who stays on the staff. No games have been announced for the rest of 2026. [[src:selec-fefa-fem-coach-2026]]",
+      },
+    ],
+    honours: [
+      { year: "2023-24", title: { es: "Campeona de Europa (IFAF)", en: "European champions (IFAF)" }, sourceIds: ["selec-ifaf-wec-2024"] },
+      { year: "2025-26", title: { es: "Bronce europeo (IFAF)", en: "European bronze (IFAF)" }, sourceIds: ["selec-fefa-fem-bronce-2026", "selec-ifaf-fem-final-2026"] },
+    ],
+    staff: [
+      { role: { es: "Seleccionador", en: "Head coach" }, name: "Jesús Efrén Sánchez García" },
+      { role: { es: "Coordinador ofensivo y QB", en: "Offensive coordinator & QBs" }, name: "Álvaro Quezada" },
+      { role: { es: "Coordinador defensivo", en: "Defensive coordinator" }, name: "Marco Antonio Zárate Saldaña" },
+      { role: { es: "Línea ofensiva y asistente", en: "Offensive line & assistant" }, name: "Manuel Ibáñez" },
+      { role: { es: "Línea defensiva", en: "Defensive line" }, name: "Sandro Moreira" },
+      { role: { es: "Defensive backs", en: "Defensive backs" }, name: "Pablo Saló" },
+      { role: { es: "Linebackers", en: "Linebackers" }, name: "Isaac Buján" },
+      { role: { es: "Running backs", en: "Running backs" }, name: "Abel Jorna Bello" },
+    ],
+    pastCampaigns: [
+      {
+        name: { es: "Europeo 2023-24 · campeona", en: "2023-24 European Championship · champions" },
+        games: [
+          { date: "2023-05-27", opponent: "Finlandia", competition: { es: "Europeo femenino IFAF 2023-24", en: "IFAF Women's European Championship 2023-24" }, score: "12-0", result: "win", note: { es: "A domicilio.", en: "Away." }, sourceIds: ["selec-ifaf-wec-2024"], verificationStatus: "verified" },
+          { date: "2023-08-26", opponent: "Alemania", venue: "Calatayud", competition: { es: "Europeo femenino IFAF 2023-24", en: "IFAF Women's European Championship 2023-24" }, score: "8-6", result: "win", sourceIds: ["selec-fefa-fem-alemania-2023"], verificationStatus: "verified" },
+          { date: "2024-04-13", opponent: "Gran Bretaña", venue: "Calatayud", competition: { es: "Europeo femenino IFAF 2023-24", en: "IFAF Women's European Championship 2023-24" }, score: "21-16", result: "win", sourceIds: ["selec-ifaf-wec-2024"], verificationStatus: "verified" },
+          { date: "2024-05-25", opponent: "Suecia", competition: { es: "Europeo femenino IFAF 2023-24", en: "IFAF Women's European Championship 2023-24" }, result: "win", note: { es: "No se jugó: Suecia no compareció y contó como victoria de España.", en: "Not played: Sweden withdrew and it counted as a Spain win." }, sourceIds: ["selec-fefa-fem-suecia-2024"], verificationStatus: "verified" },
+        ],
+      },
+    ],
+    sourceIds: ["fefa-femenina-alemania-2025", "fefa-femenina-gb-2025", "fefa-femenina-finlandia-2026", "selec-fefa-fem-bronce-2026", "selec-fefa-fem-coach-2026", "selec-ifaf-wec-2024", "selec-fefa-fem-suecia-2024", "selec-fefa-fem-alemania-2023", "selec-ifaf-fem-final-2026"],
     verificationStatus: "verified",
     lastVerifiedAt: V,
   },
@@ -71,7 +110,22 @@ export const nationalTeams: NationalTeam[] = [
       { date: "2026-08-13", opponent: "Australia", competition: FLAG_WORLDS, score: "39-25", result: "win", sourceIds: ["selec-fefa-flagfem-cuartos-2026"], verificationStatus: "verified" },
       { date: "2026-08-14", opponent: "Estados Unidos", competition: FLAG_WORLDS, score: "31-52", result: "loss", sourceIds: ["selec-fefa-flagfem-cuartos-2026"], verificationStatus: "verified" },
       { date: "2026-08-15", opponent: "México", competition: { es: "Mundial de flag 2026 · cuartos de final", en: "2026 Flag World Championship · quarter-final" }, score: "26-27", result: "loss", sourceIds: ["fefa-flag-mexico-2026"], verificationStatus: "verified" },
+      { date: "2026-08-16", opponent: "Austria", competition: { es: "Mundial de flag 2026 · semifinal del 5.º al 8.º", en: "2026 Flag World Championship · 5th–8th semi-final" }, score: "32-42", result: "loss", note: { es: "Fecha aproximada: la FEFA no la detalla.", en: "Approximate date: FEFA does not give it." }, sourceIds: ["fefa-flag-mundial-2026"], verificationStatus: "partial" },
+      { date: "2026-08-16", opponent: "Panamá", competition: { es: "Mundial de flag 2026 · partido por el 7.º puesto", en: "2026 Flag World Championship · 7th-place game" }, score: "27-38", result: "loss", note: { es: "Fecha aproximada: la FEFA no la detalla.", en: "Approximate date: FEFA does not give it." }, sourceIds: ["fefa-flag-mundial-2026"], verificationStatus: "partial" },
     ],
+    staff: [
+      { role: { es: "Seleccionador y coordinador defensivo", en: "Head coach & defensive coordinator" }, name: "Daniel Castañón" },
+      { role: { es: "Coordinador ofensivo", en: "Offensive coordinator" }, name: "Kenny Bello" },
+    ],
+    honours: [
+      { year: "2025", title: { es: "Bronce europeo (París)", en: "European bronze (Paris)" }, sourceIds: ["selec-fefa-euroflag-2025"] },
+      { year: "2026", title: { es: "8.ª en el Mundial (Düsseldorf)", en: "8th at the World Championship (Düsseldorf)" }, sourceIds: ["fefa-flag-mundial-2026"] },
+    ],
+    roster: {
+      label: { es: "Convocatoria del Mundial 2026", en: "2026 World Championship squad" },
+      names: ["Rocío Cañuelo", "Atxa Nerea Delgado", "Laia Girona", "Cristina Gómez", "Laura Hernández", "Mar Hernández", "Elvira Núñez", "Mónica Rafecas", "Alma Rodríguez", "Olga Sotillo", "Sara Villagrasa", "Violeta Wiksten"],
+      sourceIds: ["selec-fefa-flagfem-previa-2026"],
+    },
     sourceIds: ["selec-fefa-flagfem-previa-2026", "selec-fefa-flagfem-cuartos-2026", "fefa-flag-mexico-2026", "fefa-flag-mundial-2026", "selec-fefa-euroflag-2025"],
     verificationStatus: "verified",
     lastVerifiedAt: V,
