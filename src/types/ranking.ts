@@ -59,6 +59,8 @@ export type PlayerSpotlight = {
   league: string;
   group: PlayerGroup;
   hometown?: string;
+  /** National team (src/data/national-teams) the player is listed under. */
+  nationalTeamId?: string;
   note: LocalizedString;
   sourceIds: string[];
   verificationStatus: VerificationStatus;

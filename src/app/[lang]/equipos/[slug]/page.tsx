@@ -7,6 +7,7 @@ import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbJsonLd, teamJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
+import { buildPlayerProfiles } from "@/lib/players";
 import { t } from "@/lib/i18n/text";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -71,11 +72,13 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
   const team = await repo.getTeamBySlug(slug);
   if (!team) notFound();
 
-  const [competitions, articles, sources] = await Promise.all([
+  const [competitions, articles, sources, spotlights] = await Promise.all([
     repo.getCompetitions(),
     repo.getArticlesByTeam(team.id),
     repo.getSourcesByIds(team.sourceIds),
+    repo.getPlayerSpotlights(),
   ]);
+  const players = buildPlayerProfiles(spotlights.filter((s) => s.teamId === team.id)).filter((p) => p.hasPage);
   const pins = toMapPins([team], competitions, locale);
   const crumbs = [
     { name: dict.common.breadcrumbHome, href: href(locale, "home") },
@@ -150,6 +153,29 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
               <p className="text-muted">{dict.teams.pendingHonours}</p>
             )}
           </section>
+
+          {/* Players with a profile */}
+          {players.length > 0 && (
+            <section aria-labelledby="players-title" className="mt-12">
+              <header className="mb-6">
+                <div className="inline-flex items-center">
+                  <span id="players-title" className="flex h-7 items-center bg-surface-2 px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+                    {dict.nav.players}
+                  </span>
+                </div>
+              </header>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {players.map((p) => (
+                  <li key={p.slug}>
+                    <Link href={href(locale, "players", p.slug)} className="flex items-center justify-between gap-3 border border-line bg-surface px-4 py-3 transition-colors hover:border-accent">
+                      <span className="font-display text-lg font-bold text-paper">{p.name}</span>
+                      <span className="font-mono text-xs text-muted">{p.spotlights[0].position}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {/* Related stories */}
           {articles.length > 0 && (

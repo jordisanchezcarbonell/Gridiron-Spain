@@ -1,0 +1,696 @@
+[
+ {
+  "id": "villamayor-mercenarios",
+  "slug": "villamayor-mercenarios",
+  "name": "Villamayor Mercenarios",
+  "shortName": "Mercenarios",
+  "city": "Villamayor de Gállego",
+  "province": "Zaragoza",
+  "autonomousCommunity": "Aragón",
+  "country": "ES",
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Norte",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-mercenarios"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Campo de Fútbol Tarba",
+    "en": "Campo de Fútbol Tarba"
+   },
+   "coordinates": {
+    "latitude": 41.6857,
+    "longitude": -0.774,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/mercenarioszgz/",
+   "twitter": "https://x.com/mercenarioszgz"
+  },
+  "summary": {
+   "es": "Club de Villamayor de Gállego (Zaragoza) que nació de un grupo de amigos y tomó su nombre de su etapa jugando con otro club. Terminó quinto en el grupo Norte de la LNFA 2 2025-26.",
+   "en": "Club from Villamayor de Gállego (Zaragoza) founded by a group of friends, named after a spell playing alongside another club. Finished fifth in the LNFA 2 North group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-mercenarios",
+   "fefa-lnfa2-2025-26",
+   "sportaragon-mercenarios-2019",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Año de fundación UNKNOWN. En enero de 2019 SportAragón lo describe como 'equipo de nuevo cuño'. FEFA no lista web. 'Tarba' figura en OSM como paraje, no como campo, así que las coordenadas son del centro del municipio. Historial FEFA: LNFA 2 2022 (semifinal) y 2023 (cuartos).",
+   "en": "Founding year UNKNOWN. In January 2019 SportAragón called it a 'newly formed team'. FEFA lists no website. OSM has 'Tarba' only as a locality, not a pitch, so coordinates are the town centre. FEFA record: LNFA 2 2022 (semi-final) and 2023 (quarter-final)."
+  }
+ },
+ {
+  "id": "torrelavega-berserkers",
+  "slug": "torrelavega-berserkers",
+  "name": "Berserkers Torrelavega",
+  "shortName": "Berserkers",
+  "city": "Torrelavega",
+  "province": "Cantabria",
+  "autonomousCommunity": "Cantabria",
+  "country": "ES",
+  "status": "active",
+  "disciplines": [
+   "tackle"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Norte",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-berserkers"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Óscar Freire",
+    "en": "Polideportivo Óscar Freire"
+   },
+   "coordinates": {
+    "latitude": 43.361,
+    "longitude": -4.0514,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/berserkersfootball/",
+   "twitter": "https://x.com/PBerserkers"
+  },
+  "summary": {
+   "es": "Club de Torrelavega (Cantabria) que juega en el complejo Óscar Freire. Terminó cuarto en el grupo Norte de la LNFA 2 2025-26 con un balance de 3-3.",
+   "en": "Torrelavega (Cantabria) club based at the Óscar Freire sports complex. Finished fourth in the LNFA 2 North group in 2025-26 with a 3-3 record."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-berserkers",
+   "fefa-lnfa2-2025-26",
+   "red39300-berserkers",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Año de fundación UNKNOWN. Nombre legal según el registro local: Club Deportivo Elemental Fútbol Americano Berserker. FEFA no lista web. Instagram usa la marca 'Rucasa Berserkers' (patrocinador). Historial FEFA: LNFA 3 2020-21 y LNFA 2 2022 (4º Norte).",
+   "en": "Founding year UNKNOWN. Legal name per local registry: Club Deportivo Elemental Fútbol Americano Berserker. FEFA lists no website. Instagram uses the 'Rucasa Berserkers' sponsor brand. FEFA record: LNFA 3 2020-21 and LNFA 2 2022 (4th North)."
+  }
+ },
+ {
+  "id": "guadalajara-stings",
+  "slug": "guadalajara-stings",
+  "name": "Guadalajara Stings",
+  "shortName": "Stings",
+  "city": "Guadalajara",
+  "province": "Guadalajara",
+  "autonomousCommunity": "Castilla-La Mancha",
+  "country": "ES",
+  "foundedYear": 2006,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men",
+   "senior-women",
+   "junior"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Norte",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-stings"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "CD Jerónimo de la Morena",
+    "en": "CD Jerónimo de la Morena"
+   },
+   "coordinates": {
+    "latitude": 40.6385,
+    "longitude": -3.1843,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://guadalajarastings.com/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/guadalajara.stings/",
+   "twitter": "https://x.com/GuadaStings"
+  },
+  "summary": {
+   "es": "Club fundado en 2006 en Guadalajara; su nombre alude a las abejas de la miel de la Alcarria. Se presenta como el único equipo de fútbol americano de Castilla-La Mancha y terminó sexto en el grupo Norte de la LNFA 2 2025-26.",
+   "en": "Founded in 2006 in Guadalajara, the club is named after the bees behind the Alcarria region's honey. It bills itself as Castilla-La Mancha's only American football team and finished sixth in the LNFA 2 North group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-stings",
+   "fefa-lnfa2-2025-26",
+   "stings-blog-historia",
+   "stings-web",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "La fundación en 2006 sale del blog histórico del club. FEFA no lista web, pero guadalajarastings.com está activa. Historial FEFA: subcampeón de la LNFA 3 en 2021, LNFA 2 2022 (2º Norte), 2023 (3º Norte) y 2024 (cuartos). La prensa menciona un título de la 'I Liga Aragonesa' sin fecha verificada (pendiente).",
+   "en": "2006 founding from the club's historical blog. FEFA lists no website; guadalajarastings.com is live. FEFA record: LNFA 3 runner-up 2021, LNFA 2 2022 (2nd North), 2023 (3rd North) and 2024 (quarter-final). Press mentions an 'I Liga Aragonesa' title with no verified date (pending)."
+  }
+ },
+ {
+  "id": "alicante-thunder",
+  "slug": "alicante-thunder",
+  "name": "Alicante Thunder",
+  "shortName": "Thunder",
+  "city": "Alicante",
+  "province": "Alicante",
+  "autonomousCommunity": "Comunidad Valenciana",
+  "country": "ES",
+  "foundedYear": 2023,
+  "status": "active",
+  "disciplines": [
+   "tackle"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Levantina",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-thunder"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Campo Municipal Antonio Solana",
+    "en": "Campo Municipal Antonio Solana"
+   },
+   "coordinates": {
+    "latitude": 38.3787,
+    "longitude": -0.4868,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://alicantethunder.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/alicantethunder/",
+   "facebook": "https://www.facebook.com/alicantethunder/"
+  },
+  "summary": {
+   "es": "Club alicantino presentado públicamente en mayo de 2023 como escuela de football americano. Terminó cuarto en el grupo Levante de la LNFA 2 2025-26, con un balance de 1-7.",
+   "en": "Alicante club publicly launched in May 2023 as a football school. Finished fourth in the LNFA 2 Levante group in 2025-26 with a 1-7 record."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-thunder",
+   "fefa-lnfa2-2025-26",
+   "thunder-presentacion-2023",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "2023 = presentación pública del 'nuevo equipo' el 6 de mayo de 2023, según la web del club. Fecha de constitución legal UNKNOWN. Historial FEFA: LNFA 2 2024 (6º Este) y 2025 (2º Este). Sin X según FEFA.",
+   "en": "2023 = public launch of the 'new team' on 6 May 2023 per club site. Legal registration date UNKNOWN. FEFA record: LNFA 2 2024 (6th East) and 2025 (2nd East). No X account per FEFA."
+  }
+ },
+ {
+  "id": "riudoms-rebels",
+  "slug": "riudoms-rebels",
+  "name": "Riudoms Rebels",
+  "shortName": "Rebels",
+  "city": "Riudoms",
+  "province": "Tarragona",
+  "autonomousCommunity": "Cataluña",
+  "country": "ES",
+  "foundedYear": 2018,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Catalana",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-rebels"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Camp de futbol americà Rebels",
+    "en": "Camp de futbol americà Rebels"
+   },
+   "coordinates": {
+    "latitude": 41.1391,
+    "longitude": 1.052,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/rebelscfa/"
+  },
+  "summary": {
+   "es": "Club del Baix Camp (Rebels CFA) que arrancó en Riudoms en 2018 y ganó su primera Lliga Catalana en 2024. Terminó cuarto en el grupo catalán de la LNFA 2 2025-26.",
+   "en": "Baix Camp club (Rebels CFA) that started in Riudoms in 2018 and won its first Lliga Catalana in 2024. Finished fourth in the LNFA 2 Catalan group in 2025-26."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Campeón Lliga Catalana",
+     "en": "Lliga Catalana champion"
+    },
+    "competitionId": "lliga-catalana",
+    "year": 2024,
+    "sourceIds": [
+     "diaridetarragona-rebels-2024"
+    ],
+    "verificationStatus": "partial"
+   }
+  ],
+  "sourceIds": [
+   "fefa-team-rebels",
+   "fefa-lnfa2-2025-26",
+   "diaridetarragona-rebels-2024",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "La fecha de 2018 y la Lliga Catalana de 2024 (12-0 a Argentona Bocs) salen del Diari de Tarragona. No figura en el palmarés FEFA porque es un título territorial. Sin web ni X según FEFA. No hay campo en OSM, así que las coordenadas son del centro de Riudoms. Según la prensa, el club nació de una escisión de jugadores de Reus Imperials (pendiente de cita directa).",
+   "en": "2018 start and 2024 Lliga Catalana (12-0 over Argentona Bocs) from Diari de Tarragona. Not in the FEFA palmarés because it is a territorial title. No website or X per FEFA. No pitch in OSM, so coordinates are Riudoms centre. Press says the club began as a split of players from Reus Imperials (direct citation pending)."
+  }
+ },
+ {
+  "id": "castell-platja-daro-ducs",
+  "slug": "castell-platja-daro-ducs",
+  "name": "Castell-Platja d'Aro Ducs",
+  "shortName": "Ducs",
+  "city": "Castell-Platja d'Aro",
+  "province": "Girona",
+  "autonomousCommunity": "Cataluña",
+  "country": "ES",
+  "foundedYear": 2018,
+  "status": "unknown",
+  "disciplines": [
+   "tackle"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Catalana",
+    "verificationStatus": "unverified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Camp Municipal d'Esports (Castell d'Aro)",
+    "en": "Camp Municipal d'Esports (Castell d'Aro)"
+   },
+   "coordinates": {
+    "latitude": 41.8186,
+    "longitude": 3.0451,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "http://www.ducsfootball.cat/",
+  "socialLinks": {},
+  "summary": {
+   "es": "Club gironí nacido en 2018 de la fusión de Salt Falcons y Senglars de Santa Cristina. FEFA lo incluyó en el grupo catalán de la LNFA 2 2025-26, pero no aparece en la clasificación final.",
+   "en": "Girona-province club formed in 2018 by merging Salt Falcons and Senglars de Santa Cristina. FEFA listed it in the 2025-26 LNFA 2 Catalan group, but it does not appear in the final standings."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-lnfa2-2025-26",
+   "ducs-el-club",
+   "platjadaro-guia-entitats",
+   "fefa-copa-cuartos-2023",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "No tiene ficha en FEFA (/equipos/castell-platja-daro-ducs/ da 404). No consta que jugara la LNFA 2 2025-26 (probable retirada, sin fuente), así que el estado es 'unknown'. La web ducsfootball.cat tiene el certificado TLS caducado y solo carga por http. El campo sale de la guía municipal de entidades y no está en OSM, así que las coordenadas son del municipio. Faltan las redes: Facebook 'ducsfootballoficial' aparece en buscadores pero no se ha abierto. Último rastro en FEFA: Copa Catalana, noviembre de 2023 (0-22 ante Pagesos).",
+   "en": "No FEFA team page (/equipos/castell-platja-daro-ducs/ returns 404). No evidence it played LNFA 2 2025-26 (likely withdrawal, unsourced), so status is 'unknown'. ducsfootball.cat has an expired TLS certificate and loads only over http. Ground from the municipal clubs guide; not in OSM, so coordinates are the municipality. Socials pending: Facebook 'ducsfootballoficial' shows up in search but was not opened. Last FEFA trace: Copa Catalana, Nov 2023 (0-22 vs Pagesos)."
+  }
+ },
+ {
+  "id": "pinto-goldbats",
+  "slug": "pinto-goldbats",
+  "name": "Pinto Goldbats",
+  "shortName": "Goldbats",
+  "city": "Pinto",
+  "province": "Madrid",
+  "autonomousCommunity": "Madrid",
+  "country": "ES",
+  "foundedYear": 2015,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men",
+   "junior"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Madrileña",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-goldbats"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Príncipe de Asturias",
+    "en": "Polideportivo Príncipe de Asturias"
+   },
+   "coordinates": {
+    "latitude": 40.241,
+    "longitude": -3.7005,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.pintogoldbats.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/pintogoldbats/",
+   "twitter": "https://x.com/pintoBATS"
+  },
+  "summary": {
+   "es": "Primer club de fútbol americano de Pinto, fundado en octubre de 2015. Semifinalista de la LNFA Serie B en 2024 y quinto del grupo madrileño de la LNFA 2 2025-26.",
+   "en": "Pinto's first American football club, founded in October 2015. LNFA Serie B semi-finalist in 2024 and fifth in the LNFA 2 Madrid group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-goldbats",
+   "fefa-lnfa2-2025-26",
+   "historias-deporte-pinteno-goldbats",
+   "madridactual-goldbats-2018",
+   "pintogoldbats-web",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Octubre de 2015 sale de 'Historias del deporte pinteño' (2024). MadridActual (2018) sitúa la idea en el verano de 2015. Según la web del club, juega en el Estadio Rafael Mendoza, dentro del complejo del Pabellón Príncipe de Asturias, y compite en la Liga Madrileña desde 2017. Ninguno de los dos está en OSM, así que las coordenadas son del centro de Pinto. Historial FEFA: LNFA 2 2022 (4º Centro), 2023 y 2024 (semifinal).",
+   "en": "October 2015 from 'Historias del deporte pinteño' (2024). MadridActual (2018) dates the idea to summer 2015. Per the club site it plays at Estadio Rafael Mendoza, inside the Pabellón Príncipe de Asturias complex, and has been in the Madrid league since 2017. Neither is in OSM, so coordinates are Pinto centre. FEFA record: LNFA 2 2022 (4th Centre), 2023, 2024 (semi-final)."
+  }
+ },
+ {
+  "id": "tres-cantos-jabatos",
+  "slug": "tres-cantos-jabatos",
+  "name": "Jabatos Tres Cantos",
+  "shortName": "Jabatos",
+  "city": "Tres Cantos",
+  "province": "Madrid",
+  "autonomousCommunity": "Madrid",
+  "country": "ES",
+  "foundedYear": 2012,
+  "status": "active",
+  "disciplines": [
+   "tackle"
+  ],
+  "categories": [
+   "senior-men",
+   "junior"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Madrileña",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-jabatos"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Gabriel Parellada",
+    "en": "Polideportivo Gabriel Parellada"
+   },
+   "coordinates": {
+    "latitude": 40.6012,
+    "longitude": -3.7038,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://jabatos.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/jabatosfootball/",
+   "twitter": "https://x.com/JabatosFootball"
+  },
+  "summary": {
+   "es": "Club de Tres Cantos fundado a finales de 2012 por exjugadores de los Tucanes (1991-2001) y jugadores jóvenes. Terminó tercero en el grupo madrileño de la LNFA 2 2025-26.",
+   "en": "Tres Cantos club founded in late 2012 by former Tucanes (1991-2001) players and newcomers. Finished third in the LNFA 2 Madrid group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-jabatos",
+   "fefa-lnfa2-2025-26",
+   "trescantos-jabatos",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "La fundación ('finales de 2012') sale de la ficha municipal de Tres Cantos, consultada en una copia de Internet Archive de 2015 porque el original no responde. La web jabatos.es está activa pero sin actualizar desde 2024. El campo no está en OSM, así que las coordenadas son del centro. Historial FEFA: LNFA 2 2024 (4º Centro). FEFA lo llama 'Tres Cantos Jabatos' en el anuncio de la temporada y 'Jabatos Tres Cantos' en la ficha.",
+   "en": "Founding ('late 2012') from the Tres Cantos council club page, read via a 2015 Internet Archive copy because the original no longer responds. jabatos.es is live but has not been updated since 2024. Ground not in OSM, so coordinates are the town centre. FEFA record: LNFA 2 2024 (4th Centre). FEFA calls it 'Tres Cantos Jabatos' in the season announcement and 'Jabatos Tres Cantos' on its team page."
+  }
+ },
+ {
+  "id": "boadilla-vikings",
+  "slug": "boadilla-vikings",
+  "name": "Boadilla Vikings",
+  "shortName": "Vikings",
+  "city": "Boadilla del Monte",
+  "province": "Madrid",
+  "autonomousCommunity": "Madrid",
+  "country": "ES",
+  "foundedYear": 2021,
+  "status": "active",
+  "disciplines": [
+   "tackle"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Madrileña",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-vikings"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Municipal Ángel Nieto",
+    "en": "Polideportivo Municipal Ángel Nieto"
+   },
+   "coordinates": {
+    "latitude": 40.4164,
+    "longitude": -3.8606,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://vikingsfa.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/vikingscfa/",
+   "twitter": "https://x.com/VikingsCFA"
+  },
+  "summary": {
+   "es": "Club (Vikings FA) creado en 2021 en Boadilla del Monte para extender el fútbol americano por el municipio. Terminó cuarto en el grupo madrileño de la LNFA 2 2025-26.",
+   "en": "Club (Vikings FA) created in 2021 in Boadilla del Monte to spread American football in the town. Finished fourth in the LNFA 2 Madrid group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-vikings",
+   "fefa-lnfa2-2025-26",
+   "vikings-club",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "La fundación en 2021 sale de la web del club. 2025-26 es su primera temporada con historial en FEFA (2021-2025 sin participación nacional). Coordenadas del Complejo Deportivo Municipal Ángel Nieto según OSM.",
+   "en": "2021 founding from club site. 2025-26 is its first season with a FEFA record (no national play 2021-2025). Coordinates of Complejo Deportivo Municipal Ángel Nieto per OSM."
+  }
+ },
+ {
+  "id": "granada-lions",
+  "slug": "granada-lions",
+  "name": "Granada Lions",
+  "shortName": "Lions",
+  "city": "Maracena",
+  "province": "Granada",
+  "autonomousCommunity": "Andalucía",
+  "country": "ES",
+  "foundedYear": 2001,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [],
+  "venue": {
+   "name": {
+    "es": "Estadio José Comino (Maracena)",
+    "en": "Estadio José Comino (Maracena)"
+   },
+   "coordinates": {
+    "latitude": 37.2076,
+    "longitude": -3.633,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.granadalions.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/granadalions/",
+   "twitter": "https://x.com/granadalions",
+   "facebook": "https://www.facebook.com/Granadalions/"
+  },
+  "summary": {
+   "es": "Club fundado el 2 de febrero de 2001 como Granada Universitarios y campeón de la LNFA 2 en 2013. Hoy tiene sede en Maracena y en 2025-26 jugó solo competiciones andaluzas: ganó la Copa Andaluza en marzo de 2026.",
+   "en": "Founded on 2 February 2001 as Granada Universitarios and LNFA 2 champion in 2013. Now based in Maracena, it played only Andalusian competitions in 2025-26 and won the Copa Andaluza in March 2026."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Campeón LNFA 2",
+     "en": "LNFA 2 champion"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2013,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Campeón Liga Andaluza (XX edición)",
+     "en": "Andalusian League champion (20th edition)"
+    },
+    "year": 2022,
+    "sourceIds": [
+     "granadaenjuego-lions-liga-2022"
+    ],
+    "verificationStatus": "partial"
+   },
+   {
+    "title": {
+     "es": "Campeón Copa Andaluza",
+     "en": "Copa Andaluza champion"
+    },
+    "year": 2026,
+    "sourceIds": [
+     "granadaenjuego-lions-copa-2026"
+    ],
+    "verificationStatus": "partial"
+   }
+  ],
+  "sourceIds": [
+   "fefa-palmares",
+   "fefa-team-lions",
+   "granadalions-historia",
+   "wiki-granada-lions",
+   "granadaenjuego-lions-liga-2022",
+   "granadaenjuego-lions-copa-final-2025",
+   "granadaenjuego-lions-liga-debut-2026",
+   "granadaenjuego-lions-copa-2026",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Sigue activo en 2026 en competiciones regionales: final de la Copa Andaluza perdida 8-14 ante Mairena Blue Devils (diciembre de 2025), Liga Andaluza 7x7 desde febrero de 2026 y Copa Andaluza ganada 12-7 a Almería Barbarians (marzo de 2026). La relación entre las dos Copas Andaluzas (¿ediciones o formatos distintos?) está por aclarar. No juega ninguna competición FEFA en 2025-26: la ficha FEFA llega hasta 2022-23 y currentCompetitions queda vacío porque no hay competitionId 'liga-andaluza'. La web granadalions.es no se actualiza desde febrero de 2023. OSM tiene 'Campo de Fútbol Municipal de Maracena' en la Avenida de José Comino, pero no se ha confirmado que sea el mismo 'Estadio José Comino', así que la precisión es de ciudad. Wikipedia cita el Complejo Antonio Prieto Castillo (campo antiguo).",
+   "en": "Still active in 2026 in regional play: lost the Copa Andaluza final 8-14 to Mairena Blue Devils (Dec 2025), Liga Andaluza 7x7 from Feb 2026, and won the Copa Andaluza 12-7 over Almería Barbarians (Mar 2026). How the two Copa Andaluza finals relate (separate editions or formats?) is still unclear. No FEFA competition in 2025-26: the FEFA page ends at 2022-23 and currentCompetitions is empty because there is no 'liga-andaluza' competitionId. granadalions.es has not been updated since Feb 2023. OSM has 'Campo de Fútbol Municipal de Maracena' on Avenida de José Comino, but it is not confirmed to be the same 'Estadio José Comino', so precision is city. Wikipedia cites Complejo Antonio Prieto Castillo (former ground)."
+  }
+ }
+]

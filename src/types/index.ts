@@ -10,3 +10,4 @@ export * from "./history";
 export * from "./research";
 export * from "./ranking";
 export * from "./schedule";
+export * from "./national-team";

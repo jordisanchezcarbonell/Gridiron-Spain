@@ -17,6 +17,7 @@ import { seasons } from "../src/data/seasons";
 import { rankings } from "../src/data/rankings";
 import { playerSpotlights } from "../src/data/players";
 import { agendaWeeks } from "../src/data/agenda";
+import { nationalTeams } from "../src/data/national-teams";
 
 const sourceIds = new Set(sources.map((s) => s.id));
 const errors: string[] = [];
@@ -144,11 +145,29 @@ if (newestAgenda && today > newestAgenda.to) {
   const age = Math.floor((Date.parse(today) - Date.parse(newestAgenda.to)) / 86_400_000);
   if (age > 3) warnings.push(`agenda: stale — newest week ended ${newestAgenda.to} (${age} days ago)`);
 }
+unique("national-teams", nationalTeams.map((n) => n.id));
+for (const n of nationalTeams) {
+  const owner = `national-team:${n.id}`;
+  checkIds(owner, n.sourceIds);
+  for (const p of n.story ?? []) {
+    checkCitations(owner, p.es, n.sourceIds);
+    checkCitations(owner, p.en, n.sourceIds);
+  }
+  for (const h of n.honours ?? []) checkIds(owner, h.sourceIds);
+  if (n.roster) checkIds(owner, n.roster.sourceIds);
+  for (const g of [...n.results, ...n.upcoming, ...(n.pastCampaigns ?? []).flatMap((c) => c.games)]) {
+    checkIds(owner, g.sourceIds);
+    if (g.sourceIds.length === 0) errors.push(`${owner}: game ${g.date} without sources`);
+    for (const id of g.sourceIds) if (!n.sourceIds.includes(id)) errors.push(`${owner}: source "${id}" missing from the team's sourceIds`);
+  }
+  for (const g of n.upcoming) if (g.date < today) warnings.push(`${owner}: upcoming game on ${g.date} is in the past — move it to results`);
+}
 for (const p of playerSpotlights) {
   const owner = `player:${p.id}`;
   checkIds(owner, p.sourceIds);
   if (p.sourceIds.length === 0) errors.push(`${owner}: player without sources`);
   if (p.teamId && !teams.some((t) => t.id === p.teamId)) errors.push(`${owner}: unknown team "${p.teamId}"`);
+  if (p.nationalTeamId && nationalTeams.length > 0 && !nationalTeams.some((n) => n.id === p.nationalTeamId)) errors.push(`${owner}: unknown national team "${p.nationalTeamId}"`);
 }
 for (const e of timeline) {
   checkIds(`timeline:${e.id}`, e.sourceIds);
