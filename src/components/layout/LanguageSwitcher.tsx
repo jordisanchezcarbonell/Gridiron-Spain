@@ -12,7 +12,7 @@ export function LanguageSwitcher({ locale, label }: { locale: Locale; label: str
   const pathname = usePathname() ?? `/${locale}`;
 
   return (
-    <nav aria-label={label} className="flex overflow-hidden rounded-sm border border-line-strong font-mono text-[0.7rem] uppercase tracking-[0.14em]">
+    <nav aria-label={label} className="flex overflow-hidden border border-line-strong font-mono text-[0.625rem] font-medium uppercase tracking-[0.1em]">
       {locales.map((target) => {
         const active = target === locale;
         return (
@@ -29,7 +29,7 @@ export function LanguageSwitcher({ locale, label }: { locale: Locale; label: str
             }}
             className={cx(
               "px-2.5 py-1.5 transition-colors",
-              active ? "bg-gold text-ink" : "text-muted hover:bg-surface-2 hover:text-paper",
+              active ? "bg-accent text-white" : "text-muted hover:bg-surface-2 hover:text-paper",
             )}
           >
             {target}

@@ -86,17 +86,26 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
   return (
     <>
       <JsonLd data={[teamJsonLd(team, locale), breadcrumbJsonLd(crumbs.map((c) => ({ name: c.name, url: c.href ?? href(locale, "teams", team.slug) })))]} />
-      <div className="container-content pt-8">
+
+      <div className="container-content pt-6 md:pt-8">
         <Breadcrumbs items={crumbs} />
       </div>
+
       <TeamHero team={team} locale={locale} dict={dict} />
 
-      <div className="container-content grid gap-12 py-12 lg:grid-cols-[1fr_22rem] lg:py-16">
+      <div className="container-content grid gap-10 py-10 lg:grid-cols-[1fr_20rem] lg:gap-12 lg:py-14">
         <article className="min-w-0">
+          {/* History section */}
           <section aria-labelledby="history-title">
-            <h2 id="history-title" className="display display-sm mb-6">
-              {dict.teams.history}
-            </h2>
+            <header className="mb-6">
+              <div className="inline-flex items-center">
+                <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-white">
+                  {dict.teams.history}
+                </span>
+                <div className="h-7 w-2 bg-accent/60" />
+                <div className="h-7 w-1 bg-accent/30" />
+              </div>
+            </header>
             {team.history && team.history.length > 0 ? (
               <div className="prose-editorial">
                 {team.history.map((paragraph, i) => (
@@ -115,16 +124,23 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
             )}
           </section>
 
-          <section aria-labelledby="honours-title" className="mt-14">
-            <h2 id="honours-title" className="display display-sm mb-6">
-              {dict.teams.honours}
-            </h2>
+          {/* Honours section */}
+          <section aria-labelledby="honours-title" className="mt-12">
+            <header className="mb-6">
+              <div className="inline-flex items-center">
+                <span className="flex h-7 items-center bg-gold px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-ink">
+                  {dict.teams.honours}
+                </span>
+                <div className="h-7 w-2 bg-gold/60" />
+                <div className="h-7 w-1 bg-gold/30" />
+              </div>
+            </header>
             {team.honours.length > 0 ? (
-              <ul className="card divide-y divide-line">
+              <ul className="divide-y divide-line border border-line bg-surface">
                 {team.honours.map((honour, i) => (
                   <li key={i} className="flex flex-wrap items-center justify-between gap-3 px-5 py-4">
-                    <span>
-                      <span className="mr-3 font-display text-2xl font-black text-gold">{honour.year}</span>
+                    <span className="flex items-center gap-4">
+                      <span className="font-display text-2xl font-black text-accent">{honour.year}</span>
                       <span className="text-paper">{t(honour.title, locale)}</span>
                     </span>
                   </li>
@@ -135,12 +151,17 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
             )}
           </section>
 
+          {/* Related stories */}
           {articles.length > 0 && (
-            <section aria-labelledby="related-title" className="mt-14">
-              <h2 id="related-title" className="display display-sm mb-6">
-                {dict.teams.relatedStories}
-              </h2>
-              <ul className="grid gap-5 sm:grid-cols-2">
+            <section aria-labelledby="related-title" className="mt-12">
+              <header className="mb-6">
+                <div className="inline-flex items-center">
+                  <span className="flex h-7 items-center bg-surface-2 px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+                    {dict.teams.relatedStories}
+                  </span>
+                </div>
+              </header>
+              <ul className="grid gap-4 sm:grid-cols-2">
                 {articles.map((article) => (
                   <li key={article.id}>
                     <ArticleCard article={article} locale={locale} dict={dict} />
@@ -161,24 +182,40 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
           />
         </article>
 
+        {/* Sidebar */}
         <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
           <TeamMetadata team={team} competitions={competitions} locale={locale} dict={dict} />
+
           {pins.length > 0 && (
-            <div>
+            <div className="relative overflow-hidden border border-line">
+              <div className="absolute inset-x-0 top-0 z-10 h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
               <TeamMapLoader
                 lazy
                 pins={pins}
-                height="16rem"
+                height="14rem"
                 interactive={false}
                 labels={{ viewProfile: dict.teams.viewProfile, cityLevel: dict.map.legendCity, clusterHint: dict.map.clusterHint, status: dict.status, loading: dict.map.loading, mapError: dict.map.mapError }}
               />
-              <Link href={href(locale, "map")} className="mt-2 inline-block font-mono text-xs uppercase tracking-[0.14em] text-gold hover:text-gold-2">
-                {dict.teams.onMap} →
+              <Link
+                href={href(locale, "map")}
+                className="absolute bottom-3 right-3 z-20 flex h-8 items-center gap-1.5 bg-accent px-3 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+              >
+                {dict.teams.onMap}
+                <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="square" d="M9 5l7 7-7 7" />
+                </svg>
               </Link>
             </div>
           )}
-          <Link href={href(locale, "teams")} className="inline-block font-mono text-xs uppercase tracking-[0.14em] text-muted hover:text-gold">
-            ← {dict.teams.backToTeams}
+
+          <Link
+            href={href(locale, "teams")}
+            className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.12em] text-muted transition-colors hover:text-accent"
+          >
+            <svg className="h-3 w-3 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="square" d="M15 19l-7-7 7-7" />
+            </svg>
+            {dict.teams.backToTeams}
           </Link>
         </aside>
       </div>

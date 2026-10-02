@@ -29,15 +29,70 @@ export default async function ArticlesPage({ params }: PageProps<"/[lang]/articu
           { name: dict.nav.stories, url: href(locale, "articles") },
         ])}
       />
-      <section className="grain border-b border-line">
-        <div className="container-content py-14 md:py-20">
+
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
+
+        <div className="container-content relative py-12 md:py-16 lg:py-20">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.stories }]} />
-          <h1 className="display display-md">{dict.articles.title}</h1>
-          <p className="mt-5 max-w-2xl text-lg text-paper-2">{dict.articles.intro}</p>
+
+          {/* Kicker */}
+          <div className="mb-6 mt-6 inline-flex items-center">
+            <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">
+              {dict.nav.stories}
+            </span>
+            <div className="h-7 w-10 bg-gradient-to-r from-accent/60 to-transparent" />
+          </div>
+
+          <h1 className="display display-lg max-w-4xl">{dict.articles.title}</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-paper-2">{dict.articles.intro}</p>
+
+          {/* Stats */}
+          <div className="mt-10 flex flex-wrap gap-8">
+            <div className="relative pl-4">
+              <div className="absolute left-0 top-0 h-full w-1 bg-accent" />
+              <span className="block font-display text-4xl font-black leading-none text-paper">{articles.length}</span>
+              <span className="mt-1 block font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted">
+                {locale === "es" ? "historias publicadas" : "published stories"}
+              </span>
+            </div>
+          </div>
         </div>
+
+        {/* Bottom accent bar */}
+        <div className="h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
       </section>
-      <div className="container-content space-y-8 py-12">
-        {first && <ArticleCard article={first} locale={locale} dict={dict} variant="featured" />}
+
+      {/* Featured story */}
+      {first && (
+        <section className="border-b border-line bg-ink-2">
+          <div className="container-content py-10 md:py-14">
+            <header className="mb-8">
+              <div className="inline-flex items-center">
+                <span className="flex h-8 items-center bg-accent px-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-white">
+                  {dict.home.featured}
+                </span>
+                <div className="h-8 w-2 bg-accent/60" />
+                <div className="h-8 w-1 bg-accent/30" />
+              </div>
+            </header>
+            <ArticleCard article={first} locale={locale} dict={dict} variant="featured" />
+          </div>
+        </section>
+      )}
+
+      {/* Rest of articles */}
+      <section className="container-content py-10 md:py-14">
+        <header className="mb-8">
+          <div className="inline-flex items-center">
+            <span className="flex h-7 items-center bg-surface-2 px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+              {locale === "es" ? "Todas las historias" : "All stories"}
+            </span>
+          </div>
+        </header>
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {rest.map((article) => (
             <li key={article.id}>
@@ -45,7 +100,7 @@ export default async function ArticlesPage({ params }: PageProps<"/[lang]/articu
             </li>
           ))}
         </ul>
-      </div>
+      </section>
     </>
   );
 }

@@ -59,33 +59,87 @@ export default async function RoadPage({ params }: PageProps<"/[lang]/road-to-an
           { name: dict.nav.road, url: href(locale, "roadToAnnapolis") },
         ])}
       />
-      <section className="relative overflow-hidden border-b border-line bg-ink-2">
-        <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-50" />
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-20" />
+
         <div className="container-content relative grid gap-10 py-16 md:grid-cols-[1.3fr_1fr] md:py-24">
           <div>
-            <p className="kicker mb-4">{dict.road.kicker}</p>
-            <h1 className="display display-lg">From <span className="text-gold">Barcelona</span><br />to Annapolis</h1>
+            {/* Kicker */}
+            <div className="mb-6 inline-flex items-center">
+              <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">
+                {dict.road.kicker}
+              </span>
+              <div className="h-7 w-10 bg-gradient-to-r from-accent/60 to-transparent" />
+            </div>
+
+            <h1 className="display display-xl">From <span className="text-accent">Barcelona</span><br />to Annapolis</h1>
             <p className="mt-4 font-mono text-xs uppercase tracking-[0.12em] text-paper-2">{t(roadProposal.visit, locale)}</p>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-2 md:text-xl">{t(roadProposal.intro, locale)}</p>
-            <p className="mt-5 font-mono text-xs uppercase tracking-[0.12em] text-gold">{t(roadProposal.status, locale)}</p>
+            <p className="mt-5 font-mono text-xs uppercase tracking-[0.12em] text-accent">{t(roadProposal.status, locale)}</p>
             <div className="mt-8 flex flex-wrap gap-3"><ButtonLink href="#propuesta" size="lg">{proposal.view}</ButtonLink><ButtonLink href={mailto} variant="secondary" size="lg">{proposal.write}</ButtonLink></div>
           </div>
-          <aside className="card self-start p-6">
-            <p className="kicker mb-3">{proposal.contact}</p>
+          <aside className="relative self-start border border-line bg-surface p-6">
+            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
+            <span className="mb-3 inline-flex h-6 items-center bg-accent px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-white">
+              {proposal.contact}
+            </span>
             <p className="font-display text-3xl font-black uppercase text-paper">{roadProposal.contact.name}</p>
             <p className="mt-1 text-paper-2">{t(roadProposal.contact.city, locale)}</p>
-            <a className="mt-4 block text-gold underline underline-offset-4" href={mailto}>{roadProposal.contact.email}</a>
-            <a className="mt-2 inline-block text-sm text-muted hover:text-gold" href={roadProposal.contact.website} rel="noopener noreferrer">jordisanchezweb.es</a>
+            <a className="mt-4 block text-accent underline underline-offset-4 hover:text-accent-bright" href={mailto}>{roadProposal.contact.email}</a>
+            <a className="mt-2 inline-block text-sm text-muted hover:text-accent" href={roadProposal.contact.website} rel="noopener noreferrer">jordisanchezweb.es</a>
             <p className="mt-6 border-t border-line pt-4 text-sm leading-relaxed text-muted">{t(roadProposal.independence, locale)}</p>
           </aside>
         </div>
+
+        {/* Bottom accent bar */}
+        <div className="h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
       </section>
 
       <section className="container-content grid gap-6 py-16 md:grid-cols-3 md:py-20">
-        <section className="card p-6"><p className="kicker mb-3">01</p><h2 className="display display-sm">{proposal.who}</h2><p className="mt-4 leading-relaxed text-paper-2">{proposal.intro}</p></section>
-        <section id="propuesta" className="card p-6 scroll-mt-8 md:col-span-2"><p className="kicker mb-3">02</p><h2 className="display display-sm">{proposal.content}</h2><ul className="mt-5 grid gap-3 sm:grid-cols-3">{roadProposal.deliverables.map((item) => <li key={item.title.en} className="border-l-2 border-gold pl-3"><h3 className="font-display text-xl font-bold uppercase text-paper">{t(item.title, locale)}</h3><p className="mt-1 text-sm leading-relaxed text-muted">{t(item.text, locale)}</p></li>)}</ul><p className="mt-5 text-sm leading-relaxed text-muted">{t(roadProposal.terms, locale)}</p></section>
-        <section className="card p-6 md:col-span-2"><p className="kicker mb-3">03</p><h2 className="display display-sm">{proposal.support}</h2><p className="mt-4 text-lg leading-relaxed text-paper-2">{t(roadProposal.support, locale)}</p><p className="mt-3 text-sm text-muted">{t(roadProposal.guidance, locale)}</p><p className="mt-3 text-sm text-muted">{t(roadProposal.boundaries, locale)}</p></section>
-        <section className="card p-6"><p className="kicker mb-3">04</p><h2 className="display display-sm">{proposal.samples}</h2><ul className="mt-4 space-y-2">{proposal.samplesList.map(([name, url]) => <li key={url as string}><a className="text-gold underline underline-offset-4" href={url as string}>{name} →</a></li>)}</ul></section>
+        <section className="border border-line bg-surface p-6">
+          <span className="mb-3 inline-flex h-6 items-center bg-accent px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-white">01</span>
+          <h2 className="display display-sm">{proposal.who}</h2>
+          <p className="mt-4 leading-relaxed text-paper-2">{proposal.intro}</p>
+        </section>
+        <section id="propuesta" className="border border-line bg-surface p-6 scroll-mt-8 md:col-span-2">
+          <span className="mb-3 inline-flex h-6 items-center bg-accent px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-white">02</span>
+          <h2 className="display display-sm">{proposal.content}</h2>
+          <ul className="mt-5 grid gap-3 sm:grid-cols-3">
+            {roadProposal.deliverables.map((item) => (
+              <li key={item.title.en} className="border-l-2 border-accent pl-3">
+                <h3 className="font-display text-xl font-bold uppercase text-paper">{t(item.title, locale)}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-muted">{t(item.text, locale)}</p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 text-sm leading-relaxed text-muted">{t(roadProposal.terms, locale)}</p>
+        </section>
+        <section className="border border-line bg-surface p-6 md:col-span-2">
+          <span className="mb-3 inline-flex h-6 items-center bg-surface-2 px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-paper">03</span>
+          <h2 className="display display-sm">{proposal.support}</h2>
+          <p className="mt-4 text-lg leading-relaxed text-paper-2">{t(roadProposal.support, locale)}</p>
+          <p className="mt-3 text-sm text-muted">{t(roadProposal.guidance, locale)}</p>
+          <p className="mt-3 text-sm text-muted">{t(roadProposal.boundaries, locale)}</p>
+        </section>
+        <section className="border border-line bg-surface p-6">
+          <span className="mb-3 inline-flex h-6 items-center bg-surface-2 px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-paper">04</span>
+          <h2 className="display display-sm">{proposal.samples}</h2>
+          <ul className="mt-4 space-y-2">
+            {proposal.samplesList.map(([name, url]) => (
+              <li key={url as string}>
+                <a className="inline-flex items-center gap-1 text-accent underline underline-offset-4 hover:text-accent-bright" href={url as string}>
+                  {name}
+                  <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="square" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       </section>
 
       {/* THE STORY */}

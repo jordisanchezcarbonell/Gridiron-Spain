@@ -36,27 +36,60 @@ export default async function CompetitionsPage({ params }: PageProps<"/[lang]/co
           { name: dict.nav.competitions, url: href(locale, "competitions") },
         ])}
       />
-      <section className="grain border-b border-line">
-        <div className="container-content py-14 md:py-20">
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
+
+        <div className="container-content relative py-12 md:py-16 lg:py-20">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.competitions }]} />
-          <h1 className="display display-md">{dict.competitions.title}</h1>
-          <p className="mt-5 max-w-2xl text-lg text-paper-2">{dict.competitions.intro}</p>
+
+          {/* Kicker */}
+          <div className="mb-6 mt-6 inline-flex items-center">
+            <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">
+              {dict.nav.competitions}
+            </span>
+            <div className="h-7 w-10 bg-gradient-to-r from-accent/60 to-transparent" />
+          </div>
+
+          <h1 className="display display-lg max-w-4xl">{dict.competitions.title}</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-paper-2">{dict.competitions.intro}</p>
+
+          {/* Stats */}
+          <div className="mt-10 flex flex-wrap gap-8">
+            <div className="relative pl-4">
+              <div className="absolute left-0 top-0 h-full w-1 bg-accent" />
+              <span className="block font-display text-4xl font-black leading-none text-paper">{competitions.filter((c) => c.status === "active").length}</span>
+              <span className="mt-1 block font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted">
+                {locale === "es" ? "competiciones activas" : "active competitions"}
+              </span>
+            </div>
+          </div>
         </div>
+
+        {/* Bottom accent bar */}
+        <div className="h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
       </section>
-      <div className="container-content space-y-14 py-12">
+
+      <div className="container-content space-y-14 py-12 md:py-14">
         {groups
           .filter((g) => g.items.length > 0)
           .map((group) => (
             <section key={group.key} aria-labelledby={`group-${group.key}`}>
-              <h2 id={`group-${group.key}`} className="display display-sm mb-6">
-                {group.title}
-              </h2>
+              <header className="mb-6">
+                <div className="inline-flex items-center">
+                  <span className="flex h-8 items-center bg-surface-2 px-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-paper">
+                    {group.title}
+                  </span>
+                </div>
+              </header>
               <ul className="grid gap-5 md:grid-cols-2">
                 {group.items.map((c) => (
                   <li key={c.id}>
-                    <Link href={href(locale, "competitions", c.slug)} className="card card-hover group flex h-full flex-col gap-3 p-5">
+                    <Link href={href(locale, "competitions", c.slug)} className="group flex h-full flex-col gap-3 border border-line bg-surface p-5 transition-colors hover:border-accent">
                       <div className="flex items-start justify-between gap-3"><Badge tone="gold">{dict.levels[c.level]}</Badge></div>
-                      <h3 className="font-display text-2xl font-extrabold uppercase leading-none text-paper group-hover:text-gold">
+                      <h3 className="font-display text-2xl font-extrabold uppercase leading-none text-paper transition-colors group-hover:text-accent">
                         {c.name}
                       </h3>
                       <p className="text-sm text-muted">

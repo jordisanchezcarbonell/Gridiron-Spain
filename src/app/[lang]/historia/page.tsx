@@ -47,43 +47,87 @@ export default async function HistoryPage({ params }: PageProps<"/[lang]/histori
           { name: dict.nav.history, url: href(locale, "history") },
         ])}
       />
-      <section className="grain border-b border-line">
-        <div className="container-content py-14 md:py-20">
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
+
+        <div className="container-content relative py-12 md:py-16 lg:py-20">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.history }]} />
-          <p className="kicker mb-4">{firstYear} → {new Date().getFullYear()}</p>
-          <h1 className="display display-md max-w-4xl">{dict.history.title}</h1>
-          <p className="mt-5 max-w-2xl text-lg text-paper-2">{dict.history.intro}</p>
-          <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
-            <Stat label={dict.history.statsYears} value={String(years)} />
-            <Stat label={dict.history.statsClubs} value={String(teams.length)} />
-            <Stat label={dict.history.statsFinals} value={String(finals.filter((f) => f.champion).length)} />
-            <Stat label={dict.history.statsSources} value={String(sources.length)} />
+
+          {/* Kicker */}
+          <div className="mb-6 mt-6 inline-flex items-center">
+            <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">
+              {firstYear} → {new Date().getFullYear()}
+            </span>
+            <div className="h-7 w-10 bg-gradient-to-r from-accent/60 to-transparent" />
           </div>
-          <nav aria-label={dict.history.eras} className="mt-8 flex flex-wrap gap-2 font-mono text-[0.68rem] uppercase tracking-[0.14em]">
+
+          <h1 className="display display-lg max-w-4xl">{dict.history.title}</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-paper-2">{dict.history.intro}</p>
+
+          {/* Stats */}
+          <div className="mt-10 flex flex-wrap gap-8">
+            <div className="relative pl-4">
+              <div className="absolute left-0 top-0 h-full w-1 bg-accent" />
+              <span className="block font-display text-4xl font-black leading-none text-paper">{years}</span>
+              <span className="mt-1 block font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted">{dict.history.statsYears}</span>
+            </div>
+            <div className="relative pl-4">
+              <div className="absolute left-0 top-0 h-full w-1 bg-turf" />
+              <span className="block font-display text-4xl font-black leading-none text-paper">{teams.length}</span>
+              <span className="mt-1 block font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted">{dict.history.statsClubs}</span>
+            </div>
+            <div className="relative pl-4">
+              <div className="absolute left-0 top-0 h-full w-1 bg-gold" />
+              <span className="block font-display text-4xl font-black leading-none text-paper">{finals.filter((f) => f.champion).length}</span>
+              <span className="mt-1 block font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted">{dict.history.statsFinals}</span>
+            </div>
+            <div className="relative pl-4">
+              <div className="absolute left-0 top-0 h-full w-1 bg-surface-2" />
+              <span className="block font-display text-4xl font-black leading-none text-paper">{sources.length}</span>
+              <span className="mt-1 block font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted">{dict.history.statsSources}</span>
+            </div>
+          </div>
+
+          {/* Era navigation */}
+          <nav aria-label={dict.history.eras} className="mt-10 flex flex-wrap gap-2">
             {eras.map((era) => (
-              <a key={era.id} href={`#${era.id}`} className="rounded-full border border-line-strong px-3 py-1.5 text-muted hover:border-gold hover:text-gold">
+              <a key={era.id} href={`#${era.id}`} className="flex h-8 items-center border border-line bg-surface px-3 font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted transition-colors hover:border-accent hover:text-accent">
                 {t(era.kicker, locale)}
               </a>
             ))}
-            <a href="#finales" className="rounded-full border border-line-strong px-3 py-1.5 text-muted hover:border-gold hover:text-gold">
+            <a href="#finales" className="flex h-8 items-center border border-line bg-surface px-3 font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted transition-colors hover:border-gold hover:text-gold">
               Spanish Bowl
             </a>
-            <a href="#palmares" className="rounded-full border border-line-strong px-3 py-1.5 text-muted hover:border-gold hover:text-gold">
+            <a href="#palmares" className="flex h-8 items-center border border-line bg-surface px-3 font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted transition-colors hover:border-gold hover:text-gold">
               {dict.history.honours}
             </a>
           </nav>
         </div>
+
+        {/* Bottom accent bar */}
+        <div className="h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
       </section>
 
       <div className="container-content space-y-20 py-16 lg:py-20">
         {eras.map((era, i) => (
-          <div key={era.id} className={i > 0 ? "rule pt-16" : ""}>
+          <div key={era.id} className={i > 0 ? "border-t border-line pt-16" : ""}>
             <EraSection era={era} index={i} events={events} teams={teams} sources={sources} locale={locale} dict={dict} />
           </div>
         ))}
 
-        <section id="finales" className="rule pt-16" aria-labelledby="finales-title">
-          <p className="kicker mb-3">LNFA</p>
+        <section id="finales" className="border-t border-line pt-16" aria-labelledby="finales-title">
+          <header className="mb-6">
+            <div className="inline-flex items-center">
+              <span className="flex h-7 items-center bg-gold px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-ink">
+                LNFA
+              </span>
+              <div className="h-7 w-2 bg-gold/60" />
+              <div className="h-7 w-1 bg-gold/30" />
+            </div>
+          </header>
           <h2 id="finales-title" className="display display-sm mb-3">
             {dict.history.finals}
           </h2>
@@ -91,8 +135,16 @@ export default async function HistoryPage({ params }: PageProps<"/[lang]/histori
           <FinalsTable finals={finals} teams={teams} locale={locale} dict={dict} />
         </section>
 
-        <section id="palmares" className="rule pt-16" aria-labelledby="palmares-title">
-          <p className="kicker mb-3">LNFA</p>
+        <section id="palmares" className="border-t border-line pt-16" aria-labelledby="palmares-title">
+          <header className="mb-6">
+            <div className="inline-flex items-center">
+              <span className="flex h-7 items-center bg-gold px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-ink">
+                LNFA
+              </span>
+              <div className="h-7 w-2 bg-gold/60" />
+              <div className="h-7 w-1 bg-gold/30" />
+            </div>
+          </header>
           <h2 id="palmares-title" className="display display-sm mb-3">
             {dict.history.honours}
           </h2>
@@ -100,27 +152,40 @@ export default async function HistoryPage({ params }: PageProps<"/[lang]/histori
           <HonoursTable finals={finals} teams={teams} locale={locale} dict={dict} />
         </section>
 
-        <section className="rule grid gap-6 pt-16 md:grid-cols-2">
+        <section className="grid gap-6 border-t border-line pt-16 md:grid-cols-2">
           {pillar && (
-            <div className="card p-6">
-              <p className="kicker mb-3">{dict.history.pillar}</p>
+            <div className="relative border border-line bg-surface p-6">
+              <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
+              <span className="mb-3 inline-flex h-6 items-center bg-accent px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-white">
+                {dict.history.pillar}
+              </span>
               <Link href={href(locale, "articles", pillar.slug)} className="group">
-                <h2 className="font-display text-2xl font-extrabold uppercase leading-none text-paper group-hover:text-gold">
+                <h2 className="font-display text-2xl font-extrabold uppercase leading-none text-paper transition-colors group-hover:text-accent">
                   {t(pillar.title, locale)}
                 </h2>
               </Link>
               <p className="mt-2 text-sm text-muted">{t(pillar.excerpt, locale)}</p>
             </div>
           )}
-          <div className="card p-6">
-            <p className="kicker mb-3 text-muted-2">{dict.history.methodology}</p>
+          <div className="border border-line bg-surface p-6">
+            <span className="mb-3 inline-flex h-6 items-center bg-surface-2 px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-muted">
+              {dict.history.methodology}
+            </span>
             <p className="text-sm text-paper-2">{dict.history.methodologyText}</p>
           </div>
         </section>
 
         {historyArticles.length > 0 && (
-          <section className="rule pt-16">
-            <h2 className="display display-sm mb-8">{dict.categories.historia}</h2>
+          <section className="border-t border-line pt-16">
+            <header className="mb-8">
+              <div className="inline-flex items-center">
+                <span className="flex h-8 items-center bg-accent px-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-white">
+                  {dict.categories.historia}
+                </span>
+                <div className="h-8 w-2 bg-accent/60" />
+                <div className="h-8 w-1 bg-accent/30" />
+              </div>
+            </header>
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {historyArticles.map((article) => (
                 <li key={article.id}>

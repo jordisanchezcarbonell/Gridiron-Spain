@@ -44,24 +44,36 @@ export function MobileNav({
         aria-expanded={open}
         aria-controls={panelId}
         onClick={() => setOpen((v) => !v)}
-        className="rounded-sm border border-line-strong px-3 py-1.5 font-display text-sm font-bold uppercase tracking-[0.1em] text-paper hover:border-gold hover:text-gold"
+        className="flex h-9 w-9 items-center justify-center border border-line-strong bg-surface font-display text-sm font-bold text-paper transition-colors hover:border-accent hover:text-accent"
       >
-        {open ? closeLabel : openLabel}
+        {open ? (
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="square" d="M6 6l12 12M6 18L18 6" />
+          </svg>
+        ) : (
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="square" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        )}
+        <span className="sr-only">{open ? closeLabel : openLabel}</span>
       </button>
       {open && (
         <div
           id={panelId}
-          className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-line bg-ink"
+          className="fixed inset-x-0 top-[3.625rem] bottom-0 z-40 overflow-y-auto border-t border-line bg-ink/95 backdrop-blur-md"
         >
-          <nav aria-label="Mobile" className="container-content py-6">
-            <ul className="flex flex-col">
-              {items.map((item) => (
-                <li key={item.href} className="border-b border-line">
+          {/* Accent bar continuation */}
+          <div className="h-0.5 bg-gradient-to-r from-accent via-accent to-transparent" />
+          <nav aria-label="Mobile" className="container-content py-8">
+            <ul className="flex flex-col gap-1">
+              {items.map((item, i) => (
+                <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block py-4 font-display text-2xl font-extrabold uppercase tracking-[0.04em] ${
-                      item.highlight ? "text-gold" : "text-paper"
+                    className={`block py-3 font-display text-2xl font-black uppercase tracking-[0.02em] transition-colors ${
+                      item.highlight ? "text-accent" : "text-paper hover:text-accent"
                     }`}
+                    style={{ animationDelay: `${i * 30}ms` }}
                   >
                     {item.label}
                   </Link>

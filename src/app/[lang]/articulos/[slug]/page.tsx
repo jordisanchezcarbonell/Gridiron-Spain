@@ -95,16 +95,20 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
         <ArticleBody blocks={article.content} sources={sources} locale={locale} dict={dict} />
 
         {relatedTeams.length > 0 && (
-          <section className="rule mt-14 pt-8" aria-labelledby="related-teams">
-            <h2 id="related-teams" className="kicker mb-4">
-              {dict.articles.relatedTeams}
-            </h2>
+          <section className="mt-14 pt-8" aria-labelledby="related-teams">
+            <header className="mb-6">
+              <div className="inline-flex items-center">
+                <span className="flex h-7 items-center bg-surface-2 px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+                  {dict.articles.relatedTeams}
+                </span>
+              </div>
+            </header>
             <ul className="flex flex-wrap gap-3">
               {relatedTeams.map((team) => (
                 <li key={team.id}>
-                  <Link href={href(locale, "teams", team.slug)} className="card card-hover flex items-center gap-3 px-4 py-2">
+                  <Link href={href(locale, "teams", team.slug)} className="group flex items-center gap-3 border border-line bg-surface px-4 py-3 transition-colors hover:border-accent hover:bg-surface-2">
                     <TeamLogo team={team} size={28} />
-                    <span className="font-display text-base font-bold uppercase text-paper">{team.name}</span>
+                    <span className="font-display text-base font-bold uppercase text-paper transition-colors group-hover:text-accent">{team.name}</span>
                   </Link>
                 </li>
               ))}
@@ -122,7 +126,7 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
           lastVerifiedLabel={dict.verification.lastVerified}
         />
 
-        <div className="rule mt-10 pt-6">
+        <div className="mt-10 border-t border-line pt-6">
           <ShareButtons
             url={url}
             title={t(article.title, locale)}
@@ -136,7 +140,15 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
       {related.length > 0 && (
         <section className="border-t border-line bg-ink-2">
           <div className="container-content py-14">
-            <h2 className="display display-sm mb-8">{dict.articles.related}</h2>
+            <header className="mb-8">
+              <div className="inline-flex items-center">
+                <span className="flex h-8 items-center bg-accent px-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-white">
+                  {dict.articles.related}
+                </span>
+                <div className="h-8 w-2 bg-accent/60" />
+                <div className="h-8 w-1 bg-accent/30" />
+              </div>
+            </header>
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((a) => (
                 <li key={a.id}>

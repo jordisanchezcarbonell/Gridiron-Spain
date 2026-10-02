@@ -63,33 +63,53 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(crumbs.map((c) => ({ name: c.name, url: c.href ?? href(locale, "competitions", competition.slug) })))} />
-      <section className="grain border-b border-line">
-        <div className="container-content py-12 md:py-16">
+
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
+
+        <div className="container-content relative py-12 md:py-16">
           <Breadcrumbs items={crumbs} />
-          <div className="flex flex-wrap gap-2">
+
+          {/* Badges */}
+          <div className="mb-4 mt-6 flex flex-wrap gap-2">
             <Badge tone="gold">{dict.levels[competition.level]}</Badge>
             <Badge>{dict.discipline[competition.discipline]}</Badge>
             <Badge tone={competition.status === "active" ? "turf" : "outline"}>
               {competition.status === "active" ? dict.status.active : dict.status.historical}
             </Badge>
           </div>
-          <h1 className="display display-md mt-4">{competition.name}</h1>
-          <p className="mt-4 max-w-2xl text-lg text-paper-2">{t(competition.description, locale)}</p>
+
+          <h1 className="display display-lg">{competition.name}</h1>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-paper-2">{t(competition.description, locale)}</p>
         </div>
+
+        {/* Bottom accent bar */}
+        <div className="h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
       </section>
 
-      <div className="container-content grid gap-12 py-12 lg:grid-cols-[1fr_20rem]">
+      <div className="container-content grid gap-12 py-12 md:py-14 lg:grid-cols-[1fr_20rem]">
         <div className="min-w-0">
           {powerRanking && <NfeloPowerRanking locale={locale} url={powerRanking.url} />}
           {seasons.length > 0 && (
             <section className="mb-14">
-              <h2 className="display display-sm mb-6">{dict.season.seasons}</h2>
+              <header className="mb-6">
+                <div className="inline-flex items-center">
+                  <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-white">
+                    {dict.season.seasons}
+                  </span>
+                  <div className="h-7 w-2 bg-accent/60" />
+                  <div className="h-7 w-1 bg-accent/30" />
+                </div>
+              </header>
               <ul className="grid gap-4 sm:grid-cols-2">
                 {seasons.map((season) => (
                   <li key={season.id}>
-                    <Link href={href(locale, "competitions", competition.slug, season.slug)} className="card card-hover group flex h-full flex-col gap-3 p-5">
+                    <Link href={href(locale, "competitions", competition.slug, season.slug)} className="group flex h-full flex-col gap-3 border border-line bg-surface p-5 transition-colors hover:border-accent">
                       <div className="flex items-center justify-between gap-3">
-                        <span className="font-display text-3xl font-black text-paper group-hover:text-gold">{season.slug}</span>
+                        <span className="font-display text-3xl font-black text-accent">{season.slug}</span>
                         <Badge tone={season.status === "completed" ? "outline" : "turf"}>
                           {{ upcoming: dict.season.upcoming, "in-progress": dict.season.inProgress, completed: dict.season.completed }[season.status]}
                         </Badge>
@@ -103,7 +123,15 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
           )}
           {participants.length > 0 && (
             <section>
-              <h2 className="display display-sm mb-6">{dict.competitions.teamsIn}</h2>
+              <header className="mb-6">
+                <div className="inline-flex items-center">
+                  <span className="flex h-7 items-center bg-turf px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-ink">
+                    {dict.competitions.teamsIn}
+                  </span>
+                  <div className="h-7 w-2 bg-turf/60" />
+                  <div className="h-7 w-1 bg-turf/30" />
+                </div>
+              </header>
               <ul className="grid gap-5 sm:grid-cols-2">
                 {participants.map((team) => (
                   <li key={team.id}>
@@ -115,7 +143,13 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
           )}
           {related.length > 0 && (
             <section className="mt-14">
-              <h2 className="display display-sm mb-6">{dict.articles.related}</h2>
+              <header className="mb-6">
+                <div className="inline-flex items-center">
+                  <span className="flex h-7 items-center bg-surface-2 px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+                    {dict.articles.related}
+                  </span>
+                </div>
+              </header>
               <ul className="grid gap-5 sm:grid-cols-2">
                 {related.map((a) => (
                   <li key={a.id}>
@@ -134,25 +168,28 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
             lastVerifiedLabel={dict.verification.lastVerified}
           />
         </div>
-        <aside>
-          <dl className="card divide-y divide-line">
-            <Row label={dict.competitions.organizer} value={competition.organizer} />
-            <Row label={dict.competitions.level} value={dict.levels[competition.level]} />
-            <Row
-              label={dict.competitions.founded}
-              value={competition.foundedYear ? `${competition.foundedYear}${competition.endedYear ? `–${competition.endedYear}` : ""}` : dict.verification.unverified}
-            />
-            {competition.website && (
+        <aside className="lg:sticky lg:top-24 lg:self-start">
+          <div className="relative border border-line bg-surface">
+            <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
+            <dl className="divide-y divide-line">
+              <Row label={dict.competitions.organizer} value={competition.organizer} />
+              <Row label={dict.competitions.level} value={dict.levels[competition.level]} />
               <Row
-                label={dict.competitions.website}
-                value={
-                  <a href={competition.website} target="_blank" rel="noopener noreferrer" className="text-gold hover:text-gold-2">
-                    {competition.website.replace(/^https?:\/\//, "").replace(/\/$/, "")}
-                  </a>
-                }
+                label={dict.competitions.founded}
+                value={competition.foundedYear ? `${competition.foundedYear}${competition.endedYear ? `–${competition.endedYear}` : ""}` : dict.verification.unverified}
               />
-            )}
-          </dl>
+              {competition.website && (
+                <Row
+                  label={dict.competitions.website}
+                  value={
+                    <a href={competition.website} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-bright">
+                      {competition.website.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                    </a>
+                  }
+                />
+              )}
+            </dl>
+          </div>
         </aside>
       </div>
     </>

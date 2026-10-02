@@ -39,15 +39,32 @@ export default async function NearYouPage({ params }: PageProps<"/[lang]/cerca-d
           { name: dict.near.title, url: href(locale, "nearYou") },
         ])}
       />
-      <section className="grain border-b border-line">
-        <div className="container-content py-14 md:py-20">
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
+
+        <div className="container-content relative py-12 md:py-16 lg:py-20">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.near.title }]} />
-          <p className="kicker mb-4">{dict.nav.teams}</p>
-          <h1 className="display display-md">{dict.near.title}</h1>
-          <p className="mt-5 max-w-2xl text-lg text-paper-2">{dict.near.intro}</p>
+
+          {/* Kicker */}
+          <div className="mb-6 mt-6 inline-flex items-center">
+            <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">
+              {dict.nav.teams}
+            </span>
+            <div className="h-7 w-10 bg-gradient-to-r from-accent/60 to-transparent" />
+          </div>
+
+          <h1 className="display display-lg max-w-4xl">{dict.near.title}</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-paper-2">{dict.near.intro}</p>
         </div>
+
+        {/* Bottom accent bar */}
+        <div className="h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
       </section>
-      <div className="container-content py-10">
+
+      <div className="container-content py-10 md:py-14">
         <NearYouFinder pins={pins} places={spainPlaces} dict={dict} />
       </div>
     </>

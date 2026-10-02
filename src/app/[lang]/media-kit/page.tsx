@@ -81,11 +81,16 @@ export default async function MediaKitPage({ params }: PageProps<"/[lang]/media-
       <div className="print:hidden">
         <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.mediaKit }]} />
       </div>
-      <header className="flex flex-wrap items-end justify-between gap-6 border-b border-line pb-8">
+      <header className="relative flex flex-wrap items-end justify-between gap-6 border-b border-line pb-8">
         <div>
-          <p className="kicker mb-3">{site.name}</p>
-          <h1 className="display display-md">{c.title}</h1>
-          <p className="mt-3 text-lg text-paper-2">{c.lead}</p>
+          <div className="mb-4 inline-flex items-center">
+            <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">
+              {site.name}
+            </span>
+            <div className="h-7 w-10 bg-gradient-to-r from-accent/60 to-transparent" />
+          </div>
+          <h1 className="display display-lg">{c.title}</h1>
+          <p className="mt-3 text-lg leading-relaxed text-paper-2">{c.lead}</p>
         </div>
         <PrintButton label={c.print} />
       </header>
@@ -128,8 +133,10 @@ export default async function MediaKitPage({ params }: PageProps<"/[lang]/media-
 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="card p-6 print:border-0 print:p-0 print:shadow-none">
-      <h2 className="kicker mb-3">{title}</h2>
+    <section className="border border-line bg-surface p-6 print:border-0 print:p-0 print:shadow-none">
+      <span className="mb-3 inline-flex h-6 items-center bg-surface-2 px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+        {title}
+      </span>
       {children}
     </section>
   );
@@ -139,7 +146,7 @@ function Tags({ items }: { items: string[] }) {
   return (
     <ul className="flex flex-wrap gap-2">
       {items.map((item) => (
-        <li key={item} className="rounded-sm border border-line-strong px-3 py-1 font-display text-base font-bold uppercase text-paper">
+        <li key={item} className="border border-line bg-ink-2 px-3 py-1 font-display text-base font-bold uppercase text-paper">
           {item}
         </li>
       ))}
