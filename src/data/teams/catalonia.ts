@@ -233,6 +233,10 @@ export const cataloniaTeams: Team[] = [
       coordinates: { latitude: 41.5696, longitude: 1.9938, precision: "venue" },
       verificationStatus: "verified",
     },
+    logo: {
+      url: "/images/teams/logos/terrassa-reds.png",
+      alt: { es: "Logo de Terrassa Reds", en: "Terrassa Reds logo" },
+    },
     socialLinks: { instagram: "https://www.instagram.com/terrassareds/", twitter: "https://x.com/terrassareds" },
     summary: {
       es: "Club de Terrassa con raíces en 1989 e independiente desde 1993. Campeón de la LNFA 2 en 2024 y segundo de la Conferencia Este en su temporada 2025-26 en Serie A.",
@@ -377,6 +381,10 @@ export const cataloniaTeams: Team[] = [
       coordinates: { latitude: 41.5198, longitude: 2.1234, precision: "venue" },
       verificationStatus: "verified",
     },
+    logo: {
+      url: "/images/teams/logos/barbera-rookies.png",
+      alt: { es: "Logo de Barberà Rookies", en: "Barberà Rookies logo" },
+    },
     socialLinks: { instagram: "https://www.instagram.com/barbera_rookies/", twitter: "https://x.com/barberarookies", facebook: "https://www.facebook.com/barberarookiescfa" },
     summary: {
       es: "El club de referencia del football femenino en España: once títulos de LNFA Femenina, el último en 2026 tras una final con prórroga ante Valencia Firebats.",
@@ -473,6 +481,10 @@ export const cataloniaTeams: Team[] = [
       address: "Camí del Mas de la Sena 4, Reus",
       coordinates: { latitude: 41.1556, longitude: 1.1076, precision: "city" },
       verificationStatus: "partial",
+    },
+    logo: {
+      url: "/images/teams/logos/reus-imperials.png",
+      alt: { es: "Logo de Reus Imperials", en: "Reus Imperials logo" },
     },
     socialLinks: { instagram: "https://www.instagram.com/imperialsreus/", twitter: "https://x.com/ReusImperials" },
     summary: {

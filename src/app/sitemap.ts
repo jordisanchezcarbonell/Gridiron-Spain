@@ -48,6 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entry("roadToAnnapolis", [], all, reviewed, 0.9, "weekly"),
     ...entry("nearYou", [], all, reviewed, 0.8, "monthly"),
     ...entry("guide", [], all, reviewed, 0.8, "monthly"),
+    ...entry("rankings", [], all, reviewed, 0.8, "weekly"),
     ...seasons.flatMap((season) => {
       const competition = competitions.find((c) => c.id === season.competitionId);
       return competition ? entry("competitions", [competition.slug, season.slug], all, season.lastVerifiedAt ?? reviewed, 0.7, "weekly") : [];

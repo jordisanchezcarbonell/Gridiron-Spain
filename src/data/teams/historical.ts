@@ -68,6 +68,10 @@ export const historicalTeams: Team[] = [
       coordinates: { latitude: 41.4563, longitude: 2.2368, precision: "venue" },
       verificationStatus: "partial",
     },
+    logo: {
+      url: "/images/teams/logos/barcelona-dragons-elf.png",
+      alt: { es: "Logo de Barcelona Dragons (ELF)", en: "Barcelona Dragons (ELF) logo" },
+    },
     summary: {
       es: "Equipo fundador de la European League of Football (2021-2024) que recuperó el nombre de los Dragons mediante un acuerdo de derechos con la NFL, sin continuidad legal con la franquicia histórica. Abandonó la liga en diciembre de 2024.",
       en: "Founding European League of Football team (2021-2024) that revived the Dragons name through a naming-rights deal with the NFL, with no legal continuity with the historic franchise. Left the league in December 2024.",
@@ -108,6 +112,10 @@ export const historicalTeams: Team[] = [
       name: { es: "Estadio Olímpico de Madrid (La Peineta) en 1995-96; antes Vallehermoso y Palomeras", en: "Estadio Olímpico de Madrid (La Peineta) in 1995-96; earlier Vallehermoso and Palomeras" },
       coordinates: { latitude: 40.4362, longitude: -3.5995, precision: "venue" },
       verificationStatus: "partial",
+    },
+    logo: {
+      url: "/images/teams/logos/madrid-panteras.png",
+      alt: { es: "Logo de Madrid Panteras", en: "Madrid Panteras logo" },
     },
     summary: {
       es: "Primer campeón de la LNFA (1995 y 1996) y tres veces campeón de la Copa de España. Fundados en 1989 por estudiantes de ICADE, dejaron de competir en 1998.",

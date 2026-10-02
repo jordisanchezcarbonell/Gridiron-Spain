@@ -25,6 +25,10 @@ export const madridTeams: Team[] = [
       coordinates: { latitude: 40.53067, longitude: -3.92418, precision: "city" },
       verificationStatus: "partial",
     },
+    logo: {
+      url: "/images/teams/logos/las-rozas-black-demons.png",
+      alt: { es: "Logo de Las Rozas Black Demons", en: "Las Rozas Black Demons logo" },
+    },
     website: "https://blackdemons.com/",
     socialLinks: { instagram: "https://www.instagram.com/blackdemons.fa/", twitter: "https://x.com/BlackDemonsFA" },
     summary: {
@@ -126,6 +130,10 @@ export const madridTeams: Team[] = [
       coordinates: { latitude: 40.43005, longitude: -3.54356, precision: "venue" },
       verificationStatus: "verified",
     },
+    logo: {
+      url: "/images/teams/logos/camioneros-de-coslada.png",
+      alt: { es: "Logo de Camioneros de Coslada", en: "Camioneros de Coslada logo" },
+    },
     website: "https://camionerosdecoslada.com/",
     socialLinks: { instagram: "https://www.instagram.com/camionerosdecoslada/", twitter: "https://x.com/camioneroscosla" },
     summary: {
@@ -161,12 +169,16 @@ export const madridTeams: Team[] = [
     disciplines: ["tackle", "flag"],
     categories: ["senior-men", "senior-women"],
     currentCompetitions: [
-      { competitionId: "lnfa-2", season: "2025-26", tier: "Grupo Madrid", verificationStatus: "verified", sourceIds: ["fefa-lnfa2-page-2025-26"] },
+      { competitionId: "lnfa-2", season: "2025-26", tier: "Conferencia Madrileña", verificationStatus: "verified", sourceIds: ["fefa-lnfa2-page-2025-26"] },
     ],
     venue: {
       name: { es: "Campo de Rugby Los Arbolitos (Vallecas)", en: "Campo de Rugby Los Arbolitos (Vallecas)" },
       coordinates: { latitude: 40.41678, longitude: -3.70351, precision: "city" },
       verificationStatus: "partial",
+    },
+    logo: {
+      url: "/images/teams/logos/madrid-capitals.png",
+      alt: { es: "Logo de Madrid Capitals", en: "Madrid Capitals logo" },
     },
     website: "https://www.madridcapitals.com/",
     socialLinks: { instagram: "https://www.instagram.com/madridcapitals/", twitter: "https://x.com/MadridCapitals", facebook: "https://www.facebook.com/madridcapitals" },
@@ -207,6 +219,10 @@ export const madridTeams: Team[] = [
       name: { es: "Estadio José Caballero", en: "Estadio José Caballero" },
       coordinates: { latitude: 40.54001, longitude: -3.63585, precision: "city" },
       verificationStatus: "partial",
+    },
+    logo: {
+      url: "/images/teams/logos/alcobendas-cavaliers.png",
+      alt: { es: "Logo de Alcobendas Cavaliers", en: "Alcobendas Cavaliers logo" },
     },
     website: "https://royaloaksknights.com/",
     socialLinks: { instagram: "https://www.instagram.com/alcobendascavs/", twitter: "https://x.com/AlcobendasCavs" },

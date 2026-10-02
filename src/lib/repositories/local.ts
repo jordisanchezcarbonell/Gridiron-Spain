@@ -1,5 +1,5 @@
 import type { ContentRepository } from "./types";
-import type { Article, Competition, Era, Final, Partner, Season, Source, Team, TimelineEvent } from "@/types";
+import type { Article, Competition, Era, Final, Partner, PlayerSpotlight, Ranking, Season, Source, Team, TimelineEvent } from "@/types";
 import { teams } from "@/data/teams";
 import { competitions } from "@/data/competitions";
 import { articles } from "@/data/articles";
@@ -8,6 +8,8 @@ import { timeline } from "@/data/timeline";
 import { partners } from "@/data/road";
 import { seasons } from "@/data/seasons";
 import { eras, finals } from "@/data/history";
+import { rankings } from "@/data/rankings";
+import { playerSpotlights } from "@/data/players";
 
 /**
  * MVP repository backed by TypeScript data files in src/data.
@@ -93,6 +95,14 @@ export class LocalContentRepository implements ContentRepository {
   async getFinals(competitionId?: string): Promise<Final[]> {
     const list = competitionId ? finals.filter((f) => f.competitionId === competitionId) : finals;
     return [...list].sort((a, b) => a.year - b.year);
+  }
+
+  async getRankings(): Promise<Ranking[]> {
+    return [...rankings];
+  }
+
+  async getPlayerSpotlights(): Promise<PlayerSpotlight[]> {
+    return [...playerSpotlights];
   }
 
   async getConfirmedPartners(): Promise<Partner[]> {

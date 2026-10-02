@@ -4,6 +4,8 @@ import type {
   Era,
   Final,
   Partner,
+  PlayerSpotlight,
+  Ranking,
   Season,
   Source,
   Team,
@@ -43,6 +45,10 @@ export interface ContentRepository {
   getTimeline(): Promise<TimelineEvent[]>;
   getEras(): Promise<Era[]>;
   getFinals(competitionId?: string): Promise<Final[]>;
+
+  // Rankings & players
+  getRankings(): Promise<Ranking[]>;
+  getPlayerSpotlights(): Promise<PlayerSpotlight[]>;
 
   // Partners (Road to Annapolis)
   getConfirmedPartners(): Promise<Partner[]>;
