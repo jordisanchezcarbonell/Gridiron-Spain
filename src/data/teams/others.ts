@@ -138,6 +138,10 @@ export const otherTeams: Team[] = [
       coordinates: { latitude: 41.6677, longitude: -0.8385, precision: "venue" },
       verificationStatus: "partial",
     },
+    logo: {
+      url: "/images/teams/logos/zaragoza-hurricanes.png",
+      alt: { es: "Logo de Zaragoza Hurricanes", en: "Zaragoza Hurricanes logo" },
+    },
     socialLinks: { instagram: "https://www.instagram.com/zaragozahurricanes/", twitter: "https://x.com/zgzhurricanes" },
     summary: {
       es: "Herederos de los Zaragoza Lions (1989-2004), creados en 2005 por antiguos jugadores. Equipo de LNFA Serie A y finalistas de la Spanish Flag Bowl Open 2026.",
