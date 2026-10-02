@@ -167,7 +167,6 @@ export const knightsNflIndianapolis: Article = {
     },
     {
       type: "callout",
-      variant: "info",
       text: {
         es: "Royal Oaks Knights tiene su sede en el Estadio José Caballero de Alcobendas.",
         en: "Royal Oaks Knights is based at Estadio José Caballero in Alcobendas.",

@@ -3,6 +3,8 @@
  * These types are used for research data (pre-production) rather than published content.
  */
 
+import type { SocialLinks } from "./team";
+
 /** Confidence level for research findings */
 export type ResearchConfidence = "CONFIRMED" | "REPORTED" | "RUMOR" | "UNKNOWN";
 
@@ -64,16 +66,6 @@ export interface PlayerInfo {
   stats?: Record<string, string | number>;
   confidence: ResearchConfidence;
   source?: ResearchSource;
-}
-
-/** Social media links */
-export interface SocialLinks {
-  website?: string;
-  instagram?: string;
-  twitter?: string;
-  tiktok?: string;
-  youtube?: string;
-  facebook?: string;
 }
 
 /** Team research profile */

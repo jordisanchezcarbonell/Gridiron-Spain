@@ -166,7 +166,6 @@ export const navyVsAirForce2026: Article = {
     },
     {
       type: "callout",
-      variant: "info",
       text: {
         es: "Este artículo forma parte de Road to Annapolis, un proyecto editorial de Primer Down que documenta la temporada de Navy Football.",
         en: "This article is part of Road to Annapolis, a Primer Down editorial project documenting the Navy Football season.",
