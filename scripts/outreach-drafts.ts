@@ -11,6 +11,8 @@ import { buildPendingList } from "../src/lib/pending";
 type Contact = { teamId: string; name: string; email: string | null; contactForm: string | null; instagram: string | null; source: string; notes: string };
 
 const BASE = "https://primer-down.vercel.app";
+/** Clubs Jordi is already talking to directly (coverage/report proposals): never send the generic email. */
+const ALREADY_IN_CONTACT = ["osos-rivas", "alcobendas-cavaliers", "barcelona-pagesos", "badalona-dracs", "las-rozas-black-demons"];
 const contacts: Contact[] = JSON.parse(readFileSync("docs/outreach/contactos-clubes.local.json", "utf8"));
 const pending = buildPendingList({ teams, articles: [], seasons: [], competitions: [], nationalTeams: [], players: [], rankings: [] });
 
@@ -28,7 +30,7 @@ const out: string[] = ["# Correos a clubes (borradores, NO subir a git)", "", `G
 let n = 0;
 for (const c of contacts) {
   const team = teams.find((t) => t.id === c.teamId);
-  if (!team) continue;
+  if (!team || ALREADY_IN_CONTACT.includes(team.id)) continue;
   const url = `${BASE}/es/equipos/${team.slug}?utm_source=email&utm_medium=outreach&utm_campaign=clubes`;
   const tasks = pending.find((p) => p.id === team.id)?.tasks ?? [];
   const asks = Array.from(new Set(tasks.map((t) => ASK[t]).filter(Boolean))).slice(0, 3);
