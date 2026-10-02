@@ -14,10 +14,14 @@ import { sources } from "../src/data/sources";
 import { partners, gameFacts, roadCopy } from "../src/data/road";
 import { eras, finals } from "../src/data/history";
 import { seasons } from "../src/data/seasons";
+import { rankings } from "../src/data/rankings";
+import { playerSpotlights } from "../src/data/players";
 
 const sourceIds = new Set(sources.map((s) => s.id));
 const errors: string[] = [];
 const warnings: string[] = [];
+// Override with CONTENT_CHECK_TODAY=YYYY-MM-DD to test freshness warnings.
+const today = process.env.CONTENT_CHECK_TODAY ?? new Date().toISOString().slice(0, 10);
 const CITE = /\[\[src:([a-z0-9-]+)\]\]/g;
 
 function checkIds(owner: string, ids: string[] | undefined) {
@@ -98,6 +102,28 @@ for (const article of articles) {
 }
 
 for (const c of competitions) checkIds(`competition:${c.slug}`, c.sourceIds);
+unique("rankings", rankings.map((r) => r.slug));
+unique("players", playerSpotlights.map((p) => p.id));
+for (const r of rankings) {
+  const owner = `ranking:${r.slug}`;
+  checkIds(owner, r.sourceIds);
+  if (r.sourceIds.length === 0) errors.push(`${owner}: ranking without sources`);
+  if (r.competitionId && !competitionIds.has(r.competitionId)) errors.push(`${owner}: unknown competition "${r.competitionId}"`);
+  if (r.kind === "computed" && !r.method) errors.push(`${owner}: computed ranking without method`);
+  if (r.refresh && today >= r.refresh.activeFrom && today <= r.refresh.activeUntil) {
+    const age = Math.floor((Date.parse(today) - Date.parse(r.asOf)) / 86_400_000);
+    if (age > r.refresh.everyDays) warnings.push(`${owner}: stale — data as of ${r.asOf} (${age} days old, refresh every ${r.refresh.everyDays})`);
+  }
+  for (const g of r.groups) for (const e of g.entries) {
+    if (e.teamId && !teams.some((t) => t.id === e.teamId)) errors.push(`${owner}: unknown team "${e.teamId}"`);
+  }
+}
+for (const p of playerSpotlights) {
+  const owner = `player:${p.id}`;
+  checkIds(owner, p.sourceIds);
+  if (p.sourceIds.length === 0) errors.push(`${owner}: player without sources`);
+  if (p.teamId && !teams.some((t) => t.id === p.teamId)) errors.push(`${owner}: unknown team "${p.teamId}"`);
+}
 for (const e of timeline) {
   checkIds(`timeline:${e.id}`, e.sourceIds);
   if (e.verificationStatus !== "unverified" && e.sourceIds.length === 0) errors.push(`timeline:${e.id}: ${e.verificationStatus} without sources`);

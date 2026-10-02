@@ -169,7 +169,7 @@ export const madridTeams: Team[] = [
     disciplines: ["tackle", "flag"],
     categories: ["senior-men", "senior-women"],
     currentCompetitions: [
-      { competitionId: "lnfa-2", season: "2025-26", tier: "Grupo Madrid", verificationStatus: "verified", sourceIds: ["fefa-lnfa2-page-2025-26"] },
+      { competitionId: "lnfa-2", season: "2025-26", tier: "Conferencia Madrileña", verificationStatus: "verified", sourceIds: ["fefa-lnfa2-page-2025-26"] },
     ],
     venue: {
       name: { es: "Campo de Rugby Los Arbolitos (Vallecas)", en: "Campo de Rugby Los Arbolitos (Vallecas)" },

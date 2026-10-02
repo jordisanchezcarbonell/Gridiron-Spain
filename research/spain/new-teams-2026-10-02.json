@@ -1,0 +1,1101 @@
+[
+ {
+  "id": "gijon-mariners",
+  "slug": "gijon-mariners",
+  "name": "Gijón Mariners",
+  "shortName": "Mariners",
+  "city": "Gijón",
+  "province": "Asturias",
+  "autonomousCommunity": "Asturias",
+  "country": "ES",
+  "foundedYear": 2001,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa",
+    "season": "2025-26",
+    "tier": "Serie A · Conferencia Oeste",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-team-mariners",
+     "fefa-lnfa-mariners-descenso-2026"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Complejo Deportivo Las Mestas",
+    "en": "Complejo Deportivo Las Mestas"
+   },
+   "coordinates": {
+    "latitude": 43.5318,
+    "longitude": -5.6358,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://gijonmariners.com/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/gijonmariners/",
+   "twitter": "https://x.com/gijonmariners"
+  },
+  "summary": {
+   "es": "Club gijonés nacido en 2001 a partir de partidos de flag en la Playa de Poniente. Disputó la LNFA Serie A 2025-26 y descendió a la LNFA 2 tras perder 7-21 ante Camioneros de Coslada en la última jornada.",
+   "en": "Gijón club born in 2001 out of flag games on Poniente beach. Played LNFA Serie A in 2025-26 and was relegated to LNFA 2 after a 7-21 final-day loss to Camioneros de Coslada."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Subcampeón LNFA Femenina 2",
+     "en": "LNFA Femenina 2 runner-up"
+    },
+    "year": 2019,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   }
+  ],
+  "sourceIds": [
+   "fefa-team-mariners",
+   "mariners-historia",
+   "wiki-mariners-es",
+   "fefa-lnfa-mariners-descenso-2026",
+   "fefa-calendario-2026-27",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Año 2001 = primer partido (12-04-2001) según la web del club; inscripción formal como club en octubre de 2002 según Wikipedia. Competición 2026-27 (LNFA 2) pendiente de que FEFA publique la composición. FEFA no lista web; gijonmariners.com está activa.",
+   "en": "2001 = first game (12 Apr 2001) per club site; formal registration Oct 2002 per Wikipedia. 2026-27 LNFA 2 placement pending FEFA publication. FEFA lists no website; gijonmariners.com is live."
+  }
+ },
+ {
+  "id": "alcorcon-smilodons",
+  "slug": "alcorcon-smilodons",
+  "name": "Alcorcón Smilodons",
+  "shortName": "Smilodons",
+  "city": "Alcorcón",
+  "province": "Madrid",
+  "autonomousCommunity": "Madrid",
+  "country": "ES",
+  "foundedYear": 2012,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men",
+   "junior",
+   "youth"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Madrileña",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-smilodons"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Prado de Santo Domingo",
+    "en": "Polideportivo Prado de Santo Domingo"
+   },
+   "coordinates": {
+    "latitude": 40.3493,
+    "longitude": -3.8284,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.smilodons.com/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/cfasmilodons/",
+   "twitter": "https://x.com/Smilodons"
+  },
+  "summary": {
+   "es": "Club del sur de Madrid cuyo proyecto arrancó en 2012. Subcampeón de la LNFA 2 en 2026, su primera final nacional, tras caer 0-35 ante Alcobendas Cavaliers.",
+   "en": "South-Madrid club whose project began in 2012. LNFA 2 runner-up in 2026, its first national final, after a 0-35 loss to Alcobendas Cavaliers."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Subcampeón LNFA 2",
+     "en": "LNFA 2 runner-up"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2026,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   }
+  ],
+  "sourceIds": [
+   "fefa-team-smilodons",
+   "smilodons-historia",
+   "fefa-lnfa2-2025-26",
+   "fefa-lnfa2-cuartos-2026",
+   "fefa-lnfa2-semis-2026",
+   "fefa-lnfa2-final-2026",
+   "fefa-palmares"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Campo sin coordenadas confirmadas: FEFA dice 'Polideportivo Santo Domingo', la final se jugó en 'Polideportivo Prado Santo Domingo' y la semifinal en 'CDM La Canaleja'; la web del club cita el Campo Esteban Márquez (2013). Coordenadas = centro de Alcorcón.",
+   "en": "Venue coordinates unconfirmed: FEFA 'Polideportivo Santo Domingo', final at 'Polideportivo Prado Santo Domingo', semi at 'CDM La Canaleja'; club site cites Campo Esteban Márquez (2013). Coordinates = Alcorcón centre."
+  }
+ },
+ {
+  "id": "valencia-giants",
+  "slug": "valencia-giants",
+  "name": "Valencia Giants",
+  "shortName": "Giants",
+  "city": "Valencia",
+  "province": "Valencia",
+  "autonomousCommunity": "Comunidad Valenciana",
+  "country": "ES",
+  "foundedYear": 2003,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men",
+   "senior-women",
+   "junior"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Levantina",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-giants"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Quatre Carreres",
+    "en": "Polideportivo Quatre Carreres"
+   },
+   "coordinates": {
+    "latitude": 39.4518,
+    "longitude": -0.3624,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.valenciagiants.com/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/valenciagiants/",
+   "twitter": "https://x.com/valenciagiants"
+  },
+  "summary": {
+   "es": "Club valenciano fundado en 2003 que jugó en la máxima categoría entre 2012-13 y 2017-18. Campeón de la Liga Valenciana y semifinalista de la LNFA 2 en 2025-26.",
+   "en": "Valencia club founded in 2003 that played in the top flight from 2012-13 to 2017-18. Valencian league winner and LNFA 2 semi-finalist in 2025-26."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Subcampeón LNFA 2",
+     "en": "LNFA 2 runner-up"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2008,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Subcampeón LNFA 2",
+     "en": "LNFA 2 runner-up"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2009,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Subcampeón LNFA 2",
+     "en": "LNFA 2 runner-up"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2010,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Subcampeón LNFA 2",
+     "en": "LNFA 2 runner-up"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2012,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Subcampeón LNFA 2",
+     "en": "LNFA 2 runner-up"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2024,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   }
+  ],
+  "sourceIds": [
+   "fefa-team-giants",
+   "giants-historia",
+   "fefa-lnfa2-2025-26",
+   "fefa-lnfa2-previa-cuartos-2026",
+   "fefa-lnfa2-cuartos-2026",
+   "fefa-lnfa2-semis-2026",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Discrepancia: FEFA atribuye a Giants el subcampeonato de LNFA 2 de 2008 (además de 2009, 2010, 2012 y 2024); la web del club solo cita 2009, 2010, 2012 y 2024.",
+   "en": "Discrepancy: FEFA credits Giants with the 2008 LNFA 2 runner-up spot (plus 2009, 2010, 2012, 2024); the club site lists only 2009, 2010, 2012 and 2024."
+  }
+ },
+ {
+  "id": "jerez-jaguars",
+  "slug": "jerez-jaguars",
+  "name": "Jerez Jaguars",
+  "shortName": "Jaguars",
+  "city": "Jerez de la Frontera",
+  "province": "Cádiz",
+  "autonomousCommunity": "Andalucía",
+  "country": "ES",
+  "foundedYear": 2020,
+  "status": "active",
+  "disciplines": [
+   "tackle"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Sur",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-jaguars"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Pradera de Chapín (Complejo Deportivo Chapín)",
+    "en": "Pradera de Chapín (Complejo Deportivo Chapín)"
+   },
+   "coordinates": {
+    "latitude": 36.6817,
+    "longitude": -6.1377,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.jerezjaguars.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/jerezjaguars/",
+   "twitter": "https://x.com/JerezJaguars"
+  },
+  "summary": {
+   "es": "Club jerezano fundado en 2020. Ganó invicto el grupo Sur de la LNFA 2 2025-26 y alcanzó las semifinales nacionales, donde cayó 23-6 ante Alcobendas Cavaliers.",
+   "en": "Jerez club founded in 2020. Won the LNFA 2 South group unbeaten in 2025-26 and reached the national semi-finals, losing 23-6 to Alcobendas Cavaliers."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-jaguars",
+   "jaguars-web",
+   "fefa-lnfa2-2025-26",
+   "fefa-lnfa2-previa-cuartos-2026",
+   "fefa-lnfa2-cuartos-2026",
+   "fefa-lnfa2-semis-2026"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Año de fundación solo en la web del club. FEFA no lista web. Coordenadas = centro de Jerez (la Pradera de Chapín no figura en OSM).",
+   "en": "Founding year only on club site. FEFA lists no website. Coordinates = Jerez centre (Pradera de Chapín not in OSM)."
+  }
+ },
+ {
+  "id": "valladolid-penguins",
+  "slug": "valladolid-penguins",
+  "name": "Valladolid Penguins",
+  "shortName": "Penguins",
+  "city": "Valladolid",
+  "province": "Valladolid",
+  "autonomousCommunity": "Castilla y León",
+  "country": "ES",
+  "foundedYear": 2017,
+  "status": "active",
+  "disciplines": [
+   "tackle"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Norte",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-penguins"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Centro Deportivo Militar San Isidro",
+    "en": "Centro Deportivo Militar San Isidro"
+   },
+   "coordinates": {
+    "latitude": 41.6522,
+    "longitude": -4.7286,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://valladolidpenguins.vercel.app/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/pucelapenguins/",
+   "twitter": "https://x.com/pucelapenguins"
+  },
+  "summary": {
+   "es": "Club vallisoletano fundado en 2017. Campeón del grupo Norte de la LNFA 2 2025-26 (6-1) y cuartofinalista nacional.",
+   "en": "Valladolid club founded in 2017. LNFA 2 North group winner in 2025-26 (6-1) and national quarter-finalist."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-penguins",
+   "penguins-web",
+   "fefa-lnfa2-2025-26",
+   "fefa-lnfa2-cuadro-playoffs-2026",
+   "fefa-lnfa2-previa-cuartos-2026",
+   "fefa-lnfa2-cuartos-2026"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Fundación (2017) solo en la meta-descripción de la web del club. Campo en conflicto: FEFA cita el CD Militar San Isidro, pero el cuarto de final 2026 se jugó en el Campo El Tomillo. Coordenadas = centro de Valladolid.",
+   "en": "2017 founding only in the club site's meta description. Venue conflict: FEFA lists CD Militar San Isidro, but the 2026 quarter-final was at Campo El Tomillo. Coordinates = Valladolid centre."
+  }
+ },
+ {
+  "id": "alicante-sharks",
+  "slug": "alicante-sharks",
+  "name": "Alicante Sharks",
+  "shortName": "Sharks",
+  "city": "Alicante",
+  "province": "Alicante",
+  "autonomousCommunity": "Comunidad Valenciana",
+  "country": "ES",
+  "foundedYear": 2004,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Levantina",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-sharks"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Campo Municipal Antonio Solana",
+    "en": "Campo Municipal Antonio Solana"
+   },
+   "coordinates": {
+    "latitude": 38.3787,
+    "longitude": -0.4868,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/alicantesharks/",
+   "twitter": "https://x.com/AlicanteSharks"
+  },
+  "summary": {
+   "es": "Primer club de fútbol americano de Alicante, fundado en 2004 según Wikipedia. Segundo del grupo Levante de la LNFA 2 2025-26; cayó en la prórroga (17-10) ante Jerez Jaguars en cuartos.",
+   "en": "Alicante's first American football club, founded in 2004 per Wikipedia. Runner-up in the LNFA 2 Levante group in 2025-26; lost 17-10 in overtime to Jerez Jaguars in the quarter-finals."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-sharks",
+   "wiki-sharks-es",
+   "fefa-lnfa2-2025-26",
+   "fefa-lnfa2-cuartos-2026",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Fundación (verano de 2004) solo en Wikipedia. Sin web oficial.",
+   "en": "Founding (summer 2004) only in Wikipedia. No official website."
+  }
+ },
+ {
+  "id": "murcia-cobras",
+  "slug": "murcia-cobras",
+  "name": "Murcia Cobras",
+  "shortName": "Cobras",
+  "city": "Murcia",
+  "province": "Murcia",
+  "autonomousCommunity": "Murcia",
+  "country": "ES",
+  "foundedYear": 1994,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Levantina",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-cobras"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Municipal José Barnés",
+    "en": "Polideportivo Municipal José Barnés"
+   },
+   "coordinates": {
+    "latitude": 37.9951,
+    "longitude": -1.1358,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.murciacobras.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/murciacobras/",
+   "twitter": "https://x.com/MurciaCobras"
+  },
+  "summary": {
+   "es": "Club murciano nacido en 1994. Campeón de la LNFA 2 en 2016 y subcampeón de la LNFA en 2018; en 2025-26 compitió en el grupo Levante de la LNFA 2.",
+   "en": "Murcia club born in 1994. LNFA 2 champion in 2016 and LNFA runner-up in 2018; played in the LNFA 2 Levante group in 2025-26."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Campeón LNFA 2",
+     "en": "LNFA 2 champion"
+    },
+    "competitionId": "lnfa-2",
+    "year": 2016,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Subcampeón LNFA (Spanish Bowl)",
+     "en": "LNFA runner-up (Spanish Bowl)"
+    },
+    "competitionId": "lnfa",
+    "year": 2018,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Campeón LNFA Junior",
+     "en": "LNFA Junior champion"
+    },
+    "year": 2008,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Campeón LNFA Junior",
+     "en": "LNFA Junior champion"
+    },
+    "year": 2009,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Campeón LNFA Junior",
+     "en": "LNFA Junior champion"
+    },
+    "year": 2011,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   }
+  ],
+  "sourceIds": [
+   "fefa-team-cobras",
+   "wiki-cobras-es",
+   "fefa-lnfa2-2025-26",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Año de fundación (1994) solo en Wikipedia. La final LNFA 2018 se jugó en Las Mestas (Gijón) según FEFA.",
+   "en": "1994 founding only in Wikipedia. FEFA places the 2018 LNFA final at Las Mestas (Gijón)."
+  }
+ },
+ {
+  "id": "sevilla-linces",
+  "slug": "sevilla-linces",
+  "name": "Sevilla Linces",
+  "shortName": "Linces",
+  "city": "Sevilla",
+  "province": "Sevilla",
+  "autonomousCommunity": "Andalucía",
+  "country": "ES",
+  "foundedYear": 1992,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Sur",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-linces"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Instalación Deportiva Sevilla Linces",
+    "en": "Instalación Deportiva Sevilla Linces"
+   },
+   "coordinates": {
+    "latitude": 37.3886,
+    "longitude": -5.9953,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.sevillalinces.es/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/sevilla_linces/",
+   "twitter": "https://x.com/Sevilla_Linces"
+  },
+  "summary": {
+   "es": "Club pionero del football en Andalucía, fundado en 1992 según Wikipedia y en la máxima categoría desde 1999. En 2025-26 disputó el grupo Sur de la LNFA 2.",
+   "en": "Pioneer football club in Andalusia, founded in 1992 per Wikipedia and in the top flight from 1999. Played the LNFA 2 South group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-linces",
+   "wiki-linces-es",
+   "fefa-lnfa2-2025-26"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Historia (fundación 14-09-1992, primer partido en Andalucía el 14-05-1993) solo en Wikipedia. Campo sin coordenadas confirmadas (FEFA: 'Instalación Deportiva Sevilla Linces'); coordenadas = centro de Sevilla.",
+   "en": "History (founded 14 Sep 1992, first game in Andalusia 14 May 1993) only in Wikipedia. Venue coordinates unconfirmed; coordinates = Seville centre."
+  }
+ },
+ {
+  "id": "mairena-blue-devils",
+  "slug": "mairena-blue-devils",
+  "name": "Mairena Blue Devils",
+  "shortName": "Blue Devils",
+  "city": "Mairena del Aljarafe",
+  "province": "Sevilla",
+  "autonomousCommunity": "Andalucía",
+  "country": "ES",
+  "foundedYear": 2014,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men",
+   "youth"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Sur",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-blue-devils"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Campo Municipal Francisco Castilla Romero",
+    "en": "Campo Municipal Francisco Castilla Romero"
+   },
+   "coordinates": {
+    "latitude": 37.3497,
+    "longitude": -6.0659,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://mairenabluedevils.com/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/mairenabluedevils/",
+   "twitter": "https://x.com/MBlueDevils"
+  },
+  "summary": {
+   "es": "Club del Aljarafe sevillano que nació como equipo en 2014 (como Aljarafe Blue Devils) y hoy juega en Mairena del Aljarafe. Segundo del grupo Sur de la LNFA 2 2025-26.",
+   "en": "Club from Seville's Aljarafe area that started as a team in 2014 (as Aljarafe Blue Devils) and now plays in Mairena del Aljarafe. Runner-up in the LNFA 2 South group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-blue-devils",
+   "blue-devils-about",
+   "fefa-lnfa2-2025-26",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Fundación según la web del club: primeras reuniones a finales de 2013 en Palomares del Río, equipo en 2014.",
+   "en": "Per club site: first meetings late 2013 in Palomares del Río, team in 2014."
+  }
+ },
+ {
+  "id": "santurtzi-coyotes",
+  "slug": "santurtzi-coyotes",
+  "name": "Coyotes Santurtzi",
+  "shortName": "Coyotes",
+  "city": "Santurtzi",
+  "province": "Vizcaya",
+  "autonomousCommunity": "País Vasco",
+  "country": "ES",
+  "foundedYear": 1998,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Norte",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-coyotes"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Mikel Trueba",
+    "en": "Polideportivo Mikel Trueba"
+   },
+   "coordinates": {
+    "latitude": 43.3278,
+    "longitude": -3.0261,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://coyotes-santurtzi.com/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/coyotessanturtzi/",
+   "twitter": "https://x.com/CoyotesFootball"
+  },
+  "summary": {
+   "es": "Club vizcaíno fundado en 1998, referente del football en el País Vasco. Segundo del grupo Norte de la LNFA 2 2025-26.",
+   "en": "Biscay club founded in 1998, the reference football club in the Basque Country. Runner-up in the LNFA 2 North group in 2025-26."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Subcampeón LNFA Junior",
+     "en": "LNFA Junior runner-up"
+    },
+    "year": 2017,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   }
+  ],
+  "sourceIds": [
+   "fefa-team-coyotes",
+   "wiki-coyotes-es",
+   "fefa-lnfa2-2025-26",
+   "fefa-palmares",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Fundación (1998) solo en Wikipedia. La web del club respondió sin contenido legible el 2026-10-02.",
+   "en": "1998 founding only in Wikipedia. Club website returned no readable content on 2026-10-02."
+  }
+ },
+ {
+  "id": "cantabria-bisons",
+  "slug": "cantabria-bisons",
+  "name": "Cantabria Bisons",
+  "shortName": "Bisons",
+  "city": "Santander",
+  "province": "Cantabria",
+  "autonomousCommunity": "Cantabria",
+  "country": "ES",
+  "foundedYear": 2011,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Norte",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-bisons"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Complejo Municipal de Deportes Ruth Beitia",
+    "en": "Complejo Municipal de Deportes Ruth Beitia"
+   },
+   "coordinates": {
+    "latitude": 43.4615,
+    "longitude": -3.8531,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/cantabriabisons/",
+   "twitter": "https://x.com/CantabriaBisons"
+  },
+  "summary": {
+   "es": "Club santanderino fundado oficialmente en marzo de 2011, según Wikipedia. Compitió en el grupo Norte de la LNFA 2 2025-26.",
+   "en": "Santander club officially founded in March 2011, per Wikipedia. Played the LNFA 2 North group in 2025-26."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-bisons",
+   "wiki-bisons-es",
+   "fefa-lnfa2-2025-26",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Fundación (11-03-2011) solo en Wikipedia. Sin web oficial activa.",
+   "en": "Founding (11 Mar 2011) only in Wikipedia. No live official website."
+  }
+ },
+ {
+  "id": "canarias-canes",
+  "slug": "canarias-canes",
+  "name": "Canarias Canes",
+  "shortName": "Canes",
+  "city": "Santa Brígida",
+  "province": "Las Palmas",
+  "autonomousCommunity": "Islas Canarias",
+  "country": "ES",
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Sur",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-canes"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Campo de Fútbol La Angostura",
+    "en": "Campo de Fútbol La Angostura"
+   },
+   "coordinates": {
+    "latitude": 28.0331,
+    "longitude": -15.4917,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/canes_american_football/"
+  },
+  "summary": {
+   "es": "Club de Gran Canaria con sede deportiva en Santa Brígida. Único equipo canario de la LNFA 2 2025-26, encuadrado en el grupo Sur.",
+   "en": "Gran Canaria club based in Santa Brígida. The only Canary Islands side in LNFA 2 2025-26, placed in the South group."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-canes",
+   "fefa-lnfa2-2025-26"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Año de fundación UNKNOWN. Posible relación con los antiguos Telde Canes (Serie B 2023) pendiente de confirmar. Coordenadas = Santa Brígida.",
+   "en": "Founding year UNKNOWN. Possible link to the former Telde Canes (Serie B 2023) to be confirmed. Coordinates = Santa Brígida."
+  }
+ },
+ {
+  "id": "sueca-ricers",
+  "slug": "sueca-ricers",
+  "name": "Sueca Ricers",
+  "shortName": "Ricers",
+  "city": "Sueca",
+  "province": "Valencia",
+  "autonomousCommunity": "Comunidad Valenciana",
+  "country": "ES",
+  "foundedYear": 2007,
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-men",
+   "youth"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-2",
+    "season": "2025-26",
+    "tier": "Conferencia Levantina",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-lnfa2-2025-26",
+     "fefa-team-ricers"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Estadi Municipal Antoni Puchades",
+    "en": "Estadi Municipal Antoni Puchades"
+   },
+   "coordinates": {
+    "latitude": 39.2026,
+    "longitude": -0.3112,
+    "precision": "city"
+   },
+   "verificationStatus": "partial"
+  },
+  "website": "https://www.suecaricers.com/",
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/suecaricers/"
+  },
+  "summary": {
+   "es": "Club de Sueca fundado en 2007 por exmiembros de Cullera Giants, según Wikipedia; jugó en la máxima categoría entre 2010 y 2014. Tercero del grupo Levante de la LNFA 2 2025-26 y campeón U15 de la Spanish Flag Bowl Youth 2026.",
+   "en": "Sueca club founded in 2007 by former Cullera Giants members, per Wikipedia; top-flight side from 2010 to 2014. Third in the LNFA 2 Levante group in 2025-26 and U15 champion of the 2026 Spanish Flag Bowl Youth."
+  },
+  "honours": [
+   {
+    "title": {
+     "es": "Subcampeón LNFA Junior",
+     "en": "LNFA Junior runner-up"
+    },
+    "year": 2013,
+    "sourceIds": [
+     "fefa-palmares"
+    ],
+    "verificationStatus": "verified"
+   },
+   {
+    "title": {
+     "es": "Campeón Spanish Flag Bowl Youth U15",
+     "en": "Spanish Flag Bowl Youth U15 champion"
+    },
+    "year": 2026,
+    "sourceIds": [
+     "fefa-flag-bowl-youth-2026"
+    ],
+    "verificationStatus": "verified"
+   }
+  ],
+  "sourceIds": [
+   "fefa-team-ricers",
+   "wiki-ricers-es",
+   "fefa-lnfa2-2025-26",
+   "fefa-palmares",
+   "fefa-flag-bowl-youth-2026"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Fundación (2007) solo en Wikipedia. Coordenadas = centro de Sueca (el estadio no figura en OSM). FEFA no lista web; suecaricers.com está activa.",
+   "en": "2007 founding only in Wikipedia. Coordinates = Sueca centre. FEFA lists no website; suecaricers.com is live."
+  }
+ },
+ {
+  "id": "cenes-de-la-vega-valkirias",
+  "slug": "cenes-de-la-vega-valkirias",
+  "name": "Cenes de la Vega Valkirias",
+  "shortName": "Valkirias",
+  "city": "Cenes de la Vega",
+  "province": "Granada",
+  "autonomousCommunity": "Andalucía",
+  "country": "ES",
+  "status": "active",
+  "disciplines": [
+   "tackle",
+   "flag"
+  ],
+  "categories": [
+   "senior-women"
+  ],
+  "currentCompetitions": [
+   {
+    "competitionId": "lnfa-femenina",
+    "season": "2025-26",
+    "verificationStatus": "verified",
+    "sourceIds": [
+     "fefa-femenina-2025-26",
+     "fefa-team-valkirias"
+    ]
+   }
+  ],
+  "venue": {
+   "name": {
+    "es": "Polideportivo Municipal de Cenes de la Vega",
+    "en": "Polideportivo Municipal de Cenes de la Vega"
+   },
+   "coordinates": {
+    "latitude": 37.1563,
+    "longitude": -3.5371,
+    "precision": "venue"
+   },
+   "verificationStatus": "partial"
+  },
+  "socialLinks": {
+   "instagram": "https://www.instagram.com/valkiriasfootball/"
+  },
+  "summary": {
+   "es": "Equipo femenino granadino con sede en Cenes de la Vega. Compitió en la LNFA Femenina 2025-26 (anunciado por FEFA como Granada Valkirias) y terminó séptimo y último; no figura en el calendario 2026-27.",
+   "en": "Women's team from Granada province based in Cenes de la Vega. Played LNFA Femenina 2025-26 (announced by FEFA as Granada Valkirias), finishing seventh and last; not on the 2026-27 schedule."
+  },
+  "honours": [],
+  "sourceIds": [
+   "fefa-team-valkirias",
+   "fefa-femenina-2025-26",
+   "fefa-femenina-j6-2026",
+   "fefa-femenina-page-2026-27",
+   "osm-nominatim"
+  ],
+  "verificationStatus": "partial",
+  "lastVerifiedAt": "2026-10-02",
+  "researchNotes": {
+   "es": "Año de fundación UNKNOWN. Historia previa del club sin fuentes. Estado 2026-27 desconocido.",
+   "en": "Founding year UNKNOWN. No sourced club history yet. 2026-27 status unknown."
+  }
+ }
+]
