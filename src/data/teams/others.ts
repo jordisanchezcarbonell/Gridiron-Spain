@@ -27,6 +27,10 @@ export const otherTeams: Team[] = [
       coordinates: { latitude: 39.4772, longitude: -0.3931, precision: "venue" },
       verificationStatus: "verified",
     },
+    logo: {
+      url: "/images/teams/logos/valencia-firebats.png",
+      alt: { es: "Logo de Valencia Firebats", en: "Valencia Firebats logo" },
+    },
     website: "https://firebats.org/",
     socialLinks: { instagram: "https://www.instagram.com/valenciafirebats/", twitter: "https://x.com/vlcFIREBATS" },
     summary: {
@@ -86,6 +90,10 @@ export const otherTeams: Team[] = [
       name: { es: "Polideportivo Municipal de Son Moix", en: "Polideportivo Municipal de Son Moix" },
       coordinates: { latitude: 39.5899, longitude: 2.6301, precision: "venue" },
       verificationStatus: "partial",
+    },
+    logo: {
+      url: "/images/teams/logos/mallorca-voltors.png",
+      alt: { es: "Logo de Mallorca Voltors", en: "Mallorca Voltors logo" },
     },
     website: "https://www.voltors.net/",
     socialLinks: { instagram: "https://www.instagram.com/voltors/", twitter: "https://x.com/cfavoltors" },

@@ -75,6 +75,10 @@ export const madridTeams: Team[] = [
       coordinates: { latitude: 40.35806, longitude: -3.54389, precision: "venue" },
       verificationStatus: "verified",
     },
+    logo: {
+      url: "/images/teams/logos/osos-rivas.png",
+      alt: { es: "Logo de Osos Rivas", en: "Osos Rivas logo" },
+    },
     website: "https://ososrivas.com/",
     socialLinks: { instagram: "https://www.instagram.com/ososrivas/", twitter: "https://x.com/ososrivas" },
     summary: {

@@ -29,6 +29,10 @@ export const cataloniaTeams: Team[] = [
       coordinates: { latitude: 41.4573, longitude: 2.235, precision: "venue" },
       verificationStatus: "partial",
     },
+    logo: {
+      url: "/images/teams/logos/badalona-dracs.png",
+      alt: { es: "Logo de Badalona Dracs", en: "Badalona Dracs logo" },
+    },
     website: "https://badalonadracs.es/",
     socialLinks: { instagram: "https://www.instagram.com/bdn_dracs/", twitter: "https://x.com/BDN_Dracs" },
     summary: {
@@ -102,6 +106,10 @@ export const cataloniaTeams: Team[] = [
       coordinates: { latitude: 41.3791, longitude: 2.1032, precision: "venue" },
       verificationStatus: "verified",
     },
+    logo: {
+      url: "/images/teams/logos/lhospitalet-pioners.png",
+      alt: { es: "Logo de L'Hospitalet Pioners", en: "L'Hospitalet Pioners logo" },
+    },
     website: "https://www.pionerslh.com/",
     socialLinks: { instagram: "https://www.instagram.com/pionerslh/", twitter: "https://x.com/pioners", tiktok: "https://www.tiktok.com/@pionerslh1988", youtube: "https://www.youtube.com/pionershospitalet" },
     summary: {
@@ -169,6 +177,10 @@ export const cataloniaTeams: Team[] = [
       address: "Carrer de la Ciutat d'Asunción 16B, Barcelona",
       coordinates: { latitude: 41.4378, longitude: 2.2008, precision: "venue" },
       verificationStatus: "partial",
+    },
+    logo: {
+      url: "/images/teams/logos/barcelona-pagesos.png",
+      alt: { es: "Logo de Barcelona Pagesos", en: "Barcelona Pagesos logo" },
     },
     website: "http://www.barcelonapagesos.com/",
     socialLinks: { instagram: "https://www.instagram.com/barcelonapagesos/", twitter: "https://x.com/bcnpagesos" },
@@ -270,6 +282,10 @@ export const cataloniaTeams: Team[] = [
       coordinates: { latitude: 41.4013, longitude: 2.2135, precision: "city" },
       verificationStatus: "partial",
     },
+    logo: {
+      url: "/images/teams/logos/barcelona-bufals.png",
+      alt: { es: "Logo de Barcelona Búfals", en: "Barcelona Búfals logo" },
+    },
     website: "https://www.bufals.com/",
     socialLinks: { instagram: "https://www.instagram.com/barcelona_bufals/", twitter: "https://x.com/bufals" },
     summary: {
@@ -313,6 +329,10 @@ export const cataloniaTeams: Team[] = [
       name: { es: "CEM Bon Pastor (según FEFA)", en: "CEM Bon Pastor (per FEFA)" },
       coordinates: { latitude: 41.4378, longitude: 2.2008, precision: "venue" },
       verificationStatus: "partial",
+    },
+    logo: {
+      url: "/images/teams/logos/barcelona-uroloki.png",
+      alt: { es: "Logo de Barcelona Uroloki", en: "Barcelona Uroloki logo" },
     },
     website: "https://uroloki.es/",
     socialLinks: { instagram: "https://www.instagram.com/urolokifootball/", twitter: "https://x.com/Uroloki" },
@@ -406,6 +426,10 @@ export const cataloniaTeams: Team[] = [
       name: { es: "Camp Municipal d'Esports d'Argentona", en: "Camp Municipal d'Esports d'Argentona" },
       coordinates: { latitude: 41.5504, longitude: 2.4045, precision: "venue" },
       verificationStatus: "verified",
+    },
+    logo: {
+      url: "/images/teams/logos/argentona-bocs.png",
+      alt: { es: "Logo de Argentona Bocs", en: "Argentona Bocs logo" },
     },
     website: "https://argentonabocs.cat/",
     socialLinks: { instagram: "https://www.instagram.com/argentonabocs/", twitter: "https://x.com/ArgentonaBocs" },
