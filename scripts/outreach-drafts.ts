@@ -19,8 +19,8 @@ const ASK: Record<string, string> = {
   "Historia del club": "la historia del club (aunque sea un texto interno)",
   "Logo (con permiso del club)": "permiso para mostrar vuestro escudo",
   "Web oficial": "vuestra web oficial, si la tenéis",
-  "Verificar el campo con el club o el ayuntamiento": "el nombre exacto del campo donde jugáis",
-  "Coordenadas exactas del campo (ahora centro de la ciudad)": "la ubicación exacta del campo",
+  "Verificar el campo con el club o el ayuntamiento": "el nombre y la ubicación exacta del campo donde jugáis",
+  "Coordenadas exactas del campo (ahora centro de la ciudad)": "el nombre y la ubicación exacta del campo donde jugáis",
   "Confirmar si el club sigue activo": "si el club sigue compitiendo esta temporada",
 };
 
