@@ -9,3 +9,4 @@ export * from "./season";
 export * from "./history";
 export * from "./research";
 export * from "./ranking";
+export * from "./schedule";

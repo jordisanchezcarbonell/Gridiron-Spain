@@ -14,6 +14,7 @@ import { ncaafWeek4_2026 } from "./ncaaf-week-4-2026";
 import { nflEstadoSemana3 } from "./nfl-estado-semana-3-2026";
 import { navyVsAirForce2026 } from "./navy-vs-air-force-2026";
 import { knightsNflIndianapolis } from "./knights-nfl-indianapolis";
+import { nflMadrid2026Guia } from "./nfl-madrid-2026-guia";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -35,4 +36,5 @@ export const articles: Article[] = [
   nflEstadoSemana3,
   navyVsAirForce2026,
   knightsNflIndianapolis,
+  nflMadrid2026Guia,
 ];

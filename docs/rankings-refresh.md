@@ -1,6 +1,6 @@
-# Rankings refresh routine
+# Rankings and agenda refresh routines
 
-Weekly procedure for keeping `/rankings` current. It is run by a scheduled Claude routine every Monday and always ends in a **pull request**, never a direct push to `main`: an editor reviews and merges.
+Weekly procedures for keeping `/rankings` and `/agenda` current. Rankings run every Monday and the agenda every Thursday, each as a scheduled Claude routine and always ends in a **pull request**, never a direct push to `main`: an editor reviews and merges.
 
 Credibility rules from `CLAUDE.md` apply in full: never invent ranks, records, scores, names or stats. Every changed fact needs a source added to `src/data/sources/` and listed in the entity's `sourceIds`. If a value cannot be confirmed in at least one reliable source, leave the old data and say so in the PR.
 
@@ -34,6 +34,18 @@ Outside a section's window or cadence, skip it.
 
 - Look for 2027 plans of EFA and AFLE, new Spanish signings, and anything that contradicts current data.
 - New clubs: follow the shape in `src/data/teams/regions.ts`, `verificationStatus: "partial"` unless every field is sourced.
+
+## Agenda (Thursdays)
+
+Build next weekend's "Qué ver este finde" in a new file `src/data/agenda/YYYY-MM-DD.ts` (Saturday's date), following the shape of the previous week, and register it first in `src/data/agenda/index.ts`. Keep older weeks.
+
+- Range: Saturday to Monday night US games (which end early Tuesday in Spain).
+- NCAA: games involving AP top-10 teams, any top-25 vs top-25 game, Navy, and College GameDay's game. Kickoff and US network from FBSchedules or ESPN (TV slots are set 6–12 days ahead; if a time is still TBA, leave the game out).
+- NFL: international games, games between teams with winning records, Sunday/Monday night, and any team playing in Madrid that season. Mediaset's free-to-air picks for the week (Mediaset or ElDesmarque, usually published Wednesday) go in `watchInSpain`; do not mark a game as watchable in Spain without a source.
+- Europe/Spain: finals and big games (GFL, AFLE, EFA), FEFA competitions and national-team games when there are any.
+- Store `kickoffUtc` in UTC (`...Z`); the page converts to Madrid time. Check summer/winter time when converting from ET.
+- `howToWatch`: reuse last week's entries unless the rights situation changed.
+- PR: branch `agenda/YYYY-MM-DD`, title `Agenda YYYY-MM-DD`.
 
 ## 4. Validate and open the PR
 
