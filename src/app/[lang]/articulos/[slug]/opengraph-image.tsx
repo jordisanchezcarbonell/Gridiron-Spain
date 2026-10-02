@@ -2,7 +2,7 @@ import { getRepository } from "@/lib/repositories";
 import { isLocale } from "@/lib/i18n/config";
 import { t } from "@/lib/i18n/text";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { loadDisplayFont, ogImage, truncate, OG_SIZE } from "@/lib/seo/og";
+import { fetchImageAsBase64, loadDisplayFont, ogImage, truncate, OG_SIZE } from "@/lib/seo/og";
 
 export const alt = "Primer Down";
 export const size = OG_SIZE;
@@ -20,12 +20,17 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   const font = await loadDisplayFont();
   const article = await getRepository().getArticleBySlug(slug);
   if (!article) return ogImage({ kicker: dict.nav.stories, title: "Primer Down", font });
+
+  // Fetch hero image if available
+  const backgroundImageData = article.heroImage?.url ? await fetchImageAsBase64(article.heroImage.url) : null;
+
   return ogImage({
     kicker: dict.categories[article.category],
     title: t(article.title, locale),
     subtitle: article.subtitle ? truncate(t(article.subtitle, locale), 130) : undefined,
     badges: [],
     font,
+    backgroundImageData: backgroundImageData ?? undefined,
   });
 }
 

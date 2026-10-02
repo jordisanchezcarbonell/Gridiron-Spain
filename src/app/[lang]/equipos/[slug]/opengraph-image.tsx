@@ -3,7 +3,7 @@ import { isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { regionFromSlug, regionName, regionSlug } from "@/lib/regions";
 import { monogramFor } from "@/components/map/map-data";
-import { loadDisplayFont, ogImage, OG_SIZE } from "@/lib/seo/og";
+import { fetchImageAsBase64, loadDisplayFont, ogImage, OG_SIZE } from "@/lib/seo/og";
 
 export const alt = "Primer Down";
 export const size = OG_SIZE;
@@ -38,6 +38,10 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   if (!team) return ogImage({ kicker: dict.nav.teams, title: "Primer Down", font });
   const competitions = await repo.getCompetitionsByIds(team.currentCompetitions.map((c) => c.competitionId));
   const badges = [dict.status[team.status], ...competitions.slice(0, 1).map((c) => c.shortName ?? c.name), ...team.disciplines.map((d) => dict.discipline[d])];
+
+  // Fetch logo if available
+  const logoData = team.logo?.url ? await fetchImageAsBase64(team.logo.url) : null;
+
   return ogImage({
     kicker: dict.nav.teams,
     title: team.name,
@@ -45,6 +49,8 @@ export default async function Image({ params }: { params: Promise<{ lang: string
     monogram: monogramFor(team),
     badges,
     font,
+    accentColor: team.colors?.[0],
+    logoData: logoData ?? undefined,
   });
 }
 
