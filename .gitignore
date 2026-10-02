@@ -42,3 +42,7 @@ next-env.d.ts
 
 # keep the example env file
 !.env.example
+
+# Outreach data with third-party contacts: never commit
+*.local.json
+*.local.md
