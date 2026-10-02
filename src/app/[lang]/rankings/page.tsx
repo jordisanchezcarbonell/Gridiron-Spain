@@ -4,7 +4,7 @@ import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
+import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { t, formatDate } from "@/lib/i18n/text";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -43,10 +43,23 @@ export default async function RankingsPage({ params }: PageProps<"/[lang]/rankin
   return (
     <>
       <JsonLd
-        data={breadcrumbJsonLd([
-          { name: dict.common.breadcrumbHome, url: href(locale, "home") },
-          { name: dict.nav.rankings, url: href(locale, "rankings") },
-        ])}
+        data={[
+          breadcrumbJsonLd([
+            { name: dict.common.breadcrumbHome, url: href(locale, "home") },
+            { name: dict.nav.rankings, url: href(locale, "rankings") },
+          ]),
+          ...rankings
+            .filter((r) => r.groups.length === 1)
+            .map((r) =>
+              itemListJsonLd(
+                t(r.title, locale),
+                r.groups[0].entries.map((e) => {
+                  const team = e.teamId ? teams.find((x) => x.id === e.teamId) : undefined;
+                  return { name: e.name, url: team ? href(locale, "teams", team.slug) : undefined };
+                }),
+              ),
+            ),
+        ]}
       />
       <section className="relative overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />

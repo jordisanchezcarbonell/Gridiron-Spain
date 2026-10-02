@@ -89,3 +89,54 @@ export function articleJsonLd(article: Article, locale: Locale, authorName: stri
 export function serializeJsonLd(data: JsonLd | JsonLd[]): string {
   return JSON.stringify(data).replace(/</g, "\\u003c");
 }
+
+type EventInput = {
+  name: string;
+  /** ISO date-time (UTC, "...Z") or a plain date for all-day events. */
+  startDate: string;
+  location?: string;
+  url: string;
+  description?: string;
+  home?: string;
+  away?: string;
+  sport?: string;
+};
+
+/**
+ * schema.org SportsEvent for a scheduled game. Only include events with a
+ * confirmed date; Google may show them as event rich results.
+ */
+export function sportsEventJsonLd(e: EventInput): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    name: e.name,
+    startDate: e.startDate,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    sport: e.sport ?? "American football",
+    url: absoluteUrl(e.url),
+    ...(e.description ? { description: e.description } : {}),
+    ...(e.location ? { location: { "@type": "Place", name: e.location, address: e.location } } : {}),
+    ...(e.home ? { homeTeam: { "@type": "SportsTeam", name: e.home } } : {}),
+    ...(e.away ? { awayTeam: { "@type": "SportsTeam", name: e.away } } : {}),
+    organizer: { "@type": "Organization", name: site.name, url: site.url },
+  };
+}
+
+/** schema.org ItemList for ordered rankings and standings. */
+export function itemListJsonLd(name: string, items: Array<{ name: string; url?: string }>): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      ...(item.url ? { url: absoluteUrl(item.url) } : {}),
+    })),
+  };
+}

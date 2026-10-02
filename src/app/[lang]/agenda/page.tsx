@@ -4,7 +4,7 @@ import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
+import { breadcrumbJsonLd, sportsEventJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { t } from "@/lib/i18n/text";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -51,10 +51,23 @@ export default async function AgendaPage({ params }: PageProps<"/[lang]/agenda">
   return (
     <>
       <JsonLd
-        data={breadcrumbJsonLd([
-          { name: dict.common.breadcrumbHome, url: href(locale, "home") },
-          { name: dict.nav.agenda, url: href(locale, "agenda") },
-        ])}
+        data={[
+          breadcrumbJsonLd([
+            { name: dict.common.breadcrumbHome, url: href(locale, "home") },
+            { name: dict.nav.agenda, url: href(locale, "agenda") },
+          ]),
+          ...games.map((g) =>
+            sportsEventJsonLd({
+              name: `${g.away} @ ${g.home}`,
+              startDate: g.kickoffUtc,
+              location: g.venue,
+              url: href(locale, "agenda"),
+              description: g.note ? t(g.note, locale) : undefined,
+              home: g.home,
+              away: g.away,
+            }),
+          ),
+        ]}
       />
       <section className="relative overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />

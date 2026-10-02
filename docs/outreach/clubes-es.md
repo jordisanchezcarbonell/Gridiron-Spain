@@ -23,6 +23,8 @@ Queremos dedicar una pieza a los orígenes del club y nos gustaría contar con v
 
 Todo lo que publiquemos llevará su fuente y su crédito, y os enviaremos el borrador antes de publicarlo para que podáis corregir cualquier dato.
 
+Y una petición pequeña: si la ficha os parece correcta, nos ayudaría mucho que la enlazaseis desde vuestra web o vuestras redes (por ejemplo, en la sección de historia del club o en la bio de Instagram). Así es más fácil que quien busque el club en Google encuentre también su historia.
+
 Primer Down es un proyecto independiente, sin relación con la FEFA, la NFL ni ningún club. No vendemos nada ni pedimos nada a cambio: queremos que la historia de vuestro club esté bien contada y sea fácil de encontrar.
 
 Gracias por vuestro tiempo,

@@ -10,5 +10,5 @@ Target: Vercel (zero config for Next.js). Netlify or any Node host works too.
 4. **Domain**: add the domain in Vercel → Domains and point DNS (A/CNAME as instructed). Redirect `www` to apex or vice versa; pick one.
 5. **First deploy**: check `https://<domain>/` redirects to `/es`, `/en/teams` renders, `/sitemap.xml` and `/robots.txt` list the domain, and `/opengraph-image` renders.
 6. **Search Console**: add the property (domain property via DNS TXT), submit `https://<domain>/sitemap.xml`. Both `es-ES` and `en` alternates are already in the sitemap.
-7. **Analytics** (later): Plausible or similar. Add the script in `src/app/[lang]/layout.tsx` only after deciding on cookies/consent.
+7. **Analytics**: Vercel Web Analytics is wired in `src/app/[lang]/layout.tsx` (`<Analytics />`, cookieless, no consent banner needed). Enable it once in Vercel → project → Analytics → Enable; data appears after the next deploy.
 8. **Before each content push**: `npm run content:check && npm run build`.

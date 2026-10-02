@@ -37,6 +37,13 @@ export const nflMadrid2026Guia: Article = {
   verificationStatus: "partial",
   lastVerifiedAt: "2026-10-02",
   readingTimeMinutes: 6,
+  event: {
+    name: "Atlanta Falcons vs Cincinnati Bengals · NFL Madrid Game 2026",
+    startDate: "2026-11-08T14:30:00Z",
+    location: "Estadio Santiago Bernabéu, Av. de Concha Espina 1, 28036 Madrid",
+    home: "Atlanta Falcons",
+    away: "Cincinnati Bengals",
+  },
   sourceIds: [
     "madrid26-bengals-press-release",
     "madrid26-falcons-announcement",

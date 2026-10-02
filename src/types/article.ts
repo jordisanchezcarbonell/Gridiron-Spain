@@ -103,5 +103,7 @@ export type Article = {
   lastVerifiedAt?: string;
 
   featured?: boolean;
+  /** The article is about a single upcoming game: emitted as SportsEvent JSON-LD. */
+  event?: { name: string; startDate: string; location: string; home: string; away: string };
   readingTimeMinutes?: number;
 };

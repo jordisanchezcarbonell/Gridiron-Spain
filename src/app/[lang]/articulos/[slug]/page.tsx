@@ -5,7 +5,8 @@ import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo/json-ld";
+import { findMentions } from "@/lib/mentions";
+import { articleJsonLd, breadcrumbJsonLd, sportsEventJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { t } from "@/lib/i18n/text";
 import { absoluteUrl } from "@/lib/site";
@@ -54,11 +55,15 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
   if (!article) notFound();
 
   const author = authors.find((a) => a.id === article.authorId) ?? authors[0];
-  const [sources, relatedTeams, sameCategory] = await Promise.all([
+  const [sources, explicitTeams, sameCategory, allTeams, spotlights] = await Promise.all([
     repo.getSourcesByIds(article.sourceIds),
     repo.getTeamsByIds(article.relatedTeamIds),
     repo.getArticlesByCategory(article.category),
+    repo.getTeams(),
+    repo.getPlayerSpotlights(),
   ]);
+  const mentioned = findMentions(article, allTeams, spotlights);
+  const relatedTeams = [...explicitTeams, ...mentioned.teams.filter((team) => !explicitTeams.some((x) => x.id === team.id))];
   const related = sameCategory.filter((a) => a.slug !== article.slug).slice(0, 3);
   const untranslated = !article.availableLocales.includes(locale);
   const url = absoluteUrl(href(locale, "articles", article.slug));
@@ -74,6 +79,7 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
       <JsonLd
         data={[
           articleJsonLd(article, locale, author.name),
+          ...(article.event ? [sportsEventJsonLd({ ...article.event, url: href(locale, "articles", article.slug), description: t(article.excerpt, locale) })] : []),
           breadcrumbJsonLd(crumbs.map((c) => ({ name: c.name, url: c.href ?? href(locale, "articles", article.slug) }))),
         ]}
       />
@@ -109,6 +115,26 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
                   <Link href={href(locale, "teams", team.slug)} className="group flex items-center gap-3 border border-line bg-surface px-4 py-3 transition-colors hover:border-accent hover:bg-surface-2">
                     <TeamLogo team={team} size={28} />
                     <span className="font-display text-base font-bold uppercase text-paper transition-colors group-hover:text-accent">{team.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {mentioned.players.length > 0 && (
+          <section className="mt-10" aria-labelledby="related-players">
+            <header className="mb-4">
+              <span id="related-players" className="inline-flex h-7 items-center bg-surface-2 px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+                {dict.nav.players}
+              </span>
+            </header>
+            <ul className="flex flex-wrap gap-2">
+              {mentioned.players.map((p) => (
+                <li key={p.slug}>
+                  <Link href={href(locale, "players", p.slug)} className="flex items-center gap-2 border border-line bg-surface px-3 py-2 text-sm text-paper transition-colors hover:border-accent">
+                    <span className="font-mono text-xs text-accent">{p.spotlights[0].position}</span>
+                    {p.name}
                   </Link>
                 </li>
               ))}

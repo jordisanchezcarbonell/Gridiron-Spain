@@ -29,7 +29,10 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/competicio
   if (!competition) return {};
   return buildMetadata({
     locale,
-    title: competition.name,
+    title:
+      locale === "es"
+        ? `${competition.name}: equipos, temporadas y resultados de fútbol americano`
+        : `${competition.name}: American football teams, seasons and results`,
     description: t(competition.description, locale),
     routeKey: "competitions",
     segments: [slug],

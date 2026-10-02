@@ -5,7 +5,7 @@ import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
+import { breadcrumbJsonLd, sportsEventJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { playerSlug } from "@/lib/players";
 import { t } from "@/lib/i18n/text";
@@ -65,7 +65,22 @@ export default async function NationalTeamDetailPage({ params }: PageProps<"/[la
 
   return (
     <>
-      <JsonLd data={[breadcrumbJsonLd(crumbs.map((c) => ({ name: c.name, url: c.href ?? href(locale, "nationalTeam", id) }))), sportsTeam]} />
+      <JsonLd
+        data={[
+          breadcrumbJsonLd(crumbs.map((c) => ({ name: c.name, url: c.href ?? href(locale, "nationalTeam", id) }))),
+          sportsTeam,
+          ...team.upcoming.map((g) =>
+            sportsEventJsonLd({
+              name: `${locale === "es" ? "España" : "Spain"} vs ${g.opponent} · ${t(team.name, locale)}`,
+              startDate: g.date,
+              location: g.venue,
+              url: href(locale, "nationalTeam", id),
+              description: t(g.competition, locale),
+              sport: team.discipline === "flag" ? "Flag football" : "American football",
+            }),
+          ),
+        ]}
+      />
       <section className="relative overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
