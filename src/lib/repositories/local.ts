@@ -1,5 +1,5 @@
 import type { ContentRepository } from "./types";
-import type { AgendaWeek, Article, Competition, Era, Final, Partner, PlayerSpotlight, Ranking, Season, Source, Team, TimelineEvent } from "@/types";
+import type { AgendaWeek, Article, NationalTeam, Competition, Era, Final, Partner, PlayerSpotlight, Ranking, Season, Source, Team, TimelineEvent } from "@/types";
 import { teams } from "@/data/teams";
 import { competitions } from "@/data/competitions";
 import { articles } from "@/data/articles";
@@ -10,6 +10,7 @@ import { seasons } from "@/data/seasons";
 import { eras, finals } from "@/data/history";
 import { rankings } from "@/data/rankings";
 import { agendaWeeks } from "@/data/agenda";
+import { nationalTeams } from "@/data/national-teams";
 import { playerSpotlights } from "@/data/players";
 
 /**
@@ -96,6 +97,10 @@ export class LocalContentRepository implements ContentRepository {
   async getFinals(competitionId?: string): Promise<Final[]> {
     const list = competitionId ? finals.filter((f) => f.competitionId === competitionId) : finals;
     return [...list].sort((a, b) => a.year - b.year);
+  }
+
+  async getNationalTeams(): Promise<NationalTeam[]> {
+    return [...nationalTeams];
   }
 
   async getAgendaWeeks(): Promise<AgendaWeek[]> {

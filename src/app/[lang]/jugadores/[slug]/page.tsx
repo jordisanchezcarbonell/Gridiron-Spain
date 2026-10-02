@@ -47,6 +47,8 @@ export default async function PlayerPage({ params }: PageProps<"/[lang]/jugadore
   if (!profile) notFound();
   const repo = getRepository();
   const s = profile.spotlights[0];
+  const ntId = profile.spotlights.find((x) => x.nationalTeamId)?.nationalTeamId;
+  const nationalTeam = ntId ? (await repo.getNationalTeams()).find((n) => n.id === ntId) : undefined;
   const [sources, teams] = await Promise.all([
     repo.getSourcesByIds(Array.from(new Set(profile.spotlights.flatMap((x) => x.sourceIds)))),
     repo.getTeamsByIds(Array.from(new Set(profile.spotlights.map((x) => x.teamId).filter((id): id is string => Boolean(id))))),
@@ -118,6 +120,16 @@ export default async function PlayerPage({ params }: PageProps<"/[lang]/jugadore
               />
               <Row label={dict.players.league} value={s.league} />
               {s.hometown && <Row label={dict.players.hometown} value={s.hometown} />}
+              {nationalTeam && (
+                <Row
+                  label={dict.nav.nationalTeam}
+                  value={
+                    <Link href={`${href(locale, "nationalTeam")}#${nationalTeam.id}`} className="text-accent hover:text-accent-bright">
+                      {t(nationalTeam.name, locale)}
+                    </Link>
+                  }
+                />
+              )}
             </dl>
           </div>
         </aside>

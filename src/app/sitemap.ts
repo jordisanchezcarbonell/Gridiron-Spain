@@ -53,6 +53,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entry("rankings", [], all, reviewed, 0.8, "weekly"),
     ...entry("agenda", [], all, reviewed, 0.8, "weekly"),
     ...entry("players", [], all, reviewed, 0.7, "weekly"),
+    ...entry("nationalTeam", [], all, reviewed, 0.8, "weekly"),
     ...buildPlayerProfiles(players).filter((p) => p.hasPage).flatMap((p) => entry("players", [p.slug], all, reviewed, 0.6, "monthly")),
     ...seasons.flatMap((season) => {
       const competition = competitions.find((c) => c.id === season.competitionId);

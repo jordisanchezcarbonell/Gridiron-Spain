@@ -15,6 +15,7 @@ Run `npm run content:check`. Every `stale` warning is a ranking that must be ref
 | 2027 Draft big board | `src/data/players/ncaa.ts` (`board`) | every 2 weeks, only if a newer full board exists | until the 2027 Draft (April) |
 | LNFA results → ranking | `src/data/seasons/index.ts` (`lnfa-2026-27`), `src/data/rankings/spain.ts` | weekly | 16 Jan – 22 May 2027 |
 | EFA / AFLE / ELF, Spaniards in Europe | `src/data/rankings/europe.ts`, `src/data/players/europe.ts` | first Monday of the month | always |
+| National teams (results and fixtures) | `src/data/national-teams/index.ts` | weekly, whenever `content:check` warns that an upcoming game is in the past | always |
 | New Spanish clubs and players | `src/data/teams/*`, `src/data/players/spain.ts` | first Monday of the month | always |
 
 Outside a section's window or cadence, skip it.
@@ -34,6 +35,12 @@ Outside a section's window or cadence, skip it.
 
 - Look for 2027 plans of EFA and AFLE, new Spanish signings, and anything that contradicts current data.
 - New clubs: follow the shape in `src/data/teams/regions.ts`, `verificationStatus: "partial"` unless every field is sourced.
+
+## 3b. National teams (weekly when due)
+
+- When an `upcoming` game has been played, move it to `results` with Spain's score first and `result`, citing the FEFA or IFAF match report.
+- Add newly announced fixtures (FEFA, IFAF) to `upcoming`. If FEFA and IFAF disagree, publish the newest official source and say so in the game `note`.
+- New coaches or squads: update `coach`/`summary`; new standout players go in `src/data/players/spain.ts` with `nationalTeamId`.
 
 ## Agenda (Thursdays)
 
