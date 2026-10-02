@@ -52,10 +52,24 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Link
+            href={href(locale, "search")}
+            aria-label={dict.nav.search}
+            title={dict.nav.search}
+            className="flex h-9 w-9 items-center justify-center border border-line-strong bg-surface text-paper-2 transition-colors hover:border-accent hover:text-accent"
+          >
+            <svg aria-hidden viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+          </Link>
           <LanguageSwitcher locale={locale} label={dict.nav.switchLanguage} />
           <MobileNav
             items={[
               ...items,
+              { href: href(locale, "nationalTeam"), label: dict.nav.nationalTeam },
+              { href: href(locale, "players"), label: dict.nav.players },
+              { href: href(locale, "search"), label: dict.nav.search },
               { href: href(locale, "guide"), label: dict.nav.guide },
               { href: href(locale, "nearYou"), label: dict.nav.nearYou },
               { href: href(locale, "about"), label: dict.nav.about },

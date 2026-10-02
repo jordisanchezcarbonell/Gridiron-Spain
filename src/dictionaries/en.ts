@@ -22,12 +22,21 @@ export const en: Dictionary = {
     agenda: "Schedule",
     players: "Players",
     nationalTeam: "National team",
+    search: "Search",
     menu: "Menu",
     close: "Close",
     switchLanguage: "Switch language",
     skipToContent: "Skip to content",
   },
   home: {
+    live: {
+      title: "This week",
+      weekend: "This weekend",
+      fullAgenda: "Full schedule",
+      allRankings: "All rankings",
+      spain: "Spain's next game",
+      nationalTeam: "National team",
+    },
     kicker: "Independent project · Barcelona",
     heroTitle: "American football lives here too.",
     heroSub:
@@ -312,6 +321,14 @@ export const en: Dictionary = {
     intro: "Just enough to understand a game, know which leagues exist and where to watch football without leaving Spain. No unnecessary jargon.",
     glossary: "Glossary",
     glossaryIntro: "The terms you will hear at any game, in the order you will need them.",
+  },
+  search: {
+    title: "Search",
+    placeholder: "Team, player, national team, competition…",
+    hint: "Search teams, players, national teams, competitions and stories.",
+    empty: "No results. Try another word.",
+    results: "results",
+    kinds: { team: "Team", player: "Player", nationalTeam: "National team", competition: "Competition", article: "Story" },
   },
   nationalTeam: {
     title: "Spain's national teams",

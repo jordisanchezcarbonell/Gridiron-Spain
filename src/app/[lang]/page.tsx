@@ -10,6 +10,7 @@ import { Section } from "@/components/ui/Section";
 import { StatsBar, HeroStat } from "@/components/ui/StatsBar";
 import { TeamCard } from "@/components/teams/TeamCard";
 import { ArticleCard } from "@/components/articles/ArticleCard";
+import { LiveStrip } from "@/components/home/LiveStrip";
 import { Timeline } from "@/components/history/Timeline";
 import { TeamMapLoader } from "@/components/map/TeamMapLoader";
 import { toMapPins } from "@/components/map/map-data";
@@ -31,11 +32,14 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
   const locale = resolveLocale((await params).lang);
   const dict = getDictionary(locale);
   const repo = getRepository();
-  const [teams, competitions, articles, timeline] = await Promise.all([
+  const [teams, competitions, articles, timeline, agendaWeeks, rankings, nationalTeams] = await Promise.all([
     repo.getTeams(),
     repo.getCompetitions(),
     repo.getArticles(),
     repo.getTimeline(),
+    repo.getAgendaWeeks(),
+    repo.getRankings(),
+    repo.getNationalTeams(),
   ]);
 
   const featured = articles[0];
@@ -119,6 +123,15 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           <StatsBar stats={stats} />
         </div>
       </section>
+
+      <LiveStrip
+        week={agendaWeeks[0]}
+        ranking={rankings.find((r) => r.scope === "ncaa")}
+        nationalTeams={nationalTeams}
+        now={new Date().toISOString()}
+        locale={locale}
+        dict={dict}
+      />
 
       {/* ============================================================
           FEATURED STORY

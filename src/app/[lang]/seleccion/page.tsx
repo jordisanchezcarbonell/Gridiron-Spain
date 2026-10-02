@@ -13,6 +13,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { SourceList } from "@/components/articles/SourceList";
 import { GameList } from "@/components/national-team/GameList";
+import { CalendarSubscribe } from "@/components/ui/CalendarSubscribe";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/seleccion">): Promise<Metadata> {
   const locale = resolveLocale((await params).lang);
@@ -58,6 +59,9 @@ export default async function NationalTeamPage({ params }: PageProps<"/[lang]/se
       </section>
 
       <div className="container-content py-12 md:py-14">
+        <div className="mb-12 max-w-xl">
+          <CalendarSubscribe locale={locale} />
+        </div>
         {teams.map((team) => {
           const roster = players.filter((p) => p.nationalTeamId === team.id);
           return (

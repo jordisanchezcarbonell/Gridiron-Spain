@@ -20,12 +20,21 @@ export const es = {
     agenda: "Agenda",
     players: "Jugadores",
     nationalTeam: "Selección",
+    search: "Buscar",
     menu: "Menú",
     close: "Cerrar",
     switchLanguage: "Cambiar idioma",
     skipToContent: "Saltar al contenido",
   },
   home: {
+    live: {
+      title: "Esta semana",
+      weekend: "Este finde",
+      fullAgenda: "Toda la agenda",
+      allRankings: "Todos los rankings",
+      spain: "Próximo partido de España",
+      nationalTeam: "La selección",
+    },
     kicker: "Proyecto independiente · Barcelona",
     heroTitle: "El fútbol americano también vive aquí.",
     heroSub:
@@ -310,6 +319,14 @@ export const es = {
     intro: "Lo justo para entender un partido, saber qué ligas existen y dónde ver football sin salir de España. Sin jerga innecesaria.",
     glossary: "Glosario",
     glossaryIntro: "Los términos que oirás en cualquier partido, en el orden en que los vas a necesitar.",
+  },
+  search: {
+    title: "Buscar",
+    placeholder: "Equipo, jugador, selección, competición…",
+    hint: "Busca en equipos, jugadores, selecciones, competiciones e historias.",
+    empty: "Sin resultados. Prueba con otra palabra.",
+    results: "resultados",
+    kinds: { team: "Equipo", player: "Jugador", nationalTeam: "Selección", competition: "Competición", article: "Historia" },
   },
   nationalTeam: {
     title: "La selección española",

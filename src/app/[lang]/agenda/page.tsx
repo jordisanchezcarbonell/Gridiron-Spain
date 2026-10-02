@@ -11,6 +11,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { SourceList } from "@/components/articles/SourceList";
+import { CalendarSubscribe } from "@/components/ui/CalendarSubscribe";
 import type { Competition, Locale, ScheduledGame, Team } from "@/types";
 import type { Dictionary } from "@/dictionaries/es";
 
@@ -71,7 +72,11 @@ export default async function AgendaPage({ params }: PageProps<"/[lang]/agenda">
           {days.length > 1 && (
             <nav aria-label={dict.nav.agenda} className="mt-8 flex flex-wrap gap-2">
               {days.map((d) => (
-                <a key={d} href={`#dia-${d}`} className="flex h-8 items-center border border-line bg-surface px-3 font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted transition-colors hover:border-accent hover:text-accent">
+                <a
+                  key={d}
+                  href={`#dia-${d}`}
+                  className="flex h-8 items-center border border-line bg-surface px-3 font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted transition-colors hover:border-accent hover:text-accent"
+                >
                   {dayLabel(d, locale)}
                 </a>
               ))}
@@ -97,24 +102,34 @@ export default async function AgendaPage({ params }: PageProps<"/[lang]/agenda">
             </section>
           ))}
           {week && (
-            <SourceList sources={sources} locale={locale} title={dict.common.sources} accessedLabel={dict.articles.accessed} lastVerified={week.lastVerifiedAt} lastVerifiedLabel={dict.verification.lastVerified} />
+            <SourceList
+              sources={sources}
+              locale={locale}
+              title={dict.common.sources}
+              accessedLabel={dict.articles.accessed}
+              lastVerified={week.lastVerifiedAt}
+              lastVerifiedLabel={dict.verification.lastVerified}
+            />
           )}
         </div>
 
-        {week && week.howToWatch.length > 0 && (
-          <aside className="lg:sticky lg:top-24 lg:self-start">
-            <div className="relative border border-line bg-surface">
-              <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
-              <p className="px-5 pt-5 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted-2">{dict.agenda.howToWatch}</p>
-              <dl className="divide-y divide-line">
-                {week.howToWatch.map((h) => (
-                  <div key={h.competitionId} className="grid gap-1 px-5 py-4">
-                    <dt className="font-display text-base font-bold text-paper">{competitions.find((c) => c.id === h.competitionId)?.shortName ?? h.competitionId}</dt>
-                    <dd className="text-sm leading-relaxed text-paper-2">{t(h.text, locale)}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
+        {week && (
+          <aside className="grid content-start gap-6 lg:sticky lg:top-24 lg:self-start">
+            <CalendarSubscribe locale={locale} />
+            {week.howToWatch.length > 0 && (
+              <div className="relative border border-line bg-surface">
+                <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
+                <p className="px-5 pt-5 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted-2">{dict.agenda.howToWatch}</p>
+                <dl className="divide-y divide-line">
+                  {week.howToWatch.map((h) => (
+                    <div key={h.competitionId} className="grid gap-1 px-5 py-4">
+                      <dt className="font-display text-base font-bold text-paper">{competitions.find((c) => c.id === h.competitionId)?.shortName ?? h.competitionId}</dt>
+                      <dd className="text-sm leading-relaxed text-paper-2">{t(h.text, locale)}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
           </aside>
         )}
       </div>
