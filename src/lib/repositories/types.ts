@@ -4,6 +4,7 @@ import type {
   Era,
   Final,
   Partner,
+  AgendaWeek,
   PlayerSpotlight,
   Ranking,
   Season,
@@ -45,6 +46,9 @@ export interface ContentRepository {
   getTimeline(): Promise<TimelineEvent[]>;
   getEras(): Promise<Era[]>;
   getFinals(competitionId?: string): Promise<Final[]>;
+
+  // Agenda
+  getAgendaWeeks(): Promise<AgendaWeek[]>;
 
   // Rankings & players
   getRankings(): Promise<Ranking[]>;

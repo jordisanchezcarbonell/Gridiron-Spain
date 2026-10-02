@@ -16,6 +16,7 @@ import { eras, finals } from "../src/data/history";
 import { seasons } from "../src/data/seasons";
 import { rankings } from "../src/data/rankings";
 import { playerSpotlights } from "../src/data/players";
+import { agendaWeeks } from "../src/data/agenda";
 
 const sourceIds = new Set(sources.map((s) => s.id));
 const errors: string[] = [];
@@ -117,6 +118,31 @@ for (const r of rankings) {
   for (const g of r.groups) for (const e of g.entries) {
     if (e.teamId && !teams.some((t) => t.id === e.teamId)) errors.push(`${owner}: unknown team "${e.teamId}"`);
   }
+}
+unique("agenda", agendaWeeks.map((w) => w.id));
+for (const w of agendaWeeks) {
+  const owner = `agenda:${w.id}`;
+  checkIds(owner, w.sourceIds);
+  unique(`${owner} games`, w.games.map((g) => g.id));
+  for (const h of w.howToWatch) {
+    checkIds(owner, h.sourceIds);
+    for (const id of h.sourceIds) if (!w.sourceIds.includes(id)) errors.push(`${owner}: source "${id}" missing from the week's sourceIds`);
+    if (!competitionIds.has(h.competitionId)) errors.push(`${owner}: unknown competition "${h.competitionId}"`);
+  }
+  for (const g of w.games) {
+    const go = `${owner}:${g.id}`;
+    checkIds(go, g.sourceIds);
+    if (g.sourceIds.length === 0) errors.push(`${go}: game without sources`);
+    if (!competitionIds.has(g.competitionId)) errors.push(`${go}: unknown competition "${g.competitionId}"`);
+    if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(g.kickoffUtc)) errors.push(`${go}: kickoffUtc must be ISO UTC ("...Z")`);
+    for (const id of [g.awayTeamId, g.homeTeamId]) if (id && !teams.some((t) => t.id === id)) errors.push(`${go}: unknown team "${id}"`);
+    for (const id of g.sourceIds) if (!w.sourceIds.includes(id)) errors.push(`${go}: source "${id}" missing from the week's sourceIds`);
+  }
+}
+const newestAgenda = [...agendaWeeks].sort((a, b) => b.to.localeCompare(a.to))[0];
+if (newestAgenda && today > newestAgenda.to) {
+  const age = Math.floor((Date.parse(today) - Date.parse(newestAgenda.to)) / 86_400_000);
+  if (age > 3) warnings.push(`agenda: stale — newest week ended ${newestAgenda.to} (${age} days ago)`);
 }
 for (const p of playerSpotlights) {
   const owner = `player:${p.id}`;

@@ -13,6 +13,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     { href: href(locale, "map"), label: dict.nav.map },
     { href: href(locale, "articles"), label: dict.nav.stories },
     { href: href(locale, "competitions"), label: dict.nav.competitions },
+    { href: href(locale, "agenda"), label: dict.nav.agenda },
     { href: href(locale, "rankings"), label: dict.nav.rankings },
     { href: href(locale, "roadToAnnapolis"), label: dict.nav.road, highlight: true },
   ];
