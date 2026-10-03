@@ -96,7 +96,7 @@ export const otherTeams: Team[] = [
       alt: { es: "Logo de Mallorca Voltors", en: "Mallorca Voltors logo" },
     },
     website: "https://www.voltors.net/",
-    socialLinks: { instagram: "https://www.instagram.com/voltors/", twitter: "https://x.com/cfavoltors" },
+    socialLinks: { instagram: "https://www.instagram.com/voltors/", twitter: "https://x.com/mallorcavoltors" },
     summary: {
       es: "Club pionero del football en Mallorca, fundado en 1987. Campeón de la LNFA 2 en 2014 y equipo de Serie A en 2025-26 y 2026-27.",
       en: "Pioneer football club in Mallorca, founded in 1987. LNFA 2 champion in 2014 and a Serie A side in 2025-26 and 2026-27.",

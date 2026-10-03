@@ -458,7 +458,6 @@ export const regionalTeams: Team[] = [
     website: "https://www.murciacobras.es/",
     socialLinks: {
       instagram: "https://www.instagram.com/murciacobras/",
-      twitter: "https://x.com/MurciaCobras",
     },
     summary: {
       es: "Club murciano nacido en 1994. Campeón de la LNFA 2 en 2016 y subcampeón de la LNFA en 2018; en 2025-26 compitió en el grupo Levante de la LNFA 2.",

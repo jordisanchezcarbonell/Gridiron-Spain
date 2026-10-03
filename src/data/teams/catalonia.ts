@@ -111,7 +111,7 @@ export const cataloniaTeams: Team[] = [
       alt: { es: "Logo de L'Hospitalet Pioners", en: "L'Hospitalet Pioners logo" },
     },
     website: "https://www.pionerslh.com/",
-    socialLinks: { instagram: "https://www.instagram.com/pionerslh/", twitter: "https://x.com/pioners", tiktok: "https://www.tiktok.com/@pionerslh1988", youtube: "https://www.youtube.com/pionershospitalet" },
+    socialLinks: { instagram: "https://www.instagram.com/pionerslh/", tiktok: "https://www.tiktok.com/@pionerslh1988", youtube: "https://www.youtube.com/pionershospitalet" },
     summary: {
       es: "Uno de los cuatro clubes pioneros del football en España (1988). Seis veces campeón de la LNFA y nueve de la Copa de España.",
       en: "One of the four pioneer clubs of football in Spain (1988). Six-time LNFA champion and nine-time Copa de España winner.",
