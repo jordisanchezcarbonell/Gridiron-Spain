@@ -69,6 +69,8 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               ...items,
               { href: href(locale, "nationalTeam"), label: dict.nav.nationalTeam },
               { href: href(locale, "players"), label: dict.nav.players },
+              { href: href(locale, "palmares"), label: dict.nav.palmares },
+              { href: href(locale, "quiz"), label: dict.nav.quiz },
               { href: href(locale, "search"), label: dict.nav.search },
               { href: href(locale, "guide"), label: dict.nav.guide },
               { href: href(locale, "nearYou"), label: dict.nav.nearYou },

@@ -57,6 +57,13 @@ export const otherTeams: Team[] = [
       })),
       { title: { es: "Campeón LNFA 2", en: "LNFA 2 champion" }, competitionId: "lnfa-2", year: 2025, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
       { title: { es: "Campeón LNFA Femenina", en: "LNFA Femenina champion" }, competitionId: "lnfa-femenina", year: 2019, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
+      ...[2019, 2022, 2024].map((year) => ({
+        title: { es: "Campeón Spanish Flag Bowl Femenina", en: "Spanish Flag Bowl Women's champion" },
+        competitionId: "spanish-flag-bowl",
+        year,
+        sourceIds: ["fefa-palmares-flag"],
+        verificationStatus: "verified" as const,
+      })),
       ...[2010, 2013, 2014, 2015, 2017, 2019, 2021, 2022, 2024, 2026].map((year) => ({
         title: { es: "Campeón Spanish Flag Bowl Open", en: "Spanish Flag Bowl Open champion" },
         competitionId: "spanish-flag-bowl",

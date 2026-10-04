@@ -1,4 +1,5 @@
 import type { Final } from "@/types";
+import { fefaFinals } from "./finals-fefa";
 
 const P = ["fefa-palmares"];
 
@@ -42,4 +43,4 @@ export const lnfaFinals: Final[] = [
   { competitionId: "lnfa", year: 2026, edition: 32, champion: { teamId: "las-rozas-black-demons" }, runnerUp: { teamId: "badalona-dracs" }, score: "27-13", venue: { es: "Estadi Municipal de Badalona", en: "Estadi Municipal de Badalona" }, sourceIds: [...P, "fefa-spanish-bowl-2026"], verificationStatus: "verified" },
 ];
 
-export const finals: Final[] = [...lnfaFinals];
+export const finals: Final[] = [...lnfaFinals, ...fefaFinals];

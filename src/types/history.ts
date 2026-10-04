@@ -6,6 +6,8 @@ export type FinalSide = { teamId?: string; name?: string };
 /** One edition of a competition final (Spanish Bowl, Copa de España, ...). */
 export type Final = {
   competitionId: string;
+  /** Flag Bowl has open and women's finals under one competition. */
+  category?: "open" | "femenina";
   year: number;
   /** Edition number when the organiser numbers it (e.g. 32 for XXXII). */
   edition?: number;

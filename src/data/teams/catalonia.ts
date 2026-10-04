@@ -498,7 +498,7 @@ export const cataloniaTeams: Team[] = [
       },
     ],
     honours: [
-      ...[2008, 2009, 2010, 2015].map((year) => ({
+      ...[2007, 2008, 2009, 2010, 2015].map((year) => ({
         title: { es: "Campeón LNFA 2", en: "LNFA 2 champion" },
         competitionId: "lnfa-2",
         year,

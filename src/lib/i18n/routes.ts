@@ -19,6 +19,8 @@ export const routes = {
   },
   agenda: { internal: "agenda", public: { es: "agenda", en: "schedule" } },
   editorial: { internal: "editorial", public: { es: "editorial", en: "editorial" } },
+  palmares: { internal: "palmares", public: { es: "palmares", en: "honours" } },
+  quiz: { internal: "test-nfl", public: { es: "test-nfl", en: "nfl-quiz" } },
   search: { internal: "buscar", public: { es: "buscar", en: "search" } },
   nationalTeam: { internal: "seleccion", public: { es: "seleccion", en: "national-team" } },
   players: { internal: "jugadores", public: { es: "jugadores", en: "players" } },

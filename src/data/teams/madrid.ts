@@ -41,15 +41,15 @@ export const madridTeams: Team[] = [
         en: "According to the club's own published history, the Black Demons started training in April 2000; FEFA lists 2004 as the founding year. [[src:black-demons-historia]] [[src:fefa-team-black-demons]]",
       },
       {
-        es: "Tras ganar la LNFA 2 en 2006, 2007 y 2017, el club ha dominado la máxima categoría desde 2023: cuatro Spanish Bowl seguidas, la última el 2 de mayo de 2026 ante Badalona Dracs (27-13), además de las Copas de España de 2022, 2023 y 2024. [[src:fefa-palmares]] [[src:fefa-spanish-bowl-2026]]",
-        en: "After winning LNFA 2 in 2006, 2007 and 2017, the club has dominated the top tier since 2023: four straight Spanish Bowls, the latest on 2 May 2026 against Badalona Dracs (27-13), plus the 2022, 2023 and 2024 Copas de España. [[src:fefa-palmares]] [[src:fefa-spanish-bowl-2026]]",
+        es: "Tras ganar la LNFA 2 en 2006, 2012 y 2017, el club ha dominado la máxima categoría desde 2023: cuatro Spanish Bowl seguidas, la última el 2 de mayo de 2026 ante Badalona Dracs (27-13), además de las Copas de España de 2022, 2023 y 2024. [[src:fefa-palmares]] [[src:fefa-spanish-bowl-2026]]",
+        en: "After winning LNFA 2 in 2006, 2012 and 2017, the club has dominated the top tier since 2023: four straight Spanish Bowls, the latest on 2 May 2026 against Badalona Dracs (27-13), plus the 2022, 2023 and 2024 Copas de España. [[src:fefa-palmares]] [[src:fefa-spanish-bowl-2026]]",
       },
     ],
     honours: [
       ...[2023, 2024, 2025, 2026].map((year) => ({ title: { es: "Campeón LNFA (Spanish Bowl)", en: "LNFA champion (Spanish Bowl)" }, competitionId: "lnfa", year, sourceIds: ["fefa-palmares"], verificationStatus: "verified" as const })),
       ...[2022, 2023, 2024].map((year) => ({ title: { es: "Campeón Copa de España", en: "Copa de España champion" }, competitionId: "copa-espana", year, sourceIds: ["fefa-palmares"], verificationStatus: "verified" as const })),
       ...[2015, 2023, 2024, 2025].map((year) => ({ title: { es: "Campeón LNFA Femenina", en: "LNFA Femenina champion" }, competitionId: "lnfa-femenina", year, sourceIds: ["fefa-palmares"], verificationStatus: "verified" as const })),
-      ...[2006, 2007, 2017].map((year) => ({ title: { es: "Campeón LNFA 2", en: "LNFA 2 champion" }, competitionId: "lnfa-2", year, sourceIds: ["fefa-palmares"], verificationStatus: "verified" as const })),
+      ...[2006, 2012, 2017].map((year) => ({ title: { es: "Campeón LNFA 2", en: "LNFA 2 champion" }, competitionId: "lnfa-2", year, sourceIds: ["fefa-palmares"], verificationStatus: "verified" as const })),
       { title: { es: "Campeón Spanish Flag Bowl Open", en: "Spanish Flag Bowl Open champion" }, competitionId: "spanish-flag-bowl", year: 2023, sourceIds: ["fefa-palmares-flag"], verificationStatus: "verified" },
     ],
     sourceIds: ["fefa-team-black-demons", "black-demons-historia", "fefa-palmares", "fefa-palmares-flag", "fefa-spanish-bowl-2026", "fefa-lnfa-semis-2026", "fefa-calendario-2026-27"],

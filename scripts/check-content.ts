@@ -18,6 +18,7 @@ import { rankings } from "../src/data/rankings";
 import { playerSpotlights } from "../src/data/players";
 import { agendaWeeks } from "../src/data/agenda";
 import { nationalTeams } from "../src/data/national-teams";
+import { quizResults, quizQuestions } from "../src/data/quiz/nfl-team";
 
 const sourceIds = new Set(sources.map((s) => s.id));
 const errors: string[] = [];
@@ -162,6 +163,16 @@ for (const n of nationalTeams) {
   }
   for (const g of n.upcoming) if (g.date < today) warnings.push(`${owner}: upcoming game on ${g.date} is in the past — move it to results`);
 }
+for (const r of quizResults) {
+  const owner = `quiz:${r.id}`;
+  checkIds(owner, r.sourceIds);
+  for (const f of r.facts) {
+    checkCitations(owner, f.es, r.sourceIds);
+    checkCitations(owner, f.en, r.sourceIds);
+    if (!/\[\[src:/.test(f.es)) errors.push(`${owner}: fact without citation`);
+  }
+}
+for (const q of quizQuestions) for (const o of q.options) for (const id of o.teams) if (!quizResults.some((r) => r.id === id)) errors.push(`quiz:${q.id}: unknown team "${id}"`);
 for (const p of playerSpotlights) {
   const owner = `player:${p.id}`;
   checkIds(owner, p.sourceIds);

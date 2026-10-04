@@ -55,6 +55,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entry("agenda", [], all, reviewed, 0.8, "weekly"),
     ...entry("players", [], all, reviewed, 0.7, "weekly"),
     ...entry("nationalTeam", [], all, reviewed, 0.8, "weekly"),
+    ...entry("quiz", [], all, reviewed, 0.7, "monthly"),
+    ...entry("palmares", [], all, reviewed, 0.8, "monthly"),
     ...nationalTeams.flatMap((n) => entry("nationalTeam", [n.id], all, n.lastVerifiedAt, 0.7, "weekly")),
     ...buildPlayerProfiles(players).filter((p) => p.hasPage).flatMap((p) => entry("players", [p.slug], all, reviewed, 0.6, "monthly")),
     ...seasons.flatMap((season) => {

@@ -1,0 +1,927 @@
+{
+  "generatedAt": "2026-10-04",
+  "notes": [
+    "Names are transcribed as written on FEFA (champions in capitals, '(n)' = FEFA's cumulative title count).",
+    "Year convention: FEFA labels each edition with the calendar year of the final (Copa de España) / the season-end year (leagues). Wikipedia es labels Copa editions one year later (season-end year, e.g. FEFA 2013 = Wikipedia 2014 'XIX'; FEFA 2025 = Wikipedia 'XXX (2026)'). All champion/runner-up pairs agree once offset; only the FEFA years are used here.",
+    "Team-id mapping: 'Rivas Osos'/'Osos Rivas' -> osos-rivas; 'Barberá/Barberà Rookies' -> barbera-rookies; 'Coslada Camioneros'/'Camioneras Coslada' -> camioneros-coslada; 'Gijón Mariners Girls' -> gijon-mariners (women's flag side of the club; probable, confirm). 'Zaragoza Lions' (1989-2004) left null: Zaragoza Hurricanes is a separate successor club."
+  ],
+  "competitions": [
+    {
+      "competitionId": "copa-espana",
+      "category": null,
+      "entries": [
+        {
+          "year": 1995,
+          "champion": "PANTERAS MADRID",
+          "championTeamId": "madrid-panteras",
+          "runnerUp": "Vilafranca Eagles",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares",
+          "score": "20-16"
+        },
+        {
+          "year": 1996,
+          "champion": "PANTERAS MADRID",
+          "championTeamId": "madrid-panteras",
+          "runnerUp": "L'Hospitalet Pioners",
+          "runnerUpTeamId": "lhospitalet-pioners",
+          "sourceId": "fefa-palmares",
+          "score": "24-17",
+          "yearAsListedBySource": 1995,
+          "note": "FEFA lists this second edition as 1995 (duplicate year, apparent typo). Wikipedia es (citing ABC 24-11-1996) places the final in Granada in November 1996.",
+          "yearCorrectionSourceId": "wiki-copa-espana-es"
+        },
+        {
+          "year": 1997,
+          "champion": "PANTERAS MADRID (3)",
+          "championTeamId": "madrid-panteras",
+          "runnerUp": "L'Hospitalet Pioners",
+          "runnerUpTeamId": "lhospitalet-pioners",
+          "sourceId": "fefa-palmares",
+          "score": "27-6"
+        },
+        {
+          "year": 1998,
+          "champion": "BADALONA DRACS",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": "Bilbao Cougars",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares",
+          "score": "8-6"
+        },
+        {
+          "year": 1999,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "34-13"
+        },
+        {
+          "year": 2000,
+          "champion": "OSOS RIVAS",
+          "championTeamId": "osos-rivas",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "25-24"
+        },
+        {
+          "year": 2001,
+          "champion": "OSOS RIVAS",
+          "championTeamId": "osos-rivas",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "39-12"
+        },
+        {
+          "year": 2002,
+          "champion": "OSOS RIVAS",
+          "championTeamId": "osos-rivas",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "15-6"
+        },
+        {
+          "year": 2003,
+          "champion": "BADALONA DRACS",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": "Rivas Osos",
+          "runnerUpTeamId": "osos-rivas",
+          "sourceId": "fefa-palmares",
+          "score": "3-0"
+        },
+        {
+          "year": 2004,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares",
+          "score": "23-16"
+        },
+        {
+          "year": 2005,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Rivas Osos",
+          "runnerUpTeamId": "osos-rivas",
+          "sourceId": "fefa-palmares",
+          "score": "23-18"
+        },
+        {
+          "year": 2006,
+          "champion": "OSOS RIVAS",
+          "championTeamId": "osos-rivas",
+          "runnerUp": "L'Hospitalet Pioners",
+          "runnerUpTeamId": "lhospitalet-pioners",
+          "sourceId": "fefa-palmares",
+          "score": "20-3"
+        },
+        {
+          "year": 2007,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Rivas Osos",
+          "runnerUpTeamId": "osos-rivas",
+          "sourceId": "fefa-palmares",
+          "score": "14-13"
+        },
+        {
+          "year": 2008,
+          "champion": "OSOS RIVAS",
+          "championTeamId": "osos-rivas",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "7-0"
+        },
+        {
+          "year": 2009,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares",
+          "score": "41-7"
+        },
+        {
+          "year": 2010,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares",
+          "score": "46-23"
+        },
+        {
+          "year": 2011,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "36-29"
+        },
+        {
+          "year": 2012,
+          "champion": "L'HOSPITALET PIONERS",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Rivas Osos",
+          "runnerUpTeamId": "osos-rivas",
+          "sourceId": "fefa-palmares",
+          "score": "20-10"
+        },
+        {
+          "year": 2013,
+          "champion": "L'HOSPITALET PIONERS (9)",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "31-27"
+        },
+        {
+          "year": 2016,
+          "champion": "BADALONA DRACS",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": null,
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares",
+          "score": null,
+          "note": "FEFA lists no runner-up or score ('-'). Wikipedia es (labelled XXI/2017) also gives no opponent and 0-0, suggesting the title was awarded without a final; unconfirmed."
+        },
+        {
+          "year": 2017,
+          "champion": "BADALONA DRACS",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares",
+          "score": "26-7"
+        },
+        {
+          "year": 2018,
+          "champion": "BADALONA DRACS",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares",
+          "score": "24-0"
+        },
+        {
+          "year": 2019,
+          "champion": "BADALONA DRACS",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares",
+          "score": "15-3"
+        },
+        {
+          "year": 2020,
+          "champion": "BADALONA DRACS",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares",
+          "score": "14-7"
+        },
+        {
+          "year": 2021,
+          "champion": "OSOS RIVAS (6)",
+          "championTeamId": "osos-rivas",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "41-14"
+        },
+        {
+          "year": 2022,
+          "champion": "LAS ROZAS BLACK DEMONS",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "17-0"
+        },
+        {
+          "year": 2023,
+          "champion": "LAS ROZAS BLACK DEMONS",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "27-21"
+        },
+        {
+          "year": 2024,
+          "champion": "LAS ROZAS BLACK DEMONS (3)",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Badalona Dracs",
+          "runnerUpTeamId": "badalona-dracs",
+          "sourceId": "fefa-palmares",
+          "score": "35-0"
+        },
+        {
+          "year": 2025,
+          "champion": "BADALONA DRACS (8)",
+          "championTeamId": "badalona-dracs",
+          "runnerUp": "L'Hospitalet Pioners",
+          "runnerUpTeamId": "lhospitalet-pioners",
+          "sourceId": "fefa-palmares",
+          "score": "40-0"
+        }
+      ],
+      "missingYears": [
+        2014,
+        2015
+      ],
+      "missingYearsNote": "No FEFA entries for 2014 or 2015. Wikipedia es lists edition XX as 'Convocatoria desierta' (not held) and then jumps to XXI, consistent with no Copa in those two calendar years. Not filled. FEFA also lists 1995 twice (second row corrected to 1996, see entry note)."
+    },
+    {
+      "competitionId": "lnfa-2",
+      "category": null,
+      "entries": [
+        {
+          "year": 2004,
+          "champion": "BARCELONA UROLOKI",
+          "championTeamId": "barcelona-uroloki",
+          "runnerUp": "Zaragoza Lions",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2005,
+          "champion": "BARCELONA UROLOKI (3)",
+          "championTeamId": "barcelona-uroloki",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares",
+          "note": "FEFA marks Uroloki with '(3)' although only two Uroloki titles (2004, 2005) appear in the list; the third is not identified. Wikipedia es mentions Uroloki won a 2003 7x7 'Campeonato de España' predating LNFA 2 — possible explanation, unconfirmed."
+        },
+        {
+          "year": 2006,
+          "champion": "LAS ROZAS BLACK DEMONS",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Terrassa Reds",
+          "runnerUpTeamId": "terrassa-reds",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2007,
+          "champion": "REUS IMPERIALS",
+          "championTeamId": "reus-imperials",
+          "runnerUp": "Argentona Bocs",
+          "runnerUpTeamId": "argentona-bocs",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2008,
+          "champion": "REUS IMPERIALS",
+          "championTeamId": "reus-imperials",
+          "runnerUp": "Valencia Giants",
+          "runnerUpTeamId": "valencia-giants",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2009,
+          "champion": "REUS IMPERIALS",
+          "championTeamId": "reus-imperials",
+          "runnerUp": "Valencia Giants",
+          "runnerUpTeamId": "valencia-giants",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2010,
+          "champion": "REUS IMPERIALS",
+          "championTeamId": "reus-imperials",
+          "runnerUp": "Valencia Giants",
+          "runnerUpTeamId": "valencia-giants",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2012,
+          "champion": "LAS ROZAS BLACK DEMONS",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Valencia Giants",
+          "runnerUpTeamId": "valencia-giants",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2013,
+          "champion": "GRANADA LIONS (1)",
+          "championTeamId": "granada-lions",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2014,
+          "champion": "MALLORCA VOLTORS (1)",
+          "championTeamId": "mallorca-voltors",
+          "runnerUp": "Reus Imperials",
+          "runnerUpTeamId": "reus-imperials",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2015,
+          "champion": "REUS IMPERIALS (5)",
+          "championTeamId": "reus-imperials",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2016,
+          "champion": "MURCIA COBRAS (1)",
+          "championTeamId": "murcia-cobras",
+          "runnerUp": "L’Hospitalet Pioners",
+          "runnerUpTeamId": "lhospitalet-pioners",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2017,
+          "champion": "LAS ROZAS BLACK DEMONS (3)",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "L’Hospitalet Pioners",
+          "runnerUpTeamId": "lhospitalet-pioners",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2021,
+          "champion": "L'HOSPITALET PIONERS (1)",
+          "championTeamId": "lhospitalet-pioners",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2022,
+          "champion": "ALCOBENDAS CAVALIERS",
+          "championTeamId": "alcobendas-cavaliers",
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2023,
+          "champion": "BARCELONA PAGESOS (1)",
+          "championTeamId": "barcelona-pagesos",
+          "runnerUp": "Terrassa Reds",
+          "runnerUpTeamId": "terrassa-reds",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2024,
+          "champion": "TERRASSA REDS (1)",
+          "championTeamId": "terrassa-reds",
+          "runnerUp": "Valencia Giants",
+          "runnerUpTeamId": "valencia-giants",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2025,
+          "champion": "VALENCIA FIREBATS (1)",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Alcobendas Cavaliers",
+          "runnerUpTeamId": "alcobendas-cavaliers",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2026,
+          "champion": "ALCOBENDAS CAVALIERS (2)",
+          "championTeamId": "alcobendas-cavaliers",
+          "runnerUp": "Alcorcón Smilodons",
+          "runnerUpTeamId": "alcorcon-smilodons",
+          "sourceId": "fefa-palmares"
+        }
+      ],
+      "missingYears": [
+        2011,
+        2018,
+        2019,
+        2020
+      ],
+      "missingYearsNote": "Same gaps on fefa.es/lnfa-2-historial/ and Wikipedia es 'LNFA 2'. Wikipedia: 2010-11 period replaced by 7x7 'challenges'; 2012-2013 second tier played as LNFA conferences, 'Serie B' from 2014, renamed LNFA 2 in 2025. 2018-2019 champions not listed anywhere consulted; 2020 presumably COVID (unconfirmed). Not filled."
+    },
+    {
+      "competitionId": "lnfa-femenina",
+      "category": "femenina",
+      "entries": [
+        {
+          "year": 2011,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2012,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2013,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2014,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Barcelona Búfals",
+          "runnerUpTeamId": "barcelona-bufals",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2015,
+          "champion": "LAS ROZAS BLACK DEMONS",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2016,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Barcelona Búfals",
+          "runnerUpTeamId": "barcelona-bufals",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2017,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Terrassa Reds",
+          "runnerUpTeamId": "terrassa-reds",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2018,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Barcelona Búfals",
+          "runnerUpTeamId": "barcelona-bufals",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2019,
+          "champion": "VALENCIA FIREBATS (1)",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2020,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Barcelona Búfals",
+          "runnerUpTeamId": "barcelona-bufals",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2021,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Barcelona Búfals",
+          "runnerUpTeamId": "barcelona-bufals",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2022,
+          "champion": "BARBERÀ ROOKIES",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Barcelona Búfals",
+          "runnerUpTeamId": "barcelona-bufals",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2023,
+          "champion": "LAS ROZAS BLACK DEMONS",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2024,
+          "champion": "LAS ROZAS BLACK DEMONS",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2025,
+          "champion": "LAS ROZAS BLACK DEMONS (4)",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Barberá Rookies",
+          "runnerUpTeamId": "barbera-rookies",
+          "sourceId": "fefa-palmares"
+        },
+        {
+          "year": 2026,
+          "champion": "BARBERÀ ROOKIES (11)",
+          "championTeamId": "barbera-rookies",
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares"
+        }
+      ],
+      "missingYears": [],
+      "missingYearsNote": "Complete 2011-2026 per FEFA (16 editions). FEFA also lists an LNFA Femenina 2 (2019 Las Rozas Black Demons, 2020 suspended COVID, 2021 Las Rozas Black Demons, 2022 Barberá Rookies) — not included as it was out of scope."
+    },
+    {
+      "competitionId": "spanish-flag-bowl",
+      "category": "open",
+      "entries": [
+        {
+          "year": 2001,
+          "champion": "OSOS RIVAS (1)",
+          "championTeamId": "osos-rivas",
+          "runnerUp": "Old Stars",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "I"
+        },
+        {
+          "year": 2006,
+          "champion": "CAMIONEROS COSLADA",
+          "championTeamId": "camioneros-coslada",
+          "runnerUp": "Gasteiz Gunners",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "II"
+        },
+        {
+          "year": 2008,
+          "champion": "CAMIONEROS COSLADA (2)",
+          "championTeamId": "camioneros-coslada",
+          "runnerUp": "Gasteiz Gunners",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "III"
+        },
+        {
+          "year": 2010,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Coslada Camioneros",
+          "runnerUpTeamId": "camioneros-coslada",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "IV"
+        },
+        {
+          "year": 2011,
+          "champion": "GIJÓN MARINERS (1)",
+          "championTeamId": "gijon-mariners",
+          "runnerUp": "Atlantic Devils",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "V"
+        },
+        {
+          "year": 2012,
+          "champion": "IES PERE VIVES (1)",
+          "championTeamId": null,
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "VI"
+        },
+        {
+          "year": 2013,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Gijón Mariners",
+          "runnerUpTeamId": "gijon-mariners",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "VII"
+        },
+        {
+          "year": 2014,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "J.M. Igualada",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "VIII"
+        },
+        {
+          "year": 2015,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Madrid Capitals",
+          "runnerUpTeamId": "madrid-capitals",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "IX"
+        },
+        {
+          "year": 2016,
+          "champion": "ASTUR MILICIA (1)",
+          "championTeamId": null,
+          "runnerUp": "Madrid Capitals",
+          "runnerUpTeamId": "madrid-capitals",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "X"
+        },
+        {
+          "year": 2017,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Barcelona Pagesos",
+          "runnerUpTeamId": "barcelona-pagesos",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XI"
+        },
+        {
+          "year": 2018,
+          "champion": "BARCELONA PAGESOS",
+          "championTeamId": "barcelona-pagesos",
+          "runnerUp": "Coslada Camioneros",
+          "runnerUpTeamId": "camioneros-coslada",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XII"
+        },
+        {
+          "year": 2019,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Coslada Camioneros",
+          "runnerUpTeamId": "camioneros-coslada",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XIII"
+        },
+        {
+          "year": 2021,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XIV"
+        },
+        {
+          "year": 2022,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XV"
+        },
+        {
+          "year": 2023,
+          "champion": "LAS ROZAS BLACK DEMONS (1)",
+          "championTeamId": "las-rozas-black-demons",
+          "runnerUp": "Barcelona Pagesos",
+          "runnerUpTeamId": "barcelona-pagesos",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XVI"
+        },
+        {
+          "year": 2024,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Las Rozas Black Demons",
+          "runnerUpTeamId": "las-rozas-black-demons",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XVII"
+        },
+        {
+          "year": 2025,
+          "champion": "BARCELONA PAGESOS (2)",
+          "championTeamId": "barcelona-pagesos",
+          "runnerUp": "Cornellá Meerkats",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XVIII"
+        },
+        {
+          "year": 2026,
+          "champion": "VALENCIA FIREBATS (10)",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Zaragoza Hurricanes",
+          "runnerUpTeamId": "zaragoza-hurricanes",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XIX"
+        }
+      ],
+      "missingYears": [],
+      "missingYearsNote": "Editions I-XIX are consecutively numbered, so the year gaps (2002-05, 2007, 2009, 2020) are years without an edition, not missing data. FEFA also lists a separate 'Copa de España de Flag' (2020-2023), not included."
+    },
+    {
+      "competitionId": "spanish-flag-bowl",
+      "category": "femenina",
+      "entries": [
+        {
+          "year": 2012,
+          "champion": "CAMIONERAS COSLADA (1)",
+          "championTeamId": "camioneros-coslada",
+          "runnerUp": "Gijón Mariners Girls",
+          "runnerUpTeamId": "gijon-mariners",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "I"
+        },
+        {
+          "year": 2013,
+          "champion": "GIJÓN MARINERS GIRLS",
+          "championTeamId": "gijon-mariners",
+          "runnerUp": "Oviedo Madbulls",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "II"
+        },
+        {
+          "year": 2014,
+          "champion": "GIJÓN MARINERS GIRLS (2)",
+          "championTeamId": "gijon-mariners",
+          "runnerUp": "Alicante Sharks",
+          "runnerUpTeamId": "alicante-sharks",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "III"
+        },
+        {
+          "year": 2015,
+          "champion": "GIJÓN FOXES 82",
+          "championTeamId": null,
+          "runnerUp": "Alicante Sharks",
+          "runnerUpTeamId": "alicante-sharks",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "IV"
+        },
+        {
+          "year": 2016,
+          "champion": "GIJÓN FOXES 82",
+          "championTeamId": null,
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "V"
+        },
+        {
+          "year": 2017,
+          "champion": "GIJÓN FOXES 82",
+          "championTeamId": null,
+          "runnerUp": "Gijón Mariners Girls",
+          "runnerUpTeamId": "gijon-mariners",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "VI"
+        },
+        {
+          "year": 2018,
+          "champion": "GIJÓN FOXES 82 (4)",
+          "championTeamId": null,
+          "runnerUp": "San Juan Dolphins",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "VII"
+        },
+        {
+          "year": 2019,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Gijón Foxes 82",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "VIII"
+        },
+        {
+          "year": 2021,
+          "champion": "SAN JUAN DOLPHINS",
+          "championTeamId": null,
+          "runnerUp": "Gijón Mariners Girls",
+          "runnerUpTeamId": "gijon-mariners",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "IX"
+        },
+        {
+          "year": 2022,
+          "champion": "VALENCIA FIREBATS",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "San Juan Dolphins",
+          "runnerUpTeamId": null,
+          "sourceId": "fefa-palmares-flag",
+          "edition": "X"
+        },
+        {
+          "year": 2023,
+          "champion": "SAN JUAN DOLPHINS (2)",
+          "championTeamId": null,
+          "runnerUp": "Gijón Mariners Girls",
+          "runnerUpTeamId": "gijon-mariners",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XI"
+        },
+        {
+          "year": 2024,
+          "champion": "VALENCIA FIREBATS (3)",
+          "championTeamId": "valencia-firebats",
+          "runnerUp": "Alicante Sharks",
+          "runnerUpTeamId": "alicante-sharks",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XII"
+        },
+        {
+          "year": 2025,
+          "champion": "MADRID CAPITALS (1)",
+          "championTeamId": "madrid-capitals",
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XIII"
+        },
+        {
+          "year": 2026,
+          "champion": "IBI BUTTERFLIES (1)",
+          "championTeamId": null,
+          "runnerUp": "Valencia Firebats",
+          "runnerUpTeamId": "valencia-firebats",
+          "sourceId": "fefa-palmares-flag",
+          "edition": "XIV"
+        }
+      ],
+      "missingYears": [],
+      "missingYearsNote": "Editions I-XIV consecutively numbered (no 2020 edition). FEFA also lists 'Copa de España de Flag Femenina' (2020-2023), not included."
+    }
+  ],
+  "newSources": [
+    {
+      "id": "wiki-copa-espana-es",
+      "title": "Copa de España de fútbol americano",
+      "publisher": "Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Copa_de_Espa%C3%B1a_de_f%C3%BAtbol_americano",
+      "accessedAt": "2026-10-04",
+      "sourceType": "encyclopedia"
+    },
+    {
+      "id": "wiki-lnfa-2-es",
+      "title": "LNFA 2",
+      "publisher": "Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/LNFA_2",
+      "accessedAt": "2026-10-04",
+      "sourceType": "encyclopedia"
+    },
+    {
+      "id": "fefa-lnfa2-historico",
+      "title": "LNFA Serie B – Histórico",
+      "publisher": "Federación Española de Fútbol Americano",
+      "url": "https://www.fefa.es/lnfa-2-historial/",
+      "accessedAt": "2026-10-04",
+      "sourceType": "federation"
+    }
+  ]
+}

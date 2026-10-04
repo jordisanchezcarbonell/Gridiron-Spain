@@ -11,6 +11,7 @@ import { StatsBar, HeroStat } from "@/components/ui/StatsBar";
 import { TeamCard } from "@/components/teams/TeamCard";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { LiveStrip } from "@/components/home/LiveStrip";
+import { EventCountdown } from "@/components/home/EventCountdown";
 import { Timeline } from "@/components/history/Timeline";
 import { TeamMapLoader } from "@/components/map/TeamMapLoader";
 import { toMapPins } from "@/components/map/map-data";
@@ -42,6 +43,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
     repo.getNationalTeams(),
   ]);
 
+  const madridGuide = articles.find((a) => a.id === "nfl-madrid-2026-guia");
   const featured = articles[0];
   const latest = articles.filter((a) => a.slug !== featured?.slug).slice(0, 3);
   const rank: Record<string, number> = { verified: 0, partial: 1, unverified: 2 };
@@ -124,6 +126,15 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
+      {madridGuide?.event && (
+        <EventCountdown
+          startsAt={madridGuide.event.startDate}
+          href={href(locale, "articles", madridGuide.slug)}
+          title={locale === "es" ? "NFL Madrid · Falcons–Bengals" : "NFL Madrid · Falcons–Bengals"}
+          subtitle={locale === "es" ? "8 de noviembre, 15:30 · Estadio Santiago Bernabéu" : "8 November, 3:30 pm · Estadio Santiago Bernabéu"}
+          labels={locale === "es" ? { days: "días", day: "día", today: "HOY", cta: "La guía" } : { days: "days", day: "day", today: "TODAY", cta: "The guide" }}
+        />
+      )}
       <LiveStrip
         week={agendaWeeks[0]}
         ranking={rankings.find((r) => r.scope === "ncaa")}

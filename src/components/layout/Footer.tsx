@@ -18,6 +18,8 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     { href: href(locale, "rankings"), label: dict.nav.rankings },
     { href: href(locale, "players"), label: dict.nav.players },
     { href: href(locale, "nationalTeam"), label: dict.nav.nationalTeam },
+    { href: href(locale, "palmares"), label: dict.nav.palmares },
+    { href: href(locale, "quiz"), label: dict.nav.quiz },
   ];
   const project = [
     { href: href(locale, "roadToAnnapolis"), label: dict.nav.road },

@@ -584,4 +584,13 @@ export const spainTeamsSources: Source[] = [
     accessedAt: "2026-10-02",
     sourceType: "press",
   },
+  {
+    id: "wiki-copa-espana-es",
+    title: "Copa de España de fútbol americano",
+    publisher: "Wikipedia (es)",
+    url: "https://es.wikipedia.org/wiki/Copa_de_Espa%C3%B1a_de_f%C3%BAtbol_americano",
+    accessedAt: "2026-10-04",
+    sourceType: "encyclopedia",
+    notes: { es: "Solo para fechar la final de la Copa de 1996, que la FEFA lista como 1995.", en: "Only used to date the 1996 Copa final, which FEFA lists as 1995." },
+  },
 ];

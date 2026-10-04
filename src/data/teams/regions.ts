@@ -59,8 +59,16 @@ export const regionalTeams: Team[] = [
         sourceIds: ["fefa-palmares"],
         verificationStatus: "verified",
       },
+      {
+        title: { es: "Campeón Spanish Flag Bowl Open", en: "Spanish Flag Bowl Open champion" },
+        competitionId: "spanish-flag-bowl",
+        year: 2011,
+        sourceIds: ["fefa-palmares-flag"],
+        verificationStatus: "verified",
+      },
     ],
     sourceIds: [
+      "fefa-palmares-flag",
       "fefa-team-mariners",
       "mariners-historia",
       "wiki-mariners-es",
