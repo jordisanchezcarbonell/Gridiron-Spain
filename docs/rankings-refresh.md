@@ -16,6 +16,7 @@ Run `npm run content:check`. Every `stale` warning is a ranking that must be ref
 | LNFA results → ranking | `src/data/seasons/index.ts` (`lnfa-2026-27`), `src/data/rankings/spain.ts` | weekly | 16 Jan – 22 May 2027 |
 | EFA / AFLE / ELF, Spaniards in Europe | `src/data/rankings/europe.ts`, `src/data/players/europe.ts` | first Monday of the month | always |
 | National teams (results and fixtures) | `src/data/national-teams/index.ts` | weekly, whenever `content:check` warns that an upcoming game is in the past | always |
+| Weekend recap article ("Qué pasó este finde") | `src/data/articles/finde-YYYY-MM-DD.ts` | weekly, every Monday when the previous agenda week had games | always |
 | New Spanish clubs and players | `src/data/teams/*`, `src/data/players/spain.ts` | first Monday of the month | always |
 
 Outside a section's window or cadence, skip it.
@@ -41,6 +42,16 @@ Outside a section's window or cadence, skip it.
 - When an `upcoming` game has been played, move it to `results` with Spain's score first and `result`, citing the FEFA or IFAF match report.
 - Add newly announced fixtures (FEFA, IFAF) to `upcoming`. If FEFA and IFAF disagree, publish the newest official source and say so in the game `note`.
 - New coaches or squads: update `coach`/`summary`; new standout players go in `src/data/players/spain.ts` with `nationalTeamId`.
+
+## 3c. Weekend recap (every Monday)
+
+Write a short bilingual story with the results of the weekend the latest agenda covered (`src/data/agenda/*`), in a new file `src/data/articles/finde-YYYY-MM-DD.ts` (Saturday's date), registered in `src/data/articles/index.ts`. Follow the shape of `src/data/articles/ncaaf-week-4-2026.ts`.
+
+- Only games that were on the agenda, plus any Spain national-team game. Every score must be confirmed in two sources (official league/team site, ESPN, NFL.com, FEFA/IFAF); if a score cannot be confirmed, leave the game out.
+- Facts only: score, one or two sourced details per game (e.g. who scored, a record). No invented quotes, stats or narratives.
+- 400–700 words, `category` "nfl" or "ncaa" depending on what dominates, `status` "published", `verificationStatus` "verified" only if every claim is sourced, `heroImage` reused from an existing editorial image.
+- Title names the 2–3 biggest results. Add new sources to `src/data/sources/agenda-2026.ts`.
+- Update the national-team results too if Spain played (section 3b).
 
 ## Agenda (Thursdays)
 

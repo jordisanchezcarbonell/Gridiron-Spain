@@ -35,20 +35,20 @@ export function EventCountdown({ startsAt, href, title, subtitle, labels, extra 
 
   return (
     <section className="border-b border-line bg-gradient-to-r from-accent/15 via-ink-2 to-ink-2">
-      <div className="container-content flex flex-wrap items-center gap-x-6 gap-y-2 py-4">
-        <Link href={href} className="group flex min-w-0 flex-1 flex-wrap items-center gap-x-6 gap-y-2">
-          <span className="flex items-baseline gap-2">
+      <div className="container-content flex flex-col gap-3 py-4 md:flex-row md:items-center md:gap-6">
+        <Link href={href} className="group flex min-w-0 items-center gap-4 md:flex-1 md:gap-6">
+          <span className="flex shrink-0 flex-col items-center md:flex-row md:items-baseline md:gap-2">
             <span className="font-display text-4xl font-black leading-none text-accent">{days === 0 ? labels.today : days}</span>
             {days > 0 && <span className="font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted">{days === 1 ? labels.day : labels.days}</span>}
           </span>
           <span className="min-w-0 flex-1">
-            <span className="block font-display text-lg font-bold uppercase text-paper">{title}</span>
+            <span className="block font-display text-lg font-bold uppercase leading-tight text-paper">{title}</span>
             <span className="block text-sm text-paper-2">{subtitle}</span>
           </span>
-          <span className="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-accent transition-colors group-hover:text-accent-bright">{labels.cta} →</span>
+          <span className="hidden shrink-0 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-accent transition-colors group-hover:text-accent-bright md:inline">{labels.cta} →</span>
         </Link>
         {extra && (
-          <Link href={extra.href} className="border border-gold/40 px-3 py-1.5 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-gold transition-colors hover:border-gold hover:text-paper">
+          <Link href={extra.href} className="self-start border border-gold/40 px-3 py-1.5 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-gold transition-colors hover:border-gold hover:text-paper md:self-auto">
             {extra.label}
           </Link>
         )}
