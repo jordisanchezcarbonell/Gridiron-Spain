@@ -6,6 +6,7 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { findMentions } from "@/lib/mentions";
+import { QuizPromo } from "@/components/quiz/QuizPromo";
 import { articleJsonLd, breadcrumbJsonLd, sportsEventJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { t } from "@/lib/i18n/text";
@@ -141,6 +142,8 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
             </ul>
           </section>
         )}
+
+        {article.category === "nfl" && <QuizPromo locale={locale} className="mt-12" />}
 
         <SourceList
           sources={sources}

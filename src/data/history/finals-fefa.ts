@@ -38,7 +38,7 @@ export const fefaFinals: Final[] = [
   { competitionId: "copa-espana", year: 2025, champion: { teamId: "badalona-dracs" }, runnerUp: { teamId: "lhospitalet-pioners" }, score: "40-0", sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
   // lnfa-2 — FEFA lists no champion for 2011, 2018, 2019, 2020
   { competitionId: "lnfa-2", year: 2004, champion: { teamId: "barcelona-uroloki" }, runnerUp: { name: "Zaragoza Lions" }, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
-  { competitionId: "lnfa-2", year: 2005, champion: { teamId: "barcelona-uroloki" }, runnerUp: { teamId: "las-rozas-black-demons" }, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
+  { competitionId: "lnfa-2", year: 2005, champion: { teamId: "barcelona-uroloki" }, runnerUp: { teamId: "las-rozas-black-demons" }, note: { es: "La FEFA anota «(3)» junto a este título, pero en su lista solo constan dos de Uroloki (2004 y 2005).", en: "FEFA marks this title \"(3)\", but its list shows only two for Uroloki (2004 and 2005)." }, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
   { competitionId: "lnfa-2", year: 2006, champion: { teamId: "las-rozas-black-demons" }, runnerUp: { teamId: "terrassa-reds" }, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
   { competitionId: "lnfa-2", year: 2007, champion: { teamId: "reus-imperials" }, runnerUp: { teamId: "argentona-bocs" }, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
   { competitionId: "lnfa-2", year: 2008, champion: { teamId: "reus-imperials" }, runnerUp: { teamId: "valencia-giants" }, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },

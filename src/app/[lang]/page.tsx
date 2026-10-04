@@ -133,6 +133,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           title={locale === "es" ? "NFL Madrid · Falcons–Bengals" : "NFL Madrid · Falcons–Bengals"}
           subtitle={locale === "es" ? "8 de noviembre, 15:30 · Estadio Santiago Bernabéu" : "8 November, 3:30 pm · Estadio Santiago Bernabéu"}
           labels={locale === "es" ? { days: "días", day: "día", today: "HOY", cta: "La guía" } : { days: "days", day: "day", today: "TODAY", cta: "The guide" }}
+          extra={{ href: href(locale, "quiz"), label: locale === "es" ? "¿Qué equipo seguir? Haz el test" : "Which team? Take the quiz" }}
         />
       )}
       <LiveStrip

@@ -133,13 +133,13 @@ export const historicalTeams: Team[] = [
     ],
     honours: [
       ...[1995, 1996].map((year) => ({ title: { es: "Campeón LNFA", en: "LNFA champion" }, competitionId: "lnfa", year, sourceIds: ["fefa-palmares"], verificationStatus: "verified" as const })),
-      ...[1996, 1997, 1998].map((year) => ({ title: { es: "Campeón Copa de España", en: "Copa de España champion" }, competitionId: "copa-espana", year, sourceIds: ["fefa-palmares", "panteras-historia"], verificationStatus: "partial" as const })),
+      ...[1995, 1996, 1997].map((year) => ({ title: { es: "Campeón Copa de España", en: "Copa de España champion" }, competitionId: "copa-espana", year, sourceIds: ["fefa-palmares", "panteras-historia", "wiki-copa-espana-es"], verificationStatus: "partial" as const })),
     ],
-    sourceIds: ["panteras-historia", "panteras-1989-90", "panteras-sfl-1991-92", "wiki-panteras", "fefa-palmares", "madridactual-guia-2017", "telescopio-madrid-pioneros"],
+    sourceIds: ["panteras-historia", "panteras-1989-90", "panteras-sfl-1991-92", "wiki-panteras", "fefa-palmares", "madridactual-guia-2017", "telescopio-madrid-pioneros", "wiki-copa-espana-es"],
     relatedArticleSlugs: ["historia-futbol-americano-espana"],
     verificationStatus: "partial",
     lastVerifiedAt: "2026-09-13",
-    researchNotes: { es: "La FEFA lista dos Copas en 1995 y una en 1997; el club dice 1996-1998. Contrastar en prensa. Motivo y fecha exacta del cese sin fuente primaria.", en: "FEFA lists two cups in 1995 and one in 1997; the club says 1996-1998. Check in the press. Reason and exact date of the demise lack a primary source." },
+    researchNotes: { es: "Años de las Copas en disputa: la FEFA lista dos en 1995 y una en 1997; Wikipedia (citando ABC, 24-11-1996) fecha la segunda en noviembre de 1996; la web del club dice 1996, 1997 y 1998. Mostramos 1995, 1996 y 1997, como el palmarés. Pendiente de hemeroteca. Motivo y fecha exacta del cese sin fuente primaria.", en: "Cup years are disputed: FEFA lists two in 1995 and one in 1997; Wikipedia (citing ABC, 24 Nov 1996) dates the second to November 1996; the club site says 1996, 1997 and 1998. We show 1995, 1996 and 1997, matching the honours page. Pending newspaper archives. Reason and exact date of folding lack a primary source." },
   },
   {
     id: "barcelona-boxers",

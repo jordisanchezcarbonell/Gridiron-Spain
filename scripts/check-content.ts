@@ -173,6 +173,23 @@ for (const r of quizResults) {
   }
 }
 for (const q of quizQuestions) for (const o of q.options) for (const id of o.teams) if (!quizResults.some((r) => r.id === id)) errors.push(`quiz:${q.id}: unknown team "${id}"`);
+// Team honours must agree with the finals registry (the source of the honours page).
+const PALMARES_COMPS = new Set(["lnfa", "copa-espana", "lnfa-2", "lnfa-femenina", "spanish-flag-bowl"]);
+for (const team of teams) {
+  for (const h of team.honours) {
+    if (!h.competitionId || !PALMARES_COMPS.has(h.competitionId) || !/^Campe[oó]n/.test(h.title.es)) continue;
+    const category = h.competitionId === "spanish-flag-bowl" ? (/Femenina/.test(h.title.es) ? "femenina" : "open") : undefined;
+    const match = finals.some((f) => f.competitionId === h.competitionId && f.year === h.year && f.champion?.teamId === team.id && (category === undefined || f.category === category));
+    if (!match) warnings.push(`team:${team.slug}: honour "${h.title.es} ${h.year}" has no matching final in the honours registry`);
+  }
+}
+for (const f of finals) {
+  if (!f.champion?.teamId || !PALMARES_COMPS.has(f.competitionId)) continue;
+  const team = teams.find((t) => t.id === f.champion!.teamId);
+  if (!team) { errors.push(`final ${f.competitionId} ${f.year}: unknown champion team "${f.champion.teamId}"`); continue; }
+  const has = team.honours.some((h) => h.competitionId === f.competitionId && h.year === f.year && /^Campe[oó]n/.test(h.title.es));
+  if (!has) warnings.push(`team:${team.slug}: missing honour for ${f.competitionId}${f.category ? ` (${f.category})` : ""} ${f.year} (listed in the honours registry)`);
+}
 for (const p of playerSpotlights) {
   const owner = `player:${p.id}`;
   checkIds(owner, p.sourceIds);
