@@ -210,6 +210,7 @@ export const spainSources: Source[] = [
   { id: "pagesos-web", title: "Barcelona Pagesos — web oficial", publisher: "Barcelona Pagesos", url: "http://www.barcelonapagesos.com/", accessedAt: A, sourceType: "club-official" },
   { id: "uroloki-web", title: "Barcelona Uroloki — web oficial", publisher: "Barcelona Uroloki", url: "https://uroloki.es/", accessedAt: A, sourceType: "club-official" },
   { id: "voltors-club", title: "Club", publisher: "Mallorca Voltors (web oficial)", url: "https://www.voltors.net/club/", accessedAt: A, sourceType: "club-official" },
+  { id: "voltors-correo-2026-10-05", title: "Respuesta del club a Primer Down (ubicación del campo)", publisher: "Mallorca Voltors", publishedAt: "2026-10-05", accessedAt: "2026-10-06", sourceType: "club-official", notes: { es: "Correo del club con la ubicación del campo en Google Maps. Comunicación privada, no enlazable.", en: "Email from the club with the field's Google Maps location. Private communication, not linkable." } },
   // --- Encyclopedias & press ---------------------------------------------
   { id: "enciclopedia-rookies", title: "Barberà Rookies", publisher: "Esportpedia · enciclopedia.cat", url: "https://www.enciclopedia.cat/esportpedia/barbera-rookies", accessedAt: A, sourceType: "encyclopedia" },
   { id: "enciclopedia-bocs", title: "Argentona Bocs", publisher: "Esportpedia · enciclopedia.cat", url: "https://www.enciclopedia.cat/esportpedia/argentona-bocs", accessedAt: A, sourceType: "encyclopedia" },

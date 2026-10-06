@@ -95,8 +95,8 @@ export const otherTeams: Team[] = [
     ],
     venue: {
       name: { es: "Polideportivo Municipal de Son Moix", en: "Polideportivo Municipal de Son Moix" },
-      coordinates: { latitude: 39.5899, longitude: 2.6301, precision: "venue" },
-      verificationStatus: "partial",
+      coordinates: { latitude: 39.5893, longitude: 2.6277, precision: "venue" },
+      verificationStatus: "verified",
     },
     logo: {
       url: "/images/teams/logos/mallorca-voltors.png",
@@ -117,10 +117,10 @@ export const otherTeams: Team[] = [
     honours: [
       { title: { es: "Campeón LNFA 2", en: "LNFA 2 champion" }, competitionId: "lnfa-2", year: 2014, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
     ],
-    sourceIds: ["voltors-club", "fefa-team-voltors", "fefa-palmares", "fefa-calendario-2026-27"],
+    sourceIds: ["voltors-club", "fefa-team-voltors", "fefa-palmares", "fefa-calendario-2026-27", "voltors-correo-2026-10-05"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
-    researchNotes: { es: "La condición de primer club fuera de Cataluña es una afirmación del propio club.", en: "The claim of being the first club outside Catalonia is the club's own." },
+    researchNotes: { es: "La condición de primer club fuera de Cataluña es una afirmación del propio club. Ubicación del campo confirmada por el club por correo (5-10-2026). El club afirma estar en Serie A desde 2017-18: pendiente de contrastar con FEFA.", en: "The claim of being the first club outside Catalonia is the club's own. Field location confirmed by the club by email (5 Oct 2026). The club says it has been in Serie A since 2017-18: pending FEFA cross-check." },
   },
   {
     id: "zaragoza-hurricanes",
