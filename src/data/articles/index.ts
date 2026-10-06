@@ -16,6 +16,7 @@ import { navyVsAirForce2026 } from "./navy-vs-air-force-2026";
 import { knightsNflIndianapolis } from "./knights-nfl-indianapolis";
 import { nflMadrid2026Guia } from "./nfl-madrid-2026-guia";
 import { dondeVerNflEspana2026 } from "./donde-ver-nfl-espana-2026";
+import { finde20261003 } from "./finde-2026-10-03";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -39,4 +40,5 @@ export const articles: Article[] = [
   knightsNflIndianapolis,
   nflMadrid2026Guia,
   dondeVerNflEspana2026,
+  finde20261003,
 ];

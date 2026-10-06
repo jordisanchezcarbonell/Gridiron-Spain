@@ -1,31 +1,34 @@
 import type { PlayerSpotlight } from "@/types";
 
-const HEISMAN = ["nbc-heisman-odds-week5-2026"];
-const BOARD = ["br-kiper-yates-big-board-2027"];
+const HEISMAN = ["si-heisman-odds-week6-2026", "si-heisman-odds-fanduel-2026-10-04", "nbc-heisman-odds-week5-2026"];
+const BOARD = ["espn-reid-rankings-2027-oct", "tsn-reid-rankings-2027-oct"];
 
-/** Heisman race as priced by DraftKings on 28 Sept 2026 (via NBC Sports). Odds, not votes. */
+/**
+ * Heisman race as priced by DraftKings on 4 Oct 2026 (via SI). Odds, not votes.
+ * Stats only where two sources agree; otherwise the note gives the odds alone.
+ */
 const heisman: [string, string, string, string, string, string][] = [
   // [name, position, school, odds, stats es, stats en]
-  ["Jeremiah Smith", "WR", "Ohio State", "+260", "33 recepciones y 617 yardas", "33 catches for 617 yards"],
-  ["Darian Mensah", "QB", "Miami", "+380", "1.211 yardas de pase y 0 intercepciones", "1,211 passing yards and no interceptions"],
-  ["Kamario Taylor", "QB", "Mississippi State", "+500", "1.192 yardas de pase", "1,192 passing yards"],
-  ["Jadan Baugh", "RB", "Florida", "+1100", "600 yardas de carrera en 83 acarreos", "600 rushing yards on 83 carries"],
-  ["CJ Carr", "QB", "Notre Dame", "+1150", "963 yardas de pase", "963 passing yards"],
-  ["Trinidad Chambliss", "QB", "Ole Miss", "+1200", "1.222 yardas de pase", "1,222 passing yards"],
+  ["Jeremiah Smith", "WR", "Ohio State", "+115", "823 yardas de recepción y 9 touchdowns en cinco partidos", "823 receiving yards and 9 touchdowns in five games"],
+  ["Darian Mensah", "QB", "Miami", "+460", "", ""],
+  ["Keelon Russell", "QB", "Alabama", "+750", "", ""],
+  ["CJ Carr", "QB", "Notre Dame", "+800", "", ""],
+  ["Trinidad Chambliss", "QB", "Ole Miss", "+1600", "1.222 yardas de pase en cuatro partidos", "1,222 passing yards in four games"],
+  ["Gunner Stockton", "QB", "Georgia", "+2900", "", ""],
 ];
 
-/** Mel Kiper Jr.'s ESPN top-10 big board for the 2027 Draft (17 Aug 2026). Analyst opinion. */
+/** Jordan Reid's ESPN top-50 rankings for the 2027 Draft (1 Oct 2026), top 10. Analyst opinion. */
 const board: [string, string, string][] = [
   ["Jeremiah Smith", "WR", "Ohio State"],
-  ["Colin Simmons", "EDGE", "Texas"],
   ["Leonard Moore", "CB", "Notre Dame"],
-  ["Dante Moore", "QB", "Oregon"],
-  ["Arch Manning", "QB", "Texas"],
+  ["Colin Simmons", "EDGE", "Texas"],
+  ["Will Echoles", "DT", "Ole Miss"],
   ["Dylan Stewart", "EDGE", "South Carolina"],
-  ["Cam Coleman", "WR", "Texas"],
-  ["CJ Carr", "QB", "Notre Dame"],
-  ["Trevor Goosby", "OT", "Texas"],
   ["Jordan Seaton", "OT", "LSU"],
+  ["Yhonzae Pierre", "EDGE", "Alabama"],
+  ["Charlie Becker", "WR", "Indiana"],
+  ["Trevor Goosby", "OT", "Texas"],
+  ["Jadan Baugh", "RB", "Florida"],
 ];
 
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -39,8 +42,8 @@ export const ncaaPlayers: PlayerSpotlight[] = [
     league: "NCAA FBS",
     group: "ncaa-star",
     note: {
-      es: `Cuota ${odds} para el Heisman en DraftKings (28 sep). Lleva ${es} en el arranque de 2026.`,
-      en: `${odds} Heisman odds at DraftKings (28 Sep). ${en} so far in 2026.`,
+      es: `Cuota ${odds} para el Heisman en DraftKings (4 oct).${es ? ` Lleva ${es} en 2026.` : ""}`,
+      en: `${odds} Heisman odds at DraftKings (4 Oct).${en ? ` ${en[0].toUpperCase()}${en.slice(1)} in 2026.` : ""}`,
     },
     sourceIds: HEISMAN,
     verificationStatus: "partial",
@@ -53,8 +56,8 @@ export const ncaaPlayers: PlayerSpotlight[] = [
     league: "NCAA FBS",
     group: "ncaa-prospect",
     note: {
-      es: `N.º ${i + 1} del big board de Mel Kiper Jr. (ESPN) para el Draft de 2027, actualizado el 17 de agosto de 2026.`,
-      en: `No. ${i + 1} on Mel Kiper Jr.'s (ESPN) 2027 Draft big board, updated 17 August 2026.`,
+      es: `N.º ${i + 1} en el ranking de Jordan Reid (ESPN) para el Draft de 2027, publicado el 1 de octubre de 2026.`,
+      en: `No. ${i + 1} in Jordan Reid's (ESPN) 2027 Draft rankings, published 1 October 2026.`,
     },
     sourceIds: BOARD,
     verificationStatus: "partial",
