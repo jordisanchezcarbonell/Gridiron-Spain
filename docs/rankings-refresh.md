@@ -1,8 +1,8 @@
 # Rankings and agenda refresh routines
 
-Weekly procedures for keeping `/rankings` and `/agenda` current. Rankings run every Monday and the agenda every Thursday, each as a scheduled Claude routine and always ends in a **pull request**, never a direct push to `main`: an editor reviews and merges.
+Weekly procedures for keeping `/rankings` and `/agenda` current. Rankings run every Monday and the agenda every Thursday, each as a scheduled Claude routine that commits **directly to `main`** (decided 2026-10-06: the editor is not always around to merge PRs). There is no human review before publishing, so the verification rules below are the only safeguard: when in doubt, leave the old data.
 
-Credibility rules from `CLAUDE.md` apply in full: never invent ranks, records, scores, names or stats. Every changed fact needs a source added to `src/data/sources/` and listed in the entity's `sourceIds`. If a value cannot be confirmed in at least one reliable source, leave the old data and say so in the PR.
+Credibility rules from `CLAUDE.md` apply in full: never invent ranks, records, scores, names or stats. Every changed fact needs a source added to `src/data/sources/` and listed in the entity's `sourceIds`. If a value cannot be confirmed in at least one reliable source, leave the old data and say so in the run summary.
 
 ## 0. Decide what is due
 
@@ -63,9 +63,10 @@ Build next weekend's "Qué ver este finde" in a new file `src/data/agenda/YYYY-M
 - Europe/Spain: finals and big games (GFL, AFLE, EFA), FEFA competitions and national-team games when there are any.
 - Store `kickoffUtc` in UTC (`...Z`); the page converts to Madrid time. Check summer/winter time when converting from ET.
 - `howToWatch`: reuse last week's entries unless the rights situation changed.
-- PR: branch `agenda/YYYY-MM-DD`, title `Agenda YYYY-MM-DD`.
+- If `src/data/agenda/YYYY-MM-DD.ts` for that Saturday already exists (an editor built it early), only fix or add games with newer confirmed info; never duplicate it.
+- Commit to `main`: `feat: agenda YYYY-MM-DD`.
 
-## 4. Validate and open the PR
+## 4. Validate and publish
 
 ```
 npm run content:check   # must pass; no stale warnings left for refreshed sections
@@ -73,4 +74,4 @@ npx tsc --noEmit
 npm run build
 ```
 
-Branch `rankings/YYYY-MM-DD`, one commit, PR titled `Rankings refresh YYYY-MM-DD`. The PR body lists: what changed per section, every new source, anything that could not be verified (left untouched), and discrepancies between sources. If nothing was due or nothing changed, do not open a PR.
+Only if all three pass: `git pull --rebase origin main`, one commit `chore: rankings refresh YYYY-MM-DD`, `git push origin main` (never force-push; if the push is rejected, pull and retry once). If validation fails and you cannot fix it, push nothing. The final summary (and push notification) lists: what changed per section, every new source, anything that could not be verified (left untouched), and discrepancies between sources. If nothing was due or nothing changed, do not commit.
