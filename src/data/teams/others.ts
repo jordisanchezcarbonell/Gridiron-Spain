@@ -16,7 +16,7 @@ export const otherTeams: Team[] = [
     foundedYear: 1993,
     status: "active",
     disciplines: ["tackle", "flag"],
-    categories: ["senior-men", "senior-women", "junior"],
+    categories: ["senior-men", "senior-women", "junior", "youth"],
     currentCompetitions: [
       { competitionId: "lnfa", season: "2026-27", tier: "Serie A · Conferencia Este", verificationStatus: "verified", sourceIds: ["fefa-calendario-2026-27"] },
       { competitionId: "lnfa-femenina", season: "2025-26", verificationStatus: "verified", sourceIds: ["fefa-femenina-final-2026"] },
@@ -46,6 +46,10 @@ export const otherTeams: Team[] = [
         es: "La FEFA les atribuye cuatro títulos de LNFA (2006, 2007, 2009 y 2015) y el récord de diez Spanish Flag Bowl Open, el último en junio de 2026 ante Zaragoza Hurricanes. [[src:fefa-palmares]] [[src:fefa-flag-bowl-2026]]",
         en: "FEFA credits them with four LNFA titles (2006, 2007, 2009 and 2015) and a record ten Spanish Flag Bowl Open wins, the latest in June 2026 against Zaragoza Hurricanes. [[src:fefa-palmares]] [[src:fefa-flag-bowl-2026]]",
       },
+      {
+        es: "Según el propio club, en tackle tiene equipos senior masculino y femenino y cadete/junior, y en flag football equipos open, femenino y categorías de formación. [[src:firebats-correo-2026-10-08]]",
+        en: "According to the club, it fields senior men's, senior women's and cadet/junior tackle teams, plus open, women's and youth flag football teams. [[src:firebats-correo-2026-10-08]]",
+      },
     ],
     honours: [
       ...[2006, 2007, 2009, 2015].map((year) => ({
@@ -72,9 +76,9 @@ export const otherTeams: Team[] = [
         verificationStatus: "verified" as const,
       })),
     ],
-    sourceIds: ["fefa-team-firebats", "elpolideportivo-altarriba-2021", "firebats-historia-mural", "fefa-palmares", "fefa-palmares-flag", "fefa-flag-bowl-2026", "fefa-femenina-final-2026", "fefa-calendario-2026-27"],
+    sourceIds: ["fefa-team-firebats", "elpolideportivo-altarriba-2021", "firebats-historia-mural", "fefa-palmares", "fefa-palmares-flag", "fefa-flag-bowl-2026", "fefa-femenina-final-2026", "fefa-calendario-2026-27", "firebats-correo-2026-10-08"],
     verificationStatus: "partial",
-    lastVerifiedAt: V,
+    lastVerifiedAt: "2026-10-12",
     researchNotes: { es: "Historia fundacional (abril de 1993, escisión de Cullera Giants) pendiente de fuente oficial del club.", en: "Founding story (April 1993, split from Cullera Giants) pending an official club source." },
   },
   {
@@ -120,7 +124,7 @@ export const otherTeams: Team[] = [
     sourceIds: ["voltors-club", "fefa-team-voltors", "fefa-palmares", "fefa-calendario-2026-27", "voltors-correo-2026-10-05"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
-    researchNotes: { es: "La condición de primer club fuera de Cataluña es una afirmación del propio club. Ubicación del campo confirmada por el club por correo (5-10-2026). El club afirma estar en Serie A desde 2017-18: pendiente de contrastar con FEFA.", en: "The claim of being the first club outside Catalonia is the club's own. Field location confirmed by the club by email (5 Oct 2026). The club says it has been in Serie A since 2017-18: pending FEFA cross-check." },
+    researchNotes: { es: "La condición de primer club fuera de Cataluña es una afirmación del propio club. Ubicación del campo confirmada por el club por correo (5-10-2026). El club afirma estar en Serie A desde 2017-18 (novena temporada en 2026-27, reiterado por correo el 7-10-2026): pendiente de contrastar con FEFA.", en: "The claim of being the first club outside Catalonia is the club's own. Field location confirmed by the club by email (5 Oct 2026). The club says it has been in Serie A since 2017-18 (ninth season in 2026-27, restated by email on 7 Oct 2026): pending FEFA cross-check." },
   },
   {
     id: "zaragoza-hurricanes",

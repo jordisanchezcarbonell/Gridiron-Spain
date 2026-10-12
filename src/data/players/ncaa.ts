@@ -1,20 +1,20 @@
 import type { PlayerSpotlight } from "@/types";
 
-const HEISMAN = ["si-heisman-odds-week6-2026", "si-heisman-odds-fanduel-2026-10-04", "nbc-heisman-odds-week5-2026"];
+const HEISMAN = ["nbc-heisman-odds-week7-2026", "si-heisman-odds-week7-2026"];
 const BOARD = ["espn-reid-rankings-2027-oct", "tsn-reid-rankings-2027-oct"];
 
 /**
- * Heisman race as priced by DraftKings on 4 Oct 2026 (via SI). Odds, not votes.
+ * Heisman race as priced by DraftKings on 11 Oct 2026 (via NBC Sports). Odds, not votes.
  * Stats only where two sources agree; otherwise the note gives the odds alone.
  */
 const heisman: [string, string, string, string, string, string][] = [
   // [name, position, school, odds, stats es, stats en]
-  ["Jeremiah Smith", "WR", "Ohio State", "+115", "823 yardas de recepción y 9 touchdowns en cinco partidos", "823 receiving yards and 9 touchdowns in five games"],
-  ["Darian Mensah", "QB", "Miami", "+460", "", ""],
-  ["Keelon Russell", "QB", "Alabama", "+750", "", ""],
-  ["CJ Carr", "QB", "Notre Dame", "+800", "", ""],
-  ["Trinidad Chambliss", "QB", "Ole Miss", "+1600", "1.222 yardas de pase en cuatro partidos", "1,222 passing yards in four games"],
-  ["Gunner Stockton", "QB", "Georgia", "+2900", "", ""],
+  ["Jeremiah Smith", "WR", "Ohio State", "-220", "48 recepciones, 916 yardas y 11 touchdowns", "48 catches, 916 yards and 11 touchdowns"],
+  ["CJ Carr", "QB", "Notre Dame", "+1000", "", ""],
+  ["Darian Mensah", "QB", "Miami", "+1100", "1.438 yardas de pase y 15 touchdowns, sin intercepciones", "1,438 passing yards and 15 touchdowns, no interceptions"],
+  ["Trinidad Chambliss", "QB", "Ole Miss", "+1500", "", ""],
+  ["Keelon Russell", "QB", "Alabama", "+1500", "", ""],
+  ["Gunner Stockton", "QB", "Georgia", "+1500", "", ""],
 ];
 
 /** Jordan Reid's ESPN top-50 rankings for the 2027 Draft (1 Oct 2026), top 10. Analyst opinion. */
@@ -42,8 +42,8 @@ export const ncaaPlayers: PlayerSpotlight[] = [
     league: "NCAA FBS",
     group: "ncaa-star",
     note: {
-      es: `Cuota ${odds} para el Heisman en DraftKings (4 oct).${es ? ` Lleva ${es} en 2026.` : ""}`,
-      en: `${odds} Heisman odds at DraftKings (4 Oct).${en ? ` ${en[0].toUpperCase()}${en.slice(1)} in 2026.` : ""}`,
+      es: `Cuota ${odds} para el Heisman en DraftKings (11 oct).${es ? ` Lleva ${es} en 2026.` : ""}`,
+      en: `${odds} Heisman odds at DraftKings (11 Oct).${en ? ` ${en[0].toUpperCase()}${en.slice(1)} in 2026.` : ""}`,
     },
     sourceIds: HEISMAN,
     verificationStatus: "partial",
