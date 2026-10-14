@@ -1,9 +1,83 @@
-<!-- BEGIN:nextjs-agent-rules -->
+# AGENTS.md — Gridiron-Spain
 
-# This is NOT the Next.js you know
+<!-- AUTO-GENERATED:START -->
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+## Contexto detectado automáticamente
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+**Repositorio:** `Gridiron-Spain`
 
-<!-- END:nextjs-agent-rules -->
+### Stack
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Node.js
+
+### Carpetas relevantes
+- `src/`
+- `tests/`
+
+### Scripts disponibles
+- `dev`: `next dev`
+- `build`: `next build`
+- `start`: `next start`
+- `lint`: `eslint`
+- `typecheck`: `tsc --noEmit`
+- `typegen`: `next typegen`
+- `content:check`: `tsx scripts/check-content.ts`
+- `test`: `tsx --test tests/*.test.ts`
+
+### Dependencias relevantes
+- `@tailwindcss/postcss`
+- `@types/leaflet`
+- `@types/node`
+- `@types/react`
+- `@types/react-dom`
+- `@vercel/analytics`
+- `eslint`
+- `eslint-config-next`
+- `leaflet`
+- `next`
+- `react`
+- `react-dom`
+- `react-leaflet`
+- `server-only`
+- `tailwindcss`
+- `tsx`
+- `typescript`
+
+### Validaciones sugeridas
+- `build`
+- `lint`
+- `typecheck`
+- `typegen`
+- `content:check`
+- `test`
+
+## Reglas globales para agentes
+
+- No hacer `git add`.
+- No hacer `git commit`.
+- No hacer `git push`.
+- No desplegar.
+- No modificar `.env`, secretos o credenciales.
+- No ampliar el scope del ticket.
+- No hacer refactors no relacionados.
+- Antes de implementar: explicar diagnóstico, plan, riesgos y validaciones.
+- Después de implementar: revisar `git diff`.
+- Si hay ambigüedad material, detenerse y pedir decisión humana.
+- Priorizar cambios mínimos, reversibles y trazables.
+
+<!-- AUTO-GENERATED:END -->
+
+<!-- MANUAL:START -->
+
+Añade aquí reglas de negocio específicas del proyecto.
+
+Ejemplos:
+- integraciones sensibles;
+- comportamiento PRE/PROD;
+- flujos que requieren revisión humana;
+- reglas de dominio que no pueden inferirse del código.
+
+<!-- MANUAL:END -->
