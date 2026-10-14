@@ -18,6 +18,7 @@ import { nflMadrid2026Guia } from "./nfl-madrid-2026-guia";
 import { dondeVerNflEspana2026 } from "./donde-ver-nfl-espana-2026";
 import { finde20261003 } from "./finde-2026-10-03";
 import { finde20261010 } from "./finde-2026-10-10";
+import { estadoNcaafNfl20261014 } from "./estado-ncaaf-nfl-2026-10-14";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -43,4 +44,5 @@ export const articles: Article[] = [
   dondeVerNflEspana2026,
   finde20261010,
   finde20261003,
+  estadoNcaafNfl20261014,
 ];
