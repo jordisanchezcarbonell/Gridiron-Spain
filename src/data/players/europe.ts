@@ -69,6 +69,21 @@ export const europePlayers: PlayerSpotlight[] = [
     verificationStatus: "verified",
   },
   {
+    id: "diego-paz",
+    name: "Diego Paz González",
+    position: "DE",
+    team: "Rhein Fire",
+    league: "AFLE",
+    group: "europe",
+    hometown: "Galicia",
+    note: {
+      es: "Mejor jugador defensivo revelación de la AFLE 2026 (40 tackles, 8,5 sacks y una intercepción devuelta para touchdown en doce partidos). Empezó a los 19 años en los Barcelona Dragons y el 12 de octubre de 2026 se probó con los New England Patriots a través del International Player Pathway, sin contrato anunciado.",
+      en: "AFLE 2026 Most Improved Defensive Player (40 tackles, 8.5 sacks and a pick-six in twelve games). He started at 19 with the Barcelona Dragons and on 12 October 2026 worked out for the New England Patriots through the International Player Pathway, with no contract announced.",
+    },
+    sourceIds: ["afle-paz-profile-2026", "afle-paz-breakout-2026", "afle-paz-patriots-2026", "yahoo-paz-patriots-2026", "football-austria-paz-2026"],
+    verificationStatus: "verified",
+  },
+  {
     id: "yago-sanchez",
     name: "Yago Sánchez",
     position: "DB",
