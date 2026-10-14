@@ -8,8 +8,8 @@ export const nflMadrid2026Guia: Article = {
     en: "NFL Madrid 2026: a guide to Falcons–Bengals at the Bernabéu",
   },
   subtitle: {
-    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 2 de octubre y lo que aún falta por anunciar.",
-    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 2 October, and what is still to be announced.",
+    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 14 de octubre y lo que aún falta por anunciar.",
+    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 14 October, and what is still to be announced.",
   },
   excerpt: {
     es: "El segundo partido oficial de la NFL en España enfrenta a Atlanta Falcons y Cincinnati Bengals en el Bernabéu. Horario, televisión, entradas, transporte y contexto de los dos equipos.",
@@ -32,10 +32,10 @@ export const nflMadrid2026Guia: Article = {
   relatedCompetitionIds: ["nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-14",
   status: "published",
   verificationStatus: "partial",
-  lastVerifiedAt: "2026-10-02",
+  lastVerifiedAt: "2026-10-14",
   readingTimeMinutes: 6,
   event: {
     name: "Atlanta Falcons vs Cincinnati Bengals · NFL Madrid Game 2026",
@@ -63,6 +63,12 @@ export const nflMadrid2026Guia: Article = {
     "madrid26-ajc-falcons-packers",
     "madrid26-ap-steelers-bengals",
     "madrid26-ap-falcons-madrid",
+    "madrid26-bengals-fan-events",
+    "madrid26-nfl-madrid-faqs",
+    "cbs-nfl-standings-2026-10-14",
+    "espn-nfl-standings-2026-10-14",
+    "espn-nfl-scoreboard-2026-week-5",
+    "cbs-nfl-scoreboard-2026-week-5",
   ],
   content: [
     {
@@ -92,15 +98,15 @@ export const nflMadrid2026Guia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "El partido de Madrid está incluido en el acuerdo plurianual de Mediaset España con la NFL, que emite en Cuatro, Be Mad y Mediaset Infinity. Mediaset todavía no ha dicho en cuál de ellos irá este partido. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]]",
-        en: "The Madrid game is part of Mediaset España's multi-year NFL deal, which airs on Cuatro, Be Mad and Mediaset Infinity. Mediaset has not yet said which of them will carry this game. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]]",
+        es: "El partido de Madrid está incluido en el acuerdo plurianual de Mediaset España con la NFL, que emite en Cuatro, Be Mad y Mediaset Infinity. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]] La página oficial de los Bengals ya concreta la emisión en España: Cuatro, Mediaset Infinity y DAZN. Mediaset no lo ha anunciado todavía por su cuenta, así que lo damos como lo que es, el dato del club. [[src:madrid26-bengals-fan-events]]",
+        en: "The Madrid game is part of Mediaset España's multi-year NFL deal, which airs on Cuatro, Be Mad and Mediaset Infinity. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]] The Bengals' official game page now names the Spanish broadcasters: Cuatro, Mediaset Infinity and DAZN. Mediaset has not announced it on its own yet, so we report it for what it is: the club's information. [[src:madrid26-bengals-fan-events]]",
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "En pago, DAZN tiene los derechos de la NFL en España desde la temporada 2025-26, con NFL Game Pass integrado. [[src:madrid26-sportcal-dazn-spain]] En 2025 el partido de Madrid se vio a la vez en Cuatro, Mediaset Infinity y DAZN, [[src:madrid26-nfl-2025-where-to-watch]] pero para 2026 no hemos encontrado confirmación de que DAZN lo emita.",
-        en: "On pay TV, DAZN has held the NFL rights in Spain since the 2025-26 season, with NFL Game Pass built in. [[src:madrid26-sportcal-dazn-spain]] In 2025 the Madrid game aired on Cuatro, Mediaset Infinity and DAZN at the same time, [[src:madrid26-nfl-2025-where-to-watch]] but we have found no confirmation that DAZN will carry it in 2026.",
+        es: "En pago, DAZN tiene los derechos de la NFL en España desde la temporada 2025-26, con NFL Game Pass integrado. [[src:madrid26-sportcal-dazn-spain]] En 2025 el partido de Madrid se vio a la vez en Cuatro, Mediaset Infinity y DAZN, [[src:madrid26-nfl-2025-where-to-watch]] y para 2026 el reparto que anuncian los Bengals es el mismo. [[src:madrid26-bengals-fan-events]]",
+        en: "On pay TV, DAZN has held the NFL rights in Spain since the 2025-26 season, with NFL Game Pass built in. [[src:madrid26-sportcal-dazn-spain]] In 2025 the Madrid game aired on Cuatro, Mediaset Infinity and DAZN at the same time, [[src:madrid26-nfl-2025-where-to-watch]] and for 2026 the Bengals announce the same line-up. [[src:madrid26-bengals-fan-events]]",
       },
     },
     { type: "heading", level: 2, id: "entradas", text: { es: "Entradas", en: "Tickets" } },
@@ -120,8 +126,8 @@ export const nflMadrid2026Guia: Article = {
           en: "Maximum six tickets per account, reduced prices for under-16s and free entry without a seat for babies up to 18 months. Tickets are digital and arrive by email up to 72 hours before. [[src:nfl-madrid-game-2026]]",
         },
         {
-          es: "A 2 de octubre la NFL no ha anunciado que el partido esté agotado. Fuera de Ticketmaster no hay canal oficial: desconfía de la reventa.",
-          en: "As of 2 October the NFL has not announced a sell-out. There is no official channel outside Ticketmaster: be wary of resale.",
+          es: "A 14 de octubre siguen a la venta en los canales oficiales y la NFL no ha anunciado que el partido esté agotado; algunos revendedores sí dicen estarlo, pero eso no es una fuente. Fuera de Ticketmaster no hay canal oficial: desconfía de la reventa. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
+          en: "As of 14 October tickets are still on sale through the official channels and the NFL has not announced a sell-out; some resellers claim one, but that is not a source. There is no official channel outside Ticketmaster: be wary of resale. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
         },
       ],
     },
@@ -145,21 +151,29 @@ export const nflMadrid2026Guia: Article = {
           es: "Bolsos: en 2025 la NFL aplicó en Madrid una política de bolsas transparentes. [[src:madrid26-nfl-2025-clear-bag]] La de 2026 aún no se ha publicado; revísala antes de ir.",
           en: "Bags: in 2025 the NFL applied a clear-bag policy in Madrid. [[src:madrid26-nfl-2025-clear-bag]] The 2026 policy has not been published yet; check it before you go.",
         },
+        {
+          es: "Asientos accesibles y perros de asistencia: la NFL atiende por teléfono en el 930 497 500 (desde fuera de España, +34 930 497 500), de 10:00 a 18:00. [[src:madrid26-nfl-madrid-faqs]]",
+          en: "Accessible seating and service animals: the NFL takes bookings by phone on 930 497 500 (from outside Spain, +34 930 497 500), 10 am to 6 pm. [[src:madrid26-nfl-madrid-faqs]]",
+        },
+        {
+          es: "Puertas: los Bengals apuntan a una apertura unos 90 minutos antes del saque inicial. Es una previsión del club, no el horario oficial, que la NFL todavía no ha publicado. [[src:madrid26-bengals-fan-events]]",
+          en: "Gates: the Bengals point to an opening around 90 minutes before kickoff. That is the club's estimate, not the official gate time, which the NFL has not published yet. [[src:madrid26-bengals-fan-events]]",
+        },
       ],
     },
     { type: "heading", level: 2, id: "los-equipos", text: { es: "Quién viene", en: "Who is coming" } },
     {
       type: "paragraph",
       text: {
-        es: "Atlanta llega 1-2 tras la Semana 3 con Kevin Stefanski como nuevo entrenador. Michael Penix Jr. es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
-        en: "Atlanta is 1-2 after Week 3 under new head coach Kevin Stefanski. Michael Penix Jr. has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
+        es: "Atlanta llega 2-3 tras la semana 5 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] con Kevin Stefanski como nuevo entrenador. Michael Penix Jr. es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
+        en: "Atlanta is 2-3 after Week 5 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] under new head coach Kevin Stefanski. Michael Penix Jr. has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "Cincinnati va 2-1 con Zac Taylor en el banquillo y Joe Burrow como quarterback. Su única derrota llegó el 27 de septiembre en Pittsburgh, 30-27 con un field goal final de los Steelers. [[src:madrid26-ap-steelers-bengals]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
-        en: "Cincinnati is 2-1 with Zac Taylor as head coach and Joe Burrow at quarterback. Their only loss came on 27 September in Pittsburgh, 30-27 on a late Steelers field goal. [[src:madrid26-ap-steelers-bengals]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
+        es: "Cincinnati va 3-2 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] con Zac Taylor en el banquillo y Joe Burrow como quarterback. En Pittsburgh perdió el 27 de septiembre, 30-27 con un field goal final de los Steelers, [[src:madrid26-ap-steelers-bengals]] y en la semana 5 ganó 31-24 en Miami con cuatro pases de touchdown de Burrow. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
+        en: "Cincinnati is 3-2 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] with Zac Taylor as head coach and Joe Burrow at quarterback. They lost in Pittsburgh on 27 September, 30-27 on a late Steelers field goal, [[src:madrid26-ap-steelers-bengals]] and in Week 5 won 31-24 in Miami behind four Burrow touchdown passes. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
       },
     },
     {
@@ -173,17 +187,17 @@ export const nflMadrid2026Guia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "Para 2026 la NFL aún no ha anunciado fan zone ni actividades. Como referencia, en 2025 hubo cascos gigantes en Cibeles, una fan zone de los Dolphins en Plaza de España del 13 al 15 de noviembre, partidos de la NFL Academy en Vallehermoso y tienda oficial en el propio Bernabéu. [[src:madrid26-nfl-2025-fan-events]]",
-        en: "The NFL has not announced a fan zone or events for 2026 yet. For reference, 2025 had giant helmets at Cibeles, a Dolphins fan zone at Plaza de España from 13 to 15 November, NFL Academy games at Vallehermoso and an official shop at the Bernabéu itself. [[src:madrid26-nfl-2025-fan-events]]",
+        es: "Los Bengals ya han publicado su programa en Madrid: un NFL Experience gratuito en Plaza de España el viernes y el sábado, con campo de flag, juegos y zona de comida; una fiesta oficial del club en Florida Park el viernes 6 de noviembre, de 20:00 a 23:00; el Ocean Rock Bar como bar oficial de los Bengals, con encuentro de aficionados el sábado y fiesta de visionado el domingo desde las 13:30; y una Menina decorada con los colores del equipo. Es el programa del club, no el de la NFL, que todavía no ha anunciado el suyo. [[src:madrid26-bengals-fan-events]]",
+        en: "The Bengals have published their Madrid programme: a free NFL Experience at Plaza de España on Friday and Saturday, with a flag field, games and food stands; an official club party at Florida Park on Friday 6 November, 8 pm to 11 pm; the Ocean Rock Bar as the official Bengals bar, with a fan meet-up on Saturday and a watch party on Sunday from 1:30 pm; and a Menina sculpture in the team's colours. This is the club's programme, not the NFL's, which has not announced its own yet. [[src:madrid26-bengals-fan-events]]",
       },
     },
     {
       type: "placeholder",
       topic: { es: "Pendiente de anuncio oficial", en: "Awaiting official announcement" },
       pending: [
-        { es: "Canal concreto de Mediaset y si DAZN también lo emite", en: "Which Mediaset channel, and whether DAZN also carries it" },
-        { es: "Fan zone y actividades de 2026", en: "2026 fan zone and events" },
-        { es: "Política de bolsos, horario de apertura de puertas y guía de accesibilidad de 2026", en: "2026 bag policy, gate times and accessibility guide" },
+        { es: "Confirmación de Mediaset del canal y la hora de emisión", en: "Mediaset's own confirmation of the channel and broadcast time" },
+        { es: "Programa oficial de la NFL en la ciudad (fan zone, NFL Academy, tienda)", en: "The NFL's own programme in the city (fan zone, NFL Academy, store)" },
+        { es: "Política de bolsos, horario oficial de apertura de puertas y guía de accesibilidad de 2026", en: "2026 bag policy, official gate times and accessibility guide" },
         { es: "Himno y espectáculo del descanso", en: "Anthem and halftime show" },
       ],
     },
