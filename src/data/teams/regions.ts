@@ -49,6 +49,20 @@ export const regionalTeams: Team[] = [
       es: "Club gijonés nacido en 2001 a partir de partidos de flag en la Playa de Poniente. Disputó la LNFA Serie A 2025-26 y descendió a la LNFA 2 tras perder 7-21 ante Camioneros de Coslada en la última jornada.",
       en: "Gijón club born in 2001 out of flag games on Poniente beach. Played LNFA Serie A in 2025-26 and was relegated to LNFA 2 after a 7-21 final-day loss to Camioneros de Coslada.",
     },
+    history: [
+      {
+        es: "Los Mariners nacieron de los partidos de flag que un grupo de aficionados jugaba en la Playa de Poniente de Gijón. Su primer partido se disputó el 12 de abril de 2001. [[src:mariners-historia]] El club quedó inscrito formalmente en octubre de 2002. [[src:wiki-mariners-es]]",
+        en: "The Mariners grew out of the flag games a group of enthusiasts played on Gijón's Playa de Poniente. Their first match was on 12 April 2001. [[src:mariners-historia]] The club was formally registered in October 2002. [[src:wiki-mariners-es]]",
+      },
+      {
+        es: "En flag se proclamó campeón del Spanish Flag Bowl Open en 2011 [[src:fefa-palmares-flag]], y su equipo femenino fue subcampeón de la LNFA Femenina 2 en 2019. [[src:fefa-palmares]]",
+        en: "In flag football it won the Spanish Flag Bowl Open in 2011 [[src:fefa-palmares-flag]], and its women's team finished runner-up in LNFA Femenina 2 in 2019. [[src:fefa-palmares]]",
+      },
+      {
+        es: "En 2025-26 jugó la Serie A de la LNFA en la Conferencia Oeste [[src:fefa-team-mariners]] y descendió a la LNFA 2 tras caer 7-21 ante Camioneros de Coslada en la última jornada. [[src:fefa-lnfa-mariners-descenso-2026]]",
+        en: "In 2025-26 it played LNFA Serie A in the Western Conference [[src:fefa-team-mariners]] and was relegated to LNFA 2 after a 7-21 final-day defeat to Camioneros de Coslada. [[src:fefa-lnfa-mariners-descenso-2026]]",
+      },
+    ],
     honours: [
       {
         title: {
@@ -127,6 +141,16 @@ export const regionalTeams: Team[] = [
       es: "Club del sur de Madrid cuyo proyecto arrancó en 2012. Subcampeón de la LNFA 2 en 2026, su primera final nacional, tras caer 0-35 ante Alcobendas Cavaliers.",
       en: "South-Madrid club whose project began in 2012. LNFA 2 runner-up in 2026, its first national final, after a 0-35 loss to Alcobendas Cavaliers.",
     },
+    history: [
+      {
+        es: "El proyecto del club arrancó en 2012 en el sur de Madrid. [[src:smilodons-historia]]",
+        en: "The club's project started in 2012 in southern Madrid. [[src:smilodons-historia]]",
+      },
+      {
+        es: "En 2025-26 jugó la Conferencia Madrileña de la LNFA 2 [[src:fefa-lnfa2-2025-26]] y firmó su mejor temporada: superó los cuartos de final [[src:fefa-lnfa2-cuartos-2026]] y las semifinales [[src:fefa-lnfa2-semis-2026]] para alcanzar su primera final nacional, donde cayó 0-35 ante Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
+        en: "In 2025-26 it played the Madrid Conference of LNFA 2 [[src:fefa-lnfa2-2025-26]] and had its best season: it came through the quarter-finals [[src:fefa-lnfa2-cuartos-2026]] and semi-finals [[src:fefa-lnfa2-semis-2026]] to reach its first national final, losing 0-35 to Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
+      },
+    ],
     honours: [
       {
         title: {
@@ -198,6 +222,20 @@ export const regionalTeams: Team[] = [
       es: "Club valenciano fundado en 2003 que jugó en la máxima categoría entre 2012-13 y 2017-18. Campeón de la Liga Valenciana y semifinalista de la LNFA 2 en 2025-26.",
       en: "Valencia club founded in 2003 that played in the top flight from 2012-13 to 2017-18. Valencian league winner and LNFA 2 semi-finalist in 2025-26.",
     },
+    history: [
+      {
+        es: "El club valenciano se fundó en 2003 [[src:giants-historia]] y jugó en la máxima categoría entre las temporadas 2012-13 y 2017-18. [[src:fefa-team-giants]]",
+        en: "The Valencia club was founded in 2003 [[src:giants-historia]] and played in the top flight between 2012-13 and 2017-18. [[src:fefa-team-giants]]",
+      },
+      {
+        es: "Su palmarés tiene una discrepancia que conviene señalar: la FEFA le atribuye cinco subcampeonatos de LNFA 2 (2008, 2009, 2010, 2012 y 2024) [[src:fefa-palmares]], mientras que la web del club solo recoge cuatro y no menciona el de 2008. [[src:giants-historia]]",
+        en: "Its honours carry a discrepancy worth flagging: FEFA credits it with five LNFA 2 runner-up finishes (2008, 2009, 2010, 2012 and 2024) [[src:fefa-palmares]], while the club's own website lists only four and does not mention 2008. [[src:giants-historia]]",
+      },
+      {
+        es: "En 2025-26 fue campeón de la Liga Valenciana y alcanzó las semifinales de la LNFA 2. [[src:fefa-lnfa2-semis-2026]]",
+        en: "In 2025-26 it won the Liga Valenciana and reached the LNFA 2 semi-finals. [[src:fefa-lnfa2-semis-2026]]",
+      },
+    ],
     honours: [
       {
         title: {
@@ -310,6 +348,16 @@ export const regionalTeams: Team[] = [
       es: "Club jerezano fundado en 2020. Ganó invicto el grupo Sur de la LNFA 2 2025-26 y alcanzó las semifinales nacionales, donde cayó 23-6 ante Alcobendas Cavaliers.",
       en: "Jerez club founded in 2020. Won the LNFA 2 South group unbeaten in 2025-26 and reached the national semi-finals, losing 23-6 to Alcobendas Cavaliers.",
     },
+    history: [
+      {
+        es: "El club jerezano se fundó en 2020. El dato procede únicamente de la web del club, así que lo damos con esa reserva. [[src:jaguars-web]]",
+        en: "The Jerez club was founded in 2020. The date comes only from the club's own website, so we record it with that caveat. [[src:jaguars-web]]",
+      },
+      {
+        es: "En 2025-26 ganó invicto el grupo Sur de la LNFA 2 [[src:fefa-lnfa2-2025-26]], superó los cuartos de final [[src:fefa-lnfa2-cuartos-2026]] y llegó a las semifinales nacionales, donde cayó 23-6 ante Alcobendas Cavaliers. [[src:fefa-lnfa2-semis-2026]]",
+        en: "In 2025-26 it won the LNFA 2 South group unbeaten [[src:fefa-lnfa2-2025-26]], came through the quarter-finals [[src:fefa-lnfa2-cuartos-2026]] and reached the national semi-finals, where it lost 23-6 to Alcobendas Cavaliers. [[src:fefa-lnfa2-semis-2026]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-jaguars", "jaguars-web", "fefa-lnfa2-2025-26", "fefa-lnfa2-previa-cuartos-2026", "fefa-lnfa2-cuartos-2026", "fefa-lnfa2-semis-2026"],
     verificationStatus: "partial",
@@ -362,6 +410,16 @@ export const regionalTeams: Team[] = [
       es: "Club vallisoletano fundado en 2017. Campeón del grupo Norte de la LNFA 2 2025-26 (6-1) y cuartofinalista nacional.",
       en: "Valladolid club founded in 2017. LNFA 2 North group winner in 2025-26 (6-1) and national quarter-finalist.",
     },
+    history: [
+      {
+        es: "El club vallisoletano se fundó en 2017. El dato solo aparece en la meta-descripción de la web del club, así que queda pendiente de una fuente mejor. [[src:penguins-web]]",
+        en: "The Valladolid club was founded in 2017. The date appears only in the club website's meta description, so it awaits a better source. [[src:penguins-web]]",
+      },
+      {
+        es: "En 2025-26 ganó el grupo Norte de la LNFA 2 con un balance de 6-1 [[src:fefa-lnfa2-2025-26]] y llegó a los cuartos de final nacionales. [[src:fefa-lnfa2-cuartos-2026]]",
+        en: "In 2025-26 it won the LNFA 2 North group with a 6-1 record [[src:fefa-lnfa2-2025-26]] and reached the national quarter-finals. [[src:fefa-lnfa2-cuartos-2026]]",
+      },
+    ],
     honours: [],
     sourceIds: [
       "fefa-team-penguins",
@@ -420,6 +478,16 @@ export const regionalTeams: Team[] = [
       es: "Primer club de fútbol americano de Alicante, fundado en 2004 según Wikipedia. Segundo del grupo Levante de la LNFA 2 2025-26; cayó en la prórroga (17-10) ante Jerez Jaguars en cuartos.",
       en: "Alicante's first American football club, founded in 2004 per Wikipedia. Runner-up in the LNFA 2 Levante group in 2025-26; lost 17-10 in overtime to Jerez Jaguars in the quarter-finals.",
     },
+    history: [
+      {
+        es: "Fue el primer club de fútbol americano de Alicante. Su fundación, en el verano de 2004, solo consta en Wikipedia: no hemos encontrado una segunda fuente que la confirme. [[src:wiki-sharks-es]]",
+        en: "It was Alicante's first American football club. Its founding, in the summer of 2004, appears only on Wikipedia: we have found no second source confirming it. [[src:wiki-sharks-es]]",
+      },
+      {
+        es: "En 2025-26 terminó segundo del grupo Levante de la LNFA 2 [[src:fefa-lnfa2-2025-26]] y cayó en cuartos de final ante Jerez Jaguars por 17-10 en la prórroga. [[src:fefa-lnfa2-cuartos-2026]]",
+        en: "In 2025-26 it finished second in the LNFA 2 Levante group [[src:fefa-lnfa2-2025-26]] and lost the quarter-final to Jerez Jaguars 17-10 in overtime. [[src:fefa-lnfa2-cuartos-2026]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-sharks", "wiki-sharks-es", "fefa-lnfa2-2025-26", "fefa-lnfa2-cuartos-2026", "osm-nominatim"],
     verificationStatus: "partial",
@@ -584,6 +652,16 @@ export const regionalTeams: Team[] = [
       es: "Club pionero del football en Andalucía, fundado en 1992 según Wikipedia y en la máxima categoría desde 1999. En 2025-26 disputó el grupo Sur de la LNFA 2.",
       en: "Pioneer football club in Andalusia, founded in 1992 per Wikipedia and in the top flight from 1999. Played the LNFA 2 South group in 2025-26.",
     },
+    history: [
+      {
+        es: "Es el club pionero del fútbol americano en Andalucía. Wikipedia sitúa su fundación el 14 de septiembre de 1992 y el primer partido disputado en Andalucía el 14 de mayo de 1993; es la única fuente que recoge ambas fechas. [[src:wiki-linces-es]]",
+        en: "It is the pioneering American football club in Andalusia. Wikipedia dates its founding to 14 September 1992 and the first game played in Andalusia to 14 May 1993; it is the only source for both dates. [[src:wiki-linces-es]]",
+      },
+      {
+        es: "Está en la máxima categoría desde 1999 [[src:fefa-team-linces]] y en 2025-26 disputó el grupo Sur de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "It has been in the top flight since 1999 [[src:fefa-team-linces]] and in 2025-26 played in the LNFA 2 South group. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-linces", "wiki-linces-es", "fefa-lnfa2-2025-26"],
     verificationStatus: "partial",
@@ -636,6 +714,16 @@ export const regionalTeams: Team[] = [
       es: "Club del Aljarafe sevillano que nació como equipo en 2014 (como Aljarafe Blue Devils) y hoy juega en Mairena del Aljarafe. Segundo del grupo Sur de la LNFA 2 2025-26.",
       en: "Club from Seville's Aljarafe area that started as a team in 2014 (as Aljarafe Blue Devils) and now plays in Mairena del Aljarafe. Runner-up in the LNFA 2 South group in 2025-26.",
     },
+    history: [
+      {
+        es: "Según la web del club, las primeras reuniones se celebraron a finales de 2013 en Palomares del Río y el equipo se formó en 2014 con el nombre de Aljarafe Blue Devils. [[src:blue-devils-about]]",
+        en: "According to the club's website, the first meetings were held in late 2013 in Palomares del Río and the team was formed in 2014 as Aljarafe Blue Devils. [[src:blue-devils-about]]",
+      },
+      {
+        es: "Hoy juega en Mairena del Aljarafe y en 2025-26 terminó segundo del grupo Sur de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "It now plays in Mairena del Aljarafe and in 2025-26 finished second in the LNFA 2 South group. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-blue-devils", "blue-devils-about", "fefa-lnfa2-2025-26", "osm-nominatim"],
     verificationStatus: "partial",
@@ -688,6 +776,16 @@ export const regionalTeams: Team[] = [
       es: "Club vizcaíno fundado en 1998, referente del football en el País Vasco. Segundo del grupo Norte de la LNFA 2 2025-26.",
       en: "Biscay club founded in 1998, the reference football club in the Basque Country. Runner-up in the LNFA 2 North group in 2025-26.",
     },
+    history: [
+      {
+        es: "El club vizcaíno se fundó en 1998 según Wikipedia, que es la única fuente que lo recoge. [[src:wiki-coyotes-es]]",
+        en: "The Biscay club was founded in 1998 according to Wikipedia, the only source that records it. [[src:wiki-coyotes-es]]",
+      },
+      {
+        es: "Fue subcampeón de la LNFA Junior en 2017 [[src:fefa-palmares]] y en 2025-26 terminó segundo del grupo Norte de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "It was LNFA Junior runner-up in 2017 [[src:fefa-palmares]] and in 2025-26 finished second in the LNFA 2 North group. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [
       {
         title: {
@@ -749,6 +847,16 @@ export const regionalTeams: Team[] = [
       es: "Club santanderino fundado oficialmente en marzo de 2011, según Wikipedia. Compitió en el grupo Norte de la LNFA 2 2025-26.",
       en: "Santander club officially founded in March 2011, per Wikipedia. Played the LNFA 2 North group in 2025-26.",
     },
+    history: [
+      {
+        es: "El club santanderino se fundó oficialmente el 11 de marzo de 2011 según Wikipedia, que es la única fuente que lo recoge. [[src:wiki-bisons-es]]",
+        en: "The Santander club was officially founded on 11 March 2011 according to Wikipedia, the only source that records it. [[src:wiki-bisons-es]]",
+      },
+      {
+        es: "En 2025-26 compitió en el grupo Norte de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "In 2025-26 it competed in the LNFA 2 North group. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-bisons", "wiki-bisons-es", "fefa-lnfa2-2025-26", "osm-nominatim"],
     verificationStatus: "partial",
@@ -798,6 +906,16 @@ export const regionalTeams: Team[] = [
       es: "Club de Gran Canaria con sede deportiva en Santa Brígida. Único equipo canario de la LNFA 2 2025-26, encuadrado en el grupo Sur.",
       en: "Gran Canaria club based in Santa Brígida. The only Canary Islands side in LNFA 2 2025-26, placed in the South group.",
     },
+    history: [
+      {
+        es: "El club se fundó en 2017 en Telde. En 2018 competía como Telde Canes y más adelante pasó a llamarse Canarias Canes. [[src:spanishbowl-canes-2025]]",
+        en: "The club was founded in 2017 in Telde. In 2018 it competed as Telde Canes and later became Canarias Canes. [[src:spanishbowl-canes-2025]]",
+      },
+      {
+        es: "En 2025-26 fue el único equipo canario de la LNFA 2, encuadrado en el grupo Sur. [[src:fefa-lnfa2-2025-26]] Sobre su campo hay discrepancia entre fuentes: la FEFA indica el Campo de Fútbol La Angostura y el Spanish Bowl el Estadio Municipal del Guiniguada, en Santa Brígida. [[src:fefa-team-canes]] [[src:spanishbowl-canes-2025]]",
+        en: "In 2025-26 it was the only Canarian team in LNFA 2, placed in the South group. [[src:fefa-lnfa2-2025-26]] Sources disagree on its ground: FEFA lists Campo de Fútbol La Angostura and the Spanish Bowl lists Estadio Municipal del Guiniguada, in Santa Brígida. [[src:fefa-team-canes]] [[src:spanishbowl-canes-2025]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-canes", "fefa-lnfa2-2025-26", "spanishbowl-canes-2025"],
     verificationStatus: "partial",
@@ -850,6 +968,20 @@ export const regionalTeams: Team[] = [
       es: "Club de Sueca fundado en 2007 por exmiembros de Cullera Giants, según Wikipedia; jugó en la máxima categoría entre 2010 y 2014. Tercero del grupo Levante de la LNFA 2 2025-26 y campeón U15 de la Spanish Flag Bowl Youth 2026.",
       en: "Sueca club founded in 2007 by former Cullera Giants members, per Wikipedia; top-flight side from 2010 to 2014. Third in the LNFA 2 Levante group in 2025-26 and U15 champion of the 2026 Spanish Flag Bowl Youth.",
     },
+    history: [
+      {
+        es: "El club se fundó en 2007 a partir de exmiembros de Cullera Giants, según Wikipedia, única fuente del dato. [[src:wiki-ricers-es]] Jugó en la máxima categoría entre 2010 y 2014. [[src:fefa-team-ricers]]",
+        en: "The club was founded in 2007 by former Cullera Giants members, according to Wikipedia, the only source for it. [[src:wiki-ricers-es]] It played in the top flight between 2010 and 2014. [[src:fefa-team-ricers]]",
+      },
+      {
+        es: "Fue subcampeón de la LNFA Junior en 2013 [[src:fefa-palmares]] y en 2026 ganó el título U15 de la Spanish Flag Bowl Youth. [[src:fefa-flag-bowl-youth-2026]]",
+        en: "It was LNFA Junior runner-up in 2013 [[src:fefa-palmares]] and in 2026 won the U15 title at the Spanish Flag Bowl Youth. [[src:fefa-flag-bowl-youth-2026]]",
+      },
+      {
+        es: "En 2025-26 terminó tercero del grupo Levante de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "In 2025-26 it finished third in the LNFA 2 Levante group. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [
       {
         title: {
@@ -917,6 +1049,16 @@ export const regionalTeams: Team[] = [
       es: "Equipo femenino granadino con sede en Cenes de la Vega. Compitió en la LNFA Femenina 2025-26 (anunciado por FEFA como Granada Valkirias) y terminó séptimo y último; no figura en el calendario 2026-27.",
       en: "Women's team from Granada province based in Cenes de la Vega. Played LNFA Femenina 2025-26 (announced by FEFA as Granada Valkirias), finishing seventh and last; not on the 2026-27 schedule.",
     },
+    history: [
+      {
+        es: "Equipo femenino granadino con sede en Cenes de la Vega. En octubre de 2020 El Español ya describía un club Valkirias con jugadoras de Málaga y Granada [[src:elespanol-femenino-2020]], pero no está confirmado que sea el mismo club que la FEFA inscribe como Cenes de la Vega Valkirias, así que no fijamos un año de fundación.",
+        en: "A women's team from Granada province based in Cenes de la Vega. In October 2020 El Español already described a Valkirias club with players from Málaga and Granada [[src:elespanol-femenino-2020]], but it is not confirmed to be the same club FEFA registers as Cenes de la Vega Valkirias, so we do not state a founding year.",
+      },
+      {
+        es: "La FEFA lo anunció como Granada Valkirias para la LNFA Femenina 2025-26 [[src:fefa-femenina-2025-26]], temporada que terminó séptimo y último [[src:fefa-femenina-j6-2026]]. No figura en el calendario 2026-27. [[src:fefa-femenina-page-2026-27]]",
+        en: "FEFA announced it as Granada Valkirias for the 2025-26 LNFA Femenina [[src:fefa-femenina-2025-26]], a season it finished seventh and last [[src:fefa-femenina-j6-2026]]. It does not appear in the 2026-27 calendar. [[src:fefa-femenina-page-2026-27]]",
+      },
+    ],
     honours: [],
     sourceIds: [
       "fefa-team-valkirias",
@@ -974,6 +1116,16 @@ export const regionalTeams: Team[] = [
       es: "Club de Villamayor de Gállego (Zaragoza) que nació de un grupo de amigos y tomó su nombre de su etapa jugando con otro club. Terminó quinto en el grupo Norte de la LNFA 2 2025-26.",
       en: "Club from Villamayor de Gállego (Zaragoza) founded by a group of friends, named after a spell playing alongside another club. Finished fifth in the LNFA 2 North group in 2025-26.",
     },
+    history: [
+      {
+        es: "El club de Villamayor de Gállego surgió de un grupo de amigos y tomó su nombre de la etapa en que jugaban con otro club. En enero de 2019 SportAragón lo describía todavía como un equipo de nuevo cuño. [[src:sportaragon-mercenarios-2019]] No hemos podido confirmar su año de fundación con ninguna fuente, así que no lo damos por bueno.",
+        en: "The club from Villamayor de Gállego came out of a group of friends and took its name from the time they spent playing alongside another club. In January 2019 SportAragón still described it as a newly formed team. [[src:sportaragon-mercenarios-2019]] We have not been able to confirm its founding year with any source, so we do not state one.",
+      },
+      {
+        es: "En la LNFA 2 alcanzó las semifinales en 2022 y los cuartos de final en 2023. [[src:fefa-team-mercenarios]] En la temporada 2025-26 compitió en la Conferencia Norte de la LNFA 2 [[src:fefa-lnfa2-2025-26]] y no figura ningún título nacional en el palmarés de la FEFA. [[src:fefa-palmares]]",
+        en: "In LNFA 2 it reached the semi-finals in 2022 and the quarter-finals in 2023. [[src:fefa-team-mercenarios]] In 2025-26 it competed in the LNFA 2 Northern Conference [[src:fefa-lnfa2-2025-26]], and no national title appears in the FEFA honours list. [[src:fefa-palmares]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-mercenarios", "fefa-lnfa2-2025-26", "sportaragon-mercenarios-2019", "fefa-palmares", "osm-nominatim"],
     verificationStatus: "partial",
@@ -1024,6 +1176,16 @@ export const regionalTeams: Team[] = [
       es: "Club de Torrelavega (Cantabria) que juega en el complejo Óscar Freire. Terminó cuarto en el grupo Norte de la LNFA 2 2025-26 con un balance de 3-3.",
       en: "Torrelavega (Cantabria) club based at the Óscar Freire sports complex. Finished fourth in the LNFA 2 North group in 2025-26 with a 3-3 record.",
     },
+    history: [
+      {
+        es: "El nombre legal del club es Club Deportivo Elemental Fútbol Americano Berserker, según el registro local. [[src:red39300-berserkers]] No hemos podido confirmar su año de fundación con ninguna fuente, así que no lo fijamos.",
+        en: "The club's legal name is Club Deportivo Elemental Fútbol Americano Berserker, per the local register. [[src:red39300-berserkers]] We have not been able to confirm its founding year with any source, so we do not state one.",
+      },
+      {
+        es: "En la FEFA consta su paso por la LNFA 3 en 2020-21 y un cuarto puesto del grupo Norte de la LNFA 2 en 2022. [[src:fefa-team-berserkers]] En 2025-26 volvió a terminar cuarto del grupo Norte, con un balance de 3-3. [[src:fefa-lnfa2-2025-26]]",
+        en: "FEFA records its LNFA 3 season in 2020-21 and a fourth place in the LNFA 2 North group in 2022. [[src:fefa-team-berserkers]] In 2025-26 it again finished fourth in the North group, with a 3-3 record. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-berserkers", "fefa-lnfa2-2025-26", "red39300-berserkers", "fefa-palmares", "osm-nominatim"],
     verificationStatus: "partial",
@@ -1076,6 +1238,20 @@ export const regionalTeams: Team[] = [
       es: "Club fundado en 2006 en Guadalajara; su nombre alude a las abejas de la miel de la Alcarria. Se presenta como el único equipo de fútbol americano de Castilla-La Mancha y terminó sexto en el grupo Norte de la LNFA 2 2025-26.",
       en: "Founded in 2006 in Guadalajara, the club is named after the bees behind the Alcarria region's honey. It bills itself as Castilla-La Mancha's only American football team and finished sixth in the LNFA 2 North group in 2025-26.",
     },
+    history: [
+      {
+        es: "El club se fundó en 2006 en Guadalajara y su nombre alude a las abejas de la miel de la Alcarria. [[src:stings-blog-historia]] Se presenta como el único equipo de fútbol americano de Castilla-La Mancha. [[src:stings-web]]",
+        en: "The club was founded in 2006 in Guadalajara and its name nods to the bees behind Alcarria honey. [[src:stings-blog-historia]] It presents itself as the only American football team in Castilla-La Mancha. [[src:stings-web]]",
+      },
+      {
+        es: "Fue subcampeón de la LNFA 3 en 2021 [[src:fefa-palmares]] y en la LNFA 2 acabó segundo del Norte en 2022, tercero en 2023 y cuartofinalista en 2024. [[src:fefa-team-stings]]",
+        en: "It was LNFA 3 runner-up in 2021 [[src:fefa-palmares]] and in LNFA 2 finished second in the North group in 2022, third in 2023 and a quarter-finalist in 2024. [[src:fefa-team-stings]]",
+      },
+      {
+        es: "En 2025-26 terminó sexto del grupo Norte de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "In 2025-26 it finished sixth in the LNFA 2 North group. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-stings", "fefa-lnfa2-2025-26", "stings-blog-historia", "stings-web", "fefa-palmares", "osm-nominatim"],
     verificationStatus: "partial",
@@ -1127,6 +1303,16 @@ export const regionalTeams: Team[] = [
       es: "Club alicantino presentado públicamente en mayo de 2023 como escuela de football americano. Terminó cuarto en el grupo Levante de la LNFA 2 2025-26, con un balance de 1-7.",
       en: "Alicante club publicly launched in May 2023 as a football school. Finished fourth in the LNFA 2 Levante group in 2025-26 with a 1-7 record.",
     },
+    history: [
+      {
+        es: "El club se presentó públicamente el 6 de mayo de 2023 como escuela de fútbol americano y equipo nuevo. [[src:thunder-presentacion-2023]] No hemos localizado su fecha de constitución, así que no fijamos un año de fundación.",
+        en: "The club was publicly launched on 6 May 2023 as an American football school and a new team. [[src:thunder-presentacion-2023]] We have not found its date of incorporation, so we do not state a founding year.",
+      },
+      {
+        es: "En la LNFA 2 acabó sexto del grupo Este en 2024 y segundo en 2025. [[src:fefa-team-thunder]] En 2025-26 terminó cuarto del grupo Levante con un balance de 1-7. [[src:fefa-lnfa2-2025-26]]",
+        en: "In LNFA 2 it finished sixth in the East group in 2024 and second in 2025. [[src:fefa-team-thunder]] In 2025-26 it finished fourth in the Levante group with a 1-7 record. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-thunder", "fefa-lnfa2-2025-26", "thunder-presentacion-2023", "fefa-palmares", "osm-nominatim"],
     verificationStatus: "partial",
@@ -1177,6 +1363,20 @@ export const regionalTeams: Team[] = [
       es: "Club del Baix Camp (Rebels CFA) que arrancó en Riudoms en 2018 y ganó su primera Lliga Catalana en 2024. Terminó cuarto en el grupo catalán de la LNFA 2 2025-26.",
       en: "Baix Camp club (Rebels CFA) that started in Riudoms in 2018 and won its first Lliga Catalana in 2024. Finished fourth in the LNFA 2 Catalan group in 2025-26.",
     },
+    history: [
+      {
+        es: "Rebels CFA arrancó en Riudoms en 2018. [[src:diaridetarragona-rebels-2024]] La prensa apunta a que nació de una escisión de jugadores de Reus Imperials, pero no hemos encontrado una cita directa que lo confirme.",
+        en: "Rebels CFA started in Riudoms in 2018. [[src:diaridetarragona-rebels-2024]] Press reports suggest it grew out of a breakaway group of Reus Imperials players, but we have found no direct quote confirming it.",
+      },
+      {
+        es: "En 2024 ganó su primera Lliga Catalana al vencer 12-0 a Argentona Bocs. [[src:diaridetarragona-rebels-2024]] Al ser un título territorial, no figura en el palmarés de la FEFA. [[src:fefa-palmares]]",
+        en: "In 2024 it won its first Lliga Catalana, beating Argentona Bocs 12-0. [[src:diaridetarragona-rebels-2024]] Being a regional title, it does not appear in the FEFA honours list. [[src:fefa-palmares]]",
+      },
+      {
+        es: "En 2025-26 terminó cuarto del grupo catalán de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "In 2025-26 it finished fourth in the Catalan group of LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [
       {
         title: {
@@ -1237,6 +1437,16 @@ export const regionalTeams: Team[] = [
       es: "Club gironí nacido en 2018 de la fusión de Salt Falcons y Senglars de Santa Cristina. FEFA lo incluyó en el grupo catalán de la LNFA 2 2025-26, pero no aparece en la clasificación final.",
       en: "Girona-province club formed in 2018 by merging Salt Falcons and Senglars de Santa Cristina. FEFA listed it in the 2025-26 LNFA 2 Catalan group, but it does not appear in the final standings.",
     },
+    history: [
+      {
+        es: "El club gironí nació en 2018 de la fusión de Salt Falcons y Senglars de Santa Cristina. [[src:ducs-el-club]]",
+        en: "The Girona club was created in 2018 from the merger of Salt Falcons and Senglars de Santa Cristina. [[src:ducs-el-club]]",
+      },
+      {
+        es: "Su último rastro competitivo en la FEFA es la Copa Catalana de noviembre de 2023, donde cayó 0-22 ante Barcelona Pagesos. [[src:fefa-copa-cuartos-2023]] La FEFA lo incluyó en el grupo catalán de la LNFA 2 2025-26, pero no aparece en la clasificación final y ya no tiene ficha federativa, así que damos su estado por desconocido. [[src:fefa-lnfa2-2025-26]]",
+        en: "Its last competitive trace at FEFA is the November 2023 Copa Catalana, where it lost 0-22 to Barcelona Pagesos. [[src:fefa-copa-cuartos-2023]] FEFA listed it in the Catalan group of LNFA 2 2025-26, but it does not appear in the final standings and no longer has a federation page, so we record its status as unknown. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-lnfa2-2025-26", "ducs-el-club", "platjadaro-guia-entitats", "fefa-copa-cuartos-2023", "osm-nominatim"],
     verificationStatus: "partial",
@@ -1289,6 +1499,20 @@ export const regionalTeams: Team[] = [
       es: "Primer club de fútbol americano de Pinto, fundado en octubre de 2015. Semifinalista de la LNFA Serie B en 2024 y quinto del grupo madrileño de la LNFA 2 2025-26.",
       en: "Pinto's first American football club, founded in October 2015. LNFA Serie B semi-finalist in 2024 and fifth in the LNFA 2 Madrid group in 2025-26.",
     },
+    history: [
+      {
+        es: "Fue el primer club de fútbol americano de Pinto, fundado en octubre de 2015. [[src:historias-deporte-pinteno-goldbats]] MadridActual sitúa la idea original en el verano de ese mismo año. [[src:madridactual-goldbats-2018]]",
+        en: "It was Pinto's first American football club, founded in October 2015. [[src:historias-deporte-pinteno-goldbats]] MadridActual places the original idea in the summer of that year. [[src:madridactual-goldbats-2018]]",
+      },
+      {
+        es: "Compite en la Liga Madrileña desde 2017. [[src:pintogoldbats-web]] En la LNFA 2 acabó cuarto del grupo Centro en 2022 y llegó a semifinales en 2023 y 2024. [[src:fefa-team-goldbats]]",
+        en: "It has played in the Liga Madrileña since 2017. [[src:pintogoldbats-web]] In LNFA 2 it finished fourth in the Centre group in 2022 and reached the semi-finals in 2023 and 2024. [[src:fefa-team-goldbats]]",
+      },
+      {
+        es: "En 2025-26 terminó quinto del grupo madrileño de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "In 2025-26 it finished fifth in the Madrid group of LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: [
       "fefa-team-goldbats",
@@ -1349,6 +1573,16 @@ export const regionalTeams: Team[] = [
       es: "Club de Tres Cantos fundado a finales de 2012 por exjugadores de los Tucanes (1991-2001) y jugadores jóvenes. Terminó tercero en el grupo madrileño de la LNFA 2 2025-26.",
       en: "Tres Cantos club founded in late 2012 by former Tucanes (1991-2001) players and newcomers. Finished third in the LNFA 2 Madrid group in 2025-26.",
     },
+    history: [
+      {
+        es: "El club se fundó a finales de 2012, impulsado por exjugadores de los Tucanes, activos entre 1991 y 2001, junto a jugadores jóvenes. [[src:trescantos-jabatos]]",
+        en: "The club was founded in late 2012, driven by former players of Tucanes, active between 1991 and 2001, alongside younger players. [[src:trescantos-jabatos]]",
+      },
+      {
+        es: "En la LNFA 2 terminó cuarto del grupo Centro en 2024 [[src:fefa-team-jabatos]] y tercero del grupo madrileño en 2025-26. [[src:fefa-lnfa2-2025-26]]",
+        en: "In LNFA 2 it finished fourth in the Centre group in 2024 [[src:fefa-team-jabatos]] and third in the Madrid group in 2025-26. [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-jabatos", "fefa-lnfa2-2025-26", "trescantos-jabatos", "fefa-palmares", "osm-nominatim"],
     verificationStatus: "partial",
@@ -1401,6 +1635,16 @@ export const regionalTeams: Team[] = [
       es: "Club (Vikings FA) creado en 2021 en Boadilla del Monte para extender el fútbol americano por el municipio. Terminó cuarto en el grupo madrileño de la LNFA 2 2025-26.",
       en: "Club (Vikings FA) created in 2021 in Boadilla del Monte to spread American football in the town. Finished fourth in the LNFA 2 Madrid group in 2025-26.",
     },
+    history: [
+      {
+        es: "Vikings FA se creó en 2021 en Boadilla del Monte para extender el fútbol americano por el municipio. [[src:vikings-club]]",
+        en: "Vikings FA was created in 2021 in Boadilla del Monte to spread American football across the town. [[src:vikings-club]]",
+      },
+      {
+        es: "La temporada 2025-26 fue la primera con historial federativo tras cuatro años sin competición nacional: terminó cuarto del grupo madrileño de la LNFA 2. [[src:fefa-team-vikings]] [[src:fefa-lnfa2-2025-26]]",
+        en: "2025-26 was its first season with a federation record after four years without national competition: it finished fourth in the Madrid group of LNFA 2. [[src:fefa-team-vikings]] [[src:fefa-lnfa2-2025-26]]",
+      },
+    ],
     honours: [],
     sourceIds: ["fefa-team-vikings", "fefa-lnfa2-2025-26", "vikings-club", "fefa-palmares", "osm-nominatim"],
     verificationStatus: "partial",
@@ -1446,6 +1690,20 @@ export const regionalTeams: Team[] = [
       es: "Club fundado el 2 de febrero de 2001 como Granada Universitarios y campeón de la LNFA 2 en 2013. Hoy tiene sede en Maracena y en 2025-26 jugó solo competiciones andaluzas: ganó la Copa Andaluza en marzo de 2026.",
       en: "Founded on 2 February 2001 as Granada Universitarios and LNFA 2 champion in 2013. Now based in Maracena, it played only Andalusian competitions in 2025-26 and won the Copa Andaluza in March 2026.",
     },
+    history: [
+      {
+        es: "El club nació el 2 de febrero de 2001 con el nombre de Granada Universitarios y acabó adoptando el de Granada Lions. [[src:granadalions-historia]] [[src:wiki-granada-lions]]",
+        en: "The club was founded on 2 February 2001 as Granada Universitarios and later took the name Granada Lions. [[src:granadalions-historia]] [[src:wiki-granada-lions]]",
+      },
+      {
+        es: "Su mayor título nacional llegó en 2013, cuando se proclamó campeón de la LNFA 2. [[src:fefa-palmares]] La ficha federativa recoge sus temporadas entre 2011-12 y 2022-23, y en 2022 ganó la vigésima edición de la Liga Andaluza. [[src:fefa-team-lions]] [[src:granadaenjuego-lions-liga-2022]]",
+        en: "Its biggest national title came in 2013, when it won LNFA 2. [[src:fefa-palmares]] The federation record covers its seasons between 2011-12 and 2022-23, and in 2022 it won the twentieth edition of the Liga Andaluza. [[src:fefa-team-lions]] [[src:granadaenjuego-lions-liga-2022]]",
+      },
+      {
+        es: "Con sede en Maracena, en 2025-26 no disputó ninguna competición de la FEFA y centró su calendario en Andalucía: perdió la final de la Copa Andaluza 8-14 ante Mairena Blue Devils en diciembre de 2025 [[src:granadaenjuego-lions-copa-final-2025]], debutó con empate en la Liga Andaluza 7x7 en febrero de 2026 [[src:granadaenjuego-lions-liga-debut-2026]] y en marzo se llevó la Copa Andaluza al ganar 12-7 a Almería Barbarians. [[src:granadaenjuego-lions-copa-2026]]",
+        en: "Based in Maracena, in 2025-26 it played no FEFA competition and built its season around Andalusian play: it lost the Copa Andaluza final 8-14 to Mairena Blue Devils in December 2025 [[src:granadaenjuego-lions-copa-final-2025]], opened the Liga Andaluza 7x7 with a draw in February 2026 [[src:granadaenjuego-lions-liga-debut-2026]], and in March took the Copa Andaluza by beating Almería Barbarians 12-7. [[src:granadaenjuego-lions-copa-2026]]",
+      },
+    ],
     honours: [
       {
         title: {
