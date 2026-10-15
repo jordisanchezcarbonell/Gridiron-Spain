@@ -22,11 +22,11 @@ export const royalOaksKnights: Article = {
   relatedCompetitionIds: ["lnfa", "lnfa-2"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-15",
   status: "researching",
   verificationStatus: "partial",
-  lastVerifiedAt: "2026-10-02",
-  readingTimeMinutes: 5,
+  lastVerifiedAt: "2026-10-15",
+  readingTimeMinutes: 7,
   sourceIds: [
     "cronicanorte-knights-2025",
     "cronicanorte-knights-2026",
@@ -37,9 +37,67 @@ export const royalOaksKnights: Article = {
     "fefa-junior-2026",
     "wiki-cavaliers",
     "rok-web",
+    "rok-quienes-somos",
+    "fcfa-historia",
     "infobae-knights-nfl-2026",
   ],
   content: [
+    {
+      type: "callout",
+      title: {
+        es: "Pendiente de verificación",
+        en: "Pending verification",
+      },
+      text: {
+        es: "La sección sobre los años anteriores a 1972 procede del relato publicado por el propio club y no está contrastada con documentación independiente. Incluye una fecha que contradice lo que este archivo publica sobre el primer partido de fútbol americano en España. Lo contamos marcado como tal mientras intentamos confirmarlo. [[src:rok-quienes-somos]]",
+        en: "The section on the years before 1972 comes from the club's own published account and is not corroborated by independent documentation. It includes a date that contradicts what this archive publishes about the first American football game in Spain. We publish it flagged as such while we try to confirm it. [[src:rok-quienes-somos]]",
+      },
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "prehistoria",
+      text: { es: "Antes de 1972: el instituto, el profesor y el flag", en: "Before 1972: the school, the teacher and flag football" },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "Según el relato del club, todo empieza en 1953, cuando los Pactos de Madrid llevan fuerzas estadounidenses a la base aérea de Torrejón de Ardoz y se inaugura el Madrid High School, un instituto dependiente del Departamento de Defensa de Estados Unidos. [[src:rok-quienes-somos]]",
+        en: "According to the club's account, it all begins in 1953, when the Pacts of Madrid bring US forces to the Torrejón de Ardoz air base and Madrid High School opens, a school run by the United States Department of Defense. [[src:rok-quienes-somos]]",
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "En 1956 el profesor Joe Blackstead introduce el flag football entre los alumnos, con una competición interna de cuatro equipos —Mustangs, Dragons, Sabres y Bloodhounds— y un partido tradicional de profesores contra alumnos. Entrenado por Blackstead, Knights juega su primer encuentro como equipo el 15 de noviembre de 1958 en Zaragoza, contra los Zaragoza Zebras: derrota por 13-6. [[src:rok-quienes-somos]]",
+        en: "In 1956 teacher Joe Blackstead introduces flag football to the students, with a four-team internal competition — Mustangs, Dragons, Sabres and Bloodhounds — and a traditional teachers-versus-students game. Coached by Blackstead, Knights play their first match as a team on 15 November 1958 in Zaragoza against the Zaragoza Zebras, losing 13-6. [[src:rok-quienes-somos]]",
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "Un año después, con Jim Leary en la dirección deportiva y Don Mitchell como entrenador, arranca la competición nacional de flag. El primer Campeonato de España de la especialidad se juega en Sevilla, en el campo de Santa Clara, entre Knights, Sevilla High School Toros, Zaragoza HS Zebras y Rota HS Admirals: todos ellos centros escolares vinculados a la presencia militar estadounidense. [[src:rok-quienes-somos]]",
+        en: "A year later, with Jim Leary as sporting director and Don Mitchell as coach, the national flag competition begins. The first Spanish championship in the discipline is played in Seville, at the Santa Clara ground, between Knights, Sevilla High School Toros, Zaragoza HS Zebras and Rota HS Admirals, all schools tied to the American military presence. [[src:rok-quienes-somos]]",
+      },
+    },
+    {
+      type: "callout",
+      title: {
+        es: "La fecha que hay que contrastar",
+        en: "The date that needs checking",
+      },
+      text: {
+        es: "El club sostiene que el primer partido de fútbol americano disputado en España se jugó el 15 de octubre de 1960, de nuevo entre Knights y Zaragoza Zebras, con victoria madrileña por 20-6. [[src:rok-quienes-somos]] Este archivo publica que el primero fue el 19 de marzo de 1988, Badalona Drags contra los italianos Palermo Cardinals. [[src:fcfa-historia]] Es probable que ambas sean ciertas sobre realidades distintas —institutos estadounidenses radicados en España frente a clubes españoles federados—, pero hasta confirmarlo no damos ninguna por buena.",
+        en: "The club holds that the first American football game played in Spain took place on 15 October 1960, again between Knights and Zaragoza Zebras, a 20-6 win for the Madrid side. [[src:rok-quienes-somos]] This archive publishes that the first was on 19 March 1988, Badalona Drags against Italy's Palermo Cardinals. [[src:fcfa-historia]] Both may well be true about different things — American schools based in Spain versus federated Spanish clubs — but until that is confirmed we take neither as settled.",
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "El club se atribuye siete campeonatos en solitario durante aquella década. [[src:rok-quienes-somos]]",
+        en: "The club claims seven outright championships during that decade. [[src:rok-quienes-somos]]",
+      },
+    },
     {
       type: "heading",
       level: 2,

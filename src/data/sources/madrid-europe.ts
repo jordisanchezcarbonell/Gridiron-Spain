@@ -260,6 +260,18 @@ export const madridEuropeSources: Source[] = [
   { id: "diarioalcobendas-cavaliers-2026", title: "Los Alcobendas Cavaliers sellan su regreso a la Serie A del fútbol americano nacional tras arrollar en la final", publisher: "Diario de Alcobendas", url: "https://www.diariodealcobendas.com/post/los-alcobendas-cavaliers-sellan-su-regreso-a-la-serie-a-del-f%C3%BAtbol-americano-nacional-tras-arrollar", publishedAt: "2026-06-19", accessedAt: A, sourceType: "press" },
   { id: "noroestemadrid-cavaliers-2026", title: "Fútbol americano: Alcobendas Cavaliers, campeones de Madrid", publisher: "Noroeste Madrid", url: "https://www.noroestemadrid.com/2026/05/futbol-americano-alcobendas-cavaliers-campeones-de-madrid/", publishedAt: "2026-05-01", accessedAt: A, sourceType: "press" },
   { id: "rok-web", title: "Royal Oaks Knights — web oficial", publisher: "Royal Oaks Knights", url: "https://www.royaloaksknights.com/", accessedAt: A, sourceType: "club-official" },
+  {
+    id: "rok-quienes-somos",
+    title: "The Royal Oaks Knights: Quiénes somos",
+    publisher: "Royal Oaks Knights",
+    url: "https://www.royaloaksknights.com/es/content/pages/5719",
+    accessedAt: "2026-10-15",
+    sourceType: "club-official",
+    notes: {
+      es: "Relato histórico del propio club, desde el Madrid High School (1953) hasta la restauración de 2014. Fuente primaria para su versión, sin contrastar con documentación independiente. Sitúa el primer partido de fútbol americano de España el 15-10-1960, en contradicción con la fecha de 1988 que recoge la FCFA.",
+      en: "The club's own historical account, from Madrid High School (1953) to the 2014 restoration. A primary source for its version, not corroborated by independent documentation. It dates the first American football game in Spain to 15 Oct 1960, contradicting the 1988 date recorded by the FCFA.",
+    },
+  },
   { id: "wiki-cavaliers", title: "Alcobendas Cavaliers", publisher: "Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Alcobendas_Cavaliers", accessedAt: A, sourceType: "encyclopedia" },
   { id: "infobae-knights-nfl-2026", title: "Los Knights de Alcobendas representarán a España en los NFL FLAG Championships de Indianápolis", publisher: "Infobae / EFE", url: "https://www.infobae.com/america/agencias/2026/07/21/los-knights-de-alcobendas-representaran-a-espana-en-los-nfl-flag-championships-de-indianapolis/", publishedAt: "2026-07-21", accessedAt: A, sourceType: "press" },
   { id: "afi-london-guard-efa-2027", title: "London Guard joins EFA, bringing professional American football to East London", publisher: "American Football International", url: "https://www.americanfootballinternational.com/?p=210759", publishedAt: "2026-08-13", accessedAt: "2026-10-06", sourceType: "press" },
