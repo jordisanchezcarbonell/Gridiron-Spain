@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { buildMetadata, composeTitle } from "@/lib/seo/metadata";
 import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { t } from "@/lib/i18n/text";
@@ -29,10 +29,10 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/competicio
   if (!competition) return {};
   return buildMetadata({
     locale,
-    title:
-      locale === "es"
-        ? `${competition.name}: equipos, temporadas y resultados de fútbol americano`
-        : `${competition.name}: American football teams, seasons and results`,
+    title: composeTitle(
+      competition.name,
+      locale === "es" ? "equipos y temporadas" : "teams and seasons",
+    ),
     description: t(competition.description, locale),
     routeKey: "competitions",
     segments: [slug],

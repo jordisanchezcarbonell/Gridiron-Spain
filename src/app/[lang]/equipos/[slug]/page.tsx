@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { href } from "@/lib/i18n/routes";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { buildMetadata, composeTitle } from "@/lib/seo/metadata";
 import { breadcrumbJsonLd, teamJsonLd } from "@/lib/seo/json-ld";
 import { getRepository } from "@/lib/repositories";
 import { buildPlayerProfiles } from "@/lib/players";
@@ -45,10 +45,13 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/equipos/[s
   }
   const team = await getRepository().getTeamBySlug(slug);
   if (!team) return {};
-  const title =
-    locale === "es"
-      ? `${team.name} — fútbol americano en ${team.city}`
-      : `${team.name} — American football in ${team.city}`;
+  // Most club names already carry their city ("Badalona Dracs"); repeating it
+  // only spends title characters Google would cut.
+  const cityHead = team.city.split(/[\s,]+/)[0] ?? team.city;
+  const nameHasCity = team.name.toLowerCase().includes(cityHead.toLowerCase());
+  const sport = locale === "es" ? "fútbol americano" : "American football";
+  const where = locale === "es" ? `en ${team.city}` : `in ${team.city}`;
+  const title = composeTitle(team.name, nameHasCity ? sport : `${sport} ${where}`);
   return buildMetadata({
     locale,
     title,
