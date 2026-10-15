@@ -22,7 +22,7 @@ directa con ellos, así que no hace falta romper el hielo.
 
 | Persona | Cargo | Estado |
 |---|---|---|
-| Marco Chamón | Head coach en 2016 | Confirmar si sigue y con qué cargo |
+| Marco Chamón | **Head coach** | Cargo confirmado por el editor; la fuente publicada es de 2016 |
 | Diego Fernández del Rivero | Head coach del U15 de flag, Indianápolis 2026 | Confirmado |
 | **Presidente / junta directiva** | **Desconocido** | **Primera pregunta: quién es y cómo se escribe su nombre** |
 
@@ -83,15 +83,15 @@ Esto es lo único que no puede quedarse sin preguntar.
 
 # Preguntas para Marco Chamón
 
-**Aviso sobre el cargo:** la única fuente que tenemos lo sitúa como *head coach* (entrenador
-jefe) en septiembre de 2016, en Madrid Norte 24 Horas. No hemos confirmado que siga ni con
-qué cargo. Si el editor lo trata como directivo del club por conversación directa, bien,
-pero la ficha no debe recoger un cargo sin fuente: preguntárselo y citarlo a él.
+**Cargo: head coach** (entrenador jefe), confirmado por el editor. La fuente publicada que
+lo respalda es de septiembre de 2016 (Madrid Norte 24 Horas), así que para citarlo en la
+ficha conviene que lo diga él en la entrevista y usar esa cita como fuente actual.
 
 ## Para abrir
 
-1. Para citarte bien: ¿cuál es tu cargo exacto hoy en el club, y cómo se escribe tu apellido?
-   Lo hemos visto escrito de dos formas distintas y no queremos equivocarnos.
+1. Para citarte bien: ¿cómo se escribe exactamente tu apellido? Lo hemos visto de dos formas
+   distintas y no queremos equivocarnos. ¿Y cómo prefieres que te acreditemos, head coach o
+   entrenador jefe?
 2. En 2016 nos contabas que buscabais cantera y que «cualquier proyecto deportivo con cabeza
    es necesariamente un proyecto a medio plazo». Han pasado diez años y en 2026 habéis ganado
    cinco títulos. ¿Era este el medio plazo que tenías en la cabeza?
@@ -156,7 +156,7 @@ conversación:
 - [ ] Resultado exacto de la final de LNFA Cadete 2026
 - [ ] Resultado en Indianápolis
 - [ ] Redes sociales oficiales (nuestra ficha las tiene como UNKNOWN)
-- [ ] Si Marco Chamón sigue en el club y con qué cargo
+- [ ] Grafía exacta del apellido de Marco Chamón y cómo quiere ser acreditado
 - [ ] La cita de Diego Fernández del Rivero aparece en dos versiones distintas según el
       medio (Infobae y Diario de Alcobendas). Pedirle la buena.
 - [ ] Permiso para escudo y fotos
