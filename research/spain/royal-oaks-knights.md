@@ -2,7 +2,7 @@
 id: royal-oaks-knights
 type: team-spain
 name: Royal Oaks Knights
-last_researched: 2026-10-02
+last_researched: 2026-10-15
 confidence: CONFIRMED
 ---
 
@@ -188,6 +188,70 @@ Títulos en cadete, junior, y senior. El sistema de formación produce resultado
 5. [La Moraleja](https://www.lamoraleja.com/) (Tier 2)
 6. [FEFA](https://www.fefa.es/) (Tier 1)
 7. [Crónica Norte](https://www.cronicanorte.es/) (Tier 2)
+
+---
+
+## Historia según el club (web oficial, consultada 2026-10-15)
+
+Fuente: [The Royal Oaks Knights — Quiénes somos](https://www.royaloaksknights.com/es/content/pages/5719) (`rok-web`).
+Confianza: **REPORTED**. Es la versión del propio club, primaria para su relato pero sin
+contrastar con fuentes independientes. El logotipo de la web reza "Youth American Football
+since 1972".
+
+| Fecha | Hecho | Nombres |
+|---|---|---|
+| 1953 | Pactos de Madrid: llegan fuerzas estadounidenses a la base aérea de Torrejón de Ardoz y se inaugura el Madrid High School, dependiente del Departamento de Defensa de EEUU | - |
+| 1956 | El profesor Joe Blackstead introduce el flag football entre los alumnos del MHS: competición interna y partido tradicional profesores contra alumnos. Equipos internos: Mustangs, Dragons, Sabres, Bloodhounds | **Joe Blackstead** (profesor) |
+| 15-11-1958 | Knights compite por primera vez como equipo de flag, contra Zaragoza Zebras en Zaragoza. Derrota 13-6 | Entrenado por Blackstead |
+| 1959 | Arranca la competición nacional de flag. Primer Campeonato de España de Flag Football en Sevilla, campo de Santa Clara: Knights, Sevilla HS Toros, Zaragoza HS Zebras y Rota HS Admirals | **Jim Leary** (dirección deportiva), **Don Mitchell** (entrenador) |
+| 15-10-1960 | **El club lo presenta como el primer partido de futbol americano de España**: Knights 20 - 6 Zaragoza Zebras | - |
+| anios 60 | Siete campeonatos en solitario | - |
+| 1972 | El traslado del instituto a la base de Torrejon obliga a dividir el distrito escolar de Madrid en dos equipos: THS Knights y Royal Oaks Knights, asentado en el barrio residencial de Royal Oaks, hoy Encinar de los Reyes, al sur de Alcobendas | - |
+| 72, 75, 76, 77 | Campeonatos de Royal Oaks | - |
+| 2014 | Restauracion del programa deportivo | - |
+| 24, 25, 26 | Campeonatos Nacionales | - |
+| 23, 24, 26 | Campeonatos Nacionales U17 (Knights Junior Varsity) | - |
+
+### Personas identificadas
+
+| Nombre | Cargo | Fuente | Confianza |
+|---|---|---|---|
+| Marco Chamon | Head coach (entrenador jefe) | [Madrid Norte 24 Horas, 07-09-2016](https://www.madridnorte24horas.com/articulo/madrid-norte-en-la-onda/el-primer-club-de-espana-de-futbol-americano-busca-su-cantera-en-alcobendas-2-2/20160907124317073779.html) | CONFIRMED en 2016; sin confirmar que siga |
+| Diego Fernandez del Rivero | Head coach del U15 de flag (Indianapolis 2026) | Infobae; [Diario de Alcobendas](https://www.diariodealcobendas.com/post/royal-oaks-knights-busca-conquistar-la-nfl-en-estados-unidos) | CONFIRMED |
+| Joe Blackstead | Profesor del MHS, introdujo el flag en 1956 | web del club | REPORTED |
+| Jim Leary | Direccion deportiva, 1959 | web del club | REPORTED |
+| Don Mitchell | Entrenador, 1959 | web del club | REPORTED |
+
+**Presidente / junta directiva: UNKNOWN.** No figura en la web del club, ni en la prensa
+consultada, ni en el registro de entidades del Ayuntamiento (devuelve 403). Contacto
+publicado: info@royaloaksknights.com. Los nombres que aparecen en busquedas via LinkedIn no
+se recogen aqui: llegaron con el apellido escrito de dos formas distintas y sin cargo
+verificable.
+
+---
+
+## CONTRADICCION ABIERTA con lo que ya publicamos
+
+Primer Down afirma hoy, sin matizar, que el primer partido de futbol americano disputado en
+Espania fue el 19 de marzo de 1988 (Badalona Drags contra Palermo Cardinals), con fuente
+`fcfa-historia`. Aparece en cinco sitios:
+
+- `src/data/articles/badalona-dracs.ts` (resumen y cuerpo)
+- `src/data/articles/historia-espana.ts`
+- `src/data/teams/catalonia.ts`
+- `src/data/timeline/index.ts`
+
+La web de Royal Oaks Knights situa ese primer partido el 15 de octubre de 1960, Knights
+contra Zaragoza Zebras.
+
+**Hipotesis a confirmar, no asumir:** las dos pueden ser ciertas si se refieren a cosas
+distintas (1960, entre institutos estadounidenses radicados en Espania; 1988, entre clubes
+espanioles federados). Pero nuestra redaccion actual es absoluta y no lo distingue.
+
+**Accion:** no tocar los cinco textos hasta contrastarlo. Si se confirma la distincion, hay
+que cualificar la frase en los cuatro archivos y citar ambas fuentes. Es material de
+entrevista: ver `royal-oaks-knights-entrevista.md`.
+
 
 ---
 
