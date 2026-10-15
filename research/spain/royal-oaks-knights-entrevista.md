@@ -81,6 +81,71 @@ Esto es lo único que no puede quedarse sin preguntar.
 
 ---
 
+# Preguntas para Marco Chamón
+
+**Aviso sobre el cargo:** la única fuente que tenemos lo sitúa como *head coach* (entrenador
+jefe) en septiembre de 2016, en Madrid Norte 24 Horas. No hemos confirmado que siga ni con
+qué cargo. Si el editor lo trata como directivo del club por conversación directa, bien,
+pero la ficha no debe recoger un cargo sin fuente: preguntárselo y citarlo a él.
+
+## Para abrir
+
+1. Para citarte bien: ¿cuál es tu cargo exacto hoy en el club, y cómo se escribe tu apellido?
+   Lo hemos visto escrito de dos formas distintas y no queremos equivocarnos.
+2. En 2016 nos contabas que buscabais cantera y que «cualquier proyecto deportivo con cabeza
+   es necesariamente un proyecto a medio plazo». Han pasado diez años y en 2026 habéis ganado
+   cinco títulos. ¿Era este el medio plazo que tenías en la cabeza?
+
+## El origen (lo que de verdad necesitamos)
+
+3. Vuestra web dice que el 15 de octubre de 1960 Knights ganó 20-6 a Zaragoza Zebras, y lo
+   presentáis como el primer partido de fútbol americano de España. Nosotros publicamos que
+   el primero fue el 19 de marzo de 1988, Badalona Drags contra Palermo Cardinals, según la
+   Federació Catalana. **¿Cómo encajan las dos cosas?**
+4. ¿Lo entendéis como «el primero en España» o como «el primero entre institutos
+   estadounidenses que estaban en España»? ¿Dónde pondrías tú la frontera?
+5. ¿De dónde sale esa fecha? ¿Hay anuarios del Madrid High School, actas, fotos, prensa de
+   base? ¿Podríamos citarlo y reproducir algo?
+6. Si se confirma, nosotros corregimos nuestro archivo citando al club. ¿Os interesa que lo
+   hagamos así?
+
+## La prehistoria
+
+7. Joe Blackstead, el profesor que montó el flag en 1956. ¿Qué sabéis de él? ¿Vive, hay
+   familia localizable, se le ha reconocido alguna vez?
+8. Jim Leary y Don Mitchell, 1959. ¿De dónde salen esos nombres: archivo propio, memoria
+   oral, documentación del instituto?
+9. 1972, la división del distrito escolar en THS Knights y Royal Oaks Knights. ¿Por qué se
+   quedó Royal Oaks con el nombre? ¿Qué fue del otro equipo?
+
+## El hueco de cuarenta años
+
+10. Entre el título de 1977 y la restauración de 2014 vuestra web no cuenta nada. ¿Qué pasó?
+    ¿El club se disolvió, siguió en otro formato, quedó gente?
+11. ¿Quién empujó para volver en 2014, y con qué idea?
+12. ¿Hay continuidad real entre aquel equipo del instituto y el club de hoy, o son dos cosas
+    distintas que comparten nombre? Esto nos importa para saber cómo contarlo.
+
+## El presente
+
+13. Cinco títulos en 2026, en senior, junior, cadete, regional y flag. ¿Qué hicisteis
+    distinto?
+14. Es el segundo ascenso a Serie A tras el de 2022, que acabó en descenso al año siguiente.
+    ¿Qué cambia ahora?
+15. Royal Oaks Knights como cantera y Alcobendas Cavaliers como senior: ¿cómo se lo explicas
+    a alguien de fuera?
+16. ¿Quién es el presidente del club? No figura en vuestra web ni en el registro municipal.
+
+## Cierre
+
+17. ¿Qué os haría falta que alguien contara de vosotros y nadie cuenta?
+18. ¿Nos dais permiso para escudo y fotos, y con qué crédito?
+19. Un enlace a vuestra ficha desde vuestra web nos ayudaría a que Google la rastree.
+    ¿Lo veis posible?
+
+
+---
+
 ## Datos a confirmar de paso
 
 Pendientes que arrastramos en la investigación y que se resuelven en diez segundos de
