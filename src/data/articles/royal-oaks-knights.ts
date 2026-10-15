@@ -15,6 +15,10 @@ export const royalOaksKnights: Article = {
     es: "Quiénes son los Royal Oaks Knights de Alcobendas, cómo surgieron de la comunidad americana de Madrid, y cómo han logrado dos títulos en 2026.",
     en: "Who the Royal Oaks Knights of Alcobendas are, how they emerged from Madrid's American community, and how they won two titles in 2026.",
   },
+  heroImagePending: {
+    es: "Imagen hero pendiente de incorporar con la autorización y el crédito de Royal Oaks Knights. El permiso para usar fotografías y escudo sigue solicitado al club.",
+    en: "Hero image pending inclusion with authorization and credit from Royal Oaks Knights. Permission to use photographs and the crest is still pending with the club.",
+  },
   authorId: "jordi-sanchez",
   category: "equipos",
   tags: ["Royal Oaks Knights", "Alcobendas Cavaliers", "Madrid", "LNFA", "LNFA 2", "canteras", "juventud"],
@@ -51,6 +55,22 @@ export const royalOaksKnights: Article = {
       text: {
         es: "La sección sobre los años anteriores a 1972 procede del relato publicado por el propio club y no está contrastada con documentación independiente. Incluye una fecha que contradice lo que este archivo publica sobre el primer partido de fútbol americano en España. Lo contamos marcado como tal mientras intentamos confirmarlo. [[src:rok-quienes-somos]]",
         en: "The section on the years before 1972 comes from the club's own published account and is not corroborated by independent documentation. It includes a date that contradicts what this archive publishes about the first American football game in Spain. We publish it flagged as such while we try to confirm it. [[src:rok-quienes-somos]]",
+      },
+    },
+    {
+      type: "image",
+      media: {
+        url: "/images/teams/logos/alcobendas-cavaliers.png",
+        alt: {
+          es: "Escudo de Alcobendas Cavaliers, el equipo senior del club Royal Oaks Knights.",
+          en: "Crest of Alcobendas Cavaliers, the senior team of the Royal Oaks Knights club.",
+        },
+        source: "Royal Oaks Knights",
+        permissionNotes: "Escudo del club. Permiso de uso solicitado y pendiente de confirmación por escrito.",
+      },
+      caption: {
+        es: "El club compite como Alcobendas Cavaliers en categoría senior y como Royal Oaks Knights en las categorías de formación.",
+        en: "The club competes as Alcobendas Cavaliers at senior level and as Royal Oaks Knights in its youth categories.",
       },
     },
     {
