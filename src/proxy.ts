@@ -26,7 +26,13 @@ export function proxy(request: NextRequest) {
   const locale = detectLocale(request);
   const url = request.nextUrl.clone();
   url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
-  return NextResponse.redirect(url, 307);
+  // 307 and not 308: the target depends on the visitor's cookie and
+  // Accept-Language, so it must never be cached as a permanent mapping or
+  // switching language would stop working for everyone who already hit `/`.
+  // Vary tells caches the same thing.
+  const response = NextResponse.redirect(url, 307);
+  response.headers.set("Vary", "Accept-Language, Cookie");
+  return response;
 }
 
 export const config = {

@@ -5,7 +5,15 @@ import { absoluteUrl, site } from "@/lib/site";
 import { getRepository } from "@/lib/repositories";
 import type { Locale } from "@/types/common";
 import { regionSlug } from "@/lib/regions";
-import { buildPlayerProfiles } from "@/lib/players";
+
+/**
+ * Locales actually submitted for indexing. The other locales stay live and keep
+ * their hreflang annotations below, they are just not requested for crawling:
+ * with a small crawl budget, submitting an English duplicate of every Spanish
+ * page is what leaves the Spanish tree "discovered, currently not indexed".
+ * Restore to `[...locales]` once the Spanish tree is indexed.
+ */
+const submittedLocales: Locale[] = ["es"];
 
 function entry(
   routeKey: RouteKey,
@@ -15,7 +23,10 @@ function entry(
   priority: number,
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"],
 ): MetadataRoute.Sitemap {
-  return available.map((locale) => ({
+  // Content that exists in no submitted locale is still submitted, so that a
+  // page only published in English never disappears from the sitemap.
+  const submitted = available.filter((locale) => submittedLocales.includes(locale));
+  return (submitted.length > 0 ? submitted : available).map((locale) => ({
     url: absoluteUrl(href(locale, routeKey, ...segments)),
     lastModified,
     changeFrequency,
@@ -30,12 +41,11 @@ function entry(
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const repo = getRepository();
-  const [teams, articles, competitions, seasons, players, nationalTeams] = await Promise.all([
+  const [teams, articles, competitions, seasons, nationalTeams] = await Promise.all([
     repo.getTeams(),
     repo.getArticles(),
     repo.getCompetitions(),
     repo.getSeasons(),
-    repo.getPlayerSpotlights(),
     repo.getNationalTeams(),
   ]);
   const all = [...locales];
@@ -53,12 +63,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entry("guide", [], all, reviewed, 0.8, "monthly"),
     ...entry("rankings", [], all, reviewed, 0.8, "weekly"),
     ...entry("agenda", [], all, reviewed, 0.8, "weekly"),
+    // Individual player profiles are intentionally left out: they are short
+    // enough that submitting them competes for crawl budget with the team and
+    // competition pages. They stay linked from the players index.
     ...entry("players", [], all, reviewed, 0.7, "weekly"),
     ...entry("nationalTeam", [], all, reviewed, 0.8, "weekly"),
     ...entry("quiz", [], all, reviewed, 0.7, "monthly"),
     ...entry("palmares", [], all, reviewed, 0.8, "monthly"),
     ...nationalTeams.flatMap((n) => entry("nationalTeam", [n.id], all, n.lastVerifiedAt, 0.7, "weekly")),
-    ...buildPlayerProfiles(players).filter((p) => p.hasPage).flatMap((p) => entry("players", [p.slug], all, reviewed, 0.6, "monthly")),
     ...seasons.flatMap((season) => {
       const competition = competitions.find((c) => c.id === season.competitionId);
       return competition ? entry("competitions", [competition.slug, season.slug], all, season.lastVerifiedAt ?? reviewed, 0.7, "weekly") : [];
