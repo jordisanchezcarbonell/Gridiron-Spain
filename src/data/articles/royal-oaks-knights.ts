@@ -285,5 +285,63 @@ export const royalOaksKnights: Article = {
         { es: "Entrevista con directivos o fundadores del proyecto actual", en: "Interview with directors or founders of the current project" },
       ],
     },
+    {
+      type: "heading",
+      level: 2,
+      id: "entrevista",
+      text: { es: "Lo que le vamos a preguntar al club", en: "What we are going to ask the club" },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "Tenemos pendiente una entrevista con Marco Chamón, head coach del club. Publicamos de antemano las preguntas que le llevamos, porque un archivo que pide transparencia a los demás debería empezar por la suya.",
+        en: "We have an interview pending with Marco Chamón, the club's head coach. We are publishing our questions in advance, because an archive that asks others for transparency should start with its own.",
+      },
+    },
+    {
+      type: "list",
+      ordered: true,
+      items: [
+        {
+          es: "El 15 de octubre de 1960 contra el 19 de marzo de 1988: ¿cómo encajan las dos fechas del primer partido en España?",
+          en: "15 October 1960 against 19 March 1988: how do the two dates for the first game in Spain fit together?",
+        },
+        {
+          es: "¿Lo entienden como el primer partido en España, o como el primero entre institutos estadounidenses que estaban en España? ¿Dónde está la frontera?",
+          en: "Do they read it as the first game in Spain, or the first between American schools based in Spain? Where is the line?",
+        },
+        {
+          es: "¿Qué documentación se conserva de aquellos años: anuarios del Madrid High School, actas, fotografías, prensa de base?",
+          en: "What documentation survives from those years: Madrid High School yearbooks, minutes, photographs, base newspapers?",
+        },
+        {
+          es: "Joe Blackstead, Jim Leary y Don Mitchell. ¿De dónde salen esos nombres y queda alguien que los recuerde?",
+          en: "Joe Blackstead, Jim Leary and Don Mitchell. Where do those names come from, and is there anyone left who remembers them?",
+        },
+        {
+          es: "Entre el campeonato de 1977 y la restauración de 2014 hay casi cuarenta años sin contar. ¿Qué pasó?",
+          en: "Between the 1977 championship and the 2014 restoration there are almost forty untold years. What happened?",
+        },
+        {
+          es: "¿Hay continuidad real entre aquel equipo del instituto y el club de hoy, o son dos cosas distintas que comparten nombre?",
+          en: "Is there real continuity between that school team and today's club, or are they two different things sharing a name?",
+        },
+        {
+          es: "Cinco títulos en 2026, en senior, junior, cadete, regional y flag. ¿Qué hicieron distinto?",
+          en: "Five titles in 2026, at senior, junior, cadet, regional and flag level. What did they do differently?",
+        },
+      ],
+    },
+    {
+      type: "callout",
+      title: {
+        es: "¿Le preguntarías algo más?",
+        en: "Would you ask them anything else?",
+      },
+      text: {
+        es: "Si echas en falta una pregunta, o sabes algo de la historia de este club que aquí no está, escríbenos antes de la entrevista y se la trasladamos. Correo: jordigw@gmail.com. También estamos en Instagram, en @jordi_sanchez777, y en X, en @BT_Kazukun.",
+        en: "If you think a question is missing, or you know something about this club's history that is not here, write to us before the interview and we will put it to them. Email: jordigw@gmail.com. We are also on Instagram at @jordi_sanchez777 and on X at @BT_Kazukun.",
+      },
+    },
   ],
 };

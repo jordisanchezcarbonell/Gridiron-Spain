@@ -27,13 +27,13 @@ export const site = {
     url: "https://www.jordisanchezweb.es/",
   },
   social: {
-    // Fill in when the accounts exist. Empty strings are not rendered.
-    instagram: "",
-    twitter: "",
+    // Personal accounts of the editor, used while the project has none of its own.
+    instagram: "https://www.instagram.com/jordi_sanchez777/",
+    twitter: "https://x.com/BT_Kazukun",
     tiktok: "",
     youtube: "",
   },
-  contactEmail: "", // set NEXT_PUBLIC_CONTACT_EMAIL or edit here when public
+  contactEmail: "jordigw@gmail.com",
   /** ISO date of the current editorial review cycle. */
   contentReviewedAt: "2026-09-28",
 } as const;
