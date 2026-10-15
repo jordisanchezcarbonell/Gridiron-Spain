@@ -15,9 +15,21 @@ export const royalOaksKnights: Article = {
     es: "Quiénes son los Royal Oaks Knights de Alcobendas, cómo surgieron de la comunidad americana de Madrid, y cómo han logrado dos títulos en 2026.",
     en: "Who the Royal Oaks Knights of Alcobendas are, how they emerged from Madrid's American community, and how they won two titles in 2026.",
   },
+  heroImage: {
+    url: "/images/editorial/campo-vacio-atardecer.png",
+    alt: {
+      es: "Campo de fútbol americano vacío al atardecer, visto desde la banda, con los postes al fondo.",
+      en: "An empty American football field at dusk, seen from the sideline, with the goal posts in the distance.",
+    },
+    width: 1280,
+    height: 720,
+    photographer: "Primer Down · imagen editorial generada",
+    license: "Uso editorial de Primer Down",
+    permissionNotes: "Imagen genérica, deliberadamente sin jugadores ni marcas: no representa al club ni a sus instalaciones. Sustituir por fotografía real cuando el club conceda permiso.",
+  },
   heroImagePending: {
-    es: "Imagen hero pendiente de incorporar con la autorización y el crédito de Royal Oaks Knights. El permiso para usar fotografías y escudo sigue solicitado al club.",
-    en: "Hero image pending inclusion with authorization and credit from Royal Oaks Knights. Permission to use photographs and the crest is still pending with the club.",
+    es: "Hero provisional con imagen editorial genérica. Pendiente de sustituir por fotografía del club cuando concedan permiso.",
+    en: "Provisional hero using a generic editorial image. Pending replacement with a club photograph once permission is granted.",
   },
   authorId: "jordi-sanchez",
   category: "equipos",

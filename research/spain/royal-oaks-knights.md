@@ -230,6 +230,54 @@ verificable.
 
 ---
 
+## El modelo academico y economico (web del club, 15-10-2026)
+
+Confianza: **REPORTED**. Todo procede de la web del club.
+
+### Programa de Avance Academico (PAA)
+
+Fuente: [Programa de Avance Academico](https://www.royaloaksknights.com/es/content/pages/7619)
+
+- Dirigido a los deportistas en edad escolar, para compatibilizar deporte y estudios con
+  seguimiento, apoyo y ensenianza de tecnicas de estudio.
+- Fija objetivos academicos con el alumno y la familia a distintos plazos: evaluacion,
+  curso y acceso a educacion superior.
+- Lo ejecutan profesionales de accion social, educacion y psicologia, en colaboracion con
+  los tecnicos deportivos del club.
+- Centros de procedencia que cita el club: Liceo Europeo, King's College, Runnymede, San
+  Patricio, Brains, International College School, Brewster Academy, American School of
+  Madrid, Casvi American School, Colegio Reggio, Colegio Aleman, Los Sauces, Aldovea, SEK
+  Ciudalcampo y la Universidad Europea.
+
+### Certificacion DAR y acceso a la universidad
+
+Fuente: [Alto Rendimiento - Tu camino a la Carrera Universitaria que quieres](https://www.royaloaksknights.com/es/content/pages/42746)
+
+- La certificacion de deportista de alto rendimiento (DAR) la presentan como estrategia
+  clave para acceder a estudios universitarios o de FP en centros publicos.
+- Ventajas que declaran: acceso a grados sin nota de corte en muchos casos, y en otros con
+  notas de corte hasta cuatro puntos menores que por el cupo general.
+- **Desde 2023, todos sus deportistas de U17 y U19 han accedido a la certificacion DAR**
+  perteneciendo al programa del club.
+
+### All The Way
+
+- Booster club de Royal Oaks Knights, "establecido para impulsar nuestro programa deportivo
+  y accion social". Los miembros acceden a experiencias, contenido y articulos exclusivos.
+
+### Tension a plantear, no a sentenciar
+
+El club se define como entidad dedicada, entre otras cosas, a "la asistencia a personas y
+grupos vulnerables y en exclusion social". Los centros de procedencia que enumera son en su
+mayoria colegios privados e internacionales de la zona norte de Madrid.
+
+No es una contradiccion demostrada: puede haber becas, cuotas diferenciadas o programas
+paralelos que la web no detalla. Pero es la pregunta economica que hay que hacer, y hay que
+hacerla sin acusar: preguntar como conviven las dos cosas y que mecanismos existen.
+
+
+---
+
 ## CONTRADICCION ABIERTA con lo que ya publicamos
 
 Primer Down afirma hoy, sin matizar, que el primer partido de futbol americano disputado en

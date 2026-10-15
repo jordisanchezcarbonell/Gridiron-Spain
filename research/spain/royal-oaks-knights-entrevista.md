@@ -87,6 +87,8 @@ Esto es lo único que no puede quedarse sin preguntar.
 lo respalda es de septiembre de 2016 (Madrid Norte 24 Horas), así que para citarlo en la
 ficha conviene que lo diga él en la entrevista y usar esa cita como fuente actual.
 
+Cuatro bloques: de dónde vienen, qué pasó en medio, cómo se sostiene hoy y hacia dónde van.
+
 ## Para abrir
 
 1. Para citarte bien: ¿cómo se escribe exactamente tu apellido? Lo hemos visto de dos formas
@@ -96,7 +98,9 @@ ficha conviene que lo diga él en la entrevista y usar esa cita como fuente actu
    es necesariamente un proyecto a medio plazo». Han pasado diez años y en 2026 habéis ganado
    cinco títulos. ¿Era este el medio plazo que tenías en la cabeza?
 
-## El origen (lo que de verdad necesitamos)
+---
+
+## Bloque A · Historia antigua (1953-1977)
 
 3. Vuestra web dice que el 15 de octubre de 1960 Knights ganó 20-6 a Zaragoza Zebras, y lo
    presentáis como el primer partido de fútbol americano de España. Nosotros publicamos que
@@ -106,41 +110,66 @@ ficha conviene que lo diga él en la entrevista y usar esa cita como fuente actu
    estadounidenses que estaban en España»? ¿Dónde pondrías tú la frontera?
 5. ¿De dónde sale esa fecha? ¿Hay anuarios del Madrid High School, actas, fotos, prensa de
    base? ¿Podríamos citarlo y reproducir algo?
-6. Si se confirma, nosotros corregimos nuestro archivo citando al club. ¿Os interesa que lo
-   hagamos así?
-
-## La prehistoria
-
-7. Joe Blackstead, el profesor que montó el flag en 1956. ¿Qué sabéis de él? ¿Vive, hay
+6. Joe Blackstead, el profesor que montó el flag en 1956. ¿Qué sabéis de él? ¿Vive, hay
    familia localizable, se le ha reconocido alguna vez?
-8. Jim Leary y Don Mitchell, 1959. ¿De dónde salen esos nombres: archivo propio, memoria
+7. Jim Leary y Don Mitchell, 1959. ¿De dónde salen esos nombres: archivo propio, memoria
    oral, documentación del instituto?
-9. 1972, la división del distrito escolar en THS Knights y Royal Oaks Knights. ¿Por qué se
+8. 1972, la división del distrito escolar en THS Knights y Royal Oaks Knights. ¿Por qué se
    quedó Royal Oaks con el nombre? ¿Qué fue del otro equipo?
+9. Si se confirma lo de 1960, nosotros corregimos nuestro archivo citando al club.
+   ¿Os interesa que lo hagamos así?
 
-## El hueco de cuarenta años
+## Bloque B · El hueco y la historia nueva (1977-2026)
 
 10. Entre el título de 1977 y la restauración de 2014 vuestra web no cuenta nada. ¿Qué pasó?
     ¿El club se disolvió, siguió en otro formato, quedó gente?
 11. ¿Quién empujó para volver en 2014, y con qué idea?
 12. ¿Hay continuidad real entre aquel equipo del instituto y el club de hoy, o son dos cosas
     distintas que comparten nombre? Esto nos importa para saber cómo contarlo.
-
-## El presente
-
-13. Cinco títulos en 2026, en senior, junior, cadete, regional y flag. ¿Qué hicisteis
+13. De un club del instituto americano a un club español abierto: ¿cuándo y cómo se cruzó
+    esa línea?
+14. Cinco títulos en 2026, en senior, junior, cadete, regional y flag. ¿Qué hicisteis
     distinto?
-14. Es el segundo ascenso a Serie A tras el de 2022, que acabó en descenso al año siguiente.
+15. Es el segundo ascenso a Serie A tras el de 2022, que acabó en descenso al año siguiente.
     ¿Qué cambia ahora?
-15. Royal Oaks Knights como cantera y Alcobendas Cavaliers como senior: ¿cómo se lo explicas
-    a alguien de fuera?
-16. ¿Quién es el presidente del club? No figura en vuestra web ni en el registro municipal.
+
+## Bloque C · El modelo: estudios, becas y dinero
+
+*Todo lo que sigue sale de su propia web, así que son preguntas de ampliación, no de
+sospecha.*
+
+16. El Programa de Avance Académico lo llevan profesionales de acción social, educación y
+    psicología junto a los técnicos deportivos. ¿Cuánta gente es? ¿Cómo se paga eso?
+17. Fijáis objetivos académicos con el alumno y la familia por evaluación, por curso y para
+    el acceso a educación superior. ¿Qué pasa si un chaval no los cumple? ¿Deja de jugar?
+18. Desde 2023 todos vuestros U17 y U19 han sacado la certificación DAR, que da acceso a
+    grados sin nota de corte o con hasta cuatro puntos menos. **¿Todos, literalmente?**
+    ¿Cómo se consigue eso y cuánta gente ha entrado ya en la universidad por esa vía?
+19. ¿Qué cuesta jugar en Royal Oaks Knights al año, con equipación y desplazamientos?
+20. ¿Hay becas o cuotas reducidas? ¿Cuántos deportistas las tienen?
+21. Os definís como entidad de asistencia a personas y grupos vulnerables y en exclusión
+    social, y a la vez los centros que citáis son Liceo Europeo, King's College, American
+    School of Madrid, Colegio Alemán, SEK… **¿Cómo conviven las dos cosas?** ¿Hay un
+    programa paralelo que no está en la web?
+22. All The Way, vuestro booster club. ¿Cuánto del presupuesto sale de ahí, cuánto de
+    cuotas, cuánto de patrocinio y cuánto de ayuda pública?
+23. ¿Alguno de vuestros jugadores ha acabado con beca deportiva en Estados Unidos? ¿Es un
+    objetivo declarado del programa?
+
+## Bloque D · Mejorar: qué falta
+
+24. ¿Qué os impide hoy crecer más: campo, dinero, entrenadores, chavales?
+25. ¿Qué le falta al fútbol americano español que vosotros ya tenéis resuelto, y qué tienen
+    otros que os falta a vosotros?
+26. Si mañana tuvieras presupuesto sin límite para una sola cosa, ¿cuál sería?
+27. ¿Dónde queréis estar en 2030?
+28. ¿Qué os haría falta que alguien contara de vosotros y nadie cuenta?
 
 ## Cierre
 
-17. ¿Qué os haría falta que alguien contara de vosotros y nadie cuenta?
-18. ¿Nos dais permiso para escudo y fotos, y con qué crédito?
-19. Un enlace a vuestra ficha desde vuestra web nos ayudaría a que Google la rastree.
+29. ¿Quién es el presidente del club? No figura en vuestra web ni en el registro municipal.
+30. ¿Nos dais permiso para escudo y fotos, y con qué crédito?
+31. Un enlace a vuestra ficha desde vuestra web nos ayudaría a que Google la rastree.
     ¿Lo veis posible?
 
 
