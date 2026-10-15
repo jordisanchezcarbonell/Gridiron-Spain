@@ -20,6 +20,7 @@ import { finde20261003 } from "./finde-2026-10-03";
 import { finde20261010 } from "./finde-2026-10-10";
 import { estadoNcaafNfl20261014 } from "./estado-ncaaf-nfl-2026-10-14";
 import { diegoPazPatriots2026 } from "./diego-paz-patriots-2026";
+import { previa20261017 } from "./previa-2026-10-17";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -47,4 +48,5 @@ export const articles: Article[] = [
   finde20261003,
   estadoNcaafNfl20261014,
   diegoPazPatriots2026,
+  previa20261017,
 ];
