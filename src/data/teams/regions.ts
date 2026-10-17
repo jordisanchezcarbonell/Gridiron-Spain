@@ -970,8 +970,12 @@ export const regionalTeams: Team[] = [
     },
     history: [
       {
-        es: "El club se fundó en 2007 a partir de exmiembros de Cullera Giants, según Wikipedia, única fuente del dato. [[src:wiki-ricers-es]] Jugó en la máxima categoría entre 2010 y 2014. [[src:fefa-team-ricers]]",
-        en: "The club was founded in 2007 by former Cullera Giants members, according to Wikipedia, the only source for it. [[src:wiki-ricers-es]] It played in the top flight between 2010 and 2014. [[src:fefa-team-ricers]]",
+        es: "El club sitúa su origen en 1987, cuando un grupo de aficionados empezó a jugar en la playa de Cullera sin conocer bien las reglas. Aquello llamó la atención de Frank Tiozzo, entrenador francés y antiguo jugador, que se implicó en el proyecto; de esas sesiones a pie de mar salieron los Cullera Giants, hoy extinguidos. [[src:ricers-historia]]",
+        en: "The club traces its origin to 1987, when a group of fans started playing on Cullera beach without really knowing the rules. That caught the eye of Frank Tiozzo, a French coach and former player, who got involved; those sessions by the sea produced Cullera Giants, now defunct. [[src:ricers-historia]]",
+      },
+      {
+        es: "Sueca Ricers se fundó en 2007 y quedó registrado oficialmente en 2008, según el propio club, que lo presenta como la continuidad natural de aquel proyecto. [[src:ricers-historia]] [[src:wiki-ricers-es]] Jugó en la máxima categoría entre 2010 y 2014. [[src:fefa-team-ricers]]",
+        en: "Sueca Ricers was founded in 2007 and officially registered in 2008, according to the club itself, which presents it as the natural continuation of that project. [[src:ricers-historia]] [[src:wiki-ricers-es]] It played in the top flight between 2010 and 2014. [[src:fefa-team-ricers]]",
       },
       {
         es: "Fue subcampeón de la LNFA Junior en 2013 [[src:fefa-palmares]] y en 2026 ganó el título U15 de la Spanish Flag Bowl Youth. [[src:fefa-flag-bowl-youth-2026]]",
@@ -1002,9 +1006,9 @@ export const regionalTeams: Team[] = [
         verificationStatus: "verified",
       },
     ],
-    sourceIds: ["fefa-team-ricers", "wiki-ricers-es", "fefa-lnfa2-2025-26", "fefa-palmares", "fefa-flag-bowl-youth-2026"],
+    sourceIds: ["fefa-team-ricers", "ricers-historia", "wiki-ricers-es", "fefa-lnfa2-2025-26", "fefa-palmares", "fefa-flag-bowl-youth-2026"],
     verificationStatus: "partial",
-    lastVerifiedAt: "2026-10-02",
+    lastVerifiedAt: "2026-10-17",
     researchNotes: {
       es: "Fundación (2007) solo en Wikipedia. Coordenadas = centro de Sueca (el estadio no figura en OSM). FEFA no lista web; suecaricers.com está activa.",
       en: "2007 founding only in Wikipedia. Coordinates = Sueca centre. FEFA lists no website; suecaricers.com is live.",

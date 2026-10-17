@@ -325,6 +325,18 @@ export const spainTeamsSources: Source[] = [
     sourceType: "federation",
   },
   {
+    id: "ricers-historia",
+    title: "Història",
+    publisher: "Sueca Ricers",
+    url: "https://www.suecaricers.com/va/content/pages/47830",
+    accessedAt: "2026-10-17",
+    sourceType: "club-official",
+    notes: {
+      es: "Relato del propio club, señalado por ellos en respuesta a nuestro correo del 17-10-2026. Confirma la fundación en 2007 y añade el registro oficial en 2008, el origen en la playa de Cullera en 1987 y el papel del entrenador francés Frank Tiozzo.",
+      en: "The club's own account, pointed to by them in reply to our email of 17 Oct 2026. It confirms the 2007 founding and adds the official registration in 2008, the origin on Cullera beach in 1987 and the role of French coach Frank Tiozzo.",
+    },
+  },
+  {
     id: "wiki-ricers-es",
     title: "Sueca Ricers",
     publisher: "Wikipedia (es)",
