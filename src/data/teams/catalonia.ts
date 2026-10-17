@@ -45,8 +45,8 @@ export const cataloniaTeams: Team[] = [
         en: "American football arrived in Catalonia in 1987 through Italian coach Alfonso Genchi, who persuaded Pere Moliner to create the first Spanish team: the Badalona Drags, in that original spelling. [[src:fcfa-historia]]",
       },
       {
-        es: "El 19 de marzo de 1988 el club disputó el primer partido de fútbol americano jugado en España, contra los Palermo Cardinals italianos, y en otoño de ese año ganó la primera Lliga Catalana, la primera competición oficial del país. [[src:fcfa-historia]] [[src:bufals-historia]]",
-        en: "On 19 March 1988 the club played the first American football game ever held in Spain, against Italy's Palermo Cardinals, and in the autumn of that year it won the first Lliga Catalana, the country's first official competition. [[src:fcfa-historia]] [[src:bufals-historia]]",
+        es: "El partido se acordó en diciembre de 1987, en una reunión en Badalona entre Moliner, Alfonso Genchi —por entonces entrenador del Red Eagles de Catanzaro— y Ramón Ventura, primer presidente de la Federació Catalana. [[src:dracs-historia-club]] Se jugó el 19 de marzo de 1988 en el Campo de Rugby Universitario de Barcelona, contra los Palermo Cardinals, y lo ganaron los sicilianos por 12-8. [[src:dracs-historia-club]] [[src:fcfa-historia]] En otoño de ese año el club ganó la primera liga del país, con una final de 15-12 ante los Búfals del Poblenou. [[src:dracs-historia-club]] [[src:bufals-historia]]",
+        en: "The game was agreed in December 1987 at a meeting in Badalona between Moliner, Alfonso Genchi — then coach of Red Eagles of Catanzaro — and Ramón Ventura, first president of the Catalan federation. [[src:dracs-historia-club]] It was played on 19 March 1988 at the Campo de Rugby Universitario in Barcelona against Palermo Cardinals, and the Sicilians won 12-8. [[src:dracs-historia-club]] [[src:fcfa-historia]] That autumn the club won the country's first league, beating Búfals del Poblenou 15-12 in the final. [[src:dracs-historia-club]] [[src:bufals-historia]]",
       },
       {
         es: "Según el palmarés oficial de la FEFA, los Dracs han ganado la LNFA en once ocasiones (1998, 1999, 2002, 2003, 2004, 2014, 2016, 2017, 2018, 2019 y 2021) y ocho Copas de España, la última en noviembre de 2025. [[src:fefa-palmares]] [[src:fefa-team-dracs]]",
@@ -74,7 +74,7 @@ export const cataloniaTeams: Team[] = [
       })),
       { title: { es: "Campeón I Lliga Catalana", en: "First Lliga Catalana champion" }, year: 1988, sourceIds: ["fcfa-historia", "bufals-historia"], verificationStatus: "verified" },
     ],
-    sourceIds: ["fcfa-historia", "fefa-team-dracs", "fcfa-dracs", "fefa-palmares", "fefa-spanish-bowl-2026", "fefa-calendario-2026-27", "bufals-historia"],
+    sourceIds: ["fcfa-historia", "fefa-team-dracs", "fcfa-dracs", "fefa-palmares", "fefa-spanish-bowl-2026", "fefa-calendario-2026-27", "bufals-historia", "dracs-historia-club"],
     relatedArticleSlugs: ["badalona-dracs", "historia-futbol-americano-espana"],
     verificationStatus: "verified",
     lastVerifiedAt: V,

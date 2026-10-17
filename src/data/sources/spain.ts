@@ -11,6 +11,18 @@ const FCFA = "Federació Catalana de Futbol Americà (FCFA)";
 export const spainSources: Source[] = [
   // --- Federations & history -------------------------------------------
   {
+    id: "dracs-historia-club",
+    title: "Historia del Club — Historia del Fútbol Americano en España, I Parte (1987-1996)",
+    publisher: "Badalona Dracs",
+    url: "https://www.badalonadracs.es/es/content/pages/39155",
+    accessedAt: "2026-10-18",
+    sourceType: "club-official",
+    notes: {
+      es: "Crónica fechada del propio club, de diciembre de 1987 a octubre de 1996. Aporta el campo y el resultado del primer partido, el club de Alfonso Genchi y la reunión de diciembre de 1987. Sitúa el Trofeo Maresme (julio de 1988) como primera competición en territorio estatal, antes de la liga de otoño: pendiente de contrastar con la FCFA.",
+      en: "The club's own dated chronicle, December 1987 to October 1996. It supplies the venue and result of the first game, Alfonso Genchi's club and the December 1987 meeting. It places the Trofeo Maresme (July 1988) as the first competition on Spanish soil, before the autumn league: still to be checked against the FCFA.",
+    },
+  },
+  {
     id: "fcfa-historia",
     title: "Història de la Federació",
     publisher: FCFA,

@@ -23,11 +23,11 @@ export const timeline: TimelineEvent[] = [
     date: "1988-03-19",
     title: { es: "Primer partido en España", en: "First game in Spain" },
     description: {
-      es: "Badalona Drags reciben a los Palermo Cardinals italianos el 19 de marzo de 1988: es el primer partido de fútbol americano disputado en España.",
-      en: "Badalona Drags host Italy's Palermo Cardinals on 19 March 1988: the first American football game played in Spain.",
+      es: "Badalona Drags y los italianos Palermo Cardinals juegan el 19 de marzo de 1988 en el Campo de Rugby Universitario de Barcelona: es el primer partido de fútbol americano disputado en España. Ganaron los sicilianos por 12-8. [[src:dracs-historia-club]]",
+      en: "Badalona Drags and Italy's Palermo Cardinals play on 19 March 1988 at the Campo de Rugby Universitario in Barcelona: the first American football game held in Spain. The Sicilians won 12-8. [[src:dracs-historia-club]]",
     },
     relatedTeamIds: ["badalona-dracs"],
-    sourceIds: ["fcfa-historia"],
+    sourceIds: ["fcfa-historia", "dracs-historia-club"],
     verificationStatus: "verified",
   },
   {
