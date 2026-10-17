@@ -7,10 +7,22 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { teams } from "../src/data/teams";
 import { buildPendingList } from "../src/lib/pending";
+import { site } from "../src/lib/site";
 
 type Contact = { teamId: string; name: string; email: string | null; contactForm: string | null; instagram: string | null; source: string; notes: string };
 
-const BASE = "https://primer-down.vercel.app";
+/**
+ * Taken from the site config so it follows NEXT_PUBLIC_SITE_URL instead of
+ * going stale on every domain move. Without that variable `site.url` falls
+ * back to localhost, which would silently produce unusable emails, so stop.
+ */
+const BASE = site.url;
+if (BASE.includes("localhost")) {
+  throw new Error(
+    "NEXT_PUBLIC_SITE_URL is not set, so the drafts would link to localhost.\n" +
+      "Run it as: NEXT_PUBLIC_SITE_URL=https://primerdown.jordisanchezweb.es npx tsx scripts/outreach-drafts.ts",
+  );
+}
 /** Clubs Jordi is already talking to directly (coverage/report proposals): never send the generic email. */
 const ALREADY_IN_CONTACT = ["osos-rivas", "alcobendas-cavaliers", "barcelona-pagesos", "badalona-dracs", "las-rozas-black-demons"];
 const contacts: Contact[] = JSON.parse(readFileSync("docs/outreach/contactos-clubes.local.json", "utf8"));
@@ -56,7 +68,7 @@ for (const c of contacts) {
     "",
     "Jordi Sánchez",
     "Primer Down · Barcelona",
-    "https://primer-down.vercel.app",
+    BASE,
   ];
   if (c.email) queue.push({ team: team.name, to: c.email, subject, body: lines.join("\n") });
   out.push(
