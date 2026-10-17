@@ -26,6 +26,15 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     { href: href(locale, "about"), label: dict.nav.about },
     { href: href(locale, "mediaKit"), label: dict.nav.mediaKit },
   ];
+  // Only the accounts that actually exist are rendered: empty strings in the
+  // site config mean "not published yet", not "render an empty link".
+  const socials: Array<{ label: string; url: string }> = [
+    { label: "Instagram", url: site.social.instagram },
+    { label: "X", url: site.social.twitter },
+    { label: "TikTok", url: site.social.tiktok },
+    { label: "YouTube", url: site.social.youtube },
+  ].filter((s) => s.url.length > 0);
+
   const year = new Date().getFullYear();
 
   return (
@@ -50,6 +59,28 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               </a>
             </li>
             <li className="text-muted">{site.author.city}</li>
+            {site.contactEmail && (
+              <li>
+                <a href={`mailto:${site.contactEmail}`} className="text-paper-2 transition-colors hover:text-accent">
+                  {site.contactEmail}
+                </a>
+              </li>
+            )}
+            {socials.length > 0 && (
+              <li className="flex items-center gap-3 pt-1">
+                {socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.url}
+                    rel="noopener noreferrer me"
+                    target="_blank"
+                    className="font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted transition-colors hover:text-accent"
+                  >
+                    {s.label}
+                  </a>
+                ))}
+              </li>
+            )}
             <li className="flex items-center gap-3 pt-3">
               <a href={`/${locale}/feed.xml`} className="flex items-center gap-1.5 font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted transition-colors hover:text-accent">
                 <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
