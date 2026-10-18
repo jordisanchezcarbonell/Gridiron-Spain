@@ -20,15 +20,16 @@ export const ncaaJornadaHistorica20261017: Article = {
     en: "Auburn toppled the No. 1 with a last-play field goal and BYU stopped Notre Dame in their own end zone. The 17 October results and what they leave behind.",
   },
   heroImage: {
-    url: "/images/editorial/campo-vacio-atardecer.png",
+    url: "/images/ncaaf/2026-10-17/sanford-stadium-commons.jpg",
     alt: {
-      es: "Campo de fútbol americano vacío al atardecer, visto desde la banda, con los postes al fondo.",
-      en: "An empty American football field at dusk, seen from the sideline, with the goal posts in the distance.",
+      es: "Saque inicial de un partido de fútbol americano en el Sanford Stadium de Athens, con la grada llena.",
+      en: "Kickoff at a football game in Sanford Stadium, Athens, with a full crowd.",
     },
-    width: 1280,
-    height: 720,
-    photographer: "Primer Down · imagen editorial generada",
-    license: "Uso editorial de Primer Down",
+    width: 2161,
+    height: 1439,
+    photographer: "User:Cocksfan",
+    source: "https://commons.wikimedia.org/wiki/File:Football_game_kickoff_(Georgia_vs_South_Carolina),_Sanford_Stadium,_September_2007.jpg",
+    license: "Dominio público",
   },
   authorId: "jordi-sanchez",
   category: "ncaa",
@@ -53,6 +54,25 @@ export const ncaaJornadaHistorica20261017: Article = {
       text: {
         es: `El sábado 17 de octubre dejó una estadística que no tiene precedente: cinco de los siete primeros clasificados del ranking AP perdieron el mismo día. Nunca había pasado en la historia del college football. ${W7}`,
         en: `Saturday 17 October produced a statistic with no precedent: five of the AP poll's top seven lost on the same day. It had never happened in college football history. ${W7}`,
+      },
+    },
+    {
+      type: "image",
+      media: {
+        url: "/images/ncaaf/2026-10-17/sanford-stadium-commons.jpg",
+        alt: {
+          es: "Saque inicial de un partido de fútbol americano en el Sanford Stadium de Athens, con la grada llena.",
+          en: "Kickoff at a football game in Sanford Stadium, Athens, with a full crowd.",
+        },
+        width: 2161,
+        height: 1439,
+        photographer: "User:Cocksfan",
+        source: "https://commons.wikimedia.org/wiki/File:Football_game_kickoff_(Georgia_vs_South_Carolina),_Sanford_Stadium,_September_2007.jpg",
+        license: "Dominio público",
+      },
+      caption: {
+        es: "El Sanford Stadium de Athens, donde cayó el número uno, en una imagen de archivo de 2007. Foto de User:Cocksfan · dominio público.",
+        en: "Sanford Stadium in Athens, where the No. 1 fell, in a 2007 archive image. Photo by User:Cocksfan · public domain.",
       },
     },
     {
