@@ -51,8 +51,12 @@ export const regionalTeams: Team[] = [
     },
     history: [
       {
-        es: "Los Mariners nacieron de los partidos de flag que un grupo de aficionados jugaba en la Playa de Poniente de Gijón. Su primer partido se disputó el 12 de abril de 2001. [[src:mariners-historia]] El club quedó inscrito formalmente en octubre de 2002. [[src:wiki-mariners-es]]",
-        en: "The Mariners grew out of the flag games a group of enthusiasts played on Gijón's Playa de Poniente. Their first match was on 12 April 2001. [[src:mariners-historia]] The club was formally registered in October 2002. [[src:wiki-mariners-es]]",
+        es: "Los Mariners nacieron de los partidos de flag que Toni Bergés y Daniel Castañón organizaban los sábados en la Playa de Poniente de Gijón. El primer encuentro se disputó allí el 12 de abril de 2001, y la primera victoria del club llegó en la Asturias Bowl, 47-37 a los Trasgos de Ribadesella. [[src:mariners-historia]] La constitución formal tardó tres años más: el 2 de marzo de 2004 se firmó ante notario el Club Deportivo Gijón Mariners Fútbol Americano, con Toni Bergés de presidente, Daniel Castañón de secretario e Iván Chao Ballesteros de tesorero. [[src:mariners-historia]] Wikipedia sitúa esa inscripción en octubre de 2002; nos quedamos con la fecha que da el club, que es la que aporta detalle notarial. [[src:wiki-mariners-es]]",
+        en: "The Mariners grew out of the flag games Toni Bergés and Daniel Castañón ran on Saturdays on Gijón's Playa de Poniente. The first match was played there on 12 April 2001, and the club's first win came at the Asturias Bowl, 47-37 against Trasgos de Ribadesella. [[src:mariners-historia]] Formal constitution took three more years: on 2 March 2004 Club Deportivo Gijón Mariners Fútbol Americano was signed before a notary, with Toni Bergés as president, Daniel Castañón as secretary and Iván Chao Ballesteros as treasurer. [[src:mariners-historia]] Wikipedia dates that registration to October 2002; we keep the club's date, which carries the notarial detail. [[src:wiki-mariners-es]]",
+      },
+      {
+        es: "En 2007, tras ganar un torneo en Oporto, fueron admitidos en la LNFA y terminaron quintos en su año de debut. [[src:mariners-historia]]",
+        en: "In 2007, after winning a tournament in Porto, they were admitted to the LNFA and finished fifth in their debut season. [[src:mariners-historia]]",
       },
       {
         es: "En flag se proclamó campeón del Spanish Flag Bowl Open en 2011 [[src:fefa-palmares-flag]], y su equipo femenino fue subcampeón de la LNFA Femenina 2 en 2019. [[src:fefa-palmares]]",
@@ -92,7 +96,7 @@ export const regionalTeams: Team[] = [
       "osm-nominatim",
     ],
     verificationStatus: "partial",
-    lastVerifiedAt: "2026-10-02",
+    lastVerifiedAt: "2026-10-18",
     researchNotes: {
       es: "Año 2001 = primer partido (12-04-2001) según la web del club; inscripción formal como club en octubre de 2002 según Wikipedia. Competición 2026-27 (LNFA 2) pendiente de que FEFA publique la composición. FEFA no lista web; gijonmariners.com está activa.",
       en: "2001 = first game (12 Apr 2001) per club site; formal registration Oct 2002 per Wikipedia. 2026-27 LNFA 2 placement pending FEFA publication. FEFA lists no website; gijonmariners.com is live.",
@@ -147,8 +151,8 @@ export const regionalTeams: Team[] = [
         en: "The club's project started in 2012 in southern Madrid. [[src:smilodons-historia]]",
       },
       {
-        es: "En 2025-26 jugó la Conferencia Madrileña de la LNFA 2 [[src:fefa-lnfa2-2025-26]] y firmó su mejor temporada: superó los cuartos de final [[src:fefa-lnfa2-cuartos-2026]] y las semifinales [[src:fefa-lnfa2-semis-2026]] para alcanzar su primera final nacional, donde cayó 0-35 ante Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
-        en: "In 2025-26 it played the Madrid Conference of LNFA 2 [[src:fefa-lnfa2-2025-26]] and had its best season: it came through the quarter-finals [[src:fefa-lnfa2-cuartos-2026]] and semi-finals [[src:fefa-lnfa2-semis-2026]] to reach its first national final, losing 0-35 to Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
+        es: "Juega en la Ciudad Deportiva Santo Domingo, en el campo F5 de la avenida Esteban Márquez, según el propio club, que además se atribuye las tres últimas Ligas Madrileñas consecutivas. [[src:smilodons-historia]] En 2025-26 jugó la Conferencia Madrileña de la LNFA 2 [[src:fefa-lnfa2-2025-26]] y firmó su mejor temporada: superó los cuartos de final [[src:fefa-lnfa2-cuartos-2026]] y las semifinales [[src:fefa-lnfa2-semis-2026]] para alcanzar su primera final nacional, donde cayó 0-35 ante Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
+        en: "It plays at Ciudad Deportiva Santo Domingo, on pitch F5 on Avenida Esteban Márquez, according to the club itself, which also claims the last three Madrid leagues in a row. [[src:smilodons-historia]] In 2025-26 it played the Madrid Conference of LNFA 2 [[src:fefa-lnfa2-2025-26]] and had its best season: it came through the quarter-finals [[src:fefa-lnfa2-cuartos-2026]] and semi-finals [[src:fefa-lnfa2-semis-2026]] to reach its first national final, losing 0-35 to Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
       },
     ],
     honours: [
@@ -173,7 +177,7 @@ export const regionalTeams: Team[] = [
       "fefa-palmares",
     ],
     verificationStatus: "partial",
-    lastVerifiedAt: "2026-10-02",
+    lastVerifiedAt: "2026-10-18",
     researchNotes: {
       es: "Campo sin coordenadas confirmadas: FEFA dice 'Polideportivo Santo Domingo', la final se jugó en 'Polideportivo Prado Santo Domingo' y la semifinal en 'CDM La Canaleja'; la web del club cita el Campo Esteban Márquez (2013). Coordenadas = centro de Alcorcón.",
       en: "Venue coordinates unconfirmed: FEFA 'Polideportivo Santo Domingo', final at 'Polideportivo Prado Santo Domingo', semi at 'CDM La Canaleja'; club site cites Campo Esteban Márquez (2013). Coordinates = Alcorcón centre.",
