@@ -50,7 +50,7 @@ export const antesDe1988: Article = {
   sourceIds: [
     "cuadernos-futbol-americano", "commanders-bernabeu-2025",
     "rok-quienes-somos", "camioneros-historia-club", "dracs-historia-club", "osos-historia",
-    "fcfa-historia",
+    "fcfa-historia", "bufals-historia",
   ],
   content: [
     {
@@ -147,6 +147,13 @@ export const antesDe1988: Article = {
       text: {
         es: `Tampoco ese marcador está cerrado: Badalona Dracs publica 12-8 y Camioneros de Coslada, 12-18. ${"[[src:dracs-historia-club]]"} ${CAM} Lo que sí está claro es lo que significó. Ese fue el primer partido que jugó un club español, y de él salió todo lo demás: los Pioners de l'Hospitalet, los Búfals del Poblenou, los Barcelona Boxers, la federación catalana, la liga.`,
         en: `That score is not settled either: Badalona Dracs publish 12-8 and Camioneros de Coslada 12-18. ${"[[src:dracs-historia-club]]"} ${CAM} What is clear is what it meant. That was the first game played by a Spanish club, and everything else came out of it: Pioners de l'Hospitalet, Búfals del Poblenou, Barcelona Boxers, the Catalan federation, the league.`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Y hay un matiz más, que los propios Búfals del Poblenou guardan en su historia: aquel 19 de marzo fue un club español contra uno italiano. El primer partido entre dos equipos españoles no llegó hasta finales de mayo de 1988, y lo jugaron los Badalona Dracs contra los propios Búfals. [[src:bufals-historia]] En noviembre volvieron a verse en la final de la primera liga, en el campo del Club Deportivo Europa, y ganaron los de Badalona. [[src:bufals-historia]] [[src:dracs-historia-club]]`,
+        en: `And there is one more nuance, kept in Búfals del Poblenou's own history: that 19 March was a Spanish club against an Italian one. The first game between two Spanish teams did not come until late May 1988, and it was Badalona Dracs against Búfals themselves. [[src:bufals-historia]] In November they met again in the first league final, at the Club Deportivo Europa ground, and Badalona won. [[src:bufals-historia]] [[src:dracs-historia-club]]`,
       },
     },
     {

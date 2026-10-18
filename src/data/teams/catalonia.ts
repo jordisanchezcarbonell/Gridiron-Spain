@@ -298,7 +298,7 @@ export const cataloniaTeams: Team[] = [
     },
     history: [
       {
-        es: "Los Búfals nacieron en 1987 en el barrio del Poblenou, fundados por Jaume Tamareu, Antoni López, Pere Calvo y Ramón Calvo, y perdieron en noviembre de 1988 la final de la primera competición oficial de España ante Badalona Dracs. [[src:bufals-historia]] [[src:fcfa-historia]]",
+        es: "Los Búfals nacieron en 1987 en el barrio del Poblenou, fundados por Jaume Tamareu, Antoni López, Pere Calvo y Ramón Calvo, y perdieron en noviembre de 1988 la final de la primera competición oficial de España ante Badalona Dracs. [[src:bufals-historia]] [[src:fcfa-historia]]. A finales de mayo de ese año habían jugado contra los Dracs el primer partido de la historia entre dos equipos españoles, según el propio club. [[src:bufals-historia]]",
         en: "The Búfals were born in 1987 in the Poblenou neighbourhood, founded by Jaume Tamareu, Antoni López, Pere Calvo and Ramón Calvo, and lost the November 1988 final of Spain's first official competition to Badalona Dracs. [[src:bufals-historia]] [[src:fcfa-historia]]",
       },
     ],
