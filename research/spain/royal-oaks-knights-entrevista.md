@@ -87,13 +87,30 @@ Esto es lo único que no puede quedarse sin preguntar.
 lo respalda es de septiembre de 2016 (Madrid Norte 24 Horas), así que para citarlo en la
 ficha conviene que lo diga él en la entrevista y usar esa cita como fuente actual.
 
+> ### Esto ya no es una entrevista a un entrenador
+>
+> *Cuadernos de Fútbol*, la revista del CIHEFE, acredita a **Marco Chomón** como la persona
+> que documentó los orígenes del fútbol americano en el Madrid High School de Torrejón: 1956,
+> Joseph E. Blackstead, los cuatro equipos internos, la liga de cuatro bases de 1962.
+> [Artículo de Luis Javier Bravo Mayor, n.º 64, abril de 2015](https://cuadernosdefutbol.com/articulo/los-diferentes-codigos-del-futbol-ii-futbol-%E2%80%9Camericano%E2%80%9D/1010).
+>
+> Si es la misma persona —el apellido aparece como Chamón en prensa y como Chomón en la
+> revista, y el perfil encaja— no estás entrevistando solo al entrenador del club decano:
+> estás entrevistando **a quien investigó esta historia**. Eso cambia el registro de toda la
+> conversación. No le preguntes solo qué recuerda el club: pregúntale cómo lo investigó él.
+>
+> **Confírmalo en la primera pregunta.** Si no es él, el resto del bloque sobra.
+
 Cuatro bloques: de dónde vienen, qué pasó en medio, cómo se sostiene hoy y hacia dónde van.
 
 ## Para abrir
 
-1. Para citarte bien: ¿cómo se escribe exactamente tu apellido? Lo hemos visto de dos formas
-   distintas y no queremos equivocarnos. ¿Y cómo prefieres que te acreditemos, head coach o
-   entrenador jefe?
+1. Para citarte bien: ¿cómo se escribe exactamente tu apellido, Chamón o Chomón? Lo hemos
+   visto de las dos formas. ¿Y cómo prefieres que te acreditemos, head coach o entrenador
+   jefe?
+1b. **¿Eres tú el Marco Chomón que documentó los orígenes del football en el Madrid High
+   School y al que cita Cuadernos de Fútbol?** Si la respuesta es sí, cambia toda esta
+   conversación.
 2. En 2016 nos contabas que buscabais cantera y que «cualquier proyecto deportivo con cabeza
    es necesariamente un proyecto a medio plazo». Han pasado diez años y en 2026 habéis ganado
    cinco títulos. ¿Era este el medio plazo que tenías en la cabeza?
@@ -102,10 +119,14 @@ Cuatro bloques: de dónde vienen, qué pasó en medio, cómo se sostiene hoy y h
 
 ## Bloque A · Historia antigua (1953-1977)
 
-3. Vuestra web dice que el 15 de octubre de 1960 Knights ganó 20-6 a Zaragoza Zebras, y lo
-   presentáis como el primer partido de fútbol americano de España. Nosotros publicamos que
-   el primero fue el 19 de marzo de 1988, Badalona Drags contra Palermo Cardinals, según la
-   Federació Catalana. **¿Cómo encajan las dos cosas?**
+3. Lo hemos contrastado y teníamos razón vosotros: hemos corregido nuestro archivo. Ahora
+   publicamos que 1988 fue el partido fundacional del fútbol americano español, no el
+   primero jugado en España. **¿Es así como lo contarías tú?**
+3b. La exhibición del Bernabéu está documentada por Cuadernos de Fútbol y por la propia NFL,
+   pero con un día de diferencia: unos dicen 15 de noviembre de 1958 y otros 16. ¿Tienes
+   forma de cerrar la fecha?
+3c. ¿Dónde encaja entonces vuestro 15 de octubre de 1960? ¿Primer partido de un equipo con
+   base en Madrid, primer partido de liga colegial, otra cosa?
 4. ¿Lo entendéis como «el primero en España» o como «el primero entre institutos
    estadounidenses que estaban en España»? ¿Dónde pondrías tú la frontera?
 5. ¿De dónde sale esa fecha? ¿Hay anuarios del Madrid High School, actas, fotos, prensa de
