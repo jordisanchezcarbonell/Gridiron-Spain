@@ -11,6 +11,30 @@ const FCFA = "Federació Catalana de Futbol Americà (FCFA)";
 export const spainSources: Source[] = [
   // --- Federations & history -------------------------------------------
   {
+    id: "aoshs-madrid-high-school",
+    title: "School Histories — Madrid High School (Spain, 1955-1970)",
+    publisher: "American Overseas Schools Historical Society",
+    url: "https://aoshs.org/collections/school-histories/eu/es/940/",
+    accessedAt: "2026-10-18",
+    sourceType: "archive",
+    notes: {
+      es: "Ficha histórica de la sociedad que conserva el archivo de los institutos estadounidenses en el extranjero. Sitúa el inicio del tackle football en el curso 1960-61, que corrobora de forma independiente la fecha que reclama Royal Oaks Knights, y documenta el instituto desde 1955 hasta su renombrado como Torrejón American High School en 1970-71.",
+      en: "Historical record from the society that preserves the archive of American overseas schools. It dates the start of tackle football to the 1960-61 school year, independently corroborating the date Royal Oaks Knights claims, and documents the school from 1955 to its renaming as Torrejon American High School in 1970-71.",
+    },
+  },
+  {
+    id: "aoshs-torrejon-high-school",
+    title: "School Histories — Torrejon High School (Spain, 1970-1992)",
+    publisher: "American Overseas Schools Historical Society",
+    url: "https://aoshs.org/collections/school-histories/eu/es/683/",
+    accessedAt: "2026-10-18",
+    sourceType: "archive",
+    notes: {
+      es: "Continuación del Madrid High School. Da la mascota, Silver Knights, y describe los equipos internos organizados por zonas: Royal Oaks, la zona residencial y la base. Sitúa el cambio de nombre en el curso 1970-71, frente al 1972 que da el club.",
+      en: "Successor to Madrid High School. It gives the mascot, Silver Knights, and describes internal teams organised by area: Royal Oaks, the housing area and the base. It dates the renaming to the 1970-71 school year, against the 1972 the club gives.",
+    },
+  },
+  {
     id: "commanders-bernabeu-2025",
     title: "10 Things to Know About Madrid's Santiago Bernabéu Stadium",
     publisher: "Washington Commanders",

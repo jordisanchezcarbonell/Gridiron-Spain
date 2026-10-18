@@ -50,7 +50,7 @@ export const antesDe1988: Article = {
   sourceIds: [
     "cuadernos-futbol-americano", "commanders-bernabeu-2025",
     "rok-quienes-somos", "camioneros-historia-club", "dracs-historia-club", "osos-historia",
-    "fcfa-historia", "bufals-historia",
+    "fcfa-historia", "bufals-historia", "aoshs-madrid-high-school", "aoshs-torrejon-high-school",
   ],
   content: [
     {
@@ -107,6 +107,20 @@ export const antesDe1988: Article = {
       text: {
         es: "Cuadernos de Fútbol sitúa la exhibición el 15 de noviembre de 1958. La web oficial de los Washington Commanders y el club Camioneros de Coslada la sitúan el 16. Un día de diferencia que no hemos podido resolver, y que preferimos publicar antes que esconder. Las imágenes existen: están en el NO-DO n.º 829, en la Filmoteca de RTVE.",
         en: "Cuadernos de Fútbol dates the exhibition to 15 November 1958. The Washington Commanders' official site and the club Camioneros de Coslada date it to the 16th. A one-day difference we have not been able to resolve, and which we prefer to publish rather than hide. The footage exists: it is in NO-DO no. 829, in RTVE's film archive.",
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Hay una fuente que no es ni española ni de ningún club y que permite fechar el salto al tackle. La American Overseas Schools Historical Society, que conserva el archivo de los institutos estadounidenses en el extranjero, recoge que el tackle football se convirtió en deporte del Madrid High School en el curso 1960-61, y que ese fue el primer año en que el equipo viajó fuera de España para competir. [[src:aoshs-madrid-high-school]] Royal Oaks Knights sitúa su primer partido de tackle el 15 de octubre de 1960, que cae justo en ese curso. [[src:rok-quienes-somos]]`,
+        en: `There is one source that is neither Spanish nor from any club, and it lets us date the move to tackle. The American Overseas Schools Historical Society, which keeps the archive of American overseas schools, records that tackle football became a Madrid High School sport in the 1960-61 school year, and that this was the first year the team travelled outside Spain to compete. [[src:aoshs-madrid-high-school]] Royal Oaks Knights date their first tackle game to 15 October 1960, which falls inside that school year. [[src:rok-quienes-somos]]`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `El mismo archivo documenta el instituto desde 1955, cuando formaba parte de la Madrid American Dependents School, hasta superar los novecientos alumnos en 1960-61, y anota que sus equipos de fútbol y baloncesto fueron campeones de España durante años. [[src:aoshs-madrid-high-school]] La mascota eran los Silver Knights. [[src:aoshs-torrejon-high-school]]`,
+        en: `The same archive documents the school from 1955, when it was part of Madrid American Dependents School, to passing nine hundred students in 1960-61, and notes that its football and basketball teams were champions of Spain for years. [[src:aoshs-madrid-high-school]] The mascot was the Silver Knights. [[src:aoshs-torrejon-high-school]]`,
       },
     },
     {

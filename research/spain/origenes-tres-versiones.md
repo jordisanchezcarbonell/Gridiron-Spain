@@ -105,3 +105,55 @@ de esa primavera. Dos fuentes contra una: mantenemos 1989.
 Royal Oaks Knights, Camioneros de Coslada y Osos Rivas citan por separado la base aerea de
 Torrejon de Ardoz como origen o apoyo. Tres clubes sin relacion entre si apuntando al mismo
 sitio es la pista mas solida que tenemos sobre como entro el deporte en Espania.
+
+
+---
+
+## 18-10-2026: la via estadounidense, y es gratis
+
+La idea era ir al archivo de *Stars and Stripes*, el diario de las tropas estadounidenses en
+Europa, que cubria el deporte de las bases. Aviso: **starsandstripesarchive.com no sirve**,
+es un producto en DVD solo de la Segunda Guerra Mundial (junio del 44 a mayo del 45). Las
+ediciones europeas de 1948 a 1999 estan en NewspaperArchive y en Fold3, **las dos de pago**.
+
+Pero buscando esa via aparecio otra mejor y abierta: la **American Overseas Schools
+Historical Society** (aoshs.org), que conserva el archivo de los institutos estadounidenses
+en el extranjero y tiene ficha propia del Madrid High School y del Torrejon High School.
+
+### Lo que aporta, y no es poco
+
+| Dato | Fuente |
+|---|---|
+| **El tackle football llega al Madrid High School en el curso 1960-61**, y es el primer anio en que el equipo viaja fuera de Espania para competir | [AOSHS Madrid HS](https://aoshs.org/collections/school-histories/eu/es/940/) |
+| El instituto opera de 1955 a 1970, como parte de la Madrid American Dependents School | AOSHS Madrid HS |
+| 6 de septiembre de 1955, empieza el segundo curso. 8 de septiembre de 1959, inauguracion del edificio nuevo | AOSHS Madrid HS |
+| Casi 750 alumnos en 1959 y mas de 900 en 1960-61 | AOSHS Madrid HS |
+| "Los equipos de futbol y baloncesto fueron campeones de Espania durante muchos anios" | AOSHS Madrid HS |
+| Mascota: **Silver Knights**, colores rojo y plata | [AOSHS Torrejon HS](https://aoshs.org/collections/school-histories/eu/es/683/) |
+
+**Lo importante:** Royal Oaks situa su primer partido de tackle el 15 de octubre de 1960.
+El curso 1960-61 empieza en septiembre de 1960. **La fecha del club cae exactamente dentro
+del curso en que, segun un archivo independiente y estadounidense, el tackle llego al
+instituto.** Es la primera corroboracion de ese dato que no viene de un club espaniol.
+
+### Y una discrepancia nueva, para la entrevista
+
+AOSHS situa el cambio de nombre a Torrejon American High School **en el curso 1970-71**, y
+Wikipedia lo da oficialmente en **1971**. Royal Oaks situa en **1972** la division del
+distrito escolar que creo THS Knights y Royal Oaks Knights.
+
+Ademas, AOSHS describe los equipos del instituto organizados por zonas: "the Royal Oaks,
+the housing area, and the Base", y mas tarde como equipos Red y White. Eso suena a
+**equipos internos dentro de un mismo instituto**, no a dos institutos separados.
+
+Puede que sean dos cosas distintas, el renombrado en 1970-71 y la division del distrito en
+1972, o puede que el club haya comprimido ambas. **Preguntarselo a Marco.**
+
+### Lo que queda por explorar
+
+1. **NewspaperArchive o Fold3**, un mes de suscripcion, buscando *Stars and Stripes*
+   europeo de noviembre de 1958 y octubre de 1960. Ahi estarian las cronicas reales.
+2. **Los anuarios del Madrid High School**, el *Accolade*. Hay ejemplares en Classmates y en
+   Ancestry, y al menos uno de 1958. Un anuario de 1960-61 tendria la foto del equipo y el
+   calendario de aquella primera temporada de tackle.
+3. **AOSHS acepta donaciones y consultas de archivo.** Son la via mas directa, y gratis.
