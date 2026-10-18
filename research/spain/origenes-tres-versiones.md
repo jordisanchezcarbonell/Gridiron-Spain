@@ -157,3 +157,54 @@ Puede que sean dos cosas distintas, el renombrado en 1970-71 y la division del d
    Ancestry, y al menos uno de 1958. Un anuario de 1960-61 tendria la foto del equipo y el
    calendario de aquella primera temporada de tackle.
 3. **AOSHS acepta donaciones y consultas de archivo.** Son la via mas directa, y gratis.
+
+### 18-10-2026, segunda vuelta: las mascotas, una por una
+
+AOSHS no tiene solo la ficha del Madrid High School. Tiene la de **los veinticinco centros
+estadounidenses que hubo en España**. Y el relato de Royal Oaks nombra a sus rivales por el
+apodo, lo que permite comprobarlos uno a uno contra un archivo que no es de ningún club
+español.
+
+| Lo que dice Royal Oaks | Lo que dice AOSHS | Veredicto |
+|---|---|---|
+| Zaragoza **Zebras**, 15-11-1958 | Zaragoza American School, abierto en marzo de 1956: «la mascota original del colegio era la Zebra» | **Apodo confirmado** |
+| Sevilla HS **Toros**, 1959 | Seville Dependent School, 1955 a enero de 1959: «la mascota era el Toro» | **Apodo confirmado** |
+| Rota HS **Admirals**, 1959 | Rota se instala en la base naval en septiembre de 1958: «los equipos eran conocidos como los Admirals» | **Apodo confirmado** |
+| Primer tackle, 15-10-1960 | Madrid HS: el tackle llega en el curso 1960-61 | **Fecha confirmada** |
+| Dominio de Madrid en los sesenta | Sevilla HS: Sevilla gana a Madrid 14-12 «por primera vez en 1969», Madrid en Clase A y Sevilla en Clase C | **Confirmado por el rival** |
+
+**Los tres apodos salen bien.** El club no se los ha inventado.
+
+#### La imprecisión real, que es de etiqueta y no de dato
+
+Lo que no encaja son los **nombres de las instituciones**:
+
+- **Zaragoza High School no existió hasta 1960**, cuando el Zaragoza American School se
+  dividió en dos centros. En 1958 el equipo era del colegio combinado.
+- **Sevilla High School abrió en enero de 1959**, al trasladarse a San Pablo. Antes era el
+  Seville Dependent School, llamado primero Washington Irving School y desde 1957-58
+  «Sevilla High».
+
+Es decir: en 1958 y 1959 esos equipos existían y ya se llamaban Zebras y Toros, pero los
+centros tenían otro nombre oficial. **Royal Oaks ha aplicado hacia atrás los nombres
+posteriores.** Eso es una imprecisión de etiqueta, no un dato falso, y conviene decirlo así.
+
+#### Un detalle que conviene no pasar por alto
+
+El instituto de Zaragoza tenía **seis alumnos de secundaria en 1957-58**. Al curso siguiente
+el colegio pasó a 460 alumnos de K a 12. Que en noviembre de 1958 pudieran formar un equipo
+es creíble por el salto de matrícula, pero el dato merece una pregunta.
+
+#### Y el mejor hallazgo, por venir de quien viene
+
+La ficha del **Sevilla High School** —la de un rival— dice que Sevilla ganó a Madrid 14-12
+«por primera vez en 1969». Royal Oaks reclama haber dominado los sesenta. **El archivo de
+quien lo sufría lo confirma sin pretenderlo**, y eso vale más que cualquier cosa que Madrid
+pueda decir de sí mismo.
+
+#### Lo que sigue abierto, y ya no necesita suscripción
+
+AOSHS tiene también una **colección de anuarios** por centro, con el Madrid HS y el Torrejón
+HS entre ellos. La página índice no lista los años. Un anuario de 1960-61 tendría la foto del
+equipo y el calendario de la primera temporada de tackle. **Hay que preguntarles directamente
+qué años conservan**, y eso es gratis.

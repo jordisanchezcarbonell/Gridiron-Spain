@@ -286,3 +286,30 @@ Merece la pena abrir con esto: les estamos dando algo, no solo pidiendo.
     cubrían el deporte de las bases y están digitalizadas de 1948 a 1999, pero de pago.
     ¿Alguien del club ha trabajado ya ese archivo? Si no, ¿os interesaría que lo hiciéramos
     nosotros y compartiéramos lo que salga?
+
+### Y las mascotas salen bien (añadido el 18-10-2026)
+
+Hemos comprobado los tres apodos que dan contra AOSHS y **los tres son correctos**: la
+mascota original del Zaragoza American School era la Zebra, la del Seville Dependent School
+era el Toro, y los equipos de Rota eran los Admirals. Decírselo. Es la mejor manera de abrir.
+
+Lo único que no encaja son los nombres de los centros: el Zaragoza High School no existió
+hasta 1960 y el Sevilla High School abrió en enero de 1959, así que en 1958-59 esos equipos
+pertenecían a colegios con otro nombre oficial.
+
+40. En 1958 el Zaragoza High School todavía no existía como centro separado, y el Sevilla
+    High School abrió en enero de 1959. Los apodos Zebras y Toros sí están documentados
+    antes. ¿Vuestras fuentes dan los nombres de los institutos, o los habéis reconstruido
+    con los nombres que tuvieron después?
+
+41. La ficha del Zaragoza American School dice que en el curso 1957-58 el instituto tenía
+    **seis alumnos** de secundaria, y que al siguiente el colegio pasó a 460 de K a 12.
+    ¿Sabéis cuántos jugadores tenía aquel equipo de 1958?
+
+42. El dato que más nos ha gustado no viene de vosotros: la ficha del Sevilla High School
+    dice que Sevilla os ganó 14-12 «por primera vez en 1969», con Madrid en Clase A y
+    Sevilla en Clase C. ¿Guardáis el palmarés de aquella racha?
+
+43. AOSHS tiene una colección de anuarios por centro, incluido el vuestro, pero el índice no
+    dice qué años conserva. ¿Habéis contactado con ellos? Si no, lo hacemos nosotros y os
+    pasamos lo que haya.

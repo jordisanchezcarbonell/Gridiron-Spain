@@ -51,6 +51,8 @@ export const antesDe1988: Article = {
     "cuadernos-futbol-americano", "commanders-bernabeu-2025",
     "rok-quienes-somos", "camioneros-historia-club", "dracs-historia-club", "osos-historia",
     "fcfa-historia", "bufals-historia", "aoshs-madrid-high-school", "aoshs-torrejon-high-school",
+    "aoshs-zaragoza-american-school", "aoshs-zaragoza-high-school", "aoshs-seville-dependent-school",
+    "aoshs-sevilla-high-school", "aoshs-rota-high-school",
   ],
   content: [
     {
@@ -121,6 +123,33 @@ export const antesDe1988: Article = {
       text: {
         es: `El mismo archivo documenta el instituto desde 1955, cuando formaba parte de la Madrid American Dependents School, hasta superar los novecientos alumnos en 1960-61, y anota que sus equipos de fútbol y baloncesto fueron campeones de España durante años. [[src:aoshs-madrid-high-school]] La mascota eran los Silver Knights. [[src:aoshs-torrejon-high-school]]`,
         en: `The same archive documents the school from 1955, when it was part of Madrid American Dependents School, to passing nine hundred students in 1960-61, and notes that its football and basketball teams were champions of Spain for years. [[src:aoshs-madrid-high-school]] The mascot was the Silver Knights. [[src:aoshs-torrejon-high-school]]`,
+      },
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "las-mascotas",
+      text: { es: "Las mascotas, una por una", en: "The mascots, one by one" },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `El relato de Royal Oaks nombra a los rivales de aquellos primeros años por su apodo: los Zebras de Zaragoza en 1958, y en el campeonato de 1959 los Toros de Sevilla y los Admirals de Rota. [[src:rok-quienes-somos]] Los apodos se pueden comprobar uno a uno en el archivo estadounidense, y los tres salen bien. La ficha del Zaragoza American School, abierto en marzo de 1956, dice que su mascota original era la Zebra. [[src:aoshs-zaragoza-american-school]] La del Seville Dependent School, abierta en 1955, dice que la mascota era el Toro. [[src:aoshs-seville-dependent-school]] Y la de Rota, que se instaló en la base naval en septiembre de 1958, que sus equipos eran los Admirals. [[src:aoshs-rota-high-school]]`,
+        en: `The Royal Oaks account names the opponents of those early years by nickname: Zaragoza's Zebras in 1958, and at the 1959 championship Seville's Toros and Rota's Admirals. [[src:rok-quienes-somos]] Those nicknames can be checked one by one against the American archive, and all three hold up. The record for Zaragoza American School, opened in March 1956, says its original mascot was the Zebra. [[src:aoshs-zaragoza-american-school]] The one for Seville Dependent School, opened in 1955, says the mascot was the Toro. [[src:aoshs-seville-dependent-school]] And Rota's, which moved to the naval station in September 1958, says its teams were the Admirals. [[src:aoshs-rota-high-school]]`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Lo que no encaja es el nombre de las instituciones, no el de los equipos. El Zaragoza High School no existió como centro separado hasta 1960, cuando el colegio se dividió en dos. [[src:aoshs-zaragoza-high-school]] El Sevilla High School abrió en enero de 1959, al trasladarse a San Pablo. [[src:aoshs-sevilla-high-school]] Así que en 1958 y 1959 esos equipos existían y ya se llamaban Zebras y Toros, pero los centros tenían otro nombre oficial. El club ha aplicado hacia atrás los nombres posteriores, que es una imprecisión de etiqueta y no un dato inventado.`,
+        en: `What does not match is the name of the institutions, not that of the teams. Zaragoza High School did not exist as a separate school until 1960, when the school split in two. [[src:aoshs-zaragoza-high-school]] Sevilla High School opened in January 1959, on moving to San Pablo. [[src:aoshs-sevilla-high-school]] So in 1958 and 1959 those teams existed and were already called Zebras and Toros, but the schools had a different official name. The club has applied the later names backwards, which is a labelling imprecision and not an invented fact.`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Y hay un detalle que vale más que cualquier cosa que pueda decir Madrid de sí mismo. La ficha del Sevilla High School, que es la de un rival, cuenta que Sevilla ganó al equipo de Madrid 14-12 «por primera vez en 1969», con Madrid en Clase A y Sevilla en Clase C. [[src:aoshs-sevilla-high-school]] Royal Oaks reclama haber dominado los años sesenta. El archivo de quien lo sufría lo confirma sin pretenderlo.`,
+        en: `And there is one detail worth more than anything Madrid could say about itself. The Sevilla High School record, which belongs to a rival, says Seville beat the Madrid team 14-12 "for the first time in 1969", with Madrid in Class A and Seville in Class C. [[src:aoshs-sevilla-high-school]] Royal Oaks claims to have dominated the sixties. The archive of the school on the receiving end confirms it without meaning to.`,
       },
     },
     {
