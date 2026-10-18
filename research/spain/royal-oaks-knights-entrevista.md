@@ -228,3 +228,61 @@ No vamos a pedir sin dar. Lo que tenemos:
 3. Si se resuelve el origen: cualificar la frase del primer partido en
    `badalona-dracs.ts`, `historia-espana.ts`, `catalonia.ts` y `timeline/index.ts`
 4. `npm run content:check` antes de publicar nada
+
+---
+
+## Bloque nuevo (18-10-2026): lo que dice el archivo estadounidense
+
+Antes de la entrevista apareció una fuente que no es ni española ni de ningún club: la
+**American Overseas Schools Historical Society**, que conserva el archivo de los institutos
+estadounidenses en el extranjero y tiene ficha propia del Madrid High School y del Torrejón
+High School. Esto cambia el tono de estas preguntas: ya no es «cuéntame vuestra versión»,
+es «tengo un documento delante y hay cosas que encajan y cosas que no».
+
+### Lo que **confirma** su relato, y conviene decírselo
+
+AOSHS: *«Tackle football became a sport for the 1960-61 school year, and this was the first
+year that the football team traveled outside of Spain for competitions.»*
+
+El club sitúa su primer partido de tackle el **15 de octubre de 1960**, que cae dentro de
+ese curso. **Es la primera corroboración de ese dato que no viene de un club español.**
+Merece la pena abrir con esto: les estamos dando algo, no solo pidiendo.
+
+32. Hemos encontrado en el archivo de la American Overseas Schools Historical Society que
+    el tackle football se convirtió en deporte del Madrid High School en el curso 1960-61,
+    y que fue el primer año que el equipo viajó fuera de España. Vuestra fecha del 15 de
+    octubre de 1960 encaja. ¿Conocíais esta fuente? ¿De dónde sale vuestra fecha exacta?
+
+33. El archivo dice que ese curso fue el primero en que el equipo salió de España a
+    competir. ¿Sabéis adónde iban? ¿Alemania, Italia, las bases de Reino Unido?
+
+### Lo que **no** encaja, y hay que preguntarlo sin acusar
+
+34. AOSHS y Wikipedia sitúan el cambio de nombre de Madrid American High School a Torrejón
+    American High School en el **curso 1970-71**. Vosotros situáis en **1972** la división
+    del distrito escolar que creó THS Knights y Royal Oaks Knights. ¿Son dos cosas
+    distintas —el renombrado primero y la división después— o hay una imprecisión en una de
+    las dos fuentes?
+
+35. Esta es la importante. AOSHS describe los equipos del instituto organizados por zonas:
+    *«the Royal Oaks, the housing area, and the Base»*, y más tarde como equipos Red y
+    White. Eso suena a **equipos internos de un mismo instituto**, no a dos institutos
+    separados. ¿Royal Oaks fue primero un equipo interno del instituto y después un club
+    propio? ¿Cuándo dejó de ser lo uno para ser lo otro?
+
+36. La mascota del instituto eran los **Silver Knights**, en rojo y plata. ¿De ahí viene el
+    nombre Knights, y vuestros colores actuales?
+
+37. El anuario del instituto se llamaba ***Accolade***. ¿Tenéis ejemplares? Un *Accolade* de
+    1960-61 tendría la foto del equipo y el calendario de aquella primera temporada de
+    tackle, y sería la prueba documental que nos falta.
+
+38. AOSHS dice que *«los equipos de fútbol y baloncesto fueron campeones de España durante
+    muchos años»*. ¿Tenéis el palmarés completo de aquella etapa, año por año?
+
+### Y una pregunta de archivo
+
+39. Las ediciones europeas de *Stars and Stripes*, el diario de las tropas estadounidenses,
+    cubrían el deporte de las bases y están digitalizadas de 1948 a 1999, pero de pago.
+    ¿Alguien del club ha trabajado ya ese archivo? Si no, ¿os interesaría que lo hiciéramos
+    nosotros y compartiéramos lo que salga?
