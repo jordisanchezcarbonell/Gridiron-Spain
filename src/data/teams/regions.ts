@@ -232,8 +232,12 @@ export const regionalTeams: Team[] = [
         en: "The Valencia club was founded in 2003 [[src:giants-historia]] and played in the top flight between 2012-13 and 2017-18. [[src:fefa-team-giants]]",
       },
       {
-        es: "Su palmarés tiene una discrepancia que conviene señalar: la FEFA le atribuye cinco subcampeonatos de LNFA 2 (2008, 2009, 2010, 2012 y 2024) [[src:fefa-palmares]], mientras que la web del club solo recoge cuatro y no menciona el de 2008. [[src:giants-historia]]",
-        en: "Its honours carry a discrepancy worth flagging: FEFA credits it with five LNFA 2 runner-up finishes (2008, 2009, 2010, 2012 and 2024) [[src:fefa-palmares]], while the club's own website lists only four and does not mention 2008. [[src:giants-historia]]",
+        es: "Su palmarés tiene una discrepancia que conviene señalar: la FEFA le atribuye cinco subcampeonatos de LNFA 2 (2008, 2009, 2010, 2012 y 2024) [[src:fefa-palmares]], mientras que el club enumera exactamente cuatro —2009, 2010, 2012 y 2024— y no menciona 2008 en ningún momento. [[src:giants-historia]] El club los llama subcampeonatos de la Serie B.",
+        en: "Its honours carry a discrepancy worth flagging: FEFA credits it with five LNFA 2 runner-up finishes (2008, 2009, 2010, 2012 and 2024) [[src:fefa-palmares]], while the club lists exactly four — 2009, 2010, 2012 and 2024 — and never mentions 2008. [[src:giants-historia]] The club calls them Serie B runner-up finishes.",
+      },
+      {
+        es: "Su primer título llegó en 2009, la LVFA Senior, y repitió en 2019 sumando también la LVFA Junior. Ascendió a la máxima categoría en 2012, dio un paso atrás en 2018-19 y volvió a la competición nacional en 2021. [[src:giants-historia]]",
+        en: "Its first title came in 2009, the LVFA Senior, repeated in 2019 along with the LVFA Junior. It was promoted to the top flight in 2012, stepped back in 2018-19 and returned to national competition in 2021. [[src:giants-historia]]",
       },
       {
         es: "En 2025-26 fue campeón de la Liga Valenciana y alcanzó las semifinales de la LNFA 2. [[src:fefa-lnfa2-semis-2026]]",
@@ -303,7 +307,7 @@ export const regionalTeams: Team[] = [
       "osm-nominatim",
     ],
     verificationStatus: "partial",
-    lastVerifiedAt: "2026-10-02",
+    lastVerifiedAt: "2026-10-18",
     researchNotes: {
       es: "Discrepancia: FEFA atribuye a Giants el subcampeonato de LNFA 2 de 2008 (además de 2009, 2010, 2012 y 2024); la web del club solo cita 2009, 2010, 2012 y 2024.",
       en: "Discrepancy: FEFA credits Giants with the 2008 LNFA 2 runner-up spot (plus 2009, 2010, 2012, 2024); the club site lists only 2009, 2010, 2012 and 2024.",

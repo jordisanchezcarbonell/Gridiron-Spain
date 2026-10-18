@@ -61,12 +61,29 @@ tiene vacia de fechas o esta caida.
    Ciudad Deportiva Santo Domingo, campo F5.
 3. **barcelona-bufals** y el reportaje del origen: aniadido el partido de mayo de 1988.
 
-## Pendiente
+## Los dos pendientes, resueltos el 18-10-2026
 
-- **guadalajara-stings**: contrastar si la conferencia es Norte o Aragonesa. Puede ser un
-  error del club, un cambio de nombre o un error nuestro.
-- **valencia-giants**: su pagina de historia, que es donde estara el palmares que permite
-  resolver si fueron cuatro o cinco subcampeonatos de LNFA 2.
+**guadalajara-stings: nuestra ficha era la correcta.** La FEFA publica "LNFA 2 -
+CONFERENCIA NORTE" y la clasificacion lo confirma: Valladolid Penguins, Coyotes Santurtzi,
+Cantabria Bisons, Berserkers Torrelavega, Villamayor Mercenarios y Stings sextos con 0-5.
+Es la web del club la que se desvia al decir "Conferencia Aragonesa". Tambien discrepa en
+el campo: la FEFA y nuestra ficha dicen CD Jeronimo de la Morena y el club dice Anexos del
+Pedro Escartin. No se cambia nada: la ficha ya tenia el campo correcto, las dos redes
+sociales y el historial completo.
+
+**valencia-giants: la discrepancia es real y queda confirmada.** Su pagina de historia
+enumera exactamente cuatro subcampeonatos, 2009, 2010, 2012 y 2024, y no menciona 2008 en
+ningun momento. La FEFA le atribuye cinco. Se aniaden ademas los anios exactos a la ficha y
+cuatro hitos que no teniamos: primer titulo en 2009 (LVFA Senior), doblete en 2019, ascenso
+a la maxima categoria en 2012, paso atras en 2018-19 y vuelta a la competicion nacional en
+2021. El club llama a esos subcampeonatos "Serie B", no "LNFA 2".
+
+## Lo que esto dice del archivo
+
+De las dos discrepancias que quedaban abiertas, **en una el archivo tenia razon y en la
+otra la tenia a medias y ya lo decia**. Despues de revisar 31 webs de club, el numero de
+errores propios encontrados en los datos de equipo es bajo. Lo que ha aparecido no son
+tanto errores como huecos, y la mayoria estaban declarados.
 - La leccion de fondo: **dos veces hoy el dato que faltaba estaba dentro de una fuente que
   el archivo ya citaba** (el articulo de Cuadernos de Futbol y la historia de los Bufals).
   No basta con tener la fuente dada de alta: hay que haberla leido entera.
