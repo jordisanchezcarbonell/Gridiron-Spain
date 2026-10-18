@@ -313,3 +313,25 @@ pertenecían a colegios con otro nombre oficial.
 43. AOSHS tiene una colección de anuarios por centro, incluido el vuestro, pero el índice no
     dice qué años conserva. ¿Habéis contactado con ellos? Si no, lo hacemos nosotros y os
     pasamos lo que haya.
+
+### La pregunta difícil (añadido el 18-10-2026)
+
+AOSHS tiene ficha propia de Royal Oaks. Dice que el colegio funcionó **de 1957 a 1992**, «a
+diecinueve millas de la base aérea de Torrejón, en la zona residencial gubernamental de
+Royal Oaks, en las afueras del norte de Madrid» —coincide con El Encinar de los Reyes— pero
+que era un centro de **primaria y secundaria obligatoria**. Nunca tuvo instituto.
+
+Esto hay que preguntarlo con cuidado y sin tono de pillarles: puede que tengan la respuesta
+y que la explicación sea sencilla.
+
+44. El archivo dice que el colegio de Royal Oaks existió desde 1957 pero solo hasta 8.º
+    grado, sin instituto. Entonces, los chicos de Royal Oaks que jugaban al fútbol
+    americano, ¿estudiaban en Torrejón y competían como equipo del barrio, o hubo en algún
+    momento un instituto en Royal Oaks que el archivo no recoge?
+
+45. Si eran un equipo del barrio dentro del instituto de Torrejón, ¿cuándo pasó Royal Oaks
+    Knights a ser un club independiente? Esa fecha es la que de verdad tendría que llevar
+    el escudo.
+
+46. El colegio de Royal Oaks abrió en 1957, un año antes del primer partido que contáis. ¿Es
+    casualidad o tiene que ver?

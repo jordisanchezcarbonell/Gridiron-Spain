@@ -53,6 +53,7 @@ export const antesDe1988: Article = {
     "fcfa-historia", "bufals-historia", "aoshs-madrid-high-school", "aoshs-torrejon-high-school",
     "aoshs-zaragoza-american-school", "aoshs-zaragoza-high-school", "aoshs-seville-dependent-school",
     "aoshs-sevilla-high-school", "aoshs-rota-high-school",
+    "aoshs-indice-espana", "aoshs-royal-oaks-school", "aoshs-madrid-american-school", "aoshs-santa-clara",
   ],
   content: [
     {
@@ -150,6 +151,40 @@ export const antesDe1988: Article = {
       text: {
         es: `Y hay un detalle que vale más que cualquier cosa que pueda decir Madrid de sí mismo. La ficha del Sevilla High School, que es la de un rival, cuenta que Sevilla ganó al equipo de Madrid 14-12 «por primera vez en 1969», con Madrid en Clase A y Sevilla en Clase C. [[src:aoshs-sevilla-high-school]] Royal Oaks reclama haber dominado los años sesenta. El archivo de quien lo sufría lo confirma sin pretenderlo.`,
         en: `And there is one detail worth more than anything Madrid could say about itself. The Sevilla High School record, which belongs to a rival, says Seville beat the Madrid team 14-12 "for the first time in 1969", with Madrid in Class A and Seville in Class C. [[src:aoshs-sevilla-high-school]] Royal Oaks claims to have dominated the sixties. The archive of the school on the receiving end confirms it without meaning to.`,
+      },
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "mapa-colegios",
+      text: { es: "No eran cuatro colegios", en: "There were not four schools" },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Todos los relatos del origen, el de Royal Oaks incluido, manejan cuatro institutos: Madrid, Zaragoza, Sevilla y Rota. El índice de la American Overseas Schools Historical Society lista veinticinco entradas en España. [[src:aoshs-indice-espana]] Entre ellas hay sitios que no aparecen en ninguna historia del deporte: Alcoy, Aranjuez, Benidorm, Figueras, Irún, Mallorca, Sonseca.`,
+        en: `Every account of the origin, Royal Oaks' included, works with four high schools: Madrid, Zaragoza, Seville and Rota. The American Overseas Schools Historical Society index lists twenty-five entries in Spain. [[src:aoshs-indice-espana]] Among them are places that appear in no history of the sport: Alcoy, Aranjuez, Benidorm, Figueras, Irún, Mallorca, Sonseca.`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Las fechas dibujan una ola. Alcoy, Aranjuez y Benidorm abrieron en 1954; Figueras, Irún y Mallorca en 1955. Los seis cerraron en 1964. [[src:aoshs-indice-espana]] De Alcoy sabemos que estaba «en el Alcoy Air Force Depot, cerca de la región de Alicante», enfrente de las viviendas militares estadounidenses. De los otros cinco, el propio archivo reconoce que «tras una investigación exhaustiva, no hemos podido encontrar más información sobre este colegio».`,
+        en: `The dates trace a wave. Alcoy, Aranjuez and Benidorm opened in 1954; Figueras, Irun and Majorca in 1955. All six closed in 1964. [[src:aoshs-indice-espana]] Of Alcoy we know it stood \u201con the Alcoy Air Force Depot near the Alicante region\u201d, across the street from American military housing. Of the other five the archive itself admits that \u201cafter extensive research, we have been unable to find any further information about this school\u201d.`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Dos fichas más ajustan la cronología. El primer colegio estadounidense de Madrid no es el de 1955: la Madrid American School, conocida como Generalissimo School, abrió en 1954 —primero en una habitación del hotel Velázquez, luego en el Instituto Mangold y desde septiembre de ese año en el edificio de Félix Boix 7— y se acreditó el 2 de mayo de 1955. [[src:aoshs-madrid-american-school]] Y Santa Clara, donde Royal Oaks sitúa el campeonato de 1959, era en efecto una zona residencial fuera de la base que daba servicio a la base aérea de San Pablo, en Sevilla. [[src:aoshs-santa-clara]]`,
+        en: `Two more records adjust the chronology. The first American school in Madrid is not the 1955 one: Madrid American School, known as the Generalissimo School, opened in 1954 \u2014 first in a room at the Velazquez hotel, then at the Mangold Institute and from September that year in the building at Felix Boix 7 \u2014 and was accredited on 2 May 1955. [[src:aoshs-madrid-american-school]] And Santa Clara, where Royal Oaks places the 1959 championship, was indeed an off-base housing area serving San Pablo Air Force Base in Seville. [[src:aoshs-santa-clara]]`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `Queda un dato incómodo. Royal Oaks tuvo colegio propio desde 1957 hasta 1992, «a diecinueve millas de la base aérea de Torrejón, en la zona residencial gubernamental de Royal Oaks, en las afueras del norte de Madrid», pero era un centro de primaria y secundaria obligatoria: **nunca tuvo instituto**. [[src:aoshs-royal-oaks-school]] Eso hace difícil que la división del distrito escolar de 1972 creara dos institutos, como cuenta el club, y encaja mejor con la otra ficha del archivo, que describe los equipos de Torrejón organizados por zonas: «the Royal Oaks, the housing area, and the Base». [[src:aoshs-torrejon-high-school]] No lo damos por resuelto: lo hemos preguntado al club.`,
+        en: `One awkward fact remains. Royal Oaks had its own school from 1957 to 1992, \u201cnineteen miles from Torrejon Air Base in the government Royal Oaks housing area on the northern outskirts of Madrid\u201d, but it was an elementary and middle school: **it never had a high school**. [[src:aoshs-royal-oaks-school]] That makes it hard for the 1972 district split to have created two high schools, as the club says, and fits better with the archive's other record, which describes the Torrejon teams organised by area: \u201cthe Royal Oaks, the housing area, and the Base\u201d. [[src:aoshs-torrejon-high-school]] We do not treat this as settled: we have put it to the club.`,
       },
     },
     {
