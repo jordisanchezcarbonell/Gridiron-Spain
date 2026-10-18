@@ -70,6 +70,7 @@ export const historiaEspana: Article = {
     "cuadernos-futbol-americano",
     "telescopio-madrid-pioneros",
     "firebats-historia-mural",
+    "commanders-bernabeu-2025",
   ],
   content: [
     {
@@ -87,8 +88,8 @@ export const historiaEspana: Article = {
     {
       type: "paragraph",
       text: {
-        es: "El primer partido de fútbol americano disputado en España se jugó el 19 de marzo de 1988: Badalona Drags contra los Palermo Cardinals italianos. [[src:fcfa-historia]] Meses después, el 23 de octubre de 1988, cuatro clubes (Dracs, Búfals, Boxers de Barcelona y Pioners de l'Hospitalet) constituyeron la Federació Catalana de Futbol Americà y disputaron la primera competición oficial del país, la I Lliga Catalana, que ganaron los Dracs. [[src:fcfa-historia]] [[src:enciclopedia-fcfa]] [[src:pioners-historia]]",
-        en: "The first American football game played in Spain took place on 19 March 1988: Badalona Drags against Italy's Palermo Cardinals. [[src:fcfa-historia]] Months later, on 23 October 1988, four clubs (Dracs, Búfals, Boxers de Barcelona and Pioners de l'Hospitalet) constituted the Catalan federation and played the country's first official competition, the first Lliga Catalana, won by the Dracs. [[src:fcfa-historia]] [[src:enciclopedia-fcfa]] [[src:pioners-historia]]",
+        es: "El 19 de marzo de 1988 se jugó el partido fundacional del fútbol americano español: Badalona Drags contra los Palermo Cardinals italianos. [[src:fcfa-historia]] No fue el primero disputado en suelo español. El 15 o el 16 de noviembre de 1958 —las fuentes no coinciden en el día— el Santiago Bernabéu acogió una exhibición entre los Tigers de la base estadounidense de Toul, en Francia, y los Taconeers de la de Giebelstadt, en Alemania, ante unos 100.000 espectadores que se habían quedado tras un Real Madrid-Valencia. Ganaron los Taconeers 20-6. [[src:cuadernos-futbol-americano]] [[src:commanders-bernabeu-2025]] Antes incluso, desde 1956, se jugaba al flag en el Madrid High School de la base de Torrejón de Ardoz, y en 1962 había una liga de tackle entre cuatro bases. [[src:cuadernos-futbol-americano]] La diferencia es de qué hablamos: football en territorio español desde los años cincuenta, dentro del circuito militar estadounidense, y fútbol americano español —de clubes españoles, con federación propia— desde 1988. Meses después, el 23 de octubre de 1988, cuatro clubes (Dracs, Búfals, Boxers de Barcelona y Pioners de l'Hospitalet) constituyeron la Federació Catalana de Futbol Americà y disputaron la primera competición oficial del país, la I Lliga Catalana, que ganaron los Dracs. [[src:fcfa-historia]] [[src:enciclopedia-fcfa]] [[src:pioners-historia]]",
+        en: "On 19 March 1988 the founding game of Spanish American football was played: Badalona Drags against Italy's Palermo Cardinals. [[src:fcfa-historia]] It was not the first played on Spanish soil. On 15 or 16 November 1958 — sources disagree on the day — the Santiago Bernabéu hosted an exhibition between the Tigers from the US base at Toul, France, and the Taconeers from Giebelstadt, Germany, before around 100,000 spectators who had stayed on after a Real Madrid-Valencia match. The Taconeers won 20-6. [[src:cuadernos-futbol-americano]] [[src:commanders-bernabeu-2025]] Earlier still, from 1956, flag football was played at Madrid High School on the Torrejón de Ardoz base, and by 1962 there was a tackle league between four bases. [[src:cuadernos-futbol-americano]] The difference is what we are talking about: football on Spanish territory from the 1950s, inside the American military circuit, and Spanish American football — Spanish clubs, with their own federation — from 1988.",
       },
     },
     {

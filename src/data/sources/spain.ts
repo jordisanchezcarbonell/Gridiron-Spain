@@ -11,6 +11,19 @@ const FCFA = "Federació Catalana de Futbol Americà (FCFA)";
 export const spainSources: Source[] = [
   // --- Federations & history -------------------------------------------
   {
+    id: "commanders-bernabeu-2025",
+    title: "10 Things to Know About Madrid's Santiago Bernabéu Stadium",
+    publisher: "Washington Commanders",
+    url: "https://www.commanders.com/news/10-things-to-know-about-madrid-santiago-bernabeu-stadium",
+    publishedAt: "2025-11-13",
+    accessedAt: "2026-10-18",
+    sourceType: "club-official",
+    notes: {
+      es: "Artículo de Hannah Lichtenstein publicado por el club de la NFL con motivo del partido de Madrid. Sitúa la exhibición del Bernabéu el 16 de noviembre de 1958, entre los Tigers de la base de Toul y los Tacooners de la de Giebelstadt. Fuente independiente de los clubes españoles.",
+      en: "Article by Hannah Lichtenstein published by the NFL club ahead of the Madrid game. It dates the Bernabéu exhibition to 16 November 1958, between the Tigers from Toul and the Tacooners from Giebelstadt. A source independent of the Spanish clubs.",
+    },
+  },
+  {
     id: "camioneros-historia-club",
     title: "Historia — Una historia de Fútbol Americano",
     publisher: "Camioneros de Coslada",
