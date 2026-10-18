@@ -259,6 +259,18 @@ export const madridEuropeSources: Source[] = [
   { id: "diarioalcobendas-knights-2026", title: "El Royal Oaks Knights busca revalidar este sábado el título de campeón de Madrid", publisher: "Diario de Alcobendas", url: "https://www.diariodealcobendas.com/post/el-royal-oaks-knights-busca-revalidar-este-s%C3%A1bado-el-t%C3%ADtulo-de-campe%C3%B3n-de-madrid", publishedAt: "2026-04-15", accessedAt: A, sourceType: "press" },
   { id: "diarioalcobendas-cavaliers-2026", title: "Los Alcobendas Cavaliers sellan su regreso a la Serie A del fútbol americano nacional tras arrollar en la final", publisher: "Diario de Alcobendas", url: "https://www.diariodealcobendas.com/post/los-alcobendas-cavaliers-sellan-su-regreso-a-la-serie-a-del-f%C3%BAtbol-americano-nacional-tras-arrollar", publishedAt: "2026-06-19", accessedAt: A, sourceType: "press" },
   { id: "noroestemadrid-cavaliers-2026", title: "Fútbol americano: Alcobendas Cavaliers, campeones de Madrid", publisher: "Noroeste Madrid", url: "https://www.noroestemadrid.com/2026/05/futbol-americano-alcobendas-cavaliers-campeones-de-madrid/", publishedAt: "2026-05-01", accessedAt: A, sourceType: "press" },
+  {
+    id: "osos-historia",
+    title: "Historia — El primer club de fútbol americano en la Comunidad de Madrid",
+    publisher: "Osos Rivas",
+    url: "https://www.ososrivas.com/es/content/pages/13599",
+    accessedAt: "2026-10-18",
+    sourceType: "club-official",
+    notes: {
+      es: "Relato del propio club. Confirma la fundación como Madrid Bears en la primavera de 1989, que solo teníamos en Wikipedia y figuraba como pendiente de fuente primaria, y explica el cambio de nombre a Osos de Madrid al inscribirse en la II Liga Catalana (I Supercopa de España). Cita el origen en atletas del equipo Larios y deportistas formados en EEUU, con ayuda de militares de la base de Torrejón de Ardoz.",
+      en: "The club's own account. It confirms the founding as Madrid Bears in spring 1989, which we only had from Wikipedia and had flagged as awaiting a primary source, and explains the change of name to Osos de Madrid on entering the II Liga Catalana (I Supercopa de España). It traces the origin to athletes from the Larios team and sportspeople educated in the US, helped by military personnel from the Torrejón de Ardoz air base.",
+    },
+  },
   { id: "rok-web", title: "Royal Oaks Knights — web oficial", publisher: "Royal Oaks Knights", url: "https://www.royaloaksknights.com/", accessedAt: A, sourceType: "club-official" },
   {
     id: "rok-quienes-somos",

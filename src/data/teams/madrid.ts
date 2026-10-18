@@ -86,13 +86,13 @@ export const madridTeams: Team[] = [
     website: "https://ososrivas.com/",
     socialLinks: { instagram: "https://www.instagram.com/ososrivas/", twitter: "https://x.com/ososrivas" },
     summary: {
-      es: "Herederos de los Osos de Madrid (fundados como Madrid Bears en 1989, según fuentes secundarias). Campeones de la LNFA en 2001 y 2022 y seis veces de la Copa de España.",
-      en: "Heirs of the Osos de Madrid (founded as Madrid Bears in 1989, per secondary sources). LNFA champions in 2001 and 2022 and six-time Copa de España winners.",
+      es: "Herederos de los Osos de Madrid (fundados como Madrid Bears en 1989). Campeones de la LNFA en 2001 y 2022 y seis veces de la Copa de España.",
+      en: "Heirs of the Osos de Madrid (founded as Madrid Bears in 1989). LNFA champions in 2001 and 2022 and six-time Copa de España winners.",
     },
     history: [
       {
-        es: "Según Wikipedia, el club se fundó en la primavera de 1989 como Madrid Bears, pasó a llamarse Osos de Madrid y se instaló en Rivas-Vaciamadrid en 2000; ese origen está pendiente de confirmación con fuentes primarias. [[src:wiki-osos-madrid]]",
-        en: "According to Wikipedia, the club was founded in spring 1989 as Madrid Bears, became Osos de Madrid and settled in Rivas-Vaciamadrid in 2000; that origin is pending confirmation with primary sources. [[src:wiki-osos-madrid]]",
+        es: "El club confirma que se fundó como Madrid Bears en la primavera de 1989 y que cambió a Osos de Madrid al inscribirse en su primera competición oficial, la II Liga Catalana, también llamada I Supercopa de España. Surgió de atletas del equipo Larios y de deportistas que habían estudiado y vivido en Estados Unidos, con ayuda de militares de la base aérea de Torrejón de Ardoz. [[src:osos-historia]] Se instaló en Rivas-Vaciamadrid en 2000. [[src:wiki-osos-madrid]]",
+        en: "The club confirms it was founded as Madrid Bears in spring 1989 and became Osos de Madrid on entering its first official competition, the II Liga Catalana, also called the I Supercopa de España. It grew out of athletes from the Larios team and sportspeople who had studied and lived in the United States, helped by military personnel from the Torrejón de Ardoz air base. [[src:osos-historia]] It moved to Rivas-Vaciamadrid in 2000. [[src:wiki-osos-madrid]]",
       },
       {
         es: "La FEFA les reconoce dos títulos de LNFA (2001 ante Zaragoza Lions y 2022 ante Black Demons, este último con temporada invicta) y seis Copas de España. En 2025-26 fueron el único equipo que derrotó a los Black Demons y cayeron en semifinales ante Badalona Dracs. [[src:fefa-palmares]] [[src:fefa-osos-campeones-2022]] [[src:fefa-lnfa-semis-2026]]",
@@ -104,7 +104,7 @@ export const madridTeams: Team[] = [
       ...[2000, 2001, 2002, 2006, 2008, 2021].map((year) => ({ title: { es: "Campeón Copa de España", en: "Copa de España champion" }, competitionId: "copa-espana", year, sourceIds: ["fefa-palmares"], verificationStatus: "verified" as const })),
       { title: { es: "Campeón Spanish Flag Bowl Open", en: "Spanish Flag Bowl Open champion" }, competitionId: "spanish-flag-bowl", year: 2001, sourceIds: ["fefa-palmares-flag"], verificationStatus: "verified" },
     ],
-    sourceIds: ["fefa-team-osos", "wiki-osos-madrid", "fefa-palmares", "fefa-palmares-flag", "fefa-osos-campeones-2022", "fefa-lnfa-semis-2026", "fefa-calendario-2026-27", "fefa-femenina-2025-26"],
+    sourceIds: ["fefa-team-osos", "wiki-osos-madrid", "fefa-palmares", "fefa-palmares-flag", "fefa-osos-campeones-2022", "fefa-lnfa-semis-2026", "fefa-calendario-2026-27", "fefa-femenina-2025-26", "osos-historia"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
     researchNotes: { es: "Fundación (1989) y traslado a Rivas (2000) solo en Wikipedia; la web del club no muestra texto legible.", en: "Founding (1989) and move to Rivas (2000) only in Wikipedia; the club site renders no readable text." },

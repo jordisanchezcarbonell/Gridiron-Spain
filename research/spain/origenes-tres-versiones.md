@@ -77,5 +77,31 @@ los Dracs; corregido el mismo dia para mostrar las dos versiones.
    aquella epoca y su web ya documenta 1958 por su lado.
 3. Si se confirma, reescribir el origen con las tres capas en vez de con una fecha. Seria
    el mejor contenido que ha producido este archivo.
-4. Pendiente: leer las historias de osos-rivas y valencia-firebats, los dos Clupik que
-   quedan.
+4. Hecho: leidas las siete webs de Clupik. Resultado:
+   - **badalona-dracs**: cronica 1987-1996, el mayor hallazgo
+   - **camioneros-de-coslada**: el partido del Bernabeu de 1958 y el marcador en disputa
+   - **sevilla-linces**: confirma la fundacion del 14-09-1992 y aniade siete titulos
+     regionales que la ficha no tenia
+   - **sueca-ricers**: confirma 2007, aniade el registro de 2008 y el origen en la playa
+     de Cullera en 1987 con Frank Tiozzo
+   - **osos-rivas**: confirma la fundacion como Madrid Bears en la primavera de 1989, que
+     estaba marcada como pendiente de fuente primaria, y aniade el origen en el equipo
+     Larios y la ayuda de militares de Torrejon
+   - **murcia-cobras**: no tiene pagina de historia
+   - **valencia-firebats**: su pagina de "Historia" son objetivos y valores, sin fechas
+
+   Cinco de siete tenian material que no teniamos. El patron merece aplicarse a los clubes
+   con web que no usan Clupik.
+
+## Una discrepancia menor entre clubes
+
+Camioneros situa la fundacion de los Madrid Bears el **8 de marzo de 1988**, una semana
+antes del Dracs-Palermo. Los propios Osos dicen **primavera de 1989**, y la cronica de los
+Dracs tambien situa la aparicion de los Osos de Madrid en 1989, despues de la I Supercopa
+de esa primavera. Dos fuentes contra una: mantenemos 1989.
+
+## Torrejon aparece en tres relatos independientes
+
+Royal Oaks Knights, Camioneros de Coslada y Osos Rivas citan por separado la base aerea de
+Torrejon de Ardoz como origen o apoyo. Tres clubes sin relacion entre si apuntando al mismo
+sitio es la pista mas solida que tenemos sobre como entro el deporte en Espania.
