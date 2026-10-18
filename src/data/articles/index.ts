@@ -22,6 +22,7 @@ import { estadoNcaafNfl20261014 } from "./estado-ncaaf-nfl-2026-10-14";
 import { diegoPazPatriots2026 } from "./diego-paz-patriots-2026";
 import { previa20261017 } from "./previa-2026-10-17";
 import { ncaaJornadaHistorica20261017 } from "./ncaa-jornada-historica-2026-10-17";
+import { antesDe1988 } from "./antes-de-1988";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -51,4 +52,5 @@ export const articles: Article[] = [
   diegoPazPatriots2026,
   previa20261017,
   ncaaJornadaHistorica20261017,
+  antesDe1988,
 ];
