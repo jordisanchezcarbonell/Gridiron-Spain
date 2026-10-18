@@ -358,12 +358,16 @@ export const regionalTeams: Team[] = [
     },
     history: [
       {
-        es: "El club jerezano se fundó en 2020. El dato procede únicamente de la web del club, así que lo damos con esa reserva. [[src:jaguars-web]]",
-        en: "The Jerez club was founded in 2020. The date comes only from the club's own website, so we record it with that caveat. [[src:jaguars-web]]",
+        es: "El club jerezano se fundó en 2020 con el objetivo declarado de «implantar y desarrollar el fútbol americano de nivel en la provincia de Cádiz». El dato procede únicamente de la web del club, así que lo damos con esa reserva. [[src:jaguars-web]]",
+        en: "The Jerez club was founded in 2020 with the stated aim of \u201cestablishing and developing high-level American football in the province of Cadiz\u201d. The date comes only from the club's own website, so we record it with that caveat. [[src:jaguars-web]]",
       },
       {
-        es: "En 2025-26 ganó invicto el grupo Sur de la LNFA 2 [[src:fefa-lnfa2-2025-26]], superó los cuartos de final [[src:fefa-lnfa2-cuartos-2026]] y llegó a las semifinales nacionales, donde cayó 23-6 ante Alcobendas Cavaliers. [[src:fefa-lnfa2-semis-2026]]",
-        en: "In 2025-26 it won the LNFA 2 South group unbeaten [[src:fefa-lnfa2-2025-26]], came through the quarter-finals [[src:fefa-lnfa2-cuartos-2026]] and reached the national semi-finals, where it lost 23-6 to Alcobendas Cavaliers. [[src:fefa-lnfa2-semis-2026]]",
+        es: "Su propia web fecha la progresión: en 2021 inscribió dos equipos en la liga andaluza de flag football y acabó cuarto, y en 2022 entró en la LNFA 2, Conferencia Sur. [[src:jaguars-web]]",
+        en: "Its own website dates the progression: in 2021 it entered two teams in the Andalusian flag football league and finished fourth, and in 2022 it joined LNFA 2, South Conference. [[src:jaguars-web]]",
+      },
+      {
+        es: "En 2025-26 ganó invicto el grupo Sur de la LNFA 2 [[src:fefa-lnfa2-2025-26]], superó los cuartos de final [[src:fefa-lnfa2-cuartos-2026]] —17-10 a Alicante Sharks, según el club [[src:jaguars-web]]— y llegó a las semifinales nacionales, donde cayó 23-6 ante Alcobendas Cavaliers. [[src:fefa-lnfa2-semis-2026]]",
+        en: "In 2025-26 it won the LNFA 2 South group unbeaten [[src:fefa-lnfa2-2025-26]], came through the quarter-finals [[src:fefa-lnfa2-cuartos-2026]] \u2014 17-10 against Alicante Sharks, per the club [[src:jaguars-web]] \u2014 and reached the national semi-finals, where it lost 23-6 to Alcobendas Cavaliers. [[src:fefa-lnfa2-semis-2026]]",
       },
     ],
     honours: [],

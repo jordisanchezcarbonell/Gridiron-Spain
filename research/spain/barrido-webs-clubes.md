@@ -87,3 +87,61 @@ tanto errores como huecos, y la mayoria estaban declarados.
 - La leccion de fondo: **dos veces hoy el dato que faltaba estaba dentro de una fuente que
   el archivo ya citaba** (el articulo de Cuadernos de Futbol y la historia de los Bufals).
   No basta con tener la fuente dada de alta: hay que haberla leido entera.
+
+---
+
+## 18-10-2026: segunda pasada sobre las fichas cortas
+
+Partí de una hipótesis equivocada. Dieciséis fichas de equipo tenían menos de 400
+caracteres de historia y asumí que era porque no había leído bien las webs. **No era eso.**
+Al comprobarlas una a una, casi todas ya citaban la web del club y ya contenían todo lo que
+la web dice. Están cortas porque **los clubes no publican más**, y eso no se arregla
+raspando más, se arregla preguntándoles.
+
+### Lo que sí dio material nuevo
+
+| Club | Qué se añadió |
+|---|---|
+| **Camioneros de Coslada** | De 1 párrafo a 7. Ver abajo: es el hallazgo gordo. |
+| **Madrid Capitals** | Campeonato de Madrid de flag 2011-12, primera Spanish Flag Bowl, dos subcampeonatos de Madrid en tackle y el campo, Los Arbolitos (Vallecas). Marcado como dato del propio club: no está en el palmarés de la FEFA que manejamos. |
+| **Jerez Jaguars** | Objetivo fundacional, los dos equipos de flag en la liga andaluza de 2021 y el cuarto puesto, la entrada en LNFA 2 en 2022 y el 17-10 de cuartos ante Alicante Sharks. |
+| **Mallorca Voltors** | Su web se presenta además como «los primeros en España». No se sostiene —Dracs y Búfals son anteriores— y la ficha ahora lo dice. Lo que sí queda es la fundación en 1987. |
+
+### El hallazgo: la historia de Camioneros
+
+`camionerosdecoslada.com` es un Clupik y `WebFetch` solo devuelve una noticia suelta. Con
+navegador, el menú lleva a `/es/content/pages/13509`, que es **una historia del club de
+varios miles de palabras**, firmada y detallada.
+
+Lo incómodo: **esa página ya era una fuente del archivo**. La usé para el reportaje de los
+orígenes —es la que aporta el 16 de noviembre de 1958 y los Tigers de Toul contra los
+Taconeers de Giebelstadt— pero nunca la usé para la ficha del propio club, que seguía con un
+párrafo sacado de Wikipedia. **Es la tercera vez en esta investigación que el dato que
+faltaba estaba dentro de una fuente que ya citábamos.** Conviene asumirlo como patrón: antes
+de buscar fuera, agotar lo que ya está dentro.
+
+### Dos discrepancias nuevas que quedan anotadas
+
+1. **Fundación de Camioneros.** Su web dice que nacieron como Madrid Dolphins en **1989** y
+   debutaron en competición en septiembre de 1990. Wikipedia da 1990. Nos quedamos con 1989
+   por ser el relato del propio club, y queda dicho en la ficha.
+2. **Fundación de los Madrid Bears, hoy Osos.** Camioneros la fecha el **8 de marzo de
+   1988**, una semana antes del Dracs-Palermo. Osos sitúa la suya en la **primavera de
+   1989**. Un año de diferencia entre dos clubes que comparten fundador. Anotado en las dos
+   fichas.
+
+   *Aviso adicional:* la `researchNotes` de Osos dice que la fecha de 1989 «solo está en
+   Wikipedia», pero su párrafo de historia la atribuye a `osos-historia`. Una de las dos
+   cosas está desactualizada y hay que revisarlo antes de dar la discrepancia por buena.
+
+### Lo que no se pudo leer, y por qué
+
+- **Argentona Bocs**: SPA sin sitemap ni página de historia localizable.
+- **Santurtzi Coyotes**: el certificado TLS no corresponde al dominio (apunta a
+  `a0219.abansys.com`). La web no es accesible de forma fiable.
+- **Mairena Blue Devils**: web en obras.
+- **Reus Imperials (1989), Cantabria Bisons, Zaragoza Hurricanes, Alicante Sharks, Barberà
+  Rookies**: no tienen web, solo Instagram.
+
+Reus Imperials es el más doloroso: un club de **1989**, de la primera hornada, con 212
+caracteres de ficha y sin web. Ese sí merece un correo.

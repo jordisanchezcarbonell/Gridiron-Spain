@@ -75,7 +75,7 @@ export const madridTeams: Team[] = [
       { competitionId: "lnfa-femenina", season: "2025-26", verificationStatus: "verified", sourceIds: ["fefa-femenina-2025-26"] },
     ],
     venue: {
-      name: { es: "Polideportivo Municipal Cerro del Telégrafo", en: "Polideportivo Municipal Cerro del Telégrafo" },
+      name: { es: "Polideportivo Municipal Cerro del Telégrafo", en: "Camioneros de Coslada dates the founding of Madrid Bears to 8 March 1988, a year earlier than the club itself says; unresolved. Polideportivo Municipal Cerro del Telégrafo" },
       coordinates: { latitude: 40.35806, longitude: -3.54389, precision: "venue" },
       verificationStatus: "verified",
     },
@@ -107,7 +107,7 @@ export const madridTeams: Team[] = [
     sourceIds: ["fefa-team-osos", "wiki-osos-madrid", "fefa-palmares", "fefa-palmares-flag", "fefa-osos-campeones-2022", "fefa-lnfa-semis-2026", "fefa-calendario-2026-27", "fefa-femenina-2025-26", "osos-historia"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
-    researchNotes: { es: "Fundación (1989) y traslado a Rivas (2000) solo en Wikipedia; la web del club no muestra texto legible.", en: "Founding (1989) and move to Rivas (2000) only in Wikipedia; the club site renders no readable text." },
+    researchNotes: { es: "Camioneros de Coslada fecha la fundación de los Madrid Bears el 8 de marzo de 1988, un año antes de lo que dice el propio club; sin resolver. Fundación (1989) y traslado a Rivas (2000) solo en Wikipedia; la web del club no muestra texto legible.", en: "Founding (1989) and move to Rivas (2000) only in Wikipedia; the club site renders no readable text." },
   },
   {
     id: "camioneros-coslada",
@@ -118,7 +118,7 @@ export const madridTeams: Team[] = [
     province: "Madrid",
     autonomousCommunity: "Madrid",
     country: "ES",
-    foundedYear: 1990,
+    foundedYear: 1989,
     status: "active",
     disciplines: ["tackle", "flag"],
     categories: ["senior-men"],
@@ -142,18 +142,42 @@ export const madridTeams: Team[] = [
     },
     history: [
       {
-        es: "Fuentes secundarias sitúan la fundación en 1990, con el nombre Coslada Dolphins en 1991-92 y Camioneros desde 1993; la prensa local confirma que el club supera los 30 años. [[src:wiki-camioneros]] [[src:telemadrid-camioneros-2026]]",
-        en: "Secondary sources place the founding in 1990, under the name Coslada Dolphins in 1991-92 and Camioneros from 1993; local press confirms the club is over 30 years old. [[src:wiki-camioneros]] [[src:telemadrid-camioneros-2026]]",
+        es: "El club nació en 1989 como Madrid Dolphins, fundado por Óscar Pérez Navarro, que junto a su hermano Christian había puesto en marcha poco antes los Madrid Bears —hoy Osos— y que dejó aquel equipo por discrepancias internas. El nombre venía de un proyecto de hermanamiento con los Miami Dolphins gestionado por el padre de ambos, el comandante de aviación Óscar Pérez Couce, de origen cubano; el hermanamiento no cuajó, pero dejó el azul que el club todavía llama Blue Pride. [[src:camioneros-historia-club]]",
+        en: "The club was born in 1989 as Madrid Dolphins, founded by Óscar Pérez Navarro, who with his brother Christian had shortly before started Madrid Bears — today Osos — and who left that team after internal disagreements. The name came from a twinning project with the Miami Dolphins arranged by their father, air force commander Óscar Pérez Couce, of Cuban origin; the twinning never happened, but it left the blue the club still calls Blue Pride. [[src:camioneros-historia-club]]",
+      },
+      {
+        es: "Debutó en competición en septiembre de 1990, en el Trofeo Palos, donde cayó ante Osos y Panteras y ganó su primer partido a Toros por 52-0. Al año siguiente el Ayuntamiento de Coslada le cedió el antiguo velódromo, y en la temporada 1991-92 pasó a llamarse Coslada Dolphins en reconocimiento a su nueva sede. [[src:camioneros-historia-club]]",
+        en: "It debuted in September 1990 at the Trofeo Palos, losing to Osos and Panteras and winning its first game 52-0 against Toros. The following year Coslada town hall granted it the old velodrome, and in 1991-92 it became Coslada Dolphins in recognition of its new home. [[src:camioneros-historia-club]]",
+      },
+      {
+        es: "En 1992 el fútbol americano español se escindió entre la SFL, organizada por Unipublic, y la Liga Nacional de la federación catalana. Panteras, Osos y Toros se fueron a la nueva competición y los Dolphins se quedaron en la Liga Nacional como único equipo no catalán, lo que les salió caro en desplazamientos: alcanzaron los playoffs y cayeron en semifinales ante Trons por 42-6. [[src:camioneros-historia-club]]",
+        en: "In 1992 Spanish American football split between the SFL, run by Unipublic, and the Catalan federation's Liga Nacional. Panteras, Osos and Toros joined the new competition and the Dolphins stayed in the Liga Nacional as its only non-Catalan side, which cost them dearly in travel: they reached the playoffs and lost the semi-final 42-6 to Trons. [[src:camioneros-historia-club]]",
+      },
+      {
+        es: "El nombre actual llegó en 1994. El presidente Luis Pliego pactó con Pablo Carabias, propietario de la tienda Quarterback Madrid, que se hiciera cargo del marketing a cambio de poder rebautizar al equipo con una denominación más ligada a la ciudad. Coslada era la ciudad del camión y del transporte, sede de la antigua Pegaso comprada por IVECO, y de ahí salió Camioneros. El patrocinio de IVECO se cerró durante un reportaje de la revista Transporte Mundial fotografiado en sus instalaciones. [[src:camioneros-historia-club]]",
+        en: "The current name arrived in 1994. President Luis Pliego agreed with Pablo Carabias, owner of the Quarterback Madrid store, that he would take over marketing in exchange for renaming the team with something more tied to the town. Coslada was the city of trucks and haulage, home of the old Pegaso plant bought by IVECO, and Camioneros came from that. The IVECO sponsorship was sealed during a magazine feature shot at its facilities. [[src:camioneros-historia-club]]",
+      },
+      {
+        es: "Los mejores años llegaron a mitad de los noventa. En 1994 terminó invicto su conferencia y perdió el partido por el título ante Barcelona Boxers. En 1996 fue sexto de la primera liga unificada, con Petar Yordanov y Javier Hernández «Camarón» en el equipo ideal, y con Ignacio Pliego consagrado como mejor quarterback nacional: al año siguiente debutó con España ante Gran Bretaña y firmó el primer pase de touchdown español en un partido internacional. En 1997, con sus primeros fichajes estadounidenses, llegó a semifinales nacionales. [[src:camioneros-historia-club]]",
+        en: "Its best years came in the mid-nineties. In 1994 it went unbeaten in its conference and lost the title game to Barcelona Boxers. In 1996 it finished sixth in the first unified league, with Petar Yordanov and Javier Hernández \u201cCamarón\u201d in the all-star team, and with Ignacio Pliego established as the best national quarterback: the following year he debuted for Spain against Great Britain and threw Spain's first touchdown pass in an international. In 1997, with its first American signings, it reached the national semi-finals. [[src:camioneros-historia-club]]",
+      },
+      {
+        es: "La crisis de 1998 estuvo a punto de acabar con el club. Beefeater retiró el patrocinio de la liga y con él las ayudas a los desplazamientos; el equipo se quedó sin efectivos suficientes. Llegó a plantearse una fusión con Osos de Rivas que no prosperó por el nombre, y Osos acabó fichando a bastantes jugadores camioneros. Camioneros estuvo tres años fuera de toda competición. [[src:camioneros-historia-club]]",
+        en: "The 1998 crisis nearly ended the club. Beefeater withdrew its league sponsorship and with it the travel subsidies; the team was left without enough players. A merger with Osos de Rivas was discussed and failed over the name, and Osos ended up signing a good number of Camioneros players. Camioneros spent three years out of competition altogether. [[src:camioneros-historia-club]]",
+      },
+      {
+        es: "Volvió en 2001, impulsado por Jesús Hernández, Jesús Martín Merino y Juan Carlos Mondéjar «Piquito», y ese mismo verano jugó el campeonato de España de flag en Santurtzi. El flag fue la vía de regreso: campeón de España en 2006 y 2008 y subcampeón en 2010. En 2005, junto a Coyotes de Santurtzi, Gijón Mariners y Las Rozas Black Demons, participó en la creación de la LNFA 2. [[src:camioneros-historia-club]]",
+        en: "It returned in 2001, driven by Jesús Hernández, Jesús Martín Merino and Juan Carlos Mondéjar \u201cPiquito\u201d, and that same summer played the Spanish flag championship in Santurtzi. Flag was the way back: Spanish champion in 2006 and 2008 and runner-up in 2010. In 2005, alongside Coyotes de Santurtzi, Gijón Mariners and Las Rozas Black Demons, it took part in creating LNFA 2. [[src:camioneros-historia-club]]",
       },
     ],
     honours: [
       ...[2006, 2008].map((year) => ({ title: { es: "Campeón Spanish Flag Bowl Open", en: "Spanish Flag Bowl Open champion" }, competitionId: "spanish-flag-bowl", year, sourceIds: ["fefa-palmares-flag"], verificationStatus: "verified" as const })),
       { title: { es: "Campeón Spanish Flag Bowl Femenina", en: "Spanish Flag Bowl Women's champion" }, competitionId: "spanish-flag-bowl", year: 2012, sourceIds: ["fefa-palmares-flag"], verificationStatus: "verified" },
     ],
-    sourceIds: ["fefa-team-camioneros", "wiki-camioneros", "telemadrid-camioneros-2026", "fefa-palmares-flag", "fefa-calendario-2026-27"],
+    sourceIds: ["camioneros-historia-club", "fefa-team-camioneros", "wiki-camioneros", "telemadrid-camioneros-2026", "fefa-palmares-flag", "fefa-calendario-2026-27"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
-    researchNotes: { es: "Fundación en 1990 solo en Wikipedia. Categorías inferiores por confirmar.", en: "1990 founding only in Wikipedia. Youth sections to confirm." },
+    researchNotes: { es: "Fundación: la web del club sitúa el nacimiento como Madrid Dolphins en 1989 y el debut en competición en septiembre de 1990; Wikipedia da 1990. Nos quedamos con 1989 por ser el relato del propio club. Su historia también fecha la fundación de los Madrid Bears (hoy Osos) el 8 de marzo de 1988, mientras que Osos sitúa su propia fundación en la primavera de 1989: discrepancia sin resolver.", en: "Founding: the club's website dates its birth as Madrid Dolphins to 1989 and its competitive debut to September 1990; Wikipedia gives 1990. We keep 1989 as the club's own account. Its history also dates the founding of Madrid Bears (today Osos) to 8 March 1988, while Osos places its own founding in spring 1989: an unresolved discrepancy." },
   },
   {
     id: "madrid-capitals",
@@ -190,6 +214,14 @@ export const madridTeams: Team[] = [
       {
         es: "Según su web oficial, los Capitals se fundaron en 2010 y crearon en 2013 el primer equipo femenino de flag football de Madrid. [[src:capitals-web]]",
         en: "According to their official website, the Capitals were founded in 2010 and created Madrid's first women's flag football team in 2013. [[src:capitals-web]]",
+      },
+      {
+        es: "El club se atribuye el campeonato de Madrid de flag en 2011-12 y la participación en la primera Spanish Flag Bowl, además de dos subcampeonatos de Madrid con el equipo sénior de tackle. Ninguno de los tres figura todavía en el palmarés de la FEFA que manejamos, así que los damos como dato del propio club. [[src:capitals-web]]",
+        en: "The club claims the 2011-12 Madrid flag championship and a place at the first Spanish Flag Bowl, plus two Madrid runner-up finishes with its senior tackle side. None of the three appears yet in the FEFA honours list we hold, so we record them as the club's own claim. [[src:capitals-web]]",
+      },
+      {
+        es: "Juega en el Campo de Rugby Los Arbolitos, en Vallecas. [[src:capitals-web]]",
+        en: "It plays at Campo de Rugby Los Arbolitos, in Vallecas. [[src:capitals-web]]",
       },
     ],
     honours: [

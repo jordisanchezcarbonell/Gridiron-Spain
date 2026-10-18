@@ -117,6 +117,14 @@ export const otherTeams: Team[] = [
         es: "Según su propia web, los Voltors se fundaron en 1987 y fueron el primer club de fútbol americano creado fuera de Cataluña; es un club íntegramente amateur con base en Son Moix. [[src:voltors-club]] [[src:fefa-team-voltors]]",
         en: "According to its own website, the Voltors were founded in 1987 and were the first American football club created outside Catalonia; it is a fully amateur club based at Son Moix. [[src:voltors-club]] [[src:fefa-team-voltors]]",
       },
+      {
+        es: "La misma página se presenta además como «los primeros en España». Esa versión más amplia no se sostiene: Badalona Dracs y Barcelona Búfals son anteriores. Lo que sí queda en pie es la fundación en 1987, que sitúa al club en la misma hornada que los pioneros catalanes y casi un año antes del partido de 1988 que durante décadas se dio como punto de partida del deporte en España. [[src:voltors-club]]",
+        en: "The same page also presents the club as \u201cthe first in Spain\u201d. That broader version does not hold: Badalona Dracs and Barcelona Bufals are older. What does stand is the 1987 founding, which places the club in the same wave as the Catalan pioneers and almost a year before the 1988 game long given as the starting point of the sport in Spain. [[src:voltors-club]]",
+      },
+      {
+        es: "El club se describe hoy reconstruido en torno a antiguos jugadores que ejercen funciones técnicas y directivas, y centrado en la cantera de 12 a 18 años. [[src:voltors-club]]",
+        en: "The club today describes itself as rebuilt around former players now in coaching and board roles, and focused on its 12-to-18 youth setup. [[src:voltors-club]]",
+      },
     ],
     honours: [
       { title: { es: "Campeón LNFA 2", en: "LNFA 2 champion" }, competitionId: "lnfa-2", year: 2014, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
