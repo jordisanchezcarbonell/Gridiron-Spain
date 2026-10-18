@@ -11,6 +11,18 @@ const FCFA = "Federació Catalana de Futbol Americà (FCFA)";
 export const spainSources: Source[] = [
   // --- Federations & history -------------------------------------------
   {
+    id: "camioneros-historia-club",
+    title: "Historia — Una historia de Fútbol Americano",
+    publisher: "Camioneros de Coslada",
+    url: "https://www.camionerosdecoslada.com/es/content/pages/13509",
+    accessedAt: "2026-10-18",
+    sourceType: "club-official",
+    notes: {
+      es: "Relato del propio club. Sitúa el primer partido registrado en suelo español el 16 de noviembre de 1958 en el Santiago Bernabéu, entre dos equipos de las Fuerzas Aéreas estadounidenses en Europa, y confirma de forma independiente la actividad de los Knights de Torrejón en las ligas colegiales de las bases. Da el marcador del Dracs-Palermo de 1988 como 12-18, frente al 12-8 que publica el propio Badalona.",
+      en: "The club's own account. It dates the first recorded game on Spanish soil to 16 November 1958 at the Santiago Bernabéu, between two United States Air Forces in Europe teams, and independently confirms the Torrejón Knights playing in the bases' school leagues. It gives the 1988 Dracs-Palermo score as 12-18, against the 12-8 Badalona itself publishes.",
+    },
+  },
+  {
     id: "dracs-historia-club",
     title: "Historia del Club — Historia del Fútbol Americano en España, I Parte (1987-1996)",
     publisher: "Badalona Dracs",

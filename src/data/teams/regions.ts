@@ -654,8 +654,16 @@ export const regionalTeams: Team[] = [
     },
     history: [
       {
-        es: "Es el club pionero del fútbol americano en Andalucía. Wikipedia sitúa su fundación el 14 de septiembre de 1992 y el primer partido disputado en Andalucía el 14 de mayo de 1993; es la única fuente que recoge ambas fechas. [[src:wiki-linces-es]]",
-        en: "It is the pioneering American football club in Andalusia. Wikipedia dates its founding to 14 September 1992 and the first game played in Andalusia to 14 May 1993; it is the only source for both dates. [[src:wiki-linces-es]]",
+        es: "El club se fundó el 14 de septiembre de 1992 y se presenta como el decano del fútbol americano en Andalucía. [[src:linces-historia]] Wikipedia recoge la misma fecha y añade el primer partido disputado en Andalucía, el 14 de mayo de 1993, que sigue sin aparecer en ninguna otra fuente. [[src:wiki-linces-es]]",
+        en: "The club was founded on 14 September 1992 and presents itself as the oldest American football club in Andalusia. [[src:linces-historia]] Wikipedia gives the same date and adds the first game played in Andalusia, on 14 May 1993, which still appears in no other source. [[src:wiki-linces-es]]",
+      },
+      {
+        es: "El club se atribuye seis campeonatos regionales en categoría sénior y uno en júnior. No figuran en el palmarés de la FEFA por ser títulos territoriales. [[src:linces-historia]] [[src:fefa-palmares]]",
+        en: "The club claims six regional titles at senior level and one at junior level. They do not appear in the FEFA honours list because they are regional titles. [[src:linces-historia]] [[src:fefa-palmares]]",
+      },
+      {
+        es: "Desde 2020 ha priorizado la cantera, con categorías sub-13, sub-15, cadete y júnior, y trabaja en unas instalaciones propias que, según el club, serán las primeras de Europa específicas para el fútbol americano: dos campos, gimnasio, salas de vídeo y aparcamiento para 300 vehículos. [[src:linces-historia]]",
+        en: "Since 2020 it has prioritised youth development, with U13, U15, cadet and junior sides, and is working on its own facilities which, according to the club, will be the first in Europe built specifically for American football: two fields, a gym, video rooms and parking for 300 vehicles. [[src:linces-historia]]",
       },
       {
         es: "Está en la máxima categoría desde 1999 [[src:fefa-team-linces]] y en 2025-26 disputó el grupo Sur de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
@@ -663,9 +671,9 @@ export const regionalTeams: Team[] = [
       },
     ],
     honours: [],
-    sourceIds: ["fefa-team-linces", "wiki-linces-es", "fefa-lnfa2-2025-26"],
+    sourceIds: ["fefa-team-linces", "linces-historia", "wiki-linces-es", "fefa-lnfa2-2025-26", "fefa-palmares"],
     verificationStatus: "partial",
-    lastVerifiedAt: "2026-10-02",
+    lastVerifiedAt: "2026-10-18",
     researchNotes: {
       es: "Historia (fundación 14-09-1992, primer partido en Andalucía el 14-05-1993) solo en Wikipedia. Campo sin coordenadas confirmadas (FEFA: 'Instalación Deportiva Sevilla Linces'); coordenadas = centro de Sevilla.",
       en: "History (founded 14 Sep 1992, first game in Andalusia 14 May 1993) only in Wikipedia. Venue coordinates unconfirmed; coordinates = Seville centre.",

@@ -253,6 +253,18 @@ export const spainTeamsSources: Source[] = [
     sourceType: "federation",
   },
   {
+    id: "linces-historia",
+    title: "Historia",
+    publisher: "Sevilla Linces",
+    url: "https://www.sevillalinces.es/es/content/pages/4863",
+    accessedAt: "2026-10-18",
+    sourceType: "club-official",
+    notes: {
+      es: "Relato del propio club. Confirma la fundación el 14 de septiembre de 1992, que solo teníamos en Wikipedia, y añade seis campeonatos regionales sénior y uno júnior, además del proyecto de instalaciones propias.",
+      en: "The club's own account. It confirms the founding on 14 September 1992, which we only had from Wikipedia, and adds six senior regional titles and one junior, plus the project for its own facilities.",
+    },
+  },
+  {
     id: "wiki-linces-es",
     title: "Sevilla Linces",
     publisher: "Wikipedia (es)",
