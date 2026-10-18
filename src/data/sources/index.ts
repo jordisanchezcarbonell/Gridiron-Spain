@@ -5,6 +5,7 @@ import { madridEuropeSources } from "./madrid-europe";
 import { originsSources } from "./origins";
 import { texasOhioStateSources } from "./texas-ohio-state";
 import { week4Sources } from "./week4-2026";
+import { ncaaWeek7Sources } from "./ncaa-week7-2026";
 import { nflWeek3Sources } from "./nfl-week-3-2026";
 import { nfeloSources } from "./nfelo";
 import { rankingsSources } from "./rankings-2026";
@@ -18,4 +19,4 @@ import { nationalTeamSources } from "./national-teams-2026";
  * references sources by id. Keep ids stable: they are used in inline
  * citations as [[src:ID]].
  */
-export const sources: Source[] = [...spainSources, ...madridEuropeSources, ...originsSources, ...navySources, ...texasOhioStateSources, ...week4Sources, ...nflWeek3Sources, ...nfeloSources, ...rankingsSources, ...spainTeamsSources, ...nflMadrid2026Sources, ...agendaSources, ...nationalTeamSources];
+export const sources: Source[] = [...spainSources, ...madridEuropeSources, ...originsSources, ...navySources, ...texasOhioStateSources, ...week4Sources, ...ncaaWeek7Sources, ...nflWeek3Sources, ...nfeloSources, ...rankingsSources, ...spainTeamsSources, ...nflMadrid2026Sources, ...agendaSources, ...nationalTeamSources];
