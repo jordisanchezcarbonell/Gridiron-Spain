@@ -1,0 +1,4 @@
+{
+  "note": "Every non-generated media file used by a render must be listed here with an explicit licence and rights holder. automation/src/validate/index.ts refuses any asset that is not listed or that lacks written permission. The default render uses only ffmpeg/SVG-generated visuals, so this list is empty by design.",
+  "assets": []
+}

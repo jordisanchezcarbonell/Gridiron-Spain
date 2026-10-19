@@ -46,3 +46,6 @@ next-env.d.ts
 # Outreach data with third-party contacts: never commit
 *.local.json
 *.local.md
+
+# automation: generated TikTok artefacts (the ledger in automation/state IS committed)
+/out/tiktok/

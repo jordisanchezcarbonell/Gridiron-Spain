@@ -14,9 +14,13 @@
     "typecheck": "tsc --noEmit",
     "typegen": "next typegen",
     "content:check": "tsx scripts/check-content.ts",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "tiktok:plan": "tsx automation/src/cli.ts --dry-run",
+    "tiktok:generate": "tsx automation/src/cli.ts",
+    "tiktok:render": "tsx automation/src/cli.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
     "@vercel/analytics": "^2.0.1",
     "leaflet": "^1.9.4",
     "next": "16.3.5",
