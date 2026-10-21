@@ -4,6 +4,8 @@ import { locales, localeTags } from "@/lib/i18n/config";
 import { href, type RouteKey } from "@/lib/i18n/routes";
 import { absoluteUrl, site } from "@/lib/site";
 
+type OgImage = { url: string; width?: number; height?: number };
+
 type BuildMetadataArgs = {
   locale: Locale;
   title: string;
@@ -12,7 +14,12 @@ type BuildMetadataArgs = {
   segments?: string[];
   /** Locales in which this page actually exists (defaults to all). */
   availableLocales?: Locale[];
-  image?: string;
+  /**
+   * A generated `/opengraph-image` route, which is always 1200x630, or a real
+   * file with its own shape. Declaring 1200x630 for a photo that is not that
+   * size makes social cards crop it against the ratio they were promised.
+   */
+  image?: string | OgImage;
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
@@ -73,6 +80,9 @@ export function buildMetadata(args: BuildMetadataArgs): Metadata {
     noIndex,
   } = args;
 
+  const og: OgImage = typeof image === "string" ? { url: image } : image;
+  const { url: imageUrl, width: imageWidth = 1200, height: imageHeight = 630 } = og;
+
   const canonicalPath = href(locale, routeKey, ...segments);
   const metaDescription = clamp(description, MAX_DESCRIPTION);
   const languages: Record<string, string> = {};
@@ -101,14 +111,14 @@ export function buildMetadata(args: BuildMetadataArgs): Metadata {
       siteName: site.name,
       title,
       description: metaDescription,
-      images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: title }],
+      images: [{ url: absoluteUrl(imageUrl), width: imageWidth, height: imageHeight, alt: title }],
       ...(type === "article" ? { publishedTime, modifiedTime, authors: [site.author.name] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: metaDescription,
-      images: [absoluteUrl(image)],
+      images: [absoluteUrl(imageUrl)],
     },
     robots: noIndex ? { index: false, follow: false } : undefined,
   };
