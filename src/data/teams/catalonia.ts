@@ -239,29 +239,41 @@ export const cataloniaTeams: Team[] = [
     },
     socialLinks: { instagram: "https://www.instagram.com/terrassareds/", twitter: "https://x.com/terrassareds" },
     summary: {
-      es: "Club de Terrassa con raíces en 1989 e independiente desde 1993. Campeón de la LNFA 2 en 2024 y segundo de la Conferencia Este en su temporada 2025-26 en Serie A.",
-      en: "Terrassa club with roots in 1989 and independent since 1993. LNFA 2 champion in 2024 and East Conference runner-up in its 2025-26 Serie A season.",
+      es: "Club de Terrassa con raíces en la sección del Club Deportiu de 1989 e independiente desde 1993. Tres veces finalista de la LNFA 2 antes de ganarla en 2024, ascenso que le dio su debut en la máxima categoría; segundo de la Conferencia Este de la Serie A en 2025-26. Juega en Can Boada desde 2016.",
+      en: "Terrassa club with roots in the 1989 Club Deportiu section and independent since 1993. A three-time LNFA 2 finalist before winning it in 2024, a promotion that brought its top-flight debut; runner-up in the Serie A East Conference in 2025-26. It has played at Can Boada since 2016.",
     },
     history: [
       {
-        es: "El origen de los Reds está en la sección de fútbol americano del Club Deportiu Terrassa, que existía desde 1989; el club se constituyó de forma independiente en 1993 y ha cambiado varias veces de nombre por motivos de patrocinio. [[src:diari-terrassa-reds-2024]]",
-        en: "The Reds trace their origin to the American football section of Club Deportiu Terrassa, which existed from 1989; the club was constituted independently in 1993 and has changed its name several times for sponsorship reasons. [[src:diari-terrassa-reds-2024]]",
+        es: "El origen de los Reds está en la sección de fútbol americano del Club Deportiu Terrassa, que existía desde 1989; el club se constituyó de forma independiente en 1993 como escisión de aquella sección. [[src:diari-terrassa-reds-2024]] [[src:wiki-terrassa-reds-ca]] Las dos fechas que circulan no se contradicen: 1989 es la sección y 1993 el club.",
+        en: "The Reds trace their origin to the American football section of Club Deportiu Terrassa, which existed from 1989; the club was constituted independently in 1993 as a split from that section. [[src:diari-terrassa-reds-2024]] [[src:wiki-terrassa-reds-ca]] The two dates in circulation do not contradict each other: 1989 is the section, 1993 the club.",
       },
       {
-        es: "Ganaron la LNFA 2 en 2024 y en 2025-26 acabaron segundos de la Conferencia Este de la Serie A. [[src:fefa-palmares]] [[src:fefa-team-firebats]] En 2025 la prensa local informó del proyecto de un campo propio de fútbol americano en Terrassa, aún por confirmar como ejecutado. [[src:monterrassa-reds-2025]]",
-        en: "They won LNFA 2 in 2024 and finished second in the East Conference of Serie A in 2025-26. [[src:fefa-palmares]] [[src:fefa-team-firebats]] In 2025 local press reported plans for a dedicated American football field in Terrassa, not yet confirmed as built. [[src:monterrassa-reds-2025]]",
+        es: "Ha cambiado de nombre varias veces por patrocinio —Vallès Reds en sus primeros años, JGE Egara Reds en 2005 y Puntxarxa Reds en la 2012-13— y ha ido rodando de campo en campo: las Pedritxes de Matadepera con el Club Deportiu, después el campo de hockey junto al Club Natació Terrassa y la zona esportiva de Can Jofresa, en Can Palet. Juega en el camp municipal de Can Boada desde 2016. [[src:wiki-terrassa-reds-ca]]",
+        en: "It has changed name several times for sponsorship — Vallès Reds in its early years, JGE Egara Reds in 2005 and Puntxarxa Reds in 2012-13 — and has moved from ground to ground: Les Pedritxes in Matadepera with Club Deportiu, then the hockey field next to Club Natació Terrassa and the Can Jofresa sports area in Can Palet. It has played at the Can Boada municipal ground since 2016. [[src:wiki-terrassa-reds-ca]]",
+      },
+      {
+        es: "En la LNFA 2 fue finalista en 2006 ante Las Rozas Black Demons y en 2023 ante Barcelona Pagesos, antes de ganar el título en 2024 a Valencia Giants. [[src:fefa-palmares]] Ese ascenso le dio su debut en la máxima categoría, donde en 2025-26 acabó segundo de la Conferencia Este de la Serie A, [[src:fefa-palmares]] y donde sigue en la 2026-27. [[src:fefa-calendario-2026-27]]",
+        en: "In LNFA 2 it was runner-up in 2006 to Las Rozas Black Demons and in 2023 to Barcelona Pagesos, before winning the title in 2024 against Valencia Giants. [[src:fefa-palmares]] That promotion brought its debut in the top flight, where in 2025-26 it finished second in the East Conference of Serie A, [[src:fefa-palmares]] and where it remains in 2026-27. [[src:fefa-calendario-2026-27]]",
+      },
+      {
+        es: "También ha tenido equipo femenino: fue finalista de la LNFA femenina en 2017 ante Barberà Rookies. [[src:fefa-palmares]] La Viquipèdia le atribuye además tres ligas catalanas masculinas (1996, 2016 y 2018) y una femenina (2009), que el palmarés de la FEFA no recoge. [[src:wiki-terrassa-reds-ca]]",
+        en: "It has also fielded a women's team: it was runner-up in the women's LNFA in 2017 to Barberà Rookies. [[src:fefa-palmares]] The Catalan Wikipedia also credits it with three men's Catalan leagues (1996, 2016 and 2018) and one women's (2009), which the FEFA honours list does not carry. [[src:wiki-terrassa-reds-ca]]",
+      },
+      {
+        es: "En 2025 la prensa local informó del proyecto de un campo propio de fútbol americano en Terrassa, aún por confirmar como ejecutado. [[src:monterrassa-reds-2025]]",
+        en: "In 2025 local press reported plans for a dedicated American football field in Terrassa, not yet confirmed as built. [[src:monterrassa-reds-2025]]",
       },
     ],
     honours: [
       { title: { es: "Campeón LNFA 2", en: "LNFA 2 champion" }, competitionId: "lnfa-2", year: 2024, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
       { title: { es: "Campeón LNFA Cadete", en: "LNFA Cadete champion" }, year: 2015, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
     ],
-    sourceIds: ["fefa-team-reds", "fcfa-reds", "diari-terrassa-reds-2024", "monterrassa-reds-2025", "fefa-palmares", "fefa-team-firebats", "fefa-calendario-2026-27"],
+    sourceIds: ["fefa-team-reds", "fcfa-reds", "wiki-terrassa-reds-ca", "diari-terrassa-reds-2024", "monterrassa-reds-2025", "fefa-palmares", "fefa-team-firebats", "fefa-calendario-2026-27"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
     researchNotes: {
-      es: "Las fuentes discrepan entre 1989 y 1993 como año de fundación; la web del club no está operativa.",
-      en: "Sources disagree between 1989 and 1993 as founding year; the club website is not operational.",
+      es: "Resuelta la discrepancia de fundación: 1989 es la sección de fútbol americano del Club Deportiu Terrassa y 1993 la constitución del club independiente, según coinciden el Diari de Terrassa y la Viquipèdia. La web del club sigue sin estar operativa. Las tres ligas catalanas masculinas y la femenina solo constan en la Viquipèdia, así que quedan en la historia y no en el palmarés de la ficha.",
+      en: "Founding discrepancy resolved: 1989 is the American football section of Club Deportiu Terrassa and 1993 the constitution of the independent club, as the Diari de Terrassa and the Catalan Wikipedia agree. The club website is still not operational. The three men's Catalan leagues and the women's one appear only in the Catalan Wikipedia, so they stay in the history rather than in this entry's honours.",
     },
   },
   {
@@ -493,8 +505,24 @@ export const cataloniaTeams: Team[] = [
     },
     history: [
       {
-        es: "El club se fundó en 1989 en Tarragona, impulsado por Josep Lluís Castán, con el nombre de Tarraco Imperials, y se trasladó a Reus con su denominación actual en la temporada 1993-94. [[src:enciclopedia-imperials]]",
-        en: "The club was founded in 1989 in Tarragona, promoted by Josep Lluís Castán, as Tarraco Imperials, and moved to Reus under its current name in the 1993-94 season. [[src:enciclopedia-imperials]]",
+        es: "El club se fundó a finales de 1989 en Tarragona como Tarraco Imperials, impulsado por Josep Lluís Castán i Solanellas, que venía de jugar en los Barcelona Howlers y los Barcelona Broncos. [[src:enciclopedia-imperials]] [[src:wiki-reus-imperials-en]] En la temporada 1992-93 un patrocinador le hizo cambiar los colores: del rojo, amarillo y blanco al verde, amarillo y blanco que sigue vistiendo. [[src:wiki-reus-imperials-en]]",
+        en: "The club was founded in late 1989 in Tarragona as Tarraco Imperials, driven by Josep Lluís Castán i Solanellas, who had played for the Barcelona Howlers and the Barcelona Broncos. [[src:enciclopedia-imperials]] [[src:wiki-reus-imperials-en]] In the 1992-93 season a sponsor made it change colours: from red, yellow and white to the green, yellow and white it still wears. [[src:wiki-reus-imperials-en]]",
+      },
+      {
+        es: "Se trasladó a Reus con su denominación actual en la temporada 1993-94, [[src:enciclopedia-imperials]] y la 1994-95 fue la primera que disputó entera con sede en la ciudad, con el apoyo de su instituto municipal de deportes. [[src:wiki-reus-imperials-en]]",
+        en: "It moved to Reus under its current name in the 1993-94 season, [[src:enciclopedia-imperials]] and 1994-95 was the first it played in full based in the city, backed by its municipal sports institute. [[src:wiki-reus-imperials-en]]",
+      },
+      {
+        es: "Su dominio de la segunda categoría llegó a finales de los dos mil: ganó la LNFA 2 en 2007 ante Argentona Bocs y encadenó 2008, 2009 y 2010 derrotando las tres veces a Valencia Giants. Perdió la final de 2014 ante Mallorca Voltors y recuperó el título en 2015 contra Barberà Rookies. [[src:fefa-palmares]]",
+        en: "Its grip on the second tier came in the late 2000s: it won LNFA 2 in 2007 against Argentona Bocs and ran off 2008, 2009 and 2010, beating Valencia Giants all three times. It lost the 2014 final to Mallorca Voltors and took the title back in 2015 against Barberà Rookies. [[src:fefa-palmares]]",
+      },
+      {
+        es: "En 2017 llegó a la final de la LNFA, la primera nacional de su historia, en su segundo año en la máxima categoría. [[src:diaritarragona-imperials-final-2017]] Se jugó en su propio campo, el Camp Municipal Reddis, y la perdió 56-14 ante Badalona Dracs. [[src:fefa-palmares]] Era la edición 23 de la competición. [[src:fefa-palmares]]",
+        en: "In 2017 it reached the LNFA final, the first national final in its history, in its second year in the top flight. [[src:diaritarragona-imperials-final-2017]] It was played on its own ground, the Camp Municipal Reddis, and lost 56-14 to Badalona Dracs. [[src:fefa-palmares]] It was the competition's 23rd edition. [[src:fefa-palmares]]",
+      },
+      {
+        es: "Wikipedia le atribuye además ocho ligas catalanas (1998, 1999, 2006, 2008, 2009, 2011, 2012 y 2013) y dos copas catalanas (1998 y 1999), que el palmarés de la FEFA no recoge. [[src:wiki-reus-imperials-en]]",
+        en: "Wikipedia also credits it with eight Catalan leagues (1998, 1999, 2006, 2008, 2009, 2011, 2012 and 2013) and two Catalan cups (1998 and 1999), which the FEFA honours list does not carry. [[src:wiki-reus-imperials-en]]",
       },
     ],
     honours: [
@@ -507,9 +535,9 @@ export const cataloniaTeams: Team[] = [
       })),
       { title: { es: "Subcampeón LNFA (Spanish Bowl)", en: "LNFA runner-up (Spanish Bowl)" }, competitionId: "lnfa", year: 2017, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
     ],
-    sourceIds: ["enciclopedia-imperials", "fefa-team-imperials", "fcfa-imperials", "reus-esport-reddis", "fefa-palmares", "fefa-lnfa2-2025-26"],
+    sourceIds: ["enciclopedia-imperials", "wiki-reus-imperials-en", "diaritarragona-imperials-final-2017", "fefa-team-imperials", "fcfa-imperials", "reus-esport-reddis", "fefa-palmares", "fefa-lnfa2-2025-26"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
-    researchNotes: { es: "Coordenadas del campo Reddis pendientes; categorías inferiores y flag por confirmar.", en: "Reddis field coordinates pending; youth and flag sections to confirm." },
+    researchNotes: { es: "Coordenadas del campo Reddis pendientes; categorías inferiores y flag por confirmar. Las ocho ligas y dos copas catalanas solo constan en Wikipedia: no están en el palmarés de la FEFA y por eso quedan en la historia y no en el palmarés de la ficha. Wikipedia tampoco recoge el título de LNFA 2 de 2007 que sí da la FEFA.", en: "Reddis field coordinates pending; youth and flag sections to confirm. The eight Catalan leagues and two cups appear only in Wikipedia: they are absent from the FEFA honours list, so they stay in the history rather than in this entry's honours. Wikipedia also omits the 2007 LNFA 2 title that FEFA does record." },
   },
 ];
