@@ -1555,8 +1555,8 @@ export const regionalTeams: Team[] = [
         en: "It has played in the Liga Madrileña since 2017. [[src:pintogoldbats-web]] In LNFA 2 it finished fourth in the Centre group in 2022 and reached the semi-finals in 2023 and 2024. [[src:fefa-team-goldbats]]",
       },
       {
-        es: "En 2025-26 terminó quinto del grupo madrileño de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
-        en: "In 2025-26 it finished fifth in the Madrid group of LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        es: "En 2025-26 terminó quinto del grupo madrileño de la LNFA 2 con una victoria y cuatro derrotas. [[src:fefa-lnfa2-2025-26]] Su único triunfo fue contundente, un 34-0 a Madrid Capitals, pero en las cuatro derrotas apenas sumó seis puntos en total: 0-7 ante Boadilla Vikings, 6-28 ante Alcorcón Smilodons, 0-14 en Tres Cantos y 0-60 ante Alcobendas Cavaliers. [[src:fefa-team-goldbats]]",
+        en: "In 2025-26 it finished fifth in the Madrid group of LNFA 2 with one win and four defeats. [[src:fefa-lnfa2-2025-26]] Its only win was emphatic, 34-0 against Madrid Capitals, but across the four defeats it managed just six points in total: 0-7 to Boadilla Vikings, 6-28 to Alcorcón Smilodons, 0-14 at Tres Cantos and 0-60 to Alcobendas Cavaliers. [[src:fefa-team-goldbats]]",
       },
     ],
     honours: [],

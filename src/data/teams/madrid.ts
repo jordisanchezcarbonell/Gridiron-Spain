@@ -223,14 +223,18 @@ export const madridTeams: Team[] = [
         es: "Juega en el Campo de Rugby Los Arbolitos, en Vallecas. [[src:capitals-web]]",
         en: "It plays at Campo de Rugby Los Arbolitos, in Vallecas. [[src:capitals-web]]",
       },
+      {
+        es: "En la LNFA 2 2025-26 fue último de la Conferencia Madrileña sin ganar ninguno de sus cinco partidos: 3-28 ante Alcorcón Smilodons, 0-34 en Pinto, 6-14 ante Boadilla Vikings, 0-40 en Tres Cantos y 0-54 ante Alcobendas Cavaliers. Sumó nueve puntos en toda la liga y encajó 170; solo anotó en dos partidos. [[src:fefa-team-capitals]]",
+        en: "In the 2025-26 LNFA 2 it finished bottom of the Madrid Conference without winning any of its five games: 3-28 to Alcorcón Smilodons, 0-34 at Pinto, 6-14 to Boadilla Vikings, 0-40 at Tres Cantos and 0-54 to Alcobendas Cavaliers. It scored nine points in the whole league and conceded 170; it got on the board in only two games. [[src:fefa-team-capitals]]",
+      },
     ],
     honours: [
       { title: { es: "Campeón Spanish Flag Bowl Femenina", en: "Spanish Flag Bowl Women's champion" }, competitionId: "spanish-flag-bowl", year: 2025, sourceIds: ["fefa-palmares-flag"], verificationStatus: "verified" },
     ],
-    sourceIds: ["capitals-web", "fefa-lnfa2-page-2025-26", "fefa-palmares-flag"],
+    sourceIds: ["fefa-team-capitals", "capitals-web", "fefa-lnfa2-page-2025-26", "fefa-palmares-flag"],
     verificationStatus: "partial",
     lastVerifiedAt: V,
-    researchNotes: { es: "La FEFA no tiene ficha del club; coordenadas del campo pendientes.", en: "FEFA has no club page; field coordinates pending." },
+    researchNotes: { es: "La FEFA sí tiene ficha del club: a 21-10-2026 /equipos/madrid-capitals/ responde con calendario y clasificación, así que la nota anterior («no tiene ficha») queda corregida. Coordenadas del campo pendientes.", en: "FEFA does have a club page: as of 21 October 2026 /equipos/madrid-capitals/ returns a calendar and standings, so the earlier note (\"no page\") is corrected. Field coordinates pending." },
   },
   {
     id: "alcobendas-cavaliers",
@@ -267,6 +271,14 @@ export const madridTeams: Team[] = [
       {
         es: "Los Cavaliers ganaron la LNFA 2 el 13 de junio de 2026 al vencer 35-0 a Alcorcón Smilodons en Alcorcón, su segundo título tras el de 2022, y regresan a la máxima categoría en 2026-27. [[src:fefa-lnfa2-final-2026]] [[src:fefa-calendario-2026-27]] El club de origen, Royal Oaks Knights, vincula sus raíces a la comunidad estadounidense de Madrid en los años setenta, un dato pendiente de fuentes primarias. [[src:cronicanorte-knights-2025]] [[src:wiki-cavaliers]]",
         en: "The Cavaliers won LNFA 2 on 13 June 2026 with a 35-0 win over Alcorcón Smilodons in Alcorcón, their second title after 2022, and return to the top tier in 2026-27. [[src:fefa-lnfa2-final-2026]] [[src:fefa-calendario-2026-27]] The parent club, Royal Oaks Knights, traces its roots to Madrid's American community in the 1970s, a claim pending primary sources. [[src:cronicanorte-knights-2025]] [[src:wiki-cavaliers]]",
+      },
+      {
+        es: "Aquella temporada la hicieron sin perder un partido. En la Conferencia Madrileña ganaron los cinco de la fase regular con 272 puntos a favor y solo 24 en contra: 12-0 en Tres Cantos, 57-0 a Boadilla Vikings, 13-10 en Alcorcón —el único partido que se les apretó—, 54-0 a Madrid Capitals y 60-0 a Pinto Goldbats. [[src:fefa-team-cavaliers]]",
+        en: "They went through that season without losing a game. In the Madrid Conference they won all five regular-season games with 272 points for and only 24 against: 12-0 at Tres Cantos, 57-0 against Boadilla Vikings, 13-10 at Alcorcón — the only game that got tight — 54-0 against Madrid Capitals and 60-0 against Pinto Goldbats. [[src:fefa-team-cavaliers]]",
+      },
+      {
+        es: "Después ganaron la semifinal a Boadilla (55-0), la final madrileña a Alcorcón (21-14) y, ya en la fase nacional, a Barcelona Pagesos (28-16) y Jerez Jaguars (23-6) antes del 35-0 de la final. Diez partidos, diez victorias. [[src:fefa-team-cavaliers]]",
+        en: "They then won the semi-final against Boadilla (55-0), the Madrid final against Alcorcón (21-14) and, in the national phase, against Barcelona Pagesos (28-16) and Jerez Jaguars (23-6) before the 35-0 in the final. Ten games, ten wins. [[src:fefa-team-cavaliers]]",
       },
     ],
     honours: [
