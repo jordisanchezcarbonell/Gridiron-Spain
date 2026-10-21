@@ -154,6 +154,14 @@ export const regionalTeams: Team[] = [
         es: "Juega en la Ciudad Deportiva Santo Domingo, en el campo F5 de la avenida Esteban Márquez, según el propio club, que además se atribuye las tres últimas Ligas Madrileñas consecutivas. [[src:smilodons-historia]] En 2025-26 jugó la Conferencia Madrileña de la LNFA 2 [[src:fefa-lnfa2-2025-26]] y firmó su mejor temporada: superó los cuartos de final [[src:fefa-lnfa2-cuartos-2026]] y las semifinales [[src:fefa-lnfa2-semis-2026]] para alcanzar su primera final nacional, donde cayó 0-35 ante Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
         en: "It plays at Ciudad Deportiva Santo Domingo, on pitch F5 on Avenida Esteban Márquez, according to the club itself, which also claims the last three Madrid leagues in a row. [[src:smilodons-historia]] In 2025-26 it played the Madrid Conference of LNFA 2 [[src:fefa-lnfa2-2025-26]] and had its best season: it came through the quarter-finals [[src:fefa-lnfa2-cuartos-2026]] and semi-finals [[src:fefa-lnfa2-semis-2026]] to reach its first national final, losing 0-35 to Alcobendas Cavaliers. [[src:fefa-lnfa2-final-2026]] [[src:fefa-palmares]]",
       },
+      {
+        es: "En la fase regular de la Conferencia Madrileña ganó cuatro de cinco: 28-3 en Madrid Capitals, 28-13 a Jabatos Tres Cantos, 28-6 en Pinto Goldbats y 36-6 a Boadilla Vikings; su única derrota fue el 10-13 ante Alcobendas Cavaliers. [[src:fefa-team-smilodons]]",
+        en: "In the Madrid Conference regular season it won four of five: 28-3 at Madrid Capitals, 28-13 against Jabatos Tres Cantos, 28-6 at Pinto Goldbats and 36-6 against Boadilla Vikings; its only defeat was 10-13 to Alcobendas Cavaliers. [[src:fefa-team-smilodons]]",
+      },
+      {
+        es: "Después ganó la semifinal de conferencia a Jabatos (40-7) y perdió la final madrileña ante Alcobendas (14-21). Ya en la fase nacional pasó por encima de Valladolid Penguins (36-7) y eliminó a Valencia Giants (24-20) antes de la final. Alcobendas le gano las dos finales de la temporada. [[src:fefa-team-smilodons]]",
+        en: "It then won the conference semi-final against Jabatos (40-7) and lost the Madrid final to Alcobendas (14-21). In the national phase it swept past Valladolid Penguins (36-7) and knocked out Valencia Giants (24-20) before the final. Alcobendas beat them in both of the season's finals. [[src:fefa-team-smilodons]]",
+      },
     ],
     honours: [
       {
@@ -1477,8 +1485,12 @@ export const regionalTeams: Team[] = [
         en: "The Girona club was created in 2018 from the merger of Salt Falcons and Senglars de Santa Cristina. [[src:ducs-el-club]]",
       },
       {
-        es: "Su último rastro competitivo en la FEFA es la Copa Catalana de noviembre de 2023, donde cayó 0-22 ante Barcelona Pagesos. [[src:fefa-copa-cuartos-2023]] La FEFA lo incluyó en el grupo catalán de la LNFA 2 2025-26, pero no aparece en la clasificación final y ya no tiene ficha federativa, así que damos su estado por desconocido. [[src:fefa-lnfa2-2025-26]]",
-        en: "Its last competitive trace at FEFA is the November 2023 Copa Catalana, where it lost 0-22 to Barcelona Pagesos. [[src:fefa-copa-cuartos-2023]] FEFA listed it in the Catalan group of LNFA 2 2025-26, but it does not appear in the final standings and no longer has a federation page, so we record its status as unknown. [[src:fefa-lnfa2-2025-26]]",
+        es: "Su último rastro competitivo en la FEFA es la Copa Catalana de noviembre de 2023, donde cayó 0-22 ante Barcelona Pagesos. [[src:fefa-copa-cuartos-2023]] La FEFA lo incluyó en el grupo catalán de la LNFA 2 2025-26, pero no aparece en la clasificación final y su ficha federativa sigue dando 404 a 21 de octubre de 2026, así que damos su estado por desconocido. [[src:fefa-lnfa2-2025-26]]",
+        en: "Its last competitive trace at FEFA is the November 2023 Copa Catalana, where it lost 0-22 to Barcelona Pagesos. [[src:fefa-copa-cuartos-2023]] FEFA listed it in the Catalan group of LNFA 2 2025-26, but it does not appear in the final standings and its federation page still returns 404 as of 21 October 2026, so we record its status as unknown. [[src:fefa-lnfa2-2025-26]]",
+      },
+      {
+        es: "Su web sigue en pie pero congelada: a 21 de octubre de 2026 anuncia todavía la reanudación de los entrenamientos «quan les condicions sanitàries ho permetin» y una jornada cadete para el fin de semana del 27 y 28 de noviembre, textos de la época de la pandemia. Describe equipos cadete, júnior y sénior. [[src:ducs-el-club]]",
+        en: "Its website is still up but frozen: as of 21 October 2026 it still announces training resuming \"when health conditions allow\" and a cadet matchday on the weekend of 27-28 November, texts from the pandemic period. It describes cadet, junior and senior teams. [[src:ducs-el-club]]",
       },
     ],
     honours: [],
@@ -1486,7 +1498,7 @@ export const regionalTeams: Team[] = [
     verificationStatus: "partial",
     lastVerifiedAt: "2026-10-02",
     researchNotes: {
-      es: "No tiene ficha en FEFA (/equipos/castell-platja-daro-ducs/ da 404). No consta que jugara la LNFA 2 2025-26 (probable retirada, sin fuente), así que el estado es 'unknown'. La web ducsfootball.cat tiene el certificado TLS caducado y solo carga por http. El campo sale de la guía municipal de entidades y no está en OSM, así que las coordenadas son del municipio. Faltan las redes: Facebook 'ducsfootballoficial' aparece en buscadores pero no se ha abierto. Último rastro en FEFA: Copa Catalana, noviembre de 2023 (0-22 ante Pagesos).",
+      es: "No tiene ficha en FEFA: /equipos/castell-platja-daro-ducs/ redirige y acaba en 404, comprobado de nuevo el 21-10-2026. No consta que jugara la LNFA 2 2025-26 (probable retirada, sin fuente), así que el estado es 'unknown'. La web ducsfootball.cat tiene el certificado TLS caducado, solo carga por http y su contenido está congelado en la pandemia. El campo sale de la guía municipal de entidades y no está en OSM, así que las coordenadas son del municipio. Faltan las redes: Facebook 'ducsfootballoficial' aparece en buscadores pero no se ha abierto. Último rastro en FEFA: Copa Catalana, noviembre de 2023 (0-22 ante Pagesos).",
       en: "No FEFA team page (/equipos/castell-platja-daro-ducs/ returns 404). No evidence it played LNFA 2 2025-26 (likely withdrawal, unsourced), so status is 'unknown'. ducsfootball.cat has an expired TLS certificate and loads only over http. Ground from the municipal clubs guide; not in OSM, so coordinates are the municipality. Socials pending: Facebook 'ducsfootballoficial' shows up in search but was not opened. Last FEFA trace: Copa Catalana, Nov 2023 (0-22 vs Pagesos).",
     },
   },
@@ -1604,8 +1616,8 @@ export const regionalTeams: Team[] = [
       twitter: "https://x.com/JabatosFootball",
     },
     summary: {
-      es: "Club de Tres Cantos fundado a finales de 2012 por exjugadores de los Tucanes (1991-2001) y jugadores jóvenes. Terminó tercero en el grupo madrileño de la LNFA 2 2025-26.",
-      en: "Tres Cantos club founded in late 2012 by former Tucanes (1991-2001) players and newcomers. Finished third in the LNFA 2 Madrid group in 2025-26.",
+      es: "Club de Tres Cantos fundado a finales de 2012 por exjugadores de los Tucanes (1991-2001) y jugadores jóvenes. Tercero de la Conferencia Madrileña de la LNFA 2 en 2025-26 y semifinalista, eliminado por Alcorcón Smilodons.",
+      en: "Tres Cantos club founded in late 2012 by former Tucanes (1991-2001) players and newcomers. Third in the LNFA 2 Madrid Conference in 2025-26 and a semi-finalist, knocked out by Alcorcón Smilodons.",
     },
     history: [
       {
@@ -1613,8 +1625,16 @@ export const regionalTeams: Team[] = [
         en: "The club was founded in late 2012, driven by former players of Tucanes, active between 1991 and 2001, alongside younger players. [[src:trescantos-jabatos]]",
       },
       {
-        es: "En la LNFA 2 terminó cuarto del grupo Centro en 2024 [[src:fefa-team-jabatos]] y tercero del grupo madrileño en 2025-26. [[src:fefa-lnfa2-2025-26]]",
-        en: "In LNFA 2 it finished fourth in the Centre group in 2024 [[src:fefa-team-jabatos]] and third in the Madrid group in 2025-26. [[src:fefa-lnfa2-2025-26]]",
+        es: "En la LNFA 2 de 2024 ganó dos de seis partidos: perdió con Canarias Canes (9-12), Guadalajara Stings (7-12), Pinto Goldbats (6-36) y Alicante Sharks (14-28), y ganó a Madrid Capitals (13-6) y Fuenlabrada Wolverines (34-0). [[src:fefa-team-jabatos]]",
+        en: "In the 2024 LNFA 2 it won two of six games: it lost to Canarias Canes (9-12), Guadalajara Stings (7-12), Pinto Goldbats (6-36) and Alicante Sharks (14-28), and beat Madrid Capitals (13-6) and Fuenlabrada Wolverines (34-0). [[src:fefa-team-jabatos]]",
+      },
+      {
+        es: "En 2025-26 acabó tercero de la Conferencia Madrileña con tres victorias y tres derrotas, 87 puntos a favor y 86 en contra, por detrás de Alcobendas Cavaliers y Alcorcón Smilodons. [[src:fefa-team-jabatos]] [[src:fefa-lnfa2-2025-26]] Ganó a Boadilla Vikings (13-6), Madrid Capitals (40-0) y Pinto Goldbats (14-0). [[src:fefa-team-jabatos]]",
+        en: "In 2025-26 it finished third in the Madrid Conference with three wins and three defeats, 87 points for and 86 against, behind Alcobendas Cavaliers and Alcorcón Smilodons. [[src:fefa-team-jabatos]] [[src:fefa-lnfa2-2025-26]] It beat Boadilla Vikings (13-6), Madrid Capitals (40-0) and Pinto Goldbats (14-0). [[src:fefa-team-jabatos]]",
+      },
+      {
+        es: "Ese tercer puesto le dio la semifinal, jugada el 11 de abril de 2026 y perdida 40-7 ante Alcorcón Smilodons, el mismo rival que ya le había ganado en la segunda jornada. [[src:fefa-team-jabatos]]",
+        en: "That third place earned a semi-final, played on 11 April 2026 and lost 40-7 to Alcorcón Smilodons, the same side that had already beaten them on matchday two. [[src:fefa-team-jabatos]]",
       },
     ],
     honours: [],
@@ -1622,7 +1642,7 @@ export const regionalTeams: Team[] = [
     verificationStatus: "partial",
     lastVerifiedAt: "2026-10-02",
     researchNotes: {
-      es: "La fundación ('finales de 2012') sale de la ficha municipal de Tres Cantos, consultada en una copia de Internet Archive de 2015 porque el original no responde. La web jabatos.es está activa pero sin actualizar desde 2024. El campo no está en OSM, así que las coordenadas son del centro. Historial FEFA: LNFA 2 2024 (4º Centro). FEFA lo llama 'Tres Cantos Jabatos' en el anuncio de la temporada y 'Jabatos Tres Cantos' en la ficha.",
+      es: "La fundación ('finales de 2012') sale de la ficha municipal de Tres Cantos, consultada en una copia de Internet Archive de 2015 porque el original no responde. La web jabatos.es está activa pero sin actualizar desde 2024 (comprobado el 21-10-2026). El campo no está en OSM, así que las coordenadas son del centro. Resultados y clasificaciones de 2024 y 2025-26 tomados de la ficha federativa. FEFA lo llama 'Tres Cantos Jabatos' en el anuncio de la temporada y 'Jabatos Tres Cantos' en la ficha.",
       en: "Founding ('late 2012') from the Tres Cantos council club page, read via a 2015 Internet Archive copy because the original no longer responds. jabatos.es is live but has not been updated since 2024. Ground not in OSM, so coordinates are the town centre. FEFA record: LNFA 2 2024 (4th Centre). FEFA calls it 'Tres Cantos Jabatos' in the season announcement and 'Jabatos Tres Cantos' on its team page.",
     },
   },
@@ -1675,8 +1695,16 @@ export const regionalTeams: Team[] = [
         en: "Vikings FA was created in 2021 in Boadilla del Monte to spread American football across the town. [[src:vikings-club]]",
       },
       {
-        es: "La temporada 2025-26 fue la primera con historial federativo tras cuatro años sin competición nacional: terminó cuarto del grupo madrileño de la LNFA 2. [[src:fefa-team-vikings]] [[src:fefa-lnfa2-2025-26]]",
-        en: "2025-26 was its first season with a federation record after four years without national competition: it finished fourth in the Madrid group of LNFA 2. [[src:fefa-team-vikings]] [[src:fefa-lnfa2-2025-26]]",
+        es: "La temporada 2025-26 fue la primera con historial federativo tras cuatro años sin competición nacional: terminó cuarto del grupo madrileño de la LNFA 2 con dos victorias y cuatro derrotas. [[src:fefa-team-vikings]] [[src:fefa-lnfa2-2025-26]]",
+        en: "2025-26 was its first season with a federation record after four years without national competition: it finished fourth in the Madrid group of LNFA 2 with two wins and four defeats. [[src:fefa-team-vikings]] [[src:fefa-lnfa2-2025-26]]",
+      },
+      {
+        es: "Sus dos victorias fueron partidos cerrados y de pocos puntos: 7-0 a Pinto Goldbats en la primera jornada y 14-6 en casa de Madrid Capitals. Perdió con Jabatos Tres Cantos (6-13) y con Alcorcón Smilodons (6-36), y se encontró dos veces con el intratable Alcobendas Cavaliers, que le ganó 57-0 en liga y 55-0 en la semifinal. [[src:fefa-team-vikings]]",
+        en: "Its two wins were tight, low-scoring games: 7-0 against Pinto Goldbats on matchday one and 14-6 away at Madrid Capitals. It lost to Jabatos Tres Cantos (6-13) and Alcorcón Smilodons (6-36), and ran twice into an unplayable Alcobendas Cavaliers, who beat them 57-0 in the league and 55-0 in the semi-final. [[src:fefa-team-vikings]]",
+      },
+      {
+        es: "El balance de puntos resume la temporada: 33 a favor y 167 en contra en seis partidos. [[src:fefa-team-vikings]]",
+        en: "The points column sums up the season: 33 scored and 167 conceded in six games. [[src:fefa-team-vikings]]",
       },
     ],
     honours: [],
