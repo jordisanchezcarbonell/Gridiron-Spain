@@ -32,10 +32,10 @@ export const nflMadrid2026Guia: Article = {
   relatedCompetitionIds: ["nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-14",
+  updatedAt: "2026-10-21",
   status: "published",
   verificationStatus: "partial",
-  lastVerifiedAt: "2026-10-14",
+  lastVerifiedAt: "2026-10-21",
   readingTimeMinutes: 6,
   event: {
     name: "Atlanta Falcons vs Cincinnati Bengals · NFL Madrid Game 2026",
@@ -45,6 +45,9 @@ export const nflMadrid2026Guia: Article = {
     away: "Cincinnati Bengals",
   },
   sourceIds: [
+    "cbs-nfl-scoreboard-2026-week-6",
+    "espn-nfl-scoreboard-2026-week-6",
+    "espn-nfl-standings-2026-10-21",
     "madrid26-bengals-press-release",
     "madrid26-falcons-announcement",
     "nfl-madrid-multiyear-2026",
@@ -165,15 +168,15 @@ export const nflMadrid2026Guia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "Atlanta llega 2-3 tras la semana 5 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] con Kevin Stefanski como nuevo entrenador. Michael Penix Jr. es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
-        en: "Atlanta is 2-3 after Week 5 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] under new head coach Kevin Stefanski. Michael Penix Jr. has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
+        es: "Atlanta llega 2-4 tras la semana 6, en la que perdió 31-23 en casa ante los Bears, [[src:espn-nfl-standings-2026-10-21]] [[src:espn-nfl-scoreboard-2026-week-6]] [[src:cbs-nfl-scoreboard-2026-week-6]] con Kevin Stefanski como nuevo entrenador. Michael Penix Jr. es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
+        en: "Atlanta is 2-4 after Week 6, in which they lost 31-23 at home to the Bears, [[src:espn-nfl-standings-2026-10-21]] [[src:espn-nfl-scoreboard-2026-week-6]] [[src:cbs-nfl-scoreboard-2026-week-6]] under new head coach Kevin Stefanski. Michael Penix Jr. has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "Cincinnati va 3-2 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] con Zac Taylor en el banquillo y Joe Burrow como quarterback. En Pittsburgh perdió el 27 de septiembre, 30-27 con un field goal final de los Steelers, [[src:madrid26-ap-steelers-bengals]] y en la semana 5 ganó 31-24 en Miami con cuatro pases de touchdown de Burrow. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
-        en: "Cincinnati is 3-2 [[src:cbs-nfl-standings-2026-10-14]] [[src:espn-nfl-standings-2026-10-14]] with Zac Taylor as head coach and Joe Burrow at quarterback. They lost in Pittsburgh on 27 September, 30-27 on a late Steelers field goal, [[src:madrid26-ap-steelers-bengals]] and in Week 5 won 31-24 in Miami behind four Burrow touchdown passes. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
+        es: "Cincinnati va 3-2 en cinco partidos, porque descansó en la semana 6, [[src:espn-nfl-standings-2026-10-21]] con Zac Taylor en el banquillo y Joe Burrow como quarterback. En Pittsburgh perdió el 27 de septiembre, 30-27 con un field goal final de los Steelers, [[src:madrid26-ap-steelers-bengals]] y en la semana 5 ganó 31-24 en Miami con cuatro pases de touchdown de Burrow. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
+        en: "Cincinnati is 3-2 from five games, having had their bye in Week 6, [[src:espn-nfl-standings-2026-10-21]] with Zac Taylor as head coach and Joe Burrow at quarterback. They lost in Pittsburgh on 27 September, 30-27 on a late Steelers field goal, [[src:madrid26-ap-steelers-bengals]] and in Week 5 won 31-24 in Miami behind four Burrow touchdown passes. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
       },
     },
     {
