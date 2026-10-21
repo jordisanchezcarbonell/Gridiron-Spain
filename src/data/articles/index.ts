@@ -24,6 +24,7 @@ import { previa20261017 } from "./previa-2026-10-17";
 import { ncaaJornadaHistorica20261017 } from "./ncaa-jornada-historica-2026-10-17";
 import { antesDe1988 } from "./antes-de-1988";
 import { armyNavyPlayoff24_2027 } from "./army-navy-game-playoff-24-equipos-2027";
+import { finde20261017 } from "./finde-2026-10-17";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -55,4 +56,5 @@ export const articles: Article[] = [
   ncaaJornadaHistorica20261017,
   antesDe1988,
   armyNavyPlayoff24_2027,
+  finde20261017,
 ];

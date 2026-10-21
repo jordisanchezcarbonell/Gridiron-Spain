@@ -23,14 +23,14 @@ export const nationalTeams: NationalTeam[] = [
       en: "Spain returns to the European Championship in Level 2: a home-and-away round robin with Georgia and a Great Britain development team between October 2026 and October 2027. Jesús Fernández Pino has been head coach since February 2026.",
     },
     upcoming: [
-      { date: "2026-10-18", opponent: "Gran Bretaña (equipo de desarrollo)", venue: "Nick Newbold Stadium, Coventry", competition: EURO_MEN, note: { es: "13:00 hora peninsular. Fecha publicada por la IFAF; la FEFA aún no lo ha anunciado.", en: "1 pm Spanish time. Date published by IFAF; FEFA has not announced it yet." }, sourceIds: ["selec-ifaf-euro-men-2026-09-29"], verificationStatus: "partial" },
-      { date: "2026-10-24", opponent: "Georgia", venue: "Jaca", competition: EURO_MEN, note: { es: "17:00. Primer partido en casa del ciclo.", en: "5 pm. First home game of the cycle." }, sourceIds: ["selec-ifaf-euro-men-2026-09-29", "selec-fefa-tryouts-masc-2026-09-18"], verificationStatus: "verified" },
+      { date: "2026-10-24", opponent: "Georgia", venue: "Campo del Oroel, Jaca", competition: EURO_MEN, note: { es: "17:00, con entrada gratuita. Primer partido en casa del ciclo. Georgia perdió 61-0 en casa ante el mismo equipo de desarrollo británico al que España ganó 59-0.", en: "5 pm, free entry. First home game of the cycle. Georgia lost 61-0 at home to the same British development team Spain beat 59-0." }, sourceIds: ["selec-pirineo-georgia-2026", "selec-fefa-gb-debut-2026", "selec-ifaf-euro-men-2026-09-29"], verificationStatus: "verified" },
     ],
     results: [
       { date: "2022-10-22", opponent: "Irlanda", venue: "Estadio Rafael Mendoza, Pinto", competition: { es: "Europeo IFAF · Grupo B", en: "IFAF European Championship · Group B" }, score: "26-7", result: "win", sourceIds: ["selec-fefa-masc-irlanda-2022"], verificationStatus: "verified" },
       { date: "2023-08-06", opponent: "Israel", venue: "Jerusalén", competition: { es: "Europeo IFAF · Grupo B", en: "IFAF European Championship · Group B" }, score: "23-30", result: "loss", sourceIds: ["selec-fefa-masc-israel-2023"], verificationStatus: "verified" },
+      { date: "2026-10-18", opponent: "Gran Bretaña (equipo de desarrollo U25)", venue: "Nick Newbold Stadium, Coventry", competition: EURO_MEN, score: "59-0", result: "win", note: { es: "Debut del ciclo y mayor victoria de la selección. 35-0 al descanso: seis pases de touchdown de Iván «Terry» López y dos de Pol Singleton, con Adrián Bermúdez MVP tras anotar tres. La defensa de Ricardo Martín forzó tres pérdidas y apenas dejó al rival cruzar el medio campo.", en: "The cycle's opening game and Spain's biggest win. 35-0 at half-time: six touchdown passes from Iván \"Terry\" López and two from Pol Singleton, with Adrián Bermúdez named MVP after scoring three. Ricardo Martín's defence forced three turnovers and barely let the opponent cross midfield." }, sourceIds: ["selec-fefa-gb-debut-2026", "selec-afi-gb-2026"], verificationStatus: "verified" },
     ],
-    sourceIds: ["selec-ifaf-euro-men-2026-09-29", "selec-fefa-tryouts-masc-2026-09-18", "selec-fefa-staff-2026-02-11", "selec-fefa-masc-irlanda-2022", "selec-fefa-masc-israel-2023"],
+    sourceIds: ["selec-ifaf-euro-men-2026-09-29", "selec-fefa-tryouts-masc-2026-09-18", "selec-fefa-staff-2026-02-11", "selec-fefa-masc-irlanda-2022", "selec-fefa-masc-israel-2023", "selec-fefa-gb-debut-2026", "selec-afi-gb-2026", "selec-pirineo-georgia-2026"],
     verificationStatus: "verified",
     lastVerifiedAt: V,
   },
