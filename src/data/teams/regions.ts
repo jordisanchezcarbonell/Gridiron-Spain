@@ -560,6 +560,10 @@ export const regionalTeams: Team[] = [
         en: "The club itself dates the start of its history to 1993, while Wikipedia gives 1994 as its official founding. [[src:cobras-web-presentacion]] [[src:wiki-cobras-es]] According to Wikipedia, they played two years of regional competition before joining the first season of the new national league in 1997. [[src:wiki-cobras-es]]",
       },
       {
+        es: "Su mejor etapa deportiva llega en la segunda mitad de los dos mil diez. Ganó la LNFA 2 en 2016 a L'Hospitalet Pioners [[src:fefa-palmares]] y dos años después alcanzó la final de la máxima categoría: la edición 24 de la LNFA, jugada en Las Mestas de Gijón, que perdió ante Badalona Dracs. [[src:fefa-palmares]] Antes había sido campeón de la LNFA Junior en 2008 y 2009. [[src:fefa-palmares]]",
+        en: "Its best competitive spell came in the second half of the 2010s. It won LNFA 2 in 2016 against L'Hospitalet Pioners [[src:fefa-palmares]] and two years later reached the top-flight final: the 24th LNFA, played at Las Mestas in Gijón, which it lost to Badalona Dracs. [[src:fefa-palmares]] Before that it had been LNFA Junior champion in 2008 and 2009. [[src:fefa-palmares]]",
+      },
+      {
         es: "En 2026-27 el club tiene un equipo senior de tackle, flag football masculino y femenino, y equipos mixtos de flag sub-9, sub-11, sub-13 y sub-15. Juega en casa en el campo de fútbol del Polideportivo José Barnés. [[src:cobras-web-equipos-2026-27]] [[src:cobras-web-copa-levante-2025]]",
         en: "In 2026-27 the club fields a senior tackle team, men's and women's flag football, and mixed flag teams at U9, U11, U13 and U15. Home games are played at the José Barnés sports complex football field. [[src:cobras-web-equipos-2026-27]] [[src:cobras-web-copa-levante-2025]]",
       },
@@ -617,7 +621,7 @@ export const regionalTeams: Team[] = [
     verificationStatus: "partial",
     lastVerifiedAt: "2026-10-12",
     researchNotes: {
-      es: "Fundación: el club habla de 1993 («inició su historia») y la Wikipedia de 1994; se mantiene 1994 hasta tener el acta. El club autorizó por correo (8-10-2026) usar la información de su web. La final LNFA 2018 se jugó en Las Mestas (Gijón) según FEFA.",
+      es: "Fundación: el club habla de 1993 («inició su historia») y la Wikipedia de 1994; se mantiene 1994 hasta tener el acta. El club autorizó por correo (8-10-2026) usar la información de su web. La final de la LNFA 2018 en Las Mestas (Gijón) estaba en las notas pero no en el dataset de finales, que no anotaba finalista para esa edición; se ha completado con la misma fuente de la FEFA.",
       en: "Founding: the club says its history began in 1993, Wikipedia says 1994; 1994 kept until a founding document turns up. The club authorised use of its website content by email (8 Oct 2026). FEFA places the 2018 LNFA final at Las Mestas (Gijón).",
     },
   },

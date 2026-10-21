@@ -32,7 +32,7 @@ export const lnfaFinals: Final[] = [
   { competitionId: "lnfa", year: 2015, edition: 21, champion: { teamId: "valencia-firebats" }, sourceIds: P, verificationStatus: "verified" },
   { competitionId: "lnfa", year: 2016, edition: 22, champion: { teamId: "badalona-dracs" }, sourceIds: P, verificationStatus: "verified" },
   { competitionId: "lnfa", year: 2017, edition: 23, champion: { teamId: "badalona-dracs" }, runnerUp: { teamId: "reus-imperials" }, score: "56-14", venue: { es: "Camp Municipal Reddis, Reus", en: "Camp Municipal Reddis, Reus" }, sourceIds: P, verificationStatus: "verified" },
-  { competitionId: "lnfa", year: 2018, edition: 24, champion: { teamId: "badalona-dracs" }, sourceIds: P, verificationStatus: "verified" },
+  { competitionId: "lnfa", year: 2018, edition: 24, champion: { teamId: "badalona-dracs" }, runnerUp: { teamId: "murcia-cobras" }, venue: { es: "Las Mestas, Gijón", en: "Las Mestas, Gijón" }, sourceIds: P, verificationStatus: "verified" },
   { competitionId: "lnfa", year: 2019, edition: 25, champion: { teamId: "badalona-dracs" }, sourceIds: P, verificationStatus: "verified" },
   { competitionId: "lnfa", year: 2020, edition: 26, note: { es: "Temporada suspendida por la COVID-19", en: "Season suspended because of COVID-19" }, sourceIds: P, verificationStatus: "verified" },
   { competitionId: "lnfa", year: 2021, edition: 27, champion: { teamId: "badalona-dracs" }, sourceIds: P, verificationStatus: "verified" },

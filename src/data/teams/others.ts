@@ -43,8 +43,20 @@ export const otherTeams: Team[] = [
         en: "The Firebats were born in 1993 as Valencia Bats, according to an interview with president Fernando Altarriba and the club history reproduced in unofficial sources. [[src:elpolideportivo-altarriba-2021]] [[src:firebats-historia-mural]]",
       },
       {
-        es: "La FEFA les atribuye cuatro títulos de LNFA (2006, 2007, 2009 y 2015) y el récord de diez Spanish Flag Bowl Open, el último en junio de 2026 ante Zaragoza Hurricanes. [[src:fefa-palmares]] [[src:fefa-flag-bowl-2026]]",
-        en: "FEFA credits them with four LNFA titles (2006, 2007, 2009 and 2015) and a record ten Spanish Flag Bowl Open wins, the latest in June 2026 against Zaragoza Hurricanes. [[src:fefa-palmares]] [[src:fefa-flag-bowl-2026]]",
+        es: "En tackle, la FEFA les atribuye cuatro títulos de LNFA: las ediciones 12, 13 y 15 —2006, 2007 y 2009— y la 21, en 2015. [[src:fefa-palmares]] Antes habían perdido dos finales de Copa de España contra el mismo rival, L'Hospitalet Pioners: 16-23 en 2004 y 23-46 en 2010. [[src:fefa-palmares]]",
+        en: "In tackle, FEFA credits them with four LNFA titles: editions 12, 13 and 15 — 2006, 2007 and 2009 — and the 21st, in 2015. [[src:fefa-palmares]] Before that they had lost two Copa de España finals to the same opponent, L'Hospitalet Pioners: 16-23 in 2004 and 23-46 in 2010. [[src:fefa-palmares]]",
+      },
+      {
+        es: "Su paso por la segunda categoría tiene simetría: perdieron la final de la LNFA 2 de 2022 ante Alcobendas Cavaliers y en 2025 ganaron el título al mismo rival. [[src:fefa-palmares]]",
+        en: "Their spell in the second tier has a symmetry to it: they lost the 2022 LNFA 2 final to Alcobendas Cavaliers and in 2025 won the title against the same opponent. [[src:fefa-palmares]]",
+      },
+      {
+        es: "El flag es donde más han ganado. Diez Spanish Flag Bowl Open —2010, 2013, 2014, 2015, 2017, 2019, 2021, 2022, 2024 y 2026—, que son el récord de la competición; solo perdieron la de 2012. [[src:fefa-palmares-flag]] El último lo ganaron en junio de 2026 ante Zaragoza Hurricanes. [[src:fefa-flag-bowl-2026]] Tres de esos títulos llegaron derrotando a Las Rozas Black Demons en la final. [[src:fefa-palmares-flag]]",
+        en: "Flag is where they have won most. Ten Spanish Flag Bowl Open titles — 2010, 2013, 2014, 2015, 2017, 2019, 2021, 2022, 2024 and 2026 — the competition record; the only one they lost was 2012. [[src:fefa-palmares-flag]] They won the latest in June 2026 against Zaragoza Hurricanes. [[src:fefa-flag-bowl-2026]] Three of those titles came by beating Las Rozas Black Demons in the final. [[src:fefa-palmares-flag]]",
+      },
+      {
+        es: "El equipo femenino tiene su propio palmarés: campeón de la LNFA femenina en 2019 y subcampeón en 2026, las dos veces frente a Barberà Rookies, [[src:fefa-palmares]] y tres Spanish Flag Bowl femeninas (2019, 2022 y 2024) con otras tres finales perdidas en 2016, 2025 y 2026. [[src:fefa-palmares-flag]]",
+        en: "The women's team has a record of its own: women's LNFA champion in 2019 and runner-up in 2026, both times against Barberà Rookies, [[src:fefa-palmares]] plus three women's Spanish Flag Bowls (2019, 2022 and 2024) and three more finals lost in 2016, 2025 and 2026. [[src:fefa-palmares-flag]]",
       },
       {
         es: "Según el propio club, en tackle tiene equipos senior masculino y femenino y cadete/junior, y en flag football equipos open, femenino y categorías de formación. [[src:firebats-correo-2026-10-08]]",
@@ -79,7 +91,7 @@ export const otherTeams: Team[] = [
     sourceIds: ["fefa-team-firebats", "elpolideportivo-altarriba-2021", "firebats-historia-mural", "fefa-palmares", "fefa-palmares-flag", "fefa-flag-bowl-2026", "fefa-femenina-final-2026", "fefa-calendario-2026-27", "firebats-correo-2026-10-08"],
     verificationStatus: "partial",
     lastVerifiedAt: "2026-10-12",
-    researchNotes: { es: "Historia fundacional (abril de 1993, escisión de Cullera Giants) pendiente de fuente oficial del club.", en: "Founding story (April 1993, split from Cullera Giants) pending an official club source." },
+    researchNotes: { es: "Historia fundacional (abril de 1993, escisión de Cullera Giants) pendiente de fuente oficial del club. El recorrido de finales procede del palmarés de la FEFA que ya estaba en el repositorio.", en: "Founding story (April 1993, split from Cullera Giants) pending an official club source. The run of finals comes from the FEFA honours data already held in this repository." },
   },
   {
     id: "mallorca-voltors",
