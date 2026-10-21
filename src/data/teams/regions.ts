@@ -787,42 +787,48 @@ export const regionalTeams: Team[] = [
       },
       verificationStatus: "partial",
     },
-    website: "https://coyotes-santurtzi.com/",
     socialLinks: {
       instagram: "https://www.instagram.com/coyotessanturtzi/",
       twitter: "https://x.com/CoyotesFootball",
     },
     summary: {
-      es: "Club vizcaíno fundado en 1998, referente del football en el País Vasco. Segundo del grupo Norte de la LNFA 2 2025-26.",
-      en: "Biscay club founded in 1998, the reference football club in the Basque Country. Runner-up in the LNFA 2 North group in 2025-26.",
+      es: "Club vizcaíno nacido en 1998 de antiguos jugadores de los Bilbao Cougars y constituido formalmente en 2000. Subcampeón nacional en 2003, siete temporadas en la máxima categoría entre 2010 y 2017 y campeón de la Liga Norte en 2019. Segundo del grupo Norte de la LNFA 2 en 2025-26.",
+      en: "Biscay club born in 1998 out of former Bilbao Cougars players and formally constituted in 2000. National runner-up in 2003, seven seasons in the top flight between 2010 and 2017 and Liga Norte champion in 2019. Runner-up in the LNFA 2 North group in 2025-26."
     },
     history: [
       {
-        es: "El club vizcaíno se fundó en 1998 según Wikipedia, que es la única fuente que lo recoge. [[src:wiki-coyotes-es]]",
-        en: "The Biscay club was founded in 1998 according to Wikipedia, the only source that records it. [[src:wiki-coyotes-es]]",
+        es: "El club nació en 1998 de un grupo de amigos, entre ellos varios jugadores que habían competido en la liga nacional con los desaparecidos Bilbao Cougars, y formalizó su constitución el 12 de julio de 2000. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]] En mayo de 1999 apenas eran seis socios. [[src:coyotes-historia-archivo]]",
+        en: "The club was born in 1998 out of a group of friends, among them several players who had competed in the national league with the defunct Bilbao Cougars, and formally constituted itself on 12 July 2000. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]] In May 1999 it had barely six members. [[src:coyotes-historia-archivo]]",
       },
       {
-        es: "Fue subcampeón de la LNFA Junior en 2017 [[src:fefa-palmares]] y en 2025-26 terminó segundo del grupo Norte de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
-        en: "It was LNFA Junior runner-up in 2017 [[src:fefa-palmares]] and in 2025-26 finished second in the LNFA 2 North group. [[src:fefa-lnfa2-2025-26]]",
+        es: "Empezó jugando exhibiciones en el polideportivo Zubi Alde de Portugalete. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]] Sus primeros años fueron de flag: el 2 de mayo de 1999 ganó un trofeo en Barcelona en el que venció sus tres partidos ante cinco equipos catalanes, y en julio de 2001 organizó en Santurtzi el I Campeonato de España de Football Flag, con catorce equipos y retransmitido por Canal Plus en Sportmanía. [[src:coyotes-historia-archivo]]",
+        en: "It started out playing exhibition games at the Zubi Alde sports centre in Portugalete. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]] Its early years were flag football: on 2 May 1999 it won a trophy in Barcelona, taking all three of its games against five Catalan sides, and in July 2001 it hosted the first Spanish Flag Football Championship in Santurtzi, with fourteen teams and televised by Canal Plus on Sportmanía. [[src:coyotes-historia-archivo]]",
+      },
+      {
+        es: "Sin rivales de tackle cerca, compitió durante años en las ligas madrileñas. Ahí llegó su mejor resultado: tras ganar la final de Madrid a Las Rozas Black Demons en 2003, disputó la final-four nacional en el campo de La Cartuja de Sevilla, ganó el primer partido y perdió la final, terminando subcampeón. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]]",
+        en: "With no tackle opponents nearby, it spent years competing in the Madrid leagues. That brought its best result: after winning the Madrid final against Las Rozas Black Demons in 2003, it played the national final four at La Cartuja in Seville, won its first game and lost the final to finish runner-up. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]]",
+      },
+      {
+        es: "Participó en la primera edición de la LNFA 2 en 2004 y organizó la final nacional en Santurtzi ese mismo junio; en 2005, en la segunda edición, fue campeón de la liga madrileña y cayó en la final de conferencia. [[src:coyotes-historia-archivo]] Jugó en la LNFA 2 hasta 2010, subió a la máxima categoría entre 2010 y 2017 y volvió después al escalón de abajo. [[src:wiki-coyotes-es]]",
+        en: "It took part in the first LNFA 2 season in 2004 and hosted the national final in Santurtzi that June; in 2005, in the second season, it won the Madrid league and fell in the conference final. [[src:coyotes-historia-archivo]] It played in LNFA 2 until 2010, moved up to the top tier between 2010 and 2017 and later returned to the division below. [[src:wiki-coyotes-es]]",
+      },
+      {
+        es: "El 27 de abril de 2019 ganó en casa la final de la Liga Norte organizada por FEFAPA al imponerse 23-18 a Cantabria Bisons. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]] Fue subcampeón de la LNFA Junior en 2017 [[src:fefa-palmares]] y en 2025-26 terminó segundo del grupo Norte de la LNFA 2. [[src:fefa-lnfa2-2025-26]]",
+        en: "On 27 April 2019 it won the FEFAPA-run Liga Norte final at home, beating Cantabria Bisons 23-18. [[src:coyotes-historia-archivo]] [[src:wiki-coyotes-es]] It was LNFA Junior runner-up in 2017 [[src:fefa-palmares]] and in 2025-26 finished second in the LNFA 2 North group. [[src:fefa-lnfa2-2025-26]]",
       },
     ],
     honours: [
-      {
-        title: {
-          es: "Subcampeón LNFA Junior",
-          en: "LNFA Junior runner-up",
-        },
-        year: 2017,
-        sourceIds: ["fefa-palmares"],
-        verificationStatus: "verified",
-      },
+      { title: { es: "Subcampeón nacional (final-four de Sevilla)", en: "National runner-up (Seville final four)" }, year: 2003, sourceIds: ["coyotes-historia-archivo", "wiki-coyotes-es"], verificationStatus: "verified" },
+      { title: { es: "Campeón de la liga madrileña", en: "Madrid league champion" }, year: 2005, sourceIds: ["coyotes-historia-archivo"], verificationStatus: "partial" },
+      { title: { es: "Subcampeón LNFA Junior", en: "LNFA Junior runner-up" }, year: 2017, sourceIds: ["fefa-palmares"], verificationStatus: "verified" },
+      { title: { es: "Campeón de la Liga Norte (FEFAPA)", en: "Liga Norte champion (FEFAPA)" }, year: 2019, sourceIds: ["coyotes-historia-archivo", "wiki-coyotes-es"], verificationStatus: "verified" },
     ],
-    sourceIds: ["fefa-team-coyotes", "wiki-coyotes-es", "fefa-lnfa2-2025-26", "fefa-palmares", "osm-nominatim"],
+    sourceIds: ["fefa-team-coyotes", "wiki-coyotes-es", "coyotes-historia-archivo", "fefa-lnfa2-2025-26", "fefa-palmares", "osm-nominatim"],
     verificationStatus: "partial",
     lastVerifiedAt: "2026-10-02",
     researchNotes: {
-      es: "Fundación (1998) solo en Wikipedia. La web del club respondió sin contenido legible el 2026-10-02.",
-      en: "1998 founding only in Wikipedia. Club website returned no readable content on 2026-10-02.",
+      es: "La web del club ya no sirve el sitio: el dominio resuelve pero devuelve la página por defecto de Plesk, y además su certificado no cubre ese nombre. El campo website se ha retirado por eso. La historia procede de la última captura del Internet Archive (18-6-2026), contrastada con Wikipedia. Queda sin confirmar en fuente independiente el campeonato de la liga madrileña de 2005, que solo cuenta el club.",
+      en: "The club website no longer serves the site: the domain resolves but returns the default Plesk page, and its certificate does not cover that hostname. The website field has been removed for that reason. The history comes from the last Internet Archive capture (18 June 2026), cross-checked against Wikipedia. The 2005 Madrid league title is still unconfirmed in an independent source: only the club reports it.",
     },
   },
   {

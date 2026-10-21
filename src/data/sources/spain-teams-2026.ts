@@ -305,6 +305,19 @@ export const spainTeamsSources: Source[] = [
     sourceType: "encyclopedia",
   },
   {
+    id: "coyotes-historia-archivo",
+    title: "Historia — Coyotes Santurtzi",
+    publisher: "Coyotes Santurtzi (via Internet Archive)",
+    url: "http://web.archive.org/web/20260618074625/https://coyotes-santurtzi.com/index.php/el-club/historia/",
+    publishedAt: "2026-06-18",
+    accessedAt: "2026-10-21",
+    sourceType: "archive",
+    notes: {
+      es: "Historia que el propio club publicaba en su web, recuperada del Internet Archive (captura del 18-6-2026) porque el dominio ya no sirve el sitio: devuelve la pagina por defecto de Plesk. El relato del club es internamente inconsistente en un punto: situa la final madrilenia el 1 de junio de 2003 y la final-four «dos semanas despues», pero la fecha el 3 de junio.",
+      en: "The club's own history as published on its website, recovered from the Internet Archive (18 June 2026 capture) because the domain no longer serves the site: it returns the default Plesk page. The club's account is internally inconsistent on one point: it places the Madrid final on 1 June 2003 and the final four \"two weeks later\", yet dates it 3 June.",
+    },
+  },
+  {
     id: "fefa-team-bisons",
     title: "Cantabria Bisons — ficha de equipo",
     publisher: "FEFA",
