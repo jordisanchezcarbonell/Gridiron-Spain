@@ -27,7 +27,7 @@ export const diegoPazPatriots2026: Article = {
       en: "Diego Paz, the Spaniard who worked out for the New England Patriots",
     },
     description: {
-      es: "Quién es Diego Paz González: edad, trayectoria, números en la AFLE con Rhein Fire y qué significa su prueba con los New England Patriots del 12 de octubre de 2026.",
+      es: "Quién es Diego Paz González: 23 años, gallego, 8,5 sacks en la AFLE con Rhein Fire y su prueba con los New England Patriots del 12 de octubre de 2026.",
       en: "Who Diego Paz González is: age, career path, his AFLE numbers with Rhein Fire and what his 12 October 2026 workout with the New England Patriots means.",
     },
   },

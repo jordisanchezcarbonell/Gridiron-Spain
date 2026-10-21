@@ -77,8 +77,8 @@ export const europePlayers: PlayerSpotlight[] = [
     group: "europe",
     hometown: "Galicia",
     note: {
-      es: "Mejor jugador defensivo revelación de la AFLE 2026 (40 tackles, 8,5 sacks y una intercepción devuelta para touchdown en doce partidos). Empezó a los 19 años en los Barcelona Dragons y el 12 de octubre de 2026 se probó con los New England Patriots a través del International Player Pathway, sin contrato anunciado.",
-      en: "AFLE 2026 Most Improved Defensive Player (40 tackles, 8.5 sacks and a pick-six in twelve games). He started at 19 with the Barcelona Dragons and on 12 October 2026 worked out for the New England Patriots through the International Player Pathway, with no contract announced.",
+      es: "Se probó con los New England Patriots el 12 de octubre de 2026, sin contrato anunciado. Defensive end gallego de 23 años, mejor jugador defensivo revelación de la AFLE 2026 con Rhein Fire (40 tackles, 8,5 sacks y una intercepción devuelta para touchdown en doce partidos). Empezó a los 19 años en los Barcelona Dragons y llegó a los Patriots a través del International Player Pathway.",
+      en: "He worked out for the New England Patriots on 12 October 2026, with no contract announced. A 23-year-old defensive end from Galicia, AFLE 2026 Most Improved Defensive Player with Rhein Fire (40 tackles, 8.5 sacks and a pick-six in twelve games). He started at 19 with the Barcelona Dragons and reached the Patriots through the International Player Pathway.",
     },
     sourceIds: ["afle-paz-profile-2026", "afle-paz-breakout-2026", "afle-paz-patriots-2026", "yahoo-paz-patriots-2026", "football-austria-paz-2026"],
     verificationStatus: "verified",

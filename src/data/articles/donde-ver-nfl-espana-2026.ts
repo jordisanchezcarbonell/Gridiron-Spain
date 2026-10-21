@@ -17,12 +17,12 @@ export const dondeVerNflEspana2026: Article = {
   },
   seo: {
     title: {
-      es: "Dónde ver la NFL en España 2026: canales, horarios y partidos gratis",
-      en: "Where to watch the NFL in Spain 2026: channels, times and free games",
+      es: "Dónde ver la NFL gratis en España 2026: canales y horarios",
+      en: "Where to watch NFL free in Spain 2026: channels and times",
     },
     description: {
-      es: "Guía actualizada para ver la NFL desde España: partidos gratis en Cuatro, Be Mad y Mediaset Infinity, NFL Game Pass en DAZN, horarios en hora peninsular y el partido de Madrid.",
-      en: "Up-to-date guide to watching the NFL from Spain: free games on Cuatro, Be Mad and Mediaset Infinity, NFL Game Pass on DAZN, Spanish kickoff times and the Madrid game.",
+      es: "Partidos gratis en Cuatro, Be Mad y Mediaset Infinity, NFL Game Pass en DAZN y horarios en hora peninsular. Incluye el Falcons-Bengals del Bernabéu.",
+      en: "Free games on Cuatro, Be Mad and Mediaset Infinity, NFL Game Pass on DAZN and Spanish kickoff times. Includes the Falcons-Bengals game at the Bernabéu.",
     },
   },
   authorId: "jordi-sanchez",
