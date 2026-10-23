@@ -1,0 +1,53 @@
+import type { AgendaWeek, ScheduledGame } from "@/types";
+
+const AP = ["ap-poll-week8-2026", "espn-cfb-rankings-week8-2026"];
+const CFB = ["fbschedules-tv-2026-10-24", "espn-cfb-schedule-2026-10-24", "cbs-cfb-schedule-2026-10-24", ...AP];
+const NFL = ["nfl-schedule-2026-week-7", "cbs-nfl-schedule-2026-week-7", "espn-nfl-schedule-2026-week-7", "espn-nfl-standings-2026-10-23"];
+const MEDIASET = ["eldesmarque-mediaset-nfl-week7-2026"];
+
+// Spain switches to winter time on Sunday 25 October and the US on 1 November:
+// ET is UTC-4 all weekend, so Sunday and Monday kickoffs are ET+5 in Spain.
+const games: ScheduledGame[] = [
+  // NCAA · Saturday 24 October
+  { id: "pittsburgh-at-miami-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-24T16:00:00Z", away: "Pittsburgh", home: "Miami", homeRank: 1, usTv: "ESPN", venue: "Hard Rock Stadium, Miami Gardens", note: { es: "Miami (6-0) estrena el n.º 1 del AP, el primero desde 2002.", en: "Miami (6-0) debuts at No. 1 in the AP poll, its first time there since 2002." }, sourceIds: CFB, verificationStatus: "verified" },
+  { id: "indiana-at-michigan-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-24T16:00:00Z", away: "Indiana", awayRank: 6, home: "Michigan", usTv: "FOX", note: { es: "Indiana (6-1) sale a Ann Arbor tras perder 19-15 en casa ante Ohio State.", en: "Indiana (6-1) go to Ann Arbor after losing 19-15 at home to Ohio State." }, sourceIds: CFB, verificationStatus: "verified" },
+  { id: "texas-tech-at-cincinnati-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-24T16:00:00Z", away: "Texas Tech", awayRank: 8, home: "Cincinnati", usTv: "FS1", note: { es: "Texas Tech, invicto (6-0), visita Nippert Stadium.", en: "Unbeaten Texas Tech (6-0) visit Nippert Stadium." }, sourceIds: CFB, verificationStatus: "verified" },
+  { id: "byu-at-ucf-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-24T19:30:00Z", away: "BYU", awayRank: 2, home: "UCF", usTv: "FOX", note: { es: "BYU (6-0) llega como n.º 2, su mejor puesto desde el título de 1984, tras ganar 28-24 a Notre Dame.", en: "BYU (6-0) arrive at No. 2, their best ranking since the 1984 title season, after beating Notre Dame 28-24." }, sourceIds: CFB, verificationStatus: "verified" },
+  { id: "michigan-state-at-ucla-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-24T19:30:00Z", away: "Michigan State", home: "UCLA", homeRank: 9, usTv: "CBS", venue: "Rose Bowl, Pasadena", note: { es: "UCLA, invicto (6-0), en el Rose Bowl.", en: "Unbeaten UCLA (6-0) at the Rose Bowl." }, sourceIds: CFB, verificationStatus: "verified" },
+  { id: "north-texas-at-navy-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-24T19:30:00Z", away: "North Texas", home: "Navy", usTv: "CBS Sports Network", venue: "Navy-Marine Corps Memorial Stadium, Annapolis", note: { es: "Navy (2-4) juega su Homecoming tras perder 38-34 en UTSA; el 31 de octubre se mide a Notre Dame.", en: "Navy (2-4) play their Homecoming game after losing 38-34 at UTSA; Notre Dame is next on 31 October." }, sourceIds: [...CFB, "navy-schedule-2026"], verificationStatus: "verified" },
+  { id: "ole-miss-at-texas-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-24T23:30:00Z", away: "Ole Miss", awayRank: 7, home: "Texas", homeRank: 19, usTv: "ABC", featured: true, note: { es: "Duelo del top 25 en Austin: Ole Miss (5-1) contra un Texas (4-2) que sigue cayendo en el ranking.", en: "Top-25 matchup in Austin: Ole Miss (5-1) against a Texas side (4-2) still sliding down the poll." }, sourceIds: CFB, verificationStatus: "verified" },
+  { id: "houston-at-utah-2026", competitionId: "ncaa-fbs", kickoffUtc: "2026-10-25T02:15:00Z", away: "Houston", awayRank: 14, home: "Utah", homeRank: 10, usTv: "ESPN", venue: "Rice-Eccles Stadium, Salt Lake City", featured: true, note: { es: "El partido de College GameDay: Utah (6-0) contra Houston (6-1), cuya única derrota fue ante Texas Tech.", en: "College GameDay's game: Utah (6-0) against Houston (6-1), whose only loss came to Texas Tech." }, sourceIds: [...CFB, "sdd-gameday-week8-2026"], verificationStatus: "verified" },
+
+  // NFL · Week 7
+  { id: "nfl-2026-w7-steelers-saints-paris", competitionId: "nfl", kickoffUtc: "2026-10-25T13:30:00Z", away: "Pittsburgh Steelers", home: "New Orleans Saints", usTv: "NFL Network", venue: "Stade de France, Saint-Denis (París)", featured: true, watchInSpain: { es: "En abierto en Mediaset Infinity a las 14:30 (previa desde las 14:15).", en: "Free-to-air on Mediaset Infinity at 14:30 Spanish time (pre-game from 14:15)." }, note: { es: "La NFL vuelve a Europa, esta vez a París: los Saints (2-4) ejercen de locales ante los Steelers (4-2).", en: "The NFL is back in Europe, this time in Paris: the Saints (2-4) are the home team against the Steelers (4-2)." }, sourceIds: [...NFL, ...MEDIASET, "steelers-paris-2026"], verificationStatus: "verified" },
+  { id: "nfl-2026-w7-bengals-ravens", competitionId: "nfl", kickoffUtc: "2026-10-25T17:00:00Z", away: "Cincinnati Bengals", home: "Baltimore Ravens", usTv: "CBS", note: { es: "Los Bengals (3-2), rivales de los Falcons en el Bernabéu el 8 de noviembre, visitan a los Ravens (4-2).", en: "The Bengals (3-2), who face the Falcons at the Bernabéu on 8 November, visit the Ravens (4-2)." }, sourceIds: [...NFL, "madrid26-bengals-press-release"], verificationStatus: "verified" },
+  { id: "nfl-2026-w7-49ers-falcons", competitionId: "nfl", kickoffUtc: "2026-10-25T17:00:00Z", away: "San Francisco 49ers", home: "Atlanta Falcons", usTv: "FOX", note: { es: "Los Falcons (2-4), locales en el Bernabéu el 8 de noviembre, reciben a unos 49ers invictos (6-0).", en: "The Falcons (2-4), the home team at the Bernabéu on 8 November, host the unbeaten 49ers (6-0)." }, sourceIds: [...NFL, "madrid26-falcons-announcement"], verificationStatus: "verified" },
+  { id: "nfl-2026-w7-packers-lions", competitionId: "nfl", kickoffUtc: "2026-10-25T20:25:00Z", away: "Green Bay Packers", home: "Detroit Lions", usTv: "FOX", note: { es: "Dos equipos con balance positivo en Ford Field: Packers (4-2) y Lions (3-2).", en: "Two winning teams at Ford Field: the Packers (4-2) and the Lions (3-2)." }, sourceIds: NFL, verificationStatus: "verified" },
+  { id: "nfl-2026-w7-rams-raiders", competitionId: "nfl", kickoffUtc: "2026-10-25T20:25:00Z", away: "Los Angeles Rams", home: "Las Vegas Raiders", usTv: "FOX", watchInSpain: { es: "En abierto en Mediaset Infinity a las 21:25 (previa desde las 21:10).", en: "Free-to-air on Mediaset Infinity at 21:25 Spanish time (pre-game from 21:10)." }, note: { es: "Los Rams (2-4) visitan a los Raiders (3-3) en Las Vegas.", en: "The Rams (2-4) visit the Raiders (3-3) in Las Vegas." }, sourceIds: [...NFL, ...MEDIASET], verificationStatus: "verified" },
+  { id: "nfl-2026-w7-chiefs-seahawks", competitionId: "nfl", kickoffUtc: "2026-10-26T00:20:00Z", away: "Kansas City Chiefs", home: "Seattle Seahawks", usTv: "NBC", featured: true, watchInSpain: { es: "En abierto en Cuatro, de madrugada del domingo al lunes.", en: "Free-to-air on Cuatro, overnight Sunday into Monday in Spain." }, note: { es: "Sunday Night Football: los Chiefs, invictos (5-0), en Seattle ante los Seahawks (3-3).", en: "Sunday Night Football: the unbeaten Chiefs (5-0) in Seattle against the Seahawks (3-3)." }, sourceIds: [...NFL, ...MEDIASET], verificationStatus: "verified" },
+  { id: "nfl-2026-w7-cowboys-eagles", competitionId: "nfl", kickoffUtc: "2026-10-27T00:15:00Z", away: "Dallas Cowboys", home: "Philadelphia Eagles", usTv: "ESPN/ABC", note: { es: "Monday Night Football, de madrugada del lunes al martes: Cowboys y Eagles, los dos con 2-4.", en: "Monday Night Football, overnight Monday into Tuesday in Spain: the Cowboys and Eagles, both 2-4." }, sourceIds: NFL, verificationStatus: "verified" },
+];
+
+export const agenda20261024: AgendaWeek = {
+  id: "2026-10-24",
+  from: "2026-10-24",
+  to: "2026-10-27",
+  title: { es: "Qué ver este finde: Ole Miss–Texas, GameDay en Utah y la NFL en París", en: "What to watch this weekend: Ole Miss–Texas, GameDay in Utah and the NFL in Paris" },
+  intro: {
+    es: "El sábado, Miami estrena el n.º 1 del AP, Ole Miss visita Austin y College GameDay se va a Salt Lake City para el Houston–Utah. Ohio State, Notre Dame y Georgia descansan. El domingo la NFL juega en el Stade de France y Mediaset da en abierto el Steelers–Saints a las 14:30. Ojo: esa madrugada cambia la hora en España, y las horas de esta agenda ya están ajustadas.",
+    en: "On Saturday Miami debut at No. 1 in the AP poll, Ole Miss visit Austin and College GameDay heads to Salt Lake City for Houston–Utah. Ohio State, Notre Dame and Georgia are off. On Sunday the NFL plays at the Stade de France and Mediaset shows Steelers–Saints free-to-air at 14:30. Note that Spain's clocks go back overnight into Sunday; every time on this agenda already accounts for it.",
+  },
+  howToWatch: [
+    { competitionId: "nfl", text: { es: "En abierto, Mediaset (Cuatro, Be Mad y Mediaset Infinity) da más de 50 partidos esta temporada; de esta jornada ha anunciado tres: Saints–Steelers (14:30, Mediaset Infinity), Raiders–Rams (21:25, Mediaset Infinity) y Seahawks–Chiefs (madrugada del domingo al lunes, Cuatro). Todos los partidos, en NFL Game Pass dentro de DAZN.", en: "Free-to-air, Mediaset (Cuatro, Be Mad and Mediaset Infinity) shows over 50 games this season; for this week it has announced three: Saints–Steelers (14:30, Mediaset Infinity), Raiders–Rams (21:25, Mediaset Infinity) and Seahawks–Chiefs (overnight Sunday into Monday, Cuatro). Every game is on NFL Game Pass inside DAZN." }, sourceIds: ["madrid26-mediaset-season-launch", "eldesmarque-mediaset-nfl-week7-2026", "dazn-nfl-game-pass-2026"] },
+    { competitionId: "ncaa-fbs", text: { es: "No hemos encontrado ningún operador con derechos en España para 2026; en 2025 el acuerdo europeo de DAZN con ESPN excluyó a España.", en: "We found no rights holder in Spain for 2026; in 2025 DAZN's European deal with ESPN left Spain out." }, sourceIds: ["2playbook-dazn-college-2025"] },
+  ],
+  games,
+  sourceIds: [
+    "fbschedules-tv-2026-10-24", "espn-cfb-schedule-2026-10-24", "cbs-cfb-schedule-2026-10-24",
+    "ap-poll-week8-2026", "espn-cfb-rankings-week8-2026", "sdd-gameday-week8-2026", "navy-schedule-2026",
+    "nfl-schedule-2026-week-7", "cbs-nfl-schedule-2026-week-7", "espn-nfl-schedule-2026-week-7", "espn-nfl-standings-2026-10-23",
+    "steelers-paris-2026", "madrid26-bengals-press-release", "madrid26-falcons-announcement",
+    "madrid26-mediaset-season-launch", "eldesmarque-mediaset-nfl-week7-2026", "dazn-nfl-game-pass-2026", "2playbook-dazn-college-2025",
+  ],
+  lastVerifiedAt: "2026-10-23",
+};
