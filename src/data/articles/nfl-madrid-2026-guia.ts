@@ -8,8 +8,8 @@ export const nflMadrid2026Guia: Article = {
     en: "NFL Madrid 2026: a guide to Falcons–Bengals at the Bernabéu",
   },
   subtitle: {
-    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 14 de octubre y lo que aún falta por anunciar.",
-    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 14 October, and what is still to be announced.",
+    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 27 de octubre y lo que aún falta por anunciar.",
+    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 27 October, and what is still to be announced.",
   },
   excerpt: {
     es: "El segundo partido oficial de la NFL en España enfrenta a Atlanta Falcons y Cincinnati Bengals en el Bernabéu. Horario, televisión, entradas, transporte y contexto de los dos equipos.",
@@ -32,10 +32,10 @@ export const nflMadrid2026Guia: Article = {
   relatedCompetitionIds: ["nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-21",
+  updatedAt: "2026-10-27",
   status: "published",
   verificationStatus: "partial",
-  lastVerifiedAt: "2026-10-21",
+  lastVerifiedAt: "2026-10-27",
   readingTimeMinutes: 6,
   event: {
     name: "Atlanta Falcons vs Cincinnati Bengals · NFL Madrid Game 2026",
@@ -45,6 +45,14 @@ export const nflMadrid2026Guia: Article = {
     away: "Cincinnati Bengals",
   },
   sourceIds: [
+    "espn-nfl-standings-2026-10-27",
+    "espn-nfl-scoreboard-2026-week-7",
+    "cbs-nfl-scoreboard-2026-week-7",
+    "yahoo-falcons-49ers-2026",
+    "bengals-ravens-recap-2026",
+    "espn-nfl-schedule-2026-week-8",
+    "cbs-nfl-schedule-2026-week-8",
+    "nfl-turizo-halftime-2026",
     "cbs-nfl-scoreboard-2026-week-6",
     "espn-nfl-scoreboard-2026-week-6",
     "espn-nfl-standings-2026-10-21",
@@ -129,8 +137,8 @@ export const nflMadrid2026Guia: Article = {
           en: "Maximum six tickets per account, reduced prices for under-16s and free entry without a seat for babies up to 18 months. Tickets are digital and arrive by email up to 72 hours before. [[src:nfl-madrid-game-2026]]",
         },
         {
-          es: "A 14 de octubre siguen a la venta en los canales oficiales y la NFL no ha anunciado que el partido esté agotado; algunos revendedores sí dicen estarlo, pero eso no es una fuente. Fuera de Ticketmaster no hay canal oficial: desconfía de la reventa. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
-          en: "As of 14 October tickets are still on sale through the official channels and the NFL has not announced a sell-out; some resellers claim one, but that is not a source. There is no official channel outside Ticketmaster: be wary of resale. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
+          es: "A 27 de octubre la web oficial de la NFL sigue anunciando entradas a la venta y la liga no ha dicho que el partido esté agotado; algunos revendedores sí dicen estarlo, pero eso no es una fuente. Fuera de Ticketmaster no hay canal oficial: desconfía de la reventa. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
+          en: "As of 27 October the NFL's official site still advertises tickets on sale and the league has not announced a sell-out; some resellers claim one, but that is not a source. There is no official channel outside Ticketmaster: be wary of resale. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
         },
       ],
     },
@@ -168,15 +176,15 @@ export const nflMadrid2026Guia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "Atlanta llega 2-4 tras la semana 6, en la que perdió 31-23 en casa ante los Bears, [[src:espn-nfl-standings-2026-10-21]] [[src:espn-nfl-scoreboard-2026-week-6]] [[src:cbs-nfl-scoreboard-2026-week-6]] con Kevin Stefanski como nuevo entrenador. Michael Penix Jr. es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
-        en: "Atlanta is 2-4 after Week 6, in which they lost 31-23 at home to the Bears, [[src:espn-nfl-standings-2026-10-21]] [[src:espn-nfl-scoreboard-2026-week-6]] [[src:cbs-nfl-scoreboard-2026-week-6]] under new head coach Kevin Stefanski. Michael Penix Jr. has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
+        es: "Atlanta llega 3-4 tras la semana 7, en la que ganó 29-20 a unos 49ers que estaban invictos: tres pases de touchdown de Michael Penix Jr. y cuatro pérdidas forzadas por la defensa. [[src:espn-nfl-standings-2026-10-27]] [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:yahoo-falcons-49ers-2026]] Antes de viajar a Madrid juega el domingo 1 de noviembre en Tampa. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] Kevin Stefanski es el nuevo entrenador. Penix es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
+        en: "Atlanta is 3-4 after Week 7, in which they beat the previously unbeaten 49ers 29-20: three touchdown passes from Michael Penix Jr. and four turnovers forced by the defence. [[src:espn-nfl-standings-2026-10-27]] [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:yahoo-falcons-49ers-2026]] Before travelling to Madrid they play in Tampa on Sunday 1 November. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] Kevin Stefanski is the new head coach. Penix has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "Cincinnati va 3-2 en cinco partidos, porque descansó en la semana 6, [[src:espn-nfl-standings-2026-10-21]] con Zac Taylor en el banquillo y Joe Burrow como quarterback. En Pittsburgh perdió el 27 de septiembre, 30-27 con un field goal final de los Steelers, [[src:madrid26-ap-steelers-bengals]] y en la semana 5 ganó 31-24 en Miami con cuatro pases de touchdown de Burrow. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
-        en: "Cincinnati is 3-2 from five games, having had their bye in Week 6, [[src:espn-nfl-standings-2026-10-21]] with Zac Taylor as head coach and Joe Burrow at quarterback. They lost in Pittsburgh on 27 September, 30-27 on a late Steelers field goal, [[src:madrid26-ap-steelers-bengals]] and in Week 5 won 31-24 in Miami behind four Burrow touchdown passes. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
+        es: "Cincinnati va 4-2, con un partido menos por su descanso de la semana 6. [[src:espn-nfl-standings-2026-10-27]] En la semana 7 perdía 13-0 al descanso en Baltimore y ganó 35-13, con cuatro pases de touchdown de Joe Burrow en la segunda parte. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:bengals-ravens-recap-2026]] El domingo 1 de noviembre recibe a los Titans antes de viajar a Madrid. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] El entrenador es Zac Taylor. En Pittsburgh perdió el 27 de septiembre, 30-27 con un field goal final de los Steelers, [[src:madrid26-ap-steelers-bengals]] y en la semana 5 ganó 31-24 en Miami con cuatro pases de touchdown de Burrow. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
+        en: "Cincinnati is 4-2, a game behind on the schedule because of their Week 6 bye. [[src:espn-nfl-standings-2026-10-27]] In Week 7 they trailed 13-0 at half-time in Baltimore and won 35-13, with four Joe Burrow touchdown passes after the break. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:bengals-ravens-recap-2026]] On Sunday 1 November they host the Titans before travelling to Madrid. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] Zac Taylor is head coach. They lost in Pittsburgh on 27 September, 30-27 on a late Steelers field goal, [[src:madrid26-ap-steelers-bengals]] and in Week 5 won 31-24 in Miami behind four Burrow touchdown passes. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
       },
     },
     {
@@ -195,13 +203,20 @@ export const nflMadrid2026Guia: Article = {
       },
     },
     {
+      type: "paragraph",
+      text: {
+        es: "En el descanso actuará Manuel Turizo. Lo ha anunciado la NFL, que este año presenta siete espectáculos de descanso en sus partidos internacionales. [[src:nfl-turizo-halftime-2026]]",
+        en: "Manuel Turizo will headline the halftime show. The NFL announced it; the league is staging seven halftime shows across its international games this year. [[src:nfl-turizo-halftime-2026]]",
+      },
+    },
+    {
       type: "placeholder",
       topic: { es: "Pendiente de anuncio oficial", en: "Awaiting official announcement" },
       pending: [
         { es: "Confirmación de Mediaset del canal y la hora de emisión", en: "Mediaset's own confirmation of the channel and broadcast time" },
         { es: "Programa oficial de la NFL en la ciudad (fan zone, NFL Academy, tienda)", en: "The NFL's own programme in the city (fan zone, NFL Academy, store)" },
         { es: "Política de bolsos, horario oficial de apertura de puertas y guía de accesibilidad de 2026", en: "2026 bag policy, official gate times and accessibility guide" },
-        { es: "Himno y espectáculo del descanso", en: "Anthem and halftime show" },
+        { es: "Himno", en: "Anthem" },
       ],
     },
   ],
