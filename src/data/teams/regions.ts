@@ -562,6 +562,10 @@ export const regionalTeams: Team[] = [
       es: "Club murciano nacido en 1994. Campeón de la LNFA 2 en 2016 y subcampeón de la LNFA en 2018; en 2025-26 compitió en el grupo Levante de la LNFA 2. Además del senior de tackle, tiene flag masculino, femenino y escuela de formación.",
       en: "Murcia club born in 1994. LNFA 2 champion in 2016 and LNFA runner-up in 2018; played in the LNFA 2 Levante group in 2025-26. Besides senior tackle, it runs men's, women's and youth flag football.",
     },
+    seoDescription: {
+      es: "Club de fútbol americano de Murcia desde 1994. Campeón de la LNFA 2 en 2016 y subcampeón de la LNFA en 2018. Tackle senior, flag y escuela de formación.",
+      en: "Murcia American football club since 1994. LNFA 2 champion in 2016 and LNFA runner-up in 2018, with senior tackle, flag and a youth programme.",
+    },
     history: [
       {
         es: "El propio club sitúa el inicio de su historia en 1993 y la Wikipedia data su constitución oficial en 1994. [[src:cobras-web-presentacion]] [[src:wiki-cobras-es]] Jugaron dos años en competiciones regionales antes de entrar en la primera temporada de la nueva liga nacional en 1997, según la Wikipedia. [[src:wiki-cobras-es]]",
@@ -806,6 +810,10 @@ export const regionalTeams: Team[] = [
     summary: {
       es: "Club vizcaíno nacido en 1998 de antiguos jugadores de los Bilbao Cougars y constituido formalmente en 2000. Subcampeón nacional en 2003, siete temporadas en la máxima categoría entre 2010 y 2017 y campeón de la Liga Norte en 2019. Segundo del grupo Norte de la LNFA 2 en 2025-26.",
       en: "Biscay club born in 1998 out of former Bilbao Cougars players and formally constituted in 2000. National runner-up in 2003, seven seasons in the top flight between 2010 and 2017 and Liga Norte champion in 2019. Runner-up in the LNFA 2 North group in 2025-26."
+    },
+    seoDescription: {
+      es: "Club vizcaíno de fútbol americano desde 1998. Subcampeón nacional en 2003, siete temporadas en la élite y segundo del grupo Norte de la LNFA 2 en 2025-26.",
+      en: "Biscay American football club since 1998. National runner-up in 2003, seven top-flight seasons and LNFA 2 North group runner-up in 2025-26.",
     },
     history: [
       {

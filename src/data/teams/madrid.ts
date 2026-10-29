@@ -210,6 +210,10 @@ export const madridTeams: Team[] = [
       es: "Club de Vallecas fundado en 2010, con equipo senior de tackle en LNFA 2, flag open y el primer equipo femenino de flag de Madrid. Campeonas de la Spanish Flag Bowl Femenina 2025.",
       en: "Vallecas club founded in 2010, with a senior tackle team in LNFA 2, open flag and Madrid's first women's flag team. Spanish Flag Bowl Women's champions 2025.",
     },
+    seoDescription: {
+      es: "Club de fútbol americano de Vallecas fundado en 2010: tackle senior en LNFA 2, flag open y flag femenino, campeonas de la Spanish Flag Bowl Femenina 2025.",
+      en: "Vallecas American football club founded in 2010: senior tackle in LNFA 2, open flag and women's flag, Spanish Flag Bowl Women's champions 2025.",
+    },
     history: [
       {
         es: "Según su web oficial, los Capitals se fundaron en 2010 y crearon en 2013 el primer equipo femenino de flag football de Madrid. [[src:capitals-web]]",

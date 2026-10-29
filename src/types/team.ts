@@ -72,6 +72,8 @@ export type Team = {
 
   /** One-paragraph neutral description. */
   summary: LocalizedString;
+  /** Search snippet when `summary` would be cut at 160 characters. Same facts, reordered. */
+  seoDescription?: LocalizedString;
 
   /** Verified history in blocks; may be empty while research is pending. */
   history?: LocalizedString[];

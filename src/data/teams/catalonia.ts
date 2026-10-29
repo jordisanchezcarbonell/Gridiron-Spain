@@ -242,6 +242,10 @@ export const cataloniaTeams: Team[] = [
       es: "Club de Terrassa con raíces en la sección del Club Deportiu de 1989 e independiente desde 1993. Tres veces finalista de la LNFA 2 antes de ganarla en 2024, ascenso que le dio su debut en la máxima categoría; segundo de la Conferencia Este de la Serie A en 2025-26. Juega en Can Boada desde 2016.",
       en: "Terrassa club with roots in the 1989 Club Deportiu section and independent since 1993. A three-time LNFA 2 finalist before winning it in 2024, a promotion that brought its top-flight debut; runner-up in the Serie A East Conference in 2025-26. It has played at Can Boada since 2016.",
     },
+    seoDescription: {
+      es: "Club de fútbol americano de Terrassa desde 1993. Campeón de la LNFA 2 en 2024 y segundo de la Conferencia Este de la Serie A en 2025-26.",
+      en: "Terrassa American football club, independent since 1993. LNFA 2 champion in 2024 and Serie A East Conference runner-up in 2025-26.",
+    },
     history: [
       {
         es: "El origen de los Reds está en la sección de fútbol americano del Club Deportiu Terrassa, que existía desde 1989; el club se constituyó de forma independiente en 1993 como escisión de aquella sección. [[src:diari-terrassa-reds-2024]] [[src:wiki-terrassa-reds-ca]] Las dos fechas que circulan no se contradicen: 1989 es la sección y 1993 el club.",

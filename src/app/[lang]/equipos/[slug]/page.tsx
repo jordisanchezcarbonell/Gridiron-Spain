@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/equipos/[s
   return buildMetadata({
     locale,
     title,
-    description: t(team.summary, locale),
+    description: t(team.seoDescription ?? team.summary, locale),
     routeKey: "teams",
     segments: [slug],
     image: `${href(locale, "teams", slug)}/opengraph-image`,

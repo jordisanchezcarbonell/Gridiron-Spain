@@ -12,6 +12,16 @@ export const collegeFootball: Article = {
     es: "Antes de viajar a Annapolis, una explicación honesta de cómo funciona el football universitario estadounidense para quien lo sigue desde Europa.",
     en: "Before travelling to Annapolis, an honest explanation of how American college football works for anyone following it from Europe.",
   },
+  seo: {
+    title: {
+      es: "¿Qué es la NCAAF? Guía del college football desde España",
+      en: "What is the NCAAF? College football explained from Spain",
+    },
+    description: {
+      es: "NCAAF es el football de la NCAA: qué es la División I FBS, cómo se reparte en conferencias y en qué se diferencia el college football de la NFL.",
+      en: "NCAAF is NCAA football: what Division I FBS is, how it splits into conferences and how college football differs from the NFL.",
+    },
+  },
   authorId: "jordi-sanchez",
   category: "ncaa",
   tags: ["NCAA", "college football", "guía", "Navy"],
@@ -41,8 +51,8 @@ export const collegeFootball: Article = {
     {
       type: "paragraph",
       text: {
-        es: "La NCAA agrupa a las universidades y su máximo nivel de football es la División I FBS, dividida en conferencias. Navy compite en la American Conference, que hasta julio de 2025 se llamaba American Athletic Conference. [[src:american-conference-brand-2025]] Los jugadores son estudiantes; en Navy, además, guardiamarinas que se graduarán como oficiales.",
-        en: "The NCAA groups the universities and its top football level is Division I FBS, divided into conferences. Navy competes in the American Conference, known until July 2025 as the American Athletic Conference. [[src:american-conference-brand-2025]] The players are students; at Navy, they are also midshipmen who will graduate as officers.",
+        es: "La NCAA agrupa a las universidades —de ahí que a su football se le llame NCAAF— y su máximo nivel es la División I FBS, dividida en conferencias. Navy compite en la American Conference, que hasta julio de 2025 se llamaba American Athletic Conference. [[src:american-conference-brand-2025]] Los jugadores son estudiantes; en Navy, además, guardiamarinas que se graduarán como oficiales.",
+        en: "The NCAA groups the universities —hence its football is often shortened to NCAAF— and its top level is Division I FBS, divided into conferences. Navy competes in the American Conference, known until July 2025 as the American Athletic Conference. [[src:american-conference-brand-2025]] The players are students; at Navy, they are also midshipmen who will graduate as officers.",
       },
     },
     {
