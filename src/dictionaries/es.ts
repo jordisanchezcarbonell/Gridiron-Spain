@@ -155,6 +155,7 @@ export const es = {
     copied: "Enlace copiado",
     related: "Historias relacionadas",
     relatedTeams: "Equipos relacionados",
+    relatedCompetitions: "Competiciones",
     onThisPage: "En esta página",
     accessed: "consultado el",
   },

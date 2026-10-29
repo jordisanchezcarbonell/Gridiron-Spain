@@ -1,28 +1,40 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Locale, Source } from "@/types/common";
 import type { ContentBlock } from "@/types";
 import type { Dictionary } from "@/dictionaries/es";
 import { t } from "@/lib/i18n/text";
+import { href, type RouteKey } from "@/lib/i18n/routes";
 import { splitCitations } from "@/lib/content/citations";
 import { Placeholder } from "@/components/ui/Placeholder";
 import { ScoreCard } from "@/components/articles/ScoreCard";
 import { ComebackTimeline } from "@/components/articles/ComebackTimeline";
 import { StatHighlight } from "@/components/articles/StatHighlight";
 
-/** Renders a paragraph with inline citation links. */
-export function RichText({ text, sources }: { text: string; sources: Source[] }) {
+/**
+ * Renders a paragraph with inline citation links and, when a locale is given,
+ * internal links. Without a locale an internal link falls back to its text.
+ */
+export function RichText({ text, sources, locale }: { text: string; sources: Source[]; locale?: Locale }) {
   const parts = splitCitations(text, sources);
   return (
     <>
-      {parts.map((part, i) =>
-        part.kind === "text" ? (
-          <span key={i}>{part.value}</span>
-        ) : (
+      {parts.map((part, i) => {
+        if (part.kind === "text") return <span key={i}>{part.value}</span>;
+        if (part.kind === "link") {
+          if (!locale) return <span key={i}>{part.label}</span>;
+          return (
+            <Link key={i} href={href(locale, part.route as RouteKey, ...part.segments)}>
+              {part.label}
+            </Link>
+          );
+        }
+        return (
           <a key={i} href={`#src-${part.sourceId}`} className="cite" aria-label={`Source ${part.index}`}>
             [{part.index || "?"}]
           </a>
-        ),
-      )}
+        );
+      })}
     </>
   );
 }
@@ -53,7 +65,7 @@ export function ArticleBody({
           case "paragraph":
             return (
               <p key={i}>
-                <RichText text={t(block.text, locale)} sources={sources} />
+                <RichText text={t(block.text, locale)} sources={sources} locale={locale} />
               </p>
             );
           case "list": {
@@ -62,7 +74,7 @@ export function ArticleBody({
               <Tag key={i}>
                 {block.items.map((item, j) => (
                   <li key={j}>
-                    <RichText text={t(item, locale)} sources={sources} />
+                    <RichText text={t(item, locale)} sources={sources} locale={locale} />
                   </li>
                 ))}
               </Tag>
@@ -82,7 +94,7 @@ export function ArticleBody({
               <aside key={i} className="card my-8 border-l-2 border-l-gold p-5 text-base">
                 {block.title && <p className="kicker mb-2">{t(block.title, locale)}</p>}
                 <p className="text-paper-2">
-                  <RichText text={t(block.text, locale)} sources={sources} />
+                  <RichText text={t(block.text, locale)} sources={sources} locale={locale} />
                 </p>
               </aside>
             );

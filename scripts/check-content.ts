@@ -2,6 +2,7 @@
  * Editorial integrity check. Run with `npm run content:check`.
  * - every referenced source id exists
  * - every [[src:ID]] citation resolves to a source listed on the entity
+ * - every [[link:route/slug|text]] in an article points at an existing page
  * - slugs are unique
  * - no partner is rendered without confirmation
  * - verified entities carry lastVerifiedAt
@@ -19,6 +20,10 @@ import { playerSpotlights } from "../src/data/players";
 import { agendaWeeks } from "../src/data/agenda";
 import { nationalTeams } from "../src/data/national-teams";
 import { quizResults, quizQuestions } from "../src/data/quiz/nfl-team";
+import { routes } from "../src/lib/i18n/routes";
+import { regionSlug } from "../src/lib/regions";
+import { buildPlayerProfiles } from "../src/lib/players";
+import { LINK_TOKEN } from "../src/lib/content/citations";
 
 const sourceIds = new Set(sources.map((s) => s.id));
 const errors: string[] = [];
@@ -39,6 +44,27 @@ function checkCitations(owner: string, text: string | undefined, allowed: string
     const id = match[1];
     if (!sourceIds.has(id)) errors.push(`${owner}: citation to unknown source "${id}"`);
     else if (!allowed.includes(id)) errors.push(`${owner}: citation "${id}" is not listed in the entity's sourceIds`);
+  }
+}
+
+// Internal links must point at a page that exists: the slug-bearing routes
+// are checked against the data, the rest only need a known route key.
+const linkTargets: Record<string, Set<string>> = {
+  teams: new Set([...teams.map((t) => t.slug), ...teams.map((t) => regionSlug(t.autonomousCommunity))]),
+  competitions: new Set(competitions.map((c) => c.slug)),
+  articles: new Set(articles.map((a) => a.slug)),
+  players: new Set(buildPlayerProfiles(playerSpotlights).filter((p) => p.hasPage).map((p) => p.slug)),
+};
+
+function checkLinks(owner: string, text: string | undefined) {
+  if (!text) return;
+  const opened = text.split("[[link:").length - 1;
+  if (opened !== [...text.matchAll(LINK_TOKEN)].length) errors.push(`${owner}: malformed [[link:...]] token`);
+  for (const match of text.matchAll(LINK_TOKEN)) {
+    const [, route, path] = match;
+    const first = path.split("/").filter(Boolean)[0];
+    if (!(route in routes)) errors.push(`${owner}: link to unknown route "${route}"`);
+    else if (first && linkTargets[route] && !linkTargets[route].has(first)) errors.push(`${owner}: link to unknown ${route} "${first}"`);
   }
 }
 
@@ -88,11 +114,15 @@ for (const article of articles) {
     if (block.type === "paragraph" || block.type === "callout") {
       checkCitations(owner, block.text.es, article.sourceIds);
       checkCitations(owner, block.text.en, article.sourceIds);
+      checkLinks(owner, block.text.es);
+      checkLinks(owner, block.text.en);
     }
     if (block.type === "list") {
       for (const item of block.items) {
         checkCitations(owner, item.es, article.sourceIds);
         checkCitations(owner, item.en, article.sourceIds);
+        checkLinks(owner, item.es);
+        checkLinks(owner, item.en);
       }
     }
   }

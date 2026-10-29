@@ -157,6 +157,7 @@ export const en: Dictionary = {
     copied: "Link copied",
     related: "Related stories",
     relatedTeams: "Related teams",
+    relatedCompetitions: "Competitions",
     onThisPage: "On this page",
     accessed: "accessed",
   },

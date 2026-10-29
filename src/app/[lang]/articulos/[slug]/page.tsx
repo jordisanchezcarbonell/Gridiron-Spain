@@ -56,12 +56,13 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
   if (!article) notFound();
 
   const author = authors.find((a) => a.id === article.authorId) ?? authors[0];
-  const [sources, explicitTeams, sameCategory, allTeams, spotlights] = await Promise.all([
+  const [sources, explicitTeams, sameCategory, allTeams, spotlights, relatedCompetitions] = await Promise.all([
     repo.getSourcesByIds(article.sourceIds),
     repo.getTeamsByIds(article.relatedTeamIds),
     repo.getArticlesByCategory(article.category),
     repo.getTeams(),
     repo.getPlayerSpotlights(),
+    repo.getCompetitionsByIds(article.relatedCompetitionIds),
   ]);
   const mentioned = findMentions(article, allTeams, spotlights);
   const relatedTeams = [...explicitTeams, ...mentioned.teams.filter((team) => !explicitTeams.some((x) => x.id === team.id))];
@@ -136,6 +137,25 @@ export default async function ArticlePage({ params }: PageProps<"/[lang]/articul
                   <Link href={href(locale, "players", p.slug)} className="flex items-center gap-2 border border-line bg-surface px-3 py-2 text-sm text-paper transition-colors hover:border-accent">
                     <span className="font-mono text-xs text-accent">{p.spotlights[0].position}</span>
                     {p.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {relatedCompetitions.length > 0 && (
+          <section className="mt-10" aria-labelledby="related-competitions">
+            <header className="mb-4">
+              <span id="related-competitions" className="inline-flex h-7 items-center bg-surface-2 px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.15em] text-paper">
+                {dict.articles.relatedCompetitions}
+              </span>
+            </header>
+            <ul className="flex flex-wrap gap-2">
+              {relatedCompetitions.map((c) => (
+                <li key={c.id}>
+                  <Link href={href(locale, "competitions", c.slug)} className="flex items-center border border-line bg-surface px-3 py-2 text-sm text-paper transition-colors hover:border-accent">
+                    {c.name}
                   </Link>
                 </li>
               ))}
