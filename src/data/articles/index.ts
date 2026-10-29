@@ -27,6 +27,11 @@ import { armyNavyPlayoff24_2027 } from "./army-navy-game-playoff-24-equipos-2027
 import { finde20261017 } from "./finde-2026-10-17";
 import { finde20261024 } from "./finde-2026-10-24";
 import { navyNotreDame2026Previa } from "./navy-notre-dame-2026-previa";
+import { equiposFutbolAmericanoMadrid } from "./equipos-futbol-americano-madrid";
+import { ligaEspanolaFutbolAmericano } from "./liga-espanola-futbol-americano";
+import { futbolAmericanoValencia } from "./futbol-americano-valencia";
+import { futbolAmericanoMurcia } from "./futbol-americano-murcia";
+import { equiposNfl } from "./equipos-nfl";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -61,4 +66,9 @@ export const articles: Article[] = [
   finde20261017,
   finde20261024,
   navyNotreDame2026Previa,
+  equiposFutbolAmericanoMadrid,
+  ligaEspanolaFutbolAmericano,
+  futbolAmericanoValencia,
+  futbolAmericanoMurcia,
+  equiposNfl,
 ];

@@ -12,6 +12,16 @@ export const footballEnBarcelona: Article = {
     es: "Nueve clubes en el área de Barcelona, tres en la máxima categoría, el club más laureado de España y el equipo femenino más dominante. Cataluña es donde empezó todo, y donde más se juega.",
     en: "Nine clubs around Barcelona, three in the top tier, Spain's most successful club and its most dominant women's team. Catalonia is where it all started, and where the game is played most.",
   },
+  seo: {
+    title: {
+      es: "Fútbol americano en Barcelona: equipos, ligas y dónde jugar",
+      en: "American football in Barcelona: teams, leagues, how to play",
+    },
+    description: {
+      es: "Fútbol americano en Barcelona: nueve clubes, tres en la LNFA, los Badalona Dracs y las Barberà Rookies, campeonas femeninas. Tackle y flag.",
+      en: "American football in Barcelona: nine clubs, three in the LNFA, Badalona Dracs and Barberà Rookies, the women's champions. Tackle and flag.",
+    },
+  },
   authorId: "jordi-sanchez",
   category: "road-to-annapolis",
   tags: ["Road to Annapolis", "Barcelona", "Cataluña", "LNFA", "flag"],
