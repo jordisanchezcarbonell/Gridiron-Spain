@@ -38,12 +38,13 @@ export const diegoPazPatriots2026: Article = {
   relatedCompetitionIds: ["nfl", "afle"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-14",
-  updatedAt: "2026-10-14",
+  updatedAt: "2026-10-29",
   status: "published",
   verificationStatus: "verified",
   lastVerifiedAt: "2026-10-14",
   readingTimeMinutes: 4,
   sourceIds: [
+    "afle-paz-rhein-fire-signing-2026",
     "afle-paz-patriots-2026",
     "afle-paz-breakout-2026",
     "afle-paz-profile-2026",
@@ -74,8 +75,8 @@ export const diegoPazPatriots2026: Article = {
     {
       type: "paragraph",
       text: {
-        es: `Diego Paz González nació el 4 de enero de 2003 en Galicia y es, en palabras de AS, «gallego de nacimiento y madrileño de adopción». ${PROFILE} ${AS} Mide 1,91 y pesa 101 kilos, y juega con el dorsal 92 en el Rhein Fire alemán. ${PROFILE} Llegó tarde al deporte: se puso un casco por primera vez en una cancha europea a los 19 años, con los Barcelona Dragons, y de ahí pasó por Finlandia y Austria antes de fichar por el Fire. ${AFLE}`,
-        en: `Diego Paz González was born on 4 January 2003 in Galicia and is, in AS's words, "Galician by birth and Madrilenian by adoption". ${PROFILE} ${AS} He is 1.91 m and 101 kg, and wears number 92 for Germany's Rhein Fire. ${PROFILE} He came to the sport late: he first stepped onto a European field at 19, with the Barcelona Dragons, and from there went through Finland and Austria before joining the Fire. ${AFLE}`,
+        es: `Diego Paz González nació el 4 de enero de 2003 en Galicia y es, en palabras de AS, «gallego de nacimiento y madrileño de adopción». ${PROFILE} ${AS} Mide 1,91 y pesa 101 kilos, y juega con el dorsal 92 en el Rhein Fire alemán. ${PROFILE} Llegó tarde al deporte: se puso un casco por primera vez en una cancha europea a los 19 años, con los Barcelona Dragons, y de ahí pasó por Finlandia y Austria antes de fichar por el Fire. Entre medias también jugó en los Madrid Bravos, según el anuncio de su fichaje por la AFLE. [[src:afle-paz-rhein-fire-signing-2026]] ${AFLE}`,
+        en: `Diego Paz González was born on 4 January 2003 in Galicia and is, in AS's words, "Galician by birth and Madrilenian by adoption". ${PROFILE} ${AS} He is 1.91 m and 101 kg, and wears number 92 for Germany's Rhein Fire. ${PROFILE} He came to the sport late: he first stepped onto a European field at 19, with the Barcelona Dragons, and from there went through Finland and Austria before joining the Fire. Along the way he also played for the Madrid Bravos, according to the AFLE announcement of his signing. [[src:afle-paz-rhein-fire-signing-2026]] ${AFLE}`,
       },
     },
     {

@@ -85,8 +85,8 @@ export const ligaEspanolaFutbolAmericano: Article = {
     {
       type: "paragraph",
       text: {
-        es: "LNFA son las siglas de Liga Nacional de Fútbol Americano, la máxima categoría senior masculina en España. Se disputó por primera vez en 1995 [[src:wiki-lnfa-1995]] y aquella primera final la ganaron los Madrid Panteras a los Barcelona Boxers por 55-28 en el Estadio Olímpico de Madrid. [[src:fefa-palmares]] La FEFA usa indistintamente los nombres LNFA y LNFA Serie A. [[src:fefa-competiciones]] La final de la temporada 2025-26 fue la Spanish Bowl XXXII. [[src:fefa-spanish-bowl-2026]]",
-        en: "LNFA stands for Liga Nacional de Fútbol Americano (National American Football League), Spain's top senior men's tier. It was first played in 1995 [[src:wiki-lnfa-1995]], and that first final was won by the Madrid Panteras, 55-28 over the Barcelona Boxers at Madrid's Estadio Olímpico. [[src:fefa-palmares]] FEFA uses the names LNFA and LNFA Serie A interchangeably. [[src:fefa-competiciones]] The final of the 2025-26 season was Spanish Bowl XXXII. [[src:fefa-spanish-bowl-2026]]",
+        es: "LNFA son las siglas de [[link:competitions/lnfa|Liga Nacional de Fútbol Americano]], la máxima categoría senior masculina en España. Se disputó por primera vez en 1995 [[src:wiki-lnfa-1995]] y aquella primera final la ganaron los Madrid Panteras a los Barcelona Boxers por 55-28 en el Estadio Olímpico de Madrid. [[src:fefa-palmares]] La FEFA usa indistintamente los nombres LNFA y LNFA Serie A. [[src:fefa-competiciones]] La final de la temporada 2025-26 fue la Spanish Bowl XXXII. [[src:fefa-spanish-bowl-2026]]",
+        en: "LNFA stands for [[link:competitions/lnfa|Liga Nacional de Fútbol Americano]] (National American Football League), Spain's top senior men's tier. It was first played in 1995 [[src:wiki-lnfa-1995]], and that first final was won by the Madrid Panteras, 55-28 over the Barcelona Boxers at Madrid's Estadio Olímpico. [[src:fefa-palmares]] FEFA uses the names LNFA and LNFA Serie A interchangeably. [[src:fefa-competiciones]] The final of the 2025-26 season was Spanish Bowl XXXII. [[src:fefa-spanish-bowl-2026]]",
       },
     },
     { type: "heading", level: 2, id: "fefa", text: { es: "¿Quién organiza la liga? La FEFA", en: "Who runs the league? FEFA" } },
@@ -169,8 +169,8 @@ export const ligaEspanolaFutbolAmericano: Article = {
     {
       type: "paragraph",
       text: {
-        es: "El flag es la modalidad sin placajes. Su campeonato de España de clubes, la Spanish Flag Bowl, tiene palmarés desde 2001 en categoría Open y desde 2012 en femenina. [[src:fefa-palmares-flag]] Se juega en formato de fin de semana: la edición de 2026 reunió a 18 equipos en Calatayud y la ganaron Valencia Firebats (Open) e Ibi Butterflies (Femenina). [[src:fefa-flag-bowl-2026]] Los Firebats llevan diez títulos Open. [[src:fefa-palmares-flag]]",
-        en: "Flag is the non-contact version of the game. Its Spanish club championship, the Spanish Flag Bowl, has an honours list going back to 2001 in the Open category and to 2012 in the women's. [[src:fefa-palmares-flag]] It is played over a weekend: the 2026 edition brought 18 teams to Calatayud and was won by Valencia Firebats (Open) and Ibi Butterflies (Women's). [[src:fefa-flag-bowl-2026]] The Firebats have ten Open titles. [[src:fefa-palmares-flag]]",
+        es: "El flag es la modalidad sin placajes. Su campeonato de España de clubes, la [[link:competitions/spanish-flag-bowl|Spanish Flag Bowl]], tiene palmarés desde 2001 en categoría Open y desde 2012 en femenina. [[src:fefa-palmares-flag]] Se juega en formato de fin de semana: la edición de 2026 reunió a 18 equipos en Calatayud y la ganaron Valencia Firebats (Open) e Ibi Butterflies (Femenina). [[src:fefa-flag-bowl-2026]] Los Firebats llevan diez títulos Open. [[src:fefa-palmares-flag]]",
+        en: "Flag is the non-contact version of the game. Its Spanish club championship, the [[link:competitions/spanish-flag-bowl|Spanish Flag Bowl]], has an honours list going back to 2001 in the Open category and to 2012 in the women's. [[src:fefa-palmares-flag]] It is played over a weekend: the 2026 edition brought 18 teams to Calatayud and was won by Valencia Firebats (Open) and Ibi Butterflies (Women's). [[src:fefa-flag-bowl-2026]] The Firebats have ten Open titles. [[src:fefa-palmares-flag]]",
       },
     },
     { type: "heading", level: 2, id: "calendario", text: { es: "Calendario: cuándo se juega", en: "Calendar: when the season is played" } },
@@ -245,12 +245,12 @@ export const ligaEspanolaFutbolAmericano: Article = {
           en: "FEFA's website publishes schedules, results, standings and team pages for every national competition. [[src:fefa-competiciones]]",
         },
         {
-          es: "En Primer Down, las páginas de competiciones recogen cada temporada con sus grupos y fases; el palmarés reúne todas las finales; y la agenda lista los partidos de cada fin de semana.",
-          en: "On Primer Down, the competition pages cover each season with its groups and stages; the honours page collects every final; and the schedule lists each weekend's games.",
+          es: "En Primer Down, las [[link:competitions/lnfa|páginas de competiciones]] recogen cada temporada con sus grupos y fases; el [[link:palmares|palmarés]] reúne todas las finales; y la agenda lista los partidos de cada fin de semana.",
+          en: "On Primer Down, the [[link:competitions/lnfa|competition pages]] cover each season with its groups and stages; the honours page collects every final; and the schedule lists each weekend's games.",
         },
         {
-          es: "Las fichas de equipo y el mapa sirven para encontrar el club más cercano, de tackle o de flag.",
-          en: "The team pages and the map help you find your nearest club, tackle or flag.",
+          es: "Las fichas de equipo y el [[link:map|mapa]] sirven para encontrar el club más cercano, de tackle o de flag.",
+          en: "The team pages and the [[link:map|map]] help you find your nearest club, tackle or flag.",
         },
       ],
     },

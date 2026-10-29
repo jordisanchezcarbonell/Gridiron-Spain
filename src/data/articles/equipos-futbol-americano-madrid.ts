@@ -88,8 +88,8 @@ export const equiposFutbolAmericanoMadrid: Article = {
       type: "callout",
       title: { es: "En resumen", en: "In short" },
       text: {
-        es: "En la temporada 2026-27 la Comunidad de Madrid tiene cuatro equipos en la LNFA Serie A, la máxima categoría: Las Rozas Black Demons, Osos Rivas, Camioneros de Coslada y Alcobendas Cavaliers. [[src:fefa-calendario-2026-27]] Otros cinco clubes jugaron la Conferencia Madrileña de LNFA 2 en 2025-26: Alcorcón Smilodons, Jabatos Tres Cantos, Boadilla Vikings, Pinto Goldbats y Madrid Capitals. [[src:fefa-lnfa2-2025-26]] En femenino, Osas Rivas es el equipo madrileño de la LNFA Femenina 2026-27, [[src:fefa-femenina-page-2026-27]] y en flag femenino las Madrid Capitals ganaron el título de España en 2025. [[src:fefa-palmares-flag]]",
-        en: "In the 2026-27 season the Madrid region has four teams in LNFA Serie A, the top tier: Las Rozas Black Demons, Osos Rivas, Camioneros de Coslada and Alcobendas Cavaliers. [[src:fefa-calendario-2026-27]] Five more clubs played in the LNFA 2 Madrid Conference in 2025-26: Alcorcón Smilodons, Jabatos Tres Cantos, Boadilla Vikings, Pinto Goldbats and Madrid Capitals. [[src:fefa-lnfa2-2025-26]] In women's tackle, Osas Rivas are Madrid's team in the 2026-27 LNFA Femenina, [[src:fefa-femenina-page-2026-27]] and in women's flag Madrid Capitals won the Spanish title in 2025. [[src:fefa-palmares-flag]]",
+        es: "En la temporada 2026-27 la Comunidad de Madrid tiene cuatro equipos en la [[link:competitions/lnfa|LNFA Serie A]], la máxima categoría: Las Rozas Black Demons, Osos Rivas, Camioneros de Coslada y Alcobendas Cavaliers. [[src:fefa-calendario-2026-27]] Otros cinco clubes jugaron la Conferencia Madrileña de LNFA 2 en 2025-26: Alcorcón Smilodons, Jabatos Tres Cantos, Boadilla Vikings, Pinto Goldbats y Madrid Capitals. [[src:fefa-lnfa2-2025-26]] En femenino, Osas Rivas es el equipo madrileño de la [[link:competitions/lnfa-femenina|LNFA Femenina]] 2026-27, [[src:fefa-femenina-page-2026-27]] y en flag femenino las Madrid Capitals ganaron el título de España en 2025. [[src:fefa-palmares-flag]]",
+        en: "In the 2026-27 season the Madrid region has four teams in [[link:competitions/lnfa|LNFA Serie A]], the top tier: Las Rozas Black Demons, Osos Rivas, Camioneros de Coslada and Alcobendas Cavaliers. [[src:fefa-calendario-2026-27]] Five more clubs played in the LNFA 2 Madrid Conference in 2025-26: Alcorcón Smilodons, Jabatos Tres Cantos, Boadilla Vikings, Pinto Goldbats and Madrid Capitals. [[src:fefa-lnfa2-2025-26]] In women's tackle, Osas Rivas are Madrid's team in the 2026-27 [[link:competitions/lnfa-femenina|LNFA Femenina]], [[src:fefa-femenina-page-2026-27]] and in women's flag Madrid Capitals won the Spanish title in 2025. [[src:fefa-palmares-flag]]",
       },
     },
     {
@@ -198,8 +198,8 @@ export const equiposFutbolAmericanoMadrid: Article = {
     {
       type: "paragraph",
       text: {
-        es: "Los Madrid Bravos fueron la franquicia profesional de la ciudad en la European League of Football. Jugaban en el Estadio Vallehermoso [[src:elf-bravos-history-2024]] y en 2024 y 2025 firmaron dos 8-4 con presencia en playoffs. [[src:elf-bravos-history-2024]] [[src:madridactual-bravos-2026]] El 10 de marzo de 2026 el club anunció que no competiría en 2026, [[src:madridactual-bravos-2026]] [[src:eldiariodemadrid-bravos-2026]] así que esta temporada no hay fútbol americano profesional en Madrid. No tenemos constancia de ningún anuncio sobre su regreso.",
-        en: "The Madrid Bravos were the city's professional franchise in the European League of Football. They played at the Estadio Vallehermoso [[src:elf-bravos-history-2024]] and went 8-4 in both 2024 and 2025, reaching the playoffs each time. [[src:elf-bravos-history-2024]] [[src:madridactual-bravos-2026]] On 10 March 2026 the club announced it would not compete in 2026, [[src:madridactual-bravos-2026]] [[src:eldiariodemadrid-bravos-2026]] so there is no professional American football in Madrid this season. We are not aware of any announcement about a return.",
+        es: "Los [[link:articles/madrid-bravos|Madrid Bravos]] fueron la franquicia profesional de la ciudad en la European League of Football. Jugaban en el Estadio Vallehermoso [[src:elf-bravos-history-2024]] y en 2024 y 2025 firmaron dos 8-4 con presencia en playoffs. [[src:elf-bravos-history-2024]] [[src:madridactual-bravos-2026]] El 10 de marzo de 2026 el club anunció que no competiría en 2026, [[src:madridactual-bravos-2026]] [[src:eldiariodemadrid-bravos-2026]] así que esta temporada no hay fútbol americano profesional en Madrid. No tenemos constancia de ningún anuncio sobre su regreso.",
+        en: "The [[link:articles/madrid-bravos|Madrid Bravos]] were the city's professional franchise in the European League of Football. They played at the Estadio Vallehermoso [[src:elf-bravos-history-2024]] and went 8-4 in both 2024 and 2025, reaching the playoffs each time. [[src:elf-bravos-history-2024]] [[src:madridactual-bravos-2026]] On 10 March 2026 the club announced it would not compete in 2026, [[src:madridactual-bravos-2026]] [[src:eldiariodemadrid-bravos-2026]] so there is no professional American football in Madrid this season. We are not aware of any announcement about a return.",
       },
     },
     {
@@ -222,8 +222,8 @@ export const equiposFutbolAmericanoMadrid: Article = {
       type: "callout",
       title: { es: "El directorio completo", en: "The full directory" },
       text: {
-        es: "Cada club tiene su ficha con historia, palmarés y fuentes en la sección Equipos, dentro de Comunidad de Madrid. Si representas a un club madrileño y ves un dato incorrecto o que falta, escríbenos con la fuente y lo corregimos.",
-        en: "Every club has its own page with history, honours and sources in the Teams section, under Madrid. If you represent a Madrid club and spot something wrong or missing, write to us with the source and we will correct it.",
+        es: "Cada club tiene su ficha con historia, palmarés y fuentes en la [[link:teams/madrid|sección Equipos, dentro de Comunidad de Madrid]]. Si representas a un club madrileño y ves un dato incorrecto o que falta, escríbenos con la fuente y lo corregimos.",
+        en: "Every club has its own page with history, honours and sources in the [[link:teams/madrid|Teams section, under Madrid]]. If you represent a Madrid club and spot something wrong or missing, write to us with the source and we will correct it.",
       },
     },
   ],

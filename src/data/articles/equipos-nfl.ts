@@ -203,15 +203,15 @@ export const equiposNfl: Article = {
     {
       type: "paragraph",
       text: {
-        es: "El 8 de noviembre de 2026 el Santiago Bernabéu acoge el Atlanta Falcons–Cincinnati Bengals de la Semana 9, con los Falcons como locales. [[src:madrid26-bengals-press-release]] Es un cruce entre conferencias: los Falcons son de la NFC Sur y los Bengals de la AFC Norte. [[src:equipos-nfl-nfl-division-standings-2026]] Lo contamos todo en nuestra guía del partido.",
-        en: "On 8 November 2026 the Santiago Bernabéu hosts Atlanta Falcons–Cincinnati Bengals in Week 9, with the Falcons as the home team. [[src:madrid26-bengals-press-release]] It is an interconference game: the Falcons play in the NFC South and the Bengals in the AFC North. [[src:equipos-nfl-nfl-division-standings-2026]] Our game guide has all the details.",
+        es: "El 8 de noviembre de 2026 el Santiago Bernabéu acoge el Atlanta Falcons–Cincinnati Bengals de la Semana 9, con los Falcons como locales. [[src:madrid26-bengals-press-release]] Es un cruce entre conferencias: los Falcons son de la NFC Sur y los Bengals de la AFC Norte. [[src:equipos-nfl-nfl-division-standings-2026]] Lo contamos todo en nuestra [[link:articles/nfl-madrid-2026-falcons-bengals-guia|guía del partido]].",
+        en: "On 8 November 2026 the Santiago Bernabéu hosts Atlanta Falcons–Cincinnati Bengals in Week 9, with the Falcons as the home team. [[src:madrid26-bengals-press-release]] It is an interconference game: the Falcons play in the NFC South and the Bengals in the AFC North. [[src:equipos-nfl-nfl-division-standings-2026]] Our [[link:articles/nfl-madrid-2026-falcons-bengals-guia|game guide]] has all the details.",
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "Para seguir a cualquiera de los 32, Mediaset emite más de 50 partidos gratis en Cuatro, Be Mad y Mediaset Infinity, [[src:madrid26-mediaset-season-launch]] y NFL Game Pass, dentro de DAZN, tiene todos los partidos de la temporada. [[src:dazn-nfl-game-pass-2026]]",
-        en: "To follow any of the 32, Mediaset shows over 50 free-to-air games on Cuatro, Be Mad and Mediaset Infinity, [[src:madrid26-mediaset-season-launch]] and NFL Game Pass, inside DAZN, carries every game of the season. [[src:dazn-nfl-game-pass-2026]]",
+        es: "Para seguir a cualquiera de los 32, Mediaset emite [[link:articles/donde-ver-nfl-espana-2026|más de 50 partidos gratis]] en Cuatro, Be Mad y Mediaset Infinity, [[src:madrid26-mediaset-season-launch]] y NFL Game Pass, dentro de DAZN, tiene todos los partidos de la temporada. [[src:dazn-nfl-game-pass-2026]]",
+        en: "To follow any of the 32, Mediaset shows [[link:articles/donde-ver-nfl-espana-2026|over 50 free-to-air games]] on Cuatro, Be Mad and Mediaset Infinity, [[src:madrid26-mediaset-season-launch]] and NFL Game Pass, inside DAZN, carries every game of the season. [[src:dazn-nfl-game-pass-2026]]",
       },
     },
   ],

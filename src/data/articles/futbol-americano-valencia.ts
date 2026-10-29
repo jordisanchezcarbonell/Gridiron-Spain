@@ -64,8 +64,8 @@ export const futbolAmericanoValencia: Article = {
       type: "callout",
       title: { es: "En resumen", en: "In short" },
       text: {
-        es: "Valencia Firebats juega la LNFA, la máxima categoría, en 2026-27. [[src:fefa-calendario-2026-27]] Valencia Giants, Sueca Ricers, Alicante Sharks y Alicante Thunder formaron en 2025-26 la Liga Valenciana de la LNFA 2, junto a Murcia Cobras. [[src:fefa-lnfa2-2025-26]] Y los Firebats tienen el récord de la Spanish Flag Bowl Open, con diez títulos. [[src:fefa-palmares-flag]]",
-        en: "Valencia Firebats play the LNFA, the top flight, in 2026-27. [[src:fefa-calendario-2026-27]] Valencia Giants, Sueca Ricers, Alicante Sharks and Alicante Thunder made up the Valencian league of LNFA 2 in 2025-26, together with Murcia Cobras. [[src:fefa-lnfa2-2025-26]] And the Firebats hold the Spanish Flag Bowl Open record, with ten titles. [[src:fefa-palmares-flag]]",
+        es: "Valencia Firebats juega la [[link:competitions/lnfa|LNFA]], la máxima categoría, en 2026-27. [[src:fefa-calendario-2026-27]] Valencia Giants, Sueca Ricers, Alicante Sharks y Alicante Thunder formaron en 2025-26 la Liga Valenciana de la [[link:competitions/lnfa-2|LNFA 2]], junto a Murcia Cobras. [[src:fefa-lnfa2-2025-26]] Y los Firebats tienen el récord de la Spanish Flag Bowl Open, con diez títulos. [[src:fefa-palmares-flag]]",
+        en: "Valencia Firebats play the [[link:competitions/lnfa|LNFA]], the top flight, in 2026-27. [[src:fefa-calendario-2026-27]] Valencia Giants, Sueca Ricers, Alicante Sharks and Alicante Thunder made up the Valencian league of [[link:competitions/lnfa-2|LNFA 2]] in 2025-26, together with Murcia Cobras. [[src:fefa-lnfa2-2025-26]] And the Firebats hold the Spanish Flag Bowl Open record, with ten titles. [[src:fefa-palmares-flag]]",
       },
     },
     { type: "heading", level: 2, id: "equipos", text: { es: "Equipos de fútbol americano en Valencia y Alicante", en: "American football teams in Valencia and Alicante" } },
@@ -135,8 +135,8 @@ export const futbolAmericanoValencia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "En flag, la modalidad sin placajes, la Comunidad Valenciana tiene al club más ganador de España. Los Firebats suman diez Spanish Flag Bowl Open (2010, 2013, 2014, 2015, 2017, 2019, 2021, 2022, 2024 y 2026), más tres Copas de España de flag (2020, 2021 y 2023) y tres Spanish Flag Bowl femeninas (2019, 2022 y 2024). [[src:fefa-palmares-flag]] La décima Open llegó en junio de 2026 en Calatayud: 27-20 a Zaragoza Hurricanes, con Pau Estellés como MVP. [[src:fefa-flag-bowl-2026]]",
-        en: "In flag, the non-contact version, the Valencian Community has Spain's most successful club. The Firebats have ten Spanish Flag Bowl Open titles (2010, 2013, 2014, 2015, 2017, 2019, 2021, 2022, 2024 and 2026), plus three flag Copas de España (2020, 2021 and 2023) and three women's Spanish Flag Bowls (2019, 2022 and 2024). [[src:fefa-palmares-flag]] The tenth Open title came in June 2026 in Calatayud: 27-20 against Zaragoza Hurricanes, with Pau Estellés as MVP. [[src:fefa-flag-bowl-2026]]",
+        es: "En flag, la modalidad sin placajes, la [[link:teams/comunidad-valenciana|Comunidad Valenciana]] tiene al club más ganador de España. Los Firebats suman diez Spanish Flag Bowl Open (2010, 2013, 2014, 2015, 2017, 2019, 2021, 2022, 2024 y 2026), más tres Copas de España de flag (2020, 2021 y 2023) y tres Spanish Flag Bowl femeninas (2019, 2022 y 2024). [[src:fefa-palmares-flag]] La décima Open llegó en junio de 2026 en Calatayud: 27-20 a Zaragoza Hurricanes, con Pau Estellés como MVP. [[src:fefa-flag-bowl-2026]]",
+        en: "In flag, the non-contact version, the [[link:teams/comunidad-valenciana|Valencian Community]] has Spain's most successful club. The Firebats have ten Spanish Flag Bowl Open titles (2010, 2013, 2014, 2015, 2017, 2019, 2021, 2022, 2024 and 2026), plus three flag Copas de España (2020, 2021 and 2023) and three women's Spanish Flag Bowls (2019, 2022 and 2024). [[src:fefa-palmares-flag]] The tenth Open title came in June 2026 in Calatayud: 27-20 against Zaragoza Hurricanes, with Pau Estellés as MVP. [[src:fefa-flag-bowl-2026]]",
       },
     },
     {

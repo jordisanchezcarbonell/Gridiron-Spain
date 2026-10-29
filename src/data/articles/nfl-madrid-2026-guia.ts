@@ -8,8 +8,8 @@ export const nflMadrid2026Guia: Article = {
     en: "NFL Madrid 2026: a guide to Falcons–Bengals at the Bernabéu",
   },
   subtitle: {
-    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 27 de octubre y lo que aún falta por anunciar.",
-    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 27 October, and what is still to be announced.",
+    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 29 de octubre y lo que aún falta por anunciar.",
+    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 29 October, and what is still to be announced.",
   },
   excerpt: {
     es: "El segundo partido oficial de la NFL en España enfrenta a Atlanta Falcons y Cincinnati Bengals en el Bernabéu. Horario, televisión, entradas, transporte y contexto de los dos equipos.",
@@ -21,8 +21,8 @@ export const nflMadrid2026Guia: Article = {
       en: "NFL Madrid 2026 Falcons vs Bengals: kickoff, tickets, TV and getting there",
     },
     description: {
-      es: "Guía práctica del Falcons–Bengals del 8 de noviembre de 2026 en el Santiago Bernabéu: hora, dónde verlo en España, precios de entradas, metro y autobuses.",
-      en: "Practical guide to Falcons–Bengals on 8 November 2026 at the Santiago Bernabéu: kickoff, where to watch in Spain, ticket prices, metro and buses.",
+      es: "Falcons–Bengals en el Bernabéu (Madrid), 8 de noviembre, 15:30: dónde verlo, entradas, bolsos permitidos y cómo llegar con la estación de metro cerrada.",
+      en: "Falcons–Bengals at the Bernabéu (Madrid), 8 November, 3:30 pm: where to watch, tickets, bag rules and getting there with the metro station closed.",
     },
   },
   authorId: "jordi-sanchez",
@@ -32,11 +32,11 @@ export const nflMadrid2026Guia: Article = {
   relatedCompetitionIds: ["nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-27",
+  updatedAt: "2026-10-29",
   status: "published",
   verificationStatus: "partial",
-  lastVerifiedAt: "2026-10-27",
-  readingTimeMinutes: 6,
+  lastVerifiedAt: "2026-10-29",
+  readingTimeMinutes: 7,
   event: {
     name: "Atlanta Falcons vs Cincinnati Bengals · NFL Madrid Game 2026",
     startDate: "2026-11-08T14:30:00Z",
@@ -76,6 +76,11 @@ export const nflMadrid2026Guia: Article = {
     "madrid26-ap-falcons-madrid",
     "madrid26-bengals-fan-events",
     "madrid26-nfl-madrid-faqs",
+    "madrid26-elespanol-l10-bernabeu",
+    "madrid26-metro-bernabeu-obras-70",
+    "madrid26-metro-l10-bus-sustitutivo",
+    "madrid26-nfl-2026-clear-bag",
+    "madrid26-nfl-shop-2026",
     "cbs-nfl-standings-2026-10-14",
     "espn-nfl-standings-2026-10-14",
     "espn-nfl-scoreboard-2026-week-5",
@@ -89,6 +94,28 @@ export const nflMadrid2026Guia: Article = {
         es: "Atlanta Falcons (local) contra Cincinnati Bengals, Semana 9 de la NFL. Domingo 8 de noviembre de 2026 a las 15:30 en el Estadio Santiago Bernabéu. En abierto en Mediaset España; entradas en Ticketmaster desde 93,40 euros. [[src:madrid26-bengals-press-release]] [[src:madrid26-mediaset-renewal]] [[src:madrid26-nfl-ticket-windows]]",
         en: "Atlanta Falcons (home) vs Cincinnati Bengals, NFL Week 9. Sunday 8 November 2026 at 3:30 pm at the Estadio Santiago Bernabéu. Free-to-air on Mediaset España; tickets on Ticketmaster from €93.40. [[src:madrid26-bengals-press-release]] [[src:madrid26-mediaset-renewal]] [[src:madrid26-nfl-ticket-windows]]",
       },
+    },
+    { type: "heading", level: 2, id: "lo-ultimo", text: { es: "Lo último antes del partido", en: "Latest before the game" } },
+    {
+      type: "list",
+      items: [
+        {
+          es: "La estación de metro Santiago Bernabéu está cerrada por obras: la línea 10 no circula entre Nuevos Ministerios y Cuzco desde el 28 de marzo, y Metro de Madrid mantiene un autobús gratuito que cubre el tramo cortado, con frecuencias de tres a cinco minutos. El servicio de la línea no se espera hasta finales de diciembre y la estación renovada, hasta el primer trimestre de 2027, así que el 8 de noviembre no habrá parada en el estadio. [[src:madrid26-elespanol-l10-bernabeu]] [[src:madrid26-metro-l10-bus-sustitutivo]] [[src:madrid26-metro-bernabeu-obras-70]]",
+          en: "Santiago Bernabéu metro station is closed for works: line 10 has not run between Nuevos Ministerios and Cuzco since 28 March, and Metro de Madrid runs a free bus covering the closed section every three to five minutes. Line service is not expected back until late December and the renovated station until the first quarter of 2027, so on 8 November there will be no stop at the stadium. [[src:madrid26-elespanol-l10-bernabeu]] [[src:madrid26-metro-l10-bus-sustitutivo]] [[src:madrid26-metro-bernabeu-obras-70]]",
+        },
+        {
+          es: "La NFL ya ha publicado la política de bolsos de 2026: solo bolsas transparentes de hasta 30,5 × 15,25 × 30,5 cm, más un bolso pequeño de hasta 11,5 × 16,5 cm. Mochilas y bolsos no transparentes quedan prohibidos y no hay consigna en el estadio. [[src:madrid26-nfl-2026-clear-bag]]",
+          en: "The NFL has published its 2026 bag policy: clear bags only, up to 30.5 × 15.25 × 30.5 cm, plus one small bag up to 11.5 × 16.5 cm. Backpacks and non-clear bags are banned, and items will not be stored at the stadium. [[src:madrid26-nfl-2026-clear-bag]]",
+        },
+        {
+          es: "La tienda oficial de la NFL abre en el propio Bernabéu, en la puerta 30, del 6 al 8 de noviembre. [[src:madrid26-nfl-shop-2026]]",
+          en: "The official NFL Shop opens at the Bernabéu itself, at gate 30, from 6 to 8 November. [[src:madrid26-nfl-shop-2026]]",
+        },
+        {
+          es: "Los dos equipos juegan una vez más antes de viajar, el domingo 1 de noviembre; actualizaremos sus balances después de esos partidos. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]]",
+          en: "Both teams play once more before travelling, on Sunday 1 November; we will update their records after those games. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]]",
+        },
+      ],
     },
     { type: "heading", level: 2, id: "el-partido", text: { es: "El partido", en: "The game" } },
     {
@@ -109,8 +136,8 @@ export const nflMadrid2026Guia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "El partido de Madrid está incluido en el acuerdo plurianual de Mediaset España con la NFL, que emite en Cuatro, Be Mad y Mediaset Infinity. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]] La página oficial de los Bengals ya concreta la emisión en España: Cuatro, Mediaset Infinity y DAZN. Mediaset no lo ha anunciado todavía por su cuenta, así que lo damos como lo que es, el dato del club. [[src:madrid26-bengals-fan-events]]",
-        en: "The Madrid game is part of Mediaset España's multi-year NFL deal, which airs on Cuatro, Be Mad and Mediaset Infinity. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]] The Bengals' official game page now names the Spanish broadcasters: Cuatro, Mediaset Infinity and DAZN. Mediaset has not announced it on its own yet, so we report it for what it is: the club's information. [[src:madrid26-bengals-fan-events]]",
+        es: "El partido de Madrid está incluido en el acuerdo plurianual de Mediaset España con la NFL, que emite en [[link:articles/donde-ver-nfl-espana-2026|Cuatro, Be Mad y Mediaset Infinity]]. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]] La página oficial de los Bengals ya concreta la emisión en España: Cuatro, Mediaset Infinity y DAZN. Mediaset no lo ha anunciado todavía por su cuenta, así que lo damos como lo que es, el dato del club. [[src:madrid26-bengals-fan-events]]",
+        en: "The Madrid game is part of Mediaset España's multi-year NFL deal, which airs on [[link:articles/donde-ver-nfl-espana-2026|Cuatro, Be Mad and Mediaset Infinity]]. [[src:madrid26-mediaset-renewal]] [[src:madrid26-mediaset-season-launch]] The Bengals' official game page now names the Spanish broadcasters: Cuatro, Mediaset Infinity and DAZN. Mediaset has not announced it on its own yet, so we report it for what it is: the club's information. [[src:madrid26-bengals-fan-events]]",
       },
     },
     {
@@ -137,8 +164,8 @@ export const nflMadrid2026Guia: Article = {
           en: "Maximum six tickets per account, reduced prices for under-16s and free entry without a seat for babies up to 18 months. Tickets are digital and arrive by email up to 72 hours before. [[src:nfl-madrid-game-2026]]",
         },
         {
-          es: "A 27 de octubre la web oficial de la NFL sigue anunciando entradas a la venta y la liga no ha dicho que el partido esté agotado; algunos revendedores sí dicen estarlo, pero eso no es una fuente. Fuera de Ticketmaster no hay canal oficial: desconfía de la reventa. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
-          en: "As of 27 October the NFL's official site still advertises tickets on sale and the league has not announced a sell-out; some resellers claim one, but that is not a source. There is no official channel outside Ticketmaster: be wary of resale. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
+          es: "A 29 de octubre la web oficial de la NFL sigue anunciando entradas a la venta y la liga no ha dicho que el partido esté agotado; algunos revendedores sí dicen estarlo, pero eso no es una fuente. Fuera de Ticketmaster no hay canal oficial: desconfía de la reventa. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
+          en: "As of 29 October the NFL's official site still advertises tickets on sale and the league has not announced a sell-out; some resellers claim one, but that is not a source. There is no official channel outside Ticketmaster: be wary of resale. [[src:nfl-madrid-game-2026]] [[src:madrid26-nfl-madrid-faqs]]",
         },
       ],
     },
@@ -151,16 +178,16 @@ export const nflMadrid2026Guia: Article = {
           en: "Address: Avenida de Concha Espina 1 (28036 Madrid). [[src:madrid26-esmadrid-event]]",
         },
         {
-          es: "Metro: estación Santiago Bernabéu (línea 10). Cercanías: Nuevos Ministerios. Autobuses EMT: 14, 27, 40, 43, 120, 126, 147, 150, N22 y N24. [[src:madrid26-esmadrid-event]]",
-          en: "Metro: Santiago Bernabéu station (line 10). Commuter rail: Nuevos Ministerios. EMT buses: 14, 27, 40, 43, 120, 126, 147, 150, N22 and N24. [[src:madrid26-esmadrid-event]]",
+          es: "Metro: la estación Santiago Bernabéu (línea 10) está cerrada por obras y la línea 10 no circula entre Nuevos Ministerios y Cuzco; hay un autobús gratuito sustitutivo. [[src:madrid26-elespanol-l10-bernabeu]] [[src:madrid26-metro-l10-bus-sustitutivo]] Nuevos Ministerios sigue teniendo las líneas 6 y 8 y Cercanías. [[src:madrid26-elespanol-l10-bernabeu]] Autobuses EMT con parada en la zona: 14, 27, 40, 43, 120, 126, 147, 150, N22 y N24. [[src:madrid26-esmadrid-event]]",
+          en: "Metro: Santiago Bernabéu station (line 10) is closed for works and line 10 does not run between Nuevos Ministerios and Cuzco; a free replacement bus covers the gap. [[src:madrid26-elespanol-l10-bernabeu]] [[src:madrid26-metro-l10-bus-sustitutivo]] Nuevos Ministerios is still served by lines 6 and 8 and commuter rail. [[src:madrid26-elespanol-l10-bernabeu]] EMT buses serving the area: 14, 27, 40, 43, 120, 126, 147, 150, N22 and N24. [[src:madrid26-esmadrid-event]]",
         },
         {
           es: "Accesibilidad: en la guía de 2025, Nuevos Ministerios era la única estación cercana totalmente sin escalones, las puertas 1 y 40 tenían acceso sin escalones y no había aparcamiento adaptado. [[src:madrid26-nfl-2025-accessibility]]",
           en: "Accessibility: in the 2025 guide, Nuevos Ministerios was the only nearby fully step-free station, gates 1 and 40 offered step-free access and there was no accessible parking. [[src:madrid26-nfl-2025-accessibility]]",
         },
         {
-          es: "Bolsos: en 2025 la NFL aplicó en Madrid una política de bolsas transparentes. [[src:madrid26-nfl-2025-clear-bag]] La de 2026 aún no se ha publicado; revísala antes de ir.",
-          en: "Bags: in 2025 the NFL applied a clear-bag policy in Madrid. [[src:madrid26-nfl-2025-clear-bag]] The 2026 policy has not been published yet; check it before you go.",
+          es: "Bolsos: política de bolsas transparentes, como en 2025. Se admiten bolsas transparentes de hasta 30,5 × 15,25 × 30,5 cm o una bolsa de congelación transparente de un galón, más un bolso pequeño de hasta 11,5 × 16,5 cm; mochilas, bolsos no transparentes y paraguas de mástil fijo están prohibidos, y no se guardan objetos en el estadio. [[src:madrid26-nfl-2026-clear-bag]] [[src:madrid26-nfl-2025-clear-bag]]",
+          en: "Bags: a clear-bag policy, as in 2025. Clear bags up to 30.5 × 15.25 × 30.5 cm or a one-gallon clear freezer bag are allowed, plus one small bag up to 11.5 × 16.5 cm; backpacks, non-clear bags and fixed-shaft umbrellas are banned, and nothing is stored at the stadium. [[src:madrid26-nfl-2026-clear-bag]] [[src:madrid26-nfl-2025-clear-bag]]",
         },
         {
           es: "Asientos accesibles y perros de asistencia: la NFL atiende por teléfono en el 930 497 500 (desde fuera de España, +34 930 497 500), de 10:00 a 18:00. [[src:madrid26-nfl-madrid-faqs]]",
@@ -198,8 +225,8 @@ export const nflMadrid2026Guia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "Los Bengals ya han publicado su programa en Madrid: un NFL Experience gratuito en Plaza de España el viernes y el sábado, con campo de flag, juegos y zona de comida; una fiesta oficial del club en Florida Park el viernes 6 de noviembre, de 20:00 a 23:00; el Ocean Rock Bar como bar oficial de los Bengals, con encuentro de aficionados el sábado y fiesta de visionado el domingo desde las 13:30; y una Menina decorada con los colores del equipo. Es el programa del club, no el de la NFL, que todavía no ha anunciado el suyo. [[src:madrid26-bengals-fan-events]]",
-        en: "The Bengals have published their Madrid programme: a free NFL Experience at Plaza de España on Friday and Saturday, with a flag field, games and food stands; an official club party at Florida Park on Friday 6 November, 8 pm to 11 pm; the Ocean Rock Bar as the official Bengals bar, with a fan meet-up on Saturday and a watch party on Sunday from 1:30 pm; and a Menina sculpture in the team's colours. This is the club's programme, not the NFL's, which has not announced its own yet. [[src:madrid26-bengals-fan-events]]",
+        es: "Los Bengals ya han publicado su programa en Madrid: un NFL Experience gratuito en Plaza de España el viernes y el sábado, con campo de flag, juegos y zona de comida; una fiesta oficial del club en Florida Park el viernes 6 de noviembre, de 20:00 a 23:00; el Ocean Rock Bar como bar oficial de los Bengals, con encuentro de aficionados el sábado y fiesta de visionado el domingo desde las 13:30; y una Menina decorada con los colores del equipo. Es el programa del club, no el de la NFL, que todavía no ha detallado el suyo. [[src:madrid26-bengals-fan-events]] Lo que sí ha anunciado la liga es su tienda oficial, en la puerta 30 del Bernabéu del 6 al 8 de noviembre. [[src:madrid26-nfl-shop-2026]]",
+        en: "The Bengals have published their Madrid programme: a free NFL Experience at Plaza de España on Friday and Saturday, with a flag field, games and food stands; an official club party at Florida Park on Friday 6 November, 8 pm to 11 pm; the Ocean Rock Bar as the official Bengals bar, with a fan meet-up on Saturday and a watch party on Sunday from 1:30 pm; and a Menina sculpture in the team's colours. This is the club's programme, not the NFL's, which has not detailed its own yet. [[src:madrid26-bengals-fan-events]] What the league has announced is its official store, at gate 30 of the Bernabéu from 6 to 8 November. [[src:madrid26-nfl-shop-2026]]",
       },
     },
     {
@@ -214,8 +241,9 @@ export const nflMadrid2026Guia: Article = {
       topic: { es: "Pendiente de anuncio oficial", en: "Awaiting official announcement" },
       pending: [
         { es: "Confirmación de Mediaset del canal y la hora de emisión", en: "Mediaset's own confirmation of the channel and broadcast time" },
-        { es: "Programa oficial de la NFL en la ciudad (fan zone, NFL Academy, tienda)", en: "The NFL's own programme in the city (fan zone, NFL Academy, store)" },
-        { es: "Política de bolsos, horario oficial de apertura de puertas y guía de accesibilidad de 2026", en: "2026 bag policy, official gate times and accessibility guide" },
+        { es: "Programa oficial de la NFL en la ciudad (fan zone, NFL Academy)", en: "The NFL's own programme in the city (fan zone, NFL Academy)" },
+        { es: "Horario oficial de apertura de puertas y guía de accesibilidad de 2026", en: "Official gate times and 2026 accessibility guide" },
+        { es: "Refuerzos de transporte público para el día del partido", en: "Public transport reinforcements for game day" },
         { es: "Himno", en: "Anthem" },
       ],
     },
