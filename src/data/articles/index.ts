@@ -32,6 +32,7 @@ import { ligaEspanolaFutbolAmericano } from "./liga-espanola-futbol-americano";
 import { futbolAmericanoValencia } from "./futbol-americano-valencia";
 import { futbolAmericanoMurcia } from "./futbol-americano-murcia";
 import { equiposNfl } from "./equipos-nfl";
+import { jamesMadisonDosDerrotasTroy2026 } from "./james-madison-dos-derrotas-troy-2026";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -71,4 +72,5 @@ export const articles: Article[] = [
   futbolAmericanoValencia,
   futbolAmericanoMurcia,
   equiposNfl,
+  jamesMadisonDosDerrotasTroy2026,
 ];
