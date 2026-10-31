@@ -57,7 +57,6 @@
 ## Reglas globales para agentes
 
 - Git: ver «Reglas de publicación» en la sección manual de este archivo, que prevalece sobre esta línea.
-- No desplegar.
 - No modificar `.env`, secretos o credenciales.
 - No ampliar el scope del ticket.
 - No hacer refactors no relacionados.
@@ -88,7 +87,7 @@ Primer Down es un proyecto editorial de una sola persona y las routines descrita
   validaciones antes de implementar, y confirmar con el editor antes de publicar.
 - Un archivo que ya existe no se sobrescribe sin leer antes su contenido (`.nvmrc`,
   configuraciones, datos previos).
-- Sigue prohibido: desplegar, modificar `.env`, secretos o credenciales, ampliar el scope del
+- Sigue prohibido: modificar `.env`, secretos o credenciales, ampliar el scope del
   ticket y hacer refactors no relacionados.
 - Las reglas de credibilidad de `CLAUDE.md` son absolutas y nada de lo anterior las anula:
   cada dato con fuente, nada inventado, y lo que no está confirmado se marca como tal.
