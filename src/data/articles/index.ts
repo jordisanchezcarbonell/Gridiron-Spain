@@ -26,6 +26,7 @@ import { antesDe1988 } from "./antes-de-1988";
 import { armyNavyPlayoff24_2027 } from "./army-navy-game-playoff-24-equipos-2027";
 import { finde20261017 } from "./finde-2026-10-17";
 import { finde20261024 } from "./finde-2026-10-24";
+import { finde20261031 } from "./finde-2026-10-31";
 import { navyNotreDame2026Previa } from "./navy-notre-dame-2026-previa";
 import { equiposFutbolAmericanoMadrid } from "./equipos-futbol-americano-madrid";
 import { ligaEspanolaFutbolAmericano } from "./liga-espanola-futbol-americano";
@@ -75,4 +76,5 @@ export const articles: Article[] = [
   equiposNfl,
   jamesMadisonDosDerrotasTroy2026,
   syracuseSorprendeASmu2026,
+  finde20261031,
 ];
