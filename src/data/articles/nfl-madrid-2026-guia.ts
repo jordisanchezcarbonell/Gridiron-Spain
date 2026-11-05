@@ -8,8 +8,8 @@ export const nflMadrid2026Guia: Article = {
     en: "NFL Madrid 2026: a guide to Falcons–Bengals at the Bernabéu",
   },
   subtitle: {
-    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 29 de octubre y lo que aún falta por anunciar.",
-    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 29 October, and what is still to be announced.",
+    es: "Domingo 8 de noviembre, 15:30. Cómo verlo en abierto, qué cuestan las entradas, cómo llegar al estadio y qué equipos vienen. Todo lo confirmado a 29 de octubre y lo que aún falta por anunciar, con los equipos actualizados a 5 de noviembre.",
+    en: "Sunday 8 November, 3:30 pm. How to watch it free-to-air, what tickets cost, how to get to the stadium and who is coming. Everything confirmed as of 29 October and what is still to be announced, with the teams updated to 5 November.",
   },
   excerpt: {
     es: "El segundo partido oficial de la NFL en España enfrenta a Atlanta Falcons y Cincinnati Bengals en el Bernabéu. Horario, televisión, entradas, transporte y contexto de los dos equipos.",
@@ -32,7 +32,7 @@ export const nflMadrid2026Guia: Article = {
   relatedCompetitionIds: ["nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-29",
+  updatedAt: "2026-11-05",
   status: "published",
   verificationStatus: "partial",
   lastVerifiedAt: "2026-10-29",
@@ -50,8 +50,14 @@ export const nflMadrid2026Guia: Article = {
     "cbs-nfl-scoreboard-2026-week-7",
     "yahoo-falcons-49ers-2026",
     "bengals-ravens-recap-2026",
-    "espn-nfl-schedule-2026-week-8",
-    "cbs-nfl-schedule-2026-week-8",
+    "espn-nfl-scoreboard-2026-week-8",
+    "cbs-nfl-scoreboard-2026-week-8",
+    "bengals-titans-recap-2026",
+    "espn-bucs-falcons-no-completion-2026",
+    "ap-penix-stefanski-2026",
+    "ajc-falcons-branch-ebukam-2026",
+    "bengals-injury-report-week-9-2026",
+    "nfl-roundup-2026-11-04",
     "nfl-turizo-halftime-2026",
     "cbs-nfl-scoreboard-2026-week-6",
     "espn-nfl-scoreboard-2026-week-6",
@@ -112,8 +118,8 @@ export const nflMadrid2026Guia: Article = {
           en: "The official NFL Shop opens at the Bernabéu itself, at gate 30, from 6 to 8 November. [[src:madrid26-nfl-shop-2026]]",
         },
         {
-          es: "Los dos equipos juegan una vez más antes de viajar, el domingo 1 de noviembre; actualizaremos sus balances después de esos partidos. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]]",
-          en: "Both teams play once more before travelling, on Sunday 1 November; we will update their records after those games. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]]",
+          es: "Cincinnati llega 5-2 y Atlanta, 3-5. [[src:nfl-roundup-2026-11-04]] Los Falcons no tendrán a Zachariah Branch ni a Samson Ebukam, y recuperan a James Pearce Jr. tras ocho partidos de sanción. [[src:ajc-falcons-branch-ebukam-2026]] Joe Burrow y Ja'Marr Chase no figuran en el parte de lesionados del jueves. [[src:bengals-injury-report-week-9-2026]] Lo cuenta nuestro [[link:articles/lo-mas-importante-semana-nfl-college-2026-11-05|resumen de la semana]].",
+          en: "Cincinnati arrive 5-2 and Atlanta 3-5. [[src:nfl-roundup-2026-11-04]] The Falcons will be without Zachariah Branch and Samson Ebukam, and get back James Pearce Jr. after an eight-game suspension. [[src:ajc-falcons-branch-ebukam-2026]] Joe Burrow and Ja'Marr Chase are not on Thursday's injury report. [[src:bengals-injury-report-week-9-2026]] More in our [[link:articles/lo-mas-importante-semana-nfl-college-2026-11-05|week in review]].",
         },
       ],
     },
@@ -203,15 +209,15 @@ export const nflMadrid2026Guia: Article = {
     {
       type: "paragraph",
       text: {
-        es: "Atlanta llega 3-4 tras la semana 7, en la que ganó 29-20 a unos 49ers que estaban invictos: tres pases de touchdown de Michael Penix Jr. y cuatro pérdidas forzadas por la defensa. [[src:espn-nfl-standings-2026-10-27]] [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:yahoo-falcons-49ers-2026]] Antes de viajar a Madrid juega el domingo 1 de noviembre en Tampa. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] Kevin Stefanski es el nuevo entrenador. Penix es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
-        en: "Atlanta is 3-4 after Week 7, in which they beat the previously unbeaten 49ers 29-20: three touchdown passes from Michael Penix Jr. and four turnovers forced by the defence. [[src:espn-nfl-standings-2026-10-27]] [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:yahoo-falcons-49ers-2026]] Before travelling to Madrid they play in Tampa on Sunday 1 November. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] Kevin Stefanski is the new head coach. Penix has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
+        es: "Atlanta llega 3-5 tras perder 16-0 en Tampa bajo la lluvia, con cuatro intercepciones de Michael Penix Jr., que llevaba 144 pases seguidos sin ninguna. [[src:espn-nfl-scoreboard-2026-week-8]] [[src:cbs-nfl-scoreboard-2026-week-8]] [[src:espn-bucs-falcons-no-completion-2026]] [[src:ap-penix-stefanski-2026]] Una semana antes había ganado 29-20 a unos 49ers que estaban invictos: tres pases de touchdown de Penix y cuatro pérdidas forzadas por la defensa. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:yahoo-falcons-49ers-2026]] Kevin Stefanski es el nuevo entrenador. Penix es titular desde la Semana 3, su primer partido tras romperse el ligamento cruzado, y ese mismo día los Falcons ganaron 35-14 en Green Bay con 194 yardas de carrera de Bijan Robinson y 194 de recepción de Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] Será su sexto partido fuera de Estados Unidos. [[src:madrid26-falcons-announcement]]",
+        en: "Atlanta arrive 3-5 after losing 16-0 in the rain in Tampa, with four interceptions from Michael Penix Jr., who had gone 144 straight passes without one. [[src:espn-nfl-scoreboard-2026-week-8]] [[src:cbs-nfl-scoreboard-2026-week-8]] [[src:espn-bucs-falcons-no-completion-2026]] [[src:ap-penix-stefanski-2026]] A week earlier they beat the previously unbeaten 49ers 29-20: three touchdown passes from Penix and four turnovers forced by the defence. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:yahoo-falcons-49ers-2026]] Kevin Stefanski is the new head coach. Penix has started since Week 3, his first game back from a torn ACL, and that day the Falcons won 35-14 at Green Bay behind 194 rushing yards from Bijan Robinson and 194 receiving yards from Drake London. [[src:madrid26-nfl-penix-week3]] [[src:madrid26-ajc-falcons-packers]] It will be their sixth game outside the United States. [[src:madrid26-falcons-announcement]]",
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "Cincinnati va 4-2, con un partido menos por su descanso de la semana 6. [[src:espn-nfl-standings-2026-10-27]] En la semana 7 perdía 13-0 al descanso en Baltimore y ganó 35-13, con cuatro pases de touchdown de Joe Burrow en la segunda parte. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:bengals-ravens-recap-2026]] El domingo 1 de noviembre recibe a los Titans antes de viajar a Madrid. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] El entrenador es Zac Taylor. En Pittsburgh perdió el 27 de septiembre, 30-27 con un field goal final de los Steelers, [[src:madrid26-ap-steelers-bengals]] y en la semana 5 ganó 31-24 en Miami con cuatro pases de touchdown de Burrow. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
-        en: "Cincinnati is 4-2, a game behind on the schedule because of their Week 6 bye. [[src:espn-nfl-standings-2026-10-27]] In Week 7 they trailed 13-0 at half-time in Baltimore and won 35-13, with four Joe Burrow touchdown passes after the break. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:bengals-ravens-recap-2026]] On Sunday 1 November they host the Titans before travelling to Madrid. [[src:espn-nfl-schedule-2026-week-8]] [[src:cbs-nfl-schedule-2026-week-8]] Zac Taylor is head coach. They lost in Pittsburgh on 27 September, 30-27 on a late Steelers field goal, [[src:madrid26-ap-steelers-bengals]] and in Week 5 won 31-24 in Miami behind four Burrow touchdown passes. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
+        es: "Cincinnati va 5-2, con un partido menos por su descanso de la semana 6, y llega con tres victorias seguidas. [[src:espn-nfl-standings-2026-10-27]] [[src:bengals-titans-recap-2026]] En la última ganó 43-36 a los Titans en la prórroga: Joe Burrow lanzó para 462 yardas y cinco touchdowns y corrió el de la victoria. [[src:espn-nfl-scoreboard-2026-week-8]] [[src:cbs-nfl-scoreboard-2026-week-8]] [[src:bengals-titans-recap-2026]] En la semana 7 perdía 13-0 al descanso en Baltimore y ganó 35-13, con cuatro pases de touchdown de Burrow en la segunda parte. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:bengals-ravens-recap-2026]] El entrenador es Zac Taylor. En Pittsburgh perdió el 27 de septiembre, 30-27 con un field goal final de los Steelers, [[src:madrid26-ap-steelers-bengals]] y en la semana 5 ganó 31-24 en Miami con cuatro pases de touchdown de Burrow. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] Los Bengals solo habían jugado dos veces fuera de Estados Unidos, ambas en Londres (2016 y 2019). [[src:madrid26-bengals-press-release]]",
+        en: "Cincinnati are 5-2, a game behind on the schedule because of their Week 6 bye, and arrive on a three-game winning streak. [[src:espn-nfl-standings-2026-10-27]] [[src:bengals-titans-recap-2026]] Last time out they beat the Titans 43-36 in overtime: Joe Burrow threw for 462 yards and five touchdowns and ran in the winner. [[src:espn-nfl-scoreboard-2026-week-8]] [[src:cbs-nfl-scoreboard-2026-week-8]] [[src:bengals-titans-recap-2026]] In Week 7 they trailed 13-0 at half-time in Baltimore and won 35-13, with four Burrow touchdown passes after the break. [[src:espn-nfl-scoreboard-2026-week-7]] [[src:cbs-nfl-scoreboard-2026-week-7]] [[src:bengals-ravens-recap-2026]] Zac Taylor is head coach. They lost in Pittsburgh on 27 September, 30-27 on a late Steelers field goal, [[src:madrid26-ap-steelers-bengals]] and in Week 5 won 31-24 in Miami behind four Burrow touchdown passes. [[src:espn-nfl-scoreboard-2026-week-5]] [[src:cbs-nfl-scoreboard-2026-week-5]] The Bengals had played outside the United States only twice, both in London (2016 and 2019). [[src:madrid26-bengals-press-release]]",
       },
     },
     {
