@@ -18,6 +18,7 @@ import { seasons } from "../src/data/seasons";
 import { rankings } from "../src/data/rankings";
 import { playerSpotlights } from "../src/data/players";
 import { agendaWeeks } from "../src/data/agenda";
+import { guideSections } from "../src/data/guide";
 import { nationalTeams } from "../src/data/national-teams";
 import { quizResults, quizQuestions } from "../src/data/quiz/nfl-team";
 import { routes } from "../src/lib/i18n/routes";
@@ -99,6 +100,13 @@ for (const team of teams) {
   if (team.verificationStatus === "verified" && !team.lastVerifiedAt) errors.push(`${owner}: verified without lastVerifiedAt`);
   if (team.status === "active" && !team.venue?.coordinates) warnings.push(`${owner}: active team without coordinates (will not appear on map)`);
   if (team.verificationStatus === "verified" && team.sourceIds.length === 0) errors.push(`${owner}: verified without sources`);
+}
+
+for (const section of guideSections) {
+  for (const p of section.paragraphs) {
+    checkLinks(`guide:${section.id}`, p.es);
+    checkLinks(`guide:${section.id}`, p.en);
+  }
 }
 
 for (const article of articles) {

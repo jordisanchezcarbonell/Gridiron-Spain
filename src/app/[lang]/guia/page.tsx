@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { resolveLocale } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { href } from "@/lib/i18n/routes";
+import { href, type RouteKey } from "@/lib/i18n/routes";
+import { splitCitations } from "@/lib/content/citations";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
 import { t } from "@/lib/i18n/text";
@@ -96,7 +97,18 @@ export default async function GuidePage({ params }: PageProps<"/[lang]/guia">) {
               </h2>
               <div className="prose-editorial max-w-prose">
                 {section.paragraphs.map((p, j) => (
-                  <p key={j}>{t(p, locale)}</p>
+                  <p key={j}>
+                    {splitCitations(t(p, locale), []).map((part, k) => {
+                      if (part.kind === "link") {
+                        return (
+                          <Link key={k} href={href(locale, part.route as RouteKey, ...part.segments)}>
+                            {part.label}
+                          </Link>
+                        );
+                      }
+                      return part.kind === "text" ? <span key={k}>{part.value}</span> : null;
+                    })}
+                  </p>
                 ))}
               </div>
             </section>

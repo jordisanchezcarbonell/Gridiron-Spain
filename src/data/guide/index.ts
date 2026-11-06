@@ -64,8 +64,8 @@ export const guideSections: GuideSection[] = [
     title: { es: "Tackle y flag: dos formas de jugar", en: "Tackle and flag: two ways to play" },
     paragraphs: [
       {
-        es: "El football tackle es el que ves en la NFL: casco, hombreras y placajes. El flag football se juega sin contacto: cada jugador lleva dos cintas en la cintura y la jugada termina cuando el defensor arranca una. Equipos más pequeños (normalmente cinco por lado), campo más corto y sin equipación cara. Es la modalidad que más crece en España y la puerta de entrada más fácil para adultos, mujeres y niños. La mayoría de los clubes del directorio tienen las dos.",
-        en: "Tackle football is what you see in the NFL: helmet, shoulder pads and tackling. Flag football is played without contact: each player wears two flags at the waist and the play ends when a defender pulls one off. Smaller teams (usually five a side), a shorter field and no expensive gear. It is the fastest-growing format in Spain and the easiest way in for adults, women and kids. Most clubs in the directory offer both.",
+        es: "El football tackle es el que ves en la NFL: casco, hombreras y placajes. El flag football se juega sin contacto: cada jugador lleva dos cintas en la cintura y la jugada termina cuando el defensor arranca una. Equipos más pequeños (normalmente cinco por lado), campo más corto y sin equipación cara. Es la puerta de entrada más fácil para adultos, mujeres y niños. La mayoría de los clubes del directorio tienen las dos. Si quieres empezar, aquí tienes las [[link:articles/reglas-flag-football|reglas del flag football]].",
+        en: "Tackle football is what you see in the NFL: helmet, shoulder pads and tackling. Flag football is played without contact: each player wears two flags at the waist and the play ends when a defender pulls one off. Smaller teams (usually five a side), a shorter field and no expensive gear. It is the easiest way in for adults, women and kids. Most clubs in the directory offer both. If you want to get started, here are the [[link:articles/reglas-flag-football|flag football rules]].",
       },
     ],
   },
