@@ -17,8 +17,8 @@ export const finde20261031: Article = {
     en: "Burrow and Penix reach the Bernabéu heading in opposite directions, Baltimore lose their top two quarterbacks and the first college playoff ranking sparks debate.",
   },
   excerpt: {
-    es: "Del 29 de octubre al 5 de noviembre: Bengals y Falcons a tres días de Madrid, la lesión de Lamar Jackson, el primer ranking del CFP, la caída de Ohio State y el despido de Mike Norvell. Marcadores contrastados en ESPN y CBS.",
-    en: "29 October to 5 November: the Bengals and Falcons three days out from Madrid, Lamar Jackson's injury, the first CFP ranking, Ohio State's fall and Mike Norvell's firing. Scores confirmed on ESPN and CBS.",
+    es: "Del 29 de octubre al 5 de noviembre: Bengals y Falcons a dos días de Madrid, la lesión de Lamar Jackson, el primer ranking del CFP, la caída de Ohio State y el despido de Mike Norvell. Marcadores contrastados en ESPN y CBS.",
+    en: "29 October to 5 November: the Bengals and Falcons two days out from Madrid, Lamar Jackson's injury, the first CFP ranking, Ohio State's fall and Mike Norvell's firing. Scores confirmed on ESPN and CBS.",
   },
   seo: {
     title: {
@@ -45,10 +45,10 @@ export const finde20261031: Article = {
   relatedCompetitionIds: ["nfl", "ncaa-fbs"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-11-05",
-  updatedAt: "2026-11-05",
+  updatedAt: "2026-11-06",
   status: "published",
   verificationStatus: "verified",
-  lastVerifiedAt: "2026-11-05",
+  lastVerifiedAt: "2026-11-06",
   readingTimeMinutes: 7,
   sourceIds: [
     "espn-nfl-scoreboard-2026-week-8", "cbs-nfl-scoreboard-2026-week-8",
@@ -57,6 +57,8 @@ export const finde20261031: Article = {
     "ap-penix-stefanski-2026", "ajc-falcons-branch-ebukam-2026", "bengals-injury-report-week-9-2026", "bengals-quick-hits-madrid-2026",
     "ravens-lamar-thumb-2026", "ap-lamar-surgery-2026", "espn-fagnano-start-2026", "nfl-fagnano-start-2026",
     "nfl-roundup-2026-11-04", "cbs-trade-tracker-2026", "nbc-trade-tracker-2026", "yahoo-bears-seahawks-2026",
+    "espn-nfl-scoreboard-2026-week-9", "cbs-nfl-scoreboard-2026-week-9", "espn-jaguars-ravens-box-2026", "cbs-jaguars-ravens-recap-2026",
+    "ravens-transactions-2026", "espn-ravens-brissett-finalizing-2026",
     "espn-cfb-scoreboard-2026-10-31", "cbs-cfb-scoreboard-2026-10-31",
     "espn-usc-ohio-state-2026", "usc-ohio-state-recap-2026", "notre-dame-navy-recap-2026",
     "espn-cfb-rankings-week10-2026", "cbs-ap-poll-week10-2026",
@@ -67,8 +69,8 @@ export const finde20261031: Article = {
     {
       type: "paragraph",
       text: {
-        es: "La NFL ya está en Madrid. A tres días del Falcons–Bengals del Bernabéu, la semana deja además a uno de los grandes quarterbacks de la liga pendiente de cirugía, un primer ranking del playoff universitario que no ha convencido a todos y un entrenador despedido con una factura millonaria. Esto es lo que hay que saber.",
-        en: "The NFL has arrived in Madrid. Three days before Falcons–Bengals at the Bernabéu, the week has also left one of the league's great quarterbacks facing surgery, a first college playoff ranking that has not convinced everyone and a head coach fired at a huge cost. Here is what you need to know.",
+        es: "La NFL ya está en Madrid. A dos días del Falcons–Bengals del Bernabéu, la semana deja además a uno de los grandes quarterbacks de la liga pendiente de cirugía, un primer ranking del playoff universitario que no ha convencido a todos y un entrenador despedido con una factura millonaria. Esto es lo que hay que saber.",
+        en: "The NFL has arrived in Madrid. Two days before Falcons–Bengals at the Bernabéu, the week has also left one of the league's great quarterbacks facing surgery, a first college playoff ranking that has not convinced everyone and a head coach fired at a huge cost. Here is what you need to know.",
       },
     },
 
@@ -116,15 +118,22 @@ export const finde20261031: Article = {
     {
       type: "paragraph",
       text: {
-        es: `Jackson volvía tras perderse tres partidos por una lesión de tobillo y se hizo daño en el pulgar derecho en la primera jugada ofensiva ante los Bills, al chocar su mano con Greg Rousseau mientras lanzaba. Lo operarán e irá a la lista de lesionados. Al preguntarle si puede ser el final de su temporada, su entrenador, Jesse Minter, respondió: «Potencialmente». Tyler Huntley, su sustituto, también se lesionó, y el novato no drafteado Joe Fagnano debutó en un 36-10 que deja a los Ravens 4-4 y con tres derrotas seguidas: 10 de 21 pases para 91 yardas, una intercepción y un balón perdido. ${NFL} [[src:ravens-lamar-thumb-2026]] [[src:ap-lamar-surgery-2026]]`,
-        en: `Jackson was back after missing three games with an ankle injury and hurt his right thumb on the first offensive snap against the Bills, when his hand hit Greg Rousseau as he threw. He will have surgery and go on injured reserve. Asked whether it could end his season, head coach Jesse Minter said: "Potentially." His replacement Tyler Huntley was hurt too, and undrafted rookie Joe Fagnano made his debut in a 36-10 defeat that leaves the Ravens 4-4 after three straight losses: 10 of 21 for 91 yards, an interception and a lost fumble. ${NFL} [[src:ravens-lamar-thumb-2026]] [[src:ap-lamar-surgery-2026]]`,
+        es: `Jackson volvía tras perderse tres partidos por una lesión de tobillo y se hizo daño en el pulgar derecho en la primera jugada ofensiva ante los Bills, al chocar su mano con Greg Rousseau mientras lanzaba. Lo operarán y desde el 5 de noviembre está en la lista de lesionados. [[src:ravens-transactions-2026]] Al preguntarle si puede ser el final de su temporada, su entrenador, Jesse Minter, respondió: «Potencialmente». Tyler Huntley, su sustituto, también se lesionó, y el novato no drafteado Joe Fagnano debutó en un 36-10 que dejó a los Ravens 4-4 y con tres derrotas seguidas: 10 de 21 pases para 91 yardas, una intercepción y un balón perdido. ${NFL} [[src:ravens-lamar-thumb-2026]] [[src:ap-lamar-surgery-2026]]`,
+        en: `Jackson was back after missing three games with an ankle injury and hurt his right thumb on the first offensive snap against the Bills, when his hand hit Greg Rousseau as he threw. He will have surgery and has been on injured reserve since 5 November. [[src:ravens-transactions-2026]] Asked whether it could end his season, head coach Jesse Minter said: "Potentially." His replacement Tyler Huntley was hurt too, and undrafted rookie Joe Fagnano made his debut in a 36-10 defeat that left the Ravens 4-4 after three straight losses: 10 of 21 for 91 yards, an interception and a lost fumble. ${NFL} [[src:ravens-lamar-thumb-2026]] [[src:ap-lamar-surgery-2026]]`,
       },
     },
     {
       type: "paragraph",
       text: {
-        es: "Fagnano será titular contra los Jaguars en el Thursday Night, en la madrugada del viernes en España (02:15), y es el segundo quarterback novato no drafteado que empieza un partido con los Ravens. [[src:espn-fagnano-start-2026]] [[src:nfl-fagnano-start-2026]] Según Adam Schefter (ESPN) e Ian Rapoport (NFL Network), Huntley se pierde el resto de la temporada y Baltimore ha acordado el traspaso de Jacoby Brissett desde Arizona. Ninguno de los dos extremos es oficial a estas alturas: la operación se cerraría este fin de semana y no se conoce la compensación. [[src:nfl-roundup-2026-11-04]] [[src:cbs-trade-tracker-2026]]",
-        en: "Fagnano will start against the Jaguars on Thursday Night Football, 2:15 am on Friday in Spain, and is only the second undrafted rookie quarterback to start for the Ravens. [[src:espn-fagnano-start-2026]] [[src:nfl-fagnano-start-2026]] According to Adam Schefter (ESPN) and Ian Rapoport (NFL Network), Huntley will miss the rest of the season and Baltimore have agreed to trade for Arizona's Jacoby Brissett. Neither is official at this point: the deal is expected to be completed this weekend and the compensation is not known. [[src:nfl-roundup-2026-11-04]] [[src:cbs-trade-tracker-2026]]",
+        es: "Fagnano, segundo quarterback novato no drafteado que empieza un partido con los Ravens, fue titular contra los Jaguars en el Thursday Night, ya de madrugada del viernes en España, y Baltimore perdió 33-10. [[src:espn-fagnano-start-2026]] [[src:nfl-fagnano-start-2026]] [[src:espn-nfl-scoreboard-2026-week-9]] [[src:cbs-nfl-scoreboard-2026-week-9]] Completó 10 de 18 pases para 60 yardas y lanzó dos intercepciones, mientras Trevor Lawrence sumó 242 yardas y un touchdown. Los Ravens caen a 4-5 con cuatro derrotas seguidas y los Jaguars van 6-2. [[src:espn-jaguars-ravens-box-2026]] [[src:cbs-jaguars-ravens-recap-2026]]",
+        en: "Fagnano, only the second undrafted rookie quarterback to start for the Ravens, got the start against the Jaguars on Thursday Night Football, the early hours of Friday in Spain, and Baltimore lost 33-10. [[src:espn-fagnano-start-2026]] [[src:nfl-fagnano-start-2026]] [[src:espn-nfl-scoreboard-2026-week-9]] [[src:cbs-nfl-scoreboard-2026-week-9]] He went 10 of 18 for 60 yards with two interceptions, while Trevor Lawrence threw for 242 yards and a touchdown. The Ravens drop to 4-5 with four straight losses and the Jaguars are 6-2. [[src:espn-jaguars-ravens-box-2026]] [[src:cbs-jaguars-ravens-recap-2026]]",
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: "Huntley ya está oficialmente en la lista de lesionados; que se pierda toda la temporada, por una lesión en el dedo gordo del pie (turf toe), es lo que informan Adam Schefter (ESPN) e Ian Rapoport (NFL Network). [[src:ravens-transactions-2026]] [[src:espn-ravens-brissett-finalizing-2026]] Los dos informan también de que Baltimore está cerrando el traspaso de Jacoby Brissett desde Arizona. No es oficial: a 6 de noviembre no aparece entre los movimientos del club, la operación se cerraría este fin de semana y no se conoce la compensación. [[src:ravens-transactions-2026]] [[src:nfl-roundup-2026-11-04]] [[src:cbs-trade-tracker-2026]] Los Ravens no vuelven a jugar hasta el 16 de noviembre, contra los Chargers, y ESPN cree que Brissett tendría tiempo de estar listo. [[src:cbs-jaguars-ravens-recap-2026]] [[src:espn-ravens-brissett-finalizing-2026]]",
+        en: "Huntley is officially on injured reserve; that he will miss the whole season, with turf toe, is what Adam Schefter (ESPN) and Ian Rapoport (NFL Network) report. [[src:ravens-transactions-2026]] [[src:espn-ravens-brissett-finalizing-2026]] Both also report that Baltimore are finalizing a trade for Arizona's Jacoby Brissett. It is not official: as of 6 November it does not appear among the club's transactions, the deal is expected to be completed this weekend and the compensation is not known. [[src:ravens-transactions-2026]] [[src:nfl-roundup-2026-11-04]] [[src:cbs-trade-tracker-2026]] The Ravens do not play again until 16 November, against the Chargers, and ESPN expects Brissett to have time to be ready. [[src:cbs-jaguars-ravens-recap-2026]] [[src:espn-ravens-brissett-finalizing-2026]]",
       },
     },
 
