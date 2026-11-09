@@ -15,6 +15,7 @@ import { nflEstadoSemana3 } from "./nfl-estado-semana-3-2026";
 import { navyVsAirForce2026 } from "./navy-vs-air-force-2026";
 import { knightsNflIndianapolis } from "./knights-nfl-indianapolis";
 import { nflMadrid2026Guia } from "./nfl-madrid-2026-guia";
+import { nflMadrid2026Cronica } from "./nfl-madrid-2026-cronica";
 import { dondeVerNflEspana2026 } from "./donde-ver-nfl-espana-2026";
 import { finde20261003 } from "./finde-2026-10-03";
 import { finde20261010 } from "./finde-2026-10-10";
@@ -79,4 +80,5 @@ export const articles: Article[] = [
   syracuseSorprendeASmu2026,
   finde20261031,
   reglasFlagFootball,
+  nflMadrid2026Cronica,
 ];

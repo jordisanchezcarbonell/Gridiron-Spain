@@ -32,7 +32,7 @@ export const nflMadrid2026Guia: Article = {
   relatedCompetitionIds: ["nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-02",
-  updatedAt: "2026-11-06",
+  updatedAt: "2026-11-09",
   status: "published",
   verificationStatus: "partial",
   lastVerifiedAt: "2026-11-06",
@@ -45,6 +45,7 @@ export const nflMadrid2026Guia: Article = {
     away: "Cincinnati Bengals",
   },
   sourceIds: [
+    "ap-bengals-falcons-madrid-2026",
     "espn-nfl-standings-2026-10-27",
     "espn-nfl-scoreboard-2026-week-7",
     "cbs-nfl-scoreboard-2026-week-7",
@@ -99,6 +100,14 @@ export const nflMadrid2026Guia: Article = {
     "cbs-nfl-scoreboard-2026-week-5",
   ],
   content: [
+    {
+      type: "callout",
+      title: { es: "Ya se jugó", en: "Full time" },
+      text: {
+        es: "Cincinnati ganó 34-17 a Atlanta ante 78.660 espectadores, con cuatro touchdowns de Joe Burrow. Lo contamos en la [[link:articles/nfl-madrid-2026-falcons-bengals-cronica|crónica del partido]]. [[src:ap-bengals-falcons-madrid-2026]]",
+        en: "Cincinnati beat Atlanta 34-17 in front of 78,660 fans, with four touchdowns from Joe Burrow. Read the [[link:articles/nfl-madrid-2026-falcons-bengals-cronica|game recap]]. [[src:ap-bengals-falcons-madrid-2026]]",
+      },
+    },
     {
       type: "callout",
       title: { es: "Lo esencial", en: "The essentials" },
