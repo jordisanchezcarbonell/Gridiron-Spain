@@ -1,20 +1,20 @@
 import type { PlayerSpotlight } from "@/types";
 
-const HEISMAN = ["nbc-heisman-odds-week7-2026", "si-heisman-odds-week7-2026"];
+const HEISMAN = ["nbc-heisman-odds-week11-2026", "si-heisman-odds-week11-2026"];
 const BOARD = ["espn-reid-rankings-2027-oct", "tsn-reid-rankings-2027-oct"];
 
 /**
- * Heisman race as priced by DraftKings on 11 Oct 2026 (via NBC Sports). Odds, not votes.
- * Stats only where two sources agree; otherwise the note gives the odds alone.
+ * Heisman race as priced by DraftKings on 8 Nov 2026 (via NBC Sports), cross-checked
+ * against FanDuel (via SI): same order, prices within a few points. Odds, not votes.
+ * Stats only where both articles agree; otherwise the note gives the odds alone.
  */
 const heisman: [string, string, string, string, string, string][] = [
   // [name, position, school, odds, stats es, stats en]
-  ["Jeremiah Smith", "WR", "Ohio State", "-220", "48 recepciones, 916 yardas y 11 touchdowns", "48 catches, 916 yards and 11 touchdowns"],
-  ["CJ Carr", "QB", "Notre Dame", "+1000", "", ""],
-  ["Darian Mensah", "QB", "Miami", "+1100", "1.438 yardas de pase y 15 touchdowns, sin intercepciones", "1,438 passing yards and 15 touchdowns, no interceptions"],
-  ["Trinidad Chambliss", "QB", "Ole Miss", "+1500", "", ""],
-  ["Keelon Russell", "QB", "Alabama", "+1500", "", ""],
-  ["Gunner Stockton", "QB", "Georgia", "+1500", "", ""],
+  ["CJ Carr", "QB", "Notre Dame", "+140", "2.168 yardas de pase, 21 touchdowns de pase y 3 de carrera, y una intercepción", "2,168 passing yards, 21 passing and 3 rushing touchdowns, and one interception"],
+  ["Darian Mensah", "QB", "Miami", "+300", "2.701 yardas de pase, 28 touchdowns y 2 intercepciones", "2,701 passing yards, 28 touchdowns and 2 interceptions"],
+  ["Jeremiah Smith", "WR", "Ohio State", "+410", "1.200 yardas de recepción y 14 touchdowns", "1,200 receiving yards and 14 touchdowns"],
+  ["Devon Dampier", "QB", "Utah", "+1500", "2.053 yardas de pase, 20 touchdowns de pase y 7 de carrera, y 7 intercepciones", "2,053 passing yards, 20 passing and 7 rushing touchdowns, and 7 interceptions"],
+  ["Drew Mestemaker", "QB", "Oklahoma State", "+1750", "", ""],
 ];
 
 /** Jordan Reid's ESPN top-50 rankings for the 2027 Draft (1 Oct 2026), top 10. Analyst opinion. */
@@ -42,8 +42,8 @@ export const ncaaPlayers: PlayerSpotlight[] = [
     league: "NCAA FBS",
     group: "ncaa-star",
     note: {
-      es: `Cuota ${odds} para el Heisman en DraftKings (11 oct).${es ? ` Lleva ${es} en 2026.` : ""}`,
-      en: `${odds} Heisman odds at DraftKings (11 Oct).${en ? ` ${en[0].toUpperCase()}${en.slice(1)} in 2026.` : ""}`,
+      es: `Cuota ${odds} para el Heisman en DraftKings (8 nov).${es ? ` Lleva ${es} en 2026.` : ""}`,
+      en: `${odds} Heisman odds at DraftKings (8 Nov).${en ? ` ${en[0].toUpperCase()}${en.slice(1)} in 2026.` : ""}`,
     },
     sourceIds: HEISMAN,
     verificationStatus: "partial",
