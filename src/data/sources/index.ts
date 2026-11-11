@@ -18,6 +18,7 @@ import { armyNavyCfpSources } from "./army-navy-cfp-2026";
 import { finde20261017Sources } from "./finde-2026-10-17";
 import { finde20261024Sources } from "./finde-2026-10-24";
 import { finde20261031Sources } from "./finde-2026-10-31";
+import { finde20261107Sources } from "./finde-2026-11-07";
 import { equiposNflSources } from "./equipos-nfl";
 import { futbolAmericanoValenciaSources } from "./futbol-americano-valencia";
 import { jamesMadisonTroy2026Sources } from "./james-madison-troy-2026";
@@ -29,4 +30,4 @@ import { reglasFlagFootballSources } from "./reglas-flag-football";
  * references sources by id. Keep ids stable: they are used in inline
  * citations as [[src:ID]].
  */
-export const sources: Source[] = [...spainSources, ...madridEuropeSources, ...originsSources, ...navySources, ...texasOhioStateSources, ...week4Sources, ...ncaaWeek7Sources, ...nflWeek3Sources, ...nfeloSources, ...rankingsSources, ...spainTeamsSources, ...nflMadrid2026Sources, ...agendaSources, ...nationalTeamSources, ...armyNavyCfpSources, ...finde20261017Sources, ...finde20261024Sources, ...equiposNflSources, ...futbolAmericanoValenciaSources, ...jamesMadisonTroy2026Sources, ...syracuseSmu2026Sources, ...reglasFlagFootballSources, ...finde20261031Sources, ...nflMadrid2026CronicaSources];
+export const sources: Source[] = [...spainSources, ...madridEuropeSources, ...originsSources, ...navySources, ...texasOhioStateSources, ...week4Sources, ...ncaaWeek7Sources, ...nflWeek3Sources, ...nfeloSources, ...rankingsSources, ...spainTeamsSources, ...nflMadrid2026Sources, ...agendaSources, ...nationalTeamSources, ...armyNavyCfpSources, ...finde20261017Sources, ...finde20261024Sources, ...equiposNflSources, ...futbolAmericanoValenciaSources, ...jamesMadisonTroy2026Sources, ...syracuseSmu2026Sources, ...reglasFlagFootballSources, ...finde20261031Sources, ...nflMadrid2026CronicaSources, ...finde20261107Sources];

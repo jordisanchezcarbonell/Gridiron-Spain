@@ -37,10 +37,10 @@ export const nflMadrid2026Cronica: Article = {
   relatedCompetitionIds: ["nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-11-09",
-  updatedAt: "2026-11-09",
+  updatedAt: "2026-11-11",
   status: "published",
   verificationStatus: "verified",
-  lastVerifiedAt: "2026-11-09",
+  lastVerifiedAt: "2026-11-11",
   readingTimeMinutes: 5,
   sourceIds: [
     "ap-bengals-falcons-madrid-2026",
@@ -50,6 +50,7 @@ export const nflMadrid2026Cronica: Article = {
     "espn-madrid-recap-2025",
     "nfl-madrid-multiyear-2026",
     "madrid26-nfl-where-to-watch-2026",
+    "formulatv-audiencias-2026-11-08",
     "nfl-roundup-2026-11-04",
     "madrid26-bengals-press-release",
   ],
@@ -159,8 +160,8 @@ export const nflMadrid2026Cronica: Article = {
     {
       type: "paragraph",
       text: {
-        es: `En España el partido se emitió en abierto en Cuatro, gratis en DAZN y en Mediaset Infinity. [[src:madrid26-nfl-where-to-watch-2026]] La NFL tiene firmado un acuerdo plurianual para seguir jugando en Madrid, así que habrá más partidos en el Bernabéu. [[src:nfl-madrid-multiyear-2026]] Si quieres seguir la temporada desde aquí, lo explicamos en [[link:articles/donde-ver-nfl-espana-2026|dónde ver la NFL en España]], y si estás eligiendo equipo, en nuestra [[link:articles/equipos-nfl|guía de los 32 equipos]].`,
-        en: `In Spain the game aired free-to-air on Cuatro, free on DAZN and on Mediaset Infinity. [[src:madrid26-nfl-where-to-watch-2026]] The NFL has a multi-year agreement to keep playing in Madrid, so there will be more games at the Bernabéu. [[src:nfl-madrid-multiyear-2026]] To follow the season from here, see [[link:articles/donde-ver-nfl-espana-2026|where to watch the NFL in Spain]], and if you are picking a team, our [[link:articles/equipos-nfl|guide to all 32 teams]].`,
+        es: `En España el partido se emitió en abierto en Cuatro, gratis en DAZN y en Mediaset Infinity. [[src:madrid26-nfl-where-to-watch-2026]] La retransmisión de Cuatro tuvo 448.000 espectadores y un 4,6 % de cuota, según FormulaTV; el dato no incluye DAZN ni Mediaset Infinity. [[src:formulatv-audiencias-2026-11-08]] La NFL tiene firmado un acuerdo plurianual para seguir jugando en Madrid, así que habrá más partidos en el Bernabéu. [[src:nfl-madrid-multiyear-2026]] Si quieres seguir la temporada desde aquí, lo explicamos en [[link:articles/donde-ver-nfl-espana-2026|dónde ver la NFL en España]], y si estás eligiendo equipo, en nuestra [[link:articles/equipos-nfl|guía de los 32 equipos]].`,
+        en: `In Spain the game aired free-to-air on Cuatro, free on DAZN and on Mediaset Infinity. [[src:madrid26-nfl-where-to-watch-2026]] Cuatro's broadcast drew 448,000 viewers and a 4.6% share, according to FormulaTV; the figure does not include DAZN or Mediaset Infinity. [[src:formulatv-audiencias-2026-11-08]] The NFL has a multi-year agreement to keep playing in Madrid, so there will be more games at the Bernabéu. [[src:nfl-madrid-multiyear-2026]] To follow the season from here, see [[link:articles/donde-ver-nfl-espana-2026|where to watch the NFL in Spain]], and if you are picking a team, our [[link:articles/equipos-nfl|guide to all 32 teams]].`,
       },
     },
     { type: "heading", level: 2, id: "que-significa", text: { es: "Qué significa para los dos", en: "What it means for both" } },
@@ -182,7 +183,7 @@ export const nflMadrid2026Cronica: Article = {
       type: "placeholder",
       topic: { es: "Pendiente de datos oficiales", en: "Awaiting official figures" },
       pending: [
-        { es: "Audiencia en España (Cuatro, Mediaset Infinity y DAZN)", en: "Audience in Spain (Cuatro, Mediaset Infinity and DAZN)" },
+        { es: "Audiencia en DAZN y Mediaset Infinity", en: "Audience on DAZN and Mediaset Infinity" },
         { es: "Fecha y equipos del próximo partido de la NFL en Madrid", en: "Date and teams for the next NFL game in Madrid" },
       ],
     },
