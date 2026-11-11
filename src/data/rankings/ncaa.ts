@@ -1,53 +1,53 @@
 import type { Ranking } from "@/types";
 
 // [rank, team, record, previous rank (null = unranked), first-place votes]
-// Rank is explicit because the poll can have ties (Week 9: two teams at No. 20).
-const AP_WEEK_9: [number, string, string, number | null, number][] = [
-  [1, "Miami (Fla.)", "7-0", 1, 59],
-  [2, "Ohio State", "6-1", 3, 10],
-  [3, "Georgia", "6-1", 5, 0],
-  [4, "Indiana", "7-1", 6, 0],
-  [5, "Notre Dame", "6-1", 4, 0],
-  [6, "Utah", "7-0", 10, 1],
-  [7, "UCLA", "7-0", 9, 0],
-  [8, "BYU", "6-1", 2, 0],
-  [9, "Kentucky", "7-1", 12, 0],
-  [10, "Alabama", "6-2", 13, 0],
-  [11, "Texas", "5-2", 19, 0],
-  [12, "Ole Miss", "5-2", 7, 0],
-  [13, "Texas Tech", "6-1", 8, 0],
-  [14, "Wake Forest", "6-1", 17, 0],
-  [15, "LSU", "6-2", 18, 0],
-  [16, "Tennessee", "6-2", 11, 0],
-  [17, "Florida", "5-2", 20, 0],
-  [18, "Houston", "6-2", 14, 0],
-  [19, "SMU", "6-1", 23, 0],
-  [20, "Boise State", "6-1", 21, 0],
-  [20, "Northwestern", "6-1", 24, 0],
-  [22, "Arizona", "6-1", 25, 0],
-  [23, "Missouri", "5-2", 22, 0],
-  [24, "Oklahoma State", "5-2", null, 0],
-  [25, "Wisconsin", "5-2", null, 0],
+// Rank is explicit because the poll can have ties (Week 9 had two teams at No. 20).
+const AP_WEEK_11: [number, string, string, number | null, number][] = [
+  [1, "Georgia", "8-1", 2, 53],
+  [2, "Utah", "9-0", 3, 12],
+  [3, "Notre Dame", "8-1", 4, 5],
+  [4, "UCLA", "9-0", 5, 0],
+  [5, "Miami (Fla.)", "8-1", 1, 0],
+  [6, "Indiana", "8-1", 6, 0],
+  [7, "Alabama", "7-2", 9, 0],
+  [8, "Texas", "7-2", 10, 0],
+  [9, "Tennessee", "7-2", 16, 0],
+  [10, "Texas Tech", "8-1", 13, 0],
+  [11, "Wake Forest", "8-1", 14, 0],
+  [12, "BYU", "7-2", 7, 0],
+  [13, "Kentucky", "7-2", 8, 0],
+  [14, "Houston", "7-2", 17, 0],
+  [15, "USC", "7-2", 18, 0],
+  [16, "Iowa", "7-2", 21, 0],
+  [17, "Boise State", "8-1", 20, 0],
+  [18, "Oregon", "6-3", null, 0],
+  [19, "Ole Miss", "6-3", 12, 0],
+  [20, "South Carolina", "6-3", 23, 0],
+  [21, "Ohio State", "6-3", 11, 0],
+  [22, "Arizona", "7-2", 24, 0],
+  [23, "New Mexico", "8-1", 22, 0],
+  [24, "LSU", "6-3", 15, 0],
+  [25, "SMU", "7-2", null, 0],
 ];
 
 export const ncaaRankings: Ranking[] = [
   {
-    id: "ap-top-25-2026-week-9",
+    id: "ap-top-25-2026-week-11",
     slug: "ap-top-25",
     scope: "ncaa",
     kind: "poll",
-    title: { es: "AP Top 25 · Semana 9", en: "AP Top 25 · Week 9" },
+    title: { es: "AP Top 25 · Semana 11", en: "AP Top 25 · Week 11" },
     description: {
-      es: "La encuesta de periodistas de Associated Press publicada el 25 de octubre de 2026. Miami sigue n.º 1 y amplía su ventaja: 59 de los 70 votos al primer puesto, tras ganar 52-23 a Pittsburgh. Ohio State es segundo con 10 y Utah, sexto, se lleva el voto restante después de ganar 21-13 a Houston en el partido de College GameDay. BYU cae del 2 al 8 tras perder en la doble prórroga en UCF, Texas sube del 19 al 11 tras ganar 34-27 a Ole Miss y Texas Tech baja del 8 al 13 tras caer en Cincinnati. Boise State y Northwestern empatan en el puesto 20. Entran Oklahoma State y Wisconsin, este por primera vez desde septiembre de 2023; salen Iowa y USC.",
-      en: "The Associated Press media poll released on 25 October 2026. Miami stay No. 1 and stretch their lead: 59 of the 70 first-place votes after beating Pittsburgh 52-23. Ohio State are second with 10 and Utah, sixth, take the remaining vote after beating Houston 21-13 in College GameDay's game. BYU fall from 2 to 8 after losing in double overtime at UCF, Texas climb from 19 to 11 after beating Ole Miss 34-27 and Texas Tech drop from 8 to 13 after losing at Cincinnati. Boise State and Northwestern tie at No. 20. Oklahoma State and Wisconsin come in, Wisconsin for the first time since September 2023; Iowa and USC drop out.",
+      es: "La encuesta de periodistas de Associated Press publicada el 8 de noviembre de 2026. Georgia recupera el n.º 1 con 53 de los 70 votos al primer puesto, después de que Notre Dame ganara 31-24 a Miami, que cae del 1 al 5 y es el cuarto n.º 1 que pierde esta temporada. Utah, invicto tras ganar 28-20 a BYU, es segundo con 12 votos, su mejor puesto en una temporada regular, y Notre Dame, tercera con 5. UCLA, también invicto, es cuarto, su mejor puesto desde 2001. Tennessee sube del 16 al 9 tras ganar 34-6 a Kentucky y Ohio State cae del 11 al 21 tras perder 41-28 con Oregon. Entran Oregon y SMU; salen Missouri y Florida.",
+      en: "The Associated Press media poll released on 8 November 2026. Georgia regain No. 1 with 53 of the 70 first-place votes after Notre Dame beat Miami 31-24, dropping Miami from 1 to 5 as the fourth No. 1 to lose this season. Utah, unbeaten after a 28-20 win over BYU, are second with 12 votes, their best regular-season ranking, and Notre Dame third with 5. UCLA, also unbeaten, are fourth, their best ranking since 2001. Tennessee climb from 16 to 9 after beating Kentucky 34-6, and Ohio State fall from 11 to 21 after losing 41-28 to Oregon. Oregon and SMU come in; Missouri and Florida drop out.",
     },
-    asOf: "2026-10-25",
+    asOf: "2026-11-08",
     competitionId: "ncaa-fbs",
     // AP releases a new poll every Sunday until the national championship game.
     refresh: { everyDays: 8, activeFrom: "2026-08-23", activeUntil: "2027-01-25" },
     groups: [
       {
-        entries: AP_WEEK_9.map(([rank, name, record, prev, votes]) => ({
+        entries: AP_WEEK_11.map(([rank, name, record, prev, votes]) => ({
           rank,
           name,
           detail: record,
@@ -60,8 +60,8 @@ export const ncaaRankings: Ranking[] = [
         })),
       },
     ],
-    sourceIds: ["espn-cfb-rankings-week9-2026", "cbs-ap-poll-week9-2026", "biglead-ap-poll-week9-2026", "cbs-cfb-scoreboard-2026-10-24", "espn-cfb-scoreboard-2026-10-24"],
+    sourceIds: ["espn-cfb-rankings-week11-2026", "cbs-ap-poll-week11-2026", "espn-cfb-rankings-week10-2026", "abc7-ap-poll-week11-2026", "espn-cfb-scoreboard-2026-11-07", "cbs-cfb-scoreboard-2026-11-07", "ap-notre-dame-miami-2026", "ap-utah-byu-2026", "ap-tennessee-kentucky-2026", "ap-oregon-ohio-state-2026"],
     verificationStatus: "verified",
-    lastVerifiedAt: "2026-10-27",
+    lastVerifiedAt: "2026-11-11",
   },
 ];
