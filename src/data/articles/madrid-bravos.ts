@@ -12,6 +12,18 @@ export const madridBravos: Article = {
     es: "Qué fueron los Madrid Bravos, cómo les fue en la ELF, qué relación tuvieron con la NFL y por qué en 2026 España no tiene equipo profesional europeo.",
     en: "What the Madrid Bravos were, how they fared in the ELF, their relationship with the NFL and why Spain has no European professional team in 2026.",
   },
+  heroImage: {
+    url: "/images/spain/estadios/estadio-vallehermoso-2019-commons.jpg",
+    alt: {
+      es: "El Estadio Vallehermoso de Madrid, donde jugaban los Bravos, recién reformado en agosto de 2019.",
+      en: "Madrid's Estadio Vallehermoso, the Bravos' home ground, newly rebuilt in August 2019.",
+    },
+    width: 1500,
+    height: 1000,
+    photographer: "Diario de Madrid (Ayuntamiento de Madrid)",
+    source: "https://commons.wikimedia.org/wiki/File:Una_nueva_instalación_deportiva_para_la_ciudad_de_Madrid_13.jpg",
+    license: "CC BY 4.0",
+  },
   authorId: "jordi-sanchez",
   category: "europa",
   tags: ["Madrid Bravos", "ELF", "EFA", "Madrid", "profesional", "NFL"],

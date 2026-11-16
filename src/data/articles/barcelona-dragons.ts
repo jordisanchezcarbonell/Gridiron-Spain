@@ -12,6 +12,18 @@ export const barcelonaDragons: Article = {
     es: "Barcelona ha tenido football profesional en dos épocas distintas bajo el mismo nombre. Este artículo separa ambas etapas, explica qué las une (solo el nombre) y documenta cómo terminó cada una.",
     en: "Barcelona has had professional football in two different eras under the same name. This article separates both stages, explains what links them (only the name) and documents how each one ended.",
   },
+  heroImage: {
+    url: "/images/spain/estadios/estadi-olimpic-montjuic-commons.jpg",
+    alt: {
+      es: "El Estadi Olímpic Lluís Companys de Montjuïc, donde los Barcelona Dragons jugaron su primer partido en 1991. Foto de 2013.",
+      en: "The Estadi Olímpic Lluís Companys on Montjuïc, where the Barcelona Dragons played their first game in 1991. Photo from 2013.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Arnaucc",
+    source: "https://commons.wikimedia.org/wiki/File:Estadi_Olímpic_Lluís_Companys_(Barcelona).JPG",
+    license: "CC BY-SA 3.0",
+  },
   authorId: "jordi-sanchez",
   category: "historia",
   tags: ["Barcelona Dragons", "NFL Europe", "World League", "ELF", "Barcelona"],
