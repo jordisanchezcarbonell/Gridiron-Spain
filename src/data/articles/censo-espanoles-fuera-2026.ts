@@ -29,6 +29,18 @@ export const censoEspanolesFuera2026: Article = {
       en: "2026 census of Spanish American football players outside Spain: NCAA, NFL Academy, AFLE, EFA and GFL, with team, position and source for each.",
     },
   },
+  heroImage: {
+    url: "/images/europa/2026/vikings-panthers-wroclaw-2026-commons.jpg",
+    alt: {
+      es: "Vista general del estadio olímpico de Wrocław durante el Panthers Wrocław-Vienna Vikings de la AFLE, el 31 de mayo de 2026.",
+      en: "Wide view of Wrocław's Olympic Stadium during the AFLE game between the Panthers Wrocław and the Vienna Vikings on 31 May 2026.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Paweł Pokrzywiński",
+    source: "https://commons.wikimedia.org/wiki/File:Vienna_Vikings_vs_Panthers_Wroc%C5%82aw_31.05.2026_06.jpg",
+    license: "CC BY 4.0",
+  },
   authorId: "jordi-sanchez",
   category: "europa",
   tags: ["Españoles", "NCAA", "AFLE", "EFA", "GFL", "NFL Academy", "Diego Paz"],
@@ -153,6 +165,25 @@ export const censoEspanolesFuera2026: Article = {
       text: {
         es: `La Gold Bowl del 6 de septiembre en Duisburgo, que los Vienna Vikings ganaron 68-5 a los Panthers Wrocław, tuvo españoles en los dos lados. ${GOLD} En Viena, Fernández, el safety Pablo Araya y el guard David Culebras. [[src:afle-alejandro-fernandez-2026]] [[src:afle-pablo-araya-2026]] [[src:afle-david-culebras-2026]] En Wrocław, el receptor Eduardo Pérez, el linebacker Jorge Hernández, el receptor Juan Flores-Calderón y el quarterback Diego Lliteras, que había ganado la [[link:competitions/lnfa|LNFA]] con Las Rozas Black Demons unos días antes de fichar. [[src:afle-eduardo-perez-2026]] [[src:afle-jorge-hernandez-2026]] [[src:afle-flores-calderon-2026]] [[src:panthers-lliteras-2026]]`,
         en: `The 6 September Gold Bowl in Duisburg, which the Vienna Vikings won 68-5 over the Panthers Wrocław, had Spaniards on both sides. ${GOLD} For Vienna, Fernández, safety Pablo Araya and guard David Culebras. [[src:afle-alejandro-fernandez-2026]] [[src:afle-pablo-araya-2026]] [[src:afle-david-culebras-2026]] For Wrocław, receiver Eduardo Pérez, linebacker Jorge Hernández, receiver Juan Flores-Calderón and quarterback Diego Lliteras, who had won the [[link:competitions/lnfa|LNFA]] with Las Rozas Black Demons days before signing. [[src:afle-eduardo-perez-2026]] [[src:afle-jorge-hernandez-2026]] [[src:afle-flores-calderon-2026]] [[src:panthers-lliteras-2026]]`,
+      },
+    },
+    {
+      type: "image",
+      media: {
+        url: "/images/europa/2026/berlin-thunder-panthers-2026-commons.jpg",
+        alt: {
+          es: "Jugada del Berlin Thunder-Panthers Wrocław de la AFLE en el Tarczyński Arena, el 14 de junio de 2026.",
+          en: "A play from the AFLE game between the Berlin Thunder and the Panthers Wrocław at Tarczyński Arena on 14 June 2026.",
+        },
+        width: 1600,
+        height: 1205,
+        photographer: "Paweł Pokrzywiński",
+        source: "https://commons.wikimedia.org/wiki/File:Berlin_Thunder_vs_Panthers_Wroc%C5%82aw_14.06.2026_06.jpg",
+        license: "CC BY 4.0",
+      },
+      caption: {
+        es: "Berlin Thunder (blanco) contra Panthers Wrocław (negro) en la semana 4 de la AFLE; los dos equipos tenían españoles en plantilla. Foto: Paweł Pokrzywiński · CC BY 4.0.",
+        en: "Berlin Thunder (white) against the Panthers Wrocław (black) in week 4 of the AFLE; both teams had Spaniards on the roster. Photo: Paweł Pokrzywiński · CC BY 4.0.",
       },
     },
     { type: "heading", level: 3, id: "lista-afle", text: { es: "La lista completa de la AFLE", en: "The full AFLE list" } },
