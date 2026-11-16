@@ -25,6 +25,18 @@ export const equiposFutbolAmericanoMadrid: Article = {
       en: "American football teams in Madrid: Black Demons, Osos, Camioneros and Cavaliers in the LNFA, plus five LNFA 2 clubs. Flag, women's and youth teams.",
     },
   },
+  heroImage: {
+    url: "/images/spain/estadios/estadio-vallehermoso-2019-commons.jpg",
+    alt: {
+      es: "El Estadio Vallehermoso de Madrid recién reformado, en agosto de 2019.",
+      en: "Madrid's Estadio Vallehermoso, newly rebuilt, in August 2019.",
+    },
+    width: 1500,
+    height: 1000,
+    photographer: "Diario de Madrid (Ayuntamiento de Madrid)",
+    source: "https://commons.wikimedia.org/wiki/File:Una_nueva_instalación_deportiva_para_la_ciudad_de_Madrid_13.jpg",
+    license: "CC BY 4.0",
+  },
   authorId: "jordi-sanchez",
   category: "equipos",
   tags: ["Madrid", "Comunidad de Madrid", "LNFA", "LNFA 2", "flag", "fútbol americano femenino", "Royal Oaks Knights", "Madrid Bravos"],

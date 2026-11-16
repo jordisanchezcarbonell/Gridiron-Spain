@@ -21,15 +21,16 @@ export const antesDe1988: Article = {
     en: "Our own archive placed the origin in 1988. Checking it against the CIHEFE journal, the NFL and four clubs, it turned out the story begins in 1956 and passes through the Santiago Bernabéu in 1958. This is what we found, and what we had to correct.",
   },
   heroImage: {
-    url: "/images/editorial/campo-vacio-atardecer.png",
+    url: "/images/nfl/madrid/bernabeu-gradas-2025-commons.jpg",
     alt: {
-      es: "Campo de fútbol americano vacío al atardecer, visto desde la banda, con los postes al fondo.",
-      en: "An empty American football field at dusk, seen from the sideline, with the goal posts in the distance.",
+      es: "Las gradas del Santiago Bernabéu durante el Dolphins-Commanders de 2025. El estadio ya acogió una exhibición de fútbol americano en 1958.",
+      en: "The Santiago Bernabéu stands during Dolphins vs Commanders in 2025. The stadium had already hosted an American football exhibition in 1958.",
     },
-    width: 1280,
-    height: 720,
-    photographer: "Primer Down · imagen editorial generada",
-    license: "Uso editorial de Primer Down",
+    width: 1600,
+    height: 1200,
+    photographer: "Badefa",
+    source: "https://commons.wikimedia.org/wiki/File:2025_NFL_Madrid_Game_3.jpg",
+    license: "CC0",
   },
   heroImagePending: {
     es: "Las imágenes de la exhibición del Bernabéu de 1958 están en el NO-DO n.º 829, en la Filmoteca de RTVE. Pendiente de gestionar la cita o el permiso de uso.",

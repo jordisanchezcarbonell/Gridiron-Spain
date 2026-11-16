@@ -192,19 +192,20 @@ export const armyNavyPlayoff24_2027: Article = {
     {
       type: "image",
       media: {
-        url: "/images/editorial/college-football-stadium.png",
+        url: "/images/ncaaf/estadios/bryant-denny-2010-commons.jpg",
         alt: {
-          es: "Estadio universitario lleno durante un partido de fútbol americano al atardecer.",
-          en: "A full college stadium during an American football game at dusk.",
+          es: "El Bryant-Denny Stadium de Alabama lleno durante el Alabama-Florida del 2 de octubre de 2010.",
+          en: "Alabama's Bryant-Denny Stadium packed during Alabama vs Florida on 2 October 2010.",
         },
-        width: 1672,
-        height: 941,
-        photographer: "Gridiron Spain · imagen editorial generada",
-        license: "Uso editorial de Gridiron Spain",
+        width: 1600,
+        height: 518,
+        photographer: "Latics",
+        source: "https://commons.wikimedia.org/wiki/File:Bryant-Denny_Stadium_panoramic_2010-10-02.jpg",
+        license: "CC BY-SA 3.0",
       },
       caption: {
-        es: "Las dos primeras rondas del playoff ampliado se jugarían en campos universitarios, no en estadios neutrales. Imagen editorial de Gridiron Spain.",
-        en: "The first two rounds of the expanded playoff would be played on college campuses, not at neutral sites. Gridiron Spain editorial image.",
+        es: "Las dos primeras rondas del playoff ampliado se jugarían en campos universitarios, no en estadios neutrales. En la imagen, un estadio de campus: el Bryant-Denny de Alabama en 2010.",
+        en: "The first two rounds of the expanded playoff would be played on college campuses, not at neutral sites. Pictured, a campus stadium: Alabama's Bryant-Denny in 2010.",
       },
     },
     {

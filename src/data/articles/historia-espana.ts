@@ -15,6 +15,18 @@ export const historiaEspana: Article = {
     es: "Artículo pilar sobre cómo llegó el fútbol americano a España, quién lo trajo, cómo nacieron las competiciones y dónde está el deporte hoy. Cada hito enlaza a su fuente.",
     en: "Pillar article on how American football arrived in Spain, who brought it, how competitions were born and where the sport stands today. Every milestone links to its source.",
   },
+  heroImage: {
+    url: "/images/history/vikings-dracs-2010-commons.jpg",
+    alt: {
+      es: "Vienna Vikings-Badalona Dracs de la European Football League en el Hohe Warte de Viena, el 2 de mayo de 2010, según Wikimedia Commons.",
+      en: "Vienna Vikings vs Badalona Dracs in the European Football League at Vienna's Hohe Warte on 2 May 2010, according to Wikimedia Commons.",
+    },
+    width: 1600,
+    height: 1026,
+    photographer: "Rosso Robot",
+    source: "https://commons.wikimedia.org/wiki/File:2010-05-02_vik-bad_krambergerkick.jpg",
+    license: "CC BY-SA 3.0",
+  },
   authorId: "jordi-sanchez",
   category: "historia",
   tags: ["historia", "LNFA", "FEFA", "Cataluña", "Madrid", "flag"],

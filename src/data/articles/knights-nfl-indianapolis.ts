@@ -15,6 +15,18 @@ export const knightsNflIndianapolis: Article = {
     es: "Royal Oaks Knights representó a España en los NFL FLAG Championships de Indianapolis en julio de 2026, culminando un año histórico con cinco títulos.",
     en: "Royal Oaks Knights represented Spain at the NFL FLAG Championships in Indianapolis in July 2026, culminating a historic year with five titles.",
   },
+  heroImage: {
+    url: "/images/flag/flag-football-lakenheath-2025-b-commons.jpg",
+    alt: {
+      es: "Un jugador corre con el balón en un partido de flag football en RAF Lakenheath (Inglaterra), en mayo de 2025. Imagen ilustrativa.",
+      en: "A player runs with the ball in a flag football game at RAF Lakenheath, England, in May 2025. Illustrative image.",
+    },
+    width: 1600,
+    height: 1066,
+    photographer: "U.S. Air Force",
+    source: "https://commons.wikimedia.org/wiki/File:USVF,_UKAF,_FAA_Flag_Football_Game_2025_(9046188).jpg",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "equipos",
   tags: ["Royal Oaks Knights", "Alcobendas", "NFL", "Flag Football", "Indianapolis", "canteras", "Sub-15", "NFL FLAG Championships"],

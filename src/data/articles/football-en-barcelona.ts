@@ -22,6 +22,18 @@ export const footballEnBarcelona: Article = {
       en: "American football in Barcelona: nine clubs, three in the LNFA, Badalona Dracs and Barberà Rookies, the women's champions. Tackle and flag.",
     },
   },
+  heroImage: {
+    url: "/images/spain/pioners-gijon-commons.jpg",
+    alt: {
+      es: "Jugadores de L'Hospitalet Pioners durante un partido en Gijón, según Wikimedia Commons.",
+      en: "L'Hospitalet Pioners players during a game in Gijón, according to Wikimedia Commons.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Banderas",
+    source: "https://commons.wikimedia.org/wiki/File:Lhospitalet_pioners_1.JPG",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "road-to-annapolis",
   tags: ["Road to Annapolis", "Barcelona", "Cataluña", "LNFA", "flag"],

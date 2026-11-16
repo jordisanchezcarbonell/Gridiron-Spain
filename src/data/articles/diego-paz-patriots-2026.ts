@@ -31,6 +31,18 @@ export const diegoPazPatriots2026: Article = {
       en: "Who Diego Paz González is: age, career path, his AFLE numbers with Rhein Fire and what his 12 October 2026 workout with the New England Patriots means.",
     },
   },
+  heroImage: {
+    url: "/images/nfl/gillette-stadium-2007-commons.jpg",
+    alt: {
+      es: "Pancartas de los títulos de los New England Patriots en el Gillette Stadium de Foxborough, en 2007. Imagen de archivo.",
+      en: "New England Patriots championship banners at Gillette Stadium in Foxborough, 2007. Archive image.",
+    },
+    width: 1600,
+    height: 1066,
+    photographer: "Bernard Gagnon",
+    source: "https://commons.wikimedia.org/wiki/File:Gillette_Stadium04.jpg",
+    license: "CC BY-SA 3.0",
+  },
   authorId: "jordi-sanchez",
   category: "nfl",
   tags: ["NFL", "New England Patriots", "Españoles", "AFLE", "Rhein Fire", "International Player Pathway"],

@@ -25,6 +25,18 @@ export const nflEstadoSemana3: Article = {
       en: "Standings, unbeaten teams, early crises and the main NFL storylines after the Sunday games of Week 3 in 2026.",
     },
   },
+  heroImage: {
+    url: "/images/nfl/london/tottenham-dolphins-jaguars-commons.jpg",
+    alt: {
+      es: "Jugada del Miami Dolphins-Jacksonville Jaguars en el Tottenham Hotspur Stadium de Londres. Imagen de archivo.",
+      en: "A play from Miami Dolphins vs Jacksonville Jaguars at London's Tottenham Hotspur Stadium. Archive image.",
+    },
+    width: 1600,
+    height: 822,
+    photographer: "Tony Hisgett",
+    source: "https://commons.wikimedia.org/wiki/File:Dolphins_v_Jaguars_at_Tottenham_Hotspur_Stadium_3.jpg",
+    license: "CC BY 2.0",
+  },
   authorId: "jordi-sanchez",
   category: "nfl",
   tags: ["NFL", "Semana 3", "Buffalo Bills", "Kansas City Chiefs", "San Francisco 49ers", "Jacksonville Jaguars"],
