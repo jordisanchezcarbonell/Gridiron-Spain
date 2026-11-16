@@ -51,6 +51,18 @@ export type ContentBlock =
       text: LocalizedString;
     }
   | {
+      /**
+       * Public post from a club, league or player. Rendered as our own card;
+       * the third-party embed only loads when the reader asks for it.
+       */
+      type: "social-embed";
+      platform: "instagram";
+      url: string;
+      account: string;
+      description: LocalizedString;
+      postedAt?: string;
+    }
+  | {
       /** Section still under research. Rendered as an honest placeholder. */
       type: "placeholder";
       topic: LocalizedString;

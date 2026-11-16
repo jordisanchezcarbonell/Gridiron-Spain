@@ -38,7 +38,7 @@ export const diegoPazPatriots2026: Article = {
   relatedCompetitionIds: ["nfl", "afle"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-10-14",
-  updatedAt: "2026-10-29",
+  updatedAt: "2026-11-16",
   status: "published",
   verificationStatus: "verified",
   lastVerifiedAt: "2026-10-14",
@@ -84,6 +84,17 @@ export const diegoPazPatriots2026: Article = {
       text: {
         es: `La temporada 2026 de la AFLE fue la de su explosión. En doce partidos sumó 40 tackles —14 en solitario—, 8,5 sacks, cinco tackles para pérdida, cuatro pases desviados y una intercepción que devolvió para touchdown ante los Vienna Vikings. ${PROFILE} [[src:football-austria-paz-2026]] La liga le dio el premio de mejor jugador defensivo revelación en sus AFLE Honors de 2026. ${AFLE}`,
         en: `The 2026 AFLE season was his breakout. In twelve games he put up 40 tackles —14 solo—, 8.5 sacks, five tackles for loss, four passes defensed and an interception he returned for a touchdown against the Vienna Vikings. ${PROFILE} [[src:football-austria-paz-2026]] The league named him Most Improved Defensive Player of the Year at its 2026 AFLE Honors. ${AFLE}`,
+      },
+    },
+    {
+      type: "social-embed",
+      platform: "instagram",
+      url: "https://www.instagram.com/reel/Da8KcM9ibkn/",
+      account: "theleagueeurope",
+      postedAt: "18-07-2026",
+      description: {
+        es: "Vídeo de la AFLE con la intercepción de Diego Paz ante los Vienna Vikings: atrapa el pase de Ben Holmes y lo devuelve 55 yardas hasta la end zone.",
+        en: "AFLE video of Diego Paz's interception against the Vienna Vikings: he picks off Ben Holmes and returns it 55 yards to the end zone.",
       },
     },
     {

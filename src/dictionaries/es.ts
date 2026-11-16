@@ -133,6 +133,9 @@ export const es = {
       "Verificado significa contrastado con al menos una fuente oficial o primaria. Parcial: algunos campos siguen pendientes. Pendiente: solo información básica.",
   },
   articles: {
+    socialEmbedLoad: "Cargar publicación",
+    socialEmbedOpen: "Ver en Instagram",
+    socialEmbedNote: "Al cargarla, Instagram (Meta) puede usar cookies.",
     title: "Historias",
     intro:
       "Historia, equipos, competiciones y cultura. Cada pieza publica sus fuentes al final.",

@@ -135,6 +135,9 @@ export const en: Dictionary = {
       "Verified means checked against at least one official or primary source. Partial: some fields still pending. Pending: basic information only.",
   },
   articles: {
+    socialEmbedLoad: "Load post",
+    socialEmbedOpen: "View on Instagram",
+    socialEmbedNote: "Loading it lets Instagram (Meta) set cookies.",
     title: "Stories",
     intro:
       "History, teams, competitions and culture. Every piece lists its sources at the end.",

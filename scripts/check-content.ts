@@ -125,6 +125,8 @@ for (const article of articles) {
       checkLinks(owner, block.text.es);
       checkLinks(owner, block.text.en);
     }
+    if (block.type === "social-embed" && !/^https:\/\/www\.instagram\.com\/(p|reel)\/[A-Za-z0-9_-]+\/?$/.test(block.url))
+      errors.push(`${owner}: social-embed URL is not an Instagram post: ${block.url}`);
     if (block.type === "list") {
       for (const item of block.items) {
         checkCitations(owner, item.es, article.sourceIds);

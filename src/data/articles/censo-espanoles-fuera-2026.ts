@@ -161,6 +161,17 @@ export const censoEspanolesFuera2026: Article = {
       },
     },
     {
+      type: "social-embed",
+      platform: "instagram",
+      url: "https://www.instagram.com/p/Dc6ffZijggg/",
+      account: "theleagueeurope",
+      postedAt: "05-09-2026",
+      description: {
+        es: "La AFLE presenta a Diego Paz, de Rhein Fire, como jugador defensivo revelación del año en sus premios de 2026.",
+        en: "The AFLE presents Rhein Fire's Diego Paz as its Most Improved Defensive Player of the Year at the 2026 awards.",
+      },
+    },
+    {
       type: "paragraph",
       text: {
         es: `La Gold Bowl del 6 de septiembre en Duisburgo, que los Vienna Vikings ganaron 68-5 a los Panthers Wrocław, tuvo españoles en los dos lados. ${GOLD} En Viena, Fernández, el safety Pablo Araya y el guard David Culebras. [[src:afle-alejandro-fernandez-2026]] [[src:afle-pablo-araya-2026]] [[src:afle-david-culebras-2026]] En Wrocław, el receptor Eduardo Pérez, el linebacker Jorge Hernández, el receptor Juan Flores-Calderón y el quarterback Diego Lliteras, que había ganado la [[link:competitions/lnfa|LNFA]] con Las Rozas Black Demons unos días antes de fichar. [[src:afle-eduardo-perez-2026]] [[src:afle-jorge-hernandez-2026]] [[src:afle-flores-calderon-2026]] [[src:panthers-lliteras-2026]]`,

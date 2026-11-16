@@ -10,6 +10,7 @@ import { Placeholder } from "@/components/ui/Placeholder";
 import { ScoreCard } from "@/components/articles/ScoreCard";
 import { ComebackTimeline } from "@/components/articles/ComebackTimeline";
 import { StatHighlight } from "@/components/articles/StatHighlight";
+import { SocialEmbed } from "@/components/articles/SocialEmbed";
 
 /**
  * Renders a paragraph with inline citation links and, when a locale is given,
@@ -134,6 +135,17 @@ export function ArticleBody({
             );
           case "stat-highlight":
             return <StatHighlight key={i} from={block.from} to={block.to} text={t(block.text, locale)} />;
+          case "social-embed":
+            return (
+              <SocialEmbed
+                key={i}
+                url={block.url}
+                account={block.account}
+                description={t(block.description, locale)}
+                postedAt={block.postedAt}
+                labels={{ load: dict.articles.socialEmbedLoad, open: dict.articles.socialEmbedOpen, note: dict.articles.socialEmbedNote }}
+              />
+            );
           case "placeholder":
             return (
               <Placeholder
