@@ -30,6 +30,18 @@ export const nflMadrid2026Cronica: Article = {
       en: "Falcons-Bengals result at the Bernabéu (8 Nov 2026): 34-17 to Cincinnati with four Burrow touchdowns. Scoring, stats, attendance and quotes.",
     },
   },
+  heroImage: {
+    url: "/images/nfl/madrid/bernabeu-falcons-bengals-2026-commons.jpg",
+    alt: {
+      es: "El Santiago Bernabéu lleno durante el primer cuarto del Atlanta Falcons-Cincinnati Bengals, el 8 de noviembre de 2026.",
+      en: "A packed Santiago Bernabéu during the first quarter of Atlanta Falcons vs Cincinnati Bengals on 8 November 2026.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Badefa",
+    source: "https://commons.wikimedia.org/wiki/File:2026_NFL_Madrid_Game_2.jpg",
+    license: "CC0",
+  },
   authorId: "jordi-sanchez",
   category: "nfl",
   tags: ["NFL", "Madrid", "Bernabéu", "Cincinnati Bengals", "Atlanta Falcons", "NFL Madrid Game", "Joe Burrow", "Ja'Marr Chase"],

@@ -25,6 +25,18 @@ export const dondeVerNflEspana2026: Article = {
       en: "Free games on Cuatro, Be Mad and Mediaset Infinity, NFL Game Pass on DAZN and Spanish kickoff times. Includes the Falcons-Bengals game at the Bernabéu.",
     },
   },
+  heroImage: {
+    url: "/images/nfl/madrid/bernabeu-dolphins-commanders-2025-commons.jpg",
+    alt: {
+      es: "El Santiago Bernabéu durante el Miami Dolphins-Washington Commanders, el primer partido de temporada regular de la NFL en España, el 16 de noviembre de 2025.",
+      en: "The Santiago Bernabéu during Miami Dolphins vs Washington Commanders, the first NFL regular-season game in Spain, on 16 November 2025.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Badefa",
+    source: "https://commons.wikimedia.org/wiki/File:2025_NFL_Madrid_Game_1.jpg",
+    license: "CC0",
+  },
   authorId: "jordi-sanchez",
   category: "nfl",
   tags: ["NFL", "Dónde ver", "Mediaset", "Cuatro", "DAZN", "NFL Game Pass", "Horarios"],

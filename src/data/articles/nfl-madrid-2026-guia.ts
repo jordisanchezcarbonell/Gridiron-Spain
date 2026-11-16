@@ -25,6 +25,18 @@ export const nflMadrid2026Guia: Article = {
       en: "Falcons–Bengals at the Bernabéu (Madrid), 8 November, 3:30 pm: where to watch, tickets, bag rules and getting there with the metro station closed.",
     },
   },
+  heroImage: {
+    url: "/images/nfl/madrid/bernabeu-previa-falcons-bengals-2026-commons.jpg",
+    alt: {
+      es: "El Santiago Bernabéu preparado para el NFL Madrid Game 2026 antes del Falcons-Bengals, con la end zone de los Bengals en primer plano.",
+      en: "The Santiago Bernabéu set up for the 2026 NFL Madrid Game before Falcons vs Bengals, with the Bengals end zone in the foreground.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Badefa",
+    source: "https://commons.wikimedia.org/wiki/File:2026_NFL_Madrid_Game_1.jpg",
+    license: "CC0",
+  },
   authorId: "jordi-sanchez",
   category: "nfl",
   tags: ["NFL", "Madrid", "Bernabéu", "Atlanta Falcons", "Cincinnati Bengals", "NFL Madrid Game"],

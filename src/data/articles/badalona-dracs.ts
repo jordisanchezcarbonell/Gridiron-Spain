@@ -12,6 +12,18 @@ export const badalonaDracs: Article = {
     es: "Los Dracs jugaron el primer partido de fútbol americano en España en 1988 y desde entonces han ganado once ligas. Esto es lo que las fuentes permiten contar hoy, y lo que falta por documentar.",
     en: "The Dracs played Spain's first American football game in 1988 and have since won eleven leagues. This is what the sources allow us to tell today, and what remains to be documented.",
   },
+  heroImage: {
+    url: "/images/teams/photos/badalona-dracs-2009-commons.jpg",
+    alt: {
+      es: "Jugadores con equipación blanca reunidos antes de un partido el 9 de mayo de 2009; Wikimedia Commons la describe como los Badalona Dracs.",
+      en: "Players in white kits gathered before a game on 9 May 2009; Wikimedia Commons describes it as the Badalona Dracs.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Banderas",
+    source: "https://commons.wikimedia.org/wiki/File:Badalona_dracs_1.JPG",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "equipos",
   tags: ["Badalona Dracs", "Cataluña", "orígenes", "LNFA"],
