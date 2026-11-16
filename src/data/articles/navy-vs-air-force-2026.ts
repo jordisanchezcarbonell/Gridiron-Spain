@@ -15,6 +15,18 @@ export const navyVsAirForce2026: Article = {
     es: "Preview del partido Navy vs Air Force del 3 de octubre de 2026. El Commander-in-Chief's Trophy está en juego.",
     en: "Preview of the Navy vs Air Force game on October 3, 2026. The Commander-in-Chief's Trophy is on the line.",
   },
+  heroImage: {
+    url: "/images/ncaaf/navy/air-force-navy-2010-commons.jpg",
+    alt: {
+      es: "Los Falcons de Air Force salen al campo antes del Air Force-Navy del 2 de octubre de 2010. Imagen de archivo.",
+      en: "The Air Force Falcons take the field before Air Force vs Navy on 2 October 2010. Archive image.",
+    },
+    width: 1600,
+    height: 1066,
+    photographer: "Mike Kaplan · U.S. Air Force",
+    source: "https://commons.wikimedia.org/wiki/File:Falcons_take_the_field_at_Navy_at_Air_Force_2010-10-02.jpg",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "ncaa",
   tags: ["Navy", "Air Force", "Commander-in-Chief's Trophy", "NCAA", "college football", "service academies", "Road to Annapolis"],

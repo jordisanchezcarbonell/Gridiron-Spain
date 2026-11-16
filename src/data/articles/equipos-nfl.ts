@@ -25,6 +25,18 @@ export const equiposNfl: Article = {
       en: "The 32 NFL teams by conference and division, with each team's city and state. How the divisions shape the schedule and the playoffs.",
     },
   },
+  heroImage: {
+    url: "/images/nfl/madrid/bernabeu-previa-dolphins-commanders-2025-commons.jpg",
+    alt: {
+      es: "El Santiago Bernabéu preparado para el Miami Dolphins-Washington Commanders del 16 de noviembre de 2025.",
+      en: "The Santiago Bernabéu set up for Miami Dolphins vs Washington Commanders on 16 November 2025.",
+    },
+    width: 1600,
+    height: 1200,
+    photographer: "Badefa",
+    source: "https://commons.wikimedia.org/wiki/File:2025_NFL_Madrid_Game_2.jpg",
+    license: "CC0",
+  },
   authorId: "jordi-sanchez",
   category: "nfl",
   tags: ["NFL", "Equipos NFL", "AFC", "NFC", "Divisiones", "Guía"],

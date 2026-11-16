@@ -25,6 +25,18 @@ export const ligaEspanolaFutbolAmericano: Article = {
       en: "American football in Spain: the LNFA has 10 teams and the Spanish Bowl; LNFA 2 has five groups. Women's league, flag, calendar and honours.",
     },
   },
+  heroImage: {
+    url: "/images/spain/voltors-pioners-2015-b-commons.jpg",
+    alt: {
+      es: "Choque en la línea de scrimmage en el Mallorca Voltors-L'Hospitalet Pioners del 31 de enero de 2015.",
+      en: "Contact at the line of scrimmage in Mallorca Voltors vs L'Hospitalet Pioners on 31 January 2015.",
+    },
+    width: 1600,
+    height: 1066,
+    photographer: "Javier Rodríguez",
+    source: "https://commons.wikimedia.org/wiki/File:Mallorca_VOLTORS_vs_L'Hospitalet_PIONERS_(16634444012).jpg",
+    license: "CC BY-SA 2.0",
+  },
   authorId: "jordi-sanchez",
   category: "competiciones",
   tags: ["LNFA", "LNFA 2", "LNFA Femenina", "FEFA", "Spanish Bowl", "Spanish Flag Bowl", "Copa de España", "guía"],

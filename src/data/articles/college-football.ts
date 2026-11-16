@@ -22,6 +22,18 @@ export const collegeFootball: Article = {
       en: "NCAAF is NCAA football: what Division I FBS is, how it splits into conferences and how college football differs from the NFL.",
     },
   },
+  heroImage: {
+    url: "/images/ncaaf/navy/navy-rutgers-2014-commons.jpg",
+    alt: {
+      es: "Jugada del Navy-Rutgers en el Navy-Marine Corps Memorial Stadium, el 20 de septiembre de 2014. Imagen de archivo.",
+      en: "A play from Navy vs Rutgers at Navy-Marine Corps Memorial Stadium on 20 September 2014. Archive image.",
+    },
+    width: 1600,
+    height: 1062,
+    photographer: "United States Naval Academy",
+    source: "https://commons.wikimedia.org/wiki/File:Navy_vs._Rutgers_(15116426997).jpg",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "ncaa",
   tags: ["NCAA", "college football", "guía", "Navy"],

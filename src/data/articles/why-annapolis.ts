@@ -12,6 +12,18 @@ export const whyAnnapolis: Article = {
     es: "Una introducción a Road to Annapolis: qué buscamos en un partido de college football, por qué Navy y cómo lo estamos preparando.",
     en: "An introduction to Road to Annapolis: what we are looking for in a college football game, why Navy and how we are preparing it.",
   },
+  heroImage: {
+    url: "/images/ncaaf/navy/navy-marine-corps-stadium-2005-commons.jpg",
+    alt: {
+      es: "El Navy-Marine Corps Memorial Stadium de Annapolis de noche, durante el Navy-Stanford del 10 de septiembre de 2005.",
+      en: "Annapolis' Navy-Marine Corps Memorial Stadium at night during Navy vs Stanford on 10 September 2005.",
+    },
+    width: 1600,
+    height: 1039,
+    photographer: "Damon J. Moritz · U.S. Navy",
+    source: "https://commons.wikimedia.org/wiki/File:2005_Stanford-Navy_Game_at_Navy-Marine_Corps_Memorial_Stadium.jpg",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "road-to-annapolis",
   tags: ["Road to Annapolis", "Navy", "viaje", "college football"],

@@ -12,6 +12,18 @@ export const lhospitaletPioners: Article = {
     es: "Uno de los cuatro clubes fundadores del football catalán, dominador de la LNFA entre 2010 y 2013 y referencia del deporte en el área de Barcelona.",
     en: "One of the four founding clubs of Catalan football, LNFA dominator between 2010 and 2013 and a reference for the sport around Barcelona.",
   },
+  heroImage: {
+    url: "/images/spain/voltors-pioners-2015-commons.jpg",
+    alt: {
+      es: "Lanzamiento de un quarterback en el Mallorca Voltors-L'Hospitalet Pioners del 31 de enero de 2015.",
+      en: "A quarterback throws in Mallorca Voltors vs L'Hospitalet Pioners on 31 January 2015.",
+    },
+    width: 1600,
+    height: 1066,
+    photographer: "Javier Rodríguez",
+    source: "https://commons.wikimedia.org/wiki/File:Mallorca_VOLTORS_vs_L'Hospitalet_PIONERS_(16012949404).jpg",
+    license: "CC BY-SA 2.0",
+  },
   authorId: "jordi-sanchez",
   category: "equipos",
   tags: ["L'Hospitalet Pioners", "Cataluña", "LNFA"],

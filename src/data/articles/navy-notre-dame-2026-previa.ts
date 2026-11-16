@@ -17,6 +17,18 @@ export const navyNotreDame2026Previa: Article = {
     es: "Previa del Navy–Notre Dame del 31 de octubre de 2026 en el Gillette Stadium: horario, contexto de los dos equipos y lo que Navy se juega.",
     en: "Preview of Navy–Notre Dame on 31 October 2026 at Gillette Stadium: kickoff, where both teams stand and what is at stake for Navy.",
   },
+  heroImage: {
+    url: "/images/ncaaf/navy/notre-dame-navy-2004-commons.jpg",
+    alt: {
+      es: "Un corredor de Notre Dame avanza perseguido por defensores de Navy en el Notre Dame-Navy del 16 de octubre de 2004. Imagen de archivo.",
+      en: "A Notre Dame running back gains yards chased by Navy defenders in Notre Dame vs Navy on 16 October 2004. Archive image.",
+    },
+    width: 1600,
+    height: 995,
+    photographer: "Damon J. Moritz · U.S. Navy",
+    source: "https://commons.wikimedia.org/wiki/File:2004_Notre_Dame-Navy_Game.jpg",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "ncaa",
   tags: ["Navy", "Notre Dame", "NCAA", "college football", "Road to Annapolis"],

@@ -25,6 +25,18 @@ export const reglasFlagFootball: Article = {
       en: "Field, downs, blitz, no-run zone and scoring: 5-on-5 flag football rules explained for beginners, based on the rulebook of Spain's federation.",
     },
   },
+  heroImage: {
+    url: "/images/flag/flag-football-lakenheath-2025-commons.jpg",
+    alt: {
+      es: "Partido de flag football entre equipos militares británico y francés en RAF Lakenheath (Inglaterra) en mayo de 2025. Imagen ilustrativa.",
+      en: "Flag football game between British and French military teams at RAF Lakenheath, England, in May 2025. Illustrative image.",
+    },
+    width: 1600,
+    height: 1066,
+    photographer: "U.S. Air Force",
+    source: "https://commons.wikimedia.org/wiki/File:USVF,_UKAF,_FAA_Flag_Football_Game_2025_(9046185).jpg",
+    license: "Dominio público",
+  },
   authorId: "jordi-sanchez",
   category: "competiciones",
   tags: ["flag football", "reglas", "FEFA", "IFAF", "NFL FLAG", "Spanish Flag Bowl", "guía"],
