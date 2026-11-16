@@ -38,6 +38,7 @@ import { equiposNfl } from "./equipos-nfl";
 import { jamesMadisonDosDerrotasTroy2026 } from "./james-madison-dos-derrotas-troy-2026";
 import { syracuseSorprendeASmu2026 } from "./syracuse-sorprende-a-smu-2026";
 import { reglasFlagFootball } from "./reglas-flag-football";
+import { censoEspanolesFuera2026 } from "./censo-espanoles-fuera-2026";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -83,4 +84,5 @@ export const articles: Article[] = [
   finde20261107,
   reglasFlagFootball,
   nflMadrid2026Cronica,
+  censoEspanolesFuera2026,
 ];
