@@ -5,6 +5,11 @@ name: TikTok (render en la nube)
 # (sin modelo, sin voz grabada por nadie). El vídeo se sube como artefacto de
 # la ejecución para descargarlo y publicarlo a mano: la tubería NO publica sola.
 on:
+  # Lunes a las 08:00 UTC (09:00 en España en invierno): genera un clip solo del
+  # briefing más reciente. Para que cada semana sea un vídeo nuevo tiene que
+  # existir un briefing nuevo en research/daily/ (lo crea la rutina de contenido).
+  schedule:
+    - cron: "0 8 * * 1"
   workflow_dispatch:
     inputs:
       date:
@@ -48,7 +53,7 @@ jobs:
         # elevenlabs pero no hay clave, se usa `bed` (música), no `silent`, que
         # no supera el control de audio del render.
         run: |
-          voice="${{ inputs.voice }}"
+          voice="${{ inputs.voice || 'bed' }}"
           if [ "$voice" = "elevenlabs" ] && [ -z "$ELEVENLABS_API_KEY" ]; then
             echo "::warning::elevenlabs pedido sin ELEVENLABS_API_KEY; se usa bed (música)."
             voice="bed"
@@ -58,7 +63,7 @@ jobs:
         run: |
           npm run tiktok:generate -- \
             --generator=template \
-            --limit="${{ inputs.limit }}" \
+            --limit="${{ inputs.limit || '1' }}" \
             --voice="${{ steps.voz.outputs.voice }}" \
             ${{ inputs.date && format('--date={0}', inputs.date) || '' }}
       - name: Subir el vídeo como artefacto
