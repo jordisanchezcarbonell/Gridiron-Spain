@@ -1,0 +1,72 @@
+name: TikTok (render en la nube)
+
+# Genera un clip vertical 1080x1920 con subtítulos y la marca de Primer Down a
+# partir del contenido que ya existe en el repo, usando el motor `template`
+# (sin modelo, sin voz grabada por nadie). El vídeo se sube como artefacto de
+# la ejecución para descargarlo y publicarlo a mano: la tubería NO publica sola.
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Briefing a usar (research/daily/YYYY-MM-DD.md). Vacío = el más reciente."
+        required: false
+        type: string
+      limit:
+        description: "Cuántos clips como máximo"
+        required: false
+        default: "1"
+        type: string
+      voice:
+        description: "Voz: silent (mudo + subtítulos) o elevenlabs (necesita los secrets)"
+        required: false
+        default: "silent"
+        type: choice
+        options: [silent, elevenlabs]
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Herramientas de render (ffmpeg, SVG, fuentes)
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg librsvg2-bin fonts-liberation
+      - run: npm ci
+      - name: Elegir voz
+        id: voz
+        # En los runners de Linux no existe la voz del Mac (`say`). Si se pide
+        # elevenlabs pero no hay clave, se usa silent para no romper el render.
+        run: |
+          voice="${{ inputs.voice }}"
+          if [ "$voice" = "elevenlabs" ] && [ -z "$ELEVENLABS_API_KEY" ]; then
+            echo "::warning::elevenlabs pedido sin ELEVENLABS_API_KEY; se usa silent."
+            voice="silent"
+          fi
+          echo "voice=$voice" >> "$GITHUB_OUTPUT"
+      - name: Generar y renderizar el clip
+        run: |
+          npm run tiktok:generate -- \
+            --generator=template \
+            --limit="${{ inputs.limit }}" \
+            --voice="${{ steps.voz.outputs.voice }}" \
+            ${{ inputs.date && format('--date={0}', inputs.date) || '' }}
+      - name: Subir el vídeo como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tiktok
+          path: |
+            out/tiktok/**/*.mp4
+            out/tiktok/**/*.buffer-draft.json
+          if-no-files-found: warn
+          retention-days: 14
