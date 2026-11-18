@@ -12,8 +12,8 @@ export const censoEspanolesFuera2026: Article = {
     en: "The Spaniards playing abroad: the 2026 census, from the NCAA to the Gold Bowl",
   },
   subtitle: {
-    es: "Al menos 27 jugadores españoles han tenido ficha fuera de España este año: cuatro en la universidad estadounidense, uno en la NFL Academy y 22 en ligas europeas. Ninguno en la NFL.",
-    en: "At least 27 Spanish players have been on rosters outside Spain this year: four in US college football, one at the NFL Academy and 22 in European leagues. None in the NFL.",
+    es: "Al menos 32 jugadores españoles han tenido ficha fuera de España este año: cuatro en la universidad estadounidense, uno en la NFL Academy, uno en un instituto de Estados Unidos y 26 en ligas europeas. Ninguno en la NFL.",
+    en: "At least 32 Spanish players have been on rosters outside Spain this year: four in US college football, one at the NFL Academy, one at a US high school and 26 in European leagues. None in the NFL.",
   },
   excerpt: {
     es: "Tres kickers y un liniero en la NCAA, el líder de placajes y el líder de sacks de la AFLE, tres campeones de la Gold Bowl y una diáspora que nació del adiós de los Madrid Bravos. Este es el censo, jugador a jugador y con fuente.",
@@ -48,11 +48,11 @@ export const censoEspanolesFuera2026: Article = {
   relatedCompetitionIds: ["afle", "efa", "gfl", "ncaa-fbs", "nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-11-16",
-  updatedAt: "2026-11-16",
+  updatedAt: "2026-11-18",
   status: "published",
   verificationStatus: "verified",
-  lastVerifiedAt: "2026-11-16",
-  readingTimeMinutes: 7,
+  lastVerifiedAt: "2026-11-18",
+  readingTimeMinutes: 8,
   sourceIds: [
     "marshall-roster-2026",
     "marshall-diaz-nicolas-groza-2026",
@@ -96,6 +96,13 @@ export const censoEspanolesFuera2026: Article = {
     "sachsen-do-eyo-2026",
     "sachsen-gfl-bowl-2026",
     "afi-botella-galaxy-2026",
+    "dresden-roster-2026",
+    "dresden-masero-torrededia-2026",
+    "duesseldorf-roster-2026",
+    "noen-molano-moedling-2026",
+    "football-austria-moedling-2026",
+    "gridironimports-escudero-2026",
+    "maxpreps-escudero-2026",
   ],
   content: [
     {
@@ -143,6 +150,13 @@ export const censoEspanolesFuera2026: Article = {
       text: {
         es: `Un paso antes de la universidad está Tom Gabarró, barcelonés de 19 años formado en Pagesos y Badalona Dracs. Es el único español entre los 70 jugadores de 21 países de la NFL Academy de Loughborough en la temporada 2026-27, su segunda allí. [[src:nfl-academy-roster-2026-27]] [[src:infobae-gabarro-2026]] Su manera de verlo, en el titular de su entrevista con EFE: «La NFL es un objetivo, pero tengo muy claro que hay unos pasos que toman su tiempo».`,
         en: `One step before college is Tom Gabarró, a 19-year-old from Barcelona who came through Pagesos and Badalona Dracs. He is the only Spaniard among the NFL Academy's 70 players from 21 countries at Loughborough in 2026-27, his second season there. [[src:nfl-academy-roster-2026-27]] [[src:infobae-gabarro-2026]] His take, in the headline of his interview with EFE: "The NFL is a goal, but I'm very clear that some steps take time".`,
+      },
+    },
+    {
+      type: "paragraph",
+      text: {
+        es: `También en Estados Unidos, pero en un instituto, está Iván Escudero Gómez, receptor madrileño formado en los Royal Oaks Knights que en 2026 se marchó a la Hargrave Military Academy de Virginia. [[src:gridironimports-escudero-2026]] [[src:maxpreps-escudero-2026]]`,
+        en: `Also in the United States, but at a high school, is Iván Escudero Gómez, a receiver from Madrid who came through the Royal Oaks Knights and in 2026 moved to Hargrave Military Academy in Virginia. [[src:gridironimports-escudero-2026]] [[src:maxpreps-escudero-2026]]`,
       },
     },
     { type: "heading", level: 2, id: "diaspora-bravos", text: { es: "Europa: la diáspora de los Bravos", en: "Europe: the Bravos diaspora" } },
@@ -222,8 +236,8 @@ export const censoEspanolesFuera2026: Article = {
     {
       type: "paragraph",
       text: {
-        es: `En la otra liga, la EFA, el español confirmado es Adrià Botella Moreno, tight end internacional con 41 touchdowns en 55 partidos de la ELF, que esta temporada ha jugado en los Frankfurt Galaxy. [[src:afi-botella-galaxy-2026]] Y en la GFL alemana, los Dresden Monarchs, campeones al ganar 27-19 a los Potsdam Royals, ficharon en abril a Agustín Do Eyo, receptor de 24 años que llegaba de L'Hospitalet Pioners; no hemos encontrado datos de sus partidos. [[src:sachsen-do-eyo-2026]] [[src:sachsen-gfl-bowl-2026]]`,
-        en: `In the other league, the EFA, the confirmed Spaniard is Adrià Botella Moreno, an international tight end with 41 touchdowns in 55 ELF games, who played this season for the Frankfurt Galaxy. [[src:afi-botella-galaxy-2026]] And in Germany's GFL, the Dresden Monarchs, champions after beating the Potsdam Royals 27-19, signed Agustín Do Eyo in April, a 24-year-old receiver from L'Hospitalet Pioners; we have found no data on his games. [[src:sachsen-do-eyo-2026]] [[src:sachsen-gfl-bowl-2026]]`,
+        es: `En la otra liga, la EFA, el español confirmado es Adrià Botella Moreno, tight end internacional con 41 touchdowns en 55 partidos de la ELF, que esta temporada ha jugado en los Frankfurt Galaxy. [[src:afi-botella-galaxy-2026]] En la GFL alemana, los Dresden Monarchs, campeones al ganar 27-19 a los Potsdam Royals, tuvieron tres españoles: el receptor Agustín Do Eyo, de 24 años y llegado de L'Hospitalet Pioners; el defensive back Lucas Masero, que regresó al club tras una temporada en los Madrid Bravos; y el receptor Jordi Torrededia. [[src:sachsen-do-eyo-2026]] [[src:sachsen-gfl-bowl-2026]] [[src:dresden-roster-2026]] [[src:dresden-masero-torrededia-2026]] También en la GFL, el defensive back Alonso Muñoz Yus jugó en los Düsseldorf Panther. [[src:duesseldorf-roster-2026]] Y en la liga austriaca, el receptor Álvaro Molano fichó por los Rangers Mödling y debutó con un touchdown. [[src:noen-molano-moedling-2026]] [[src:football-austria-moedling-2026]]`,
+        en: `In the other league, the EFA, the confirmed Spaniard is Adrià Botella Moreno, an international tight end with 41 touchdowns in 55 ELF games, who played this season for the Frankfurt Galaxy. [[src:afi-botella-galaxy-2026]] In Germany's GFL, the Dresden Monarchs, champions after beating the Potsdam Royals 27-19, had three Spaniards: receiver Agustín Do Eyo, 24, who came from L'Hospitalet Pioners; defensive back Lucas Masero, who returned to the club after a season with the Madrid Bravos; and receiver Jordi Torrededia. [[src:sachsen-do-eyo-2026]] [[src:sachsen-gfl-bowl-2026]] [[src:dresden-roster-2026]] [[src:dresden-masero-torrededia-2026]] Also in the GFL, defensive back Alonso Muñoz Yus played for the Düsseldorf Panther. [[src:duesseldorf-roster-2026]] And in the Austrian league, receiver Álvaro Molano signed with the Mödling Rangers and scored a touchdown on debut. [[src:noen-molano-moedling-2026]] [[src:football-austria-moedling-2026]]`,
       },
     },
     { type: "heading", level: 2, id: "falta-alguien", text: { es: "¿Falta alguien?", en: "Is anyone missing?" } },
