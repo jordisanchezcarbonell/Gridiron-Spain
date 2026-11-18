@@ -84,7 +84,7 @@ Para: press@aflepro.com (dirección de «Press & Media» en aflepro.com/about). 
 >
 > I'm Jordi Sánchez, editor of Primer Down, an independent outlet covering American football in Spain.
 >
-> We have just published a census of Spanish players abroad in 2026. Twenty of the 27 played in the AFLE, most of them signed under the homegrown rule you opened for former Madrid Bravos players, and the numbers speak well of it: Pablo de Diego (Berlin Thunder) led the league in tackles after week 12, Diego Paz (Rhein Fire) led it in sacks and won your Most Improved Defensive Player award, and seven Spaniards played in the Gold Bowl.
+> We have just published a census of Spanish players abroad in 2026. Twenty of the 27 played in the AFLE, most of them signed under the homegrown rule you opened for former Madrid Bravos players, and the numbers speak well of it: Pablo de Diego (Berlin Thunder) led the league in tackles after week 12, Diego Paz (Rhein Fire) led it in sacks and won your Most Improved Defensive Player award, and the two Gold Bowl teams had seven Spaniards between them.
 >
 > Every player is listed with team, position and a source, most of them your own news pages:
 > https://primerdown.jordisanchezweb.es/en/stories/jugadores-espanoles-futbol-americano-extranjero-2026
