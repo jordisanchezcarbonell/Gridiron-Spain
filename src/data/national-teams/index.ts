@@ -157,8 +157,9 @@ export const nationalTeams: NationalTeam[] = [
     results: [
       { date: "2026-04-04", opponent: "Austria", venue: "Calatayud", competition: U19_EURO, score: "7-17", result: "loss", sourceIds: ["selec-fefa-u19-austria-2026"], verificationStatus: "verified" },
       { date: "2026-05-10", opponent: "República Checa", venue: "Praga", competition: U19_EURO, score: "43-14", result: "win", note: { es: "Primera victoria continental de esta generación; cuatro pases de touchdown de Juan Baró.", en: "This generation's first continental win; four touchdown passes from Juan Baró." }, sourceIds: ["fefa-u19-chequia-2026"], verificationStatus: "verified" },
+      { date: "2026-11-07", opponent: "NFL Academy", venue: "El Cantizal, Las Rozas", competition: { es: "II Torneo Internacional · amistoso", en: "II International Tournament · friendly" }, score: "9-56", result: "loss", note: { es: "Amistoso ante el programa de desarrollo de la NFL en Reino Unido, muy superior; según la FEFA, el marcador no refleja la buena imagen del combinado español.", en: "Friendly against the NFL's UK development programme, a much stronger side; per FEFA, the scoreline does not reflect how well the Spanish team played." }, sourceIds: ["fefa-u19-nfl-academy-2026"], verificationStatus: "verified" },
     ],
-    sourceIds: ["selec-fefa-u19-austria-2026", "fefa-u19-chequia-2026", "selec-ifaf-u19-2026-09-20"],
+    sourceIds: ["selec-fefa-u19-austria-2026", "fefa-u19-chequia-2026", "selec-ifaf-u19-2026-09-20", "fefa-u19-nfl-academy-2026"],
     verificationStatus: "verified",
     lastVerifiedAt: V,
   },
