@@ -29,6 +29,7 @@ import { finde20261017 } from "./finde-2026-10-17";
 import { finde20261024 } from "./finde-2026-10-24";
 import { finde20261031 } from "./finde-2026-10-31";
 import { finde20261107 } from "./finde-2026-11-07";
+import { finde20261114 } from "./finde-2026-11-14";
 import { navyNotreDame2026Previa } from "./navy-notre-dame-2026-previa";
 import { equiposFutbolAmericanoMadrid } from "./equipos-futbol-americano-madrid";
 import { ligaEspanolaFutbolAmericano } from "./liga-espanola-futbol-americano";
@@ -85,4 +86,5 @@ export const articles: Article[] = [
   reglasFlagFootball,
   nflMadrid2026Cronica,
   censoEspanolesFuera2026,
+  finde20261114,
 ];
