@@ -1,0 +1,58 @@
+name: Contenido caducado
+
+# Cada mañana revisa si hay rankings, agenda o partidos de la selección sin
+# refrescar (docs/rankings-refresh.md). Abre un issue cuando los hay y lo
+# cierra solo cuando dejan de salir.
+on:
+  schedule:
+    - cron: "0 7 * * *" # 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TITULO: "Contenido caducado: toca refrescar"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Buscar avisos
+        id: avisos
+        run: |
+          npm run --silent content:check | tee salida.txt
+          grep -E "stale|is in the past" salida.txt > avisos.txt || true
+          echo "total=$(wc -l < avisos.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+      - name: Abrir, actualizar o cerrar el issue
+        run: |
+          numero=$(gh issue list --state open --search "in:title \"$TITULO\"" --json number,title \
+            --jq "map(select(.title == \"$TITULO\")) | .[0].number // empty")
+          if [ "${{ steps.avisos.outputs.total }}" = "0" ]; then
+            if [ -n "$numero" ]; then
+              gh issue close "$numero" --comment "Ya no hay avisos de contenido caducado."
+            fi
+            exit 0
+          fi
+          {
+            echo "\`npm run content:check\` avisa de contenido sin refrescar:"
+            echo
+            echo '```'
+            cat avisos.txt
+            echo '```'
+            echo
+            echo "Procedimiento en \`docs/rankings-refresh.md\`. Este issue se cierra solo cuando los avisos desaparecen."
+          } > cuerpo.md
+          if [ -n "$numero" ]; then
+            gh issue edit "$numero" --body-file cuerpo.md
+          else
+            gh issue create --title "$TITULO" --body-file cuerpo.md
+          fi
