@@ -49,3 +49,6 @@ next-env.d.ts
 
 # automation: generated TikTok artefacts (the ledger in automation/state IS committed)
 /out/tiktok/
+
+# security scan output: never commit
+nuclei-*.txt
