@@ -13,7 +13,7 @@
  *   --allow-updates               re-cut a story whose content changed
  *   --require-video-tag           only items the radar flagged for TikTok/Reels
  *   --silent-voice                use the silent stub instead of macOS `say`
- *   --voice=say|elevenlabs|silent narration provider (default: say)
+ *   --voice=say|elevenlabs|silent|bed narration provider (default: say); bed = música instrumental, para clips sin voz
  *   --out=DIR                     override the output directory
  *   --generator=template|claude|claude-cli|mock
  *                                 script engine (default: template)
@@ -44,6 +44,7 @@ import { DEFAULT_GENERATOR, parseGeneratorId, type GeneratorId } from "./script/
 import { SayProvider } from "./tts/say";
 import { SilentProvider } from "./tts/silent";
 import { ElevenLabsProvider } from "./tts/elevenlabs";
+import { MusicBedProvider } from "./tts/bed";
 import { ffmpegAvailable } from "./render/probe";
 import { rasterizerAvailable } from "./render/svg";
 import type { TtsProvider } from "./tts";
@@ -56,7 +57,7 @@ export interface CliFlags {
   requireVideoTag: boolean;
   silentVoice: boolean;
   /** Narration provider requested on the command line. */
-  voice: "say" | "elevenlabs" | "silent";
+  voice: "say" | "elevenlabs" | "silent" | "bed";
   briefingDate?: string;
   outDir: string;
   generator: GeneratorId;
@@ -96,7 +97,7 @@ export function parseArgs(argv: string[]): CliFlags {
     silentVoice: has("silent-voice"),
     voice: ((): CliFlags["voice"] => {
       const raw = (get("voice") ?? "").toLowerCase();
-      if (raw === "elevenlabs" || raw === "silent" || raw === "say") return raw;
+      if (raw === "elevenlabs" || raw === "silent" || raw === "say" || raw === "bed") return raw;
       return has("silent-voice") ? "silent" : "say";
     })(),
     briefingDate: get("date"),
@@ -134,6 +135,7 @@ export function positiveNumber(raw: string | undefined, fallback: number): numbe
 
 function pickProvider(flags: CliFlags): TtsProvider {
   if (flags.voice === "silent") return new SilentProvider();
+  if (flags.voice === "bed") return new MusicBedProvider();
 
   if (flags.voice === "elevenlabs") {
     const eleven = new ElevenLabsProvider();

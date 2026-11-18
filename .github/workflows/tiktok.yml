@@ -17,11 +17,11 @@ on:
         default: "1"
         type: string
       voice:
-        description: "Voz: silent (mudo + subtítulos) o elevenlabs (necesita los secrets)"
+        description: "Audio: bed (música instrumental, sin clave) o elevenlabs (voz natural, necesita los secrets)"
         required: false
-        default: "silent"
+        default: "bed"
         type: choice
-        options: [silent, elevenlabs]
+        options: [bed, elevenlabs, silent]
 
 permissions:
   contents: read
@@ -45,12 +45,13 @@ jobs:
       - name: Elegir voz
         id: voz
         # En los runners de Linux no existe la voz del Mac (`say`). Si se pide
-        # elevenlabs pero no hay clave, se usa silent para no romper el render.
+        # elevenlabs pero no hay clave, se usa `bed` (música), no `silent`, que
+        # no supera el control de audio del render.
         run: |
           voice="${{ inputs.voice }}"
           if [ "$voice" = "elevenlabs" ] && [ -z "$ELEVENLABS_API_KEY" ]; then
-            echo "::warning::elevenlabs pedido sin ELEVENLABS_API_KEY; se usa silent."
-            voice="silent"
+            echo "::warning::elevenlabs pedido sin ELEVENLABS_API_KEY; se usa bed (música)."
+            voice="bed"
           fi
           echo "voice=$voice" >> "$GITHUB_OUTPUT"
       - name: Generar y renderizar el clip
