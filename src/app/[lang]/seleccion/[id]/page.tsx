@@ -85,7 +85,7 @@ export default async function NationalTeamDetailPage({ params }: PageProps<"/[la
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
         <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
-        <div className="container-content relative py-12 md:py-16 lg:py-20">
+        <div className="container-content relative py-8 md:py-10 lg:py-12">
           <Breadcrumbs items={crumbs} />
           <div className="mb-4 mt-6 flex flex-wrap items-center gap-2">
             <Badge tone="gold">{dict.discipline[team.discipline]}</Badge>

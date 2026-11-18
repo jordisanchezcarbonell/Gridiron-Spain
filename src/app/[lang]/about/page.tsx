@@ -79,7 +79,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
 
-        <div className="container-content relative py-12 md:py-16 lg:py-20">
+        <div className="container-content relative py-8 md:py-10 lg:py-12">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.about }]} />
 
           {/* Kicker */}

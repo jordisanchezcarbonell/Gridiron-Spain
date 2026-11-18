@@ -74,13 +74,13 @@ export default async function AgendaPage({ params }: PageProps<"/[lang]/agenda">
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
         <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
-        <div className="container-content relative py-12 md:py-16 lg:py-20">
+        <div className="container-content relative py-8 md:py-10 lg:py-12">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.agenda }]} />
           <div className="mb-6 mt-6 inline-flex items-center">
             <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">{dict.nav.agenda}</span>
             <div className="h-7 w-10 bg-gradient-to-r from-accent/60 to-transparent" />
           </div>
-          <h1 className="display display-lg max-w-4xl">{week ? t(week.title, locale) : dict.agenda.title}</h1>
+          <h1 className="display display-md max-w-4xl">{week ? t(week.title, locale) : dict.agenda.title}</h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-paper-2">{week ? t(week.intro, locale) : dict.agenda.intro}</p>
           <p className="mt-4 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted">{dict.agenda.timeNote}</p>
           {days.length > 1 && (

@@ -45,7 +45,7 @@ export function TeamCard({
       </div>
 
       {/* Summary */}
-      <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-paper-2">{t(team.summary, locale)}</p>
+      <p className="mt-3 line-clamp-2 text-sm sm:line-clamp-3 leading-relaxed text-paper-2">{t(team.summary, locale)}</p>
 
       {/* Metadata grid */}
       <div className="mt-auto grid gap-2.5 border-t border-line pt-4">

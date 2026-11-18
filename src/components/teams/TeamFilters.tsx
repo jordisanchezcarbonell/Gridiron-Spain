@@ -49,6 +49,9 @@ export function TeamFilters({
   dict: Dictionary;
 }) {
   const [filters, setFilters] = useState<Filters>(initial);
+  // On phones the five selects take a full screen, so they sit behind a toggle.
+  const [open, setOpen] = useState(false);
+  const activeFilters = Object.values(filters).filter((v) => v !== "all").length;
 
   const communities = useMemo(
     () => Array.from(new Set(teams.map((t) => t.autonomousCommunity))).sort(),
@@ -68,8 +71,24 @@ export function TeamFilters({
 
   return (
     <div>
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls="team-filters"
+        onClick={() => setOpen((v) => !v)}
+        className="mb-4 flex h-11 w-full items-center justify-between border border-line-strong bg-surface px-4 font-display text-sm font-bold uppercase tracking-[0.04em] text-paper sm:hidden"
+      >
+        <span>
+          {dict.teams.filters}
+          {activeFilters > 0 && <span className="ml-2 font-mono text-xs text-gold">{activeFilters}</span>}
+        </span>
+        <svg className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden>
+          <path strokeLinecap="square" d="M5 9l7 7 7-7" />
+        </svg>
+      </button>
       <form
-        className="card mb-8 grid gap-4 p-5 sm:grid-cols-2 lg:grid-cols-5"
+        id="team-filters"
+        className={`card mb-8 gap-4 p-5 sm:grid sm:grid-cols-2 lg:grid-cols-5 ${open ? "grid" : "hidden"}`}
         aria-label={dict.teams.filters}
         onSubmit={(e) => e.preventDefault()}
       >

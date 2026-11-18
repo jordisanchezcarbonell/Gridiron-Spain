@@ -48,7 +48,7 @@ export default async function GuidePage({ params }: PageProps<"/[lang]/guia">) {
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
         <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
 
-        <div className="container-content relative py-12 md:py-16 lg:py-20">
+        <div className="container-content relative py-8 md:py-10 lg:py-12">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.guide }]} />
 
           {/* Kicker */}

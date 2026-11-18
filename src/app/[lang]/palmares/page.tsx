@@ -60,7 +60,7 @@ export default async function PalmaresPage({ params }: PageProps<"/[lang]/palmar
       <section className="relative overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
-        <div className="container-content relative py-12 md:py-16">
+        <div className="container-content relative py-8 md:py-10">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.palmares }]} />
           <h1 className="display display-lg mt-6 max-w-4xl">{dict.palmares.title}</h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-paper-2">{dict.palmares.intro}</p>

@@ -25,6 +25,22 @@ export function Timeline({ events, teams, sources, locale, dict, compact }: Prop
     groups.set(key, [...(groups.get(key) ?? []), event]);
   }
 
+  if (compact) {
+    // Home teaser: one milestone per decade in a single strip.
+    return (
+      <ol className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
+        {events.map((event) => (
+          <li key={event.id} className="border-t-2 border-accent bg-surface p-5">
+            <span className="font-display text-3xl font-black text-accent">{event.year}</span>
+            <h3 className="mt-2 font-display text-lg font-bold uppercase leading-tight text-paper">
+              {t(event.title, locale)}
+            </h3>
+          </li>
+        ))}
+      </ol>
+    );
+  }
+
   return (
     <ol className="relative border-l-2 border-accent/30 pl-6 md:pl-10">
       {Array.from(groups.entries()).map(([decade, items]) => (

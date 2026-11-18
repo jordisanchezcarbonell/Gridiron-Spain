@@ -39,7 +39,7 @@ export default async function MapPage({ params }: PageProps<"/[lang]/mapa">) {
         <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-ink to-ink-2" />
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
 
-        <div className="container-content relative py-12 md:py-16">
+        <div className="container-content relative py-8 md:py-10">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.map }]} />
 
           {/* Kicker */}

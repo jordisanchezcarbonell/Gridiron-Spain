@@ -74,6 +74,14 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
   }
   const team = await repo.getTeamBySlug(slug);
   if (!team) notFound();
+  // One row per title with its years, instead of one row per season.
+  const honourGroups = Array.from(
+    team.honours.reduce((acc, honour) => {
+      const title = t(honour.title, locale);
+      acc.set(title, [...(acc.get(title) ?? []), honour.year]);
+      return acc;
+    }, new Map<string, number[]>()),
+  ).map(([title, years]) => ({ title, years: [...years].sort((a, b) => a - b) }));
 
   const [competitions, articles, sources, spotlights] = await Promise.all([
     repo.getCompetitions(),
@@ -143,12 +151,17 @@ export default async function TeamPage({ params }: PageProps<"/[lang]/equipos/[s
             </header>
             {team.honours.length > 0 ? (
               <ul className="divide-y divide-line border border-line bg-surface">
-                {team.honours.map((honour, i) => (
-                  <li key={i} className="flex flex-wrap items-center justify-between gap-3 px-5 py-4">
-                    <span className="flex items-center gap-4">
-                      <span className="font-display text-2xl font-black text-accent">{honour.year}</span>
-                      <span className="text-paper">{t(honour.title, locale)}</span>
-                    </span>
+                {honourGroups.map((group) => (
+                  <li key={group.title} className="px-5 py-4">
+                    <p className="flex items-baseline gap-3">
+                      <span className="font-display text-2xl font-black text-accent">{group.years.length}</span>
+                      <span className="font-medium text-paper">{group.title}</span>
+                    </p>
+                    <p className="mt-2 flex flex-wrap gap-x-3 gap-y-1 font-mono text-sm text-paper-2">
+                      {group.years.map((year, i) => (
+                        <span key={`${year}-${i}`}>{year}</span>
+                      ))}
+                    </p>
                   </li>
                 ))}
               </ul>

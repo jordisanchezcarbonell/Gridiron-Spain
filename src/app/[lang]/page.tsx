@@ -87,24 +87,24 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
         <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-20" />
 
-        <div className="container-content relative py-20 md:py-28 lg:py-36">
+        <div className="container-content relative py-12 md:py-16 lg:py-20">
           {/* Broadcast-style kicker */}
-          <div className="mb-8 inline-flex items-center animate-rise">
+          <div className="mb-6 inline-flex items-center animate-rise">
             <span className="flex h-7 items-center bg-accent px-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white">
               {dict.home.kicker}
             </span>
             <div className="h-7 w-12 bg-gradient-to-r from-accent/60 to-transparent" />
           </div>
 
-          <h1 className="display display-xl max-w-5xl animate-rise [animation-delay:60ms]">
+          <h1 className="display display-lg max-w-4xl animate-rise [animation-delay:60ms]">
             {dict.home.heroTitle}
           </h1>
 
-          <p className="mt-8 max-w-lg text-lg leading-relaxed text-paper-2 animate-rise [animation-delay:120ms] md:text-xl">
+          <p className="mt-5 max-w-lg text-lg leading-relaxed text-paper-2 animate-rise [animation-delay:120ms] md:text-xl">
             {dict.home.heroSub}
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-3 animate-rise [animation-delay:180ms]">
+          <div className="mt-7 flex flex-wrap gap-3 animate-rise [animation-delay:180ms]">
             <ButtonLink href={href(locale, "teams")} size="lg">
               {dict.home.ctaTeams}
             </ButtonLink>
@@ -277,7 +277,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
               <div className="space-y-6">
                 {/* Origin */}
                 <div>
-                  <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-accent">Origin</p>
+                  <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-accent">{locale === "es" ? "Origen" : "Origin"}</p>
                   <p className="mt-1 font-display text-2xl font-black uppercase leading-none text-paper md:text-3xl">{origin.name}</p>
                   <p className="mt-1 font-mono text-[0.625rem] text-muted-2">{formatCoordinate(origin.latitude, "lat")}</p>
                 </div>
@@ -298,7 +298,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
 
                 {/* Destination */}
                 <div>
-                  <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-turf">Destination</p>
+                  <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-turf">{locale === "es" ? "Destino" : "Destination"}</p>
                   <p className="mt-1 font-display text-2xl font-black uppercase leading-none text-paper md:text-3xl">{destination.name}</p>
                   <p className="mt-1 font-mono text-[0.625rem] text-muted-2">{formatCoordinate(destination.latitude, "lat")}</p>
                 </div>
@@ -312,11 +312,11 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           CTA CARDS
           ============================================================ */}
       <section className="border-b border-line">
-        <div className="container-content grid gap-px bg-line md:grid-cols-2">
+        <div className="container-content">
           {/* Near You */}
           <Link
             href={href(locale, "nearYou")}
-            className="group relative flex flex-col bg-ink p-8 transition-colors hover:bg-surface md:p-10"
+            className="group relative flex flex-col py-10 md:py-12"
           >
             <div className="mb-4 inline-flex items-center">
               <span className="flex h-6 items-center bg-accent px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.2em] text-white">
@@ -333,20 +333,6 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
               </svg>
             </span>
           </Link>
-
-          {/* Newsletter */}
-          <div className="relative flex flex-col bg-ink p-8 md:p-10">
-            <div className="mb-4 inline-flex items-center">
-              <span className="flex h-6 items-center bg-surface-2 px-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.2em] text-muted">
-                {dict.home.newsletterTitle}
-              </span>
-            </div>
-            <h2 className="display display-sm">{dict.home.newsletterTitle}</h2>
-            <p className="mt-3 text-muted">{dict.home.newsletterSub}</p>
-            <p className="mt-6 font-mono text-xs font-medium uppercase tracking-[0.12em] text-accent">
-              {dict.home.newsletterButton}
-            </p>
-          </div>
         </div>
       </section>
     </>

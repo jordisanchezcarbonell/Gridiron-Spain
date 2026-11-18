@@ -73,7 +73,7 @@ export default async function CompetitionPage({ params }: PageProps<"/[lang]/com
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
         <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
 
-        <div className="container-content relative py-12 md:py-16">
+        <div className="container-content relative py-8 md:py-10">
           <Breadcrumbs items={crumbs} />
 
           {/* Badges */}

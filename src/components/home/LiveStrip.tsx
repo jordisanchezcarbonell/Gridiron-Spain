@@ -34,7 +34,14 @@ export function LiveStrip({ week, ranking, nationalTeams, now, locale, dict }: P
     .filter(({ game }) => game.date >= today)
     .sort((a, b) => a.game.date.localeCompare(b.game.date))[0];
 
-  if (games.length === 0 && top5.length === 0 && !next) return null;
+  const showRanking = top5.length > 0 && Boolean(ranking);
+  const count = [games.length > 0, showRanking, Boolean(next)].filter(Boolean).length;
+  if (count === 0) return null;
+
+  // The grid follows the number of cards that have data, so a quiet week
+  // (no upcoming games, no national-team fixture) never leaves empty columns.
+  const columns = count === 3 ? "md:grid-cols-3" : count === 2 ? "md:grid-cols-2" : "";
+  const solo = count === 1;
 
   const card = "relative flex flex-col border border-line bg-surface p-5";
   const label = "mb-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em]";
@@ -42,11 +49,11 @@ export function LiveStrip({ week, ranking, nationalTeams, now, locale, dict }: P
 
   return (
     <section aria-label={dict.home.live.title} className="border-b border-line bg-ink-2">
-      <div className="container-content grid gap-4 py-8 md:grid-cols-3">
+      <div className={`container-content grid gap-4 py-8 ${columns}`}>
         {games.length > 0 && (
           <div className={card}>
             <p className={`${label} text-accent`}>{dict.home.live.weekend}</p>
-            <ul className="grid gap-3">
+            <ul className={solo ? "grid gap-3 md:grid-cols-3 md:gap-6" : "grid gap-3"}>
               {games.map((g) => (
                 <li key={g.id}>
                   <p className="font-mono text-xs text-muted">{spainDateTime(g.kickoffUtc, locale)}</p>
@@ -61,10 +68,10 @@ export function LiveStrip({ week, ranking, nationalTeams, now, locale, dict }: P
             </Link>
           </div>
         )}
-        {top5.length > 0 && ranking && (
+        {showRanking && ranking && (
           <div className={card}>
             <p className={`${label} text-gold`}>{t(ranking.title, locale)}</p>
-            <ol className="grid gap-1.5">
+            <ol className={solo ? "grid gap-1.5 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-5" : "grid gap-1.5"}>
               {top5.map((e) => (
                 <li key={e.rank} className="flex items-baseline gap-3">
                   <span className="w-5 font-display text-lg font-black text-accent">{e.rank}</span>

@@ -41,7 +41,7 @@ export default async function TeamsPage({ params }: PageProps<"/[lang]/equipos">
         <div aria-hidden className="pointer-events-none absolute inset-0 grain" />
         <div aria-hidden className="pointer-events-none absolute inset-0 yardlines opacity-15" />
 
-        <div className="container-content relative py-12 md:py-16 lg:py-20">
+        <div className="container-content relative py-8 md:py-10 lg:py-12">
           <Breadcrumbs items={[{ name: dict.common.breadcrumbHome, href: href(locale, "home") }, { name: dict.nav.teams }]} />
 
           {/* Kicker */}
@@ -57,7 +57,7 @@ export default async function TeamsPage({ params }: PageProps<"/[lang]/equipos">
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{dict.teams.directoryNote}</p>
 
           {/* Stats */}
-          <div className="mt-10 flex flex-wrap gap-8">
+          <div className="mt-7 flex flex-wrap gap-8">
             <div className="relative pl-4">
               <div className="absolute left-0 top-0 h-full w-1 bg-accent" />
               <span className="block font-display text-4xl font-black leading-none text-paper">{teams.length}</span>
