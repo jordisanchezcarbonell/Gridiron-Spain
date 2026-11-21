@@ -48,12 +48,15 @@ export const censoEspanolesFuera2026: Article = {
   relatedCompetitionIds: ["afle", "efa", "gfl", "ncaa-fbs", "nfl"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-11-16",
-  updatedAt: "2026-11-18",
+  updatedAt: "2026-11-21",
   status: "published",
   verificationStatus: "verified",
-  lastVerifiedAt: "2026-11-18",
+  lastVerifiedAt: "2026-11-21",
   readingTimeMinutes: 8,
   sourceIds: [
+    "ferrum-roster-2025",
+    "ferrum-roster-2026",
+    "fcfa-mario-ruiz-2026",
     "marshall-roster-2026",
     "marshall-diaz-nicolas-groza-2026",
     "coastal-cavanillas-2026",
@@ -238,6 +241,14 @@ export const censoEspanolesFuera2026: Article = {
       text: {
         es: `En la otra liga, la EFA, el español confirmado es Adrià Botella Moreno, tight end internacional con 41 touchdowns en 55 partidos de la ELF, que esta temporada ha jugado en los Frankfurt Galaxy. [[src:afi-botella-galaxy-2026]] En la GFL alemana, los Dresden Monarchs, campeones al ganar 27-19 a los Potsdam Royals, tuvieron tres españoles: el receptor Agustín Do Eyo, de 24 años y llegado de L'Hospitalet Pioners; el defensive back Lucas Masero, que regresó al club tras una temporada en los Madrid Bravos; y el receptor Jordi Torrededia. [[src:sachsen-do-eyo-2026]] [[src:sachsen-gfl-bowl-2026]] [[src:dresden-roster-2026]] [[src:dresden-masero-torrededia-2026]] También en la GFL, el defensive back Alonso Muñoz Yus jugó en los Düsseldorf Panther. [[src:duesseldorf-roster-2026]] Y en la liga austriaca, el receptor Álvaro Molano fichó por los Rangers Mödling y debutó con un touchdown. [[src:noen-molano-moedling-2026]] [[src:football-austria-moedling-2026]]`,
         en: `In the other league, the EFA, the confirmed Spaniard is Adrià Botella Moreno, an international tight end with 41 touchdowns in 55 ELF games, who played this season for the Frankfurt Galaxy. [[src:afi-botella-galaxy-2026]] In Germany's GFL, the Dresden Monarchs, champions after beating the Potsdam Royals 27-19, had three Spaniards: receiver Agustín Do Eyo, 24, who came from L'Hospitalet Pioners; defensive back Lucas Masero, who returned to the club after a season with the Madrid Bravos; and receiver Jordi Torrededia. [[src:sachsen-do-eyo-2026]] [[src:sachsen-gfl-bowl-2026]] [[src:dresden-roster-2026]] [[src:dresden-masero-torrededia-2026]] Also in the GFL, defensive back Alonso Muñoz Yus played for the Düsseldorf Panther. [[src:duesseldorf-roster-2026]] And in the Austrian league, receiver Álvaro Molano signed with the Mödling Rangers and scored a touchdown on debut. [[src:noen-molano-moedling-2026]] [[src:football-austria-moedling-2026]]`,
+      },
+    },
+    { type: "heading", level: 3, id: "fuera-del-recuento", text: { es: "Fuera del recuento: Mario Ruiz", en: "Outside the count: Mario Ruiz" } },
+    {
+      type: "paragraph",
+      text: {
+        es: "Hay un caso que no suma en los 32. Mario Ruiz, de Barcelona, figuró en 2025 en la plantilla de Ferrum College (Virginia) como safety de segundo año con el dorsal 31, pero no aparece en la de 2026. [[src:ferrum-roster-2025]] [[src:ferrum-roster-2026]] Según la Federació Catalana de Futbol Americà, que nos señaló su caso, está lesionado, se ha dado de baja esta temporada para no perder un año de elegibilidad y sigue en la universidad como entrenador. [[src:fcfa-mario-ruiz-2026]] Como este año no ha tenido ficha de jugador, queda fuera del recuento.",
+        en: "One case does not count towards the 32. Mario Ruiz, from Barcelona, was on the 2025 roster at Ferrum College (Virginia) as a sophomore safety wearing number 31, but he is not on the 2026 roster. [[src:ferrum-roster-2025]] [[src:ferrum-roster-2026]] According to the Catalan American Football Federation, which pointed us to his case, he is injured, is sitting out this season to keep a year of eligibility and remains at the college as a coach. [[src:fcfa-mario-ruiz-2026]] As he has not been on a roster as a player this year, he is left out of the count.",
       },
     },
     { type: "heading", level: 2, id: "falta-alguien", text: { es: "¿Falta alguien?", en: "Is anyone missing?" } },
