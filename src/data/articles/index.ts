@@ -41,6 +41,7 @@ import { syracuseSorprendeASmu2026 } from "./syracuse-sorprende-a-smu-2026";
 import { reglasFlagFootball } from "./reglas-flag-football";
 import { censoEspanolesFuera2026 } from "./censo-espanoles-fuera-2026";
 import { seleccionEuropeoB2026 } from "./seleccion-europeo-b-2026";
+import { dracsCopaCatalana2026 } from "./dracs-copa-catalana-2026";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -89,4 +90,5 @@ export const articles: Article[] = [
   censoEspanolesFuera2026,
   finde20261114,
   seleccionEuropeoB2026,
+  dracsCopaCatalana2026,
 ];
