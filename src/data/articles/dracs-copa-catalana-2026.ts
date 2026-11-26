@@ -3,6 +3,7 @@ import type { Article } from "@/types";
 const FCFA = "[[src:fcfa-copa-catalana-2026-27]]";
 const IG = "[[src:ig-final-copa-catalana-2026]]";
 const FEFA = "[[src:fefa-copa-espana-2026-previa]]";
+const SEMI = "[[src:fefa-copa-espana-2026-semifinal]]";
 
 /**
  * Short news piece. The federation has published the score but no match
@@ -41,10 +42,10 @@ export const dracsCopaCatalana2026: Article = {
   relatedCompetitionIds: ["copa-espana"],
   availableLocales: ["es", "en"],
   publishedAt: "2026-11-22",
-  updatedAt: "2026-11-22",
+  updatedAt: "2026-11-26",
   status: "published",
   verificationStatus: "verified",
-  lastVerifiedAt: "2026-11-22",
+  lastVerifiedAt: "2026-11-26",
   readingTimeMinutes: 3,
   sourceIds: [
     "fcfa-copa-catalana-2026-27",
@@ -53,6 +54,7 @@ export const dracsCopaCatalana2026: Article = {
     "monterrassa-final-copa-catalana-2024",
     "ig-final-copa-catalana-2026",
     "fefa-copa-espana-2026-previa",
+    "fefa-copa-espana-2026-semifinal",
     "fefa-ficha-dracs-2026-11",
   ],
   content: [
@@ -102,8 +104,8 @@ export const dracsCopaCatalana2026: Article = {
     {
       type: "paragraph",
       text: {
-        es: `El rival sale de la única semifinal, que jugaron este domingo 22 de noviembre en Santiago de Compostela los Black Ravens y los Mallorca Voltors. ${FEFA} La FEFA no ha publicado todavía el resultado, pero su calendario ya lista la final como Badalona Dracs - Mallorca Voltors, a las 19:00. [[src:fefa-ficha-dracs-2026-11]] Los Dracs suman ocho Copas de España, una menos que Pioners, el club con más títulos. ${FEFA}`,
-        en: `Their opponents come from the only semi-final, played this Sunday 22 November in Santiago de Compostela between the Black Ravens and the Mallorca Voltors. ${FEFA} FEFA has not yet published the result, but its calendar already lists the final as Badalona Dracs v Mallorca Voltors, at 19:00. [[src:fefa-ficha-dracs-2026-11]] The Dracs have eight Copa de España titles, one fewer than Pioners, the most successful club. ${FEFA}`,
+        es: `El rival serán los Mallorca Voltors, que el domingo 22 de noviembre ganaron 42-6 a los Black Ravens en Santiago de Compostela, en la única semifinal. Los Voltors, con casi 40 años de historia, jugarán por primera vez por un título nacional. ${SEMI} El calendario de la FEFA lista la final a las 17:00. [[src:fefa-ficha-dracs-2026-11]] Los Dracs suman ocho Copas de España, una menos que Pioners, el club con más títulos. ${FEFA}`,
+        en: `Their opponents will be the Mallorca Voltors, who beat the Black Ravens 42-6 in Santiago de Compostela on Sunday 22 November, in the only semi-final. The Voltors, almost 40 years old as a club, will play for a national title for the first time. ${SEMI} FEFA's calendar lists the final at 17:00. [[src:fefa-ficha-dracs-2026-11]] The Dracs have eight Copa de España titles, one fewer than Pioners, the most successful club. ${FEFA}`,
       },
     },
   ],
