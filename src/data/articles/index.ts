@@ -42,6 +42,7 @@ import { reglasFlagFootball } from "./reglas-flag-football";
 import { censoEspanolesFuera2026 } from "./censo-espanoles-fuera-2026";
 import { seleccionEuropeoB2026 } from "./seleccion-europeo-b-2026";
 import { dracsCopaCatalana2026 } from "./dracs-copa-catalana-2026";
+import { finde20261121 } from "./finde-2026-11-21";
 
 /**
  * Article registry. Add a new file per article and register it here.
@@ -91,4 +92,5 @@ export const articles: Article[] = [
   finde20261114,
   seleccionEuropeoB2026,
   dracsCopaCatalana2026,
+  finde20261121,
 ];
