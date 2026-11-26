@@ -122,8 +122,8 @@ export const finde20261121: Article = {
     {
       type: "paragraph",
       text: {
-        es: `En la encuesta AP del domingo, Georgia sigue n.º 1 con 56 votos al primer puesto, por delante de Utah (12) y Notre Dame (1). Los tres derrotados de la Big Ten pagan el sábado: UCLA baja del 4.º al 10.º, Indiana del 6.º al 12.º y Ohio State del 16.º al 25.º. Entran Oklahoma y Missouri; salen Kentucky y Memphis. ${AP}`,
-        en: `In Sunday's AP poll, Georgia stay No. 1 with 56 first-place votes, ahead of Utah (12) and Notre Dame (1). The three beaten Big Ten teams pay for Saturday: UCLA drop from 4th to 10th, Indiana from 6th to 12th and Ohio State from 16th to 25th. Oklahoma and Missouri come in; Kentucky and Memphis drop out. ${AP}`,
+        es: `En la encuesta AP del domingo, Georgia sigue n.º 1 con 56 votos al primer puesto, por delante de Utah (12) y Notre Dame (1). Los tres derrotados de la Big Ten pagan el sábado: UCLA baja del 4.º al 10.º, Indiana del 6.º al 12.º y Ohio State del 16.º al 25.º. Entran Oklahoma y Missouri; salen Kentucky y Memphis. La tabla completa está en nuestros [[link:rankings|rankings]]. ${AP}`,
+        en: `In Sunday's AP poll, Georgia stay No. 1 with 56 first-place votes, ahead of Utah (12) and Notre Dame (1). The three beaten Big Ten teams pay for Saturday: UCLA drop from 4th to 10th, Indiana from 6th to 12th and Ohio State from 16th to 25th. Oklahoma and Missouri come in; Kentucky and Memphis drop out. The full table is in our [[link:rankings|rankings]]. ${AP}`,
       },
     },
     {
